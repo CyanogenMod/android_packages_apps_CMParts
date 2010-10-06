@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 
  * Copyright (C) 2007 The Android Open Source Project
  *
@@ -31,9 +31,9 @@
     </string-array>
 
     <string-array name="entries_install_location">
-        <item>Automatic</item>
-        <item>Internal</item>
-        <item>External</item>
+        <item>Автоматически</item>
+        <item>Внутреняя</item>
+        <item>Внешняя</item>
     </string-array>
 
     <string-array name="values_install_location">
@@ -43,16 +43,16 @@
     </string-array>
 
     <string-array name="entries_render_effect">
-        <item>No render effect</item>
-        <item>Night mode (red)</item>
-        <item>Terminal (green)</item>
-        <item>Blue</item>
-        <item>Amber</item>
-        <item>Salmon</item>
-        <item>Fuscia</item>
-        <item>Calibrated (N1)</item>
-	    <item>Calibrated (N1) Low Red</item>
-	    <item>Calibrated (N1) Cool</item>
+        <item>Без эфекта</item>
+        <item>Ночной (красный)</item>
+        <item>Терминал (зелёный)</item>
+        <item>Синий</item>
+        <item>Жёлтый</item>
+        <item>Оранжево-розовый</item>
+		<item>Розовый</item>
+        <item>Калиброванный (N1)</item>
+	    <item>Калиброванный (N1) Красноватый</item>
+	    <item>Калиброванный (N1) Холодный</item>
     </string-array>
 
     <string-array name="values_render_effect">
@@ -69,15 +69,15 @@
     </string-array>
     
 	<string-array name="render_entries">
-        <item>Night Mode (Red)</item>
-        <item>Terminal (Green)</item>
-        <item>Blue</item>
-        <item>Amber</item>
-        <item>Salmon</item>
-        <item>Fuscia</item>
-        <item>Calibrated (N1)</item>
-	    <item>Calibrated (N1) Low Red</item>
-	    <item>Calibrated (N1) Cool</item>
+        <item>Ночной (красный)</item>
+        <item>Терминал (зелёный)</item>
+        <item>Синий</item>
+        <item>Жёлтый</item>
+        <item>Оранжево-розовый</item>
+        <item>Розовый</item>
+        <item>Калиброванный (N1)</item>
+	    <item>Калиброванный (N1) Красноватый</item>
+	    <item>Калиброванный (N1) Холодный</item>
 	</string-array>
 
 	<string-array name="render_values">
@@ -93,18 +93,18 @@
 	</string-array>
     
     <string-array name="entries_trackball_colors">
-        <item>Green</item>
-        <item>White</item>
-        <item>Red</item>
-        <item>Blue</item>
-        <item>Yellow</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Pink</item>
-        <item>Orange</item>
-        <item>Light Blue</item>
-	<item>Random</item>
-	<item>None</item>
+        <item>Зелёный</item>
+        <item>Белый</item>
+        <item>Красный</item>
+        <item>Синий</item>
+        <item>Жёлтый</item>
+        <item>Голубой</item>
+        <item>Фиолетовый</item>
+        <item>Розовый</item>
+        <item>Оранжевый</item>
+        <item>Светло-синий</item>
+	<item>Случайно</item>
+	<item>Нет</item>
     </string-array>
 
     <string-array name="pref_trackball_colors_values" translatable="false">
@@ -123,11 +123,11 @@
     </string-array>
 
 	<string-array name="pref_trackball_blink_rate_entries">
-        <item>2 (Fast)</item>
+        <item>2 (Быстро)</item>
         <item>3</item>
-        <item>4 (Medium)</item>
+        <item>4 (Средне)</item>
         <item>5</item>
-        <item>6 (Slow)</item>
+        <item>6 (Медленно)</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_values" translatable="false">
@@ -139,16 +139,16 @@
     </string-array>
     
     <string-array name="pref_lockscreen_delay_entries">
-        <item>Immediately</item>
-        <item>1s</item>
-        <item>5s</item>
-        <item>10s</item>
-        <item>15s</item>  
-        <item>30s</item>
-        <item>1m</item>
-        <item>5m</item>
-        <item>10m</item>
-        <item>30m</item>
+        <item>Немедленно</item>
+        <item>1с</item>
+        <item>5с</item>
+        <item>10с</item>
+        <item>15с</item>  
+        <item>30с</item>
+        <item>1м</item>
+        <item>5м</item>
+        <item>10м</item>
+        <item>30м</item>
     </string-array>
 
     <string-array name="pref_lockscreen_delay_values">
@@ -165,12 +165,12 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
-        <item>10 s</item>
-        <item>20 s</item>
-        <item>30 s</item>
-        <item>40 s</item>
-        <item>50 s</item>
-        <item>60 s</item>
+        <item>10 с</item>
+        <item>20 с</item>
+        <item>30 с</item>
+        <item>40 с</item>
+        <item>50 с</item>
+        <item>60 с</item>
     </string-array>
 
     <string-array name="values_light_filter_window" translatable="false">
@@ -183,7 +183,7 @@
     </string-array>
 
     <string-array name="entries_light_filter_reset">
-        <item>Disabled</item>
+        <item>Отключенно</item>
         <item>400 lux</item>
         <item>500 lux</item>
         <item>600 lux</item>
@@ -211,11 +211,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_interval">
-        <item>0.5 s</item>
-        <item>1 s</item>
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
+        <item>0.5 с</item>
+        <item>1 с</item>
+        <item>2 с</item>
+        <item>5 с</item>
+        <item>10 с</item>
     </string-array>
 
     <string-array name="values_light_filter_interval" translatable="false">
@@ -239,7 +239,7 @@
         <item>14</item>
         <item>16</item>
         <item>18</item>
-        <item>20 (default)</item>
+        <item>20 (по умолчанию)</item>
         <item>22</item>
         <item>24</item>
         <item>26</item>
@@ -293,7 +293,7 @@
     <string-array name="entries_sound_attenuation">
         <item>0 dB</item>
         <item>4 dB</item>
-        <item>6 dB (default)</item>
+        <item>6 dB (по умолчанию)</item>
         <item>8 dB</item>
         <item>10 dB</item>
     </string-array>
@@ -307,8 +307,8 @@
     </string-array>
 
     <string-array name="entries_sound_limitvol">
-        <item>Attenuated system setting</item>
-        <item>Music volume (default)</item>
+        <item>Пониженная громкость</item>
+        <item>Громкость музыки (по умолчанию)</item>
     </string-array>
 
     <string-array name="values_sound_limitvol" translatable="false">
