@@ -196,7 +196,7 @@
 
 	<!-- Performance Settings : Compcache -->
 	<string name="pref_compcache_title">Использовать Compcache</string>
-	<string name="pref_compcache_summary">Сжатие памяти для увелечение количества (требуется перезагрузка)</string>
+	<string name="pref_compcache_summary">Сжатие памяти для увелечение её количества (требуется перезагрузка)</string>
 
 	<!-- Performance Settings : JIT Mode -->
 	<string name="pref_jit_mode_title">Использовать JIT</string>
@@ -274,43 +274,43 @@
 	<string name="haptic_revert_toast">Restoring last-used values</string>
 	<string name="haptic_default_toast">Loading hard-coded defaults</string>
 
-	<string name="general_title">General</string>
+	<string name="general_title">Основные</string>
 
 	<!-- UI Settings : Power off prompt -->
-	<string name="pref_power_prompt_title">Power prompt</string>
-	<string name="pref_power_prompt_summary">Change whether there is a prompt after choosing shutdown or reboot</string>
+	<string name="pref_power_prompt_title">Варинты перезагрузки</string>
+	<string name="pref_power_prompt_summary">Если включено, то будут предложенны варианты перезагрузки.</string>
 
 	<!-- UI Settings : Render effect -->
-	<string name="pref_render_effect_title">Render effect</string>
-	<string name="pref_render_effect_summary">Change what colors are used to draw the screen (potential battery savings)</string>
+	<string name="pref_render_effect_title">Эфекты экрана</string>
+	<string name="pref_render_effect_summary">Позволяет изменять цвет прорисовки экрана (экономит батарею)</string>
 
-	<string name="widget_name">RenderFX Widget</string>
-	<string name="renderfx_temp">RenderFX</string>
-	<string name="prefs_render_effect">Render Effect</string>
+	<string name="widget_name">Эфекты экрана</string>
+	<string name="renderfx_temp">Эфект</string>
+	<string name="prefs_render_effect">Эфект экрана</string>
 	<string name="notify_render_effect">Render effect on</string>
-	<string name="add_widget">Add widget</string>
+	<string name="add_widget">Добавить виджет</string>
 
 	<!--  Widget Types -->
-	<string name="night">Night</string>
-	<string name="terminal">Term</string>
-	<string name="blue">Blue</string>
-	<string name="amber">Amber</string>
+	<string name="night">Ночь</string>
+	<string name="terminal">Терм</string>
+	<string name="blue">Синий</string>
+	<string name="amber">Жёлтый</string>
 	<string name="salmon">Salmon</string>
-	<string name="fuscia">Fuscia</string>
+	<string name="fuscia">Розовый</string>
 
 	<!-- Notification Bar Colors -->
 
-	<string name="title_notification_bar">Notification bar</string>
-	<string name="title_custom_not_bar">Custom notification bar</string>
-	<string name="summary_custom_not_bar_on">Using customized notification bar color and style</string>
-	<string name="summary_custom_not_bar_off">Using classic CyanogenMod notification bar</string>
-	<string name="title_not_bar_color_mask">Bar color</string>
-	<string name="summary_not_bar_color_mask">Note: Transparency (alpha) setting will not be applied</string>
-	<string name="title_custom_exp_not_bar">Custom pulldown bar</string>
-	<string name="summary_custom_exp_not_bar_on">Using customized expanded pulldown bar color and style</string>
-	<string name="summary_custom_exp_not_bar_off">Using classic CyanogenMod expanded pulldown bar</string>
-	<string name="title_not_exp_bar_color_mask">Pulldown bar color</string>
-	<string name="summary_not_exp_bar_color_mask">Pick a color to apply to elements of the pulldown notification bar</string>
+	<string name="title_notification_bar">Область уведомлений</string>
+	<string name="title_custom_not_bar">Настраиваемая область уведомлений</string>
+	<string name="summary_custom_not_bar_on">Используются настраиваемые цвета и стили для области уведомления</string>
+	<string name="summary_custom_not_bar_off">Используется класическое оформление области уведомлений (CyanogenMod)</string>
+	<string name="title_not_bar_color_mask">Цвет области</string>
+	<string name="summary_not_bar_color_mask">Примечание: Настройки прозрачности (alpha) не применяются</string>
+	<string name="title_custom_exp_not_bar">Настраиваемая выпадающая панель</string>
+	<string name="summary_custom_exp_not_bar_on">Используется настраиваемые цвета и стили выпадающей панели</string>
+	<string name="summary_custom_exp_not_bar_off">Используется класическое оформление выпадающей панели (CyanogenMod)</string>
+	<string name="title_not_exp_bar_color_mask">Цвет панели</string>
+	<string name="summary_not_exp_bar_color_mask">Выбирите цвет который будет применятся к элементам панели</string>
 
 
 	<!-- Performance : Lock home memory -->
@@ -322,14 +322,14 @@
 	<string name="pref_lock_mms_summary">Поможет избежать потерю сообщений в ситуациях когда мало памяти</string>
 
 	<!-- Backlight -->
-	<string name="backlight_title">Automatic backlight</string>
-	<string name="backlight_summary">Tweak levels and filtering</string>
-	<string name="light_filter_title">Light sensor filter</string>
-	<string name="light_filter_enabled_title">Enabled</string>
-	<string name="light_filter_enabled_summary">Apply moving average filter to sensor data to reduce flicker.</string>
-	<string name="light_filter_window_title">Window length</string>
-	<string name="light_filter_window_summary">Filtered value is the average sensor value during this period.</string>
-	<string name="light_filter_reset_title">Reset threshold</string>
+	<string name="backlight_title">Автоматическая яркость</string>
+	<string name="backlight_summary">Настройки автоматической регулировки яркости подсветки</string>
+	<string name="light_filter_title">Фильтр датчика освещёности</string>
+	<string name="light_filter_enabled_title">Включить</string>
+	<string name="light_filter_enabled_summary">Применить фильтр скользящего среднего к датчику освещёности, уменьщает мерцание.</string>
+	<string name="light_filter_window_title">Размер окна</string>
+	<string name="light_filter_window_summary">Периуд времени для которого вычеслятся среднее значение.</string>
+	<string name="light_filter_reset_title">Порог сброса</string>
 	<string name="light_filter_reset_summary">Samples deviating this much from current average resets the filter.</string>
 	<string name="light_filter_interval_title">Sample interval</string>
 	<string name="light_filter_interval_summary">Low value can improve accuracy but uses some more CPU.</string>
