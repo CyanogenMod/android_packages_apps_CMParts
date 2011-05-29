@@ -424,7 +424,6 @@
   <string name="gestures_button_add">Додати жест</string>
   <string name="gestures_button_discard">Відкинути</string>
   <string name="gestures_button_done">Готово</string>
-  <string name="gestures_shortcut_picker_button_label">Виберіть ярлик або дію до цього жесту</string>
   <string name="gestures_error_missing_shortcut">Ви повинні вибрати дію для цього жесту!</string>
   <string name="gestures_save_success">Жест збережений %s</string>
   <string name="gestures_cancel_action">Скасувати</string>
@@ -439,7 +438,6 @@
   <string name="gestures_flashlight">Ліхтарик</string>
   <string name="pref_lockscreen_disable_unlock_tab">Вимк. повзунок розбл.</string>
   <string name="pref_lockscreen_disable_unlock_tab_summary">Примітка: опція доступна лише коли увімкнене розблокування трекболом, кнопкою \u201CМеню\u201D, або жестом</string>
-  <string name="gestures_explain_create_screen">Виберіть потрібну дію та намалюйте жест на екрані.</string>
   <string name="gestures_already_present">УВАГА: аналогічний жест встановлено для іншої дії!</string>
   <string name="changelog_title">Перегляд журналу змін</string>
   <string name="changelog_dialog">Журнал змін</string>

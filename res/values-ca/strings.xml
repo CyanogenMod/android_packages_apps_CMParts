@@ -466,7 +466,6 @@
     <string name="gestures_button_add">Afegeix gest</string>
     <string name="gestures_button_discard">Descarta</string>
     <string name="gestures_button_done">Fet</string>
-    <string name="gestures_shortcut_picker_button_label">Tria una drecera o activitat per a aquest gest</string>
     <string name="gestures_error_missing_shortcut">Has de triar una acció per al gest!</string>
     <string name="gestures_save_success">Gest desat a %s</string>
     <string name="gestures_cancel_action">Cancel·la</string>
@@ -481,7 +480,6 @@
     <string name="gestures_flashlight">Llanterna</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desactiva el botó lliscant de desbloqueig</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: has d\'activar la bola de desplaçament, la tecla menú, o el desbloqueig per gestos per tenir aquesta opció disponible</string>
-    <string name="gestures_explain_create_screen">Tria una acció a fer (o selecciona Desbloqueja o So) i dibuixa un gest a la pantalla.</string>
     <string name="gestures_already_present">Alerta: s\'ha associat un gest similar a una altra acció!</string>
 
     <!-- Change Log strings -->

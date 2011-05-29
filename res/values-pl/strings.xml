@@ -408,7 +408,6 @@
     <string name="gestures_button_add">Dodaj gest</string>
     <string name="gestures_button_discard">Odrzuć</string>
     <string name="gestures_button_done">Zapisz</string>
-    <string name="gestures_shortcut_picker_button_label">Wybierz skrót lub działanie</string>
     <string name="gestures_error_missing_shortcut">Musisz wybrać akcję dla tego gestu!</string>
     <string name="gestures_save_success">Gest zapisany w %s</string>
     <string name="gestures_cancel_action">Anuluj</string>
@@ -423,7 +422,6 @@
     <string name="gestures_flashlight">Latarka</string>
     <string name="pref_lockscreen_disable_unlock_tab">Wyłącz suwak</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Uwaga: Musisz uaktywnić inny sposób odblokowania urządzenia by ta opcja była dostępna</string>
-    <string name="gestures_explain_create_screen">Wybierz akcję do wykonania i wykonaj gest.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Pokaż listę zmian</string>

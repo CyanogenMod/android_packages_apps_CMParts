@@ -452,7 +452,6 @@
     <string name="gestures_button_add">Adicionar gesto</string>
     <string name="gestures_button_discard">Cancelar</string>
     <string name="gestures_button_done">Concluído</string>
-    <string name="gestures_shortcut_picker_button_label">Escolher um atalho ou actividade para este gesto</string>
     <string name="gestures_error_missing_shortcut">Tem de escolher uma acção para este gesto!</string>
     <string name="gestures_save_success">Gesto guardado em %s</string>
     <string name="gestures_cancel_action">Cancelar</string>
@@ -467,7 +466,6 @@
     <string name="gestures_flashlight">Lanterna</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desactivar o deslize de desbloqueio</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Precisa de activar a trackball, tecla de menu, ou desbloqueio de gesto para activar esta opção</string>
-    <string name="gestures_explain_create_screen">Escolha uma acção a efectuar (ou seleccione Desbloquear ou Som) e desenhe um gesto no ecrã.</string>
     <string name="gestures_already_present">AVISO: Um gesto parecido já está associado a outra acção!</string>
 
     <!-- Change Log strings -->

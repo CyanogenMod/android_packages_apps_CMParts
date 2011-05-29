@@ -462,7 +462,6 @@
     <string name="gestures_button_add">Gesztus hozzáadása</string>
     <string name="gestures_button_discard">Elvetés</string>
     <string name="gestures_button_done">Rendben</string>
-    <string name="gestures_shortcut_picker_button_label">Válassz ki egy parancsikont csak tevékenységet ehhez a gesztushoz</string>
     <string name="gestures_error_missing_shortcut">Állíts be egy parancsot ehhez a gesztushoz!</string>
     <string name="gestures_save_success">Gesztus mentve: %s</string>
     <string name="gestures_cancel_action">Mégsem</string>
@@ -477,7 +476,6 @@
     <string name="gestures_flashlight">Jelzőfény</string>
     <string name="pref_lockscreen_disable_unlock_tab">Feloldó csúszka kikapcsolása</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Megjegyzés: Engedélyezned kell a trackball, a menü gomb vagy egy gesztusos feloldást, mielőtt ezt az opciót bekapcsolnád</string>
-    <string name="gestures_explain_create_screen">Válassz egy parancsot (vagy valaszd a Feloldást vagy a Hangerőt) és rajzolj egy gesztust a képernyőre.</string>
     <string name="gestures_already_present">Figyelmeztetés: Már létezik egy hasonló gesztus!</string>
 
     <!-- Change Log strings -->

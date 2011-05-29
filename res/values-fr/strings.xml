@@ -401,7 +401,6 @@
     <string name="gestures_button_add">Ajouter un geste</string>
     <string name="gestures_button_discard">Annuler</string>
     <string name="gestures_button_done">Terminé</string>
-    <string name="gestures_shortcut_picker_button_label">Que doit faire ce geste</string>
     <string name="gestures_error_missing_shortcut">Vous devez choisir une action pour ce geste !</string>
     <string name="gestures_save_success">Geste sauvé dans %s</string>
     <string name="gestures_cancel_action">Annuler</string>
@@ -416,7 +415,6 @@
     <string name="gestures_flashlight">Lampe de poche</string>
     <string name="pref_lockscreen_disable_unlock_tab">Masquer curseur déverr.</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: Vous devez activer le déverrouillage par trackball, touche menu ou par geste afin que cette option soit disponible</string>
-    <string name="gestures_explain_create_screen">Choisissez une action à effectuer (ou séléctionnez déverouillage ou son) et dessinez un geste sur l\'écran.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Voir liste des modifications</string>

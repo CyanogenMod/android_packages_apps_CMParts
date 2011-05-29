@@ -521,7 +521,6 @@
     <string name="gestures_button_add">ジェスチャーを追加</string>
     <string name="gestures_button_discard">破棄</string>
     <string name="gestures_button_done">完了</string>
-    <string name="gestures_shortcut_picker_button_label">このジェスチャーに割り当てるショートカットやアクティビティを選択</string>
     <string name="gestures_error_missing_shortcut">ジェスチャーにアクションを割り当てる必要があります！</string>
     <string name="gestures_save_success">%s にジェスチャーを保存しました</string>
     <string name="gestures_cancel_action">キャンセル</string>
@@ -536,7 +535,6 @@
     <string name="gestures_flashlight">フラッシュライト</string>
     <string name="pref_lockscreen_disable_unlock_tab">アンロックスライダーを無効にする</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">ノート: このオプションを有効にする前に、トラックボールやメニューキー、ジェスチャーでのアンロックを設定する必要があります。</string>
-    <string name="gestures_explain_create_screen">実行するアクション(あるいはアンロックやサウンド)を選択し、スクリーンにジェスチャーを描いてください。\n縦方向(上/下)に1回のみのジェスチャーは不正になります。</string>
     <string name="gestures_already_present">警告: 似たようなジェスチャーが別のアクションとして定義されています！</string>
 
     <!-- Change Log strings -->

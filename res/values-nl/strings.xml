@@ -523,7 +523,6 @@
     <string name="gestures_button_add">Voeg een gesture toe</string>
     <string name="gestures_button_discard">Annuleren</string>
     <string name="gestures_button_done">Klaar</string>
-    <string name="gestures_shortcut_picker_button_label">Kies een snelkoppeling of activiteit voor deze gesture</string>
     <string name="gestures_error_missing_shortcut">Er moet een actie voor deze gesture gekozen worden!</string>
     <string name="gestures_save_success">Gesture opgeslagen in %s</string>
     <string name="gestures_cancel_action">Annuleren</string>
@@ -538,7 +537,6 @@
     <string name="gestures_flashlight">Flashlight</string>
     <string name="pref_lockscreen_disable_unlock_tab">Zet unlock slider uit</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: Trackball, menu knop, of gesture unlocken moet geactiveerd zijn voordat deze optie toegankelijk is</string>
-    <string name="gestures_explain_create_screen">Kies een actie om uit te voeren (Of selecteer Unlock of Geluid) en teken een gesture op het scherm.</string>
     <string name="gestures_already_present">Waarschuwing: Een soortgelijke gesture is reeds toegewezen aan een andere actie!</string>
 
     <!-- Change Log strings -->

@@ -446,7 +446,6 @@
     <string name="gestures_button_add">Añadir gesto</string>
     <string name="gestures_button_discard">Descartar</string>
     <string name="gestures_button_done">Hecho</string>
-    <string name="gestures_shortcut_picker_button_label">Seleccione un enlace o actividad para este gesto</string>
     <string name="gestures_error_missing_shortcut">¡Debe seleccionar una acción para este gesto!</string>
     <string name="gestures_save_success">Gesto guardado en %s</string>
     <string name="gestures_cancel_action">Cancelar</string>
@@ -460,7 +459,6 @@
     <string name="gestures_toggle_sound">Invertir sonido</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desactivar deslizador de desbloqueo</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Es necesario acivar el desbloqueo por la bola de navegación, la tecla menú, or gestos pra activar esta opción</string>
-    <string name="gestures_explain_create_screen">Seleccione una acción a realizar (o seccione Desbloqueo o Sonido) y trace un gesto en la pantalla.\nLos gestos de linea simple vertical no son válidos.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Ver registro cambios</string>

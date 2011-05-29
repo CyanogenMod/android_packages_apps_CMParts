@@ -390,7 +390,6 @@
   <string name="gestures_button_add">הוסף מחווה</string>
   <string name="gestures_button_discard">בטל</string>
   <string name="gestures_button_done">בוצע</string>
-  <string name="gestures_shortcut_picker_button_label">בחר קיצור דרך או פעילות עבור מחווה זו</string>
   <string name="gestures_error_missing_shortcut">!עליך לבחור פעולה עבור המחווה הזו</string>
   <string name="gestures_save_success">תנועת מחווה נשמרה ב %s</string>
   <string name="gestures_cancel_action">ביטול</string>
@@ -405,7 +404,6 @@
   <string name="gestures_flashlight">Flashlight</string>
   <string name="pref_lockscreen_disable_unlock_tab">בטל שחרור נעילת סליידר</string>
   <string name="pref_lockscreen_disable_unlock_tab_summary">הערה: אתה צריך להפעיל את כדור הגלגלת, מקש התפריט, או תנועת מחווה לשחרור נעילה לפני שאופציה זו תהיה זמינה</string>
-  <string name="gestures_explain_create_screen">.בחר פעולה לביצוע (או תבחר בשחרור נעילה או צליל) וצייר תנועת מחווה על המסך</string>
 
     <!-- Change Log strings -->
   <string name="changelog_title">צפה ביומן השינויים</string>

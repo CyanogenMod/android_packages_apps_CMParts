@@ -478,7 +478,6 @@
     <string name="gestures_button_add">Lisää ele</string>
     <string name="gestures_button_discard">Hylkää</string>
     <string name="gestures_button_done">Valmis</string>
-    <string name="gestures_shortcut_picker_button_label">Valitse toiminto tai aktiviteetti tälle eleelle</string>
     <string name="gestures_error_missing_shortcut">Sinun täytyy valita toiminto tälle eleelle!</string>
     <string name="gestures_save_success">Ele tallennettu %s</string>
     <string name="gestures_cancel_action">Peruuta</string>
@@ -493,7 +492,6 @@
     <string name="gestures_flashlight">Lamppu</string>
     <string name="pref_lockscreen_disable_unlock_tab">Estä lukituksen avaava liukusäädin</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Huomautus: sinun täytyy asettaa trackball, menu tai eleellä avattava lukitus jotta tämä toiminto tulee saataville</string>
-    <string name="gestures_explain_create_screen">Valitse suoritettava toiminto (tai valitse lukituksen avaaminen tai äänet) ja piirrä ele ruudulle.</string>
     <string name="gestures_already_present">Varoitus: samankaltainen ele on yhdistettu toiseen toimintoon!</string>
 
     <!-- Change Log strings -->

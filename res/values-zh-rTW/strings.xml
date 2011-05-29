@@ -525,7 +525,6 @@
     <string name="gestures_button_add">新增手勢</string>
     <string name="gestures_button_discard">捨棄</string>
     <string name="gestures_button_done">完成</string>
-    <string name="gestures_shortcut_picker_button_label">為這個手勢選取一個捷徑或動作</string>
     <string name="gestures_error_missing_shortcut">您必須為這個手勢選取一個動作！</string>
     <string name="gestures_save_success">已儲存手勢在 %s</string>
     <string name="gestures_cancel_action">取消</string>
@@ -540,7 +539,6 @@
     <string name="gestures_flashlight">手電筒開關</string>
     <string name="pref_lockscreen_disable_unlock_tab">隱藏解鎖道具</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">注意：要使用這個選項您必須先啟用軌跡球、Menu 鍵、或手勢解鎖。</string>
-    <string name="gestures_explain_create_screen">挑選要進行的動作（或選擇解鎖或聲音）並在螢幕上畫一個手勢。</string>
     <string name="gestures_already_present">警告：一個相似的手勢經已關聯到另一個動作！</string>
 
     <!-- Change Log strings -->

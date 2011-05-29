@@ -437,7 +437,6 @@
     <string name="gestures_button_add">Adicionar gesto</string>
     <string name="gestures_button_discard">Cancelar</string>
     <string name="gestures_button_done">Fim</string>
-    <string name="gestures_shortcut_picker_button_label">Escolha um atalho ou atividade para esse gesto</string>
     <string name="gestures_error_missing_shortcut">Você precisa escolher uma ação para esse gesto!</string>
     <string name="gestures_save_success">Gesto gravado como %s</string>
     <string name="gestures_cancel_action">Cancelar</string>
@@ -451,7 +450,6 @@
     <string name="gestures_toggle_sound">Alternar som</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desativar trava deslizante</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Você precisa ligar o trackball, tecla de menu ou gesto de destravar para que essa opção fique disponível</string>
-    <string name="gestures_explain_create_screen">Escolha uma ação para ser feita (ou selecione Desbloquear ou Som) e desenhe o gesto na tela.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Visualizar o changelog</string>
@@ -592,8 +590,6 @@
     <string name="ui_status_bar_am_pm_summary">Mostrar AM/PM ao lado do relógio</string>
     <string name="pref_in_call_style_title">Estilo de ligação recebida</string>
     <string name="pref_in_call_style_summary">Escolher o estilo do widget de aceitar/rejeitar ligações recebidas</string>
-    <string name="permissions_settings_title_head">Permissiões</string>
-    <string name="permissions_settings_title_subhead">Gerenciar confirações de permissões</string>
     <string name="pref_volume_wake_title">Acordar com botão volume</string>
     <string name="pref_volume_wake_summary">Acorda o dispositivo ao apertar o botão de aumentar/abaixar volume. É indicado para dispositivos com botão de ligar difícil de apertar.</string>
     <string name="perm_enable_management">Habilitar gerenciamento</string>
