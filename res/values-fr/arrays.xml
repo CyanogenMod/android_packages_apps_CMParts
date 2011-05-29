@@ -22,6 +22,12 @@
         <item>Externe</item>
     </string-array>
 
+    <string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Petit</item>
+        <item>Aucun (par défaut)</item>
+    </string-array>
+
     <string-array name="entries_render_effect">
         <item>Pas d\'effet de rendu</item>
         <item>Mode nuit (rouge)</item>
@@ -33,6 +39,19 @@
         <item>Calibré (N1)</item>
         <item>Calibré (N1) Rouge</item>
         <item>Calibré (N1) Froid</item>
+    </string-array>
+
+    <string-array name="values_render_effect" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
     </string-array>
 
     <string-array name="render_entries">
@@ -110,9 +129,51 @@
         <item>2500 lux</item>
     </string-array>
 
+    <string-array name="entries_light_levels_dim">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20 (par défaut)</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="entries_sound_attenuation">
+        <item>0 dB</item>
+        <item>4 dB</item>
+        <item>6 dB (par défaut)</item>
+        <item>8 dB</item>
+        <item>10 dB</item>
+    </string-array>
     <string-array name="entries_sound_limitvol">
         <item>Réglage atténué du système</item>
         <item>Volume de la musique (par défaut)</item>
+    </string-array>
+
+
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>  
+        <item>2G/3G Seul.</item>   
+        <item>2G/3G Seul./3G+2G</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget">
+        <item>Son+Vibreur/Vibreur</item>
+        <item>Son/Vibreur</item>
+        <item>Son/Silenc.</item>
+        <item>Son+Vib/Vib/Silenc.</item>
+        <item>Son/Vibreur/Silenc.</item>
+        <item>Son+Vibreur/Son/Vibreur/Silenc.</item>
     </string-array>
 
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
@@ -131,12 +192,24 @@
     </string-array>
 
     <string-array name="pref_lockscreen_style_entries">
-        <item>Curseurs</item>
+        <item>Boutons coullisants</item>
         <item>Rotatif</item>
-        <item>Rotary revamped</item>
+        <item>Rotatif remanié</item>
         <item>Lense</item>
     </string-array>
 
+    <string-array name="pref_in_call_style_entries">
+        <item>Boutons coullisants</item>
+        <item>Rotatif</item>
+        <item>Rotatif remanié</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>Désactivé</item>
+        <item>Oreillette filaire</item>
+        <item>Oreillette Bluetooth A2DP</item>
+        <item>Les deux</item>
+    </string-array>
     <string-array name="pref_overscroll_effect_entries">
         <item>Aucun</item>
         <item>Lueur</item>
@@ -150,5 +223,30 @@
         <item>Moyen</item>
         <item>Léger</item>
         <item>Très léger</item>
+    </string-array>
+
+    <string-array name="entries_vol_actions">
+        <item>Aucun/Par défaut</item>
+        <item>Accueil</item>
+        <item>Menu</item>
+        <item>Retour</item>
+        <item>Recherche</item>
+        <item>Power</item>
+        <item>Appel</item>
+        <item>Fin d\'appel</item>
+        <item>Lecture/Pause</item>
+        <item>Piste suivante</item>
+        <item>Piste précédente</item>
+        <item>Appui long sur Accueil</item>
+    </string-array>
+
+    <string-array name="entries_unhide_button">
+        <item>Accueil</item>
+        <item>Menu</item>
+        <item>Retour</item>
+        <item>Recherche</item>
+        <item>Appareil photo</item>
+        <item>Augmenter le volume</item>
+        <item>Réduire le volume</item>
     </string-array>
 </resources>
