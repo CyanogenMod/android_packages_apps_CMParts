@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Generic -->
     <string name="app_name">CyanogenMod設定</string>
 
@@ -90,12 +91,16 @@
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">ステータスバー</string>
+    <string name="ui_status_bar_am_pm_title">AM/PMスタイル</string>
+    <string name="ui_status_bar_am_pm_summary">AM/PMの表示スタイル</string>
     <string name="ui_status_bar_clock_title">時計を表示</string>
     <string name="ui_status_bar_clock_summary">無効にするとステータスバーの時計を隠します</string>
     <string name="ui_status_bar_cm_battery_title">バッテリー残量数値</string>
     <string name="ui_status_bar_cm_battery_summary">バッテリー残量をパーセンテージと小さなアイコンで表示する。テーマが壊れて見えるようであれば無効にしてください。</string>
     <string name="ui_status_bar_compact_carrier_title">コンパクトなキャリアラベル</string>
     <string name="ui_status_bar_compact_carrier_summary">小さなキャリアラベルを用いた代替のドロップダウンレイアウトを使用する</string>
+    <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
+    <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED通知</string>
@@ -201,7 +206,8 @@
     <string name="lockscreen_widgets_note_title">ノート</string>
     <string name="lockscreen_widgets_note_summary">最小のレンズスタイルを選択すると、音楽コントロール以外のウィジェットは表示されません。しかし、他のスタイルとの切り替えを容易にするために以下のオプション設定は残ります。</string>
 
-
+    <string name="pref_volume_wake_title">ボリュームキーで復帰</string>
+    <string name="pref_volume_wake_summary">ボリュームアップ/ダウンキーで端末を復帰する。電源ボタンを押しにくい端末用</string>
     <string name="pref_trackball_wake_title">トラックボールで復帰</string>
     <string name="pref_trackball_wake_summary">トラックボールを押して端末をスリープから復帰する</string>
     <string name="pref_trackball_unlock_title">トラックボールでアンロック</string>
@@ -224,6 +230,8 @@
     <string name="lockscreen_style_header">スタイル設定</string>
     <string name="lockscreen_delay_header">遅延とタイムアウト</string>
     <string name="pref_lockscreen_style_title">ロックスクリーンスタイル</string>
+    <string name="pref_in_call_style_title">呼び出しスタイル</string>
+    <string name="pref_in_call_style_summary">電話の呼び出し時に表示される応答/拒否のウィジェットスタイルを選択する</string>
     <string name="pref_lockscreen_style_summary">ロックスクリーンのスタイルを選択する</string>
     <string name="pref_volbtn_music_controls_title">音量ボタンによるミュージックコントロール</string>
     <string name="pref_volbtn_music_controls_summary">スクリーンオフの時、音量ボタンを長押しすることで曲のシークを行う</string>
@@ -361,6 +369,8 @@
     <string name="summary_expanded_widget">通知領域を伸ばしたときに電源ウィジェットを表示する</string>
     <string name="title_expanded_hide_onchange">変更したら隠す</string>
     <string name="summary_expanded_hide_onchange">トグルウィジェットボタンを押したら伸ばした通知領域を隠す</string>
+    <string name="title_expanded_hide_indicator">インジケータを隠す</string>
+    <string name="summary_expanded_hide_indicator">通知ウィジェットインジケータを隠す</string>
     <string name="title_expanded_hide_scrollbar">スクロールバーを隠す</string>
     <string name="summary_expanded_hide_scrollbar">配置できる最大数より多くボタンを配置したときにスクロールバーを表示しない</string>
     <string name="expanded_color_mask">インジケータの色</string>
@@ -532,10 +542,15 @@
     <string name="gestures_error_loading">ジェスチャーファイルの操作に問題が発生しました</string>
     <string name="gestures_unlock_only">アンロック</string>
     <string name="gestures_toggle_sound">サウンドトグル</string>
+    <string name="gestures_shortcut_or_activity">ショートカットやアクティビティ</string>
     <string name="gestures_flashlight">フラッシュライト</string>
     <string name="pref_lockscreen_disable_unlock_tab">アンロックスライダーを無効にする</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">ノート: このオプションを有効にする前に、トラックボールやメニューキー、ジェスチャーでのアンロックを設定する必要があります。</string>
+    <string name="gestures_action_label">アクション:</string>
+    <string name="gestures_draw_label">ジェスチャー:</string>
+    <string name="gestures_draw_for_label">\"<xliff:g id="action">%s</xliff:g>\"のジェスチャー:</string>
     <string name="gestures_already_present">警告: 似たようなジェスチャーが別のアクションとして定義されています！</string>
+    <string name="gestures_run_in_background">バックグラウンドで起動</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">更新履歴を見る</string>
@@ -603,4 +618,11 @@
     <string name="cpu_min_freq_summary">最小CPUクロック周波数\n現在: %s</string>
     <string name="cpu_max_freq_title">最大CPUクロック</string>
     <string name="cpu_max_freq_summary">最大CPUクロック周波数\n現在: %s</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">権限管理</string>
+    <string name="perm_enable_management_summary">アプリケーションの権限管理を有効にする</string>
+    <string name="perm_enable_warning_message">警告!\n権限を取り消すと、ほとんどの場合アプリケーションが不調になる原因になります。権限を取り消したアプリケーションが強制終了した場合、必要な権限を与えるかアプリケーションの使用をやめてください。\nCyanogenmodにはバグリポートを送らないでください。権限を取消したアプリケーションは期待通りには動きません!</string>
+    <string name="perm_enable_warning_title">了解しましたか?</string>
+
 </resources>
