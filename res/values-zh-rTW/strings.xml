@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod 設定</string>
 
@@ -383,8 +384,10 @@
     <string name="summary_expanded_widget">使用擴充檢視中的電源小工具</string>
     <string name="title_expanded_hide_onchange">變更後隱藏</string>
     <string name="summary_expanded_hide_onchange">使用小工具按鈕進行切換後隱藏通知選單</string>
+    <string name="title_expanded_hide_indicator">隱藏指示器</string>
+    <string name="summary_expanded_hide_indicator">不顯示小工具按鈕下方的指示器</string>
     <string name="title_expanded_hide_scrollbar">隱藏捲軸</string>
-    <string name="summary_expanded_hide_scrollbar">當選用的小工具按鈕數目超過上限值時隱藏捲軸</string>
+    <string name="summary_expanded_hide_scrollbar">即使選用的小工具按鈕數目超過上限值亦都不要顯示捲軸</string>
     <string name="expanded_color_mask">表示色彩</string>
     <string name="title_widget_picker">小工具按鈕</string>
     <string name="summary_widget_picker">挑選您的小工具按鈕</string>
@@ -536,10 +539,15 @@
     <string name="gestures_error_loading">載入手勢時發生問題。</string>
     <string name="gestures_unlock_only">解除鎖定</string>
     <string name="gestures_toggle_sound">音效切換</string>
+    <string name="gestures_shortcut_or_activity">捷徑或動作</string>
     <string name="gestures_flashlight">手電筒開關</string>
     <string name="pref_lockscreen_disable_unlock_tab">隱藏解鎖道具</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">注意：要使用這個選項您必須先啟用軌跡球、Menu 鍵、或手勢解鎖。</string>
+    <string name="gestures_action_label">動作：</string>
+    <string name="gestures_draw_label">手勢：</string>
+    <string name="gestures_draw_for_label">“<xliff:g id="action">%s</xliff:g>”的手勢：</string>
     <string name="gestures_already_present">警告：一個相似的手勢經已關聯到另一個動作！</string>
+    <string name="gestures_run_in_background">在背境運行</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">檢視更新日誌</string>

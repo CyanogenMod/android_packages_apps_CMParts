@@ -23,6 +23,8 @@
         <item>15</item>
     </string-array>
 
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_heapsize -->
+
     <string-array name="entries_install_location">
         <item>自動</item>
         <item>內存空間</item>
@@ -276,6 +278,8 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_gestures_sensitivity_values -->
 
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_gesture_action_entries -->
+
     <string-array name="pref_lockscreen_style_entries">
         <item>滑桿</item>
         <item>撥輪</item>
@@ -323,19 +327,11 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=phone_goggles_confirmation_values -->
 
-    <string-array name="phone_goggles_confirmation_entries" translatable="true">
-        <item>@string/phone_goggles_confirmation_none</item>
-        <item>@string/phone_goggles_confirmation_prompt</item>
-        <item>@string/phone_goggles_confirmation_maths</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=phone_goggles_confirmation_entries -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=phone_goggles_maths_level_values -->
 
-    <string-array name="phone_goggles_maths_level_entries" translatable="true">
-        <item>@string/phone_goggles_maths_level_easy</item>
-        <item>@string/phone_goggles_maths_level_medium</item>
-        <item>@string/phone_goggles_maths_level_hard</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=phone_goggles_maths_level_entries -->
 
     <string-array name="entries_vol_actions">
         <item>無／預設</item>
