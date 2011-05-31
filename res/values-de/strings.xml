@@ -179,59 +179,6 @@
     <string name="trackball_color_notice_title">HINWEIS:</string>
     <string name="trackball_color_notice_summary">Auf manchen Geräten sind nicht alle Farben von der LED darstellbar.</string>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNUNG: Kann Batterieentladung beschleunigen</string>
     <string name="notification_battery_warning">Diese Option hat sich als negativ für die Batterieladung erwiesen um ca.3% pro Stunde. Bei schnellerer Batterieentladung beim Pulsieren des Trackballs ist dies der Grund dafür. Diese Option nicht verwenden, wenn das schnellere Entladen vermieden werden soll.</string>
@@ -311,27 +258,6 @@
     <string name="pref_input_custom_search_app_activity_title">App festlegen</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Suchen-Taste gedrückt halten</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim Gedrückt halten der Suchen-Taste</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Titel für letzte Apps zeigen</string>
@@ -595,18 +521,6 @@
 
     <string name="cmstats_title">Anonyme Statistiken</string>
     <string name="cmstats_summary">Helfe CyanogenMod zu verbessern durch das anonyme Berichten von Statistiken über dein Gerät</string>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <string name="user_defined_key1">Schnelltaste 1</string>
     <string name="user_defined_key2">Schnelltaste 2</string>
