@@ -98,6 +98,8 @@
     <string name="ui_status_bar_cm_battery_summary">顯示電池百分比和幼細的電池圖示。如佈景主題使這個不美觀，請停用這選項</string>
     <string name="ui_status_bar_compact_carrier_title">縮小電信業者名稱</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，將電信業者名稱縮小顯示</string>
+    <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>
+    <string name="ui_status_bar_toggle_brightness_summary">允許在通知列上滑動來調整亮度</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 通知</string>

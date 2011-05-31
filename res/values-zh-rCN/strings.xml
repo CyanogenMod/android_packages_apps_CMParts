@@ -550,4 +550,11 @@
     <string name="cpu_max_freq_summary">最大 CPU 频率\n当前：%s</string>
     <string name="cpu_set_on_boot">启动时设置</string>
     <string name="cpu_set_on_boot_summary">在启动时恢复 CPU 设置</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">权限管理</string>
+    <string name="perm_enable_management_summary">开启应用到权限管理功能</string>
+    <string name="perm_enable_warning_message">警告!\n撤销大多数权限将有可能导致应用程序出现故障。如果具有撤销权限强制关闭应用程序，请给予预期的权限或不使用该应用程序。请不要发送错误报告给Cyanogenmod如果具有撤销权限的应用程序不按预期工作！</string>
+    <string name="perm_enable_warning_title">请确认?</string>
+
 </resources>

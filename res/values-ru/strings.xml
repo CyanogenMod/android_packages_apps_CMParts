@@ -95,9 +95,11 @@
     <string name="ui_status_bar_clock_title">Показывать часы</string>
     <string name="ui_status_bar_clock_summary">Часы в строке состояния будут скрыты, если отключено</string>
     <string name="ui_status_bar_cm_battery_title">Батарея в процентах</string>
-    <string name="ui_status_bar_cm_battery_summary">Показыеать батарею в процентах и мини-индикатор. Отключите, если это портит вид установленной темы</string>
+    <string name="ui_status_bar_cm_battery_summary">Показывать батарею в процентах и мини-индикатор. Отключите, если это портит вид установленной темы</string>
     <string name="ui_status_bar_compact_carrier_title">Компактное имя оператора</string>
     <string name="ui_status_bar_compact_carrier_summary">Использовать альтернативный стиль панели уведомления с маленьким именем оператора</string>
+    <string name="ui_status_bar_toggle_brightness">Управление яркостью в строке состояния</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Позволяет изменять яркость проводя по строке состояния</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Уведомления светодиодом трекбола</string>

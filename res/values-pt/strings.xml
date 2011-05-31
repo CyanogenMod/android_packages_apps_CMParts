@@ -602,4 +602,6 @@
     <string name="perm_enable_warning_message">Aviso!\nA maioria das permissões ao serem revogadas, provavelmente será a causa de problemas nas aplicações. Se uma aplicação com permissões revogadas for forçada a fechar, por favor, conceda as permissões experadas ou não use a aplicação.\Por favor, NÃO mande relatórios de erros ao CyanogenMod se uma aplicação com permissões revogadas não está funcionando como esperado!</string>
     <string name="system_settings_title_subhead">Configurações de Sistema</string>
     <string name="system_settings_summary_head">Log de modificações, statísticas e notificações de atualização de sistema</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permite ajustar o brilho ao deslizar através da barra de status.</string>
+    <string name="ui_status_bar_toggle_brightness">Controle de brilho na barra de status</string>
 </resources>
