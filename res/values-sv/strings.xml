@@ -90,12 +90,16 @@
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Anpassningar för statusraden</string>
+    <string name="ui_status_bar_am_pm_title">AM/PM stil</string>
+    <string name="ui_status_bar_am_pm_summary">Visning stil AM / PM bredvid klockan</string>
     <string name="ui_status_bar_clock_title">Visa klockan</string>
     <string name="ui_status_bar_clock_summary">Klockan i statusraden kommer att vara gömd om detta inaktiveras</string>
     <string name="ui_status_bar_cm_battery_title">Batteriprocent</string>
     <string name="ui_status_bar_cm_battery_summary">Visa batteriprocent samt mini-ikon för batteriet. Inaktivera om temat får detta att se trasigt ut</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakt leverantörs etikett</string>
     <string name="ui_status_bar_compact_carrier_summary">Använd alternativ notifiering,nedrullningsbar layout med mini leverantörs etikett</string>
+    <string name="ui_status_bar_toggle_brightness">StatusBar ljuskontroll</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Tillåter justering av ljusstyrka genom att skjuta över statusbar.</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED-aviseringar</string>
@@ -218,6 +222,8 @@
     <string name="lockscreen_delay_header">Fördröjning och tidsgräns</string>
     <string name="pref_lockscreen_style_title">Låsskärmsstil</string>
     <string name="pref_lockscreen_style_summary">Välj stil på låsskärmen</string>
+    <string name="pref_in_call_style_title">Inkommande samtal stil</string>
+    <string name="pref_in_call_style_summary">Välj utseende på inkommande samtal acceptera / avvisa widget</string>
     <string name="pref_volbtn_music_controls_title">Musikkontroller med volymknapparna</string>
     <string name="pref_volbtn_music_controls_summary">Gå till föregående/nästa låt med långa tryck på volymknapparna när skärmen är avstängd</string>
     <string name="pref_cambtn_music_controls_title">Musikkontroller med kameraknappen</string>
