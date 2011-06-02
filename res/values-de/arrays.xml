@@ -22,6 +22,12 @@
     <item>Extern</item>
   </string-array>
 
+  <string-array name="entries_status_bar_am_pm">
+    <item>Normal</item>
+    <item>Klein</item>
+    <item>Nichts (Standard)</item>
+  </string-array>
+
   <string-array name="entries_render_effect">
     <item>Kein Render-Effekt</item>
     <item>Nachtmodus (rot)</item>
@@ -188,11 +194,12 @@
   </string-array>
 
   <string-array name="entries_ring_widget">
-    <item>Töne+Vibration/ Vibration</item>
+    <item>Töne+Vibration/Vibration</item>
     <item>Töne/Vibration</item>
     <item>Töne/Lautlos</item>
-    <item>Töne+Vibration/ Vibration/Lautlos</item>
-    <item>Töne/Vibration/ Lautlos</item>
+    <item>Töne+Vibration/Vibration/Lautlos</item>
+    <item>Töne/Vibration/Lautlos</item>
+    <item>Töne+Vibration/Töne/Vibration/Lautlos</item>
   </string-array>
 
   <string-array name="entries_flash_widget">
@@ -215,11 +222,24 @@
     <item>12 (genau)</item>
   </string-array>
 
+  <string-array name="pref_lockscreen_gesture_action_entries">
+    <item>Entsperren</item>
+    <item>Klingelmodus</item>
+    <item>Anwendung oder Aktion</item>
+    <item>Taschenlampe</item>
+  </string-array>
+
   <string-array name="pref_lockscreen_style_entries">
     <item>Tabs zum Schieben</item>
     <item>Rotierende Tabs</item>
     <item>Rotierend umgestaltet</item>
     <item>Lense</item>
+  </string-array>
+
+  <string-array name="pref_in_call_style_entries">
+    <item>Tabs zum Schieben</item>
+    <item>Rotierende Tabs</item>
+    <item>Rotierend umgestaltet</item>
   </string-array>
 
   <string-array name="pref_lockscreen_music_headset_entries">
