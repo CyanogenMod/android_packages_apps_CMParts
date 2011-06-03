@@ -559,6 +559,10 @@
     <string name="gestures_flashlight">Taschenlampe</string>
     <string name="pref_lockscreen_disable_unlock_tab">Entsperr-Slider verbergen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Hinweis: Es muss Trackball-, MENÜ- oder Gesten-Entsperren aktiviert sein bevor diese Option möglich ist</string>
+    <string name="gestures_action_label">Aktion:</string>
+    <string name="gestures_draw_label">Geste:</string>
+    <string name="gestures_draw_for_label">Geste für \"%s\":</string>
+    <string name="gestures_run_in_background">Im Hintergrund ausführen</string>
     <string name="gestures_already_present">Warnung: Diese Geste ist bereits mit einer anderen Aktion verknüpft!</string>
 
     <!-- Change Log strings -->
