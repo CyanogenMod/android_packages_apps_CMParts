@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod</string>
 
@@ -96,7 +96,7 @@
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Statuszeile</string>
-    <string name="ui_status_bar_am_pm_title">vorm./nachm. Anzeige</string>
+    <string name="ui_status_bar_am_pm_title">Tageszeit Anzeige</string>
     <string name="ui_status_bar_am_pm_summary">Anzeigestil von vorm./nachm. neben der Uhrzeit</string>
     <string name="ui_status_bar_clock_title">Zeige Uhr</string>
     <string name="ui_status_bar_clock_summary">Die Uhrzeit wird nicht angezeigt, wenn deaktiviert</string>
@@ -556,14 +556,15 @@
     <string name="gestures_error_loading">Problem mit Gesten-Datei Vorgang.</string>
     <string name="gestures_unlock_only">Entsperren</string>
     <string name="gestures_toggle_sound">Klingelmodus</string>
+    <string name="gestures_shortcut_or_activity">Verknüpfung oder Anwendung</string>
     <string name="gestures_flashlight">Taschenlampe</string>
     <string name="pref_lockscreen_disable_unlock_tab">Entsperr-Slider verbergen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Hinweis: Es muss Trackball-, MENÜ- oder Gesten-Entsperren aktiviert sein bevor diese Option möglich ist</string>
     <string name="gestures_action_label">Aktion:</string>
     <string name="gestures_draw_label">Geste:</string>
-    <string name="gestures_draw_for_label">Geste für \"%s\":</string>
+    <string name="gestures_draw_for_label">Geste für \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_already_present">Warnung: Ähnliche Geste ist bereits mit einer anderen Aktion verknüpft!</string>
     <string name="gestures_run_in_background">Im Hintergrund ausführen</string>
-    <string name="gestures_already_present">Warnung: Diese Geste ist bereits mit einer anderen Aktion verknüpft!</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Changelog ansehen</string>
