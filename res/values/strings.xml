@@ -563,8 +563,8 @@
     <string name="pref_lockscreen_disable_unlock_tab">Disable unlock slider</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: You need to enable trackball, menu key, or gesture unlocking before this option becomes available</string>
     <string name="gestures_action_label">Action:</string>
-        <string name="gestures_draw_label">Gesture:</string>
-        <string name="gestures_draw_for_label">Gesture for \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_draw_label">Gesture:</string>
+    <string name="gestures_draw_for_label">Gesture for \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Warning: A similar gesture is associated to another action!</string>
     <string name="gestures_run_in_background">Run in background</string>
 

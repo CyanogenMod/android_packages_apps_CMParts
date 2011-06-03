@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Налаштування CyanogenMod</string>
   <string name="application_settings_title_head">Програми</string>
   <string name="application_settings_title_subhead">Налаштування програм</string>
@@ -78,6 +79,8 @@
   <string name="ui_status_bar_cm_battery_summary">Відсоток заряду та мінііконка батареї відображатиметься в рядкові стану. Вимкніть, якщо псує вигляд</string>
   <string name="ui_status_bar_compact_carrier_title">Компактна назва оператора</string>
   <string name="ui_status_bar_compact_carrier_summary">Використання альтернативного компонування панелі з компактною назвою оператора. Пасує віджету панелі сповіщень (потрібне перезавантаження).</string>
+  <string name="ui_status_bar_toggle_brightness">Керування яскравістю рядком стану</string>
+  <string name="ui_status_bar_toggle_brightness_summary">Керування яскравістю екрана протягуванням у здовж рядка стану.</string>
   <string name="trackball_title">Світлові сповіщення</string>
   <string name="trackball_summary">Управління кольором та миготінням трекболу чи світлодіода</string>
   <string name="ui_webview_title">Веб-перегляд</string>
@@ -293,8 +296,10 @@
   <string name="summary_expanded_widget">Використання віджета панелі сповіщень</string>
   <string name="title_expanded_hide_onchange">Прих. панелі сповіщень</string>
   <string name="summary_expanded_hide_onchange">Приховування панелі сповіщень після натискання кнопки віджету</string>
+  <string name="title_expanded_hide_indicator">Приховування індикатора</string>
+  <string name="summary_expanded_hide_indicator">Приховування індикаторів кнопок віджета панелі сповіщень</string>
   <string name="title_expanded_hide_scrollbar">Приховування прокрутки</string>
-  <string name="summary_expanded_hide_scrollbar">Приховування прокрутки панелі сповіщень якщо кількість кнопок перевищує максимальну.</string>
+  <string name="summary_expanded_hide_scrollbar">Приховування прокрутки якщо кількість кнопок віджета панелі сповіщень перевищує максимальну.</string>
   <string name="expanded_color_mask">Колір індикатора</string>
   <string name="title_widget_picker">Кнопки віджета</string>
   <string name="summary_widget_picker">Визначення кнопок, які будуть використовуватися</string>
@@ -438,7 +443,11 @@
   <string name="gestures_flashlight">Ліхтарик</string>
   <string name="pref_lockscreen_disable_unlock_tab">Вимк. повзунок розбл.</string>
   <string name="pref_lockscreen_disable_unlock_tab_summary">Примітка: опція доступна лише коли увімкнене розблокування трекболом, кнопкою \u201CМеню\u201D, або жестом</string>
+  <string name="gestures_action_label">Дія:</string>
+  <string name="gestures_draw_label">Жест:</string>
+  <string name="gestures_draw_for_label">Жест \"<xliff:g id="action">%s</xliff:g>\":</string>
   <string name="gestures_already_present">УВАГА: аналогічний жест встановлено для іншої дії!</string>
+  <string name="gestures_run_in_background">У фоновому режимі</string>
   <string name="changelog_title">Перегляд журналу змін</string>
   <string name="changelog_dialog">Журнал змін</string>
   <string name="changelog_loading">Завантаження журналу змін\u2026</string>

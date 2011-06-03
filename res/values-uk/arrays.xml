@@ -21,8 +21,8 @@
         <item>Зовнішня пам\u2019ять</item>
     </string-array>
     <string-array name="entries_status_bar_am_pm">
-        <item>Великими літерами</item>
-        <item>Малими літерами</item>
+        <item>Великий</item>
+        <item>Маленький</item>
         <item>Немає (типове знач.)</item>
     </string-array>
     <string-array name="entries_render_effect">
@@ -201,6 +201,12 @@
         <item>10</item>
         <item>11</item>
         <item>12 (висока)</item>
+    </string-array>
+    <string-array name="pref_lockscreen_gesture_action_entries">
+        <item>Розблокувати телефон</item>
+        <item>Увімк./вимк. звук</item>
+        <item>Ярлик або дія</item>
+        <item>Ліхтарик</item>
     </string-array>
     <string-array name="pref_lockscreen_style_entries">
         <item>Повзунки</item>
