@@ -40,6 +40,50 @@
     <string name="pref_electron_beam_animation_on">Animación al encender pantalla</string>
     <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
 
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Ajustes para tablets</string>
+    <string name="tablet_tweaks_summary_head">Ajustes más utilizados para tablets. También válidos para teléfonos</string>
+    <string name="tablet_tweaks_sb_bottom_title">Barra de estado inferior</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Mostrar la barra de estado en la parte inferior. Útil para tablets que utilicen botones táctiles en la barra de estado</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zona muerta</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Añadir una zona muerta a la mitad de la barra de estado de media pantalla de tamaño</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Botones táctiles a la izquierda</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Situar los botones táctiles a la izquierda de la barra de estado</string>
+    <string name="tablet_tweaks_soft_button_list_title">Elegir botones táctiles</string>
+    <string name="tablet_tweaks_interface_head">Interfaz</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Deshabilitar bloqueo</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Activado, no mostrará la pantalla de bloqueo ni al arrancar ni al activarse</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Deshabilitar pantalla completa</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Impide que las aplicaciones se muestren a pantalla completa. La barra de estado será siempre visible mientras no se oculte mediante su opción</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Botón visible</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Elegir botón visible</string>
+    <string name="tablet_tweaks_extend_pm_title">Menú extendido de apagado</string>
+    <string name="tablet_tweaks_extend_pm_summary">Añade acciones de home/volver/menú al menú de apagado</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Elegir botones del menú apagado</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Invertir comportamiento del volumen</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Botones de volumen normales. Presionar para cambiar el volumen, pulsación larga para acciones del usuario</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Botones de volumen normales. Presionar para acciones del usuario, pulsación larga para cambiar el volumen</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">Reasignar botones de volumen</string>
+    <string name="tablet_tweaks_long_volp_action_title">Pulsación larga subir volumen</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Asignar la acción home/atrás/menú/etc a la pulsación larga de subir volumen. Unicamente con la pantalla encendida</string>
+    <string name="tablet_tweaks_long_volm_action_title">Pulsación larga bajar volumen</string>
+    <string name="tablet_tweaks_vol_both_action_title">Ambos botones de volumen</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Nota: Algunos dispositivos realizan un hard-reset cuando ambos botones de volumen y encendido son pulsados</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Long press both volume buttons</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">Botones del menú apagado</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">Botones táctiles</string>
+    <string name="tablet_soft_buttons_home_title">Home</string>
+    <string name="tablet_soft_buttons_menu_title">Menú</string>
+    <string name="tablet_soft_buttons_back_title">Volver</string>
+    <string name="tablet_soft_buttons_search_title">Buscar</string>
+    <string name="tablet_soft_buttons_quick_na_title">Notificaciones</string>
+
     <!-- User interface : 180 degree rotation -->
     <string name="pref_rotate_180_title">Girar 180 grados</string>
     <string name="pref_rotate_180_summary">Permitir rotación adicional de 180 grados cuando se activa auto-rotación</string>
@@ -145,6 +189,8 @@
     <string name="pref_trackball_wake_summary">Pulsar la bola de navegación activa el dispositivo</string>
     <string name="pref_trackball_unlock_title">Desbloqueo con bola de navegación</string>
     <string name="pref_trackball_unlock_summary">Pulsar la bola de navegación desbloquea el dispositivo</string>
+    <string name="pref_volume_wake_title">Activación con volumen</string>
+    <string name="pref_volume_wake_summary">Pulsar los botones del volumen activan el dispositivo. Útil para dispositivos con difícil acceso al botón power</string>
     <string name="pref_menu_unlock_title">Desbloqueo con menú</string>
     <string name="pref_menu_unlock_summary">Pulsar el boton menú desbloquea el dispositivo</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Desbloqueo rápido</string>
@@ -169,7 +215,9 @@
     <string name="lockscreen_style_header">Preferencias de estilo</string>
     <string name="lockscreen_delay_header">Retardo y tiempo de espera</string>
     <string name="pref_lockscreen_style_title">Estilo de bloqueo de pantalla</string>
-    <string name="pref_lockscreen_style_summary">Escoja el estilo de pantalla de bloqueo</string>
+    <string name="pref_lockscreen_style_summary">Escoje el estilo de pantalla de bloqueo</string>
+    <string name="pref_in_call_style_title">Estilo de llamada entrante</string>
+    <string name="pref_in_call_style_summary">Escoge el estilo de pantalla cuando se recibe una llamada</string>
     <string name="pref_volbtn_music_controls_title">Controles de música</string>
     <string name="pref_volbtn_music_controls_summary">Cuando la pantalla está apagada, buscar pistas de música al pulsar los botones de volumen durante un largo periodo</string>
     <string name="pref_cambtn_music_controls_title">Control de música con botón de la cámara</string>
@@ -216,6 +264,10 @@
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Activar difuminado de superficies</string>
     <string name="pref_use_dithering_summary">El difuminado de superficies mejora la calidad de imagen con coste de rendimiento (requiere reiniciar)</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Permitir limpieza de activos</string>
+    <string name="pref_purgeable_assets_summary">El sistema puede liberar más memoria RAM si se pueden liberar trozos pequeños de la memoria (requiere reinicio)</string>
 
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Tamaño de pila de MV </string>
@@ -313,9 +365,18 @@
     <string name="title_widget_buttons">Widget Control de energía expandido</string>
     <string name="title_expanded_widget">Widget de notificación de energía</string>
     <string name="summary_expanded_widget">Usar el widget control de energía expandido</string>
+    <string name="title_expanded_hide_onchange">Ocultar al cambiar</string>
+    <string name="summary_expanded_hide_onchange">Oculta el panel de notificaciones al cambiar el estado del botón</string>
+    <string name="title_expanded_hide_indicator">Ocultar indicador</string>
+    <string name="summary_expanded_hide_indicator">Oculta los indicadores de los botones</string>
+    <string name="title_expanded_hide_scrollbar">Ocultar barra desplazamiento</string>
+    <string name="summary_expanded_hide_scrollbar">Oculta la barra de desplazamiento cuando no se pueden mostrar todos los  botones en pantalla</string>
     <string name="expanded_color_mask">Color del indicador</string>
     <string name="title_widget_picker">Botones del widget</string>
     <string name="summary_widget_picker">Elegir los botones del widget</string>
+    <string name="title_widget_order">Orden de los botones</string>
+    <string name="summary_widget_order">Organiza los botones del widget</string>
+    <string name="title_buttons">Botones</string>
     <string name="title_toggle_wifi">Interruptor Wifi</string>
     <string name="title_toggle_bluetooth">Interruptor Bluetooth</string>
     <string name="title_toggle_gps">Interruptor GPS</string>
@@ -446,13 +507,13 @@
     <string name="gestures_button_add">Añadir gesto</string>
     <string name="gestures_button_discard">Descartar</string>
     <string name="gestures_button_done">Hecho</string>
-    <string name="gestures_error_missing_shortcut">¡Debe seleccionar una acción para este gesto!</string>
+    <string name="gestures_error_missing_shortcut">¡Debes seleccionar una acción para este gesto!</string>
     <string name="gestures_save_success">Gesto guardado en %s</string>
     <string name="gestures_cancel_action">Cancelar</string>
     <string name="gestures_loading">Cargando gestos...</string>
     <string name="gestures_empty">Sin gestos</string>
     <string name="gestures_activity">Gestos</string>
-    <string name="gestures_delete">Eleminar</string>
+    <string name="gestures_delete">Eliminar</string>
     <string name="gestures_delete_success">Gesto eliminado</string>
     <string name="gestures_error_loading">Problema en operación con archivo de gestos.</string>
     <string name="gestures_unlock_only">Desbloquear</string>
@@ -489,7 +550,7 @@
     <string name="title_phone_goggles_mobile_filtered">Móvil</string>
     <string name="title_phone_goggles_other_filtered">Otro</string>
     <string name="summary_phone_goggles">Filtrar comunicaciones salientes</string>
-    <string name="summary_phone_goggles_default">Pon los paráemtros por defecto</string>
+    <string name="summary_phone_goggles_default">Pon los parámetros por defecto</string>
     <string name="summary_phone_goggles_filter">Selecionar el tipo de números a filtrar</string>
     <string name="summary_phone_goggles_start">Cuando iniciar el filtrado de llamadas salientes</string>
     <string name="summary_phone_goggles_end">Cuando iniciar el filtrado de llamadas salientes</string>
@@ -522,4 +583,11 @@
     <string name="cpu_governors_summary">Lista de gobernadores disponibles\nSeleccionado ahora: %S</string>
     <string name="cpu_set_on_boot">Activar al arranque</string>
     <string name="cpu_set_on_boot_summary">Restaura Ajustes CPU al arrancar</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Gestión de permisos</string>
+    <string name="perm_enable_management_summary">Habilitar la gestión de los permisos</string>
+    <string name="perm_enable_warning_message">¡Aviso!\nAnular determinados permisos pueden ocasionar un mal funcionamiento de la aplicación. Si la aplicación con permisos anulados produce un cierre forzado, puedes optar por habilitarlos o no usar la aplicación.\nPor favor NO envíes un informe a Cyanogenmod de los errores producidos por este motivo</string>
+    <string name="perm_enable_warning_title">¿Estás seguro?</string>
+
 </resources>
