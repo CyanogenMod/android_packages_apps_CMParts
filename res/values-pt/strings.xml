@@ -600,4 +600,12 @@
     <string name="system_settings_summary_head">Log de modificações, statísticas e notificações de atualização de sistema</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permite ajustar o brilho ao deslizar através da barra de status.</string>
     <string name="ui_status_bar_toggle_brightness">Controle de brilho na barra de status</string>
+    <string name="ui_status_bar_toggle_info">Brilho automático está habilitado</string>
+    <string name="title_expanded_hide_indicator">Esconder indicador</string>
+    <string name="summary_expanded_hide_indicator">Esconde o indicador de notificação de widgets</string>
+    <string name="gestures_shortcut_or_activity">Atalho ou atividade</string>
+    <string name="gestures_action_label">Ação:</string>
+    <string name="gestures_draw_label">Gesto:</string>
+    <string name="gestures_draw_for_label">Gesto para \"%s\":</string>
+    <string name="gestures_run_in_background">Executar em segundo plano</string>
 </resources>
