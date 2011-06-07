@@ -101,6 +101,7 @@
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，將電信業者名稱縮小顯示</string>
     <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>
     <string name="ui_status_bar_toggle_brightness_summary">允許在通知列上滑動來調整亮度</string>
+    <string name="ui_status_bar_toggle_info">自動亮度已啟用</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 通知</string>
