@@ -202,12 +202,6 @@
         <item>11</item>
         <item>12 (висока)</item>
     </string-array>
-    <string-array name="pref_lockscreen_gesture_action_entries">
-        <item>Розблокувати телефон</item>
-        <item>Увімк./вимк. звук</item>
-        <item>Ярлик або дія</item>
-        <item>Ліхтарик</item>
-    </string-array>
     <string-array name="pref_lockscreen_style_entries">
         <item>Повзунки</item>
         <item>Коліщатко</item>

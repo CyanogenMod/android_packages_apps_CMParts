@@ -80,7 +80,8 @@
   <string name="ui_status_bar_compact_carrier_title">Компактна назва оператора</string>
   <string name="ui_status_bar_compact_carrier_summary">Використання альтернативного компонування панелі з компактною назвою оператора. Пасує віджету панелі сповіщень (потрібне перезавантаження).</string>
   <string name="ui_status_bar_toggle_brightness">Керування яскравістю рядком стану</string>
-  <string name="ui_status_bar_toggle_brightness_summary">Керування яскравістю екрана протягуванням у здовж рядка стану.</string>
+  <string name="ui_status_bar_toggle_brightness_summary">Керування яскравістю екрана протягуванням уздовж рядка стану.</string>
+  <string name="ui_status_bar_toggle_info">Автоматичну яскравість увімкнено</string>
   <string name="trackball_title">Світлові сповіщення</string>
   <string name="trackball_summary">Управління кольором та миготінням трекболу чи світлодіода</string>
   <string name="ui_webview_title">Веб-перегляд</string>
@@ -440,6 +441,7 @@
   <string name="gestures_error_loading">Помилка під час операції з файлом жестів.</string>
   <string name="gestures_unlock_only">Розбл. тел.</string>
   <string name="gestures_toggle_sound">Звук</string>
+  <string name="gestures_shortcut_or_activity">Ярлик або дія</string>
   <string name="gestures_flashlight">Ліхтарик</string>
   <string name="pref_lockscreen_disable_unlock_tab">Вимк. повзунок розбл.</string>
   <string name="pref_lockscreen_disable_unlock_tab_summary">Примітка: опція доступна лише коли увімкнене розблокування трекболом, кнопкою \u201CМеню\u201D, або жестом</string>
