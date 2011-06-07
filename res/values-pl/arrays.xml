@@ -23,12 +23,6 @@
         <item>Karta pamięci</item>
     </string-array>
 
-    <string-array name="entries_status_bar_am_pm">
-        <item>Normalny</item>
-        <item>Mały</item>
-        <item>Brak (Domyślnie)</item>
-    </string-array>
-
     <string-array name="entries_render_effect">
         <item>Bez efektu</item>
         <item>Tryb nocny (czerwony)</item>
@@ -139,36 +133,9 @@
         <item>10 dB</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Ciemny/40%/100%</item>
-        <item>Auto/Ciemny/25%/50%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Ciemny/100%</item>
-    </string-array>
-
-    <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>  
-        <item>2G/Tylko 3G</item>   
-        <item>2G/Tylko 3G/3G+2G</item>
-    </string-array>
-
     <string-array name="entries_sound_limitvol">
         <item>Obniżona wartość systemowa</item>
         <item>Głośność muzyki (domyślnie)</item>
-    </string-array>
-
-    <string-array name="entries_ring_widget">
-        <item>Dźwięk+Wibracje/Wibracje</item>
-        <item>Dźwięk/Wibracje</item>
-        <item>Dźwięk/Cichy</item>
-        <item>Dźwięk+Wib/Wib/Cichy</item>
-        <item>Dźwięk/Wibracje/Cichy</item>
-        <item>Dźwięl+Wib/Dźwięk/Wib/Cichy</item>
-    </string-array>
-
-    <string-array name="entries_flash_widget">
-        <item>Normalna</item>
-        <item>Wysoka</item>
     </string-array>
 
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
@@ -189,21 +156,8 @@
     <string-array name="pref_lockscreen_style_entries">
         <item>Suwak</item>
         <item>Obrotowy</item>
-        <item>Odświeżony obrotowy</item>
-        <item>Soczewka</item>
-    </string-array>
-
-    <string-array name="pref_in_call_style_entries">
-        <item>Suwak</item>
-        <item>Obrotowy</item>
-        <item>Odświeżony obrotowy</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_music_headset_entries">
-        <item>Wyłączone</item>
-        <item>Zestaw przewodowy</item>
-        <item>Zestaw Bluetooth A2DP</item>
-        <item>Oba</item>
+        <item>Rotary revamped</item>
+        <item>Lense</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">
@@ -221,28 +175,4 @@
         <item>Bardzo lekki</item>
     </string-array>
 
-    <string-array name="entries_vol_actions">
-        <item>Brak (Domyślnie)</item>
-        <item>Home</item>
-        <item>Menu</item>
-        <item>Wstecz</item>
-        <item>Szukaj</item>
-        <item>Zasilanie</item>
-        <item>Zadzwoń</item>
-        <item>Zakończ połączenie</item>
-        <item>Odtwórz/Pauza</item>
-        <item>Następny utwór</item>
-        <item>Poprzedni utwór</item>
-        <item>Przytrzymanie home</item>
-    </string-array>
-
-    <string-array name="entries_unhide_button">
-        <item>Home</item>
-        <item>Menu</item>
-        <item>Wstecz</item>
-        <item>Szukaj</item>
-        <item>Aparat</item>
-        <item>Zwiększ głośność</item>
-        <item>Zmniejsz głośność</item>
-    </string-array>
 </resources>
