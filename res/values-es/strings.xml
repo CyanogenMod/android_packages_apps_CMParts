@@ -39,6 +39,49 @@
 
     <string name="pref_electron_beam_animation_on">Animación al encender pantalla</string>
     <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Ajustes para tablets</string>
+    <string name="tablet_tweaks_summary_head">Ajustes más utilizados para tablets. También válidos para teléfonos</string>
+    <string name="tablet_tweaks_sb_bottom_title">Barra de estado inferior</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Mostrar la barra de estado en la parte inferior. Útil para tablets que utilicen botones táctiles en la barra de estado</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zona muerta</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Añadir una zona muerta a la mitad de la barra de estado de media pantalla de tamaño</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Botones táctiles a la izquierda</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Situar los botones táctiles a la izquierda de la barra de estado</string>
+    <string name="tablet_tweaks_soft_button_list_title">Elegir botones táctiles</string>
+    <string name="tablet_tweaks_interface_head">Interfaz</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Deshabilitar bloqueo</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Activado, no mostrará la pantalla de bloqueo ni al arrancar ni al activarse</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Deshabilitar pantalla completa</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Impide que las aplicaciones se muestren a pantalla completa. La barra de estado será siempre visible mientras no se oculte mediante su opción</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Botón visible</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Elegir botón visible</string>
+    <string name="tablet_tweaks_extend_pm_title">Menú extendido de apagado</string>
+    <string name="tablet_tweaks_extend_pm_summary">Añade acciones de home/volver/menú al menú de apagado</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Elegir botones del menú apagado</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Invertir comportamiento del volumen</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Botones de volumen normales. Presionar para cambiar el volumen, pulsación larga para acciones del usuario</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Botones de volumen normales. Presionar para acciones del usuario, pulsación larga para cambiar el volumen</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">Reasignar botones de volumen</string>
+    <string name="tablet_tweaks_long_volp_action_title">Pulsación larga subir volumen</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Asignar la acción home/atrás/menú/etc a la pulsación larga de subir volumen. Unicamente con la pantalla encendida</string>
+    <string name="tablet_tweaks_long_volm_action_title">Pulsación larga bajar volumen</string>
+    <string name="tablet_tweaks_vol_both_action_title">Ambos botones de volumen</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Nota: Algunos dispositivos realizan un hard-reset cuando ambos botones de volumen y encendido son pulsados</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Long press both volume buttons</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">Botones del menú apagado</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">Botones táctiles</string>
+    <string name="tablet_soft_buttons_home_title">Home</string>
+    <string name="tablet_soft_buttons_menu_title">Menú</string>
+    <string name="tablet_soft_buttons_back_title">Volver</string>
+    <string name="tablet_soft_buttons_search_title">Buscar</string>
+    <string name="tablet_soft_buttons_quick_na_title">Notificaciones</string>
 
     <!-- User interface : 180 degree rotation -->
     <string name="pref_rotate_180_title">Girar 180 grados</string>
@@ -50,7 +93,10 @@
     <string name="ui_status_bar_clock_summary">Se esconde si se deshabilita</string>
     <string name="ui_status_bar_cm_battery_title">Porcentaje de batería</string>
     <string name="ui_status_bar_cm_battery_summary">Mostrar el porcentaje de batería y un icono pequeño. Deshabilitar si no aparece bien el tema</string>
-
+    <string name="ui_status_bar_compact_carrier_title">Nombre del operador compacto</string>
+    <string name="ui_status_bar_compact_carrier_summary">Usar una barra pequeña para mostrar el nombre del operador de red</string>
+    <string name="ui_status_bar_toggle_brightness">Ajuste de brillo en barra de estado</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permite ajustar el brillo de la pantalla deslizando el dedo sobre la barra de estado</string>
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notificaciones LED</string>
     <string name="trackball_summary">Colores y frecuencia de Bola de navegación/LED en notificaciones</string>
@@ -245,11 +291,11 @@
     <string name="summary_on_haptic_feedback">Usar comunicación háptica al pulsar teclas virtuales y ciertas interacciones del IU</string>
     <string name="summary_off_haptic_feedback">Sin comunicación háptica al pulsar teclas virtuales y ciertas interacciones del IU</string>
 
-    <string name="title_haptic_feedback_up">comunicación háptica al soltar</string>
+    <string name="title_haptic_feedback_up">Comunicación háptica al soltar</string>
     <string name="summary_on_haptic_feedback_up">Usar comunicación háptica al soltar teclas virtuales y ciertas interacciones del IU</string>
     <string name="summary_off_haptic_feedback_up">Sin comunicación háptica al soltar teclas virtuales y ciertas interacciones del IU</string>
 
-    <string name="title_haptic_feedback_all">Haptic screen items</string>
+    <string name="title_haptic_feedback_all">Comunicación háptica en pantalla</string>
     <string name="summary_on_haptic_feedback_all">Usar comunicación háptica al hacer selecciones en pantalla</string>
     <string name="summary_off_haptic_feedback_all">Sin comunicación háptica al hacer selecciones en pantalla</string>
 
@@ -397,6 +443,8 @@
     <string name="sound_summary">Ajustes de foco de sonido y audio</string>
     <string name="sound_notifications_focus_title">Enfocar notificaciones</string>
     <string name="sound_notifications_focus_summary">Se solicita a las aplicaciones compatibles que bajen su volumen para reproducir las notificaiones.</string>
+    <string name="sound_volume_control_silent_title">Opción silenciar</string>
+    <string name="sound_volume_control_silent_summary">Añade una opción de silenciar al botón bajar volumen</string>
     <string name="sound_to_speaker_title">Reproducir siempre en el altavoz</string>
     <string name="sound_notifications_title">Notificaciones</string>
     <string name="sound_rings_title">Tonos de llamada</string>
@@ -522,4 +570,10 @@
     <string name="cpu_governors_summary">Lista de gobernadores disponibles\nSeleccionado ahora: %S</string>
     <string name="cpu_set_on_boot">Activar al arranque</string>
     <string name="cpu_set_on_boot_summary">Restaura Ajustes CPU al arrancar</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Gestión de permisos</string>
+    <string name="perm_enable_management_summary">Habilitar la gestión de los permisos</string>
+    <string name="perm_enable_warning_message">¡Aviso!\nAnular determinados permisos puede ocasionar un mal funcionamiento de la aplicación.\nSi la aplicación con permisos anulados produce un cierre forzado, puedes optar por habilitarlos o no usar la aplicación.\nPor favor NO envíes un informe a Cyanogenmod de los errores producidos por este motivo.</string>
+    <string name="perm_enable_warning_title">¿Estás seguro?</string>
 </resources>
