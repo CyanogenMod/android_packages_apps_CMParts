@@ -41,8 +41,6 @@
   <string name="pref_electron_beam_animation_off">אנימציה בכיבוי מסך</string>
 
     <!-- User interface : 180 degree rotation -->
-  <string name="pref_rotate_180_title">סיבוב 180 מעלות</string>
-  <string name="pref_rotate_180_summary">אפשר סיבוב נוסף של 180 מעלות כאשר סיבוב אוטומטי פעיל</string>
 
     <!-- User interface : LED Notifications -->
   <string name="trackball_title">נורית התראות</string>

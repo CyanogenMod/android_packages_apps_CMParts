@@ -68,8 +68,6 @@
   <string name="tablet_soft_buttons_back_title">Назад</string>
   <string name="tablet_soft_buttons_search_title">Пошук</string>
   <string name="tablet_soft_buttons_quick_na_title">Швидкі сповіщення</string>
-  <string name="pref_rotate_180_title">Обернення на 180\u00B0</string>
-  <string name="pref_rotate_180_summary">Дозволяє обернення на 180 градусів за увімкненого автообернення екрана</string>
   <string name="ui_status_bar_title">Рядок стану</string>
   <string name="ui_status_bar_am_pm_title">Індекси AM/PM</string>
   <string name="ui_status_bar_am_pm_summary">Відображення індексів AM/PM позаду годинника</string>

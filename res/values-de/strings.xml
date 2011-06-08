@@ -85,8 +85,6 @@
     <string name="tablet_soft_buttons_quick_na_title">Schnelle Benachrichtigungen</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Um 180 Grad drehen</string>
-    <string name="pref_rotate_180_summary">Zusätzlich Drehung um 180 Grad erlauben, wenn Autorotation eingeschaltet ist</string>
 
     <string name="pref_omap_dss_mode_title">DSI kernel Bug Workaround</string>
     <string name="pref_omap_dss_mode_summary">Setzt den OMAP DSS update mode auf automatisch. Erzeugt leichtes Tearing des Displays, verhindert aber ein einfrieren des Displays und gelegentliche kernel panics.</string>

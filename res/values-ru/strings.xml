@@ -85,8 +85,6 @@
     <string name="tablet_soft_buttons_quick_na_title">Быстрое уведомление</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Поворот на 180 градусов</string>
-    <string name="pref_rotate_180_summary">Дополнительное вращение на 180 градусов при включенном автоповороте экрана</string>
 
    <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Настройки строки состояния</string>

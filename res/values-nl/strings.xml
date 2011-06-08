@@ -85,8 +85,6 @@
     <string name="tablet_soft_buttons_quick_na_title">Snelle notificaties</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Draai 180 graden</string>
-    <string name="pref_rotate_180_summary">Sta meer dan 180 graden draaien toe wanneer de automatische oriëntatie functie is ingeschakeld</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Statusbalk tweaks</string>

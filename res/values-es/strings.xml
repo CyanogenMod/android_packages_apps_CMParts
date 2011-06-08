@@ -41,8 +41,6 @@
     <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Girar 180 grados</string>
-    <string name="pref_rotate_180_summary">Permitir rotación adicional de 180 grados cuando se activa auto-rotación</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustes de la barra de estado</string>

@@ -45,13 +45,17 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     private PreferenceScreen mBacklightScreen;
 
     /* Other */
-    private static final String ROTATE_180_PREF = "pref_rotate_180";
+    private static final String ROTATION_90_PREF = "pref_rotation_90";
+    private static final String ROTATION_180_PREF = "pref_rotation_180";
+    private static final String ROTATION_270_PREF = "pref_rotation_270";
 
     private CheckBoxPreference mElectronBeamAnimationOn;
 
     private CheckBoxPreference mElectronBeamAnimationOff;
 
-    private CheckBoxPreference mRotate180Pref;
+    private CheckBoxPreference mRotation90Pref;
+    private CheckBoxPreference mRotation180Pref;
+    private CheckBoxPreference mRotation270Pref;
 
     private CheckBoxPreference mOMAPDSSmodePref;
 
@@ -106,10 +110,15 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
             prefSet.removePreference(mElectronBeamAnimationOff);
         }
 
-        /* Rotate 180 */
-        mRotate180Pref = (CheckBoxPreference) prefSet.findPreference(ROTATE_180_PREF);
-        mRotate180Pref.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATE_180, 0) == 1);
+        /* Rotation */
+        mRotation90Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_90_PREF);
+        mRotation180Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_180_PREF);
+        mRotation270Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_270_PREF);
+        int mode = Settings.System.getInt(getContentResolver(),
+                        Settings.System.ACCELEROMETER_ROTATION_MODE, 5);
+        mRotation90Pref.setChecked((mode & 1) != 0);
+        mRotation180Pref.setChecked((mode & 2) != 0);
+        mRotation270Pref.setChecked((mode & 4) != 0);
 
         /* Milestone specific kernel bug workaround (temporary) */
         mOMAPDSSmodePref = (CheckBoxPreference) prefSet.findPreference(OMAP_DSS_MODE_PREF);
@@ -120,7 +129,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         mNaOnPlugPref = (CheckBoxPreference) prefSet.findPreference(NA_ON_PLUG_PREF);
         String naOnPlug = SystemProperties.get(NA_ON_PLUG_PERSIST_PROP, NA_ON_PLUG_DEFAULT);
         mNaOnPlugPref.setChecked("1".equals(naOnPlug));
-
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -142,10 +150,15 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
                     Settings.System.ELECTRON_BEAM_ANIMATION_OFF, value ? 1 : 0);
         }
 
-        if (preference == mRotate180Pref) {
-            value = mRotate180Pref.isChecked();
+        if (preference == mRotation90Pref ||
+            preference == mRotation180Pref ||
+            preference == mRotation270Pref) {
+            int mode = 0;
+            if (mRotation90Pref.isChecked()) mode |= 1;
+            if (mRotation180Pref.isChecked()) mode |= 2;
+            if (mRotation270Pref.isChecked()) mode |= 4;
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.ACCELEROMETER_ROTATE_180, value ? 1 : 0);
+                     Settings.System.ACCELEROMETER_ROTATION_MODE, mode);
         }
 
         if (preference == mOMAPDSSmodePref) {

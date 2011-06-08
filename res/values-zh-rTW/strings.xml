@@ -86,8 +86,6 @@
     <string name="tablet_soft_buttons_quick_na_title">快速通知</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">180 度旋轉</string>
-    <string name="pref_rotate_180_summary">在自動旋轉螢幕啟用時允許額外的 180 度旋轉</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">通知列調整</string>

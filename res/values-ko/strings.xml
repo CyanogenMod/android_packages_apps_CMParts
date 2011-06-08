@@ -399,8 +399,6 @@
     <string name="changelog_unknown">알 수 없음</string>
     <string name="changelog_version">버전</string>
 
-    <string name="pref_rotate_180_title">180도 회전</string>
-    <string name="pref_rotate_180_summary">화면 자동 회전이 활성화 되었을 때 180도 회전을 하도록 허용합니다.</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">초과 스크롤</string>

@@ -13,11 +13,6 @@
                 android:targetClass="com.cyanogenmod.cmparts.activities.BacklightActivity" />
         </PreferenceScreen>
 
-        <!-- 180 degree rotation toggle -->
-        <CheckBoxPreference android:key="pref_rotate_180"
-            android:title="@string/pref_rotate_180_title"
-            android:summary="@string/pref_rotate_180_summary" />
-
         <!-- Electron beam animations -->
         <CheckBoxPreference android:key="electron_beam_animation_on"
             android:title="@string/pref_electron_beam_animation_on" />
@@ -34,6 +29,16 @@
             android:title="@string/pref_na_on_plug_title"
             android:summary="@string/pref_na_on_plug_summary" />
 
+    </PreferenceCategory>
+
+    <!-- Rotation -->
+    <PreferenceCategory android:title="@string/rotation_category_title">
+        <CheckBoxPreference android:key="pref_rotation_90"
+            android:title="@string/pref_rotation_90_title" />
+        <CheckBoxPreference android:key="pref_rotation_180"
+            android:title="@string/pref_rotation_180_title" />
+        <CheckBoxPreference android:key="pref_rotation_270"
+            android:title="@string/pref_rotation_270_title" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -41,8 +41,6 @@
     <string name="pref_electron_beam_animation_off">Animació d\'apagat de pantalla</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotació 180 graus</string>
-    <string name="pref_rotate_180_summary">Permet una rotació afegida de 180 graus quan la rotació automàtica està activada</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustaments de la barra d\'estat</string>

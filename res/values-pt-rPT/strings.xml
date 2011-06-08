@@ -40,8 +40,6 @@
     <string name="pref_electron_beam_animation_off">Animação ao desligar o ecrã</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotação de 180 graus</string>
-    <string name="pref_rotate_180_summary">Permite rotação extra de 180 graus quando a rotação automática está activa</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustar barra notificações</string>

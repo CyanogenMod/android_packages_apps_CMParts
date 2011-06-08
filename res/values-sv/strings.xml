@@ -84,9 +84,11 @@
     <string name="tablet_soft_buttons_search_title">Sök</string>
     <string name="tablet_soft_buttons_quick_na_title">Snabb notifieringar</string>
 
-    <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotera 180 grader</string>
-    <string name="pref_rotate_180_summary">Tillåter ytterligare 180 graders rotation när auto-rotation av skärmen är aktiverad</string>
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Accelerometer rotation</string>
+    <string name="pref_rotation_90_title">90 grader</string>
+    <string name="pref_rotation_180_title">180 grader</string>
+    <string name="pref_rotation_270_title">270 grader</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Anpassningar för statusraden</string>

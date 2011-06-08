@@ -41,8 +41,6 @@
     <string name="pref_electron_beam_animation_off">屏幕关闭动画</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">旋转 180 度</string>
-    <string name="pref_rotate_180_summary">当自动转屏激活时允许 180 度旋转</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">状态栏调整</string>

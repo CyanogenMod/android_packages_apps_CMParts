@@ -85,9 +85,11 @@
     <string name="tablet_soft_buttons_search_title">Search</string>
     <string name="tablet_soft_buttons_quick_na_title">Quick notifications</string>
 
-    <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotate 180 degrees</string>
-    <string name="pref_rotate_180_summary">Allows additional 180 degree rotation when auto-rotate screen is activated</string>
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Accelerometer rotation</string>
+    <string name="pref_rotation_90_title">90 degrees</string>
+    <string name="pref_rotation_180_title">180 degrees</string>
+    <string name="pref_rotation_270_title">270 degrees</string>
 
     <string name="pref_omap_dss_mode_title">DSI kernel bug workaround</string>
     <string name="pref_omap_dss_mode_summary">Sets OMAP DSS update mode to automatic. Causes slight display tearing but prevents display freezes and occasional kernel panic.</string>

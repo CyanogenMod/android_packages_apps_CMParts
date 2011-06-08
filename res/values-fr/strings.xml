@@ -41,8 +41,6 @@
     <string name="pref_electron_beam_animation_off">Animation extinction écran</string>
 
     <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Rotation à 180°</string>
-    <string name="pref_rotate_180_summary">Autoriser la rotation de l\'écran à 180° lorsque la rotation automatique est activée</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifications par LED</string>
