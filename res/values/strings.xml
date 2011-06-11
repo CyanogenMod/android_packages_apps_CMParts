@@ -109,8 +109,8 @@
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
     <string name="ui_status_bar_force_plmn_display">Force PLMN display</string>
     <string name="ui_status_bar_force_plmn_display_summary">This forces displaying PLMN for SPDI networks, regardless of SIM card setting. (Requires re-registering to the network)</string>
-    <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
-    <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
+    <string name="ui_status_bar_toggle_brightness">StatusBar brightness control</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar.</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
 
     <!-- User interface : LED Notifications -->
