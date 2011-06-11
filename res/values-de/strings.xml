@@ -133,10 +133,10 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Bildschirmsperre anpassen</string>
     <string name="pref_lockscreen_delay_title">Verzögerung</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Timeout für Bildschirmsperre</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Timeout für Abschaltung des Bildschirms</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Verzögerung bis zum Einsetzen der Bildschirmsperre anpassen</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Verzögerung bis zum Ausschalten des Bildschirms anpassen</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Bei Bildschirm-Timeout</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Bei Abschalten des Bildschirms</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Timeout des Displays</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Ausschalten des Displays</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Farbe wählen</string>
@@ -197,8 +197,8 @@
     <string name="pref_lockscreen_unlock_summary">Entsperren durch Tasten und schnelles Entsperren anpassen</string>
     <string name="pref_lockscreen_gesture_title">Lockscreen-Gesten</string>
     <string name="pref_lockscreen_gesture_summary">Gesten auf dem Lockscreen aktivieren und anpassen</string>
-    <string name="pref_lockscreen_timeout_title">Display-Timeout und Sperre</string>
-    <string name="pref_lockscreen_timeout_summary">Verzögerung vor automatischer Bildschirmabschaltung und Sperre anpassen</string>
+    <string name="pref_lockscreen_timeout_title">Lockscreen-Timeouts</string>
+    <string name="pref_lockscreen_timeout_summary">Verzögerungen des Lockscreens anpassen</string>
 
     <!-- Input Settings -->
     <string name="lockscreen_settings_title">Bildschirmsperre-Einstellungen</string>
