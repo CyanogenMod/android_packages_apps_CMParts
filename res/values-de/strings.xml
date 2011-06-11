@@ -84,7 +84,11 @@
     <string name="tablet_soft_buttons_search_title">Suche</string>
     <string name="tablet_soft_buttons_quick_na_title">Schnelle Benachrichtigungen</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Beschleunigungssensor Drehung</string>
+    <string name="pref_rotation_90_title">90 Grad</string>
+    <string name="pref_rotation_180_title">180 Grad</string>
+    <string name="pref_rotation_270_title">270 Grad</string>
 
     <string name="pref_omap_dss_mode_title">DSI kernel Bug Workaround</string>
     <string name="pref_omap_dss_mode_summary">Setzt den OMAP DSS update mode auf automatisch. Erzeugt leichtes Tearing des Displays, verhindert aber ein einfrieren des Displays und gelegentliche kernel panics.</string>
