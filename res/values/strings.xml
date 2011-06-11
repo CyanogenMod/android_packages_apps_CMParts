@@ -170,7 +170,7 @@
     <string name="pref_trackball_order_summary">Pulses the LED color in order</string>
     <string name="pref_trackball_reset_title">Reset</string>
     <string name="pref_trackball_reset_summary">Reset all colors and apps</string>
-    <string name="dialog_trackball_loading">Loading...</string>
+    <string name="dialog_trackball_loading">Loading\u2026</string>
     <string name="dialog_trackball_packagelist">Loading package list</string>
     <string name="trackball_category_dialog_text">Please enter a new category</string>
     <string name="trackball_category_list_title">Category</string>
@@ -207,7 +207,7 @@
     <string name="pref_lockscreen_always_battery_title">Always display battery status</string>
     <string name="pref_lockscreen_always_battery_summary">Display battery status on the lockscreen at all times</string>
     <string name="pref_lockscreen_music_controls_title">Lockscreen music controls</string>
-    <string name="pref_lockscreen_music_controls_summary">Displays music controls on the lockscreen</string>
+    <string name="pref_lockscreen_music_controls_summary">Display music controls on the lockscreen</string>
     <string name="pref_lockscreen_now_playing_title">Display song name</string>
     <string name="pref_lockscreen_now_playing_summary">Display the name and artist of the song currently playing</string>
     <string name="pref_lockscreen_album_art_title">Display album art</string>
@@ -463,7 +463,7 @@
     <string name="light_levels_enabled_title">Use custom</string>
     <string name="light_levels_dim_title">Screen dim level</string>
     <string name="light_levels_dim_summary">Brightness used to dim the screen</string>
-    <string name="light_levels_editor_title">Edit other levels...</string>
+    <string name="light_levels_editor_title">Edit other levels\u2026</string>
     <string name="light_decrease_enabled_title">Allow light decrease</string>
     <string name="light_decrease_enabled_summary">Enable to allow lights to decrease. Use hysteresis to reduce flicker</string>
     <string name="light_decrease_hysteresis_title">Decrease hysteresis</string>
@@ -495,7 +495,7 @@
     <string name="sound_volume_control_silent_title">Silent state</string>
     <string name="sound_volume_control_silent_summary">Add a state for complete silence to volume control</string>
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
-    <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during while in a call</string>
+    <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
     <string name="sound_to_speaker_title">Always play on speaker</string>
     <string name="sound_notifications_title">Notifications</string>
@@ -504,7 +504,7 @@
     <string name="sound_note_title">Note</string>
     <string name="sound_note_summary">The settings below apply only when headphones are used.</string>
     <string name="sound_attenuation_title">Attenuation of set volume</string>
-    <string name="sound_limitvol_title">Volume if music playing</string>
+    <string name="sound_limitvol_title">Volume if music is playing</string>
     <string name="sound_notifications_attenuation_dialog">Notification attenuation</string>
     <string name="sound_rings_attenuation_dialog">Ring tone attenuation</string>
     <string name="sound_alarms_attenuation_dialog">Alarm attenuation</string>
@@ -554,7 +554,7 @@
     <string name="gestures_error_missing_shortcut">You must pick an action for this gesture!</string>
     <string name="gestures_save_success">Gesture saved in %s</string>
     <string name="gestures_cancel_action">Cancel</string>
-    <string name="gestures_loading">Loading gestures...</string>
+    <string name="gestures_loading">Loading gestures\u2026</string>
     <string name="gestures_empty">No gestures</string>
     <string name="gestures_activity">Gestures</string>
     <string name="gestures_delete">Delete</string>
@@ -575,8 +575,8 @@
     <!-- Change Log strings -->
     <string name="changelog_title">View changelog</string>
     <string name="changelog_dialog">Changelog</string>
-    <string name="changelog_loading">Loading changelog...</string>
-    <string name="changelog_error">Error loading changelog...</string>
+    <string name="changelog_loading">Loading changelog\u2026</string>
+    <string name="changelog_error">Error loading changelog\u2026</string>
     <string name="changelog_unknown">Unknown</string>
     <string name="changelog_version">Version</string>
 
