@@ -33,6 +33,8 @@
 
     <!-- Rotation -->
     <PreferenceCategory android:title="@string/rotation_category_title">
+        <CheckBoxPreference android:key="pref_rotation_0"
+            android:title="@string/pref_rotation_0_title" />
         <CheckBoxPreference android:key="pref_rotation_90"
             android:title="@string/pref_rotation_90_title" />
         <CheckBoxPreference android:key="pref_rotation_180"
