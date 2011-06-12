@@ -23,6 +23,12 @@
         <item>Extern</item>
     </string-array>
 
+    <string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Liten</item>
+        <item>Ingen (Standard)</item>
+    </string-array>
+
     <string-array name="entries_render_effect">
         <item>Ingen renderingseffekt</item>
         <item>Nattläge (röd)</item>
@@ -214,15 +220,29 @@
         <item>Extra Lätt</item>
     </string-array>
 
-    <string-array name="phone_goggles_confirmation_entries" translatable="true">
-        <item>@string/phone_goggles_confirmation_none</item>
-        <item>@string/phone_goggles_confirmation_prompt</item>
-        <item>@string/phone_goggles_confirmation_maths</item>
+    <string-array name="entries_vol_actions">
+        <item>Ingen/Standard</item>
+        <item>Hem</item>
+        <item>Meny</item>
+        <item>Tillbaka</item>
+        <item>Sök</item>
+        <item>Ström</item>
+        <item>Ring</item>
+        <item>Avsluta samtal</item>
+        <item>Spela/Paus</item>
+        <item>Nästa låt</item>
+        <item>Föregående låt</item>
+        <item>Långt tryck på hemknappen</item>
     </string-array>
 
-    <string-array name="phone_goggles_maths_level_entries" translatable="true">
-        <item>@string/phone_goggles_maths_level_easy</item>
-        <item>@string/phone_goggles_maths_level_medium</item>
-        <item>@string/phone_goggles_maths_level_hard</item>
+    <string-array name="entries_unhide_button">
+        <item>Hem</item>
+        <item>Meny</item>
+        <item>Tillbaka</item>
+        <item>Sök</item>
+        <item>Kamera</item>
+        <item>Volym Upp</item>
+        <item>Volym Ner</item>
     </string-array>
+
 </resources>

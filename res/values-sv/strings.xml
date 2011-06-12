@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod-inställningar</string>
 
@@ -102,6 +102,7 @@
     <string name="ui_status_bar_compact_carrier_summary">Använd alternativ notifiering,nedrullningsbar layout med mini leverantörs etikett</string>
     <string name="ui_status_bar_toggle_brightness">StatusBar ljuskontroll</string>
     <string name="ui_status_bar_toggle_brightness_summary">Tillåter justering av ljusstyrka genom att skjuta över statusbar.</string>
+    <string name="ui_status_bar_toggle_info">Automatisk ljusstyrka är aktiverad</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED-aviseringar</string>
@@ -205,6 +206,8 @@
     <string name="pref_lockscreen_always_music_controls_summary">Visa musikkontroller även när musik inte spelas</string>
     <string name="pref_trackball_wake_title">Väckning med styrkula</string>
     <string name="pref_trackball_wake_summary">Att trycka på styrkulan väcker enheten</string>
+    <string name="pref_volume_wake_title">Väckning med volymgungning</string>
+    <string name="pref_volume_wake_summary">Väck enheten genom att trycka på volym upp/ner. Avsett för enheter där det är svårt att trycka på strömknappen</string>
     <string name="pref_trackball_unlock_title">Upplåsning med styrkula</string>
     <string name="pref_trackball_unlock_summary">Tryck på styrkulan låser upp enheten</string>
     <string name="pref_menu_unlock_title">Upplåsning med Meny-knapp</string>
@@ -383,6 +386,10 @@
     <string name="summary_expanded_widget">Använd den expanderade vyns strömwidget</string>
     <string name="title_expanded_hide_onchange">Göm vid förändring</string>
     <string name="summary_expanded_hide_onchange">Göm aviseringsvyn efter ett klick på en widgetknapp</string>
+    <string name="title_expanded_hide_indicator">Göm indikator</string>
+    <string name="summary_expanded_hide_indicator">Göm indikatorer för aviseringswidgets</string>
+    <string name="title_expanded_hide_scrollbar">Göm rullningslist</string>
+    <string name="summary_expanded_hide_scrollbar">Göm rullningslist när det är fler än maximalt antal widget-knappar synliga.</string>
     <string name="expanded_color_mask">Färg på indikator</string>
     <string name="title_widget_picker">Widgetknappar</string>
     <string name="summary_widget_picker">Välj dina widgetknappar</string>
@@ -467,6 +474,9 @@
     <string name="sound_notifications_focus_summary">Förfrågningar om ljudfokus får kompatibla applikationer att sänka volymen medans aviseringar spelas upp.</string>
     <string name="sound_volume_control_silent_title">Tyst läge</string>
     <string name="sound_volume_control_silent_summary">Lägg till ett läge med total tystnad i volymkontrollen</string>
+    <string name="sound_vibrate_in_call_title">Vibrera under samtal</string>
+    <string name="sound_vibrate_in_call_summary_off">Aviseringar kommer inte vibrera när samtal pågår</string>
+    <string name="sound_vibrate_in_call_summary_on">Aviseringar kommer vibrera normalt</string>
     <string name="sound_to_speaker_title">Spela alltid i högtalare</string>
     <string name="sound_notifications_title">Aviseringar</string>
     <string name="sound_rings_title">Ringsignaler</string>
@@ -531,10 +541,15 @@
     <string name="gestures_error_loading">Problem med filoperation för gester.</string>
     <string name="gestures_unlock_only">Lås upp telefon</string>
     <string name="gestures_toggle_sound">Ljud På/Av</string>
+    <string name="gestures_shortcut_or_activity">Genväg eller aktivitet</string>
     <string name="gestures_flashlight">Ficklampa</string>
     <string name="pref_lockscreen_disable_unlock_tab">Inaktivera glidskena för upplåsning</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Notering: Du måste aktivera styrkula, meny-knapp eller gestupplåsning innan detta val blir tillgängligt</string>
+    <string name="gestures_action_label">Handling:</string>
+    <string name="gestures_draw_label">Gest:</string>
+    <string name="gestures_draw_for_label">Gest för \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Varning: En liknande gest är associerad med en annan händelse!</string>
+    <string name="gestures_run_in_background">Kör i bakgrunden</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Visa förändringslogg</string>
