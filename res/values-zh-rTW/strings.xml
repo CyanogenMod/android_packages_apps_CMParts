@@ -85,7 +85,11 @@
     <string name="tablet_soft_buttons_search_title">搜尋</string>
     <string name="tablet_soft_buttons_quick_na_title">快速通知</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">自動旋轉允許角度</string>
+    <string name="pref_rotation_90_title">90 度</string>
+    <string name="pref_rotation_180_title">180 度</string>
+    <string name="pref_rotation_270_title">270 度</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">通知列調整</string>
