@@ -86,6 +86,7 @@
 
     <!-- User interface : Rotation -->
     <string name="rotation_category_title">Autom. Drehung</string>
+    <string name="pref_rotation_0_title">0 Grad</string>
     <string name="pref_rotation_90_title">90 Grad</string>
     <string name="pref_rotation_180_title">180 Grad</string>
     <string name="pref_rotation_270_title">270 Grad</string>
