@@ -85,7 +85,11 @@
     <string name="tablet_soft_buttons_search_title">Cerca</string>
     <string name="tablet_soft_buttons_quick_na_title">Notifiche veloci</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Rotazione accelerometro</string>
+    <string name="pref_rotation_90_title">90 gradi</string>
+    <string name="pref_rotation_180_title">180 gradi</string>
+    <string name="pref_rotation_270_title">270 gradi</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Modifiche barra di stato</string>
@@ -99,6 +103,7 @@
     <string name="ui_status_bar_compact_carrier_summary">Utilizza un layout alternativo per l\'area delle notifiche rimpicciolendo l\'etichetta operatore.</string>
     <string name="ui_status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permette di regolare la luminosità scorrendo il dito lungo la barra di stato.</string>
+    <string name="ui_status_bar_toggle_info">La luminosità automatica è attiva</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifiche LED</string>
