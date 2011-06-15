@@ -426,7 +426,7 @@
     <string name="pref_ring_mode_title">Mod. Audio</string>
     <string name="pref_ring_mode_summary">Scegli le modalità del tasto per l\'audio</string>
     <string name="pref_flash_mode_title">Mod. Torcia</string>
-    <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray(Evo)</string>
+    <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Retroilluminazione Automatica</string>

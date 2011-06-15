@@ -425,7 +425,7 @@
     <string name="pref_ring_mode_title">Ljudlägen</string>
     <string name="pref_ring_mode_summary">Välj hur knappen för ljud ändrar lägen</string>
     <string name="pref_flash_mode_title">Blixtläge</string>
-    <string name="pref_flash_mode_summary">Välj Hög / Death Ray(Evo)</string>
+    <string name="pref_flash_mode_summary">Välj Hög / Death Ray</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatiskt bakgrundsljus</string>

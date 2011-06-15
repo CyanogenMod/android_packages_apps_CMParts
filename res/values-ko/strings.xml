@@ -266,7 +266,7 @@
     <string name="pref_ring_mode_title">소리 버튼 설정</string>
     <string name="pref_ring_mode_summary">소리 버튼의 작용을 선택합니다.</string>
     <string name="pref_flash_mode_title">플래시 버튼</string>
-    <string name="pref_flash_mode_summary">High / Death Ray(Evo) 선택</string>
+    <string name="pref_flash_mode_summary">High / Death Ray 선택</string>
 
 
     <!-- Performance : Lock home memory -->

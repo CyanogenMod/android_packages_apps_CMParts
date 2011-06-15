@@ -358,7 +358,7 @@
     <string name="pref_ring_mode_title">Hang módok</string>
     <string name="pref_ring_mode_summary">A hang gomb működésének beállítása</string>
     <string name="pref_flash_mode_title">Vaku üzemmód</string>
-    <string name="pref_flash_mode_summary">Magas/halálos sugár (EVO)</string>
+    <string name="pref_flash_mode_summary">Magas/halálos sugár</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatikus háttérvilágítás</string>

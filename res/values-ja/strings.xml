@@ -406,7 +406,7 @@
     <string name="pref_ring_mode_title">サウンド</string>
     <string name="pref_ring_mode_summary">サウンドトグルで変更するモードの選択</string>
     <string name="pref_flash_mode_title">フラッシュ</string>
-    <string name="pref_flash_mode_summary">HighかDeath Ray(Evo)を選択</string>
+    <string name="pref_flash_mode_summary">HighかDeath Rayを選択</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">ホームをメモリに維持</string>

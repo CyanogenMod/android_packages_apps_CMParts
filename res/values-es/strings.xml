@@ -339,7 +339,7 @@
     <string name="pref_ring_mode_title">Modos de sonido</string>
     <string name="pref_ring_mode_summary">Elegir como cambia el sonido con el botón</string>
     <string name="pref_flash_mode_title">Modo de flash</string>
-    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal(Evo)</string>
+    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal</string>
 
 
     <!-- Performance : Lock home memory -->

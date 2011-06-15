@@ -419,7 +419,7 @@
     <string name="pref_ring_mode_title">Режимы звука</string>
     <string name="pref_ring_mode_summary">Укажите, какие режимы будут меняться кнопкой \"Звук\"</string>
     <string name="pref_flash_mode_title">Режимы фонарика</string>
-    <string name="pref_flash_mode_summary">Яркий / Луч смерти (EVO)</string>
+    <string name="pref_flash_mode_summary">Яркий / Луч смерти</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Автоматическая яркость</string>

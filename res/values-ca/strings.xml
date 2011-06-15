@@ -362,7 +362,7 @@
     <string name="pref_ring_mode_title">Modes de so</string>
     <string name="pref_ring_mode_summary">Escolliu de quina manera els botons de so canvien els modes</string>
     <string name="pref_flash_mode_title">Mode de flaix</string>
-    <string name="pref_flash_mode_summary">Tria Alt/Raig de la Mort(Evo)</string>
+    <string name="pref_flash_mode_summary">Tria Alt/Raig de la Mort</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Llum de fons automàtica</string>

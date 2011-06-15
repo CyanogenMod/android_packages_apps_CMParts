@@ -362,7 +362,7 @@
     <string name="pref_ring_mode_title">声音切换模式</string>
     <string name="pref_ring_mode_summary">选择声音按钮的切换方式</string>
     <string name="pref_flash_mode_title">手电筒切换模式</string>
-    <string name="pref_flash_mode_summary">选择高亮度/死亡射线 (Evo)</string>
+    <string name="pref_flash_mode_summary">选择高亮度/死亡射线</string>
 
     <!-- Backlight -->
     <string name="backlight_title">自动亮度调节</string>

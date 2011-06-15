@@ -376,7 +376,7 @@
     <string name="pref_ring_mode_title">Äänitilat</string>
     <string name="pref_ring_mode_summary">Valitse miten äänipainike muuttaa tiloja</string>
     <string name="pref_flash_mode_title">Lampputilat</string>
-    <string name="pref_flash_mode_summary">Valitse suuri / kuolonsäde(Evo)</string>
+    <string name="pref_flash_mode_summary">Valitse suuri / kuolonsäde</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automaattinen taustavalo</string>

@@ -288,7 +288,7 @@
   <string name="pref_ring_mode_title">מצבי קול</string>
   <string name="pref_ring_mode_summary">בחר כיצד לחצן השמע משנה מצבים</string>
   <string name="pref_flash_mode_title">מצב פלאש</string>
-  <string name="pref_flash_mode_summary">Choose High / Death Ray(Evo)</string>
+  <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
     <!-- Backlight -->
   <string name="backlight_title">עוצמת תאורת אוטומטית</string>
