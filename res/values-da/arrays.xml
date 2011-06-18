@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
- * Copyright (C) 2007 Android open source-projekt
+ * Copyright (C) 2007 The Android Open Source Project
  *
- * Licenseret under Apache License, Version 2,0 ("Licensaftale");
- * Du må ikke bruge denne fil, undtagen i overensstemmelse med License.
- * Du kan få en kopi af licensen på
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
- * Medmindre det kræves af gældende lov eller aftalt skriftligt, software
- * distribueres under licens er fordelt på en "SOM DEN ER" BASIS,
- * UDEN GARANTIER ELLER BETINGELSER FOR NOGEN ART, hverken udtrykkelige eller stilletiende.
- * Se licens til specifikke sprog vedrørende tilladelser og
- * begrænsninger i henhold til licens.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  -->
 
 <resources>
@@ -23,12 +23,12 @@
         <item>15</item>
     </string-array>
   
-    <string-array name="entries_heapsize">
+    <string-array name="entries_heapsize" translatable="false">
         <item>12m</item>
         <item>16m</item>
         <item>24m</item>
         <item>32m</item>
-		<item>48m</item>
+        <item>48m</item>
     </string-array>
 
     <string-array name="entries_install_location">
@@ -38,6 +38,18 @@
     </string-array>
 
     <string-array name="values_install_location" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+	
+	<string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Smal</item>
+        <item>Ingen (Standard)</item>
+	</string-array>
+		
+	<string-array name="values_status_bar_am_pm" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -359,8 +371,8 @@
 
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
-        <item>2G/3G Only</item>   
-        <item>2G/3G Only/3G+2G</item>
+        <item>2G/3G Kun</item>   
+        <item>2G/3G Kun/3G+2G</item>
     </string-array>
 
     <string-array name="values_network_widget" translatable="false">
@@ -436,6 +448,13 @@
         <item>11</item>
         <item>12</item>
     </string-array>
+	
+	 <string-array name="pref_lockscreen_gesture_action_entries" translatable="false">
+        <item>@string/gestures_unlock_only</item>
+        <item>@string/gestures_toggle_sound</item>
+        <item>@string/gestures_shortcut_or_activity</item>
+        <item>@string/gestures_flashlight</item>
+    </string-array>
 
     <string-array name="pref_lockscreen_style_entries">
         <item>Glidere</item>
@@ -449,6 +468,18 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+    </string-array>
+	
+	<string-array name="pref_in_call_style_entries">
+        <item>Glide arme</item>
+        <item>Roterende</item>
+        <item>Roterende moderniseret</item>
+    </string-array>
+	
+	<string-array name="pref_in_call_style_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -568,4 +599,21 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+	
+	<string-array name="entries_long_press_menu">
+        <item>Ingen</item>
+        <item>Tastatur</item>
+        <item>Søge knap</item>
+        <item>Brugerdefineret applikation</item>
+        <item>Vis statuslinien</item>
+    </string-array>
+
+    <string-array name="values_long_press_menu">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
 </resources>

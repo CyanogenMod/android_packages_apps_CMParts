@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod</string>
 
@@ -84,19 +85,27 @@
     <string name="tablet_soft_buttons_search_title">Søg</string>
     <string name="tablet_soft_buttons_quick_na_title">Hurtig besked</string>
 
-    <!-- User interface : 180 degree rotation -->
-    <string name="pref_rotate_180_title">Roter 180 grader</string>
-    <string name="pref_rotate_180_summary">Giver mulighed for yderligere 180 graders rotation, når roter er slået til og skærmen er aktiveret</string>
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">accelerometer drejning</string>
+    <string name="pref_rotation_0_title">0 grader</string>
+    <string name="pref_rotation_90_title">90 grader</string>
+    <string name="pref_rotation_180_title">180 grader</string>
+    <string name="pref_rotation_270_title">270 grader</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Staatuslinie finindstillinger</string>
+	<string name="ui_status_bar_am_pm_title">AM/PM</string>
+    <string name="ui_status_bar_am_pm_summary">Vis AM/PM ved siden af uret</string>
     <string name="ui_status_bar_clock_title">Vis ur</string>
     <string name="ui_status_bar_clock_summary">Statuslinie uret er skjult, hvis deaktiveret</string>
     <string name="ui_status_bar_cm_battery_title">Batteri procent</string>
     <string name="ui_status_bar_cm_battery_summary">Vis batteri procent med mini batteri ikon. Slå det fra hvis temaet for det til at se mærkeligt ud</string>
     <string name="ui_status_bar_compact_carrier_title">Mindre navn på dit teleselskab</string>
-    <string name="ui_status_bar_compact_carrier_summary">Brug alternativ nedtrækningsmenu, når du bruger mindre navn på dit teleselskab. Ser bedst ud sammen med strøm widget(Kræver genstart)</string>
-
+    <string name="ui_status_bar_compact_carrier_summary">Brug alternativ nedtrækningsmenu, når du bruger mindre navn på dit teleselskab<string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
+    <string name="ui_status_bar_toggle_brightness">Statuslinie lysstyrkekontrol</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Giver mulighed for justering af lysstyrke ved at glide på tværs af statuslinjen</string>
+    <string name="ui_status_bar_toggle_info">Automatisk lysstyrke er aktiveret</string>
+	
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED meddelse</string>
     <string name="trackball_summary">Kontrol trackball/LED meddelses farver og blinkeinterval</string>
@@ -199,6 +208,8 @@
     <string name="pref_lockscreen_always_music_controls_summary">Vis musik kontrol altid selvom musikken ikke spiller</string>
     <string name="pref_trackball_wake_title">Trackball vågn op</string>
     <string name="pref_trackball_wake_summary">Et tryk på trackball vækker enheden</string>
+	<string name="pref_volume_wake_title">Lydstyrkeknap vågnop</string>
+    <string name="pref_volume_wake_summary">Ved at trykke på lydstyrke op/ned vågner enheden. Beregnet til enheder som er sværre at tænde/slukke</string>
     <string name="pref_trackball_unlock_title">Trackball lås op</string>
     <string name="pref_trackball_unlock_summary">Et tryk på trackball låser enheden op</string>
     <string name="pref_menu_unlock_title">Menu lås op</string>
@@ -218,6 +229,8 @@
     <string name="lockscreen_delay_header">Forsinkelse og timeout</string>
     <string name="pref_lockscreen_style_title">Lås skærm stil</string>
     <string name="pref_lockscreen_style_summary">Vælg stilen på lås skærmen</string>
+	<string name="pref_in_call_style_title">Indgående opkald stil</string>
+    <string name="pref_in_call_style_summary">Vælge stil på indgående opkald acceptere/afvise widget</string>
     <string name="pref_volbtn_music_controls_title">Lydstyrke knapper musik kontrol</string>
     <string name="pref_volbtn_music_controls_summary">Skift sang hvis du holder lydstyrke knapperne inde imens skærmen er slukket</string>
     <string name="pref_cambtn_music_controls_title">Kamera knap musik kontrol</string>
@@ -233,7 +246,8 @@
     <string name="button_settings_title">Knap indstillinger</string>
     <string name="long_press_home_title">Hold hjem knappen inde indstillinger</string>
     <string name="long_press_home_summary">Antallet af senest applikationer, etc</string>
-    <string name="input_search_key_title">Søgknap muligheder</string>
+    
+	<string name="input_search_key_title">Søgknap muligheder</string>
     <string name="input_search_key_summary">Brugerdefinerede handlinger for søgeknap og langt tryk på søgeknap</string>
     <string name="pref_input_custom_search_app_toggle_title">Søgeknap applikation</string>
     <string name="pref_input_custom_search_app_toggle_summary">Starter en brugerdefineret applikation når du trykker på søgeknappen</string>
@@ -241,6 +255,13 @@
     <string name="pref_input_custom_long_search_app_toggle_title">Langt tryk søgeknap aplikation</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starter en brugerdefineret applikation når du holder øgenknappen inde</string>
 
+	<!-- Long Press Menu -->
+    <string name="long_press_menu_title">Lang tryk på menu instillinger</string>
+    <string name="long_press_menu_summary">Brugerdefineret indstilling for langt tryk menuen</string>
+    <string name="pref_user_defined_long_press_menu_title">Vælg brugerdefineret applikation</string>
+    <string name="pref_long_press_menu_title">Vælg handling</string>
+    <string name="pref_long_press_menu_summary">Tilpas langt tryk menuen</string>
+	
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Vis seneste applikations titler</string>
     <string name="recent_apps_num_title">Antallet af seneste applikationer</string>
@@ -367,7 +388,7 @@
     <string name="blue">Blå</string>
     <string name="amber">Rav</string>
     <string name="salmon">Laks</string>
-    <string name="fuscia">Fuscia (Lilla)</string>
+    <string name="fuscia">Fuscia</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Udvid vis widget</string>
@@ -375,6 +396,8 @@
     <string name="summary_expanded_widget">Anvend udvidede visninger på strøm widget</string>
     <string name="title_expanded_hide_onchange">Skjul ved ændringer</string>
     <string name="summary_expanded_hide_onchange">Skjul informations nedtræk når der er trykket på en knap</string>
+	<string name="title_expanded_hide_indicator">Skjul indikator</string>
+    <string name="summary_expanded_hide_indicator">Skjul meddelelse widgets indikatorer</string>
     <string name="title_expanded_hide_scrollbar">Skjul scrollbar</string>
     <string name="summary_expanded_hide_scrollbar">Skjul scrollbar når der er flere repræsenteret end de tilladte antal knapper.</string>
     <string name="expanded_color_mask">indikations farve</string>
@@ -517,7 +540,6 @@
     <string name="gestures_button_add">Tilføj gestus</string>
     <string name="gestures_button_discard">Kassér</string>
     <string name="gestures_button_done">Færdig</string>
-    <string name="gestures_shortcut_picker_button_label">Vælg en genvej eller en aktivitet for denne gestus</string>
     <string name="gestures_error_missing_shortcut">Du skal vælge en handling for denne gestus!</string>
     <string name="gestures_save_success">Gestus gemt i %s</string>
     <string name="gestures_cancel_action">Annuller</string>
@@ -529,11 +551,15 @@
     <string name="gestures_error_loading">Problemet med gestus filhandling.</string>
     <string name="gestures_unlock_only">Lås telefonen op</string>
     <string name="gestures_toggle_sound">Lyd knap</string>
+	<string name="gestures_shortcut_or_activity">Genvej eller aktivitet</string>
     <string name="gestures_flashlight">Lommelygte</string>
     <string name="pref_lockscreen_disable_unlock_tab">Deaktiver låse skyderen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Bemærk: Du skal aktivere trackball, menutasten, eller gestus før at denne mulighed bliver tilgængelig</string>
+	<string name="gestures_action_label">Handling:</string>
+    <string name="gestures_draw_label">Gestus:</string>
     <string name="gestures_explain_create_screen">Vælg en handling som skal udføres(eller vælge Lås op eller lyd) og tegn en gestus på skærmen.</string>
     <string name="gestures_already_present">Advarsel: En lignende gestus er oprettet i forvejen!</string>
+	<string name="gestures_run_in_background">Kør i baggrunden</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Se changelog</string>
@@ -601,4 +627,11 @@
     <string name="cpu_max_freq_summary">Maximum CPU frekvens\nI øjeblikket: %s</string>
     <string name="cpu_set_on_boot">Vælg automatisk ved boot</string>
     <string name="cpu_set_on_boot_summary">Gendan CPU indstillinger ved boot</string>
+	
+	<!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Håndtering af tilladelser</string>
+    <string name="perm_enable_management_summary">Aktivér håndtering af tilladelser for dine applikationer</string>
+    <string name="perm_enable_warning_message">Advarsel! Ændring af tilladelser vil højst sandsynligt medføre at dine applikationer ikke fungerer korrekt. Hvis en applikation med blokeret tilladelser tvangs lukkes, så bedes du give aktivere tilladelserne igen eller ikke bruge applikationen. Venligst IKKE sende fejlrapporter til Cyanogenmod hvis en applikation med blokeret tilladelser ikke fungerer som forventet!</string>
+    <string name="perm_enable_warning_title">Er du sikker?</string>
+	
 </resources>
