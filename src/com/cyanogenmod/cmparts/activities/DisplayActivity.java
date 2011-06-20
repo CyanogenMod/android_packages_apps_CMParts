@@ -58,7 +58,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     private CheckBoxPreference mRotation90Pref;
     private CheckBoxPreference mRotation180Pref;
     private CheckBoxPreference mRotation270Pref;
-<<<<<<< HEAD
 
     private CheckBoxPreference mOMAPDSSmodePref;
 
@@ -77,8 +76,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     public static final String NA_ON_PLUG_PERSIST_PROP = "persist.sys.no_action_on_plug";
 
     public static final String NA_ON_PLUG_DEFAULT = "0";
-=======
->>>>>>> cyanogen/gingerbread
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -172,7 +169,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
             }
             Settings.System.putInt(getContentResolver(),
                      Settings.System.ACCELEROMETER_ROTATION_MODE, mode);
-<<<<<<< HEAD
         }
 
         if (preference == mOMAPDSSmodePref) {
@@ -184,8 +180,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         if (preference == mNaOnPlugPref) {
             SystemProperties.set(NA_ON_PLUG_PERSIST_PROP,
                     mNaOnPlugPref.isChecked() ? "1" : "0");
-=======
->>>>>>> cyanogen/gingerbread
         }
 
         return true;
