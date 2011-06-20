@@ -618,4 +618,21 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>None</item>
+        <item>Soft keyboard</item>
+        <item>Search key</item>
+        <item>Custom Application</item>
+        <item>Toggle statusbar</item>
+    </string-array>
+
+    <string-array name="values_long_press_menu">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
 </resources>

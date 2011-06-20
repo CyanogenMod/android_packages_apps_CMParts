@@ -142,6 +142,9 @@ public class InputActivity extends PreferenceActivity implements
         PreferenceCategory buttonCategory = (PreferenceCategory) prefSet
                 .findPreference(BUTTON_CATEGORY);
 
+        PreferenceCategory generalCategory = (PreferenceCategory) prefSet
+                .findPreference("general_category");
+
         mUserDefinedKey1Pref = (Preference) prefSet.findPreference(USER_DEFINED_KEY1);
         mUserDefinedKey2Pref = (Preference) prefSet.findPreference(USER_DEFINED_KEY2);
         mUserDefinedKey3Pref = (Preference) prefSet.findPreference(USER_DEFINED_KEY3);
@@ -157,6 +160,8 @@ public class InputActivity extends PreferenceActivity implements
             buttonCategory.removePreference(mUserDefinedKey2Pref);
             buttonCategory.removePreference(mUserDefinedKey3Pref);
         }
+        if (!getResources().getBoolean(R.bool.has_search_button))
+                generalCategory.removePreference((Preference) prefSet.findPreference("input_search_key"));
     }
 
     @Override

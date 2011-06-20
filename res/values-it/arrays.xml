@@ -235,4 +235,12 @@
         <item>Volume meno</item>
     </string-array>
 
+    <string-array name="entries_long_press_menu">
+        <item>Nessuna</item>
+        <item>Tastiera virtuale</item>
+        <item>Cerca</item>
+        <item>Applicazione personalizzata</item>
+        <item>Mostra/nascondi barra di stato</item>
+    </string-array>
+
 </resources>

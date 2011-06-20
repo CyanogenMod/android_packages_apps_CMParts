@@ -85,7 +85,11 @@
     <string name="tablet_soft_buttons_search_title">検索</string>
     <string name="tablet_soft_buttons_quick_na_title">クイック通知</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">加速度センサによる回転</string>
+    <string name="pref_rotation_90_title">90度</string>
+    <string name="pref_rotation_180_title">180度</string>
+    <string name="pref_rotation_270_title">270度</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">ステータスバー</string>
@@ -99,6 +103,8 @@
     <string name="ui_status_bar_compact_carrier_summary">小さなキャリアラベルを用いた代替のドロップダウンレイアウトを使用する</string>
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
+    <string name="ui_status_bar_toggle_info">自動明るさ調整は有効</string>
+
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED通知</string>

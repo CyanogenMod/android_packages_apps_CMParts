@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- Search key settings -->
+        <PreferenceCategory android:key="input_menu_settings"
+                android:title="@string/general_title">
+
+                <ListPreference
+                   android:title="@string/pref_long_press_menu_title"
+                   android:summary="@string/pref_long_press_menu_summary"
+                   android:key="pref_long_press_menu"
+                   android:defaultValue="0"
+                   android:entries="@array/entries_long_press_menu"
+                   android:entryValues="@array/values_long_press_menu" />
+
+                <Preference android:key="pref_user_defined_long_press_menu"
+                   android:title="@string/pref_user_defined_long_press_menu_title" />
+
+        </PreferenceCategory>
+
+</PreferenceScreen>

@@ -245,4 +245,12 @@
         <item>Giratório</item>
         <item>Giratório renovado</item>
     </string-array>
+	
+	<string-array name="entries_long_press_menu">
+        <item>Nenhum</item>
+        <item>Teclado virtual</item>
+        <item>Botão de busca</item>
+        <item>Aplicação personalizada</item>
+        <item>Alternar barra de status</item>
+    </string-array>
 </resources>

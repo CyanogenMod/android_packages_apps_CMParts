@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->    
     <string name="app_name">Настройки CyanogenMod</string>
 
@@ -84,7 +85,12 @@
     <string name="tablet_soft_buttons_search_title">Поиск</string>
     <string name="tablet_soft_buttons_quick_na_title">Быстрое уведомление</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Вращение экрана</string>
+    <string name="pref_rotation_0_title">0 градусов</string>
+    <string name="pref_rotation_90_title">90 градусов</string>
+    <string name="pref_rotation_180_title">180 градусов</string>
+    <string name="pref_rotation_270_title">270 градусов</string>
 
    <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Настройки строки состояния</string>
@@ -98,6 +104,7 @@
     <string name="ui_status_bar_compact_carrier_summary">Использовать альтернативный стиль панели уведомления с маленьким именем оператора</string>
     <string name="ui_status_bar_toggle_brightness">Управление яркостью в строке состояния</string>
     <string name="ui_status_bar_toggle_brightness_summary">Позволяет изменять яркость проводя по строке состояния</string>
+    <string name="ui_status_bar_toggle_info">Включена автоматическая яркость</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Уведомления светодиодом трекбола</string>
@@ -127,7 +134,7 @@
     <string name="title_color_picker">Выберите цвет</string>
     <string name="msg_color_picker">Нажмите в центр для подтверждения.\nНажмите назад для отмены</string>
 
-    <!-- User interface: Trackball notifications -->
+    <!-- User interface: LED notifications -->
     <string name="trackball_notifications_title">Цвета уведомлений трекбола</string>
     <string name="dialog_color_trackball">Выберите цвет</string>
     <string name="dialog_blink_trackball">Выберите частоту мигания</string>
@@ -186,22 +193,15 @@
     <string name="pref_lockscreen_timeout_summary">Настройки времени задержки блокировки экрана</string>
 
     <!-- Lockscreen Settings -->
-    <string name="pref_lockscreen_now_playing_title">Название песни</string>
-    <string name="pref_lockscreen_now_playing_summary">Показывать название и исполнителя текущей песни</string>
-    <string name="pref_lockscreen_album_art_title">Обложка альбома</string>
-    <string name="pref_lockscreen_album_art_summary">Показывать обложку текущего альбома. Работает только с встроенным плеером и только в портретном режиме</string>
-    <string name="lockscreen_widgets_note_title">Примечание</string>
-    <string name="lockscreen_widgets_note_summary">Использование минималистичного стиля \"Линза\" скрывает все виджеты, кроме управления плеером. Тем не менее, настройки ниже продолжают быть доступны для легкого переключения на другие стили</string>
-
-    <!-- Input Settings -->
-    <string name="input_settings_title">Ввод</string>
-    <string name="input_settings_summary">Настройка поведения кнопок</string>
-    <string name="button_settings_title">Настройки кнопок</string>
     <string name="lockscreen_settings_title">Настройки экрана блокировки</string>
     <string name="pref_lockscreen_always_battery_title">Состояние батареи</string>
     <string name="pref_lockscreen_always_battery_summary">Всегда показывать состояние батареи на экране блокировки</string>
     <string name="pref_lockscreen_music_controls_title">Управление плеером</string>
     <string name="pref_lockscreen_music_controls_summary">Показывать на экране блокировки элементы управления плеером</string>
+    <string name="pref_lockscreen_now_playing_title">Название песни</string>
+    <string name="pref_lockscreen_now_playing_summary">Показывать название и исполнителя текущей песни</string>
+    <string name="pref_lockscreen_album_art_title">Обложка альбома</string>
+    <string name="pref_lockscreen_album_art_summary">Показывать обложку текущего альбома. Работает только со встроенным плеером и только в портретном режиме</string>
     <string name="pref_lockscreen_music_headset_title">Показывать, если подключены:</string>
     <string name="pref_lockscreen_music_headset_summary">Показывать на экране блокировки элементы управления плеером, когда подключены проводные и/или Bluetooth A2DP наушники</string>
     <string name="pref_lockscreen_always_music_controls_title">Показывать всегда</string>
@@ -235,6 +235,17 @@
     <string name="pref_volbtn_music_controls_summary">Листать треки долгим нажатие на кнопку громкости при выключенном экране</string>
     <string name="pref_cambtn_music_controls_title">Управление музыкой кнопкой камеры</string>
     <string name="pref_cambtn_music_controls_summary">Воспроизведение/пауза долгим нажатие на кнопку камеры при выключенном экране</string>
+    <string name="lockscreen_widgets_note_title">Примечание</string>
+    <string name="lockscreen_widgets_note_summary">Использование минималистичного стиля \"Линза\" скрывает все виджеты, кроме управления плеером. Тем не менее, настройки ниже продолжают быть доступны для легкого переключения на другие стили</string>
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">Ввод</string>
+    <string name="input_settings_summary">Настройка поведения кнопок</string>
+    <string name="haptic_title">Настройки отклика</string>
+    <string name="haptic_summary">Настройка условий и силы тактильного отклика</string>
+    <string name="button_settings_title">Настройки кнопок</string>
+    <string name="long_press_home_title">Долгое нажатие на Home</string>
+    <string name="long_press_home_summary">Количество последних приложений и т.д.</string>
     <string name="input_search_key_title">Настройки кнопки поиск</string>
     <string name="input_search_key_summary">Задайте действия на нажатие и долгое нажатие кнопки поиск</string>
     <string name="pref_input_custom_search_app_toggle_title">Приложение по нажатию</string>
@@ -243,9 +254,14 @@
     <string name="pref_input_custom_long_search_app_toggle_title">Долгое нажатие</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Запуск своего приложения по долгому нажатию на кнопку поиск</string>
 
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Долгое нажатие на Меню</string>
+    <string name="long_press_menu_summary">Пользовательские настройки для долгого нажатия Меню</string>
+    <string name="pref_user_defined_long_press_menu_title">Выберите приложение пользователя</string>
+    <string name="pref_long_press_menu_title">Выбор поведения</string>
+    <string name="pref_long_press_menu_summary">Настроить долгое нажатие Меню</string>
+
     <!-- Long Press Home -->
-    <string name="long_press_home_title">Долгое нажатие на Home</string>
-    <string name="long_press_home_summary">Количество последних приложений и т.д.</string>
     <string name="recent_apps_show_title">Показывать заголовок окна</string>
     <string name="recent_apps_num_title">Количество последних приложений</string>
     <string name="recent_apps_num_summary">Количество последних приложений, которые появляются при долгом нажатие на кнопку Home</string>
@@ -255,59 +271,7 @@
     <string name="select_custom_app_title">Выбрать своё приложение</string>
     <string name="group_applications">Приложения</string>
 
-    <!-- Performance Settings -->
-    <string name="performance_settings_title">Производительность</string>
-    <string name="performance_settings_summary">Настройки производительности устройства</string>
-
-    <!-- Performance Settings : Compcache -->
-    <string name="pref_compcache_title">Включить Compcache</string>
-    <string name="pref_compcache_summary">Сжатие памяти для увеличения её количества (требуется перезагрузка)</string>
-
-    <!-- Performance Settings : JIT Mode -->
-    <string name="pref_jit_mode_title">Включить JIT</string>
-    <string name="pref_jit_mode_summary">Использовать Dalvik just-in-time компилятор (требуется перезагрузка)</string>
-
-    <!-- Performance Settings : Dithering -->
-    <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
-    <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
-
-    <!-- Performance Settings : Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">Разрешить сброс активов</string>
-    <string name="pref_purgeable_assets_summary">Система может освободить больше памяти, когда это необходимо, если память активов битмапов разрешено освобождать (требуется перезагрузка)</string>
-
-
-    <!-- Performance Settings : VM Heap Size -->
-    <string name="pref_heapsize_title">Размер VM heap</string>
-    <string name="pref_heapsize_summary">Максимум допустимой памяти для VM heap (требуется перезагрузка)</string>
-
-    <!-- Performance : Lock home memory -->
-    <string name="pref_lock_home_title">Блокировать рабочий стол в памяти</string>
-    <string name="pref_lock_home_summary">Пытаться не давать системе выгружать ваш текущий рабочий стол из памяти</string>
-
-    <!-- Performance : Lock mms app in memory -->
-    <string name="pref_lock_mms_title">Блокировать SMS/MMS в памяти</string>
-    <string name="pref_lock_mms_summary">Поможет избежать потери сообщений в ситуациях, когда мало памяти</string>
-
-    <!-- Performance Settings : Warning dialog -->
-    <string name="performance_settings_warning_title">ВНИМАНИЕ</string>
-    <string name="performance_settings_warning">Эти настройки изменяют производительность системы, потенциально в худшую сторону. Всё это добавлено для экспериментов, и мы просим не слать баг-репорты, если вы что-то меняли в этих настройках.</string>
-
-    <!-- Application Settings -->
-    <string name="application_settings_title">Приложения</string>
-    <string name="application_settings_summary">Изменение различных настроек приложений, такие как место установки</string>
-
-    <!-- Application Settings : Move any app -->
-    <string name="pref_move_all_apps_title">Разрешить перемещение</string>
-    <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
-
-    <!-- Application Settings : Install Location -->
-    <string name="pref_install_location_title">Место установки</string>
-    <string name="pref_install_location_summary">Укажите, куда будут устанавливаться новые приложения</string>
-
     <!-- HapticTweaks -->
-    <string name="haptic_title">Настройки отклика</string>
-    <string name="haptic_summary">Настройка условий и силы тактильного отклика</string>
-
     <string name="title_haptic_feedback">Отклик на нажатие</string>
     <string name="summary_on_haptic_feedback">Использовать тактильный отклик на нажатие функциональных клавиш и определенных элементов интерфейса</string>
     <string name="summary_off_haptic_feedback">Не использовать тактильный отклик на нажатие функциональных клавиш и определенных элементов интерфейса</string>
@@ -352,6 +316,54 @@
     <string name="haptic_revert_toast">Восстановлены последние используемые значения</string>
     <string name="haptic_default_toast">Загружены значения по умолчанию</string>
 
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">Производительность</string>
+    <string name="performance_settings_summary">Настройки производительности устройства</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">Включить Compcache</string>
+    <string name="pref_compcache_summary">Сжатие памяти для увеличения её количества (требуется перезагрузка)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">Включить JIT</string>
+    <string name="pref_jit_mode_summary">Использовать Dalvik just-in-time компилятор (требуется перезагрузка)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
+    <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Разрешить сброс активов</string>
+    <string name="pref_purgeable_assets_summary">Система может освободить больше памяти, когда это необходимо, если память активов битмапов разрешено освобождать (требуется перезагрузка)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">Размер VM heap</string>
+    <string name="pref_heapsize_summary">Максимум допустимой памяти для VM heap (требуется перезагрузка)</string>
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">Блокировать рабочий стол в памяти</string>
+    <string name="pref_lock_home_summary">Пытаться не давать системе выгружать ваш текущий рабочий стол из памяти</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">Блокировать SMS/MMS в памяти</string>
+    <string name="pref_lock_mms_summary">Поможет избежать потери сообщений в ситуациях, когда мало памяти</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">ВНИМАНИЕ</string>
+    <string name="performance_settings_warning">Эти настройки изменяют производительность системы, потенциально в худшую сторону. Всё это добавлено для экспериментов, и мы просим не слать баг-репорты, если вы что-то меняли в этих настройках.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">Приложения</string>
+    <string name="application_settings_summary">Изменение различных настроек приложений, такие как место установки</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">Разрешить перемещение</string>
+    <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">Место установки</string>
+    <string name="pref_install_location_summary">Укажите, куда будут устанавливаться новые приложения</string>
+
     <string name="general_title">Основные</string>
     <string name="buttons_title">Кнопки</string>
 
@@ -382,6 +394,8 @@
     <string name="summary_expanded_widget">Показывать виджет с кнопками в выпадающей панели уведомлений</string>
     <string name="title_expanded_hide_onchange">Скрывать при изменении</string>
     <string name="summary_expanded_hide_onchange">Скрывать выпадающую панель после нажатия любой кнопки виджета</string>
+    <string name="title_expanded_hide_indicator">Скрыть индикатор</string>
+    <string name="summary_expanded_hide_indicator">Скрыть индикаторы кнопок в панели уведомлений</string>
     <string name="title_expanded_hide_scrollbar">Скрывать полосу прокрутки</string>
     <string name="summary_expanded_hide_scrollbar">Скрывать полосу прокрутки, когда присутствует больше максимально возможных кнопок в панели.</string>
     <string name="expanded_color_mask">Цвет индикатора</string>
@@ -535,10 +549,15 @@
     <string name="gestures_error_loading">Проблема с жестом для выполнения операции.</string>
     <string name="gestures_unlock_only">Разблок.</string>
     <string name="gestures_toggle_sound">Перекл. звук</string>
+    <string name="gestures_shortcut_or_activity">Ярлык или действие</string>
     <string name="gestures_flashlight">Фонарик</string>
     <string name="pref_lockscreen_disable_unlock_tab">Отключить слайдер</string>
-    <string name="pref_lockscreen_disable_unlock_tab_summary">Примечание: Вы должны включить разблокировку посредством трекбола, кнопки menu или жест для того, чтобы эта опция была доступна</string>
+    <string name="pref_lockscreen_disable_unlock_tab_summary">Примечание: Вы должны включить разблокировку посредством трекбола, кнопки Меню или жеста для того, чтобы эта опция была доступна</string>
+    <string name="gestures_action_label">Действие:</string>
+    <string name="gestures_draw_label">Жест:</string>
+    <string name="gestures_draw_for_label">Жест для \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Внимание: похожий жест уже связан с другим действием!</string>
+    <string name="gestures_run_in_background">Запустить в фоне</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Посмотреть список изменений</string>
@@ -607,8 +626,8 @@
     <string name="cpu_set_on_boot">Выставлять при загрузке</string>
     <string name="cpu_set_on_boot_summary">Применить текущие настройки ЦП при загрузке</string>
 
-	<!-- Permissions Management Settings strings -->
-	<string name="perm_enable_management">Управление разрешениями</string>
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Управление разрешениями</string>
     <string name="perm_enable_management_summary">Включить управление разрешениями приложений</string>
     <string name="perm_enable_warning_message">Внимание!\nОтмена большинства разрешений может стать причиной сбоев в работе приложений. Если приложение с отменёнными разрешениями выдаёт ошибку, пожалуйста, предоставьте необходимые разрешения или не используйте приложение.\nПожалуйста, не посылайте сообщения об ошибках в CyanogenMod если приложение с отменёнными разрешениями не работает, как и следовало ожидать!</string>
     <string name="perm_enable_warning_title">Вы уверены?</string>

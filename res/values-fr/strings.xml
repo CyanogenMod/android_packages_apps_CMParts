@@ -40,11 +40,27 @@
     <string name="pref_electron_beam_animation_on">Animation allumage écran</string>
     <string name="pref_electron_beam_animation_off">Animation extinction écran</string>
 
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Mode Tablette</string>
+    <string name="tablet_tweaks_summary_head">Paramètres utiles pour les utilisateurs de Tablette. Fonctionne aussi pour les téléphones</string>
+    <string name="tablet_tweaks_sb_bottom_title">Barre de notification en bas</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Affiche la barre de notification en bas de l\'écran. Utile pour les tablettes qui utilisent des boutons tactiles placés sur celle-ci.</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zone inerte</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Rend inactive une zone de la moitié de la largeur de l\'écran dans la barre de notification</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Boutons à gauche</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Place les boutons tactiles à gauche sur la barre de notification</string>
+    <string name="tablet_tweaks_soft_button_list_title">Sélection boutons</string>
+    <string name="tablet_tweaks_interface_head">Interface</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Désactiver verrouillage</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Ne pas afficher l\'écran de verrouillage. Ni au démarrage, ni au réveil du téléphone</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Désactiver Plein-écran</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Toujours afficher la barre de notification, même lorsque le contraire est spécifié dans les paramètres d\'une application</string>
+
     <!-- User interface : 180 degree rotation -->
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifications par LED</string>
-    <string name="trackball_summary">Contôler les réglages des notifications par LED ou pulsation de la trackball</string>
+    <string name="trackball_summary">Contrôler les réglages des notifications par LED ou pulsation de la trackball</string>
 
     <!-- User interface : WebView -->
     <string name="ui_webview_title">WebView</string>
@@ -71,7 +87,7 @@
     <string name="msg_color_picker">Toucher la couleur au centre pour confirmer.\nPresser sur retour pour annuler</string>
 
     <!-- User interface: LED notifcations -->
-    <string name="trackball_notifications_title">Couleurs des notifications de la LED</string>
+    <string name="trackball_notifications_title">Couleur des notifications par LED</string>
     <string name="dialog_color_trackball">Choisir une couleur</string>
     <string name="dialog_blink_trackball">Choisir la fréquence de clignotement</string>
     <string name="color_trackball_flash_title">Couleur du flash</string>
@@ -81,7 +97,7 @@
     <string name="color_trackball_blink_title">Fréquence du clignotement</string>
     <string name="color_trackball_blink_summary">Choix de la durée à attendre entre deux flashs</string>
     <string name="color_trackball_test_title">Test</string>
-    <string name="color_trackball_test_summary">Tester les paramètres choisis</string>
+    <string name="color_trackball_test_summary">Tester les paramètres</string>
     <string name="dialog_clear_flash">Annuler le flash</string>
     <string name="trackball_advanced_title">Avancé</string>
     <string name="pref_trackball_screen_title">Toujours respirer</string>
@@ -137,14 +153,14 @@
     <string name="pref_lockscreen_style_summary">Choisir le style de l\'écran de verrouillage</string>
 
     <!-- Long Press Home -->
-    <string name="long_press_home_title">Pression longue sur maison</string>
+    <string name="long_press_home_title">Longue pression sur Accueil</string>
     <string name="long_press_home_summary">Nombre d\'applications récentes, etc.</string>
-    <string name="recent_apps_show_title">Titre \"Récentes\"</string>
-    <string name="recent_apps_num_title">Nombre d\'application récentes</string>
-    <string name="recent_apps_num_summary">Nombre d\'applications récemment ouvertes à afficher lors d\'une longue pression sur maison</string>
+    <string name="recent_apps_show_title">Afficher Titre</string>
+    <string name="recent_apps_num_title">Nombre d\'applications récentes</string>
+    <string name="recent_apps_num_summary">Nombre d\'applications récemment ouvertes à afficher lors d\'une longue pression sur Accueil</string>
     <string name="dialog_recent_apps_num_title">Spécifier le nombre d\'applications affichées</string>
     <string name="use_custom_app_title">Ouvrir une application</string>
-    <string name="use_custom_app_summary">Ouvrir une application en lieu et place du dialogue des dernières applications ouvertes</string>
+    <string name="use_custom_app_summary">Ouvrir une application à la place du dialogue des dernières applications ouvertes</string>
     <string name="select_custom_app_title">Sélectionner l\'application</string>
     <string name="group_applications">Applications</string>
 
@@ -467,4 +483,23 @@
     <string name="phone_goggles_confirmation_none">Aucune</string>
     <string name="phone_goggles_confirmation_prompt">Pop-up</string>
     <string name="phone_goggles_confirmation_maths">Problèmes mathématiques</string>
+
+    <!-- CPU Settings strings -->
+    <string name="cpu_settings_title">Paramètres CPU</string>
+    <string name="cpu_title">Paramètres CPU</string>
+    <string name="cpu_summary">Stratégies et fréquences</string>
+    <string name="cpu_governors_title">Méthodes disponibles</string>
+    <string name="cpu_governors_summary">Liste des méthodes de gestion d\'énergie\nEn cours: %S</string>
+    <string name="cpu_min_freq_title">Fréquence Minimale</string>
+    <string name="cpu_min_freq_summary">Fréquence CPU mini\nActuellement: %s</string>
+    <string name="cpu_max_freq_title">Fréquence Maximale</string>
+    <string name="cpu_max_freq_summary">Fréquence CPU maxi\nActuellement: %s</string>
+    <string name="cpu_set_on_boot">Appliquer au démarrage</string>
+    <string name="cpu_set_on_boot_summary">Modifie les fréquences du CPU au démarrage</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Gestion des Permissions</string>
+    <string name="perm_enable_management_summary">Activer la gestion manuelle des permissions</string>
+    <string name="perm_enable_warning_message">Attention!\nLa plupart du temps, interdire une permission provoque un mauvais fonctionnement de l\'application. Si l\'application révoquée force-close réactivez la permission ou n\'utilisez pas l\'application.\nN\'ENVOYEZ PAS de rapport de bug si l\'application en question ne fonctionne pas comme prévu !</string>
+    <string name="perm_enable_warning_title">Etes-vous sûr ?</string>
 </resources>

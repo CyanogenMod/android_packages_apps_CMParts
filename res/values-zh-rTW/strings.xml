@@ -87,6 +87,7 @@
 
     <!-- User interface : Rotation -->
     <string name="rotation_category_title">自動旋轉允許角度</string>
+    <string name="pref_rotation_0_title">0 度</string>
     <string name="pref_rotation_90_title">90 度</string>
     <string name="pref_rotation_180_title">180 度</string>
     <string name="pref_rotation_270_title">270 度</string>
@@ -211,8 +212,8 @@
     <string name="pref_volume_wake_summary">按一下音量的上升／下降鍵來喚醒裝置。適用於難以按壓電源鍵的裝置</string>
     <string name="pref_trackball_unlock_title">軌跡球解鎖</string>
     <string name="pref_trackball_unlock_summary">按一下軌跡球解除裝置鎖定</string>
-    <string name="pref_menu_unlock_title">Menu 鍵解鎖</string>
-    <string name="pref_menu_unlock_summary">按一下 Menu 鍵解除裝置鎖定</string>
+    <string name="pref_menu_unlock_title">選單鍵解鎖</string>
+    <string name="pref_menu_unlock_summary">按一下選單鍵解除裝置鎖定</string>
     <string name="pref_lockscreen_quick_unlock_control_title">快速解鎖</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">輸入 PIN 或密碼時無需按 OK 確定，刪除會被視作輸入錯誤。</string>
     <string name="pref_lockscreen_custom_app_toggle_title">啟動自訂應用程式</string>
@@ -245,6 +246,7 @@
     <string name="button_settings_title">按鍵設定</string>
     <string name="long_press_home_title">長按主畫面鍵設定</string>
     <string name="long_press_home_summary">自訂長按主畫面鍵的行為</string>
+
     <string name="input_search_key_title">搜尋鍵行為</string>
     <string name="input_search_key_summary">為按一下搜尋鍵及長按搜尋鍵定義自訂動作</string>
     <string name="pref_input_custom_search_app_toggle_title">搜尋鍵應用程式</string>
@@ -252,6 +254,13 @@
     <string name="pref_input_custom_search_app_activity_title">自訂應用程式</string>
     <string name="pref_input_custom_long_search_app_toggle_title">長按搜尋鍵應用程式</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">長按搜尋鍵時啟動的自訂應用程式</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">長按選單鍵設定</string>
+    <string name="long_press_menu_summary">自訂長按選單鍵的行為</string>
+    <string name="pref_user_defined_long_press_menu_title">選擇自訂應用程式</string>
+    <string name="pref_long_press_menu_title">選擇行為</string>
+    <string name="pref_long_press_menu_summary">自訂長按選單鍵</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">顯示近期應用程式標題</string>
@@ -426,7 +435,7 @@
     <string name="pref_ring_mode_title">音效模式</string>
     <string name="pref_ring_mode_summary">選擇音效按鈕如何切換模式</string>
     <string name="pref_flash_mode_title">手電筒模式</string>
-    <string name="pref_flash_mode_summary">選擇強／死光（Evo）</string>
+    <string name="pref_flash_mode_summary">選擇強／死光</string>
 
     <!-- Backlight -->
     <string name="backlight_title">自動亮度</string>
@@ -545,7 +554,7 @@
     <string name="gestures_shortcut_or_activity">捷徑或動作</string>
     <string name="gestures_flashlight">手電筒開關</string>
     <string name="pref_lockscreen_disable_unlock_tab">隱藏解鎖道具</string>
-    <string name="pref_lockscreen_disable_unlock_tab_summary">注意：要使用這個選項您必須先啟用軌跡球、Menu 鍵、或手勢解鎖。</string>
+    <string name="pref_lockscreen_disable_unlock_tab_summary">注意：要使用這個選項您必須先啟用軌跡球、選單鍵、或手勢解鎖。</string>
     <string name="gestures_action_label">動作：</string>
     <string name="gestures_draw_label">手勢：</string>
     <string name="gestures_draw_for_label">“<xliff:g id="action">%s</xliff:g>”的手勢：</string>

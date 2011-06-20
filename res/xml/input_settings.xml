@@ -13,6 +13,14 @@
 				android:targetClass="com.cyanogenmod.cmparts.activities.LongPressHomeActivity" />
 		</PreferenceScreen>
 
+		<!-- Long Press Menu -->
+		<PreferenceScreen android:key="long_press_menu"
+			android:title="@string/long_press_menu_title" android:summary="@string/long_press_menu_summary">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetPackage="com.cyanogenmod.cmparts"
+				android:targetClass="com.cyanogenmod.cmparts.activities.LongPressMenuActivity" />
+		</PreferenceScreen>
+
 		<!-- Custom actions for search key - submenu -->
 		<PreferenceScreen android:key="input_search_key"
 			android:title="@string/input_search_key_title" android:summary="@string/input_search_key_summary">

@@ -255,4 +255,11 @@
         <item>Голосніше</item>
         <item>Тихіше</item>
     </string-array>
+    <string-array name="entries_long_press_menu">
+        <item>Немає</item>
+        <item>Клавіатура</item>
+        <item>Пошук</item>
+        <item>Користувацька програма</item>
+        <item>Рядок стану</item>
+    </string-array>
 </resources>

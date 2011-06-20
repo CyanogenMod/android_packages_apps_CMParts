@@ -151,4 +151,38 @@
         <item>Léger</item>
         <item>Très léger</item>
     </string-array>
+
+    <string-array name="entries_vol_actions">
+        <item>Aucun/Défaut</item>
+        <item>Accueil</item>
+        <item>Menu</item>
+        <item>Retour</item>
+        <item>Recherche</item>
+        <item>Veille</item>
+        <item>Appel</item>
+        <item>Fin appel</item>
+        <item>Lecture/Pause</item>
+        <item>Piste Suivante</item>
+        <item>Piste Précédente</item>
+        <item>Appui long Accueil</item>
+    </string-array>
+
+    <string-array name="entries_unhide_button">
+        <item>Accueil</item>
+        <item>Menu</item>
+        <item>Retour</item>
+        <item>Recherche</item>
+        <item>Photo</item>
+        <item>Volume +</item>
+        <item>Volume -</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Aucun</item>
+        <item>Clavier</item>
+        <item>Recherche</item>
+        <item>Application Perso</item>
+        <item>Barre de notification</item>
+    </string-array>
+
 </resources>

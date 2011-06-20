@@ -98,6 +98,7 @@
     <string name="pref_na_on_plug_title">Keep display off on plug</string>
     <string name="pref_na_on_plug_summary">When enabled, display will not turn on automatically when phone is plugged to usb or power (useful e.g. for solar power adapters).</string>
 
+
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Status bar tweaks</string>
     <string name="ui_status_bar_am_pm_title">AM/PM style</string>
@@ -262,6 +263,7 @@
     <string name="button_settings_title">Button settings</string>
     <string name="long_press_home_title">Long-press home settings</string>
     <string name="long_press_home_summary">Number of recent applications, etc</string>
+
     <string name="input_search_key_title">Search key behaviour</string>
     <string name="input_search_key_summary">Define custom actions for search key and long-press search key</string>
     <string name="pref_input_custom_search_app_toggle_title">Search key app</string>
@@ -269,6 +271,13 @@
     <string name="pref_input_custom_search_app_activity_title">Custom application</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press search app</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starts a custom app when long-pressing the search key</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Long-press menu settings</string>
+    <string name="long_press_menu_summary">Custom setting for long press menu</string>
+    <string name="pref_user_defined_long_press_menu_title">Select custom application</string>
+    <string name="pref_long_press_menu_title">Choose behaviour</string>
+    <string name="pref_long_press_menu_summary">Customize long press menu</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Show recent apps title</string>

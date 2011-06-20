@@ -168,6 +168,12 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.LongPressMenuActivity"
+            android:label="@string/long_press_menu_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.PerformanceSettingsActivity"
             android:label="@string/performance_settings_title">
             <intent-filter>

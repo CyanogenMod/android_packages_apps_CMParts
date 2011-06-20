@@ -361,4 +361,13 @@
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_unhide_button -->
+
+    <string-array name="entries_long_press_menu">
+        <item>無</item>
+        <item>軟體鍵盤</item>
+        <item>搜尋鍵</item>
+        <item>自訂應用程式</item>
+        <item>顯示／隱藏通知列</item>
+    </string-array>
+
 </resources>

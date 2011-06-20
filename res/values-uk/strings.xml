@@ -68,6 +68,13 @@
   <string name="tablet_soft_buttons_back_title">Назад</string>
   <string name="tablet_soft_buttons_search_title">Пошук</string>
   <string name="tablet_soft_buttons_quick_na_title">Швидкі сповіщення</string>
+
+  <string name="rotation_category_title">Обернення за акселерометром</string>
+  <string name="pref_rotation_0_title">0 градусів</string>
+  <string name="pref_rotation_90_title">90 градусів</string>
+  <string name="pref_rotation_180_title">180 градусів</string>
+  <string name="pref_rotation_270_title">270 градусів</string>
+
   <string name="ui_status_bar_title">Рядок стану</string>
   <string name="ui_status_bar_am_pm_title">Індекси AM/PM</string>
   <string name="ui_status_bar_am_pm_summary">Відображення індексів AM/PM позаду годинника</string>
@@ -199,7 +206,7 @@
   <string name="haptic_title">Тактильний звор. зв\u2019язок</string>
   <string name="haptic_summary">Налаштування моменту та інтенсивності тактильного зворотнього зв\u2019язку</string>
   <string name="button_settings_title">Налаштування кнопок</string>
-  <string name="long_press_home_title">Довге нат. кн. \u201CДомівка\u201D</string>
+  <string name="long_press_home_title">Довге натиск. кн. \u201CДомівка\u201D</string>
   <string name="long_press_home_summary">Програми, які нещодавно використовувалися, тощо</string>
   <string name="input_search_key_title">Кнопка \u201CПошук\u201D</string>
   <string name="input_search_key_summary">Встановлення користувацьких програм для натискання та довгого натискання на кнопку \u201CПошук\u201D</string>
@@ -208,6 +215,11 @@
   <string name="pref_input_custom_search_app_activity_title">Користувацька програма</string>
   <string name="pref_input_custom_long_search_app_toggle_title">Довге натискання</string>
   <string name="pref_input_custom_long_search_app_toggle_summary">Запуск користувацьких програм за довгим натисканням кнопки \u201CПошук\u201D</string>
+  <string name="long_press_menu_title">Довге натиск. кн. \u201CМеню\u201D</string>
+  <string name="long_press_menu_summary">Користувацькі налаштування для довгого натискання на кнопку \u201CМеню\u201D</string>
+  <string name="pref_user_defined_long_press_menu_title">Виберіть програму</string>
+  <string name="pref_long_press_menu_title">Виберіть дію</string>
+  <string name="pref_long_press_menu_summary">Пристосовування дії за довгим натискання на кнопку \u201CМеню\u201D</string>
   <string name="recent_apps_show_title">Назва вікна</string>
   <string name="recent_apps_num_title">Кількість прог. у вікні</string>
   <string name="recent_apps_num_summary">Кількість елементів у вікні \u201CПрограми, які нещодавно використовувалися\u201D, що викликається за довгим натисканням кнопки \u201CДомівка\u201D</string>
@@ -251,7 +263,7 @@
   <string name="haptic_default_toast">Завантажені типові значення</string>
   <string name="performance_settings_title">Продуктивність</string>
   <string name="performance_settings_summary">Налаштування продуктивності пристрою</string>
-  <string name="pref_compcache_title">Compcache</string>
+  <string name="pref_compcache_title">Стиснення пам\u2019яті</string>
   <string name="pref_compcache_summary">Стиснення пам\u2019яті з метою збільшення віртуальної ємності (потрібне перезавантаження)</string>
   <string name="pref_jit_mode_title">JIT</string>
   <string name="pref_jit_mode_summary">Компіляція Dalvik \u201Cна льоту\u201D (потрібне перезавантаження)</string>
@@ -437,7 +449,7 @@
   <string name="gestures_delete">Видалити</string>
   <string name="gestures_delete_success">Жест видалений</string>
   <string name="gestures_error_loading">Помилка під час операції з файлом жестів.</string>
-  <string name="gestures_unlock_only">Розбл. тел.</string>
+  <string name="gestures_unlock_only">Розблокування телелефону</string>
   <string name="gestures_toggle_sound">Звук</string>
   <string name="gestures_shortcut_or_activity">Ярлик або дія</string>
   <string name="gestures_flashlight">Ліхтарик</string>

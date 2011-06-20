@@ -267,4 +267,12 @@
         <item>Тише</item>
     </string-array>
 
+    <string-array name="entries_long_press_menu">
+        <item>Нет</item>
+        <item>Вирт. клавиатура</item>
+        <item>Поиск</item>
+        <item>Пользоват. приложение</item>
+        <item>Перекл. строку состояния</item>
+    </string-array>
+
 </resources>

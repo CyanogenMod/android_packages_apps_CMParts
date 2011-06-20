@@ -245,6 +245,7 @@
     <string name="button_settings_title">Impostazioni tasti</string>
     <string name="long_press_home_title">Long-press tasto home</string>
     <string name="long_press_home_summary">Numero di applicazioni recenti, etc.</string>
+
     <string name="input_search_key_title">Comportamento tasto cerca</string>
     <string name="input_search_key_summary">Assegna un\'azione personalizzata al tasto cerca e alla pressione prolungata del tasto cerca</string>
     <string name="pref_input_custom_search_app_toggle_title">App tasto cerca</string>
@@ -252,6 +253,13 @@
     <string name="pref_input_custom_search_app_activity_title">Applicazione personalizzata</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press tasto cerca</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Avvia un\'applicazione personalizzata alla pressione prolungata del tasto cerca</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Long-press tasto menu</string>
+    <string name="long_press_menu_summary">Impostazioni personalizzate per la pressione prolungata del tasto menu</string>
+    <string name="pref_user_defined_long_press_menu_title">Seleziona applicazione</string>
+    <string name="pref_long_press_menu_title">Seleziona azione</string>
+    <string name="pref_long_press_menu_summary">Seleziona l\'azione da associare alla pressione prolungata del tasto menu</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Mostra titolo Recenti</string>
