@@ -91,9 +91,6 @@
     <string name="pref_rotation_180_title">180 Grad</string>
     <string name="pref_rotation_270_title">270 Grad</string>
 
-    <string name="pref_omap_dss_mode_title">DSI kernel Bug Workaround</string>
-    <string name="pref_omap_dss_mode_summary">Setzt den OMAP DSS update mode auf automatisch. Erzeugt leichtes Tearing des Displays, verhindert aber ein einfrieren des Displays und gelegentliche kernel panics.</string>
-
     <string name="pref_na_on_plug_title">Display beim Einstecken ausgeschaltet lassen.</string>
     <string name="pref_na_on_plug_summary">Wenn aktiviert, wird das Display beim Einstecken in USB oder Ladegerät nicht automatisch eingeschaltet. (z.B. nützlich bei Solarladegeräten)</string>
 
