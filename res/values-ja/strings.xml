@@ -87,6 +87,7 @@
 
     <!-- User interface : Rotation -->
     <string name="rotation_category_title">加速度センサによる回転</string>
+    <string name="pref_rotation_0_title">0度</string>
     <string name="pref_rotation_90_title">90度</string>
     <string name="pref_rotation_180_title">180度</string>
     <string name="pref_rotation_270_title">270度</string>
@@ -241,6 +242,13 @@
     <string name="pref_volbtn_music_controls_summary">スクリーンオフの時、音量ボタンを長押しすることで曲のシークを行う</string>
     <string name="pref_cambtn_music_controls_title">カメラボタンによるミュージックコントロール</string>
     <string name="pref_cambtn_music_controls_summary">スクリーンオフの時、カメラボタンを長押しすることで曲の再生と停止を切り替える</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">メニュー長押し設定</string>
+    <string name="long_press_menu_summary">メニューボタンを長押ししたときのカスタマイズ</string>
+    <string name="pref_user_defined_long_press_menu_title">カスタムアプリの選択</string>
+    <string name="pref_long_press_menu_title">挙動の選択</string>
+    <string name="pref_long_press_menu_summary">メニューボタン長押しの設定</string>
 
     <!-- Long Press Home -->
     <string name="long_press_home_title">ホーム長押し設定</string>

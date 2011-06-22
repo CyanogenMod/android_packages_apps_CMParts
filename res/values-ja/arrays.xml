@@ -267,4 +267,12 @@
         <item>ボリュームダウン</item>
     </string-array>
 
+    <string-array name="entries_long_press_menu">
+        <item>なし</item>
+        <item>ソフトウェアキーボード</item>
+        <item>検索</item>
+        <item>カスタムアプリ</item>
+        <item>ステータスバートグル</item>
+    </string-array>
+
 </resources>

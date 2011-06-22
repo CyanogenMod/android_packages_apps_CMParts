@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
     <!-- Generic -->
     <string name="app_name">CM 设置</string>
 
@@ -40,14 +40,70 @@
     <string name="pref_electron_beam_animation_on">屏幕开启动画</string>
     <string name="pref_electron_beam_animation_off">屏幕关闭动画</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">平板优化</string>
+    <string name="tablet_tweaks_summary_head">最有用的平板设置都集中在此处，手机也可以使用这些设置</string>
+    <string name="tablet_tweaks_sb_bottom_title">底部状态栏</string>
+    <string name="tablet_tweaks_sb_bottom_summary">在底部显示状态栏。这对于那些将主页/菜单之类的软键放在状态栏的平板而言很有用</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">忽略区域</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">在状态栏的中间加入一个半个屏幕宽度的忽略区域</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">软键靠左</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">将软键放置于状态栏左边</string>
+    <string name="tablet_tweaks_soft_button_list_title">选择左软键</string>
+    <string name="tablet_tweaks_interface_head">界面</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">禁用锁屏</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">当选项启用时，无论在启动时候还是运行期间均不显示锁屏/解锁屏幕</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">禁用全屏</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">忽略应用程序的全屏请求。启用的时候，状态栏总是可见直到被按钮所隐藏</string>
+    <string name="tablet_tweaks_unhide_button_list_head">显示按钮</string>
+    <string name="tablet_tweaks_unhide_button_list_title">选择显示按钮</string>
+    <string name="tablet_tweaks_extend_pm_title">扩展电源选项</string>
+    <string name="tablet_tweaks_extend_pm_summary">将主页/返回/菜单等动作加入到电源菜单</string>
+    <string name="tablet_tweaks_extend_pm_list_title">选择电源菜单按钮</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">反置音量键行为</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">音量键行为正常。点击调整音量，长按执行用户行为</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">音量键行为正常。点击执行用户行为，长按调整音量</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">重新映射音量键</string>
+    <string name="tablet_tweaks_long_volp_action_title">长按加大音量</string>
+    <string name="tablet_tweaks_long_volp_action_summary">设置长按音量键的时候执行主页/菜单/返回等动作，仅在屏幕开启时起效</string>
+    <string name="tablet_tweaks_long_volm_action_title">长按减小音量</string>
+    <string name="tablet_tweaks_vol_both_action_title">双音量键</string>
+    <string name="tablet_tweaks_vol_both_action_summary">注意：某些设备在同时按下音量键和电源键的时候会硬件重启</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">长按双音量键</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">电源菜单设置</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">软键</string>
+    <string name="tablet_soft_buttons_home_title">主页</string>
+    <string name="tablet_soft_buttons_menu_title">菜单</string>
+    <string name="tablet_soft_buttons_back_title">返回</string>
+    <string name="tablet_soft_buttons_search_title">搜索</string>
+    <string name="tablet_soft_buttons_quick_na_title">快速通知</string>
+
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">自动旋转角度</string>
+    <string name="pref_rotation_0_title">0 度</string>
+    <string name="pref_rotation_90_title">90 度</string>
+    <string name="pref_rotation_180_title">180 度</string>
+    <string name="pref_rotation_270_title">270 度</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">状态栏调整</string>
+    <string name="ui_status_bar_am_pm_title">上午／下午格式</string>
+    <string name="ui_status_bar_am_pm_summary">始终旁边的上午／下午格式</string>
     <string name="ui_status_bar_clock_title">显示时钟</string>
     <string name="ui_status_bar_clock_summary">如果禁用，状态栏中的时钟将不会显示</string>
     <string name="ui_status_bar_cm_battery_title">电量百分比</string>
     <string name="ui_status_bar_cm_battery_summary">在小电池图标上显示电量百分比。如果主题破坏了外观则禁用它</string>
+    <string name="ui_status_bar_compact_carrier_title">减小电信运营商名称</string>
+    <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，将电信运营商名称缩小显示</string>
+    <string name="ui_status_bar_toggle_brightness">状态栏亮度控制</string>
+    <string name="ui_status_bar_toggle_brightness_summary">允许滑动状态栏以调整亮度</string>
+    <string name="ui_status_bar_toggle_info">亮度自动调整已启用</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 通知</string>
@@ -151,6 +207,8 @@
     <string name="pref_lockscreen_always_music_controls_summary">无论是否正在播放音乐，总是显示音乐播放控制按钮</string>
     <string name="pref_trackball_wake_title">轨迹球唤醒</string>
     <string name="pref_trackball_wake_summary">按下轨迹球可唤醒设备</string>
+    <string name="pref_volume_wake_title">音量键唤醒</string>
+    <string name="pref_volume_wake_summary">按一下增加／减小音量键来唤醒设备。用于不方便按电源键的设备</string>
     <string name="pref_trackball_unlock_title">轨迹球解锁</string>
     <string name="pref_trackball_unlock_summary">按下轨迹球可解锁设备</string>
     <string name="pref_menu_unlock_title">菜单键解锁</string>
@@ -170,6 +228,8 @@
     <string name="lockscreen_delay_header">延迟和超时</string>
     <string name="pref_lockscreen_style_title">锁屏风格</string>
     <string name="pref_lockscreen_style_summary">选择锁屏风格</string>
+    <string name="pref_in_call_style_title">来电屏幕风格</string>
+    <string name="pref_in_call_style_summary">选择来电接听/拒绝的小插件风格</string>
     <string name="pref_volbtn_music_controls_title">音量键音乐控制</string>
     <string name="pref_volbtn_music_controls_summary">在屏幕关闭时长按音量键寻找音乐曲目</string>
     <string name="pref_cambtn_music_controls_title">照相键音乐控制</string>
@@ -192,6 +252,13 @@
     <string name="pref_input_custom_search_app_activity_title">自定义程序</string>
     <string name="pref_input_custom_long_search_app_toggle_title">长按搜索键</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">当长按搜索键时启动自定义程序</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">长按菜单键设置</string>
+    <string name="long_press_menu_summary">自定义长按菜单键</string>
+    <string name="pref_user_defined_long_press_menu_title">选择自定义应用程序</string>
+    <string name="pref_long_press_menu_title">选择行为</string>
+    <string name="pref_long_press_menu_summary">自定义长按菜单键</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">显示最近打开程序名称</string>
@@ -327,6 +394,10 @@
     <string name="summary_expanded_widget">使用扩展视图的电源控件</string>
     <string name="title_expanded_hide_onchange">更改时隐藏</string>
     <string name="summary_expanded_hide_onchange">在切换控件按键后隐藏下拉通知栏</string>
+    <string name="title_expanded_hide_indicator">隐藏指示器</string>
+    <string name="summary_expanded_hide_indicator">不显示小工具下方的按钮</string>
+    <string name="title_expanded_hide_scrollbar">隐藏滚动条</string>
+    <string name="summary_expanded_hide_scrollbar">即使选择的小工具数量超过上限也不显示滚动条</string>
     <string name="expanded_color_mask">指示灯颜色</string>
     <string name="title_widget_picker">控制按钮</string>
     <string name="summary_widget_picker">选取您需要的控件按键</string>
@@ -411,6 +482,9 @@
     <string name="sound_notifications_focus_summary">向兼容此功能的程序发送声音切入请求，使其降低音量以便突出播放要切入的声音事件。</string>
     <string name="sound_volume_control_silent_title">静音状态</string>
     <string name="sound_volume_control_silent_summary">添加完整的静音控制状态</string>
+    <string name="sound_vibrate_in_call_title">通话中震动</string>
+    <string name="sound_vibrate_in_call_summary_off">在通话中的通知不震动</string>
+    <string name="sound_vibrate_in_call_summary_on">通话中的通知仍然震动</string>
     <string name="sound_to_speaker_title">总是通过扬声器播放</string>
     <string name="sound_notifications_title">通知</string>
     <string name="sound_rings_title">铃声</string>
@@ -475,10 +549,15 @@
     <string name="gestures_error_loading">手势文件操作发生问题。</string>
     <string name="gestures_unlock_only">解锁手机</string>
     <string name="gestures_toggle_sound">切换声音</string>
+    <string name="gestures_shortcut_or_activity">快捷方式或动作</string>
     <string name="gestures_flashlight">手电筒</string>
     <string name="pref_lockscreen_disable_unlock_tab">禁用解锁滑块</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">注意：在此选项可用前您需要启用轨迹球、菜单键或手势解锁</string>
+    <string name="gestures_action_label">动作：</string>
+    <string name="gestures_draw_label">手势：</string>
+    <string name="gestures_draw_for_label">“<xliff:g id="action">%s</xliff:g>”的手势：</string>
     <string name="gestures_already_present">警告：一个相似的手势会关联到另一个动作！</string>
+    <string name="gestures_run_in_background">在后台运行</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">查看更新日志</string>
