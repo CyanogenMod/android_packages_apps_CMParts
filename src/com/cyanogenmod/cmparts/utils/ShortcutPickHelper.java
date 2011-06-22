@@ -19,13 +19,15 @@ package com.cyanogenmod.cmparts.utils;
 import com.cyanogenmod.cmparts.R;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.Intent.ShortcutIconResource;
-import android.content.pm.ApplicationInfo;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class ShortcutPickHelper {
@@ -99,24 +101,57 @@ public class ShortcutPickHelper {
     }
 
     private void completeSetCustomApp(Intent data) {
-        PackageManager pm = mParent.getPackageManager();
-        String friendlyName = data.getComponent().getPackageName();
-
-        if (friendlyName != null) {
-            try {
-                ApplicationInfo ai = pm.getApplicationInfo(friendlyName, PackageManager.GET_META_DATA);
-                friendlyName = (String) ai.loadLabel(pm);
-            } catch (NameNotFoundException e) {
-            }
-        }
-        mListener.shortcutPicked(data.toUri(0), friendlyName, true);
+        mListener.shortcutPicked(data.toUri(0), getFriendlyActivityName(data, false), true);
     }
 
     private void completeSetCustomShortcut(Intent data) {
         Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        String friendlyName = data.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
+        /* preserve shortcut name, we want to restore it later */
+        intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, data.getStringExtra(Intent.EXTRA_SHORTCUT_NAME));
         String appUri = intent.toUri(0);
         appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", "android.intent.action.VIEW");
-        mListener.shortcutPicked(appUri, friendlyName, false);
+        mListener.shortcutPicked(appUri, getFriendlyShortcutName(intent), false);
+    }
+
+    private String getFriendlyActivityName(Intent intent, boolean labelOnly) {
+        PackageManager pm = mParent.getPackageManager();
+        ActivityInfo ai = intent.resolveActivityInfo(pm, PackageManager.GET_ACTIVITIES);
+        String friendlyName = null;
+
+        if (ai != null) {
+            friendlyName = ai.loadLabel(pm).toString();
+            if (friendlyName == null && !labelOnly) {
+                friendlyName = ai.name;
+            }
+        }
+
+        return friendlyName != null || labelOnly ? friendlyName : intent.toUri(0);
+    }
+
+    private String getFriendlyShortcutName(Intent intent) {
+        String activityName = getFriendlyActivityName(intent, true);
+        String name = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
+
+        if (activityName != null && name != null) {
+            return activityName + ": " + name;
+        }
+        return name != null ? name : intent.toUri(0);
+    }
+
+    public String getFriendlyNameForUri(String uri) {
+        if (uri == null) {
+            return null;
+        }
+
+        try {
+            Intent intent = Intent.parseUri(uri, 0);
+            if (Intent.ACTION_MAIN.equals(intent.getAction())) {
+                return getFriendlyActivityName(intent, false);
+            }
+            return getFriendlyShortcutName(intent);
+        } catch (URISyntaxException e) {
+        }
+
+        return uri;
     }
 }

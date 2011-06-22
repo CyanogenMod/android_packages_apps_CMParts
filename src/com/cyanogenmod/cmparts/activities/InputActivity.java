@@ -166,12 +166,14 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
     @Override
     public void onResume() {
         super.onResume();
-        mUserDefinedKey1Pref.setSummary(Settings.System.getString(getContentResolver(),
-                Settings.System.USER_DEFINED_KEY1_APP));
-        mUserDefinedKey2Pref.setSummary(Settings.System.getString(getContentResolver(),
-                Settings.System.USER_DEFINED_KEY2_APP));
-        mUserDefinedKey3Pref.setSummary(Settings.System.getString(getContentResolver(),
-                Settings.System.USER_DEFINED_KEY3_APP));
+        setAppSummary(mUserDefinedKey1Pref, Settings.System.USER_DEFINED_KEY1_APP);
+        setAppSummary(mUserDefinedKey2Pref, Settings.System.USER_DEFINED_KEY2_APP);
+        setAppSummary(mUserDefinedKey3Pref, Settings.System.USER_DEFINED_KEY3_APP);
+    }
+
+    private void setAppSummary(Preference pref, String key) {
+        String value = Settings.System.getString(getContentResolver(), key);
+        pref.setSummary(mPicker.getFriendlyNameForUri(value));
     }
 
     @Override
@@ -276,7 +278,7 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
         }
 
         if (Settings.System.putString(getContentResolver(), key, uri)) {
-            pref.setSummary(uri);
+            pref.setSummary(friendlyName);
         }
     }
 }

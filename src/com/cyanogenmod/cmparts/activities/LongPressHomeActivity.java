@@ -72,7 +72,10 @@ public class LongPressHomeActivity extends PreferenceActivity
     public void onResume() {
         super.onResume();
         mUseCustomAppPref.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.USE_CUSTOM_APP, 0) == 1);
-        mSelectCustomAppPref.setSummary(Settings.System.getString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP));
+
+        String value = Settings.System.getString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP);
+        mSelectCustomAppPref.setSummary(mPicker.getFriendlyNameForUri(value));
+
         readRecentAppsNumPreference();
     }
 
@@ -133,7 +136,7 @@ public class LongPressHomeActivity extends PreferenceActivity
     @Override
     public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
         if (Settings.System.putString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP, uri)) {
-            mSelectCustomAppPref.setSummary(uri);
+            mSelectCustomAppPref.setSummary(friendlyName);
         }
     }
 }
