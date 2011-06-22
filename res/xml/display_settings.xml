@@ -23,19 +23,6 @@
         <CheckBoxPreference android:key="pref_na_on_plug"
             android:title="@string/pref_na_on_plug_title"
             android:summary="@string/pref_na_on_plug_summary" />
-
-    </PreferenceCategory>
-
-    <!-- Rotation -->
-    <PreferenceCategory android:title="@string/rotation_category_title">
-        <CheckBoxPreference android:key="pref_rotation_0"
-            android:title="@string/pref_rotation_0_title" />
-        <CheckBoxPreference android:key="pref_rotation_90"
-            android:title="@string/pref_rotation_90_title" />
-        <CheckBoxPreference android:key="pref_rotation_180"
-            android:title="@string/pref_rotation_180_title" />
-        <CheckBoxPreference android:key="pref_rotation_270"
-            android:title="@string/pref_rotation_270_title" />
     </PreferenceCategory>
 
     <!-- Rotation -->
