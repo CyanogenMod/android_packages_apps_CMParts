@@ -19,7 +19,6 @@ package com.cyanogenmod.cmparts.activities;
 import java.util.ArrayList;
 
 import android.content.Intent;
-import android.content.Intent.ShortcutIconResource;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
@@ -33,9 +32,11 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
 public class InputActivity extends PreferenceActivity implements
         OnPreferenceChangeListener {
+public class InputActivity extends PreferenceActivity implements ShortcutPickHelper.OnPickListener {
 
     private static final String TRACKBALL_WAKE_PREF = "pref_trackball_wake";
 
@@ -91,13 +92,9 @@ public class InputActivity extends PreferenceActivity implements
 
     private Preference mUserDefinedKey3Pref;
 
+    private ShortcutPickHelper mPicker;
+
     private int mKeyNumber = 1;
-
-    private static final int REQUEST_PICK_SHORTCUT = 1;
-
-    private static final int REQUEST_PICK_APPLICATION = 2;
-
-    private static final int REQUEST_CREATE_SHORTCUT = 3;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -162,6 +159,8 @@ public class InputActivity extends PreferenceActivity implements
         }
         if (!getResources().getBoolean(R.bool.has_search_button))
                 generalCategory.removePreference((Preference) prefSet.findPreference("input_search_key"));
+
+        mPicker = new ShortcutPickHelper(this, this);
     }
 
     @Override
@@ -175,6 +174,12 @@ public class InputActivity extends PreferenceActivity implements
                 Settings.System.USER_DEFINED_KEY3_APP));
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPicker.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;
         if (preference == mTrackballWakePref) {
@@ -206,13 +211,16 @@ public class InputActivity extends PreferenceActivity implements
                     mDockObserverOffPref.isChecked() ? "1" : "0");
             return true;
         } else if (preference == mUserDefinedKey1Pref) {
-            pickShortcut(1);
+            mKeyNumber = 1;
+            mPicker.pickShortcut();
             return true;
         } else if (preference == mUserDefinedKey2Pref) {
-            pickShortcut(2);
+            mKeyNumber = 2;
+            mPicker.pickShortcut();
             return true;
         } else if (preference == mUserDefinedKey3Pref) {
-            pickShortcut(3);
+            mKeyNumber = 3;
+            mPicker.pickShortcut();
             return true;
         }
 
@@ -246,76 +254,29 @@ public class InputActivity extends PreferenceActivity implements
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_APPLICATION:
-                    completeSetCustomApp(data);
-                    break;
-                case REQUEST_CREATE_SHORTCUT:
-                    completeSetCustomShortcut(data);
-                    break;
-                case REQUEST_PICK_SHORTCUT:
-                    processShortcut(data, REQUEST_PICK_APPLICATION, REQUEST_CREATE_SHORTCUT);
-                    break;
-            }
-        }
-    }
+    public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
+        String key;
+        Preference pref;
 
-    void processShortcut(Intent intent, int requestCodeApplication, int requestCodeShortcut) {
-        // Handle case where user selected "Applications"
-        String applicationName = getResources().getString(R.string.group_applications);
-        String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
-        if (applicationName != null && applicationName.equals(shortcutName)) {
-            Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-            Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-            pickIntent.putExtra(Intent.EXTRA_INTENT, mainIntent);
-            startActivityForResult(pickIntent, requestCodeApplication);
-        } else {
-            startActivityForResult(intent, requestCodeShortcut);
-        }
-    }
-
-    void completeSetCustomShortcut(Intent data) {
-        Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 1) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY1_APP, intent.toUri(0))) {
-                mUserDefinedKey1Pref.setSummary(intent.toUri(0));
-            }
-        } else if (keyNumber == 2) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY2_APP, intent.toUri(0))) {
-                mUserDefinedKey2Pref.setSummary(intent.toUri(0));
-            }
-        } else if (keyNumber == 3) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY3_APP, intent.toUri(0))) {
-                mUserDefinedKey3Pref.setSummary(intent.toUri(0));
-            }
-        }
-    }
-
-    void completeSetCustomApp(Intent data) {
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 1) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY1_APP, data.toUri(0))) {
-                mUserDefinedKey1Pref.setSummary(data.toUri(0));
-            }
-        } else if (keyNumber == 2) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY2_APP, data.toUri(0))) {
-                mUserDefinedKey2Pref.setSummary(data.toUri(0));
-            }
-        } else if (keyNumber == 3) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USER_DEFINED_KEY3_APP, data.toUri(0))) {
-                mUserDefinedKey3Pref.setSummary(data.toUri(0));
-            }
+        switch (mKeyNumber) {
+            case 1:
+                key = Settings.System.USER_DEFINED_KEY1_APP;
+                pref = mUserDefinedKey1Pref;
+                break;
+            case 2:
+                key = Settings.System.USER_DEFINED_KEY2_APP;
+                pref = mUserDefinedKey2Pref;
+                break;
+            case 3:
+                key = Settings.System.USER_DEFINED_KEY3_APP;
+                pref = mUserDefinedKey3Pref;
+                break;
+            default:
+                return;
         }
 
+        if (Settings.System.putString(getContentResolver(), key, uri)) {
+            pref.setSummary(uri);
+        }
     }
 }

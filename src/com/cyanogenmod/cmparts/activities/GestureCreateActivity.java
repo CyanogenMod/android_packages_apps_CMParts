@@ -21,11 +21,8 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.Intent.ShortcutIconResource;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.gesture.Gesture;
 import android.gesture.GestureLibrary;
 import android.gesture.GestureOverlayView;
@@ -43,15 +40,10 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
-public class GestureCreateActivity extends Activity {
+public class GestureCreateActivity extends Activity implements ShortcutPickHelper.OnPickListener {
     private static final float LENGTH_THRESHOLD = 120.0f;
-
-    private static final int REQUEST_PICK_SHORTCUT = 1;
-
-    private static final int REQUEST_PICK_APPLICATION = 2;
-
-    private static final int REQUEST_CREATE_SHORTCUT = 3;
 
     // must correspond with the @array/pref_lockscreen_gesture_action_entries
     private static final int ACTION_POSITION_UNLOCK = 0;
@@ -75,10 +67,15 @@ public class GestureCreateActivity extends Activity {
 
     private double mGestureSensitivity;
 
+    private ShortcutPickHelper mPicker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gesture_create);
+
+        mPicker = new ShortcutPickHelper(this, this);
+
         mDoneButton = findViewById(R.id.done);
         mDrawLabel = (TextView) findViewById(R.id.gestures_draw_label);
         mRunInBackground = (CheckBox) findViewById(R.id.gestures_run_in_background);
@@ -93,7 +90,7 @@ public class GestureCreateActivity extends Activity {
                         pickSoundOnly();
                         break;
                     case ACTION_POSITION_SHORTCUT:
-                        pickShortcut();
+                        mPicker.pickShortcut();
                         break;
                     case ACTION_POSITION_FLASHLIGHT:
                         pickFlashlight();
@@ -152,6 +149,11 @@ public class GestureCreateActivity extends Activity {
 
             mDoneButton.setEnabled(true);
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPicker.onActivityResult(requestCode, resultCode, data);
     }
 
     public void addGesture(View v) {
@@ -222,26 +224,6 @@ public class GestureCreateActivity extends Activity {
         return false;
     }
 
-    public void pickShortcut() {
-        Bundle bundle = new Bundle();
-
-        ArrayList<String> shortcutNames = new ArrayList<String>();
-        shortcutNames.add(getString(R.string.group_applications));
-        bundle.putStringArrayList(Intent.EXTRA_SHORTCUT_NAME, shortcutNames);
-
-        ArrayList<ShortcutIconResource> shortcutIcons = new ArrayList<ShortcutIconResource>();
-        shortcutIcons.add(ShortcutIconResource
-                .fromContext(this, R.drawable.ic_launcher_application));
-        bundle.putParcelableArrayList(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, shortcutIcons);
-
-        Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-        pickIntent.putExtra(Intent.EXTRA_INTENT, new Intent(Intent.ACTION_CREATE_SHORTCUT));
-        pickIntent.putExtra(Intent.EXTRA_TITLE, getText(R.string.select_custom_app_title));
-        pickIntent.putExtras(bundle);
-
-        startActivityForResult(pickIntent, REQUEST_PICK_SHORTCUT);
-    }
-
     public void pickUnlockOnly() {
         mFriendlyName = getString(R.string.gestures_unlock_only);
         mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
@@ -264,65 +246,17 @@ public class GestureCreateActivity extends Activity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_APPLICATION:
-                    completeSetCustomApp(data);
-                    break;
-                case REQUEST_CREATE_SHORTCUT:
-                    completeSetCustomShortcut(data);
-                    break;
-                case REQUEST_PICK_SHORTCUT:
-                    processShortcut(data, REQUEST_PICK_APPLICATION, REQUEST_CREATE_SHORTCUT);
-                    break;
-            }
-        }
-    }
+    public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
+        mFriendlyName = (friendlyName != null) ? friendlyName : "null";
 
-    void processShortcut(Intent intent, int requestCodeApplication, int requestCodeShortcut) {
-        String applicationName = getResources().getString(R.string.group_applications);
-        String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
+        mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
+        mUri = mFriendlyName + "___" + uri;
 
-        if (applicationName != null && applicationName.equals(shortcutName)) {
-            Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-
-            Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-            pickIntent.putExtra(Intent.EXTRA_INTENT, mainIntent);
-            startActivityForResult(pickIntent, requestCodeApplication);
+        if (isApplication) {
+            mRunInBackground.setVisibility(View.VISIBLE);
         } else {
-            startActivityForResult(intent, requestCodeShortcut);
+            disableCheckbox();
         }
-    }
-
-    void completeSetCustomShortcut(Intent data) {
-        Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        mFriendlyName = data.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
-        if (mFriendlyName == null) {
-            mFriendlyName = "null";
-        }
-        mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
-        mUri = mFriendlyName + "___" + intent.toUri(0);
-        disableCheckbox();
-    }
-
-    void completeSetCustomApp(Intent data) {
-        PackageManager pm = getPackageManager();
-        mFriendlyName = data.getComponent().getPackageName();
-        if (mFriendlyName != null) {
-            try {
-                ApplicationInfo ai = pm.getApplicationInfo(mFriendlyName, PackageManager.GET_META_DATA);
-                mFriendlyName = (String) ai.loadLabel(pm);
-            } catch (NameNotFoundException e) {
-            }
-        }
-        if (mFriendlyName == null) {
-            mFriendlyName = "null";
-        }
-        mDrawLabel.setText(getString(R.string.gestures_draw_for_label, mFriendlyName));
-        mUri = mFriendlyName + "___" + data.toUri(0);
-        mRunInBackground.setVisibility(View.VISIBLE);
     }
 
     void disableCheckbox() {

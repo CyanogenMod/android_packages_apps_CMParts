@@ -17,9 +17,9 @@
 package com.cyanogenmod.cmparts.activities;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
 import android.content.Intent;
-import android.content.Intent.ShortcutIconResource;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -31,7 +31,8 @@ import android.provider.Settings.SettingNotFoundException;
 
 import java.util.ArrayList;
 
-public class LongPressHomeActivity extends PreferenceActivity implements Preference.OnPreferenceChangeListener {
+public class LongPressHomeActivity extends PreferenceActivity
+        implements Preference.OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener {
 
     private static final String RECENT_APPS_SHOW_TITLE_PREF = "pref_show_recent_apps_title";
     private static final String RECENT_APPS_NUM_PREF= "pref_recent_apps_num";
@@ -42,11 +43,7 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
     private ListPreference mRecentAppsNumPref;
     private CheckBoxPreference mUseCustomAppPref;
     private Preference mSelectCustomAppPref;
-    
-    private static final int REQUEST_PICK_SHORTCUT = 1;
-    private static final int REQUEST_PICK_APPLICATION = 2;
-    private static final int REQUEST_CREATE_SHORTCUT = 3;
-
+    private ShortcutPickHelper mPicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,6 +64,8 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
 
         //final PreferenceGroup parentPreference = getPreferenceScreen();
         //parentPreference.getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
+
+        mPicker = new ShortcutPickHelper(this, this);
     }
     
     @Override
@@ -76,7 +75,13 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
         mSelectCustomAppPref.setSummary(Settings.System.getString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP));
         readRecentAppsNumPreference();
     }
-    
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPicker.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mRecentAppsNumPref) {
             writeRecentAppsNumPreference(objValue);
@@ -86,6 +91,7 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
         return true;
     }
 
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mUseCustomAppPref) {
             Settings.System.putInt(getContentResolver(), Settings.System.USE_CUSTOM_APP, mUseCustomAppPref.isChecked() ? 1 : 0);
@@ -102,29 +108,11 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
             }
         }
         else if (preference == mSelectCustomAppPref) {
-            pickShortcut();
+            mPicker.pickShortcut();
         }
         return true;
     }    
-    
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_APPLICATION:
-                    completeSetCustomApp(data);
-                    break;
-                case REQUEST_CREATE_SHORTCUT:
-                    completeSetCustomShortcut(data);
-                    break;
-                case REQUEST_PICK_SHORTCUT:
-                    processShortcut(data, REQUEST_PICK_APPLICATION, REQUEST_CREATE_SHORTCUT);
-                    break;
-            }
-        }
-    }
-    
     public void readRecentAppsNumPreference() {
         try {
             int value = Settings.System.getInt(getContentResolver(), Settings.System.RECENT_APPS_NUMBER);
@@ -141,57 +129,11 @@ public class LongPressHomeActivity extends PreferenceActivity implements Prefere
         } catch (NumberFormatException e) {
         }
     }
-    
-     private void pickShortcut() {
-        Bundle bundle = new Bundle();
 
-        ArrayList<String> shortcutNames = new ArrayList<String>();
-        shortcutNames.add(getString(R.string.group_applications));
-        bundle.putStringArrayList(Intent.EXTRA_SHORTCUT_NAME, shortcutNames);
-
-        ArrayList<ShortcutIconResource> shortcutIcons = new ArrayList<ShortcutIconResource>();
-        shortcutIcons.add(ShortcutIconResource.fromContext(this, R.drawable.ic_launcher_application));
-        bundle.putParcelableArrayList(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, shortcutIcons);
-
-        Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-        pickIntent.putExtra(Intent.EXTRA_INTENT, new Intent(Intent.ACTION_CREATE_SHORTCUT));
-        pickIntent.putExtra(Intent.EXTRA_TITLE, getText(R.string.select_custom_app_title));
-        pickIntent.putExtras(bundle);
-
-        startActivityForResult(pickIntent, REQUEST_PICK_SHORTCUT);
-    }
-    
-    void processShortcut(Intent intent, int requestCodeApplication, int requestCodeShortcut) {
-        // Handle case where user selected "Applications"
-        String applicationName = getResources().getString(R.string.group_applications);
-        String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
-
-        if (applicationName != null && applicationName.equals(shortcutName)) {
-            Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-
-            Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-            pickIntent.putExtra(Intent.EXTRA_INTENT, mainIntent);
-            startActivityForResult(pickIntent, requestCodeApplication);
-        } else {
-            startActivityForResult(intent, requestCodeShortcut);
-        }
-    }
-    
-    void completeSetCustomShortcut(Intent data) {
-        Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        String appUri = intent.toUri(0);
-        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", "android.intent.action.VIEW");
-        if (Settings.System.putString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP, appUri)) {
-            mSelectCustomAppPref.setSummary(appUri);
-        }
-    }
-    
-    void completeSetCustomApp(Intent data) {
-        String appUri = data.toUri(0);
-        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", "android.intent.action.VIEW");
-        if (Settings.System.putString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP, appUri)) {
-            mSelectCustomAppPref.setSummary(appUri);
+    @Override
+    public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
+        if (Settings.System.putString(getContentResolver(), Settings.System.SELECTED_CUSTOM_APP, uri)) {
+            mSelectCustomAppPref.setSummary(uri);
         }
     }
 }

@@ -19,7 +19,6 @@ package com.cyanogenmod.cmparts.activities;
 import java.util.ArrayList;
 
 import android.content.Intent;
-import android.content.Intent.ShortcutIconResource;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
@@ -28,8 +27,9 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
-public class InputSearchKeyActivity extends PreferenceActivity {
+public class InputSearchKeyActivity extends PreferenceActivity implements ShortcutPickHelper.OnPickListener {
 
     private static final String INPUT_CUSTOM_SEARCH_APP_TOGGLE = "pref_input_custom_search_app_toggle";
 
@@ -47,13 +47,9 @@ public class InputSearchKeyActivity extends PreferenceActivity {
 
     private Preference mCustomLongSearchAppActivityPref;
 
+    private ShortcutPickHelper mPicker;
+
     private int mKeyNumber = 1;
-
-    private static final int REQUEST_PICK_SHORTCUT = 1;
-
-    private static final int REQUEST_PICK_APPLICATION = 2;
-
-    private static final int REQUEST_CREATE_SHORTCUT = 3;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,6 +74,8 @@ public class InputSearchKeyActivity extends PreferenceActivity {
                 Settings.System.USE_CUSTOM_LONG_SEARCH_APP_TOGGLE, 0) == 1);
         mCustomLongSearchAppActivityPref = (Preference) prefSet
                 .findPreference(INPUT_CUSTOM_LONG_SEARCH_APP_ACTIVITY);
+
+        mPicker = new ShortcutPickHelper(this, this);
     }
 
     @Override
@@ -110,99 +108,43 @@ public class InputSearchKeyActivity extends PreferenceActivity {
             }
             return true;
         } else if (preference == mCustomSearchAppActivityPref) {
-            pickShortcut(1);
+            mKeyNumber = 1;
+            mPicker.pickShortcut();
             return true;
         } else if (preference == mCustomLongSearchAppActivityPref) {
-            pickShortcut(2);
+            mKeyNumber = 2;
+            mPicker.pickShortcut();
             return true;
         }
 
         return false;
     }
 
-    private void pickShortcut(int keyNumber) {
-        mKeyNumber = keyNumber;
-        Bundle bundle = new Bundle();
-        ArrayList<String> shortcutNames = new ArrayList<String>();
-        shortcutNames.add(getString(R.string.group_applications));
-        bundle.putStringArrayList(Intent.EXTRA_SHORTCUT_NAME, shortcutNames);
-        ArrayList<ShortcutIconResource> shortcutIcons = new ArrayList<ShortcutIconResource>();
-        shortcutIcons.add(ShortcutIconResource
-                .fromContext(this, R.drawable.ic_launcher_application));
-        bundle.putParcelableArrayList(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, shortcutIcons);
-        Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-        pickIntent.putExtra(Intent.EXTRA_INTENT, new Intent(Intent.ACTION_CREATE_SHORTCUT));
-        pickIntent.putExtra(Intent.EXTRA_TITLE, getText(R.string.select_custom_app_title));
-        pickIntent.putExtras(bundle);
-        startActivityForResult(pickIntent, REQUEST_PICK_SHORTCUT);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPicker.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_APPLICATION:
-                    completeSetCustomApp(data);
-                    break;
-                case REQUEST_CREATE_SHORTCUT:
-                    completeSetCustomShortcut(data);
-                    break;
-                case REQUEST_PICK_SHORTCUT:
-                    processShortcut(data, REQUEST_PICK_APPLICATION, REQUEST_CREATE_SHORTCUT);
-                    break;
-            }
-        }
-    }
+    public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
+        String key;
+        Preference pref;
 
-    void processShortcut(Intent intent, int requestCodeApplication, int requestCodeShortcut) {
-        // Handle case where user selected "Applications"
-        String applicationName = getResources().getString(R.string.group_applications);
-        String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
-        if (applicationName != null && applicationName.equals(shortcutName)) {
-            Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-            Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-            pickIntent.putExtra(Intent.EXTRA_INTENT, mainIntent);
-            startActivityForResult(pickIntent, requestCodeApplication);
-        } else {
-            startActivityForResult(intent, requestCodeShortcut);
-        }
-    }
-
-    void completeSetCustomShortcut(Intent data) {
-        Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        String appUri = intent.toUri(0);
-        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", "android.intent.action.VIEW");
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 1) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USE_CUSTOM_SEARCH_APP_ACTIVITY, appUri)) {
-                mCustomSearchAppActivityPref.setSummary(intent.toUri(0));
-            }
-        } else if (keyNumber == 2) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USE_CUSTOM_LONG_SEARCH_APP_ACTIVITY, appUri)) {
-                mCustomLongSearchAppActivityPref.setSummary(intent.toUri(0));
-            }
+        switch (mKeyNumber) {
+            case 1:
+                key = Settings.System.USE_CUSTOM_SEARCH_APP_ACTIVITY;
+                pref = mCustomSearchAppActivityPref;
+                break;
+            case 2:
+                key = Settings.System.USE_CUSTOM_LONG_SEARCH_APP_ACTIVITY;
+                pref = mCustomLongSearchAppActivityPref;
+                break;
+            default:
+                return;
         }
 
-    }
-
-    void completeSetCustomApp(Intent data) {
-        String appUri = data.toUri(0);
-        appUri = appUri.replaceAll("com.android.contacts.action.QUICK_CONTACT", "android.intent.action.VIEW");
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 1) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USE_CUSTOM_SEARCH_APP_ACTIVITY, appUri)) {
-                mCustomSearchAppActivityPref.setSummary(data.toUri(0));
-            }
-        } else if (keyNumber == 2) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.USE_CUSTOM_LONG_SEARCH_APP_ACTIVITY, appUri)) {
-                mCustomLongSearchAppActivityPref.setSummary(data.toUri(0));
-            }
+        if (Settings.System.putString(getContentResolver(), key, uri)) {
+            pref.setSummary(uri);
         }
-
     }
 }
