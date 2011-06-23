@@ -66,10 +66,8 @@ public class LongPressMenuActivity extends PreferenceActivity
     @Override
     public void onResume() {
         super.onResume();
-
-        String value = Settings.System.getString(getContentResolver(),
-                Settings.System.USE_CUSTOM_LONG_MENU_APP_ACTIVITY);
-        mUserDefinedLongPressMenu.setSummary(mPicker.getFriendlyNameForUri(value));
+        mUserDefinedLongPressMenu.setSummary(Settings.System.getString(getContentResolver(),
+                Settings.System.USE_CUSTOM_LONG_MENU_APP_ACTIVITY));
     }
 
     @Override
@@ -97,7 +95,7 @@ public class LongPressMenuActivity extends PreferenceActivity
     public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
         if (Settings.System.putString(getContentResolver(),
                     Settings.System.USE_CUSTOM_LONG_MENU_APP_ACTIVITY, uri)) {
-            mUserDefinedLongPressMenu.setSummary(friendlyName);
+            mUserDefinedLongPressMenu.setSummary(uri);
         }
     }
 }

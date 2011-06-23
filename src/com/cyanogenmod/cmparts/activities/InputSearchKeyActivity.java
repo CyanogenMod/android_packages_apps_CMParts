@@ -81,13 +81,10 @@ public class InputSearchKeyActivity extends PreferenceActivity implements Shortc
     @Override
     public void onResume() {
         super.onResume();
-        setAppSummary(mCustomSearchAppActivityPref, Settings.System.USE_CUSTOM_SEARCH_APP_ACTIVITY);
-        setAppSummary(mCustomLongSearchAppActivityPref, Settings.System.USE_CUSTOM_LONG_SEARCH_APP_ACTIVITY);
-    }
-
-    private void setAppSummary(Preference pref, String key) {
-        String value = Settings.System.getString(getContentResolver(), key);
-        pref.setSummary(mPicker.getFriendlyNameForUri(value));
+        mCustomSearchAppActivityPref.setSummary(Settings.System.getString(getContentResolver(),
+                Settings.System.USE_CUSTOM_SEARCH_APP_ACTIVITY));
+        mCustomLongSearchAppActivityPref.setSummary(Settings.System.getString(getContentResolver(),
+                Settings.System.USE_CUSTOM_LONG_SEARCH_APP_ACTIVITY));
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -147,7 +144,7 @@ public class InputSearchKeyActivity extends PreferenceActivity implements Shortc
         }
 
         if (Settings.System.putString(getContentResolver(), key, uri)) {
-            pref.setSummary(friendlyName);
+            pref.setSummary(uri);
         }
     }
 }

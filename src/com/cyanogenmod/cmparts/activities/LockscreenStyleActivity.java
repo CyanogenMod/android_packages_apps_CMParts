@@ -199,9 +199,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     public void onResume() {
         super.onResume();
 
-        String value = Settings.System.getString(getContentResolver(),
-                Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY);
-        mCustomAppActivityPref.setSummary(mPicker.getFriendlyNameForUri(value));
+        mCustomAppActivityPref.setSummary(Settings.System.getString(getContentResolver(),
+                Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY));
     }
 
     @Override
@@ -262,7 +261,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
         if (Settings.System.putString(getContentResolver(),
                 Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY, uri)) {
-            mCustomAppActivityPref.setSummary(friendlyName);
+            mCustomAppActivityPref.setSummary(uri);
         }
     }
 
