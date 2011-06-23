@@ -34,6 +34,8 @@ import android.provider.Settings;
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
+public class InputActivity extends PreferenceActivity implements
+        OnPreferenceChangeListener {
 public class InputActivity extends PreferenceActivity implements ShortcutPickHelper.OnPickListener {
 
     private static final String TRACKBALL_WAKE_PREF = "pref_trackball_wake";
