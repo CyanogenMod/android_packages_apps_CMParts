@@ -273,4 +273,12 @@
     <item>Lauter</item>
     <item>Leiser</item>
   </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Nichts</item>
+        <item>Bildschirmtastatur</item>
+        <item>Suche</item>
+        <item>Eigene Anwendung</item>
+        <item>Statusbar ein/aus</item>
+    </string-array>
 </resources>

@@ -67,7 +67,7 @@
     <!-- User interface: Tablet tweaks -> volume remapping -->
     <string name="tablet_tweaks_input_head">Lautstärketasten belegen</string>
     <string name="tablet_tweaks_long_volp_action_title">Gedrückt halten für lauter</string>
-    <string name="tablet_tweaks_long_volp_action_summary">Aktion für Homescreen/Zurück/Menü/etc an Gedrückt halten der Lauter-Taste binden. (Begrenzter Zugriff auf Einschalten des Bildschirms)</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Aktion für Homescreen/Zurück/Menü/etc an gedrückt Halten der Lauter-Taste binden. (Begrenzter Zugriff auf Einschalten des Bildschirms)</string>
     <string name="tablet_tweaks_long_volm_action_title">Gedrückt halten für leiser</string>
     <string name="tablet_tweaks_vol_both_action_title">Beide Lautstärketasten</string>
     <string name="tablet_tweaks_vol_both_action_summary">Hinweis: Einige Geräte führen einen Reset bei gleichzeitigem Drücken der Lautstärke und Ein/Ausschalttaste durch.</string>
@@ -237,9 +237,9 @@
     <string name="pref_in_call_style_title">Eingehender Anruf Stil</string>
     <string name="pref_in_call_style_summary">Stil der Anruf annehmen/ablehnen Tasten wählen</string>
     <string name="pref_volbtn_music_controls_title">Titelwahl mit Lautstärketasten</string>
-    <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel suchen durch Gedrückt halten der Lautstärketasten</string>
+    <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel suchen durch gedrückt Halten der Lautstärketasten</string>
     <string name="pref_cambtn_music_controls_title">Play/Pause mit Kamerataste</string>
-    <string name="pref_cambtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Wiedergabe fortsetzen/pausieren durch Gedrückt halten der Kamerataste</string>
+    <string name="pref_cambtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Wiedergabe fortsetzen/pausieren durch gedrückt Halten der Kamerataste</string>
     <string name="pref_volbtn_orientation_title">Funktion der Lautstärketasten im Querformat austauschen</string>
     <string name="pref_volbtn_orientation_summary">Die Funktion der Lautstärketasten wird abhängig von der Orientierung des Telefons ausgetauscht. (erfordert Neustart)</string>
     <string name="pref_dock_observer_off_title">Erkennung von Dockingstationen deaktivieren</string>
@@ -255,20 +255,27 @@
     <string name="haptic_title">Haptisches Feedback</string>
     <string name="haptic_summary">Anpassungen für Stärke und Auftreten des haptischen Feedbacks (HF)</string>
     <string name="button_settings_title">Tasteneinstellungen</string>
-    <string name="long_press_home_title">HOME Gedrückt halten</string>
-    <string name="long_press_home_summary">Anzahl letzter Apps, etc...</string>
+    <string name="long_press_home_title">Home-Taste</string>
+    <string name="long_press_home_summary">Aktion für das gedrückt Halten der Home-Taste anpassen</string>
     <string name="input_search_key_title">Suchen-Taste</string>
     <string name="input_search_key_summary">Aktion für das Drücken der Suchen-Taste anpassen</string>
     <string name="pref_input_custom_search_app_toggle_title">App mit Suchen-Taste verknüpfen</string>
     <string name="pref_input_custom_search_app_toggle_summary">Starten einer festgelegten Anwendung beim Drücken der Suchen-Taste</string>
     <string name="pref_input_custom_search_app_activity_title">App festlegen</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Suchen-Taste gedrückt halten</string>
-    <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim Gedrückt halten der Suchen-Taste</string>
+    <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim gedrückt Halten der Suchen-Taste</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Menü-Taste</string>
+    <string name="long_press_menu_summary">Aktion für das gedrückt Halten der Menü-Taste anpassen</string>
+    <string name="pref_user_defined_long_press_menu_title">Wähle eigene Anwendung</string>
+    <string name="pref_long_press_menu_title">Wähle Aktion</string>
+    <string name="pref_long_press_menu_summary">Aktion beim gedrückt Halten der Menü-Taste anpassen</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Titel für letzte Apps zeigen</string>
     <string name="recent_apps_num_title">Anzahl letzter Apps</string>
-    <string name="recent_apps_num_summary">Anzahl anzuzeigender Apps nach Gedrückt halten der Home-Taste</string>
+    <string name="recent_apps_num_summary">Anzahl anzuzeigender Apps nach gedrückt Halten der Home-Taste</string>
     <string name="dialog_recent_apps_num_title">Anzahl letzter Apps auswählen</string>
     <string name="use_custom_app_title">Andere Anwendung verwenden</string>
     <string name="use_custom_app_summary">Wähle andere Anwendung anstelle des Letzte-App-Dialogs</string>
