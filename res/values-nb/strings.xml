@@ -102,16 +102,16 @@
     <string name="tablet_soft_buttons_quick_na_title">Quick notifications</string>
 
     <!-- User interface : Rotation -->
-    <string name="rotation_category_title">*Accelerometer rotation</string>
+    <string name="rotation_category_title">Accelerometer rotation</string>
     <string name="pref_rotation_0_title">0 grader</string>
     <string name="pref_rotation_90_title">90 grader</string>
     <string name="pref_rotation_180_title">180 grader</string>
     <string name="pref_rotation_270_title">270 grader</string>
 
     <!-- User interface: Status bar tweaks -->
-    <string name="ui_status_bar_title">*Status bar tweaks</string>
+    <string name="ui_status_bar_title">Status bar tweaks</string>
     <string name="ui_status_bar_am_pm_title">AM/PM-stil</string>
-    <string name="ui_status_bar_am_pm_summary">*Display style of AM/PM next to clock</string>
+    <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
     <string name="ui_status_bar_clock_title">Vis klokke</string>
     <string name="ui_status_bar_clock_summary">Hvis deaktivert, blir klokken skjult</string>
     <string name="ui_status_bar_cm_battery_title">Batteriprosent</string>
@@ -135,8 +135,8 @@
     <string name="ui_overscroll_title">Forbirulling</string>
     <string name="pref_overscroll_title">Effekt ved forbirulling</string>
     <string name="pref_overscroll_summary">Velg hvordan objekter skal se ut når du ruller for langt</string>
-    <string name="pref_overscroll_weight_title">*Overscrolling weight</string>
-    <string name="pref_overscroll_weight_summary">*Select the weight of the scrollable objects</string>
+    <string name="pref_overscroll_weight_title">Overscrolling weight</string>
+    <string name="pref_overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Innstillinger for skjermlås</string>
@@ -162,7 +162,7 @@
     <string name="color_trackball_blink_summary">Blinkehastighet</string>
     <string name="color_trackball_test_title">Test</string>
     <string name="color_trackball_test_summary">Test lyset</string>
-    <string name="dialog_clear_flash">*Fjern lys</string>
+    <string name="dialog_clear_flash">Fjern lys</string>
     <string name="trackball_advanced_title">Avansert</string>
     <string name="pref_trackball_screen_title">Alltid pulser</string>
     <string name="pref_trackball_screen_summary">LED-lys vil pulsere når skjermen er på</string>
@@ -188,12 +188,12 @@
     <string name="trackball_category_remove_summary">Fjern en kategori fra listen</string>
     <string name="trackball_remove_default_toast">Kan ikke fjerne standardkategori</string>
     <string name="trackball_reset_all">Tilbakestill alle farger og kategorier</string>
-    <string name="trackball_array_error">*Unfortunately there was an array error. This package has been forced into the Miscellaneous category.</string>
+    <string name="trackball_array_error">Unfortunately there was an array error. This package has been forced into the Miscellaneous category.</string>
     <string name="trackball_color_notice_title">Obs!</string>
     <string name="trackball_color_notice_summary">Ikke alle enheter kan vise alle farger.</string>
 
     <!-- Trackball Settings : Warning dialog -->
-    <string name="notification_battery_warning_title">*WARNING: May cause battery drain</string>
+    <string name="notification_battery_warning_title">WARNING: May cause battery drain</string>
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>
 
     <!-- Lockscreen Overview -->
@@ -233,7 +233,7 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Hurtigopplåsing</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Du trenger ikke å trykke OK når du angir PIN eller passord. Tilbake teller som et mislykket forsøk</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Tilpasset applikasjonsstarter</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">*Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
     <string name="pref_lockscreen_custom_app_activity_title">Selvvalgt applikasjon</string>
     <string name="pref_lockscreen_custom_icon_style_title">Meldingsikon for selvvalgt applikasjon</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Bruker meldingsikon i stedet for CM-ikon for tilpasset applikasjonstarter</string>
@@ -252,16 +252,16 @@
     <string name="pref_cambtn_music_controls_title">Musikkstyring kameraknapp</string>
     <string name="pref_cambtn_music_controls_summary">Spill av/pause ved å holde kameraknappen inne, når skjermen er av</string>
     <string name="lockscreen_widgets_note_title">Obs!</string>
-    <string name="lockscreen_widgets_note_summary">*Choosing minimalistic lense style hides all widgets except music control. Yet below options are not unset to allow easy switching to other styles</string>
+    <string name="lockscreen_widgets_note_summary">Choosing minimalistic lense style hides all widgets except music control. Yet below options are not unset to allow easy switching to other styles</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Innstillinger for inndata</string>
-    <string name="input_settings_summary">*Control button behavior</string>
+    <string name="input_settings_summary">Control button behavior</string>
     <string name="haptic_title">Haptisk tilbakemelding</string>
-    <string name="haptic_summary">*Just når og hvor kraftig haptiske tilbakemeldinger skal være</string>
+    <string name="haptic_summary">Just når og hvor kraftig haptiske tilbakemeldinger skal være</string>
     <string name="button_settings_title">Knappinnstillinger</string>
-    <string name="long_press_home_title">*Long-press home settings</string>
-    <string name="long_press_home_summary">*Number of recent applications, etc</string>
+    <string name="long_press_home_title">Long-press home settings</string>
+    <string name="long_press_home_summary">Number of recent applications, etc</string>
 
     <string name="input_search_key_title">Søkeknappen</string>
     <string name="input_search_key_summary">Angi handlinger for søkeknappen</string>
@@ -297,25 +297,25 @@
     <string name="summary_on_haptic_feedback_up">Bruk haptisk tilbakemelding når du slipper skjermtaster og andre elementer</string>
     <string name="summary_off_haptic_feedback_up">Ikke bruk haptisk tilbakemelding når du slipper skjermtaster og andre elementer</string>
 
-    <string name="title_haptic_feedback_all">*Haptic screen items</string>
-    <string name="summary_on_haptic_feedback_all">*Use haptic feedback when making screen selections</string>
-    <string name="summary_off_haptic_feedback_all">*No haptic feedback when making screen selections</string>
+    <string name="title_haptic_feedback_all">Haptic screen items</string>
+    <string name="summary_on_haptic_feedback_all">Use haptic feedback when making screen selections</string>
+    <string name="summary_off_haptic_feedback_all">No haptic feedback when making screen selections</string>
 
     <string name="title_haptic_down_decider">Velg mønster for «Ned»</string>
     <string name="title_haptic_up_decider">Velg mønster for «Opp»</string>
     <string name="title_haptic_long_decider">Velg mønster for langt trykk</string>
     <string name="title_haptic_tap_decider">Velg mønster for tastatur</string>
 
-    <string name="title_haptic_menu">*Haptic Adjust</string>
+    <string name="title_haptic_menu">Haptic Adjust</string>
     <string name="title_haptic_notice">ENDRINGER KREVER OMSTART FOR Å FUNGERE OVERALT</string>
 
-    <string name="haptic_delay_desc">*ms Off Time</string>
-    <string name="haptic_vibe_desc">*ms On Time</string>
+    <string name="haptic_delay_desc">ms Off Time</string>
+    <string name="haptic_vibe_desc">ms On Time</string>
 
-    <string name="haptic_down_description">*Endre verdi for Adjusting haptic values for button DOWN-PRESSES\n(Virtual hardkeys and certain UI interactions.)</string>
-    <string name="haptic_up_description">*Adjusting haptic values for button RELEASES\n(Virtual hardkeys and most screen presses.)</string>
-    <string name="haptic_long_description">*Adjusting haptic values for LONG-PRESSES</string>
-    <string name="haptic_tap_description">*Adjusting haptic values for on-screen keyboard taps</string>
+    <string name="haptic_down_description">Endre verdi for Adjusting haptic values for button DOWN-PRESSES\n(Virtual hardkeys and certain UI interactions.)</string>
+    <string name="haptic_up_description">Adjusting haptic values for button RELEASES\n(Virtual hardkeys and most screen presses.)</string>
+    <string name="haptic_long_description">Adjusting haptic values for LONG-PRESSES</string>
+    <string name="haptic_tap_description">Adjusting haptic values for on-screen keyboard taps</string>
 
     <string name="haptic_plus_minus_desc">Trykk pluss/minus for å legge til/ta bort steg i sekvensen</string>
 
@@ -350,7 +350,7 @@
     <string name="pref_use_dithering_summary">Øker kvaliteten på grafikken på bekostning av ytelsen (krever omstart)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">*Tillat fjerning av tilganger</string>
+    <string name="pref_purgeable_assets_title">Tillat fjerning av tilganger</string>
     <string name="pref_purgeable_assets_summary">Systemet kan frigjøre mer minne hvis punktbilder gjenbrukes (krever omstart)</string>
 
     <!-- Performance Settings : VM Heap Size -->
@@ -358,12 +358,12 @@
     <string name="pref_heapsize_summary">Maksimum minne per VM-heap (krever omstart)</string>
 
     <!-- Performance : Lock home memory -->
-    <string name="pref_lock_home_title">*Lock home in memory</string>
-    <string name="pref_lock_home_summary">*Attempt to keep the current home app in memory at all times</string>
+    <string name="pref_lock_home_title">Lock home in memory</string>
+    <string name="pref_lock_home_summary">Attempt to keep the current home app in memory at all times</string>
 
     <!-- Performance : Lock mms app in memory -->
-    <string name="pref_lock_mms_title">*Lock messaging app in memory</string>
-    <string name="pref_lock_mms_summary">*Avoid lost messages on low memory situations</string>
+    <string name="pref_lock_mms_title">Lock messaging app in memory</string>
+    <string name="pref_lock_mms_summary">Avoid lost messages on low memory situations</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">WARNING: Dragons Ahead!</string>
@@ -407,16 +407,16 @@
     <string name="fuscia">Fuksia</string>
 
     <!-- Expanded View Power Widget -->
-    <string name="title_widget_buttons">*Expanded View Widget</string>
-    <string name="title_expanded_widget">*Notification power widget</string>
-    <string name="summary_expanded_widget">*Use the expanded views power widget</string>
-    <string name="title_expanded_hide_onchange">*Hide on change</string>
-    <string name="summary_expanded_hide_onchange">*Hide the notification pulldown after toggling a widget button</string>
-    <string name="title_expanded_hide_indicator">*Hide indicator</string>
-    <string name="summary_expanded_hide_indicator">*Hide the notification widgets indicators</string>
-    <string name="title_expanded_hide_scrollbar">*Hide scrollbar</string>
-    <string name="summary_expanded_hide_scrollbar">*Hide scrollbar when more than the maximum number of widget buttons are present.</string>
-    <string name="expanded_color_mask">*Indicator color</string>
+    <string name="title_widget_buttons">Expanded View Widget</string>
+    <string name="title_expanded_widget">Notification power widget</string>
+    <string name="summary_expanded_widget">Use the expanded views power widget</string>
+    <string name="title_expanded_hide_onchange">Hide on change</string>
+    <string name="summary_expanded_hide_onchange">Hide the notification pulldown after toggling a widget button</string>
+    <string name="title_expanded_hide_indicator">Hide indicator</string>
+    <string name="summary_expanded_hide_indicator">Hide the notification widgets indicators</string>
+    <string name="title_expanded_hide_scrollbar">Hide scrollbar</string>
+    <string name="summary_expanded_hide_scrollbar">Hide scrollbar when more than the maximum number of widget buttons are present.</string>
+    <string name="expanded_color_mask">Indicator color</string>
     <string name="title_widget_picker">Widget buttons</string>
     <string name="summary_widget_picker">Pick your widget buttons</string>
     <string name="title_widget_order">Widget button order</string>
@@ -426,7 +426,7 @@
     <string name="title_toggle_bluetooth">Bluetooth av/på</string>
     <string name="title_toggle_gps">GPS av/på</string>
     <string name="title_toggle_sound">Lys av/på</string>
-    <string name="title_toggle_brightness">*Toggle Brightness</string>
+    <string name="title_toggle_brightness">Toggle Brightness</string>
     <string name="title_toggle_sync">Toggle Sync</string>
     <string name="title_toggle_wifiap">Wifi-AP av/på</string>
     <string name="title_toggle_screentimeout">Toggle Screentimeout</string>
@@ -466,7 +466,7 @@
     <string name="light_filter_interval_title">Samplingsintervall</string>
     <string name="light_filter_interval_summary">Lav verdi kan øke nøyaktighet, men krever mer prosessorkraft</string>
     <string name="light_levels_title">Lysnivåer</string>
-    <string name="light_levels_enabled_title">*Selvvalgt</string>
+    <string name="light_levels_enabled_title">Selvvalgt</string>
     <string name="light_levels_dim_title">Skjermdimming</string>
     <string name="light_levels_dim_summary">Lysstyrke brukt for å dimme skjermen</string>
     <string name="light_levels_editor_title">Rediger andre lysnivåer\u2026</string>
@@ -496,21 +496,21 @@
     <!-- Sound -->
     <string name="sound_title">Lydinnstillinger</string>
     <string name="sound_summary">Innstillinger for lyd</string>
-    <string name="sound_notifications_focus_title">*Notification focus</string>
-    <string name="sound_notifications_focus_summary">*Audio focus requests causes compatible apps to lower the volume while notifications play</string>
-    <string name="sound_volume_control_silent_title">*Silent state</string>
-    <string name="sound_volume_control_silent_summary">*Add a state for complete silence to volume control</string>
+    <string name="sound_notifications_focus_title">Notification focus</string>
+    <string name="sound_notifications_focus_summary">Audio focus requests causes compatible apps to lower the volume while notifications play</string>
+    <string name="sound_volume_control_silent_title">Silent state</string>
+    <string name="sound_volume_control_silent_summary">Add a state for complete silence to volume control</string>
     <string name="sound_vibrate_in_call_title">Vibrer under samtaler</string>
     <string name="sound_vibrate_in_call_summary_off">Telefonen vil ikke vibrere under mens en samtale pågår</string>
     <string name="sound_vibrate_in_call_summary_on">Telefonen vil vibrere normalt</string>
-    <string name="sound_to_speaker_title">*Always play on speaker</string>
+    <string name="sound_to_speaker_title">Always play on speaker</string>
     <string name="sound_notifications_title">Varslinger</string>
     <string name="sound_rings_title">Ringetoner</string>
     <string name="sound_alarms_title">Alarmer</string>
     <string name="sound_note_title">Obs!</string>
     <string name="sound_note_summary">Innstillingene nedenfor gjelder bare når hodetelefoner er koblet til</string>
-    <string name="sound_attenuation_title">*Attenuation of set volume</string>
-    <string name="sound_limitvol_title">*Volum når musikk spilles</string>
+    <string name="sound_attenuation_title">Attenuation of set volume</string>
+    <string name="sound_limitvol_title">Volum når musikk spilles</string>
     <string name="sound_notifications_attenuation_dialog">Demping av varslinger</string>
     <string name="sound_rings_attenuation_dialog">Demping av ringetone</string>
     <string name="sound_alarms_attenuation_dialog">Demping av alarm</string>
@@ -521,7 +521,7 @@
     <string name="sound_category_quiet_hours_title">Stilletid</string>
     <string name="quiet_hours_note_title">Obs!</string>
     <string name="quiet_hours_note_summary">Innkommende anrop vil fortsatt ringer under stilletid</string>
-    <string name="quiet_hours_enabled">*Aktiver stilletid</string>
+    <string name="quiet_hours_enabled">Aktiver stilletid</string>
     <string name="quiet_hours_enabled_on">Stilletid vil bli gjennomført</string>
     <string name="quiet_hours_enabled_off">Varslinger vil foregå som normalt</string>
     <string name="quiet_hours_start">Start på stilletid</string>
@@ -544,7 +544,7 @@
     <string name="user_defined_key1">Hurtigtast 1</string>
     <string name="user_defined_key2">Hurtigtast 2</string>
     <string name="user_defined_key3">Hurtigtast 3</string>
-    <string name="user_defined_not_set">*Ikke valgt</string>
+    <string name="user_defined_not_set">Ikke valgt</string>
 
     <!--  Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Aktiver mønstergjenkjenning</string>
@@ -565,7 +565,7 @@
     <string name="gestures_delete">Slett</string>
     <string name="gestures_delete_success">Mønster slettet</string>
     <string name="gestures_error_loading">Problem med mønster-filen</string>
-    <string name="gestures_unlock_only">*Lås opp telefonen</string>
+    <string name="gestures_unlock_only">Lås opp telefonen</string>
     <string name="gestures_toggle_sound">Lyd av/på</string>
     <string name="gestures_shortcut_or_activity">Snarvei eller aktivitet</string>
     <string name="gestures_flashlight">Lommelykt</string>
@@ -573,7 +573,7 @@
     <string name="pref_lockscreen_disable_unlock_tab_summary">Obs! Du må sette styrekulen, menyknappen, eller et mønster til å låse opp for at dette valget skal bli tilgjengelig</string>
     <string name="gestures_action_label">Handling:</string>
     <string name="gestures_draw_label">Mønster:</string>
-    <string name="gestures_draw_for_label">*Mønster for \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_draw_for_label">Mønster for \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Advarsel: et mønster veldig likt dette er knyttet til en annen handling!</string>
     <string name="gestures_run_in_background">Kjør i bakgrunnen</string>
 
@@ -586,7 +586,7 @@
     <string name="changelog_version">Versjon</string>
 
     <!-- Phone goggles -->
-    <string name="category_phone_goggles_period">*Period</string>
+    <string name="category_phone_goggles_period">Period</string>
     <string name="category_phone_goggles_confirmation">Bekreftelse</string>
     <string name="category_phone_goggles_filter">Filtre</string>
     <string name="title_phone_goggles">Phone Goggles</string>
@@ -596,21 +596,21 @@
     <string name="title_phone_goggles_use_custom">Bruk egendefinerte innstillinger</string>
     <string name="title_phone_goggles_filter">Filtrerte numre</string>
     <string name="title_phone_goggles_enabled">Aktiver Phone Goggles</string>
-    <string name="title_phone_goggles_start">*Start på Phone Goggles-modus</string>
-    <string name="title_phone_goggles_end">*Slutt på Phone Goggles-modus</string>
-    <string name="title_phone_goggles_confirmation_enabled">*Be om bekreftelse</string>
+    <string name="title_phone_goggles_start">Start på Phone Goggles-modus</string>
+    <string name="title_phone_goggles_end">Slutt på Phone Goggles-modus</string>
+    <string name="title_phone_goggles_confirmation_enabled">Be om bekreftelse</string>
     <string name="title_phone_goggles_phone_enabled">Telefon</string>
     <string name="title_phone_goggles_sms_enabled">SMS</string>
-    <string name="title_phone_goggles_maths_level">*Mattenivå</string>
+    <string name="title_phone_goggles_maths_level">Mattenivå</string>
     <string name="title_phone_goggles_work_filtered">Arbeid</string>
     <string name="title_phone_goggles_mobile_filtered">Mobil</string>
     <string name="title_phone_goggles_other_filtered">Annet</string>
     <string name="summary_phone_goggles">Filtrer utgående kommunikasjon</string>
-    <string name="summary_phone_goggles_default">*Setter standardinnstillinger</string>
+    <string name="summary_phone_goggles_default">Setter standardinnstillinger</string>
     <string name="summary_phone_goggles_filter">Velg type telefonnumre du vil filtrere</string>
     <string name="summary_phone_goggles_start">Når filtrering skal starte</string>
     <string name="summary_phone_goggles_end">Når filtrering skal stoppe</string>
-    <string name="summary_phone_goggles_confirmation_enabled">*Select which way the confirmation should be requested before filtering the communication</string>
+    <string name="summary_phone_goggles_confirmation_enabled">Select which way the confirmation should be requested before filtering the communication</string>
     <string name="summary_phone_goggles_maths_level">Nivå på matteoppgaver som må løses før kommunikasjon godkjennes</string>
     <string name="summary_on_phone_goggles_enabled">Utgående kommunikasjon vil bli filtrert</string>
     <string name="summary_on_phone_goggles_use_custom">Bruk egendefinerte innstillinger</string>
@@ -628,15 +628,15 @@
     <string name="phone_goggles_maths_level_medium">Middels</string>
     <string name="phone_goggles_maths_level_hard">Vanskelig</string>
     <string name="phone_goggles_confirmation_none">Ingen</string>
-    <string name="phone_goggles_confirmation_prompt">*Bekrefte</string>
+    <string name="phone_goggles_confirmation_prompt">Bekrefte</string>
     <string name="phone_goggles_confirmation_maths">Matteoppgaver</string>
 
     <!-- CPU Settings strings -->
     <string name="cpu_settings_title">CPU-innstillinger</string>
     <string name="cpu_title">CPU-innstillinger</string>
-    <string name="cpu_summary">*Governor and clock settings</string>
-    <string name="cpu_governors_title">*Available governors</string>
-    <string name="cpu_governors_summary">*List of available governors\nCurrently selected: %S</string>
+    <string name="cpu_summary">Governor and clock settings</string>
+    <string name="cpu_governors_title">Available governors</string>
+    <string name="cpu_governors_summary">List of available governors\nCurrently selected: %S</string>
     <string name="cpu_min_freq_title">Minimum CPU-frekvens</string>
     <string name="cpu_min_freq_summary">Minimum CPU-frekvens\nGjeldende: %s</string>
     <string name="cpu_max_freq_title">Maksimum CPU-frekvens</string>

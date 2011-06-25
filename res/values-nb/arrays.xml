@@ -347,8 +347,8 @@
     </string-array>
 
     <string-array name="entries_sound_limitvol">
-        <item>*Attenuated system setting</item>
-        <item>*Music volume (default)</item>
+        <item>Attenuated system setting</item>
+        <item>Music volume (default)</item>
     </string-array>
 
     <string-array name="values_sound_limitvol" translatable="false">
@@ -421,7 +421,7 @@
     </string-array>
 
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
-        <item>*1 (broadest)</item>
+        <item>1 (broadest)</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
@@ -432,7 +432,7 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
-        <item>*12 (strictest)</item>
+        <item>12 (strictest)</item>
     </string-array>
 
     <string-array name="pref_lockscreen_gestures_sensitivity_values" translatable="false">
@@ -603,10 +603,10 @@
 
     <string-array name="entries_long_press_menu">
         <item>Ingen</item>
-        <item>*Soft keyboard</item>
-        <item>*Search key</item>
-        <item>*Custom Application</item>
-        <item>*Toggle statusbar</item>
+        <item>Soft keyboard</item>
+        <item>Search key</item>
+        <item>Custom Application</item>
+        <item>Toggle statusbar</item>
     </string-array>
 
     <string-array name="values_long_press_menu">
