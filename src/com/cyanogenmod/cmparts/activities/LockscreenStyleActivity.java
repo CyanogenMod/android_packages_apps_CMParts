@@ -19,20 +19,20 @@ package com.cyanogenmod.cmparts.activities;
 import java.util.ArrayList;
 
 import android.content.Intent;
-import android.content.Intent.ShortcutIconResource;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
 public class LockscreenStyleActivity extends PreferenceActivity implements
-        OnPreferenceChangeListener {
+        OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener {
 
     private static final String LOCKSCREEN_STYLE_PREF = "pref_lockscreen_style";
 
@@ -61,14 +61,6 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private ListPreference mInCallStylePref;
 
     private Preference mCustomAppActivityPref;
-
-    private int mKeyNumber = 1;
-
-    private static final int REQUEST_PICK_SHORTCUT = 1;
-
-    private static final int REQUEST_PICK_APPLICATION = 2;
-
-    private static final int REQUEST_CREATE_SHORTCUT = 3;
 
     enum LockscreenStyle{
         Slider,
@@ -149,6 +141,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
     private LockscreenStyle mLockscreenStyle;
     private InCallStyle mInCallStyle;
+    private ShortcutPickHelper mPicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -198,16 +191,25 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
         mCustomAppActivityPref = (Preference) prefSet
                 .findPreference(LOCKSCREEN_CUSTOM_APP_ACTIVITY);
+
+        mPicker = new ShortcutPickHelper(this, this);
     }
 
     @Override
     public void onResume() {
         super.onResume();
 
-        mCustomAppActivityPref.setSummary(Settings.System.getString(getContentResolver(),
-                Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY));
+        String value = Settings.System.getString(getContentResolver(),
+                Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY);
+        mCustomAppActivityPref.setSummary(mPicker.getFriendlyNameForUri(value));
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPicker.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;
         if (preference == mCustomAppTogglePref) {
@@ -232,11 +234,12 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                     Settings.System.LOCKSCREEN_CUSTOM_ICON_STYLE, value ? 2 : 1);
             return true;
         } else if (preference == mCustomAppActivityPref) {
-            pickShortcut(4);
+            mPicker.pickShortcut();
         }
         return false;
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mLockscreenStylePref) {
             mLockscreenStyle = LockscreenStyle.getStyleById((String) newValue);
@@ -255,73 +258,11 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         return false;
     }
 
-    private void pickShortcut(int keyNumber) {
-        mKeyNumber = keyNumber;
-        Bundle bundle = new Bundle();
-        ArrayList<String> shortcutNames = new ArrayList<String>();
-        shortcutNames.add(getString(R.string.group_applications));
-        bundle.putStringArrayList(Intent.EXTRA_SHORTCUT_NAME, shortcutNames);
-        ArrayList<ShortcutIconResource> shortcutIcons = new ArrayList<ShortcutIconResource>();
-        shortcutIcons.add(ShortcutIconResource
-                .fromContext(this, R.drawable.ic_launcher_application));
-        bundle.putParcelableArrayList(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, shortcutIcons);
-        Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-        pickIntent.putExtra(Intent.EXTRA_INTENT, new Intent(Intent.ACTION_CREATE_SHORTCUT));
-        pickIntent.putExtra(Intent.EXTRA_TITLE, getText(R.string.select_custom_app_title));
-        pickIntent.putExtras(bundle);
-        startActivityForResult(pickIntent, REQUEST_PICK_SHORTCUT);
-    }
-
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_APPLICATION:
-                    completeSetCustomApp(data);
-                    break;
-                case REQUEST_CREATE_SHORTCUT:
-                    completeSetCustomShortcut(data);
-                    break;
-                case REQUEST_PICK_SHORTCUT:
-                    processShortcut(data, REQUEST_PICK_APPLICATION, REQUEST_CREATE_SHORTCUT);
-                    break;
-            }
-        }
-    }
-
-    void processShortcut(Intent intent, int requestCodeApplication, int requestCodeShortcut) {
-        // Handle case where user selected "Applications"
-        String applicationName = getResources().getString(R.string.group_applications);
-        String shortcutName = intent.getStringExtra(Intent.EXTRA_SHORTCUT_NAME);
-        if (applicationName != null && applicationName.equals(shortcutName)) {
-            Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-            mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-            Intent pickIntent = new Intent(Intent.ACTION_PICK_ACTIVITY);
-            pickIntent.putExtra(Intent.EXTRA_INTENT, mainIntent);
-            startActivityForResult(pickIntent, requestCodeApplication);
-        } else {
-            startActivityForResult(intent, requestCodeShortcut);
-        }
-    }
-
-    void completeSetCustomShortcut(Intent data) {
-        Intent intent = data.getParcelableExtra(Intent.EXTRA_SHORTCUT_INTENT);
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 4) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY, intent.toUri(0))) {
-                mCustomAppActivityPref.setSummary(intent.toUri(0));
-            }
-        }
-    }
-
-    void completeSetCustomApp(Intent data) {
-        int keyNumber = mKeyNumber;
-        if (keyNumber == 4) {
-            if (Settings.System.putString(getContentResolver(),
-                    Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY, data.toUri(0))) {
-                mCustomAppActivityPref.setSummary(data.toUri(0));
-            }
+    public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
+        if (Settings.System.putString(getContentResolver(),
+                Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY, uri)) {
+            mCustomAppActivityPref.setSummary(friendlyName);
         }
     }
 
