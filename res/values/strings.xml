@@ -138,10 +138,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Screen lock settings</string>
     <string name="pref_lockscreen_delay_title">Delay</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Screen timeout delay</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Screen turned off delay</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">How long to delay before enabling screen lock when screen times out</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">How long to delay before enabling screen lock when screen is turned off</string>
+    <string name="pref_lockscreen_security_title">Security Lock</string>
+    <string name="pref_lockscreen_security_delay_note_title">Note</string>
+    <string name="pref_lockscreen_security_delay_note_summary">While screen lock security is set to NONE only the security lock delay settings will be used</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Screen timeout delay</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Screen turned off delay</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">How long to delay before enabling screen security lock when screen times out</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">How long to delay before enabling screen security lock when screen is turned off</string>
+    <string name="pref_lockscreen_slide_title">Slide Lock</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Note</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Even if enabled, the unsecured slide lock will only appear if the security lock delay is longer than the slide lock delay</string>
+    <string name="pref_lockscreen_slide_delay_title">Enable slide lock delay</string>
+    <string name="pref_lockscreen_slide_delay_summary">Shows screen slide lock on a separate delay before showing security lock</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Screen timeout delay</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Screen turned off delay</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">How long to delay before enabling screen slide lock when screen times out</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">How long to delay before enabling screen slide lock when screen is turned off</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Pick a color</string>

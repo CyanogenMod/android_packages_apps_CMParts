@@ -1,21 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/general_title">
+    <PreferenceCategory android:key="pref_lockscreen_delay_category_security"
+        android:title="@string/pref_lockscreen_security_title">
 
-        <ListPreference android:key="pref_lockscreen_timeout_delay"
+        <!-- Note -->
+        <Preference android:key="pref_lockscreen_security_delay_note"
+            android:title="@string/pref_lockscreen_security_delay_note_title"
+            android:summary="@string/pref_lockscreen_security_delay_note_summary"
+            android:selectable="false" />
+
+        <ListPreference android:key="pref_lockscreen_security_timeout_delay"
             android:dialogTitle="@string/pref_lockscreen_delay_title"
-            android:title="@string/pref_lockscreen_timeout_lock_delay"
-            android:summary="@string/pref_lockscreen_timeout_lock_delay_summary"
+            android:title="@string/pref_lockscreen_security_timeout_lock_delay"
+            android:summary="@string/pref_lockscreen_security_timeout_lock_delay_summary"
             android:entries="@array/pref_lockscreen_delay_entries"
             android:entryValues="@array/pref_lockscreen_delay_values" />
 
-        <ListPreference android:key="pref_lockscreen_screenoff_delay"
+        <ListPreference android:key="pref_lockscreen_security_screenoff_delay"
             android:dialogTitle="@string/pref_lockscreen_delay_title"
-            android:title="@string/pref_lockscreen_screenoff_lock_delay"
-            android:summary="@string/pref_lockscreen_screenoff_lock_delay_summary"
+            android:title="@string/pref_lockscreen_security_screenoff_lock_delay"
+            android:summary="@string/pref_lockscreen_security_screenoff_lock_delay_summary"
             android:entries="@array/pref_lockscreen_delay_entries"
             android:entryValues="@array/pref_lockscreen_delay_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="pref_lockscreen_delay_category_slide"
+        android:title="@string/pref_lockscreen_slide_title">
+
+        <!-- Note -->
+        <Preference android:key="pref_lockscreen_slide_delay_note"
+            android:title="@string/pref_lockscreen_slide_delay_note_title"
+            android:summary="@string/pref_lockscreen_slide_delay_note_summary"
+            android:selectable="false" />
+
+        <CheckBoxPreference android:key="pref_lockscreen_slide_delay_toggle"
+            android:title="@string/pref_lockscreen_slide_delay_title"
+            android:summary="@string/pref_lockscreen_slide_delay_summary" />
+
+        <ListPreference android:key="pref_lockscreen_slide_timeout_delay"
+            android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_slide_timeout_lock_delay"
+            android:summary="@string/pref_lockscreen_slide_timeout_lock_delay_summary"
+            android:entries="@array/pref_lockscreen_delay_entries"
+            android:entryValues="@array/pref_lockscreen_delay_values"
+            android:dependency="pref_lockscreen_slide_delay_toggle" />
+
+        <ListPreference android:key="pref_lockscreen_slide_screenoff_delay"
+            android:dialogTitle="@string/pref_lockscreen_delay_title"
+            android:title="@string/pref_lockscreen_slide_screenoff_lock_delay"
+            android:summary="@string/pref_lockscreen_slide_screenoff_lock_delay_summary"
+            android:entries="@array/pref_lockscreen_delay_entries"
+            android:entryValues="@array/pref_lockscreen_delay_values"
+            android:dependency="pref_lockscreen_slide_delay_toggle" />
 
     </PreferenceCategory>
 
