@@ -224,8 +224,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Eigener App-Starter</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen zweiten schiebbaren Tab bzw. rotierbaren Slider</string>
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Nachrichtensymbol für Anwendung</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Nachrichten-Icon statt CM-Icon für den App-Starter verwenden</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Runterziehen zum Entsperren</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
