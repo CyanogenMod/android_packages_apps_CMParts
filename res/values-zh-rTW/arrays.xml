@@ -41,32 +41,7 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_status_bar_am_pm -->
 
-    <string-array name="entries_render_effect">
-        <item>無渲染效果</item>
-        <item>夜視模式（紅）</item>
-        <item>終端機（綠）</item>
-        <item>藍</item>
-        <item>琥珀</item>
-        <item>鮭紅</item>
-        <item>洋紅</item>
-        <item>校準的（N1）</item>
-        <item>校準的（N1）低紅</item>
-        <item>校準的（N1）冷酷</item>
-    </string-array>
-
     <!-- skipping untranslatable /resources:0/string-array:name=values_render_effect -->
-
-    <string-array name="render_entries">
-        <item>夜視模式（紅）</item>
-        <item>終端機（綠）</item>
-        <item>藍</item>
-        <item>琥珀</item>
-        <item>鮭紅</item>
-        <item>洋紅</item>
-        <item>校準的（N1）</item>
-        <item>校準的（N1）低紅</item>
-        <item>校準的（N1）冷酷</item>
-    </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=render_values -->
 

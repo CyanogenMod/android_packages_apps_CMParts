@@ -85,7 +85,12 @@
     <string name="tablet_soft_buttons_search_title">Szukaj</string>
     <string name="tablet_soft_buttons_quick_na_title">Szybkie powiadomienia</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Autoobracanie ekranu</string>
+    <string name="pref_rotation_0_title">0 stopni</string>
+    <string name="pref_rotation_90_title">90 stopni</string>
+    <string name="pref_rotation_180_title">180 stopni</string>
+    <string name="pref_rotation_270_title">270 stopni</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Usprawnienia paska stanu</string>
@@ -99,6 +104,7 @@
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
     <string name="ui_status_bar_toggle_brightness">Ustawienia jasności</string>
     <string name="ui_status_bar_toggle_brightness_summary">Pozwala na dostosowywanie jasności poprzez przesuwanie palca po pasku stanu.</string>
+    <string name="ui_status_bar_toggle_info">Automatyczna jasność jest włączona</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Dioda powiadomień</string>
@@ -191,7 +197,7 @@
     <string name="pref_lockscreen_always_battery_title">Stan baterii</string>
     <string name="pref_lockscreen_always_battery_summary">Wyświetlaj stan baterii na ekranie blokady przez cały czas</string>
     <string name="pref_lockscreen_music_controls_title">Sterowanie muzyką</string>
-    <string name="pref_lockscreen_music_controls_summary">Wyświetla sterowanie muzyką na ekranie blokady</string>
+    <string name="pref_lockscreen_music_controls_summary">Wyświetlaj sterowanie muzyką na ekranie blokady</string>
     <string name="pref_lockscreen_now_playing_title">Tytuł utworu</string>
     <string name="pref_lockscreen_now_playing_summary">Wyświetl tytuł i wykonawcę odtwarzanego utworu</string>
     <string name="pref_lockscreen_album_art_title">Okładka albumu</string>
@@ -247,6 +253,13 @@
     <string name="pref_input_custom_search_app_activity_title">Własna aplikacja</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Przytrzymanie przycisku szukaj</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Uruchamia wskazaną aplikację po przytrzymaniu przycisku szukaj</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Ustawienia przytrzymania przycisku "menu"</string>
+    <string name="long_press_menu_summary">Własne ustawienia dla przytrzymania przycisku "menu"</string>
+    <string name="pref_user_defined_long_press_menu_title">Wybierz dowolną aplikację</string>
+    <string name="pref_long_press_menu_title">Wybierz działanie</string>
+    <string name="pref_long_press_menu_summary">Ustaw przytrzymanie przycisku "menu"</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Pokaż tytuł "Najnowsze"</string>
@@ -366,15 +379,32 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render Effect</string>
     <string name="notify_render_effect">Render effect aktywny</string>
-        <string name="add_widget">Dodaj widżet</string>
+    <string name="add_widget">Dodaj widżet</string>
+    <string name="pref_render_effect_none">Bez efektu</string>
+    <string name="pref_render_effect_night">Tryb nocny (3700K)</string>
+    <string name="pref_render_effect_green">Terminal (zielony)</string>
+    <string name="pref_render_effect_blue">Niebieski</string>
+    <string name="pref_render_effect_amber">Bursztynowy</string>
+    <string name="pref_render_effect_salmon">Łososiowy</string>
+    <string name="pref_render_effect_fuscia">Fuksja</string>
+    <string name="pref_render_effect_calibrated">Skalibrowany (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Skalibrowany (N1) Niska Czerwień</string>
+    <string name="pref_render_effect_calibrated_cool">Skalibrowany (N1) Chłodny</string>
+    <string name="pref_render_effect_red">Czerwony</string>
+
 
     <!--  Widget Types -->
-    <string name="night">Noc</string>
-    <string name="terminal">Term</string>
-    <string name="blue">Niebieski</string>
-    <string name="amber">Bursztyn</string>
-    <string name="salmon">Łosoś</string>
-    <string name="fuscia">Fuksja</string>
+    <string name="widget_render_effect_night">Noc</string>
+    <string name="widget_render_effect_terminal">Term</string>
+    <string name="widget_render_effect_blue">Niebieski</string>
+    <string name="widget_render_effect_amber">Bursztyn</string>
+    <string name="widget_render_effect_salmon">Łosoś</string>
+    <string name="widget_render_effect_fuscia">Fuksja</string>
+    <string name="widget_render_effect_red">Czerwony</string>
+    <string name="widget_render_effect_calibrated">Skali</string>
+    <string name="widget_render_effect_calibrated_red">Skali Czerwień</string>
+    <string name="widget_render_effect_calibrated_cool">Skali Chłodny</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Widżety obszaru powiadomień</string>

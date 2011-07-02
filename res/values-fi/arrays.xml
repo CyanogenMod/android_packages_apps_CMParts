@@ -23,31 +23,6 @@
         <item>Ulkoinen</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Ei renderöintiefektiä</item>
-        <item>Yötila (punainen)</item>
-        <item>Pääte (vihreä)</item>
-        <item>Sininen</item>
-        <item>Meripihka</item>
-        <item>Lohi</item>
-        <item>Fuskia</item>
-        <item>Kalibroitu (N1)</item>
-        <item>Kalibroitu (N1) Matala punainen</item>
-        <item>Kalibroitu (N1) Viileä</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Yötila (punainen)</item>
-        <item>Pääte (vihreä)</item>
-        <item>Sininen</item>
-        <item>Meripihka</item>
-        <item>Lohi</item>
-        <item>Fuskia</item>
-        <item>Kalibroitu (N1)</item>
-        <item>Kalibroitu (N1) Matala punainen</item>
-        <item>Kalibroitu (N1) Viileä</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Vihreä</item>
         <item>Valkoinen</item>

@@ -22,31 +22,6 @@
         <item>Externa</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Sin efecto de Render</item>
-        <item>Modo noche (rojo)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Ambar</item>
-        <item>Salmón</item>
-        <item>Fucsia</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) Rojo</item>
-        <item>Calibrado (N1) Frío</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Modo noche (rojo)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Ambar</item>
-        <item>Salmón</item>
-        <item>Fuscia</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) Rojo</item>
-        <item>Calibrato (N1) Frio</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Verde</item>
         <item>Blanco</item>

@@ -393,14 +393,31 @@
     <string name="prefs_render_effect">Render-Effect</string>
     <string name="notify_render_effect">Render-Effect ein</string>
     <string name="add_widget">Widget hinzufügen</string>
+    <string name="pref_render_effect_none">Kein Render-Effekt</string>
+    <string name="pref_render_effect_night">Nachtmodus (3700K)</string>
+    <string name="pref_render_effect_green">Terminal (grün)</string>
+    <string name="pref_render_effect_blue">Blau</string>
+    <string name="pref_render_effect_amber">Amber</string>
+    <string name="pref_render_effect_salmon">Lachs</string>
+    <string name="pref_render_effect_fuscia">Fuchsia</string>
+    <string name="pref_render_effect_calibrated">Kalibriert (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Kalibriert (N1) Schwachrot</string>
+    <string name="pref_render_effect_calibrated_cool">Kalibriert (N1) Kalt</string>
+    <string name="pref_render_effect_red">Rot</string>
+
 
     <!-- Widget Types -->
-    <string name="night">Nacht</string>
-    <string name="terminal">Terminal</string>
-    <string name="blue">Blau</string>
-    <string name="amber">Amber</string>
-    <string name="salmon">Lachs</string>
-    <string name="fuscia">Pink</string>
+    <string name="widget_render_effect_night">Nacht</string>
+    <string name="widget_render_effect_terminal">Terminal</string>
+    <string name="widget_render_effect_blue">Blau</string>
+    <string name="widget_render_effect_amber">Amber</string>
+    <string name="widget_render_effect_salmon">Lachs</string>
+    <string name="widget_render_effect_fuscia">Pink</string>
+    <string name="widget_render_effect_red">Rot</string>
+    <string name="widget_render_effect_calibrated">Kal</string>
+    <string name="widget_render_effect_calibrated_red">Kal Schwachrot</string>
+    <string name="widget_render_effect_calibrated_cool">Kal Kalt</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Energie-Widget</string>

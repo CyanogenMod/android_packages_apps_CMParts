@@ -29,31 +29,6 @@
         <item>Geen (Standaard)</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Geen render effect</item>
-        <item>Nachtmodus (rood)</item>
-        <item>Terminal (groen)</item>
-        <item>Blauw</item>
-        <item>Oranje</item>
-        <item>Zalm</item>
-        <item>Paars</item>
-        <item>Gecalibreerd (N1)</item>
-        <item>Gecalibreerd (N1) Licht rood</item>
-        <item>Gecalibreerd (N1) Koud</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Nachtmodus (Rood)</item>
-        <item>Terminal (Groen)</item>
-        <item>Blauw</item>
-        <item>Oranje</item>
-        <item>Zalm</item>
-        <item>Paars</item>
-        <item>Gekalibreerd (N1)</item>
-        <item>Gekalibreerd (N1) Licht rood</item>
-        <item>Gekalibreerd (N1) Koud</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Groen</item>
         <item>Wit</item>

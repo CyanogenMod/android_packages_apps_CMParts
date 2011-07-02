@@ -96,22 +96,34 @@ public class WidgetOptionsActivity extends PreferenceActivity implements OnPrefe
             int renderFx = mPreferences.getInt("widget_render_effect_" + mAppWidgetId, 1);
             switch (renderFx) {
             case 1:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.night));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_night));
                 break;
             case 2:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.terminal));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_terminal));
                 break;
             case 3:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.blue));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_blue));
                 break;
             case 4:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.amber));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_amber));
                 break;
             case 5:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.salmon));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_salmon));
                 break;
             case 6:
-                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.fuscia));
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_fuscia));
+                break;
+            case 7:
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_calibrated));
+                break;
+            case 8:
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_calibrated_red));
+                break;
+            case 9:
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_calibrated_cool));
+                break;
+            case 10:
+                views.setTextViewText(R.id.ind, context.getResources().getString(R.string.widget_render_effect_red));
                 break;
             default:
                 views.setTextViewText(R.id.ind,

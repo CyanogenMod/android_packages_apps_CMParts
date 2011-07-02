@@ -28,31 +28,6 @@
         <item>Külső (SD)</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Nincs effekt</item>
-        <item>Éjszakai mód (piros)</item>
-        <item>Terminál (zöld)</item>
-        <item>Kék</item>
-        <item>Sárga</item>
-        <item>Narancs</item>
-        <item>Lila</item>
-        <item>Kalibrált (N1)</item>
-        <item>Kalibrált (N1) Halványpiros</item>
-        <item>Kalibrált (N1) Cool</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Éjszakai mód (piros)</item>
-        <item>Terminál (zöld)</item>
-        <item>Kék</item>
-        <item>Sárga</item>
-        <item>Narancs</item>
-        <item>Lila</item>
-        <item>Kalibrált (N1)</item>
-        <item>Kalibrált (N1) Halványpiros</item>
-        <item>Kalibrált (N1) Cool</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Zöld</item>
         <item>Fehér</item>

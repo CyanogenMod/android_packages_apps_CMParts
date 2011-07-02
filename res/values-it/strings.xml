@@ -381,14 +381,30 @@
     <string name="prefs_render_effect">Effetto Render</string>
     <string name="notify_render_effect">Effetto render attivo</string>
     <string name="add_widget">Aggiungi widget</string>
+    <string name="pref_render_effect_none">Nessun effetto render</string>
+    <string name="pref_render_effect_night">Night mode (3700K)</string>
+    <string name="pref_render_effect_green">Terminale (verde)</string>
+    <string name="pref_render_effect_blue">Blu</string>
+    <string name="pref_render_effect_amber">Ambra</string>
+    <string name="pref_render_effect_salmon">Salmone</string>
+    <string name="pref_render_effect_fuscia">Fucsia</string>
+    <string name="pref_render_effect_calibrated">Calibrato (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Calibrato(N1) Low Red</string>
+    <string name="pref_render_effect_calibrated_cool">Calibrato (N1) Cool</string>
+    <string name="pref_render_effect_red">Rosso</string>
+
 
     <!--  Widget Types -->
-    <string name="night">Night</string>
-    <string name="terminal">Term</string>
-    <string name="blue">Blu</string>
-    <string name="amber">Ambra</string>
-    <string name="salmon">Salmone</string>
-    <string name="fuscia">Fucsia</string>
+    <string name="widget_render_effect_night">Night</string>
+    <string name="widget_render_effect_terminal">Term</string>
+    <string name="widget_render_effect_blue">Blu</string>
+    <string name="widget_render_effect_amber">Ambra</string>
+    <string name="widget_render_effect_salmon">Salmone</string>
+    <string name="widget_render_effect_fuscia">Fucsia</string>
+    <string name="widget_render_effect_red">Rosso</string>
+    <string name="widget_render_effect_calibrated">Cal</string>
+    <string name="widget_render_effect_calibrated_red">Cal Low Red</string>
+    <string name="widget_render_effect_calibrated_cool">Cal Cool</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Expanded View Widget</string>

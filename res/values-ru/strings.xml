@@ -379,14 +379,31 @@
     <string name="prefs_render_effect">Эффект экрана</string>
     <string name="notify_render_effect">Эффект экрана включён</string>
     <string name="add_widget">Добавить виджет</string>
+    <string name="pref_render_effect_none">Без эффекта</string>
+    <string name="pref_render_effect_night">Ночной (3700K)</string>
+    <string name="pref_render_effect_green">Терминал (зелёный)</string>
+    <string name="pref_render_effect_blue">Синий</string>
+    <string name="pref_render_effect_amber">Жёлтый</string>
+    <string name="pref_render_effect_salmon">Оранжево-розовый</string>
+    <string name="pref_render_effect_fuscia">Розовый</string>
+    <string name="pref_render_effect_calibrated">Калиброванный (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Калиброванный (N1) Красноватый</string>
+    <string name="pref_render_effect_calibrated_cool">Калиброванный (N1) Холодный</string>
+    <string name="pref_render_effect_red">красный</string>
+
 
     <!--  Widget Types -->
-    <string name="night">Ночь</string>
-    <string name="terminal">Терм</string>
-    <string name="blue">Синий</string>
-    <string name="amber">Жёлтый</string>
-    <string name="salmon">Оранжево-розовый</string>
-    <string name="fuscia">Розовый</string>
+    <string name="widget_render_effect_night">Ночь</string>
+    <string name="widget_render_effect_terminal">Терм</string>
+    <string name="widget_render_effect_blue">Синий</string>
+    <string name="widget_render_effect_amber">Жёлтый</string>
+    <string name="widget_render_effect_salmon">Оранжево-розовый</string>
+    <string name="widget_render_effect_fuscia">Розовый</string>
+    <string name="widget_render_effect_red">красный</string>
+    <string name="widget_render_effect_calibrated">Кал</string>
+    <string name="widget_render_effect_calibrated_red">Кал Красноватый</string>
+    <string name="widget_render_effect_calibrated_cool">Кал Холодный</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Кнопки в панели уведомлений</string>

@@ -213,15 +213,32 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">화면 효과</string>
     <string name="notify_render_effect">화면 효과 켜기</string>
-        <string name="add_widget">위젯 추가</string>
+    <string name="add_widget">위젯 추가</string>
+    <string name="pref_render_effect_none">효과 없음</string>
+    <string name="pref_render_effect_night">야간 모드 (3700K)</string>
+    <string name="pref_render_effect_green">터미널 (녹색)</string>
+    <string name="pref_render_effect_blue">파랑색</string>
+    <string name="pref_render_effect_amber">황색</string>
+    <string name="pref_render_effect_salmon">주황색</string>
+    <string name="pref_render_effect_fuscia">자주색</string>
+    <string name="pref_render_effect_calibrated">보정 (N1)</string>
+    <string name="pref_render_effect_calibrated_red">보정 (N1) 옅은 빨강</string>
+    <string name="pref_render_effect_calibrated_cool">보정 (N1) 시원함</string>
+    <string name="pref_render_effect_red">빨강색</string>
+
 
     <!--  Widget Types -->
-    <string name="night">야간</string>
-    <string name="terminal">터미널</string>
-    <string name="blue">파랑</string>
-    <string name="amber">주황</string>
-    <string name="salmon">황색</string>
-    <string name="fuscia">자주색</string>
+    <string name="widget_render_effect_night">야간</string>
+    <string name="widget_render_effect_terminal">터미널</string>
+    <string name="widget_render_effect_blue">파랑</string>
+    <string name="widget_render_effect_amber">주황</string>
+    <string name="widget_render_effect_salmon">황색</string>
+    <string name="widget_render_effect_fuscia">자주색</string>
+    <string name="widget_render_effect_red">빨강색</string>
+    <string name="widget_render_effect_calibrated">보정</string>
+    <string name="widget_render_effect_calibrated_red">보정 옅은 빨강</string>
+    <string name="widget_render_effect_calibrated_cool">보정 시원함</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">확장된 위젯</string>

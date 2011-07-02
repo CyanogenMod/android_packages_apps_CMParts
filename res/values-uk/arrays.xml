@@ -25,29 +25,6 @@
         <item>Маленький</item>
         <item>Немає (типове знач.)</item>
     </string-array>
-    <string-array name="entries_render_effect">
-        <item>Без ефектів візуалізації</item>
-        <item>Нічний режим (червоний)</item>
-        <item>Термінал (зелений)</item>
-        <item>Синій</item>
-        <item>Бурштиновий</item>
-        <item>Оранжево-рожевий</item>
-        <item>Синяво-рожевий</item>
-        <item>Калібрований (N1)</item>
-        <item>Калібрований (N1) мало червоного</item>
-        <item>Калібрований (N1) холодний</item>
-    </string-array>
-    <string-array name="render_entries">
-        <item>Нічний режим (червоний)</item>
-        <item>Термінал (зелений)</item>
-        <item>Синій</item>
-        <item>Бурштиновий</item>
-        <item>Оранжево-рожевий</item>
-        <item>Синяво-рожевий</item>
-        <item>Калібрований (N1)</item>
-        <item>Калібрований (N1) мало червоного</item>
-        <item>Калібрований (N1) холодний</item>
-    </string-array>
     <string-array name="entries_trackball_colors">
         <item>Зелений</item>
         <item>Білий</item>

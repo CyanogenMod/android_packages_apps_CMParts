@@ -366,14 +366,31 @@
     <string name="prefs_render_effect">描画エフェクト</string>
     <string name="notify_render_effect">描画エフェクトオン</string>
     <string name="add_widget">ウィジェットを使用</string>
+    <string name="pref_render_effect_none">エフェクトなし</string>
+    <string name="pref_render_effect_night">ナイトモード (3700K)</string>
+    <string name="pref_render_effect_green">ターミナル (緑)</string>
+    <string name="pref_render_effect_blue">ブルー</string>
+    <string name="pref_render_effect_amber">アンバー</string>
+    <string name="pref_render_effect_salmon">サーモン</string>
+    <string name="pref_render_effect_fuscia">フューシャ</string>
+    <string name="pref_render_effect_calibrated">調整済み(N1)</string>
+    <string name="pref_render_effect_calibrated_red">調整済み(N1) Low Red</string>
+    <string name="pref_render_effect_calibrated_cool">調整済み(N1) Cold</string>
+    <string name="pref_render_effect_red">赤</string>
+
 
     <!--  Widget Types -->
-    <string name="night">ナイト</string>
-    <string name="terminal">ターミナル</string>
-    <string name="blue">ブルー</string>
-    <string name="amber">アンバー</string>
-    <string name="salmon">サーモン</string>
-    <string name="fuscia">フューシャ</string>
+    <string name="widget_render_effect_night">ナイト</string>
+    <string name="widget_render_effect_terminal">ターミナル</string>
+    <string name="widget_render_effect_blue">ブルー</string>
+    <string name="widget_render_effect_amber">アンバー</string>
+    <string name="widget_render_effect_salmon">サーモン</string>
+    <string name="widget_render_effect_fuscia">フューシャ</string>
+    <string name="widget_render_effect_red">赤</string>
+    <string name="widget_render_effect_calibrated">調整済み</string>
+    <string name="widget_render_effect_calibrated_red">調整済み Low Red</string>
+    <string name="widget_render_effect_calibrated_cool">調整済み Cold</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">通知領域ウィジェット</string>

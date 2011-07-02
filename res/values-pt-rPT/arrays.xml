@@ -29,31 +29,6 @@
         <item>Cartão SD</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Sem efeito</item>
-        <item>Modo nocturno (vermelho)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Âmbar</item>
-        <item>Salmão</item>
-        <item>Magenta</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) avermelhado</item>
-        <item>Calibrado (N1) frio</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Modo nocturno (vermelho)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Âmbar</item>
-        <item>Salmão</item>
-        <item>Magenta</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) avermelhado</item>
-        <item>Calibrado (N1) frio</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Verde</item>
         <item>Branco</item>

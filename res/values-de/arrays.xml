@@ -28,19 +28,6 @@
     <item>Nichts (Standard)</item>
   </string-array>
 
-  <string-array name="entries_render_effect">
-    <item>Kein Render-Effekt</item>
-    <item>Nachtmodus (rot)</item>
-    <item>Terminal (grün)</item>
-    <item>Blau</item>
-    <item>Amber</item>
-    <item>Lachs</item>
-    <item>Fuchsia</item>
-    <item>Kalibriert (N1)</item>
-    <item>Kalibriert (N1) Schwachrot</item>
-    <item>Kalibriert (N1) Kalt</item>
-  </string-array>
-
   <string-array name="pref_overscroll_effect_entries">
     <item>Kein</item>
     <item>Glimmende Kante</item>

@@ -379,14 +379,29 @@
     <string name="prefs_render_effect">渲染效果</string>
     <string name="notify_render_effect">渲染效果开启</string>
     <string name="add_widget">添加小部件</string>
+    <string name="pref_render_effect_none">无渲染效果</string>
+    <string name="pref_render_effect_night">夜间模式 (3700K)</string>
+    <string name="pref_render_effect_green">终端模式 (绿色)</string>
+    <string name="pref_render_effect_blue">蓝色</string>
+    <string name="pref_render_effect_amber">琥珀</string>
+    <string name="pref_render_effect_salmon">三文鱼色 (粉红)</string>
+    <string name="pref_render_effect_fuscia">金钟花色 (紫红)</string>
+    <string name="pref_render_effect_calibrated">优化颜色 (N1)</string>
+    <string name="pref_render_effect_calibrated_red">优化颜色 (N1) 减少红色</string>
+    <string name="pref_render_effect_calibrated_cool">优化颜色 (N1) 冷色</string>
+    <string name="pref_render_effect_red">红色</string>
 
     <!--  Widget Types -->
-    <string name="night">夜间</string>
-    <string name="terminal">终端</string>
-    <string name="blue">蓝色</string>
-    <string name="amber">琥珀</string>
-    <string name="salmon">粉红</string>
-    <string name="fuscia">紫红</string>
+    <string name="widget_render_effect_night">夜间</string>
+    <string name="widget_render_effect_terminal">终端</string>
+    <string name="widget_render_effect_blue">蓝色</string>
+    <string name="widget_render_effect_amber">琥珀</string>
+    <string name="widget_render_effect_salmon">粉红</string>
+    <string name="widget_render_effect_fuscia">紫红</string>
+    <string name="widget_render_effect_red">红色</string>
+    <string name="widget_render_effect_calibrated">优化颜色</string>
+    <string name="widget_render_effect_calibrated_red">优化颜色 减少红色</string>
+    <string name="widget_render_effect_calibrated_cool">优化颜色 冷色</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">扩展视图控件</string>

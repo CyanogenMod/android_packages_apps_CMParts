@@ -380,15 +380,32 @@
     <string name="renderfx_temp">渲染效果</string>
     <string name="prefs_render_effect">渲染效果</string>
     <string name="notify_render_effect">渲染效果為</string>
-        <string name="add_widget">新增小工具</string>
+    <string name="add_widget">新增小工具</string>
+    <string name="pref_render_effect_none">無渲染效果</string>
+    <string name="pref_render_effect_night">夜視模式（3700K）</string>
+    <string name="pref_render_effect_green">終端機（綠）</string>
+    <string name="pref_render_effect_blue">藍</string>
+    <string name="pref_render_effect_amber">琥珀</string>
+    <string name="pref_render_effect_salmon">鮭紅</string>
+    <string name="pref_render_effect_fuscia">洋紅</string>
+    <string name="pref_render_effect_calibrated">校準的（N1）</string>
+    <string name="pref_render_effect_calibrated_red">校準的（N1）低紅</string>
+    <string name="pref_render_effect_calibrated_cool">校準的（N1）冷酷</string>
+    <string name="pref_render_effect_red">紅</string>
+
 
     <!--  Widget Types -->
-    <string name="night">夜視</string>
-    <string name="terminal">終端機</string>
-    <string name="blue">藍</string>
-    <string name="amber">琥珀</string>
-    <string name="salmon">鮭紅</string>
-    <string name="fuscia">洋紅</string>
+    <string name="widget_render_effect_night">夜視</string>
+    <string name="widget_render_effect_terminal">終端機</string>
+    <string name="widget_render_effect_blue">藍</string>
+    <string name="widget_render_effect_amber">琥珀</string>
+    <string name="widget_render_effect_salmon">鮭紅</string>
+    <string name="widget_render_effect_fuscia">洋紅</string>
+    <string name="widget_render_effect_red">紅</string>
+    <string name="widget_render_effect_calibrated">校準的</string>
+    <string name="widget_render_effect_calibrated_red">校準的 低紅</string>
+    <string name="widget_render_effect_calibrated_cool">校準的 冷酷</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">擴充檢視小工具</string>

@@ -244,15 +244,32 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render Effect</string>
     <string name="notify_render_effect">Render effect on</string>
-        <string name="add_widget">Add widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="pref_render_effect_none">No render effect</string>
+    <string name="pref_render_effect_night">מצב לילה (3700K)</string>
+    <string name="pref_render_effect_green">טרמינל (ירוק)</string>
+    <string name="pref_render_effect_blue">כחול</string>
+    <string name="pref_render_effect_amber">ענבר</string>
+    <string name="pref_render_effect_salmon">ורוד אדמדם (אלתית)</string>
+    <string name="pref_render_effect_fuscia">פוקסיה</string>
+    <string name="pref_render_effect_calibrated">מכויל (N1)</string>
+    <string name="pref_render_effect_calibrated_red">מכויל (N1) Low Red</string>
+    <string name="pref_render_effect_calibrated_cool">מכויל (N1) Cool</string>
+    <string name="pref_render_effect_red">אדום</string>
+
 
     <!--  Widget Types -->
- <string name="night">לילה</string>
-  <string name="terminal">מונח</string>
-  <string name="blue">כחול</string>
-  <string name="amber">ענבר</string>
-  <string name="salmon">סלמון</string>
-  <string name="fuscia">פוקסיה</string>
+  <string name="widget_render_effect_night">לילה</string>
+  <string name="widget_render_effect_terminal">מונח</string>
+  <string name="widget_render_effect_blue">כחול</string>
+  <string name="widget_render_effect_amber">ענבר</string>
+  <string name="widget_render_effect_salmon">סלמון</string>
+  <string name="widget_render_effect_fuscia">פוקסיה</string>
+  <string name="widget_render_effect_red">אדום</string>
+  <string name="widget_render_effect_calibrated">מכויל</string>
+  <string name="widget_render_effect_calibrated_red">מכויל (Low Red)</string>
+  <string name="widget_render_effect_calibrated_cool">מכויל (N1) Cool</string>
+
   
     <!-- Expanded View Power Widget -->
   <string name="title_widget_buttons">יישומון צפייה מורחבת</string>

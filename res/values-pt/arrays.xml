@@ -30,31 +30,6 @@
         <item>Nenhum (Padrão)</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Sem efeito</item>
-        <item>Modo noturno (vermelho)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Amarelo</item>
-        <item>Salmão</item>
-        <item>Rosa</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) avermelhado</item>
-        <item>Calibrado (N1) frio</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Modo noturno (vermelho)</item>
-        <item>Terminal (verde)</item>
-        <item>Azul</item>
-        <item>Amarelo</item>
-        <item>Salmão</item>
-        <item>Rosa</item>
-        <item>Calibrado (N1)</item>
-        <item>Calibrado (N1) avermelhado</item>
-        <item>Calibrado (N1) frio</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Verde</item>
         <item>Branco</item>

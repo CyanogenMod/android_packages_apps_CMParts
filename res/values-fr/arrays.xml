@@ -22,31 +22,6 @@
         <item>Externe</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Pas d\'effet de rendu</item>
-        <item>Mode nuit (rouge)</item>
-        <item>Terminal (vert)</item>
-        <item>Bleu</item>
-        <item>Orange</item>
-        <item>Saumon</item>
-        <item>Fuchsia</item>
-        <item>Calibré (N1)</item>
-        <item>Calibré (N1) Rouge</item>
-        <item>Calibré (N1) Froid</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>Mode nuit (rouge)</item>
-        <item>Terminal (vert)</item>
-        <item>Bleu</item>
-        <item>Orange</item>
-        <item>Saumon</item>
-        <item>Fuchsia</item>
-        <item>Calibré (N1)</item>
-        <item>Calibré (N1) Rouge</item>
-        <item>Calibré (N1) Froid</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Vert</item>
         <item>Blanc</item>

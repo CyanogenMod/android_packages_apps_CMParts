@@ -227,8 +227,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Message icon for custom app</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Uses message icon instead of cm icon for custom app starter</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Use application icon for custom app</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Uses application icon instead of CM icon for custom app starter</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Drag down to unlock</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Dragging down rotary wheel unlocks. Dragging right starts custom app</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Hide rotary arrows</string>
@@ -396,15 +396,30 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render Effect</string>
     <string name="notify_render_effect">Render effect on</string>
-        <string name="add_widget">Add widget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="pref_render_effect_none">No render effect</string>
+    <string name="pref_render_effect_night">Night mode (3700K)</string>
+    <string name="pref_render_effect_green">Terminal (green)</string>
+    <string name="pref_render_effect_blue">Blue</string>
+    <string name="pref_render_effect_amber">Amber</string>
+    <string name="pref_render_effect_salmon">Salmon</string>
+    <string name="pref_render_effect_fuscia">Fuscia</string>
+    <string name="pref_render_effect_calibrated">Calibrated (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Calibrated (N1) Low Red</string>
+    <string name="pref_render_effect_calibrated_cool">Calibrated (N1) Cool</string>
+    <string name="pref_render_effect_red">Red</string>
 
     <!--  Widget Types -->
-    <string name="night">Night</string>
-    <string name="terminal">Term</string>
-    <string name="blue">Blue</string>
-    <string name="amber">Amber</string>
-    <string name="salmon">Salmon</string>
-    <string name="fuscia">Fuscia</string>
+    <string name="widget_render_effect_night">Night</string>
+    <string name="widget_render_effect_terminal">Term</string>
+    <string name="widget_render_effect_blue">Blue</string>
+    <string name="widget_render_effect_amber">Amber</string>
+    <string name="widget_render_effect_salmon">Salmon</string>
+    <string name="widget_render_effect_fuscia">Fuscia</string>
+    <string name="widget_render_effect_red">Red</string>
+    <string name="widget_render_effect_calibrated">Cal</string>
+    <string name="widget_render_effect_calibrated_red">Cal Low Red</string>
+    <string name="widget_render_effect_calibrated_cool">Cal Cool</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Expanded View Widget</string>
@@ -650,5 +665,7 @@
     <string name="perm_enable_management_summary">Enable application permissions management</string>
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
+
+
 
 </resources>

@@ -11,29 +11,6 @@
     <item>פנימי</item>
     <item>חיצוני</item>
   </string-array>
-  <string-array name="entries_render_effect">
-    <item>No render effect</item>
-    <item>מצב לילה (אדום)</item>
-    <item>טרמינל (ירוק)</item>
-    <item>כחול</item>
-    <item>ענבר</item>
-    <item>ורוד אדמדם (אלתית)</item>
-    <item>פוקסיה</item>
-    <item>מכויל (N1)</item>
-    <item>מכויל (Low Red)</item>
-    <item>מכויל (N1) Cool</item>
-  </string-array>
-  <string-array name="render_entries">
-    <item>מצב לילה (אדום)</item>
-    <item>טרמינל (ירוק)</item>
-    <item>כחול</item>
-    <item>ענבר</item>
-    <item>ורוד אדמדם (אלתית)</item>
-    <item>פוקסיה</item>
-    <item>מכויל (N1)</item>
-    <item>מכויל (N1) Low Red</item>
-    <item>מכויל (N1) Cool</item>
-  </string-array>
   <string-array name="entries_trackball_colors">
     <item>ירוק</item>
     <item>לבן</item>

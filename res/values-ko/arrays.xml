@@ -23,31 +23,6 @@
         <item>외부</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>효과 없음</item>
-        <item>야간 모드 (빨강색)</item>
-        <item>터미널 (녹색)</item>
-        <item>파랑색</item>
-        <item>황색</item>
-        <item>주황색</item>
-        <item>자주색</item>
-        <item>보정 (N1)</item>
-        <item>보정 (N1) 옅은 빨강</item>
-        <item>보정 (N1) 시원함</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>야간 모드 (빨강색)</item>
-        <item>터미널 (녹색)</item>
-        <item>파랑색</item>
-        <item>황색</item>
-        <item>주황색</item>
-        <item>자주색</item>
-        <item>보정 (N1)</item>
-        <item>보정 (N1) 옅은 빨강</item>
-        <item>보정 (N1) 시원함</item>
-    </string-array>
-
     <string-array name="entries_trackball_colors">
         <item>녹색</item>
         <item>하얀색</item>

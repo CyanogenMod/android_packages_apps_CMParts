@@ -29,29 +29,10 @@
         <item>SD 卡</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>无渲染效果</item>
-        <item>夜间模式 (红色)</item>
-        <item>终端模式 (绿色)</item>
-        <item>蓝色</item>
-        <item>琥珀</item>
-        <item>三文鱼色 (粉红)</item>
-        <item>金钟花色 (紫红)</item>
-        <item>优化颜色 (N1)</item>
-        <item>优化颜色 (N1) 减少红色</item>
-        <item>优化颜色 (N1) 冷色</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>夜间模式 (红色)</item>
-        <item>终端模式 (绿色)</item>
-        <item>蓝色</item>
-        <item>琥珀</item>
-        <item>三文鱼色 (粉红)</item>
-        <item>金钟花色 (紫红)</item>
-        <item>优化颜色 (N1)</item>
-        <item>优化颜色 (N1) 减少红色</item>
-        <item>优化颜色 (N1) 冷色</item>
+    <string-array name="entries_status_bar_am_pm">
+        <item>正常</item>
+        <item>小</item>
+        <item>无 (默认)</item>
     </string-array>
 
     <string-array name="entries_trackball_colors">
@@ -69,19 +50,10 @@
         <item>无</item>
     </string-array>
 
-    <string-array name="pref_trackball_colors_values" translatable="false">
-        <item>green</item>
-        <item>white</item>
-        <item>red</item>
-        <item>blue</item>
-        <item>yellow</item>
-        <item>cyan</item>
-        <item>#800080</item>
-        <item>#ffc0cb</item>
-        <item>#ffa500</item>
-        <item>#add8e6</item>
-        <item>random</item>
-        <item>none</item>
+    <string-array name="entries_dual_led_colors">
+        <item>绿色</item>
+        <item>琥珀</item>
+        <item>无</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
@@ -188,4 +160,118 @@
         <item>音乐音量 (默认)</item>
     </string-array>
 
+   <string-array name="entries_brightness_widget" formatted="false">
+        <item>自动 / 最暗 /40%/100%</item>
+        <item>自动 / 最暗 /25%/50%/75%/100%</item>
+        <item>自动 / 25%/100%</item>
+        <item>自动 / 100%</item>
+    </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>2G / 3G+2G</item>  
+        <item>仅 2G / 3G</item>   
+        <item>仅 2G/3G / 3G+2G</item>
+    </string-array>
+
+    <string-array name="entries_screentimeout_widget">
+        <item>15秒 / 1分钟 / 5分钟</item>
+        <item>30秒 /2分钟 /5分钟 </item>
+    </string-array>
+
+    <string-array name="entries_ring_widget">
+        <item>铃声 + 震动 / 震动</item>
+        <item>铃声 / 震动</item>
+        <item>铃声 / 静音</item>
+        <item>铃声 + 震动 / 震动 / 静音</item>
+        <item>铃声 / 震动 / 震动 / 静音</item>
+        <item>铃声 + 震动 铃声 / 震动 / 震动 / 静音</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>正常</item>
+        <item>强光 / 死光</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_gestures_sensitivity_entries">
+        <item>1 (最宽松)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 (最严格)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_style_entries">
+        <item>滑动</item>
+        <item>旋转拨动</item>
+        <item>旋转反拨</item>
+        <item>镜面</item>
+    </string-array>
+
+    <string-array name="pref_in_call_style_entries">
+        <item>滑动</item>
+        <item>旋转拨动</item>
+        <item>旋转反拨</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>禁用</item>
+        <item>有线耳机</item>
+        <item>蓝牙 A2DP 耳机</item>
+        <item>有线 + 蓝牙耳机</item>
+    </string-array>
+
+    <string-array name="pref_overscroll_effect_entries">
+        <item>无</item>
+        <item>边缘发亮</item>
+        <item>反弹并发亮</item>
+        <item>反弹</item>
+    </string-array>
+
+    <string-array name="entries_overscroll_weight">
+        <item>特别重</item>
+        <item>重</item>
+        <item>中等</item>
+        <item>轻</item>
+        <item>特别轻</item>
+    </string-array>
+
+    <string-array name="entries_vol_actions">
+        <item>无／预设</item>
+        <item>主页</item>
+        <item>菜单</item>
+        <item>返回</item>
+        <item>搜索</item>
+        <item>电源</item>
+        <item>通话</item>
+        <item>结束通话</item>
+        <item>播放／暂停</item>
+        <item>下一首</item>
+        <item>上一首</item>
+        <item>长按主页</item>
+    </string-array>
+
+    <string-array name="entries_unhide_button">
+        <item>主页</item>
+        <item>菜单</item>
+        <item>返回</item>
+        <item>搜索</item>
+        <item>相机</item>
+        <item>增加音量</item>
+        <item>降低音量</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>无</item>
+        <item>软键盘</item>
+        <item>搜索键</item>
+        <item>自定义程序</item>
+        <item>显示 / 隐藏通知列</item>
+    </string-array>
 </resources>

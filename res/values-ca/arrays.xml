@@ -22,31 +22,6 @@
         <item>Extern</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>Sense efectes de render</item>
-        <item>Mode nocturn (vermell)</item>
-        <item>Terminal (verd)</item>
-        <item>Blau</item>
-        <item>Ambre</item>
-        <item>Salmó</item>
-        <item>Fúcsia</item>
-	    <item>Calibrat (N1)</item>
-	    <item>Calibrat (N1) Vermell</item>
-	    <item>Calibrat (N1) Fred</item>
-    </string-array>
-
-	<string-array name="render_entries">
-        <item>Mode nocturn (vermell)</item>
-        <item>Terminal (verd)</item>
-        <item>Blau</item>
-        <item>Ambre</item>
-        <item>Salmó</item>
-        <item>Fúcsia</item>
-	    <item>Calibrat (N1)</item>
-	    <item>Calibrat (N1) Vermell</item>
-	    <item>Calibrat (N1) Fred</item>
-	</string-array>
-
     <string-array name="entries_trackball_colors">
         <item>Verd</item>
         <item>Blanc</item>

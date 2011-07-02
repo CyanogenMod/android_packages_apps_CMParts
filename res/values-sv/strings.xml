@@ -370,15 +370,32 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Renderingseffekt</string>
     <string name="notify_render_effect">Renderingseffekt på</string>
-        <string name="add_widget">Lägg till widget</string>
+    <string name="add_widget">Lägg till widget</string>
+    <string name="pref_render_effect_none">Ingen renderingseffekt</string>
+    <string name="pref_render_effect_night">Nattläge (3700K)</string>
+    <string name="pref_render_effect_green">Terminal (grön)</string>
+    <string name="pref_render_effect_blue">Blå</string>
+    <string name="pref_render_effect_amber">Bärnsten</string>
+    <string name="pref_render_effect_salmon">Lax</string>
+    <string name="pref_render_effect_fuscia">Fucksia</string>
+    <string name="pref_render_effect_calibrated">Kalibrerad (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Kalibrerad (N1) Lågt röd</string>
+    <string name="pref_render_effect_calibrated_cool">alibrerad (N1) Kall</string>
+    <string name="pref_render_effect_red">Röd</string>
+
 
     <!--  Widget Types -->
-    <string name="night">Natt</string>
-    <string name="terminal">Term</string>
-    <string name="blue">Blå</string>
-    <string name="amber">Bärnsten</string>
-    <string name="salmon">Lax</string>
-    <string name="fuscia">Fuchsia</string>
+    <string name="widget_render_effect_night">Natt</string>
+    <string name="widget_render_effect_terminal">Term</string>
+    <string name="widget_render_effect_blue">Blå</string>
+    <string name="widget_render_effect_amber">Bärnsten</string>
+    <string name="widget_render_effect_salmon">Lax</string>
+    <string name="widget_render_effect_fuscia">Fuchsia</string>
+    <string name="widget_render_effect_red">Röd</string>
+    <string name="widget_render_effect_calibrated">Kali</string>
+    <string name="widget_render_effect_calibrated_red">Kali Lågt röd</string>
+    <string name="widget_render_effect_calibrated_cool">Kali Kall</string>
+
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Expanderad Vy Widget</string>
