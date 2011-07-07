@@ -22,6 +22,37 @@
         <item>Externa</item>
     </string-array>
 
+    <string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Pequeño</item>
+        <item>Ninguno (Por defecto)</item>
+    </string-array>
+
+    <string-array name="entries_render_effect">
+        <item>Sin efecto de Render</item>
+        <item>Modo noche (rojo)</item>
+        <item>Terminal (verde)</item>
+        <item>Azul</item>
+        <item>Ambar</item>
+        <item>Salmón</item>
+        <item>Fucsia</item>
+        <item>Calibrado (N1)</item>
+        <item>Calibrado (N1) Rojo</item>
+        <item>Calibrado (N1) Frío</item>
+    </string-array>
+
+    <string-array name="render_entries">
+        <item>Modo noche (rojo)</item>
+        <item>Terminal (verde)</item>
+        <item>Azul</item>
+        <item>Ambar</item>
+        <item>Salmón</item>
+        <item>Fuscia</item>
+        <item>Calibrado (N1)</item>
+        <item>Calibrado (N1) Rojo</item>
+        <item>Calibrado (N1) Frio</item>
+    </string-array>
+
     <string-array name="entries_trackball_colors">
         <item>Verde</item>
         <item>Blanco</item>
@@ -34,6 +65,12 @@
         <item>Naranja</item>
         <item>Celeste</item>
         <item>Aleatorio</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <string-array name="entries_dual_led_colors">
+        <item>Verde</item>
+        <item>Ambar</item>
         <item>Ninguno</item>
     </string-array>
 
@@ -156,6 +193,7 @@
         <item>Sonido/Silencio</item>
         <item>Sonido+Vib/Vib/Silencio</item>
         <item>Sonido/Vibración/Silencio</item>
+        <item>Sonido+Vibración/Sonido/Vibración/Silencio</item>
     </string-array>
 
     <string-array name="entries_flash_widget">
@@ -176,6 +214,74 @@
         <item>10</item>
         <item>11</item>
         <item>12 (Estricto)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_style_entries">
+        <item>Pestañas</item>
+        <item>Giratorio</item>
+        <item>Giratorio renovado</item>
+        <item>Deslizante</item>
+    </string-array>
+
+    <string-array name="pref_in_call_style_entries">
+        <item>Pestañas</item>
+        <item>Giratorio</item>
+        <item>Giratorio renovado</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>Desactivado</item>
+        <item>Auriculares con cable</item>
+        <item>Auriculares Bluetooth A2DP</item>
+        <item>Ambos</item>
+    </string-array>
+
+    <string-array name="pref_overscroll_effect_entries">
+        <item>Ninguno</item>
+        <item>Borde brillante</item>
+        <item>Rebote y Brillo</item>
+        <item>Rebote</item>
+    </string-array>
+
+    <string-array name="entries_overscroll_weight">
+        <item>Extra Fuerte</item>
+        <item>Fuerte</item>
+        <item>Medio</item>
+        <item>Suave</item>
+        <item>Extra Suave</item>
+    </string-array>
+
+    <string-array name="entries_vol_actions">
+        <item>Ninguno/Por Defecto</item>
+        <item>Home</item>
+        <item>Menu</item>
+        <item>Volver</item>
+        <item>Buscar</item>
+        <item>Energía</item>
+        <item>Llamar</item>
+        <item>Finaliza llamada</item>
+        <item>Play/Pausa</item>
+        <item>Siguiente pista</item>
+        <item>Pista anterior</item>
+        <item>Pulsación larga home</item>
+    </string-array>
+
+    <string-array name="entries_unhide_button">
+        <item>Home</item>
+        <item>Menu</item>
+        <item>Volver</item>
+        <item>Buscar</item>
+        <item>Cámara</item>
+        <item>Subir Volumen</item>
+        <item>Bajar Volumen</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Ninguno</item>
+        <item>Teclado</item>
+        <item>Búsqueda</item>
+        <item>Aplicación personalizada</item>
+        <item>Cambiar barra de estado</item>
     </string-array>
 
 </resources>

@@ -40,14 +40,70 @@
     <string name="pref_electron_beam_animation_on">Animación al encender pantalla</string>
     <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Ajustes Tablet</string>
+    <string name="tablet_tweaks_summary_head">Configuración más útil para los dispositivos tablet recogidos en un solo lugar. También funcionan en teléfonos</string>
+    <string name="tablet_tweaks_sb_bottom_title">Barra de estado abajo</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Mostrar barra de estado en la parte inferior. Útil para tabletas que utilizan botones para el home, menú, etc en la barra de estado</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zona muerta</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Agregar una zona muerta de la mitad de ancho de la pantalla a la mitad de la barra de estado</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Botones a la izquierda</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Pone los botones en la parte izquierda de la barra de estado</string>
+    <string name="tablet_tweaks_soft_button_list_title">Elegir botones</string>
+    <string name="tablet_tweaks_interface_head">Interfaz</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Desactivar bloqueo de pantalla</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Cuando se activa, no muestra la pantalla LockScreen o patrón. Ni en el arranque, ni cuando se despierta el dispositivo</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Desactivar pantalla completa</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Anular la solicitud de pantalla completa de aplicaciones. Cuando está activado, la barra de estado está siempre visible hasta que se oculta por botón</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Mostrar botón</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Elegir mostrar botón</string>
+    <string name="tablet_tweaks_extend_pm_title">Ampliar el menú de apagado</string>
+    <string name="tablet_tweaks_extend_pm_summary">Añadir acciones home/volver/menu al menú de apagado</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Elegir botones menú de apagado</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Invertir el comportamiento del volumen</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Comportamiento normal de los botones de volumen. Pulse para cambiar el volumen, mantenga pulsado para acción del usuario</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Comportamiento inverso de los botones de volumen. Pulse para acción del usuario, mantenga pulsado para cambiar el volumen</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">Definir teclas de volumen</string>
+    <string name="tablet_tweaks_long_volp_action_title">Pulsación larga tecla subir volumen</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Asignar accion home/volver/menu/etc al botón de volumen subir con pulsación larga. Limitado a la pantalla encendida</string>
+    <string name="tablet_tweaks_long_volm_action_title">Pulsación larga tecla bajar volumen</string>
+    <string name="tablet_tweaks_vol_both_action_title">Ambos botones de columen</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Nota: Algunos dispositivos necesitan hacer un hard reset pulsando ambas teclas de volumen + tecla de encendido</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Pulsacion larga ambos botones de volumen</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">Botones menú apagado</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">Botones</string>
+    <string name="tablet_soft_buttons_home_title">Home</string>
+    <string name="tablet_soft_buttons_menu_title">Menu</string>
+    <string name="tablet_soft_buttons_back_title">Volver</string>
+    <string name="tablet_soft_buttons_search_title">Buscar</string>
+    <string name="tablet_soft_buttons_quick_na_title">Notificaciones rápidas</string>
+
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Rotación de Pantalla</string>
+    <string name="pref_rotation_0_title">0 grados</string>
+    <string name="pref_rotation_90_title">90 grados</string>
+    <string name="pref_rotation_180_title">180 grados</string>
+    <string name="pref_rotation_270_title">270 grados</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustes de la barra de estado</string>
+        <string name="ui_status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="ui_status_bar_am_pm_summary">Ver estilo de AM/PM siguiente del reloj</string>
     <string name="ui_status_bar_clock_title">Mostrar reloj</string>
     <string name="ui_status_bar_clock_summary">Se esconde si se deshabilita</string>
     <string name="ui_status_bar_cm_battery_title">Porcentaje de batería</string>
     <string name="ui_status_bar_cm_battery_summary">Mostrar el porcentaje de batería y un icono pequeño. Deshabilitar si no aparece bien el tema</string>
+    <string name="ui_status_bar_compact_carrier_title">Etiqueta de compañía compacta</string>
+    <string name="ui_status_bar_compact_carrier_summary">Usar un diseño alternativo de notificación desplegable con la etiqueta de compañía pequeña</string>
+    <string name="ui_status_bar_toggle_brightness">Barra de estado de control de brillo</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permite el ajuste de brillo deslizando a través de la barra de estado</string>
+    <string name="ui_status_bar_toggle_info">Brillo automático está habilitado</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notificaciones LED</string>
@@ -77,7 +133,7 @@
     <string name="title_color_picker">Escoge un color</string>
     <string name="msg_color_picker">Pulsa el color del centro para confirmar.\nPulsa atrás para cancelar</string>
 
-    <!-- User interface: Trackball notifcations -->
+    <!-- User interface: LED notifications -->
     <string name="trackball_notifications_title">Colores de Notificaciones en Bola de Navegación</string>
     <string name="dialog_color_trackball">Escoge un color</string>
     <string name="dialog_blink_trackball">Elija un ratio de parpadeo</string>
@@ -116,6 +172,8 @@
     <string name="trackball_remove_default_toast">No se puede eliminar la categoría por defecto.</string>
     <string name="trackball_reset_all">Reiniciar todos los colores y categorías.</string>
     <string name="trackball_array_error">Hay un error en la lista. Este paquete se ha añadido a la categoría Miscelánea.</string>
+    <string name="trackball_color_notice_title">NOTA:</string>
+    <string name="trackball_color_notice_summary">No todos los colores se verán en todos los dispositivos</string>
 
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATENCION: Puede aumentar el consumo de la batería</string>
@@ -168,6 +226,8 @@
     <string name="lockscreen_delay_header">Retardo y tiempo de espera</string>
     <string name="pref_lockscreen_style_title">Estilo de bloqueo de pantalla</string>
     <string name="pref_lockscreen_style_summary">Escoja el estilo de pantalla de bloqueo</string>
+    <string name="pref_in_call_style_title">Estilo llamada entrante</string>
+    <string name="pref_in_call_style_summary">Elegir estilo de widget de llamadas entrantes aceptar o rechazar</string>
     <string name="pref_volbtn_music_controls_title">Controles de música</string>
     <string name="pref_volbtn_music_controls_summary">Cuando la pantalla está apagada, buscar pistas de música al pulsar los botones de volumen durante un largo periodo</string>
     <string name="pref_cambtn_music_controls_title">Control de música con botón de la cámara</string>
@@ -178,7 +238,12 @@
     <!-- Input Settings -->
     <string name="input_settings_title">Ajustes de entrada</string>
     <string name="input_settings_summary">Comportamiento de los botones de control</string>
+    <string name="haptic_title">Ajustes comunicación háptica</string>
+    <string name="haptic_summary">Ajustar la frecuencia y fuerza de la comunicaión háptica</string>
     <string name="button_settings_title">Ajustes de botón</string>
+    <string name="long_press_home_title">Ajustes de pulsación larga de Inicio</string>
+    <string name="long_press_home_summary">Número de aplicaciones recientes, etc</string>
+
     <string name="input_search_key_title">Comportamiento botón Búsqueda</string>
     <string name="input_search_key_summary">Definir acción para la pulsación larga del botón Búsqueda</string>
     <string name="pref_input_custom_search_app_toggle_title">Aplicación botón de búsqueda</string>
@@ -187,9 +252,14 @@
     <string name="pref_input_custom_long_search_app_toggle_title">Aplicación pulsación larga Búsqueda</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Inicia una aplicación personalizada cuando se deja pulsada la tecla de búsqueda</string>
 
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Ajustes menú pulsación larga</string>
+    <string name="long_press_menu_summary">Ajustes personalizados del menú configuración pulsación larga</string>
+    <string name="pref_user_defined_long_press_menu_title">Seleccione aplicación personalizada</string>
+    <string name="pref_long_press_menu_title">Elija el comportamiento</string>
+    <string name="pref_long_press_menu_summary">Personalizar menú pulsación larga</string>
+
     <!-- Long Press Home -->
-    <string name="long_press_home_title">Ajustes de pulsación larga de Inicio</string>
-    <string name="long_press_home_summary">Número de aplicaciones recientes, etc</string>
     <string name="recent_apps_show_title">Título de mostrar aplicaciones rescientes</string>
     <string name="recent_apps_num_title">Número de aplicaciones recientes</string>
     <string name="recent_apps_num_summary">Número de aplicaciones recientes a mostrar en pulsación larga de Inicio</string>
@@ -199,46 +269,7 @@
     <string name="select_custom_app_title">Seleccionar aplicación personalizada</string>
     <string name="group_applications">Aplicaciones</string>
 
-    <!-- Performance Settings -->
-    <string name="performance_settings_title">Ajustes de Rendimiento</string>
-    <string name="performance_settings_summary">Modificaciones de rendimiento del dispositivo</string>
-
-    <!-- Performance Settings : Compcache -->
-    <string name="pref_compcache_title">Uso de RAM Compcache</string>
-    <string name="pref_compcache_summary">Comprimir memoria para aumentar la capacidad virtual (requiere reiniciar)</string>
-
-    <!-- Performance Settings : JIT Mode -->
-    <string name="pref_jit_mode_title">Usar JIT</string>
-    <string name="pref_jit_mode_summary">Usar el compilador Dalvik just-in-time (requiere reiniciar)</string>
-
-    <!-- Performance Settings : Dithering -->
-    <string name="pref_use_dithering_title">Activar difuminado de superficies</string>
-    <string name="pref_use_dithering_summary">El difuminado de superficies mejora la calidad de imagen con coste de rendimiento (requiere reiniciar)</string>
-
-    <!-- Performance Settings : VM Heap Size -->
-    <string name="pref_heapsize_title">Tamaño de pila de MV </string>
-    <string name="pref_heapsize_summary">Máxima cantidad de memoria para pila de Memoria Virtual (requiere reiniciar)</string>
-
-    <!-- Performance Settings : Warning dialog -->
-    <string name="performance_settings_warning_title">ATENCION: ¡Manazas fuera!</string>
-    <string name="performance_settings_warning">Estas opciones cambiarán el rendimiento de tu sistema, posiblemente a peor. Están incluidas para experimentación and solicitamos que no envíe informes de errores si ha cambiado algo de los valores por defecto.</string>
-
-    <!-- Application Settings -->
-    <string name="application_settings_title">Ajustes de Aplicación</string>
-    <string name="application_settings_summary">Cambiar varios ajustes de aplicaciones como el lugar de instalación</string>
-
-    <!-- Application Settings : Move any app -->
-    <string name="pref_move_all_apps_title">Permitir movimiento de aplicaciones</string>
-    <string name="pref_move_all_apps_summary">Permitir mover cualquier aplicación al almacenamiento externo</string>
-
-    <!-- Application Settings : Install Location -->
-    <string name="pref_install_location_title">Lugar de instalación</string>
-    <string name="pref_install_location_summary">Seleccionar donde se instalarán las nuevas aplicaciones</string>
-
     <!-- HapticTweaks -->
-    <string name="haptic_title">Ajustes comunicación háptica</string>
-    <string name="haptic_summary">Ajustar la frecuencia y fuerza de la comunicaión háptica</string>
-
     <string name="title_haptic_feedback">Comunicación háptica al pulsar</string>
     <string name="summary_on_haptic_feedback">Usar comunicación háptica al pulsar teclas virtuales y ciertas interacciones del IU</string>
     <string name="summary_off_haptic_feedback">Sin comunicación háptica al pulsar teclas virtuales y ciertas interacciones del IU</string>
@@ -283,7 +314,56 @@
     <string name="haptic_revert_toast">Restaurar últimos valores usados</string>
     <string name="haptic_default_toast">Restaurar valores por defecto</string>
 
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">Ajustes de Rendimiento</string>
+    <string name="performance_settings_summary">Modificaciones de rendimiento del dispositivo</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">Uso de RAM Compcache</string>
+    <string name="pref_compcache_summary">Comprimir memoria para aumentar la capacidad virtual (requiere reiniciar)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">Usar JIT</string>
+    <string name="pref_jit_mode_summary">Usar el compilador Dalvik just-in-time (requiere reiniciar)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">Activar difuminado de superficies</string>
+    <string name="pref_use_dithering_summary">El difuminado de superficies mejora la calidad de imagen con coste de rendimiento (requiere reiniciar)</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Permitir purga de activos</string>
+    <string name="pref_purgeable_assets_summary">El sistema puede liberar más RAM cuando sea necesario si la memoria de mapa de bits de activos se puede reclamar (requiere reinicio)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">Tamaño de pila de MV </string>
+    <string name="pref_heapsize_summary">Máxima cantidad de memoria para pila de Memoria Virtual (requiere reiniciar)</string>
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">Bloquear Home en memoria</string>
+    <string name="pref_lock_home_summary">Tratar de mantener la aplicación de Inicio actual en la memoria en todo momento</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">Bloquear aplicación de mensajería en memoria</string>
+    <string name="pref_lock_mms_summary">Evitar la pérdida de mensajes en situaciones de poca memoria</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">ATENCION: ¡Manazas fuera!</string>
+    <string name="performance_settings_warning">Estas opciones cambiarán el rendimiento de tu sistema, posiblemente a peor. Están incluidas para experimentación and solicitamos que no envíe informes de errores si ha cambiado algo de los valores por defecto.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">Ajustes de Aplicación</string>
+    <string name="application_settings_summary">Cambiar varios ajustes de aplicaciones como el lugar de instalación</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">Permitir movimiento de aplicaciones</string>
+    <string name="pref_move_all_apps_summary">Permitir mover cualquier aplicación al almacenamiento externo</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">Lugar de instalación</string>
+    <string name="pref_install_location_summary">Seleccionar donde se instalarán las nuevas aplicaciones</string>
+
     <string name="general_title">General</string>
+    <string name="buttons_title">Botones</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Aviso de energía</string>
@@ -298,38 +378,31 @@
     <string name="prefs_render_effect">Efecto Render</string>
     <string name="notify_render_effect">Efecto Render activado</string>
     <string name="add_widget">Añadir widget</string>
-    <string name="pref_render_effect_none">Sin efecto de Render</string>
-    <string name="pref_render_effect_night">Modo noche (3700K)</string>
-    <string name="pref_render_effect_green">Terminal (verde)</string>
-    <string name="pref_render_effect_blue">Azul</string>
-    <string name="pref_render_effect_amber">Ambar</string>
-    <string name="pref_render_effect_salmon">Salmón</string>
-    <string name="pref_render_effect_fuscia">Fucsia</string>
-    <string name="pref_render_effect_calibrated">Calibrado (N1)</string>
-    <string name="pref_render_effect_calibrated_red">Calibrado (N1) Rojo</string>
-    <string name="pref_render_effect_calibrated_cool">Calibrado (N1) Frio</string>
-    <string name="pref_render_effect_red">Rojo</string>
-
 
     <!--  Widget Types -->
-    <string name="widget_render_effect_night">Noche</string>
-    <string name="widget_render_effect_terminal">Terminal</string>
-    <string name="widget_render_effect_blue">Azul</string>
-    <string name="widget_render_effect_amber">Ambar</string>
-    <string name="widget_render_effect_salmon">Salmón</string>
-    <string name="widget_render_effect_fuscia">Fuscia</string>
-    <string name="widget_render_effect_red">Rojo</string>
-    <string name="widget_render_effect_calibrated">Cal</string>
-    <string name="widget_render_effect_calibrated_red">Cal Rojo</string>
-    <string name="widget_render_effect_calibrated_cool">Cal Frio</string>
+    <string name="night">Noche</string>
+    <string name="terminal">Terminal</string>
+    <string name="blue">Azul</string>
+    <string name="amber">Ambar</string>
+    <string name="salmon">Salmón</string>
+    <string name="fuscia">Fuscia</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Widget Control de energía expandido</string>
     <string name="title_expanded_widget">Widget de notificación de energía</string>
     <string name="summary_expanded_widget">Usar el widget control de energía expandido</string>
+    <string name="title_expanded_hide_onchange">Ocultar al cambiar</string>
+    <string name="summary_expanded_hide_onchange">Ocultar las notificaciones tras pulsar un boton del widget</string>
+    <string name="title_expanded_hide_indicator">Ocultar indicador</string>
+    <string name="summary_expanded_hide_indicator">Oculat los widgets indicadores en las notificaciones</string>
+    <string name="title_expanded_hide_scrollbar">Ocultar la barra de desplazamiento</string>
+    <string name="summary_expanded_hide_scrollbar">Ocultar la barra de desplazamiento cuando el número máximo de botones están presentes.</string>
     <string name="expanded_color_mask">Color del indicador</string>
     <string name="title_widget_picker">Botones del widget</string>
     <string name="summary_widget_picker">Elegir los botones del widget</string>
+    <string name="title_widget_order">Orden de los botones</string>
+    <string name="summary_widget_order">Ordenar los botones del widget</string>
+        <string name="title_buttons">Botones</string>
     <string name="title_toggle_wifi">Interruptor Wifi</string>
     <string name="title_toggle_bluetooth">Interruptor Bluetooth</string>
     <string name="title_toggle_gps">Interruptor GPS</string>
@@ -345,6 +418,10 @@
     <string name="title_toggle_airplane">Interruptor Modo avión</string>
     <string name="title_toggle_flashlight">Interruptor Linterna</string>
     <string name="title_toggle_sleep">Interruptor Dormir</string>
+    <string name="title_toggle_media_play_pause">Media: Interruptor Play/Pause</string>
+    <string name="title_toggle_media_previous">Media: Pasar al anterior</string>
+    <string name="title_toggle_media_next">Media: Pasar al siguiente</string>
+    <string name="title_toggle_wimax">Interruptor WiMAX</string>
     <string name="title_button_modes">Modos de botón</string>
     <string name="pref_brightness_mode_title">Modos de brillo</string>
     <string name="pref_brightness_mode_summary">Elegir como cambia el brillo con el botón</string>
@@ -355,16 +432,7 @@
     <string name="pref_ring_mode_title">Modos de sonido</string>
     <string name="pref_ring_mode_summary">Elegir como cambia el sonido con el botón</string>
     <string name="pref_flash_mode_title">Modo de flash</string>
-    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal</string>
-
-
-    <!-- Performance : Lock home memory -->
-    <string name="pref_lock_home_title">Bloquear inicio en memoria</string>
-    <string name="pref_lock_home_summary">Intenta mantener siempre en memoria la aplicación de inicio actual</string>
-
-    <!-- Performance : Lock mms app in memory -->
-    <string name="pref_lock_mms_title">Bloquear aplicación de mensajería n memoria</string>
-    <string name="pref_lock_mms_summary">Descartar mensajes perdidos en situaciones de baja memoria</string>
+    <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal(Evo)</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Luz de fondo automática</string>
@@ -411,6 +479,11 @@
     <string name="sound_summary">Ajustes de foco de sonido y audio</string>
     <string name="sound_notifications_focus_title">Enfocar notificaciones</string>
     <string name="sound_notifications_focus_summary">Se solicita a las aplicaciones compatibles que bajen su volumen para reproducir las notificaiones.</string>
+    <string name="sound_volume_control_silent_title">Estado silencioso</string>
+    <string name="sound_volume_control_silent_summary">Añadir un estado al control de volumen para un estado de silencio total</string>
+    <string name="sound_vibrate_in_call_title">Vibrar durante una llamada</string>
+    <string name="sound_vibrate_in_call_summary_off">Las notificaciones no vibrarán durante una llamada</string>
+    <string name="sound_vibrate_in_call_summary_on">Las notificaciones vibrarán normalmente</string>
     <string name="sound_to_speaker_title">Reproducir siempre en el altavoz</string>
     <string name="sound_notifications_title">Notificaciones</string>
     <string name="sound_rings_title">Tonos de llamada</string>
@@ -427,6 +500,8 @@
     <string name="sound_alarms_limitvol_dialog">Volumen de la alarma</string>
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Horas de silencio</string>
+    <string name="quiet_hours_note_title">Nota</string>
+    <string name="quiet_hours_note_summary">Las llamadas entrantes se comportarán como de costumbre durante las horas de silencio</string>
     <string name="quiet_hours_enabled">Activar horas de silencio</string>
     <string name="quiet_hours_enabled_on">Cumplir horas de silencio</string>
     <string name="quiet_hours_enabled_off">Las notificaciones se comportarán normalmente</string>
@@ -446,6 +521,7 @@
 
     <string name="cmstats_title">Estadísticas anónimas</string>
     <string name="cmstats_summary">Ayuda a mejorar CM informando con estadísiticas anónimas</string>
+
     <string name="user_defined_key1">Tecla Rápida 1</string>
     <string name="user_defined_key2">Tecla Rápida 2</string>
     <string name="user_defined_key3">Tecla Rápida 3</string>
@@ -456,6 +532,7 @@
     <string name="pref_lockscreen_gestures_trail_title">Mostrar pistas de gestos</string>
     <string name="pref_lockscreen_gestures_builder_title">Crear gesto</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilidad</string>
+    <string name="pref_lockscreen_gestures_color_title">Color de gestos</string>
     <string name="label_create_gesture">Crear un gesto</string>
     <string name="gestures_button_add">Añadir gesto</string>
     <string name="gestures_button_discard">Descartar</string>
@@ -471,8 +548,14 @@
     <string name="gestures_error_loading">Problema en operación con archivo de gestos.</string>
     <string name="gestures_unlock_only">Desbloquear</string>
     <string name="gestures_toggle_sound">Invertir sonido</string>
+    <string name="gestures_shortcut_or_activity">Acceso directo o actividad</string>
+    <string name="gestures_flashlight">Flash</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desactivar deslizador de desbloqueo</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Es necesario acivar el desbloqueo por la bola de navegación, la tecla menú, or gestos pra activar esta opción</string>
+    <string name="gestures_action_label">Acción:</string>
+    <string name="gestures_draw_label">Gesto:</string>
+    <string name="gestures_already_present">Peligro: Un gesto similar está asociado a otra acción!</string>
+    <string name="gestures_run_in_background">Ejecutar en segundo plano</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Ver registro cambios</string>
@@ -534,6 +617,16 @@
     <string name="cpu_summary">Ajustes de reloj y control (governor)</string>
     <string name="cpu_governors_title">Gobernadores disponibles</string>
     <string name="cpu_governors_summary">Lista de gobernadores disponibles\nSeleccionado ahora: %S</string>
+    <string name="cpu_min_freq_title">Frecuencia Min CPU</string>
+    <string name="cpu_min_freq_summary">Minima frecuencia CPU actual: %s</string>
+    <string name="cpu_max_freq_title">Frecuencia Max CPU</string>
+    <string name="cpu_max_freq_summary">Maxima frecuencia CPU actual: %s</string>
     <string name="cpu_set_on_boot">Activar al arranque</string>
     <string name="cpu_set_on_boot_summary">Restaura Ajustes CPU al arrancar</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Administración de permisos</string>
+    <string name="perm_enable_management_summary">Activar administración de permisos de aplicaciones</string>
+    <string name="perm_enable_warning_message">Peligro!\nRevocar los permisos puede causar que algunas aplicaciones no funcionen bien. Si una aplicación con permisos eliminados da Forzar Cierre por favor, corrija los permisos o no use la aplicación.\nPor favor, NO envíe reportes de fallos a Cyanogenmod si una aplicación con permisos eliminados no trabaja como debiera!</string>
+    <string name="perm_enable_warning_title">¿Está seguro?</string>
 </resources>
