@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 
  * Copyright (C) 2007 The Android Open Source Project
  *
@@ -201,12 +201,18 @@
         <item>Giratório</item>
         <item>Giratório renovado</item>
     </string-array>
-	
-	<string-array name="entries_long_press_menu">
+
+    <string-array name="entries_long_press_menu">
         <item>Nenhum</item>
         <item>Teclado virtual</item>
         <item>Botão de busca</item>
         <item>Aplicação personalizada</item>
         <item>Alternar barra de status</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Cor de preenchimento</item>
+        <item>Imagem personalizada</item>
+        <item>Papel de parede padrão</item>
     </string-array>
 </resources>
