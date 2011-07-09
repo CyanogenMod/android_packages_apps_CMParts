@@ -57,22 +57,29 @@ public class CPUReceiver extends BroadcastReceiver {
         String governor = prefs.getString(CPUActivity.GOV_PREF, null);
         String minFrequency = prefs.getString(CPUActivity.MIN_FREQ_PREF, null);
         String maxFrequency = prefs.getString(CPUActivity.MAX_FREQ_PREF, null);
-        boolean noSettings = (governor == null) && (minFrequency == null) && (maxFrequency == null);
-
+        String availableFrequenciesLine = CPUActivity.readOneLine(CPUActivity.FREQ_LIST_FILE);
+        String availableGovernorsLine = CPUActivity.readOneLine(CPUActivity.GOVERNORS_LIST_FILE);
+        boolean noSettings = ((availableGovernorsLine == null) || (governor == null)) && 
+                             ((availableFrequenciesLine == null) || ((minFrequency == null) && (maxFrequency == null)));
+        List<String> frequencies = null;
+        List<String> governors = null;
+        
         if (noSettings) {
             Log.d(TAG, "No settings saved. Nothing to restore.");
         } else {
-            List<String> governors = Arrays.asList(CPUActivity.readOneLine(
-                    CPUActivity.GOVERNORS_LIST_FILE).split(" "));
-            List<String> frequencies = Arrays.asList(CPUActivity.readOneLine(
-                    CPUActivity.FREQ_LIST_FILE).split(" "));
-            if (governor != null && governors.contains(governor)) {
+            if (availableGovernorsLine != null){
+                governors = Arrays.asList(availableGovernorsLine.split(" "));  
+            }
+            if (availableFrequenciesLine != null){
+                frequencies = Arrays.asList(availableFrequenciesLine.split(" "));  
+            }
+            if (governor != null && governors != null && governors.contains(governor)) {
                 CPUActivity.writeOneLine(CPUActivity.GOVERNOR, governor);
             }
-            if (maxFrequency != null && frequencies.contains(maxFrequency)) {
+            if (maxFrequency != null && frequencies != null && frequencies.contains(maxFrequency)) {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxFrequency);
             }
-            if (minFrequency != null && frequencies.contains(minFrequency)) {
+            if (minFrequency != null && frequencies != null && frequencies.contains(minFrequency)) {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MIN_FILE, minFrequency);
             }
             Log.d(TAG, "CPU settings restored.");
