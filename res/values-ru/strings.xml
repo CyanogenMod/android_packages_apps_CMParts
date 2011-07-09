@@ -219,8 +219,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Запуск приложения пользователя</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок) или приложение пользователя (для стиля Вращение)</string>
     <string name="pref_lockscreen_custom_app_activity_title">Выбрать приложение</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Иконка сообщения</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку сообщения вместо иконки CM для приложения пользователя</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Иконка приложения</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку приложения вместо иконки CM для приложения пользователя</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Сдвинуть вниз для разблокировки</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Сдвиг вниз для разблокировки. Сдвиг вправо для запуска пользовательского приложения</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Скрыть стрелки</string>

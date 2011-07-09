@@ -19,14 +19,17 @@ package com.cyanogenmod.cmparts.activities;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.ListPreference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
 import com.cyanogenmod.cmparts.R;
 
-public class UIPowerWidgetActivity extends PreferenceActivity {
+public class UIPowerWidgetActivity extends PreferenceActivity
+        implements OnPreferenceChangeListener {
 
     private static final String UI_EXP_WIDGET = "expanded_widget";
 
@@ -35,6 +38,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
     private static final String UI_EXP_WIDGET_HIDE_INDICATOR = "expanded_hide_indicator";
 
     private static final String UI_EXP_WIDGET_HIDE_SCROLLBAR = "expanded_hide_scrollbar";
+
+    private static final String UI_EXP_WIDGET_HAPTIC_FEEDBACK = "expanded_haptic_feedback";
 
     private static final String UI_EXP_WIDGET_COLOR = "expanded_color_mask";
 
@@ -49,6 +54,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
     private CheckBoxPreference mPowerWidgetIndicatorHide;
 
     private CheckBoxPreference mPowerWidgetHideScrollBar;
+
+    private ListPreference mPowerWidgetHapticFeedback;
 
     private Preference mPowerWidgetColor;
 
@@ -73,6 +80,10 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
                 .findPreference(UI_EXP_WIDGET_HIDE_SCROLLBAR);
         mPowerWidgetIndicatorHide = (CheckBoxPreference) prefSet
                 .findPreference(UI_EXP_WIDGET_HIDE_INDICATOR);
+        mPowerWidgetHapticFeedback = (ListPreference) prefSet
+                .findPreference(UI_EXP_WIDGET_HAPTIC_FEEDBACK);
+        mPowerWidgetHapticFeedback.setOnPreferenceChangeListener(this);
+
         mPowerWidgetColor = prefSet.findPreference(UI_EXP_WIDGET_COLOR);
         mPowerPicker = (PreferenceScreen) prefSet.findPreference(UI_EXP_WIDGET_PICKER);
         mPowerOrder = (PreferenceScreen) prefSet.findPreference(UI_EXP_WIDGET_ORDER);
@@ -85,7 +96,22 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
                 Settings.System.EXPANDED_HIDE_SCROLLBAR, 0) == 1));
         mPowerWidgetIndicatorHide.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_HIDE_INDICATOR, 0) == 1));
+        mPowerWidgetHapticFeedback.setValue(Integer.toString(Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_HAPTIC_FEEDBACK, 2)));
+
     }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPowerWidgetHapticFeedback) {
+            int intValue = Integer.parseInt((String)newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_HAPTIC_FEEDBACK, intValue);
+            return true;
+        }
+
+        return false;
+    }
+
+
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;

@@ -219,8 +219,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Lanciatore app personalizzato</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Applicazione personalizzata</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Icona Messaggi per app personalizzata</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Utilizza l\'icona messaggi invece dell\'icona cm per l\'applicazione personalizzata</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Icona applicazione personalizzata</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Utilizza l\'icona dell\'applicazione invece dell\'icona CM per l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Trascina in basso per sbloccare</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Sblocca lo schermo trascinando verso il basso la barra rotante. Trascina a destra per avviare l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Nascondi frecce</string>
