@@ -111,9 +111,9 @@
     <string name="trackball_summary">Imposta colore e pulsazione delle notifiche trackball/LED</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
+    <string name="ui_webview_title">Navigazione Web</string>
     <string name="pref_pinch_reflow_title">Reflow dopo il pinch in</string>
-    <string name="pref_pinch_reflow_summary">Reflow dei contenuti web dopo il pinch to zoom</string>
+    <string name="pref_pinch_reflow_summary">Adatta il testo dei contenuti web dopo il pinch to zoom</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Overscrolling</string>
