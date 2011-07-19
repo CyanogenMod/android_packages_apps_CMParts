@@ -189,6 +189,8 @@
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Disable lockscreen on security</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Disable the lockscreen if security screen lock (pattern, PIN, password) is enabled</string>
     <string name="pref_lockscreen_stylecfg_title">Style options</string>
     <string name="pref_lockscreen_stylecfg_summary">Configure the lockscreen style and the corresponding settings</string>
     <string name="pref_lockscreen_widgets_title">Widget options</string>
@@ -227,6 +229,9 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
+    <string name="pref_lockscreen_custom_background_title">Choose background</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Choose background</string>
+    <string name="pref_lockscreen_custom_background_summary">Choose image or color as lockscreen background</string>
     <string name="pref_lockscreen_custom_icon_style_title">Use application icon for custom app</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Uses application icon instead of CM icon for custom app starter</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Drag down to unlock</string>
@@ -261,7 +266,7 @@
     <string name="long_press_home_title">Long-press home settings</string>
     <string name="long_press_home_summary">Number of recent applications, etc</string>
 
-    <string name="input_search_key_title">Search key behaviour</string>
+    <string name="input_search_key_title">Search key behavior</string>
     <string name="input_search_key_summary">Define custom actions for search key and long-press search key</string>
     <string name="pref_input_custom_search_app_toggle_title">Search key app</string>
     <string name="pref_input_custom_search_app_toggle_summary">Starts a custom app when pressing the search key</string>
@@ -273,7 +278,7 @@
     <string name="long_press_menu_title">Long-press menu settings</string>
     <string name="long_press_menu_summary">Custom setting for long press menu</string>
     <string name="pref_user_defined_long_press_menu_title">Select custom application</string>
-    <string name="pref_long_press_menu_title">Choose behaviour</string>
+    <string name="pref_long_press_menu_title">Choose behavior</string>
     <string name="pref_long_press_menu_summary">Customize long press menu</string>
 
     <!-- Long Press Home -->

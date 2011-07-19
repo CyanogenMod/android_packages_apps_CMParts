@@ -376,6 +376,10 @@
     <string name="pref_render_effect_title">Effetto Render</string>
     <string name="pref_render_effect_summary">Scegli che colori utilizzare per visualizzare le immagini sullo schermo (possibili risparmi energetici)</string>
 
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Feedback aptico</string>
+    <string name="expanded_haptic_feedback_summary">Attiva/Disattiva feedback aptico.</string>
+
     <string name="widget_name">Widget RenderFX</string>
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Effetto Render</string>
@@ -392,7 +396,6 @@
     <string name="pref_render_effect_calibrated_red">Calibrato(N1) Low Red</string>
     <string name="pref_render_effect_calibrated_cool">Calibrato (N1) Cool</string>
     <string name="pref_render_effect_red">Rosso</string>
-
 
     <!--  Widget Types -->
     <string name="widget_render_effect_night">Night</string>

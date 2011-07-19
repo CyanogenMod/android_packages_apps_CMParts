@@ -186,6 +186,8 @@
     <string name="notification_battery_warning">Diese Option hat sich als negativ für die Batterieladung erwiesen um ca.3% pro Stunde. Bei schnellerer Batterieentladung beim Pulsieren des Trackballs ist dies der Grund dafür. Diese Option nicht verwenden, wenn das schnellere Entladen vermieden werden soll.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Lockscreen deakt. bei Sperre</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Lockscreen deaktivieren wenn eine Display-Sperre (Muster, PIN, Passwort) aktiviert ist</string>
     <string name="pref_lockscreen_stylecfg_title">Aussehen</string>
     <string name="pref_lockscreen_stylecfg_summary">Das Aussehen des Lockscreens anpassen</string>
     <string name="pref_lockscreen_widgets_title">Widget-Optionen</string>

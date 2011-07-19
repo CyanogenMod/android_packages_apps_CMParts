@@ -374,6 +374,11 @@
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">Эффекты экрана</string>
     <string name="pref_render_effect_summary">Позволяет изменять цвет прорисовки экрана (возможна экономия батареи)</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Отклик на нажатие</string>
+    <string name="expanded_haptic_feedback_summary">Вкл/Выкл отклик на нажатие.</string>
+
     <string name="widget_name">Эффекты экрана</string>
     <string name="renderfx_temp">Эффект</string>
     <string name="prefs_render_effect">Эффект экрана</string>

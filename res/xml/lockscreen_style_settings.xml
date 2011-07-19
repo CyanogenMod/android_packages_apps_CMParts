@@ -39,6 +39,13 @@
             android:dependency="pref_lockscreen_custom_app_toggle"
             android:title="@string/pref_lockscreen_custom_app_activity_title" />
 
+        <ListPreference android:key="pref_lockscreen_background"
+            android:dialogTitle="@string/pref_lockscreen_custom_background_dialog_title"
+            android:title="@string/pref_lockscreen_custom_background_title"
+            android:summary="@string/pref_lockscreen_custom_background_summary"
+            android:entries="@array/pref_lockscreen_background_entries"
+            android:entryValues="@array/pref_lockscreen_background_values"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

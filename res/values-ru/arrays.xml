@@ -250,4 +250,10 @@
         <item>Перекл. строку состояния</item>
     </string-array>
 
+    <string-array name="haptic_feedback_entries">
+        <item>Настройки системы</item>
+        <item>Вкл.</item>
+        <item>Выкл.</item>
+    </string-array>
+
 </resources>

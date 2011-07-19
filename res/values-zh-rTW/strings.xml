@@ -219,8 +219,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">啟動自訂應用程式</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">在滑桿模式中以額外的滑桿，或在撥輪模式中以額外的撥孔，來啟動自訂應用程式。</string>
     <string name="pref_lockscreen_custom_app_activity_title">自訂應用程式</string>
-    <string name="pref_lockscreen_custom_icon_style_title">使用簡訊圖示</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">以簡訊圖示代替 CyanogenMod 圖示來啟動自訂應用程式</string>
+    <string name="pref_lockscreen_custom_icon_style_title">使用應用程式圖示</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">以應用程式圖示代替 CyanogenMod 圖示來啟動自訂應用程式</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">拉下解鎖</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">向下拉動撥輪來解鎖，向右撥動來啟動自訂應用程式。</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">隱藏撥輪箭頭</string>
@@ -376,6 +376,10 @@
     <string name="pref_render_effect_title">渲染效果</string>
     <string name="pref_render_effect_summary">變更描繪螢幕的顏色（很可能會節省電力）</string>
 
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">觸動回饋</string>
+    <string name="expanded_haptic_feedback_summary">啟用／停用觸動回饋</string>
+
     <string name="widget_name">渲染效果小工具</string>
     <string name="renderfx_temp">渲染效果</string>
     <string name="prefs_render_effect">渲染效果</string>
@@ -393,7 +397,6 @@
     <string name="pref_render_effect_calibrated_cool">校準的（N1）冷酷</string>
     <string name="pref_render_effect_red">紅</string>
 
-
     <!--  Widget Types -->
     <string name="widget_render_effect_night">夜視</string>
     <string name="widget_render_effect_terminal">終端機</string>
@@ -405,7 +408,6 @@
     <string name="widget_render_effect_calibrated">校準的</string>
     <string name="widget_render_effect_calibrated_red">校準的 低紅</string>
     <string name="widget_render_effect_calibrated_cool">校準的 冷酷</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">擴充檢視小工具</string>
@@ -650,5 +652,7 @@
     <string name="perm_enable_management_summary">啟用應用程式權限管理</string>
     <string name="perm_enable_warning_message">警告！\n大多數權限若被撤消的話就很可能會導致應用程式無法運作。如有撤消了權限的應用程式強制關閉，請授予其要求的權限，或停止使用該應用程式。\n如撤消了權限的應用程式沒有預期地運作，敬請不要回報相關錯誤至 CyanogenMod！</string>
     <string name="perm_enable_warning_title">您確定嗎？</string>
+
+
 
 </resources>

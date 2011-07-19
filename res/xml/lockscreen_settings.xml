@@ -4,6 +4,10 @@
     <PreferenceCategory android:title="@string/general_title"
         android:key="pref_category_button_settings">
 
+        <CheckBoxPreference android:key="pref_lockscreen_disable_on_security"
+            android:title="@string/pref_lockscreen_disable_on_security_title"
+            android:summary="@string/pref_lockscreen_disable_on_security_summary" />
+
         <PreferenceScreen android:key="lockscreen_stylecfg"
             android:title="@string/pref_lockscreen_stylecfg_title"
             android:summary="@string/pref_lockscreen_stylecfg_summary">

@@ -636,4 +636,6 @@
     <string name="pref_user_defined_long_press_menu_title">Selecionar aplicação personalizada</string>
     <string name="pref_long_press_menu_title">Selecionar o comportamento</string>
     <string name="pref_long_press_menu_summary">Personalizar pressionar continuamente o menu</string>
+    <string name="expanded_haptic_feedback_title">Vibração</string>
+    <string name="expanded_haptic_feedback_summary">Habilitar/Desabilitar vibração</string>
 </resources>

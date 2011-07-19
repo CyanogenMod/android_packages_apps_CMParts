@@ -32,7 +32,7 @@
         <item>Magenta</item>
         <item>Rose</item>
         <item>Orange</item>
-        <item>Blue ciel</item>
+        <item>Bleu ciel</item>
         <item>Aléatoire</item>
         <item>Aucune</item>
     </string-array>
@@ -158,6 +158,12 @@
         <item>Recherche</item>
         <item>Application Perso</item>
         <item>Barre de notification</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Par défaut</item>
+        <item>Marche</item>
+        <item>Arrêt</item>
     </string-array>
 
 </resources>
