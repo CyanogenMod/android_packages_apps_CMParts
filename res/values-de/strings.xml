@@ -193,7 +193,7 @@
     <string name="pref_lockscreen_timeout_title">Lockscreen-Timeouts</string>
     <string name="pref_lockscreen_timeout_summary">Verzögerungen des Lockscreens anpassen</string>
 
-    <!-- Input Settings -->
+    <!-- Lockscreen Settings -->
     <string name="lockscreen_settings_title">Bildschirmsperre-Einstellungen</string>
     <string name="pref_lockscreen_always_battery_title">Batteriestatus immer anzeigen</string>
     <string name="pref_lockscreen_always_battery_summary">Den Batteriestatus immer auf dem Lockscreen anzeigen</string>
@@ -222,6 +222,9 @@
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
+    <string name="pref_lockscreen_custom_background_title">Hintergrund</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Lockscreen-Hintergrund</string>
+    <string name="pref_lockscreen_custom_background_summary">Wähle ein Bild oder eine Farbe als Lockscreen-Hintergrund</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Runterziehen zum Entsperren</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
