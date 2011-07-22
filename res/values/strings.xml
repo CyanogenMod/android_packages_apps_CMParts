@@ -202,6 +202,8 @@
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
     <string name="trackball_category_unconfigured">Unconfigured</string>
     <string name="trackball_category_misc">Miscellaneous</string>
+    <string name="trackball_app_save_title">Save</string>
+    <string name="trackball_app_save_summary">Save settings for this application</string>
     <string name="trackball_app_reset_title">Reset</string>
     <string name="trackball_app_reset_summary">Remove custom settings for this application</string>
 

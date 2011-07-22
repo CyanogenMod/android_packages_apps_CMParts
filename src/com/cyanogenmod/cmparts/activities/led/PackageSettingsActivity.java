@@ -68,8 +68,9 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     private Preference mCustomPref;
     private Preference mTestPref;
     private Preference mResetPref;
+    private Preference mSavePref;
 
-    private Intent mResultIntent = new Intent(Intent.ACTION_EDIT);
+    private Intent mResultIntent = new Intent();
 
     private Handler mHandler = new Handler();
     private NotificationManager mNM;
@@ -276,8 +277,8 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         endFlash.show();
     }
 
-    private void doReset() {
-        mResultIntent.setAction(Intent.ACTION_DELETE);
+    private void done(String action) {
+        mResultIntent.setAction(action);
         setResult(RESULT_OK, mResultIntent);
         finish();
     }
@@ -285,14 +286,14 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     @Override
     public boolean onPreferenceChange(Preference pref, Object objValue) {
         if (pref == mBlinkPref) {
-            updateResult(EXTRA_BLINK, (String) objValue);
+            mResultIntent.putExtra(EXTRA_BLINK, (String) objValue);
         } else if (pref == mCategoryPref) {
-            updateResult(EXTRA_CATEGORY, (String) objValue);
+            mResultIntent.putExtra(EXTRA_CATEGORY, (String) objValue);
         } else if (pref == mColorPref) {
-            updateResult(EXTRA_COLOR, (String) objValue);
+            mResultIntent.putExtra(EXTRA_COLOR, (String) objValue);
         } else if (pref == mForceModePref) {
             String value = (String) objValue;
-            updateResult(EXTRA_FORCE_MODE, value);
+            mResultIntent.putExtra(EXTRA_FORCE_MODE, value);
             updateEnabledStates(value);
         }
 
@@ -317,15 +318,12 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         } else if (pref == mTestPref) {
             doTest();
         } else if (pref == mResetPref) {
-            doReset();
+            done(Intent.ACTION_DELETE);
+        } else if (pref == mSavePref) {
+            done(Intent.ACTION_EDIT);
         }
 
         return false;
-    }
-
-    private void updateResult(String field, String value) {
-        mResultIntent.putExtra(field, value);
-        setResult(RESULT_OK, mResultIntent);
     }
 
     private ColorPickerDialog.OnColorChangedListener mPackageColorListener =
@@ -349,7 +347,7 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         public void colorChanged(int color) {
             String colorString = String.format("#%02x%02x%02x",
                     Color.red(color), Color.green(color), Color.blue(color));
-            updateResult(EXTRA_COLOR, colorString);
+            mResultIntent.putExtra(EXTRA_COLOR, colorString);
 
             mHandler.removeCallbacks(mCancelTestRunnable);
             mHandler.post(mCancelTestRunnable);
