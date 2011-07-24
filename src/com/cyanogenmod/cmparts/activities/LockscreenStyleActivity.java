@@ -16,17 +16,9 @@
 
 package com.cyanogenmod.cmparts.activities;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.List;
-
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
-import android.graphics.Color;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -37,10 +29,14 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
+
+import java.io.File;
+import java.io.IOException;
 
 public class LockscreenStyleActivity extends PreferenceActivity implements
         OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener {
@@ -78,6 +74,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private Preference mCustomAppActivityPref;
 
     private ListPreference mCustomBackground;
+
+    File lockWall;
 
     enum LockscreenStyle{
         Slider,
@@ -210,15 +208,33 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 .findPreference(LOCKSCREEN_CUSTOM_APP_ACTIVITY);
 
         mCustomBackground = (ListPreference) prefSet
-        .findPreference(LOCKSCREEN_CUSTOM_BACKGROUND);
+                .findPreference(LOCKSCREEN_CUSTOM_BACKGROUND);
         mCustomBackground.setOnPreferenceChangeListener(this);
+        lockWall = new File(getApplicationContext().getFilesDir()+"/lockwallpaper");
+        updateCustomBackgroundSummary();
         mPicker = new ShortcutPickHelper(this, this);
+    }
+
+    private void updateCustomBackgroundSummary() {
+        int resId;
+        String value = Settings.System.getString(getContentResolver(),
+                Settings.System.LOCKSCREEN_BACKGROUND);
+        if (value == null) {
+            resId = R.string.pref_lockscreen_custom_background_summary_default;
+        } else if (value.isEmpty()) {
+            resId = R.string.pref_lockscreen_custom_background_summary_image;
+        } else {
+            resId = R.string.pref_lockscreen_custom_background_summary_color;
+        }
+        mCustomBackground.setSummary(getResources().getString(resId));
+        if (value == null || !value.isEmpty()) {
+            lockWall.delete();
+        }
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
         String value = Settings.System.getString(getContentResolver(),
                 Settings.System.LOCKSCREEN_CUSTOM_APP_ACTIVITY);
         mCustomAppActivityPref.setSummary(mPicker.getFriendlyNameForUri(value));
@@ -229,8 +245,16 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         if ((requestCode == LOCKSCREEN_BACKGROUND)&&(resultCode == RESULT_OK)){
             File lockWall = new File(getApplicationContext().getFilesDir()+"/lockwallpaper");
             lockWall.setReadOnly();
-            lockWall.setWritable(true, true);
-            Settings.System.putString(getContentResolver(), Settings.System.LOCKSCREEN_BACKGROUND,"");
+            Toast.makeText(this, getResources().getString(R.string.
+                    pref_lockscreen_background_result_successful), Toast.LENGTH_LONG).show();
+            Settings.System.putString(getContentResolver(),
+                    Settings.System.LOCKSCREEN_BACKGROUND,"");
+            updateCustomBackgroundSummary();
+        } else if (requestCode == LOCKSCREEN_BACKGROUND){
+            Toast.makeText(this, getResources().getString(R.string.
+                    pref_lockscreen_background_result_not_successful), Toast.LENGTH_LONG).show();
+            lockWall.setReadOnly();
+            lockWall.delete();
         }
         mPicker.onActivityResult(requestCode, resultCode, data);
     }
@@ -265,9 +289,11 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         return false;
     }
 
-    ColorPickerDialog.OnColorChangedListener mPackageColorListener = new ColorPickerDialog.OnColorChangedListener() {
+    ColorPickerDialog.OnColorChangedListener mPackageColorListener =
+        new ColorPickerDialog.OnColorChangedListener() {
         public void colorChanged(int color) {
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_BACKGROUND,color);
+            updateCustomBackgroundSummary();
         }
         @Override
         public void colorUpdate(int color) {
@@ -292,40 +318,54 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             return true;
         }
         if (preference == mCustomBackground){
-            if (mCustomBackground.findIndexOfValue(val) == 0){
+            int indexOf = mCustomBackground.findIndexOfValue(val);
+            switch (indexOf){
+            //Displays color dialog when user has chosen color fill
+            case 0:
                 ColorPickerDialog cp = new ColorPickerDialog(this,mPackageColorListener,
-                        Settings.System.getInt(getContentResolver(),Settings.System.LOCKSCREEN_BACKGROUND, 0));
+                        Settings.System.getInt(getContentResolver(),
+                                Settings.System.LOCKSCREEN_BACKGROUND, 0));
                 cp.show();
-            }else if (mCustomBackground.findIndexOfValue(val) == 1){
+                break;
+            //Launches intent for user to select an image/crop it to set as background
+            case 1:
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
-                intent.setClassName("com.cooliris.media", "com.cooliris.media.Gallery");
-                PackageManager pm = getPackageManager();
-                List<ResolveInfo> activities = pm.queryIntentActivities(intent, 0);
-                if (activities != null && activities.size() > 0) {
-                    intent.setType("image/*");
-                    intent.putExtra("crop", "true");
-                    intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
-                    intent.putExtra("aspectX", 1);
-                    intent.putExtra("aspectY", 1);
-                    intent.putExtra("outputX", getWindowManager().getDefaultDisplay().getWidth());
-                    intent.putExtra("outputY", getWindowManager().getDefaultDisplay().getHeight());
-                    File lockWall = new File(getApplicationContext().getFilesDir()+"/lockwallpaper");
-                    if (!lockWall.exists()){
-                        try {
-                            lockWall.createNewFile();
-                        } catch (IOException e) {
-                            return true;
-                        }
+                intent.setType("image/*");
+                intent.putExtra("crop", "true");
+                intent.putExtra("scale", true);
+                intent.putExtra("scaleUpIfNeeded", false);
+                intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+                int width = getWindowManager().getDefaultDisplay().getWidth();
+                int height = getWindowManager().getDefaultDisplay().getHeight();
+                Rect rectgle= new Rect();
+                Window window = getWindow();
+                window.getDecorView().getWindowVisibleDisplayFrame(rectgle);
+                int StatusBarHeight= rectgle.top;
+                int contentViewTop= window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
+                int TitleBarHeight= contentViewTop - StatusBarHeight;
+                intent.putExtra("aspectX", width);
+                intent.putExtra("aspectY", height-TitleBarHeight);
+                File lockWall = new File(getApplicationContext().getFilesDir()+"/lockwallpaper");
+                if (!lockWall.exists()){
+                    try {
+                        lockWall.createNewFile();
+                    } catch (IOException e) {
+                        return true;
                     }
+                }
+                if (lockWall.exists()){
                     lockWall.setWritable(true, false);
                     intent.putExtra(MediaStore.EXTRA_OUTPUT,Uri.fromFile(lockWall));
                     intent.putExtra("return-data", false);
                     startActivityForResult(intent,LOCKSCREEN_BACKGROUND);
-                }else{
-                    Toast.makeText(this, "Gallery is not installed", Toast.LENGTH_LONG).show();
                 }
-            }else if (mCustomBackground.findIndexOfValue(val) == 2){
-                Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_BACKGROUND,Color.parseColor("#70000000"));
+                break;
+            //Sets background color to default
+            case 2:
+                Settings.System.putString(getContentResolver(),
+                        Settings.System.LOCKSCREEN_BACKGROUND,null);
+                updateCustomBackgroundSummary();
+                break;
             }
             return true;
         }

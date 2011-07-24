@@ -232,6 +232,11 @@
     <string name="pref_lockscreen_custom_background_title">Choose background</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Choose background</string>
     <string name="pref_lockscreen_custom_background_summary">Choose image or color as lockscreen background</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Current : Color</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Current : Image</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Current : Default</string>
+    <string name="pref_lockscreen_background_result_successful">Background changed</string>
+    <string name="pref_lockscreen_background_result_not_successful">Background not changed</string>
     <string name="pref_lockscreen_custom_icon_style_title">Use application icon for custom app</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Uses application icon instead of CM icon for custom app starter</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Drag down to unlock</string>

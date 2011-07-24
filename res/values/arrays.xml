@@ -58,7 +58,7 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
+    <string-array name="entries_render_effect" translatable="false">
         <item>@string/pref_render_effect_none</item>
         <item>@string/pref_render_effect_night</item>
         <item>@string/pref_render_effect_green</item>
@@ -86,7 +86,7 @@
         <item>10</item>
     </string-array>
 
-    <string-array name="render_entries">
+    <string-array name="render_entries" translatable="false">
         <item>@string/pref_render_effect_night</item>
         <item>@string/pref_render_effect_green</item>
         <item>@string/pref_render_effect_blue</item>
@@ -518,12 +518,12 @@
     </string-array>
 
     <string-array name="pref_lockscreen_background_entries">
-        <item>Set color</item>
-        <item>Set image</item>
-        <item>Set default</item>
+        <item>Color fill</item>
+        <item>Custom image</item>
+        <item>Default wallpaper</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_background_values">
+    <string-array name="pref_lockscreen_background_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -655,7 +655,7 @@
         <item>Toggle statusbar</item>
     </string-array>
 
-    <string-array name="values_long_press_menu">
+    <string-array name="values_long_press_menu" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
