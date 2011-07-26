@@ -17,7 +17,6 @@
 
 <resources>
 
-
     <string-array name="entries_install_location">
         <item>Automatica</item>
         <item>Interna</item>
@@ -28,21 +27,6 @@
         <item>Normale</item>
         <item>Piccola</item>
         <item>Non visualizzare(Default)</item>
-    </string-array>
-
-    <string-array name="entries_trackball_colors">
-        <item>Verde</item>
-        <item>Bianco</item>
-        <item>Rosso</item>
-        <item>Blu</item>
-        <item>Giallo</item>
-        <item>Ciano</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Arancione</item>
-        <item>Blu Chiaro</item>
-        <item>Random</item>
-        <item>Nessuno</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">

@@ -28,27 +28,6 @@
         <item>Külső (SD)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Zöld</item>
-        <item>Fehér</item>
-        <item>Piros</item>
-        <item>kék</item>
-        <item>Sárga</item>
-        <item>Cián</item>
-        <item>Bíborvörös</item>
-        <item>Rózsaszín</item>
-        <item>Narancs</item>
-        <item>Világoskék</item>
-        <item>Véletlenszerű</item>
-        <item>Nincs</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Zöld</item>
-        <item>Borostyán</item>
-        <item>Nincs</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Gyors)</item>
         <item>3</item>

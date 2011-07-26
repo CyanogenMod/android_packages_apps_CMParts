@@ -184,6 +184,21 @@
     <string name="trackball_color_notice_title">NOTE:</string>
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Green</string>
+    <string name="trackball_color_entry_white">White</string>
+    <string name="trackball_color_entry_red">Red</string>
+    <string name="trackball_color_entry_blue">Blue</string>
+    <string name="trackball_color_entry_yellow">Yellow</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Pink</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Light Blue</string>
+    <string name="trackball_color_entry_random">Random</string>
+    <string name="trackball_color_entry_none">None</string>
+    <string name="trackball_color_entry_amber">Amber</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNING: May cause battery drain</string>
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>

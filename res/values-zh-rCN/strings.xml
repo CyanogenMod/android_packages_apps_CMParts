@@ -175,6 +175,21 @@
     <string name="trackball_color_notice_title">注意：</string>
     <string name="trackball_color_notice_summary">并非所有颜色能在所有设备上显示。</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">绿色</string>
+    <string name="trackball_color_entry_white">白色</string>
+    <string name="trackball_color_entry_red">红色</string>
+    <string name="trackball_color_entry_blue">蓝色</string>
+    <string name="trackball_color_entry_yellow">黄色</string>
+    <string name="trackball_color_entry_cyan">蓝绿色</string>
+    <string name="trackball_color_entry_magenta">紫色</string>
+    <string name="trackball_color_entry_pink">粉色</string>
+    <string name="trackball_color_entry_orange">橙色</string>
+    <string name="trackball_color_entry_light_blue">浅蓝色</string>
+    <string name="trackball_color_entry_random">随机</string>
+    <string name="trackball_color_entry_none">无</string>
+    <string name="trackball_color_entry_amber">琥珀</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">警告：可能会增加耗电量</string>
     <string name="notification_battery_warning">测试显示本功能会每小时增加 3% 左右的耗电量。如果你发现在轨迹球闪动时耗电量有所增加，应该是本功能所导致的。如果您不想增加耗电量，请不要开启本功能。</string>

@@ -11,25 +11,6 @@
     <item>פנימי</item>
     <item>חיצוני</item>
   </string-array>
-  <string-array name="entries_trackball_colors">
-    <item>ירוק</item>
-    <item>לבן</item>
-    <item>אדום</item>
-    <item>כחול</item>
-    <item>צהוב</item>
-    <item>טורקיז</item>
-    <item>מג\'נטה</item>
-    <item>ורוד</item>
-    <item>כתום</item>
-    <item>תכלת</item>
-    <item>אקראי</item>
-    <item>ללא</item>
-  </string-array>
-  <string-array name="entries_dual_led_colors">
-    <item>ירוק</item>
-    <item>ענבר</item>
-    <item>ללא</item>
-  </string-array>
   <string-array name="pref_trackball_blink_rate_entries">
     <item>2 (מהיר)</item>
     <item>3</item>

@@ -72,6 +72,21 @@
     <string name="trackball_reset_all">모든 색과 분류 제거</string>
     <string name="trackball_array_error">배열 에러가 발생하였습니다. 이 패키지는 기타 분류로 강제 이동됩니다.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">녹색</string>
+    <string name="trackball_color_entry_white">하얀색</string>
+    <string name="trackball_color_entry_red">빨강색</string>
+    <string name="trackball_color_entry_blue">파랑색</string>
+    <string name="trackball_color_entry_yellow">노랑색</string>
+    <string name="trackball_color_entry_cyan">파랑색</string>
+    <string name="trackball_color_entry_magenta">자주색</string>
+    <string name="trackball_color_entry_pink">분홍색</string>
+    <string name="trackball_color_entry_orange">주황색</string>
+    <string name="trackball_color_entry_light_blue">옅은 파랑색</string>
+    <string name="trackball_color_entry_random">임의</string>
+    <string name="trackball_color_entry_none">없음</string>
+    <string name="trackball_color_entry_amber">황색</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">경고: 배터리 소모량이 많아집니다.</string>
     <string name="notification_battery_warning">이 설정은 배터리 소모량을 시간당 3%정도씩 더 많아지게 합니다. 이 설정을 통하여 트랙볼 깜빡임을 설정했을 때 배터리 소모량이 많아지는 것이 느껴진다면 이것 때문입니다. 배터리 소모량을 늘리고 싶지 않다면 이 옵션을 활성화하지 마십시오.</string>

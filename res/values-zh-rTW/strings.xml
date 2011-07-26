@@ -176,6 +176,21 @@
     <string name="trackball_color_notice_title">注意</string>
     <string name="trackball_color_notice_summary">並非每一款裝置都能夠顯示全部每一種色彩</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">綠</string>
+    <string name="trackball_color_entry_white">白</string>
+    <string name="trackball_color_entry_red">紅</string>
+    <string name="trackball_color_entry_blue">藍</string>
+    <string name="trackball_color_entry_yellow">黄</string>
+    <string name="trackball_color_entry_cyan">青</string>
+    <string name="trackball_color_entry_magenta">洋紅</string>
+    <string name="trackball_color_entry_pink">粉紅</string>
+    <string name="trackball_color_entry_orange">橙</string>
+    <string name="trackball_color_entry_light_blue">淺藍</string>
+    <string name="trackball_color_entry_random">隨機</string>
+    <string name="trackball_color_entry_none">無</string>
+    <string name="trackball_color_entry_amber">琥珀</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">警告：會引致加速耗電</string>
     <string name="notification_battery_warning">這個選項已被證實會增加每小時3％的耗電量。如發現啟用了閃爍後耗電速度增快，那麼這個選項就是原因。如不希望招致耗電加快就請勿啟用。</string>

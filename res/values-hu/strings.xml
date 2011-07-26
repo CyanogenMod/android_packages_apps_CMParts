@@ -119,6 +119,21 @@
     <string name="trackball_color_notice_title">MEGJEGYZÉS:</string>
     <string name="trackball_color_notice_summary">Nem minden szín jelenik meg a készülékeken.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Zöld</string>
+    <string name="trackball_color_entry_white">Fehér</string>
+    <string name="trackball_color_entry_red">Piros</string>
+    <string name="trackball_color_entry_blue">kék</string>
+    <string name="trackball_color_entry_yellow">Sárga</string>
+    <string name="trackball_color_entry_cyan">Cián</string>
+    <string name="trackball_color_entry_magenta">Bíborvörös</string>
+    <string name="trackball_color_entry_pink">Rózsaszín</string>
+    <string name="trackball_color_entry_orange">Narancs</string>
+    <string name="trackball_color_entry_light_blue">Világoskék</string>
+    <string name="trackball_color_entry_random">Véletlenszerű</string>
+    <string name="trackball_color_entry_none">Nincs</string>
+    <string name="trackball_color_entry_amber">Sárga</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">FIGYELEM: akkumulátor veszteséget okozhat</string>
     <string name="notification_battery_warning">Ez a beállítás igazoltan fokozott mértékű akkumulátor veszteséget okoz, kb. 3%-ot óránként. Ha észrevesz fokozott veszteséget a pozícionáló villogása alatt, akkor ez az oka. Ne engedélyezze, ha nem szeretne plusz akkumulátor csökkenést.</string>

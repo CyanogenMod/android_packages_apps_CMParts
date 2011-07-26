@@ -29,27 +29,6 @@
         <item>Ingen (Standard)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Grön</item>
-        <item>Vit</item>
-        <item>Röd</item>
-        <item>Blå</item>
-        <item>Gul</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Orange</item>
-        <item>Ljusblå</item>
-        <item>Slumpmässig</item>
-        <item>Ingen</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Grön</item>
-        <item>Bärnsten</item>
-        <item>Ingen</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Snabb)</item>
         <item>3</item>

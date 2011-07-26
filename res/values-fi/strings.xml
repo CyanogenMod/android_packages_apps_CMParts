@@ -153,6 +153,21 @@
     <string name="trackball_color_notice_title">HUOMAUTUS:</string>
     <string name="trackball_color_notice_summary">Kaikki värit eivät toimi kaikilla laitteilla.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Vihreä</string>
+    <string name="trackball_color_entry_white">Valkoinen</string>
+    <string name="trackball_color_entry_red">Punainen</string>
+    <string name="trackball_color_entry_blue">Sininen</string>
+    <string name="trackball_color_entry_yellow">Keltainen</string>
+    <string name="trackball_color_entry_cyan">Syaani</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Vaaleanpunainen</string>
+    <string name="trackball_color_entry_orange">Oranssi</string>
+    <string name="trackball_color_entry_light_blue">Vaaleansininen</string>
+    <string name="trackball_color_entry_random">Satunnainen</string>
+    <string name="trackball_color_entry_none">Ei mitään</string>
+    <string name="trackball_color_entry_amber">Meripihka</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">VAROITUS: saattaa kuluttaa akkua enemmän</string>
     <string name="notification_battery_warning">Tämän valinnan on osoitettu lisäävän akunkulutusta n. 3% tunnissa. Jos havaitset akun nopeaa kulumista trackball-valon välähdellessä, tämä on syy. Älä käytä tätä, jos haluat säästää akkua.</string>

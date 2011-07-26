@@ -22,21 +22,6 @@
         <item>Extern</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Verd</item>
-        <item>Blanc</item>
-        <item>Vermell</item>
-        <item>Blau</item>
-        <item>Groc</item>
-        <item>Cian</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Taronja</item>
-        <item>Blau cel</item>
-	    <item>Aleatori</item>
-	    <item>Cap</item>
-    </string-array>
-
 	<string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Ràpid)</item>
         <item>3</item>

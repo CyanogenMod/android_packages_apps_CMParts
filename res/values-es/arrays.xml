@@ -53,27 +53,6 @@
         <item>Calibrado (N1) Frio</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Verde</item>
-        <item>Blanco</item>
-        <item>Rojo</item>
-        <item>Azul</item>
-        <item>Amarillo</item>
-        <item>Cián</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Naranja</item>
-        <item>Celeste</item>
-        <item>Aleatorio</item>
-        <item>Ninguno</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Verde</item>
-        <item>Ambar</item>
-        <item>Ninguno</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Rápido)</item>
         <item>3</item>

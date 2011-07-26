@@ -22,27 +22,6 @@
         <item>Externe</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Vert</item>
-        <item>Blanc</item>
-        <item>Rouge</item>
-        <item>Bleu</item>
-        <item>Jaune</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Rose</item>
-        <item>Orange</item>
-        <item>Bleu ciel</item>
-        <item>Aléatoire</item>
-        <item>Aucune</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Vert</item>
-        <item>Orange</item>
-        <item>Aucune</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Rapide)</item>
         <item>3</item>

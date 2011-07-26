@@ -23,27 +23,6 @@
         <item>Ulkoinen</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Vihreä</item>
-        <item>Valkoinen</item>
-        <item>Punainen</item>
-        <item>Sininen</item>
-        <item>Keltainen</item>
-        <item>Syaani</item>
-        <item>Magenta</item>
-        <item>Vaaleanpunainen</item>
-        <item>Oranssi</item>
-        <item>Vaaleansininen</item>
-        <item>Satunnainen</item>
-        <item>Ei mitään</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Vihreä</item>
-        <item>Meripihka</item>
-        <item>Ei mitään</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Nopea)</item>
         <item>3</item>

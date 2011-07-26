@@ -29,21 +29,6 @@
         <item>Brak (Domyślnie)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Zielony</item>
-        <item>Biały</item>
-        <item>Czerwony</item>
-        <item>Niebieski</item>
-        <item>Żółty</item>
-        <item>Cyjan</item>
-        <item>Magenta</item>
-        <item>Różowy</item>
-        <item>Pomarańczowy</item>
-        <item>Błękitny</item>
-        <item>Losowy</item>
-        <item>Brak</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Szybko)</item>
         <item>3</item>

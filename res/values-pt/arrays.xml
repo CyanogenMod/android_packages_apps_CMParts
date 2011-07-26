@@ -30,26 +30,7 @@
         <item>Nenhum (Padrão)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Verde</item>
-        <item>Branco</item>
-        <item>Vermelho</item>
-        <item>Azul</item>
-        <item>Amarelo</item>
-        <item>Ciano</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Laranja</item>
-        <item>Azul Claro</item>
-    	<item>Aleatório</item>
-    	<item>Nenhum</item>
-    </string-array>
 
-    <string-array name="entries_dual_led_colors">
-        <item>Verde</item>
-        <item>Âmbar</item>
-        <item>Nenhuma</item>
-    </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Rápido)</item>

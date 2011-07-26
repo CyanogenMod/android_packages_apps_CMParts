@@ -167,6 +167,21 @@
     <string name="trackball_color_notice_title">NB:</string>
     <string name="trackball_color_notice_summary">Niet alle kleuren worden op alle toestellen weergegeven</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Groen</string>
+    <string name="trackball_color_entry_white">Wit</string>
+    <string name="trackball_color_entry_red">Rood</string>
+    <string name="trackball_color_entry_blue">Blauw</string>
+    <string name="trackball_color_entry_yellow">Geel</string>
+    <string name="trackball_color_entry_cyan">Cyaan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Roze</string>
+    <string name="trackball_color_entry_orange">Oranje</string>
+    <string name="trackball_color_entry_light_blue">Licht blauw</string>
+    <string name="trackball_color_entry_random">Willekeurig</string>
+    <string name="trackball_color_entry_none">Geen</string>
+    <string name="trackball_color_entry_amber">Oranje</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Waarschuwing: Kan zorgen voor hoger batterij gebruik</string>
     <string name="notification_battery_warning">Deze optie zorgt voor een verhoging van het batterij verbruik met ~3% per uur.</string>

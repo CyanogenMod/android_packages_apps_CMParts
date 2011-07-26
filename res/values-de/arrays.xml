@@ -43,21 +43,6 @@
     <item>Sehr schwach</item>
   </string-array>
 
-  <string-array name="entries_trackball_colors">
-    <item>Grün</item>
-    <item>Weiß</item>
-    <item>Rot</item>
-    <item>Blau</item>
-    <item>Gelb</item>
-    <item>Cyan</item>
-    <item>Magenta</item>
-    <item>Pink</item>
-    <item>Orange</item>
-    <item>Hellblau</item>
-    <item>Zufällig</item>
-    <item>Keine</item>
-  </string-array>
-
   <string-array name="pref_trackball_blink_rate_entries">
     <item>2 (Schnell)</item>
     <item>3</item>

@@ -29,27 +29,6 @@
         <item>Geen (Standaard)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Groen</item>
-        <item>Wit</item>
-        <item>Rood</item>
-        <item>Blauw</item>
-        <item>Geel</item>
-        <item>Cyaan</item>
-        <item>Magenta</item>
-        <item>Roze</item>
-        <item>Oranje</item>
-        <item>Licht blauw</item>
-        <item>Willekeurig</item>
-        <item>Geen</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Groen</item>
-        <item>Oranje</item>
-        <item>Geen</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Snel)</item>
         <item>3</item>

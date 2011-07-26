@@ -176,6 +176,21 @@
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Bianco</string>
+    <string name="trackball_color_entry_red">Rosso</string>
+    <string name="trackball_color_entry_blue">Blu</string>
+    <string name="trackball_color_entry_yellow">Giallo</string>
+    <string name="trackball_color_entry_cyan">Ciano</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Arancione</string>
+    <string name="trackball_color_entry_light_blue">Blu Chiaro</string>
+    <string name="trackball_color_entry_random">Random</string>
+    <string name="trackball_color_entry_none">Nessuno</string>
+    <string name="trackball_color_entry_amber">Ambra</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATTENZIONE:Aumento consumo di batteria</string>
     <string name="notification_battery_warning">È stato provato che questa opzione aumenta il consumo di batteria del ~3% ogni ora. Se noti un aumento del consumo mentre sono attive le notifiche pulsanti questa ne è la causa. Non attivarla se non vuoi peggiorare la durata della batteria.</string>

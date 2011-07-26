@@ -551,6 +551,21 @@
     <string name="title_expanded_hide_onchange">Esconder ao mudar</string>
     <string name="summary_expanded_hide_onchange">Esconde a notificação após acionar um botão do widget</string>
     <string name="trackball_color_notice_summary">Não são todas as cores disponíveis para todos dispositivos.</string>
+
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Branco</string>
+    <string name="trackball_color_entry_red">Vermelho</string>
+    <string name="trackball_color_entry_blue">Azul</string>
+    <string name="trackball_color_entry_yellow">Amarelo</string>
+    <string name="trackball_color_entry_cyan">Ciano</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Laranja</string>
+    <string name="trackball_color_entry_light_blue">Azul Claro</string>
+    <string name="trackball_color_entry_random">Aleatório</string>
+    <string name="trackball_color_entry_none">Nenhum</string>
+    <string name="trackball_color_entry_amber">Amarelo</string>
     <string name="pref_overscroll_weight_title">Peso de sobrerolagem</string>
     <string name="pref_overscroll_weight_summary">Selecione o peso de sobrerolagem</string>
     <string name="pref_overscroll_summary">Escolhe o tipo de sobrerolagem</string>

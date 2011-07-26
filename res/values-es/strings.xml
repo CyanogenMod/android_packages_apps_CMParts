@@ -175,6 +175,21 @@
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">No todos los colores se verán en todos los dispositivos</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Blanco</string>
+    <string name="trackball_color_entry_red">Rojo</string>
+    <string name="trackball_color_entry_blue">Azul</string>
+    <string name="trackball_color_entry_yellow">Amarillo</string>
+    <string name="trackball_color_entry_cyan">Cián</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Naranja</string>
+    <string name="trackball_color_entry_light_blue">Celeste</string>
+    <string name="trackball_color_entry_random">Aleatorio</string>
+    <string name="trackball_color_entry_none">Ninguno</string>
+    <string name="trackball_color_entry_amber">Ambar</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATENCION: Puede aumentar el consumo de la batería</string>
     <string name="notification_battery_warning">Esta opción incrementa el consumo de batería en ~3% por hora. Si nota un incremento del consumo durante el parpadeo de las luces de la bola de navegación desactive esta opción.</string>
@@ -380,12 +395,12 @@
     <string name="add_widget">Añadir widget</string>
 
     <!--  Widget Types -->
-    <string name="night">Noche</string>
-    <string name="terminal">Terminal</string>
-    <string name="blue">Azul</string>
-    <string name="amber">Ambar</string>
-    <string name="salmon">Salmón</string>
-    <string name="fuscia">Fuscia</string>
+    <string name="widget_render_effect_night">Noche</string>
+    <string name="widget_render_effect_terminal">Terminal</string>
+    <string name="widget_render_effect_blue">Azul</string>
+    <string name="widget_render_effect_amber">Ambar</string>
+    <string name="widget_render_effect_salmon">Salmón</string>
+    <string name="widget_render_effect_fuscia">Fuscia</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Widget Control de energía expandido</string>

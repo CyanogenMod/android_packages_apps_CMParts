@@ -402,8 +402,11 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
         alwaysPulse.setChecked(getInt(Settings.System.TRACKBALL_SCREEN_ON, 0) == 1);
         advancedScreen.addPreference(alwaysPulse);
 
+        boolean hasDualLed = (getResources().getBoolean(R.bool.has_dual_notification_led)
+                || getResources().getBoolean(R.bool.has_mixable_dual_notification_led));
+
          // Advanced options only relevant to RGB lights
-         if (!getResources().getBoolean(R.bool.has_dual_notification_led)) {
+         if (!hasDualLed) {
             CheckBoxPreference blendPulse = new CheckBoxPreference(this);
             blendPulse.setKey(BLEND_COLORS);
             blendPulse.setSummary(R.string.pref_trackball_blend_summary);
@@ -504,9 +507,14 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
                 colorList.setTitle(R.string.color_trackball_flash_title);
                 colorList.setSummary(R.string.color_trackball_flash_summary);
                 colorList.setDialogTitle(R.string.dialog_color_trackball);
-                if (getResources().getBoolean(R.bool.has_dual_notification_led)) {
-                    colorList.setEntries(R.array.entries_dual_led_colors);
-                    colorList.setEntryValues(R.array.values_dual_led_colors);
+                if (hasDualLed) {
+                    if (getResources().getBoolean(R.bool.has_mixable_dual_notification_led)) {
+                        colorList.setEntries(R.array.entries_mixable_dual_led_colors);
+                        colorList.setEntryValues(R.array.values_mixable_dual_led_colors);
+                    } else {
+                        colorList.setEntries(R.array.entries_dual_led_colors);
+                        colorList.setEntryValues(R.array.values_dual_led_colors);
+                    }
                 } else {
                     colorList.setEntries(R.array.entries_trackball_colors);
                     colorList.setEntryValues(R.array.pref_trackball_colors_values);
@@ -514,7 +522,7 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
                 colorList.setOnPreferenceChangeListener(this);
                 appName.addPreference(colorList);
 
-                if (!getResources().getBoolean(R.bool.has_dual_notification_led)) {
+                if (!hasDualLed) {
                     ListPreference blinkList = new ListPreference(this);
                     blinkList.setKey(pkg + "_blink");
                     blinkList.setTitle(R.string.color_trackball_blink_title);

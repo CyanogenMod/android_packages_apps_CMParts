@@ -96,19 +96,11 @@ public class InputSearchKeyActivity extends PreferenceActivity implements Shortc
             value = mCustomSearchAppTogglePref.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.USE_CUSTOM_SEARCH_APP_TOGGLE, value ? 1 : 0);
-            if (mCustomSearchAppTogglePref.isChecked()){
-                mCustomLongSearchAppTogglePref.setChecked(false);
-                Settings.System.putInt(getContentResolver(), Settings.System.USE_CUSTOM_LONG_SEARCH_APP_TOGGLE, 0);
-            }
             return true;
         } else if (preference == mCustomLongSearchAppTogglePref) {
             value = mCustomLongSearchAppTogglePref.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.USE_CUSTOM_LONG_SEARCH_APP_TOGGLE, value ? 1 : 0);
-            if (mCustomLongSearchAppTogglePref.isChecked()){
-                mCustomSearchAppTogglePref.setChecked(false);
-                Settings.System.putInt(getContentResolver(), Settings.System.USE_CUSTOM_SEARCH_APP_TOGGLE, 0);
-            }
             return true;
         } else if (preference == mCustomSearchAppActivityPref) {
             mKeyNumber = 1;

@@ -6,8 +6,14 @@
     <!-- Whether or not to display the camera button settings -->
     <bool name="has_camera_button">false</bool>
 
+    <!-- Notification LED can show any color -->
     <bool name="has_rgb_notification_led">false</bool>
+
+    <!-- Notification LED can show green and amber only -->
     <bool name="has_dual_notification_led">false</bool>
+
+    <!-- Notification LED mixes up amber with green and red -->
+    <bool name="has_mixable_dual_notification_led">false</bool>
 
     <!-- LED Flashlight -->
     <bool name="has_led_flash">false</bool>

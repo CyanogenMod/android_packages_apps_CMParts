@@ -181,6 +181,21 @@
     <string name="trackball_color_notice_title">HINWEIS:</string>
     <string name="trackball_color_notice_summary">Auf manchen Geräten sind nicht alle Farben von der LED darstellbar.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Grün</string>
+    <string name="trackball_color_entry_white">Weiß</string>
+    <string name="trackball_color_entry_red">Rot</string>
+    <string name="trackball_color_entry_blue">Blau</string>
+    <string name="trackball_color_entry_yellow">Gelb</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Pink</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Hellblau</string>
+    <string name="trackball_color_entry_random">Zufällig</string>
+    <string name="trackball_color_entry_none">Keine</string>
+    <string name="trackball_color_entry_amber">Amber</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNUNG: Kann Batterieentladung beschleunigen</string>
     <string name="notification_battery_warning">Diese Option hat sich als negativ für die Batterieladung erwiesen um ca.3% pro Stunde. Bei schnellerer Batterieentladung beim Pulsieren des Trackballs ist dies der Grund dafür. Diese Option nicht verwenden, wenn das schnellere Entladen vermieden werden soll.</string>

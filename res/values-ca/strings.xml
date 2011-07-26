@@ -119,6 +119,21 @@
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">No tots els colors es mostren en tots els dispositius</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verd</string>
+    <string name="trackball_color_entry_white">Blanc</string>
+    <string name="trackball_color_entry_red">Vermell</string>
+    <string name="trackball_color_entry_blue">Blau</string>
+    <string name="trackball_color_entry_yellow">Groc</string>
+    <string name="trackball_color_entry_cyan">Cian</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Taronja</string>
+    <string name="trackball_color_entry_light_blue">Blau cel</string>
+    <string name="trackball_color_entry_random">Aleatori</string>
+    <string name="trackball_color_entry_none">Cap</string>
+    <string name="trackball_color_entry_amber">Ambre</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ADVERTÈNCIA: Pot causar que la bateria s\'esgoti ràpidament</string>
     <string name="notification_battery_warning">Aquesta opció fa que la bateria es descarregui un ~3% cada hora. Si noteu una disminució sobtada de la bateria mentre hi ha intermitències de la bola de desplaçament, aquest és el motiu. No ho activeu si no voleu que això passi.</string>

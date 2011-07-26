@@ -23,27 +23,6 @@
         <item>外部</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>緑</item>
-        <item>白</item>
-        <item>赤</item>
-        <item>青</item>
-        <item>黄</item>
-        <item>シアン</item>
-        <item>マゼンタ</item>
-        <item>ピンク</item>
-        <item>オレンジ</item>
-        <item>ライトブルー</item>
-        <item>ランダム</item>
-        <item>なし</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>緑</item>
-        <item>アンバー</item>
-        <item>なし</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (速い)</item>
         <item>3</item>

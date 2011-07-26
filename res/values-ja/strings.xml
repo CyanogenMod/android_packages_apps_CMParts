@@ -166,6 +166,21 @@
     <string name="trackball_color_notice_title">ノート</string>
     <string name="trackball_color_notice_summary">すべての色がすべてのデバイスで使用できるわけではありません。</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">緑</string>
+    <string name="trackball_color_entry_white">白</string>
+    <string name="trackball_color_entry_red">赤</string>
+    <string name="trackball_color_entry_blue">青</string>
+    <string name="trackball_color_entry_yellow">黄</string>
+    <string name="trackball_color_entry_cyan">シアン</string>
+    <string name="trackball_color_entry_magenta">マゼンタ</string>
+    <string name="trackball_color_entry_pink">ピンク</string>
+    <string name="trackball_color_entry_orange">オレンジ</string>
+    <string name="trackball_color_entry_light_blue">ライトブルー</string>
+    <string name="trackball_color_entry_random">ランダム</string>
+    <string name="trackball_color_entry_none">なし</string>
+    <string name="trackball_color_entry_amber">アンバー</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">注意: バッテリーが消費します</string>
     <string name="notification_battery_warning">このオプションを有効にすることにより、1時間に約3%ほどのバッテリー消費が増加します。バッテリー消費が速くなったと感じたら、恐らくこのオプションが原因です。バッテリー消費が気になるのであれば、このオプションは有効にするべきではありません。</string>

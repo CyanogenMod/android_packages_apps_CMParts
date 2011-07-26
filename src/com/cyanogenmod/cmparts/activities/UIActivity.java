@@ -86,8 +86,9 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         mTrackballScreen = (PreferenceScreen) prefSet.findPreference(NOTIFICATION_TRACKBALL);
         mExtrasScreen = (PreferenceScreen) prefSet.findPreference(EXTRAS_SCREEN);
 
-        if (!getResources().getBoolean(R.bool.has_rgb_notification_led)
-                && !getResources().getBoolean(R.bool.has_dual_notification_led)) {
+        boolean hasDualLed = (getResources().getBoolean(R.bool.has_dual_notification_led)
+                || getResources().getBoolean(R.bool.has_mixable_dual_notification_led));
+        if (!getResources().getBoolean(R.bool.has_rgb_notification_led) && !hasDualLed) {
             ((PreferenceCategory) prefSet.findPreference(GENERAL_CATEGORY))
                     .removePreference(mTrackballScreen);
         }

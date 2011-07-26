@@ -146,6 +146,21 @@
     <string name="trackball_color_notice_title">NOTE :</string>
     <string name="trackball_color_notice_summary">Seules certaines couleurs seront visibles sur certains appareils.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Vert</string>
+    <string name="trackball_color_entry_white">Blanc</string>
+    <string name="trackball_color_entry_red">Rouge</string>
+    <string name="trackball_color_entry_blue">Bleu</string>
+    <string name="trackball_color_entry_yellow">Jaune</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rose</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Bleu ciel</string>
+    <string name="trackball_color_entry_random">Aléatoire</string>
+    <string name="trackball_color_entry_none">Aucune</string>
+    <string name="trackball_color_entry_amber">Orange</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATTENTION : Peut vider votre batterie</string>
     <string name="notification_battery_warning">Il a été prouvé que cette option accentue l\'utilisation de la batterie d\'environ 3% par heure. Si vous constatez ce phénomène, c\'est certainement cette option qui en est la cause directe. N\'activez cette option uniquement en connaissance de cause !</string>

@@ -176,6 +176,21 @@
     <string name="trackball_color_notice_title">UWAGA:</string>
     <string name="trackball_color_notice_summary">Niektóre kolory mogą być nieobsługiwane przez urządzenie.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Zielony</string>
+    <string name="trackball_color_entry_white">Biały</string>
+    <string name="trackball_color_entry_red">Czerwony</string>
+    <string name="trackball_color_entry_blue">Niebieski</string>
+    <string name="trackball_color_entry_yellow">Żółty</string>
+    <string name="trackball_color_entry_cyan">Cyjan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Różowy</string>
+    <string name="trackball_color_entry_orange">Pomarańczowy</string>
+    <string name="trackball_color_entry_light_blue">Błękitny</string>
+    <string name="trackball_color_entry_random">Losowy</string>
+    <string name="trackball_color_entry_none">Brak</string>
+    <string name="trackball_color_entry_amber">Bursztynowy</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Uwaga: Może przyspieszyć zużycie baterii</string>
     <string name="notification_battery_warning">Ta opcje zwiększa zużycie baterii o ok. 3% na godzinę. Jeśli zauważysz zbyt szybkie zużycie baterii, ta opcja może być jego powodem.</string>

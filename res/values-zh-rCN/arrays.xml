@@ -35,27 +35,6 @@
         <item>无 (默认)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>绿色</item>
-        <item>白色</item>
-        <item>红色</item>
-        <item>蓝色</item>
-        <item>黄色</item>
-        <item>蓝绿色</item>
-        <item>紫色</item>
-        <item>粉色</item>
-        <item>橙色</item>
-        <item>浅蓝色</item>
-        <item>随机</item>
-        <item>无</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>绿色</item>
-        <item>琥珀</item>
-        <item>无</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (快)</item>
         <item>3</item>

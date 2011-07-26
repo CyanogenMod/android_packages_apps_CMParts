@@ -25,25 +25,6 @@
         <item>Маленький</item>
         <item>Немає (типове знач.)</item>
     </string-array>
-    <string-array name="entries_trackball_colors">
-        <item>Зелений</item>
-        <item>Білий</item>
-        <item>Червоний</item>
-        <item>Синій</item>
-        <item>Жовтий</item>
-        <item>Блакитний</item>
-        <item>Пурпурний</item>
-        <item>Рожевий</item>
-        <item>Помаранчевий</item>
-        <item>Світло-синій</item>
-        <item>Випадковий</item>
-        <item>Жоден</item>
-    </string-array>
-    <string-array name="entries_dual_led_colors">
-        <item>Зелений</item>
-        <item>Бурштиновий</item>
-        <item>Немає</item>
-    </string-array>
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (швидко)</item>
         <item>3</item>

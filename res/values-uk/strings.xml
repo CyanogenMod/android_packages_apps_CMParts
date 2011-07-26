@@ -145,6 +145,21 @@
   <string name="trackball_array_error">Сталася помилка масиву. Пакет переміщений до категорії Різне.</string>
   <string name="trackball_color_notice_title">ПРИМІТКА:</string>
   <string name="trackball_color_notice_summary">не всі пристрої здатні відтворити усю гаму кольорів.</string>
+
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Зелений</string>
+    <string name="trackball_color_entry_white">Білий</string>
+    <string name="trackball_color_entry_red">Червоний</string>
+    <string name="trackball_color_entry_blue">Синій</string>
+    <string name="trackball_color_entry_yellow">Жовтий</string>
+    <string name="trackball_color_entry_cyan">Блакитний</string>
+    <string name="trackball_color_entry_magenta">Пурпурний</string>
+    <string name="trackball_color_entry_pink">Рожевий</string>
+    <string name="trackball_color_entry_orange">Помаранчевий</string>
+    <string name="trackball_color_entry_light_blue">Світло-синій</string>
+    <string name="trackball_color_entry_random">Випадковий</string>
+    <string name="trackball_color_entry_none">Жоден</string>
+    <string name="trackball_color_entry_amber">Бурштиновий</string>
   <string name="notification_battery_warning_title">УВАГА: активація параметра може пришвидшити розряд батареї</string>
   <string name="notification_battery_warning">Активація параметра призводить до збільшення споживання струму на ~ 3% на годину. Якщо ви помітили збільшення споживання під час миготіння трекболу, майте це на увазі. Не вмикайте якщо бажаєте зменшити розряд батареї.</string>
   <string name="pref_lockscreen_stylecfg_title">Стиль</string>

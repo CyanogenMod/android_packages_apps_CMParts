@@ -124,19 +124,19 @@
         <item>0</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Green</item>
-        <item>White</item>
-        <item>Red</item>
-        <item>Blue</item>
-        <item>Yellow</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Pink</item>
-        <item>Orange</item>
-        <item>Light Blue</item>
-        <item>Random</item>
-        <item>None</item>
+    <string-array name="entries_trackball_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_white</item>
+        <item>@string/trackball_color_entry_red</item>
+        <item>@string/trackball_color_entry_blue</item>
+        <item>@string/trackball_color_entry_yellow</item>
+        <item>@string/trackball_color_entry_cyan</item>
+        <item>@string/trackball_color_entry_magenta</item>
+        <item>@string/trackball_color_entry_pink</item>
+        <item>@string/trackball_color_entry_orange</item>
+        <item>@string/trackball_color_entry_light_blue</item>
+        <item>@string/trackball_color_entry_random</item>
+        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="pref_trackball_colors_values" translatable="false">
@@ -154,10 +154,10 @@
         <item>none</item>
     </string-array>
 
-    <string-array name="entries_dual_led_colors">
-        <item>Green</item>
-        <item>Amber</item>
-        <item>None</item>
+    <string-array name="entries_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_amber</item>
+        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="values_dual_led_colors" translatable="false">
@@ -180,6 +180,19 @@
         <item>qwerty</item>
         <item>qwertz</item>
         <item>swe_qwerty</item>
+
+    <string-array name="entries_mixable_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_red</item>
+        <item>@string/trackball_color_entry_amber</item>
+        <item>@string/trackball_color_entry_none</item>
+    </string-array>
+
+    <string-array name="values_mixable_dual_led_colors" translatable="false">
+        <item>green</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>none</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
