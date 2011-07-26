@@ -192,6 +192,7 @@
         <item>qwerty</item>
         <item>qwertz</item>
         <item>swe_qwerty</item>
+    </string-array>
 
     <string-array name="entries_mixable_dual_led_colors" translatable="false">
         <item>@string/trackball_color_entry_green</item>
