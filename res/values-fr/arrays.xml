@@ -91,6 +91,12 @@
         <item>Lense</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Couleur ou filtre</item>
+        <item>Image perso.</item>
+        <item>Par défaut</item>
+    </string-array>
+
     <string-array name="pref_overscroll_effect_entries">
         <item>Aucun</item>
         <item>Lueur</item>

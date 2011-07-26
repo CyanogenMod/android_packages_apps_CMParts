@@ -113,6 +113,11 @@
     <string name="ui_status_bar_toggle_brightness">StatusBar brightness control</string>
     <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar.</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternate signal display</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Show dBm value instead of signal bars</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Signal bars</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Signal text</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED notifications</string>

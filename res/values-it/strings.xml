@@ -196,6 +196,8 @@
     <string name="notification_battery_warning">È stato provato che questa opzione aumenta il consumo di batteria del ~3% ogni ora. Se noti un aumento del consumo mentre sono attive le notifiche pulsanti questa ne è la causa. Non attivarla se non vuoi peggiorare la durata della batteria.</string>
 
      <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Disattiva lockscreen</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Il lockscreen non verrà visualizzato se è attiva una modalità di sblocco schermo di sicurezza (sequenza, PIN, password)</string>
     <string name="pref_lockscreen_stylecfg_title">Opzioni stile</string>
     <string name="pref_lockscreen_stylecfg_summary">Configura lo stile del lockscreen e le impostazioni corrispondenti</string>
     <string name="pref_lockscreen_widgets_title">Opzioni widget</string>
@@ -234,6 +236,9 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Lanciatore app personalizzato</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Applicazione personalizzata</string>
+     <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Seleziona sfondo</string>
+    <string name="pref_lockscreen_custom_background_summary">Seleziona un\'immagine o un colore come sfondo del lockscreen</string>
     <string name="pref_lockscreen_custom_icon_style_title">Icona applicazione personalizzata</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Utilizza l\'icona dell\'applicazione invece dell\'icona CM per l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Trascina in basso per sbloccare</string>

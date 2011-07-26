@@ -98,8 +98,8 @@
     <string name="pref_lockscreen_delay_title">Délai</string>
     <string name="pref_lockscreen_timeout_lock_delay">Délai avant timeout</string>
     <string name="pref_lockscreen_screenoff_lock_delay">Délai avant veille</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Combien de temps l\'écran attendra avant de s\'éteindre</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Combien de temps le téléphone attendra avant de se verrouiller lorsque l\'écran est déjà éteint</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Temps à attendre avant d\'éteindre l\'écran si l\'appareil n\'est pas déverrouillé</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Temps à attendre entre l\'extinction automatique de l\'écran et le verrouillage</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Choisir une couleur</string>
@@ -170,13 +170,13 @@
     <string name="pref_lockscreen_stylecfg_title">Options principales</string>
     <string name="pref_lockscreen_stylecfg_summary">Configurer l\'apparence de l\'écran de verrouillage et les réglages correspondants</string>
     <string name="pref_lockscreen_widgets_title">Options des widgets</string>
-    <string name="pref_lockscreen_widgets_summary">Activer ou désactiver divers widgets sur l\'écran de verrouillage</string>
+    <string name="pref_lockscreen_widgets_summary">Activer ou désactiver les widgets de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_unlock_title">Options du déverrouillage</string>
     <string name="pref_lockscreen_unlock_summary">Configurer les boutons et le déverrouillage rapide</string>
-    <string name="pref_lockscreen_gesture_title">Geste sur l\'écran de verrouillage</string>
-    <string name="pref_lockscreen_gesture_summary">Activer et personnaliser les gestes de l\'écran de verrouillage</string>
-    <string name="pref_lockscreen_timeout_title">Délai et timeout</string>
-    <string name="pref_lockscreen_timeout_summary">Configurer le timeout et le délai d\'extinction de l\'écran</string>
+    <string name="pref_lockscreen_gesture_title">Gestes sur l\'écran</string>
+    <string name="pref_lockscreen_gesture_summary">Utiliser des gestes personnalisés sur l\'écran de verrouillage</string>
+    <string name="pref_lockscreen_timeout_title">Délais</string>
+    <string name="pref_lockscreen_timeout_summary">Configurer les délais de verrouillage et d\'extinction de l\'écran</string>
 
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Etat de la batterie</string>
@@ -190,23 +190,35 @@
     <string name="pref_lockscreen_custom_app_activity_title">Sélectionner l\'application</string>
     <string name="pref_lockscreen_custom_icon_style_title">Icône de l\'application</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Utiliser l\'icône de l\'application au lieu de celle par défaut</string>
+    <string name="pref_lockscreen_custom_app_toggle_title">Geste supplémentaire</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Utiliser un autre slider pour exécuter une application perso.</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Déverrouiller en bas</string>
-    <string name="pref_lockscreen_rotary_unlock_down_summary">Glisser vers le bas déverrouille. Glisser à droite démarre une application</string>
+    <string name="pref_lockscreen_rotary_unlock_down_summary">Glisser vers le bas déverrouille. Glisser à droite démarre l\'application</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Masquer flèches</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Masque les flèches directionnelles de rotation</string>
-    <string name="pref_lockscreen_music_controls_title">Contrôles de la lecture</string>
+    <string name="pref_lockscreen_music_controls_title">Contrôles de la musique</string>
     <string name="pref_lockscreen_music_controls_summary">Afficher les contrôles permettant de commander la musique sur l\'écran de verrouillage</string>
     <string name="pref_lockscreen_always_music_controls_title">Toujours les afficher</string>
     <string name="pref_lockscreen_always_music_controls_summary">Toujours afficher les contrôles permettant de commander la musique, même sans lecture en cours</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Déverrouillage rapide</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Une pression sur OK n\'est plus nécessaire lors de la saisie d\'un PIN ou mot de passe. Effacer compte comme une erreur.</string>
-    <string name="pref_lockscreen_style_title">Style de l\'écran de verrouillage</string>
+    <string name="pref_lockscreen_style_title">Style</string>
     <string name="pref_lockscreen_style_summary">Choisir le style de l\'écran de verrouillage</string>
     <string name="lockscreen_style_header">Style</string>
     <string name="lockscreen_delay_header">Délai et timeout</string>
     <string name="pref_in_call_style_title">Appels entrants</string>
     <string name="pref_in_call_style_summary">Choisir le style du widget accepter/refuser les appels entrants</string>
     <string name="lockscreen_settings_title">Paramètres de l\'écran de verrouillage</string>
+    <string name="pref_lockscreen_custom_background_title">Fond d\'écran</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Fond d\'écran</string>
+    <string name="pref_lockscreen_custom_background_summary">Modifier l\'image, la couleur ou la teinte de l\'écran de verrouillage</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Mode actuel: Couleur</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Mode actuel: Image</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Mode actuel: Par défault</string>
+    <string name="pref_lockscreen_background_result_successful">Fond d\'écran modifié</string>
+    <string name="pref_lockscreen_background_result_not_successful">Fond d\'écran non modifié</string>
+    <string name="pref_lockscreen_disable_on_security_title">Inactif si sécurisé</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Désactive l\'écran de verrouillage si l\'écran de sécurité est activé (Code PIN, Mot de passe)</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Paramètres des entrées</string>
@@ -411,43 +423,43 @@
     <string name="title_toggle_sleep">Mise en veille</string>
     <string name="title_button_modes">Modes de fonctionnement des boutons</string>
     <string name="pref_brightness_mode_title">Modes de luminosité</string>
-    <string name="pref_brightness_mode_summary">Choisir comment le bouton Luminosité se comportera</string>
+    <string name="pref_brightness_mode_summary">Sélection des modes de fonctionnement du bouton Luminosité</string>
     <string name="pref_network_mode_title">Modes 2G/3G</string>
     <string name="pref_network_mode_summary">Choisir comment le bouton 2G/3G se comportera</string>
     <string name="pref_screentimeout_mode_title">Modes Timeout de l\'écran</string>
-    <string name="pref_screentimeout_mode_summary">Choisir comment le bouton Timeout de l\'écran se comportera</string>
+    <string name="pref_screentimeout_mode_summary">Sélection des modes de fonctionnement du bouton Timeout de l\'écran</string>
     <string name="pref_ring_mode_title">Modes Sonnerie</string>
-    <string name="pref_ring_mode_summary">Choisir comment le bouton Sonnerie se comportera</string>
+    <string name="pref_ring_mode_summary">Sélection des modes de fonctionnement du bouton Sonnerie</string>
     <string name="pref_flash_mode_title">Mode flash</string>
-    <string name="pref_flash_mode_summary">Choisir la puissance du flash : Haute ou Death Ray (Evo uniquement)</string>
+    <string name="pref_flash_mode_summary">Choisir la puissance du flash : Haute ou Death Ray</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Garder l\'accueil en RAM</string>
-    <string name="pref_lock_home_summary">Tenter de conserver l\'application Accueil en mémoire tout le temps</string>
+    <string name="pref_lock_home_summary">Essayer de conserver l\'application Accueil en mémoire tout le temps</string>
 
     <!-- Performance : Lock mms app in memory -->
     <string name="pref_lock_mms_title">Garder SMS/MMS en RAM</string>
-    <string name="pref_lock_mms_summary">Tenter de garder l\'application SMS/MMS en mémoire. Ceci permet d\'éviter les messages ratés en condition de mémoire faible</string>
+    <string name="pref_lock_mms_summary">Essayer de conserver l\'application SMS/MMS en mémoire. Ceci permet d\'éviter de louper des messages si la mémoire est insuffisante</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Rétroéclairage automatique</string>
-    <string name="backlight_summary">Tweaks et niveaux de filtrage</string>
-    <string name="light_filter_title">Filtrage du capteur de lumière</string>
+    <string name="backlight_summary">Filtrage et niveaux du capteur de luminosité ambiante</string>
+    <string name="light_filter_title">Filtrage du capteur de luminosité</string>
     <string name="light_filter_enabled_title">Activé</string>
-    <string name="light_filter_enabled_summary">Appliquer le filtre moyen afin de réduire le scintillement</string>
-    <string name="light_filter_window_title">Longueur de la fenêtre</string>
+    <string name="light_filter_enabled_summary">Appliquer un filtre de lissage aux mesures du capteur de lumière</string>
+    <string name="light_filter_window_title">Période moyenne</string>
     <string name="light_filter_window_summary">La valeur filtrée est la valeur moyenne du capteur de lumière durant une certaine période</string>
     <string name="light_filter_reset_title">Seuil de remise à zéro</string>
-    <string name="light_filter_reset_summary">Les échantillons qui dépassent le seuil annulent le filtre</string>
-    <string name="light_filter_interval_title">Intervalle d\'échantillonage</string>
-    <string name="light_filter_interval_summary">Une valeur plus basse améliore l\'efficacité mais utilise plus le CPU</string>
+    <string name="light_filter_reset_summary">Les mesures qui dépassent le seuil désactivent le filtre pour une meilleure réaction en extérieur</string>
+    <string name="light_filter_interval_title">Intervalle échantillonage</string>
+    <string name="light_filter_interval_summary">Une valeur plus basse améliore la réaction mais utilise plus le CPU</string>
     <string name="light_levels_title">Niveaux de lumière</string>
     <string name="light_levels_enabled_title">Utiliser valeur personnalisée</string>
     <string name="light_levels_dim_title">Niveau d\'obscurcissement</string>
     <string name="light_levels_dim_summary">Niveau de luminosité utilisé pour l\'obscurcissement</string>
     <string name="light_levels_editor_title">Éditer les autres niveaux...</string>
-    <string name="light_decrease_enabled_title">Autoriser diminution luminosité</string>
-    <string name="light_decrease_enabled_summary">Activer afin d\'autoriser la diminution des éclairages. Utiliser l\'hystérésis pour réduire le scintillement.</string>
+    <string name="light_decrease_enabled_title">Diminution luminosité</string>
+    <string name="light_decrease_enabled_summary">Autoriser la réduction de l\'éclairage. Utiliser l\'hystérésis pour réduire le scintillement.</string>
     <string name="light_decrease_hysteresis_title">Diminuer l\'hystérésis</string>
     <string name="light_decrease_hysteresis_summary">Les niveaux de mesures se chevaucheront de tant vers le bas.</string>
 
@@ -458,15 +470,15 @@
     <string name="ll_header_lcd">Écran</string>
     <string name="ll_header_btn">Boutons</string>
     <string name="ll_header_kb">Clavier</string>
-    <string name="ll_lux">Capteur (filtré / brut):</string>
-    <string name="ll_lcd">Écran :</string>
-    <string name="ll_btn">Boutons :</string>
+    <string name="ll_lux">Capteur filtré / brut :</string>
+    <string name="ll_lcd">Niveau Écran :</string>
+    <string name="ll_btn">Niveau Boutons :</string>
     <string name="ll_kb">Clavier :</string>
     <string name="ll_disabled">désactivé</string>
     <string name="ll_default">Charger défauts</string>
     <string name="ll_save">Enregistrer &amp; appliquer</string>
     <string name="ll_reload">Recharger actifs</string>
-    <string name="ll_bad_levels">Les niveaux doivent croître</string>
+    <string name="ll_bad_levels">Les niveaux doivent être en ordre croissant</string>
     <string name="ll_num_levels">Définir le nombre de niveaux</string>
 
     <!-- Sound -->
@@ -542,13 +554,14 @@
     <string name="gestures_delete">Supprimer</string>
     <string name="gestures_delete_success">Geste supprimé</string>
     <string name="gestures_error_loading">Un problème avec le fichier du geste est survenu.</string>
-    <string name="gestures_unlock_only">Déverrouiller le téléphone</string>
+    <string name="gestures_unlock_only">Déverrouiller le tél.</string>
     <string name="gestures_toggle_sound">Activer/Désactiver son</string>
     <string name="gestures_flashlight">Lampe de poche</string>
     <string name="pref_lockscreen_disable_unlock_tab">Masquer curseur déverr.</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: Vous devez activer le déverrouillage par trackball, touche menu ou par geste afin que cette option soit disponible</string>
     <string name="gestures_already_present">Attention: Un geste similaire est associé à une autre action !</string>
     <string name="gestures_run_in_background">Exécuter en arrière-plan</string>
+    <string name="gestures_explain_create_screen">Choisissez une action à effectuer et dessinez un geste sur l\'écran.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Voir liste des modifications</string>
