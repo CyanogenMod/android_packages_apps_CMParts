@@ -9,13 +9,13 @@
     <string name="application_settings_summary_head">Mover aplicaciones, donde instalarlas</string>
     <string name="display_settings_title_head">Pantalla</string>
     <string name="display_settings_title_subhead">Ajustes de pantalla</string>
-    <string name="display_settings_summary_head">Animaciones pantalla, rotación, tiempo max.</string>
+    <string name="display_settings_summary_head">Animaciones pantalla, rotación, tiempo máximo.</string>
     <string name="input_settings_title_head">Entrada</string>
     <string name="input_settings_title_subhead">Ajustes de entrada</string>
-    <string name="input_settings_summary_head">Comportamiento de entrada, botones, Ajustes vibración</string>
+    <string name="input_settings_summary_head">Comportamiento de entrada, botones, ajustes vibración</string>
     <string name="interface_settings_title_head">Interfaz</string>
     <string name="interface_settings_title_subhead">Ajustes del interfaz</string>
-    <string name="interface_settings_summary_head">ajustes interfaz, sobredesplazamiento, efecto de renderizado</string>
+    <string name="interface_settings_summary_head">Ajustes en la interfaz, sobredesplazamiento, efecto de renderizado</string>
     <string name="lockscreen_settings_title_head">Protector</string>
     <string name="lockscreen_settings_title_subhead">Ajustes del protector</string>
     <string name="lockscreen_settings_summary_head">Gestos del protector, estilo, opciones de desbloqueo</string>
@@ -37,8 +37,8 @@
     <string name="ui_title">Interfaz de usuario</string>
     <string name="ui_summary">Ajustes de interfaz de usuario</string>
 
-    <string name="pref_electron_beam_animation_on">Animación al encender pantalla</string>
-    <string name="pref_electron_beam_animation_off">Animación al apagar pantalla</string>
+    <string name="pref_electron_beam_animation_on">Animación CRT al encender pantalla</string>
+    <string name="pref_electron_beam_animation_off">Animación CRT al apagar pantalla</string>
 
     <!-- User interface: Tablet tweaks -->
     <string name="tablet_tweaks_title_head">Ajustes Tablet</string>
@@ -98,11 +98,11 @@
     <string name="ui_status_bar_clock_title">Mostrar reloj</string>
     <string name="ui_status_bar_clock_summary">Se esconde si se deshabilita</string>
     <string name="ui_status_bar_cm_battery_title">Porcentaje de batería</string>
-    <string name="ui_status_bar_cm_battery_summary">Mostrar el porcentaje de batería y un icono pequeño. Deshabilitar si no aparece bien el tema</string>
+    <string name="ui_status_bar_cm_battery_summary">Mostrar el porcentaje de batería y un icono pequeño. Deshabilitar si no aparece bien al aplicar un "theme".</string>
     <string name="ui_status_bar_compact_carrier_title">Etiqueta de compañía compacta</string>
     <string name="ui_status_bar_compact_carrier_summary">Usar un diseño alternativo de notificación desplegable con la etiqueta de compañía pequeña</string>
     <string name="ui_status_bar_toggle_brightness">Barra de estado de control de brillo</string>
-    <string name="ui_status_bar_toggle_brightness_summary">Permite el ajuste de brillo deslizando a través de la barra de estado</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permite el ajuste de brillo deslizando tu dedo a través de la barra de estado</string>
     <string name="ui_status_bar_toggle_info">Brillo automático está habilitado</string>
 
     <!-- User interface : LED Notifications -->
@@ -118,8 +118,8 @@
     <string name="ui_overscroll_title">Superposición</string>
     <string name="pref_overscroll_title">Efecto superposición</string>
     <string name="pref_overscroll_summary">Elija como se ven los objetos cuando se superponen</string>
-    <string name="pref_overscroll_weight_title">Anchura superposición</string>
-    <string name="pref_overscroll_weight_summary">Seleccione el ancho de los objetos superpuestos</string>
+    <string name="pref_overscroll_weight_title">Peso superposición</string>
+    <string name="pref_overscroll_weight_summary">Seleccione el peso de los objetos superpuestos</string>
 
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Ajustes de protector de pantalla</string>
