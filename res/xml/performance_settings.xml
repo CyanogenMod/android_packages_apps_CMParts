@@ -42,6 +42,11 @@
             android:entries="@array/entries_heapsize"
             android:entryValues="@array/entries_heapsize" />
 
+        <!-- Motorola specific aplogd pref -->
+        <CheckBoxPreference android:key="pref_logger"
+            android:title="@string/pref_logger_title"
+            android:summary="@string/pref_logger_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

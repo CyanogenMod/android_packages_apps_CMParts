@@ -113,15 +113,6 @@
         <item>2G/3G Apenas/3G+2G</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Som+Vibrar/Vibrar</item>
-        <item>Som/Vibrar</item>
-        <item>Som/Vibrar</item>
-        <item>Som+Vib/Vib/Silencioso</item>
-        <item>Som/Vibrar/Silencioso</item>
-        <item>Som+Vibrar/Som/Vibrar/Silencioso</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normal</item>
         <item>Alto / Raio da Morte</item>

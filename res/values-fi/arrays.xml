@@ -132,15 +132,6 @@
         <item>30sek/2min/5min</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Ääni+Värinä/Värinä</item>
-        <item>Ääni/Värinä</item>
-        <item>Ääni/Äänetön</item>
-        <item>Ääni+Vär/Vär/Äänetön</item>
-        <item>Ääni/Värinä/Äänetön</item>
-        <item>Ääni+Värinä/Ääni/Värinä/Äänetön</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normaali</item>
         <item>Suuri / Kuolonsäde</item>

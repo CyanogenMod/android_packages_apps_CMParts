@@ -144,15 +144,6 @@
         <item>30s/2m/5m</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Som+Vibrar/Vibrar</item>
-        <item>Som/Vibrar</item>
-        <item>Som/Silêncio</item>
-        <item>Som+Vibrar/Vibrar/Silêncio</item>
-        <item>Som/Vibrar/Silêncio</item>
-        <item>Som+Vibrar/Som/Vibrar/Silêncio</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normal</item>
         <item>Alto / Death Ray</item>

@@ -116,15 +116,6 @@
         <item>2G/Endast 3G/3G+2G</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Ljud+Vibration/Vibration</item>
-        <item>Ljud/Vibration</item>
-        <item>Ljud/Tyst</item>
-        <item>Ljud+Vibration/Vibration/Tyst</item>
-        <item>Ljud/Vibration/Tyst</item>
-        <item>Ljud+Vibration/Ljud/Vibration/Tyst</item>
-    </string-array>
-
     <string-array name="entries_flash_widget" translatable="false">
         <item>Normal</item>
         <item>Hög / Death Ray</item>

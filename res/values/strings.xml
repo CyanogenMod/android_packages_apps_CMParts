@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod settings</string>
@@ -92,6 +91,9 @@
     <string name="pref_rotation_180_title">180 degrees</string>
     <string name="pref_rotation_270_title">270 degrees</string>
 
+    <string name="pref_omap_dss_mode_title">DSI kernel bug workaround</string>
+    <string name="pref_omap_dss_mode_summary">Sets OMAP DSS update mode to automatic. Causes slight display tearing but prevents display freezes and occasional kernel panic.</string>
+
     <string name="pref_na_on_plug_title">Keep display off on plug</string>
     <string name="pref_na_on_plug_summary">When enabled, display will not turn on automatically when phone is plugged to usb or power (useful e.g. for solar power adapters).</string>
 
@@ -160,6 +162,7 @@
     <string name="msg_color_picker">Tap on center color to confirm.\nPress back to cancel</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">Settings</string>
     <string name="trackball_notifications_title">LED notification colors</string>
     <string name="dialog_color_trackball">Choose a color</string>
     <string name="dialog_blink_trackball">Choose a blink rate</string>
@@ -195,13 +198,30 @@
     <string name="trackball_category_add_summary">Add a category to the list</string>
     <string name="trackball_category_remove_title">Remove category</string>
     <string name="trackball_category_remove_summary">Remove a category from the list</string>
-    <string name="trackball_remove_default_toast">Can\'t remove this category as it is the default one.</string>
     <string name="trackball_reset_all">Reset all colors and categories.</string>
-    <string name="trackball_array_error">Unfortunately there was an array error. This package has been forced into the Miscellaneous category.</string>
     <string name="trackball_color_notice_title">NOTE:</string>
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
+    <string name="trackball_category_unconfigured">Unconfigured</string>
+    <string name="trackball_category_misc">Miscellaneous</string>
+    <string name="trackball_app_reset_title">Reset</string>
+    <string name="trackball_app_reset_summary">Remove custom settings for this application</string>
+
+    <string name="trackball_force_mode_title">LED mode</string>
+    <string name="trackball_force_mode_dialog">Please select a mode</string>
+    <string name="trackball_force_mode_summary">Configure how the LED should behave</string>
+
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Messaging</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Missed Call</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Use application setting</string>
     <string name="trackball_color_entry_green">Green</string>
     <string name="trackball_color_entry_white">White</string>
     <string name="trackball_color_entry_red">Red</string>
@@ -213,7 +233,6 @@
     <string name="trackball_color_entry_orange">Orange</string>
     <string name="trackball_color_entry_light_blue">Light Blue</string>
     <string name="trackball_color_entry_random">Random</string>
-    <string name="trackball_color_entry_none">None</string>
     <string name="trackball_color_entry_amber">Amber</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -291,6 +310,8 @@
     <string name="pref_dock_observer_off_summary">No action on magnets, useful for users of carrying cases with magnetic closure</string>
     <string name="pref_keypad_type_title">Keyboard layout</string>
     <string name="pref_keypad_type_summary">Set hardware keyboard layout - qwerty, qwertz, azerty... (requires reboot)</string>
+    <string name="pref_qtouch_num_title">Multitouch</string>
+    <string name="pref_qtouch_num_summary">Set number of distinct touches to be recognized by touchscreen</string>
     <string name="lockscreen_widgets_note_title">Note</string>
     <string name="lockscreen_widgets_note_summary">Choosing minimalistic lense style hides all widgets except music control. Yet below options are not unset to allow easy switching to other styles</string>
 
@@ -393,6 +414,10 @@
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">System can free more RAM when needed if asset bitmap memory can be reclaimed (requires reboot)</string>
 
+    <!-- Performance Settings : Logger -->
+    <string name="pref_logger_title">Enable logger</string>
+    <string name="pref_logger_summary">Enable logging to /cache/logger</string>
+
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
@@ -425,6 +450,7 @@
     <string name="buttons_title">Buttons</string>
     <string name="dock_title">Dock</string>
     <string name="keypad_title">Keyboard</string>
+    <string name="qtouch_title">Touchscreen</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Power prompt</string>
@@ -455,7 +481,7 @@
     <string name="pref_render_effect_calibrated_cool">Calibrated (N1) Cool</string>
     <string name="pref_render_effect_red">Red</string>
 
-    <!--  Widget Types -->
+    <!-- Widget Types -->
     <string name="widget_render_effect_night">Night</string>
     <string name="widget_render_effect_terminal">Term</string>
     <string name="widget_render_effect_blue">Blue</string>
@@ -511,6 +537,13 @@
     <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">Choose how the sound button changes modes</string>
+    <string name="cm_sound_mode_soundVib_vib">Sound+Vibrate/Vibrate</string>
+    <string name="cm_sound_mode_sound_vib">Sound/Vibrate</string>
+    <string name="cm_sound_mode_sound_silent">Sound/Silent</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Sound+Vib/Vib/Silent</string>
+    <string name="cm_sound_mode_sound_vib_silent">Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sound+Vibrate/Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_vib_silent">Vibrate/Silent</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
@@ -608,7 +641,7 @@
     <string name="user_defined_key3">Quick Key 3</string>
     <string name="user_defined_not_set">Nothing Set</string>
 
-    <!--  Lockscreen gesture strings -->
+    <!-- Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Use lockscreen gestures</string>
     <string name="pref_lockscreen_gestures_trail_title">Show gesture trails</string>
     <string name="pref_lockscreen_gestures_builder_title">Build gestures</string>
@@ -711,7 +744,4 @@
     <string name="perm_enable_management_summary">Enable application permissions management</string>
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
-
-
-
 </resources>

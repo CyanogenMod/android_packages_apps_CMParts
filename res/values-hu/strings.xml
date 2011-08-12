@@ -113,9 +113,7 @@
     <string name="trackball_category_add_summary">Kategória hozzáadása a listához</string>
     <string name="trackball_category_remove_title">Kategória eltávolítása</string>
     <string name="trackball_category_remove_summary">Kategória eltávolítása a listáról</string>
-    <string name="trackball_remove_default_toast">Nem lehet eltávolítani ezt a kategóriát mert ez egy alapértelmezett beállítás.</string>
     <string name="trackball_reset_all">Állítsa alaphelyzetbe a színeket és a kategóriákat.</string>
-    <string name="trackball_array_error">Sajnos ez egy elrendezés hiba volt. Ez a csomag kényszerítve lett az Egyéb kategóriába.</string>
     <string name="trackball_color_notice_title">MEGJEGYZÉS:</string>
     <string name="trackball_color_notice_summary">Nem minden szín jelenik meg a készülékeken.</string>
 
@@ -131,7 +129,6 @@
     <string name="trackball_color_entry_orange">Narancs</string>
     <string name="trackball_color_entry_light_blue">Világoskék</string>
     <string name="trackball_color_entry_random">Véletlenszerű</string>
-    <string name="trackball_color_entry_none">Nincs</string>
     <string name="trackball_color_entry_amber">Sárga</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -389,6 +386,13 @@
     <string name="pref_screentimeout_mode_summary">A képernyőzárási gomb működésének beállítása</string>
     <string name="pref_ring_mode_title">Hang módok</string>
     <string name="pref_ring_mode_summary">A hang gomb működésének beállítása</string>
+    <string name="cm_sound_mode_soundVib_vib">Hang+Rezgés/Rezgés</string>
+    <string name="cm_sound_mode_sound_vib">Hang/Rezgés</string>
+    <string name="cm_sound_mode_sound_silent">Hang/Csendes</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Hang+Vib/Vib/Csendes</string>
+    <string name="cm_sound_mode_sound_vib_silent">Hang/Rezgés/Csendes</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Hang+Rezgés/Hang/Rezgés/Csendes</string>
+    <string name="cm_sound_mode_vib_silent">Rezgés/Csendes</string>
     <string name="pref_flash_mode_title">Vaku üzemmód</string>
     <string name="pref_flash_mode_summary">Magas/halálos sugár</string>
 

@@ -182,15 +182,6 @@
         <item>30秒/2分/5分</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>音と振動/振動</item>
-        <item>音/振動</item>
-        <item>音/サイレント</item>
-        <item>音と振動/振動/サイレント</item>
-        <item>音/振動/サイレント</item>
-        <item>音と振動/音/振動/サイレント</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>ノーマル</item>
         <item>ハイ / デスレイ</item>

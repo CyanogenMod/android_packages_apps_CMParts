@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference android:key="category"
+                    android:persistent="false"
+                    android:title="@string/trackball_category_list_title"
+                    android:dialogTitle="@string/trackball_category_list_summary"
+                    android:summary="@string/trackball_category_list_summary" />
+
+    <ListPreference android:key="force_mode"
+                    android:persistent="false"
+                    android:title="@string/trackball_force_mode_title"
+                    android:dialogTitle="@string/trackball_force_mode_dialog"
+                    android:summary="@string/trackball_force_mode_summary"
+                    android:entries="@array/pref_trackball_force_mode_entries"
+                    android:entryValues="@array/pref_trackball_force_mode_values" />
+
+    <ListPreference android:key="color"
+                    android:persistent="false"
+                    android:title="@string/color_trackball_flash_title"
+                    android:dialogTitle="@string/dialog_color_trackball"
+                    android:summary="@string/color_trackball_flash_summary" />
+
+    <ListPreference android:key="blink"
+                    android:persistent="false"
+                    android:title="@string/color_trackball_blink_title"
+                    android:dialogTitle="@string/dialog_blink_trackball"
+                    android:summary="@string/color_trackball_blink_summary"
+                    android:entries="@array/pref_trackball_blink_rate_entries"
+                    android:entryValues="@array/pref_trackball_blink_rate_values" />
+
+    <Preference android:key="custom_color"
+                android:persistent="false"
+                android:title="@string/color_trackball_custom_title"
+                android:summary="@string/color_trackball_custom_summary" />
+
+    <Preference android:key="test_color"
+                android:persistent="false"
+                android:title="@string/color_trackball_test_title"
+                android:summary="@string/color_trackball_test_summary" />
+
+    <Preference android:title="@string/trackball_color_notice_title"
+                android:summary="@string/trackball_color_notice_summary" />
+
+    <Preference android:key="reset"
+                android:persistent="false"
+                android:title="@string/trackball_app_reset_title"
+                android:summary="@string/trackball_app_reset_summary" />
+
+</PreferenceScreen>

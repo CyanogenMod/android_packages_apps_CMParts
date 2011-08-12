@@ -30,6 +30,13 @@
         <item>6 (Lent)</item>
     </string-array>
 
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Paramètres application</item>
+        <item>Pas de LED</item>
+        <item>LED si évenements</item>
+        <item>LED active</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_delay_entries">
         <item>Immédiatement</item>
         <item>1s</item>
@@ -87,7 +94,7 @@
     <string-array name="pref_lockscreen_style_entries">
         <item>Curseurs</item>
         <item>Rotatif</item>
-        <item>Rotary revamped</item>
+        <item>Rotatif revamped</item>
         <item>Lense</item>
     </string-array>
 
@@ -149,6 +156,20 @@
         <item>Par défaut</item>
         <item>Marche</item>
         <item>Arrêt</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget">
+        <item>Son+Vibreur/Vibreur</item>
+        <item>Son/Vibreur</item>
+        <item>Son/Silence</item>
+        <item>Son+Vib/Vib/Silence</item>
+        <item>Son/Vibreur/Silence</item>
+        <item>Son+Vib/Son/Vib/Silence</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>Puissant / Death Ray</item>
     </string-array>
 
 </resources>

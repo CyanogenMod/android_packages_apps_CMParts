@@ -18,7 +18,12 @@
                 <data android:scheme="file" />
             </intent-filter>
         </receiver>
-        <activity android:name=".activities.MainActivity" android:label="@string/app_name">
+        <receiver android:name=".intents.LEDNotificationReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.app.NotificationManager.ACTION_NOTIFY" />
+            </intent-filter>
+        </receiver>
+         <activity android:name=".activities.MainActivity" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -66,8 +71,26 @@
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.TrackballNotificationActivity"
+        <activity android:name=".activities.led.NotificationActivity"
             android:label="@string/trackball_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.led.CategoryActivity"
+            android:label="@string/trackball_category_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.led.PackageSettingsActivity"
+            android:label="@string/group_applications">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.led.AdvancedActivity"
+            android:label="@string/trackball_advanced_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

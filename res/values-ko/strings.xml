@@ -68,9 +68,7 @@
     <string name="trackball_category_add_summary">목록에 분류를 추가합니다.</string>
     <string name="trackball_category_remove_title">분류 제거</string>
     <string name="trackball_category_remove_summary">목록에서 분류를 제거합니다.</string>
-    <string name="trackball_remove_default_toast">기본 분류를 제거할 수 없습니다.</string>
     <string name="trackball_reset_all">모든 색과 분류 제거</string>
-    <string name="trackball_array_error">배열 에러가 발생하였습니다. 이 패키지는 기타 분류로 강제 이동됩니다.</string>
 
     <!-- Trackball color entries -->
     <string name="trackball_color_entry_green">녹색</string>
@@ -84,7 +82,6 @@
     <string name="trackball_color_entry_orange">주황색</string>
     <string name="trackball_color_entry_light_blue">옅은 파랑색</string>
     <string name="trackball_color_entry_random">임의</string>
-    <string name="trackball_color_entry_none">없음</string>
     <string name="trackball_color_entry_amber">황색</string>
 
     <!-- Trackball Settings : Warning dialog -->

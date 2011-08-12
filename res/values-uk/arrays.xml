@@ -134,14 +134,6 @@
         <item>15 с / 1 хв / 5 хв</item>
         <item>30 с / 2 хв / 5 хв</item>
     </string-array>
-    <string-array name="entries_ring_widget">
-        <item>Мелодія+вібро/Вібро</item>
-        <item>Мелодія/Вібро</item>
-        <item>Мелодія/Без звуку</item>
-        <item>Мелодія+вібро/Вібро/Без звуку</item>
-        <item>Мелодія/Вібро/Без звуку</item>
-        <item>Мелодія+вібро/Мелодія/Вібро./Без звуку</item>
-    </string-array>
     <string-array name="entries_flash_widget">
         <item>Звичайна</item>
         <item>Висока</item>

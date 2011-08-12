@@ -129,15 +129,6 @@
         <item>Głośność muzyki (domyślnie)</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Dźwięk+Wibracje/Wibracje</item>
-        <item>Dźwięk/Wibracje</item>
-        <item>Dźwięk/Cichy</item>
-        <item>Dźwięk+Wib/Wib/Cichy</item>
-        <item>Dźwięk/Wibracje/Cichy</item>
-        <item>Dźwięl+Wib/Dźwięk/Wib/Cichy</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normalna</item>
         <item>Wysoka</item>

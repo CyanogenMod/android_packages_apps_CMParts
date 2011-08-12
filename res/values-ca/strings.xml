@@ -113,9 +113,7 @@
     <string name="trackball_category_add_summary">Afegeix una categoria a la llista</string>
     <string name="trackball_category_remove_title">Elimina una categoria</string>
     <string name="trackball_category_remove_summary">Elimina una categoria de la llista</string>
-    <string name="trackball_remove_default_toast">No es pot eliminar aquesta categoria, ja que és la predeterminada.</string>
     <string name="trackball_reset_all">Restableix tots els colors i categories.</string>
-    <string name="trackball_array_error">Lamentablement hi ha hagut un error. Aquest paquet s\'ha col·locat a la categoria diversos.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">No tots els colors es mostren en tots els dispositius</string>
 
@@ -131,7 +129,6 @@
     <string name="trackball_color_entry_orange">Taronja</string>
     <string name="trackball_color_entry_light_blue">Blau cel</string>
     <string name="trackball_color_entry_random">Aleatori</string>
-    <string name="trackball_color_entry_none">Cap</string>
     <string name="trackball_color_entry_amber">Ambre</string>
 
     <!-- Trackball Settings : Warning dialog -->

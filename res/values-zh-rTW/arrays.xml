@@ -41,13 +41,37 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_status_bar_am_pm -->
 
+     <!-- skipping untranslatable /resources:0/string-array:name=entries_status_bar_signal -->
+
+     <!-- skipping untranslatable /resources:0/string-array:name=values_status_bar_signal -->
+
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_render_effect -->
+
     <!-- skipping untranslatable /resources:0/string-array:name=values_render_effect -->
+
+    <!-- skipping untranslatable /resources:0/string-array:name=render_entries -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=render_values -->
 
+    <string-array name="haptic_feedback_entries">
+        <item>跟隨系統設定</item>
+        <item>啟用</item>
+        <item>停用</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=haptic_feedback_values -->
+
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_trackball_colors -->
+
     <!-- skipping untranslatable /resources:0/string-array:name=pref_trackball_colors_values -->
 
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_dual_led_colors -->
+
     <!-- skipping untranslatable /resources:0/string-array:name=values_dual_led_colors -->
+
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_mixable_dual_led_colors -->
+
+    <!-- skipping untranslatable /resources:0/string-array:name=values_mixable_dual_led_colors -->
 
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2（快）</item>
@@ -197,14 +221,7 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_screentimeout_widget -->
 
-    <string-array name="entries_ring_widget">
-        <item>聲音＋震動／僅震動</item>
-        <item>僅聲音／僅震動</item>
-        <item>僅聲音／靜音</item>
-        <item>聲音＋震動／僅震動／靜音</item>
-        <item>僅聲音／僅震動／靜音</item>
-        <item>聲音＋震動／僅聲音／僅震動／靜音</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=entries_ring_widget -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_ring_widget -->
 
@@ -250,6 +267,14 @@
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_values -->
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>填滿色彩</item>
+        <item>自訂桌布</item>
+        <item>預設背境</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_background_values -->
 
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>不顯示</item>
@@ -323,5 +348,7 @@
         <item>自訂應用程式</item>
         <item>顯示／隱藏通知列</item>
     </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=values_long_press_menu -->
 
 </resources>

@@ -144,15 +144,6 @@
         <item>30s/2m/5m</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Geluid+Trillen/Trillen</item>
-        <item>Geluid/Trillen</item>
-        <item>Geluid/Trillen</item>
-        <item>Geluid+Tril/Tril/Stil</item>
-        <item>Geluid/Trillen/Stil</item>
-        <item>Geluid+Trillen/Geluid/Trillen/Stil</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normaal</item>
         <item>Hoog</item>

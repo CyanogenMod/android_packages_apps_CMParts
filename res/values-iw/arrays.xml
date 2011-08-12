@@ -120,13 +120,6 @@
     <item>15s/1m/5m</item>
     <item>30s/2m/5m</item>
   </string-array>
-  <string-array name="entries_ring_widget">
-    <item>צליל+רטט/רטט</item>
-    <item>צליל/רטט</item>
-    <item>צליל/שקט</item>
-    <item>צליל+רטט/רטט/שקט</item>
-    <item>צליל/רטט/שקט</item>
-  </string-array>
   <string-array name="entries_flash_widget">
     <item>רגיל</item>
     <item>High / Death Ray</item>

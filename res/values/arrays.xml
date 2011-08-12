@@ -137,6 +137,7 @@
     </string-array>
 
     <string-array name="entries_trackball_colors" translatable="false">
+        <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_white</item>
         <item>@string/trackball_color_entry_red</item>
@@ -148,10 +149,10 @@
         <item>@string/trackball_color_entry_orange</item>
         <item>@string/trackball_color_entry_light_blue</item>
         <item>@string/trackball_color_entry_random</item>
-        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="pref_trackball_colors_values" translatable="false">
+        <item>default</item>
         <item>green</item>
         <item>white</item>
         <item>red</item>
@@ -163,19 +164,18 @@
         <item>#ffa500</item>
         <item>#add8e6</item>
         <item>random</item>
-        <item>none</item>
     </string-array>
 
     <string-array name="entries_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_amber</item>
-        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="values_dual_led_colors" translatable="false">
+        <item>default</item>
         <item>green</item>
         <item>red</item>
-        <item>none</item>
     </string-array>
 
     <string-array name="pref_keypad_type_entries">
@@ -194,21 +194,41 @@
         <item>swe_qwerty</item>
     </string-array>
 
+<<<<<<< HEAD
+=======
+    <string-array name="pref_qtouch_num_entries">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="pref_qtouch_num_values" translatable="false">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+>>>>>>> upstream/gingerbread
     <string-array name="entries_mixable_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_red</item>
         <item>@string/trackball_color_entry_amber</item>
-        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="values_mixable_dual_led_colors" translatable="false">
+        <item>default</item>
         <item>green</item>
         <item>red</item>
         <item>yellow</item>
+<<<<<<< HEAD
         <item>none</item>
+=======
+>>>>>>> upstream/gingerbread
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Use application setting</item>
         <item>2 (Fast)</item>
         <item>3</item>
         <item>4 (Medium)</item>
@@ -217,13 +237,28 @@
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_values" translatable="false">
+        <item>default</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
     </string-array>
-    
+
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Use application settings</item>
+        <item>Force LED off</item>
+        <item>Force LED on for events</item>
+        <item>Force LED on</item>
+    </string-array>
+
+    <string-array name="pref_trackball_force_mode_values" translatable="false">
+        <item>default</item>
+        <item>forceoff</item>
+        <item>forceeventon</item>
+        <item>forceon</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_delay_entries">
         <item>Immediately</item>
         <item>1s</item>
@@ -452,13 +487,14 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Sound+Vibrate/Vibrate</item>
-        <item>Sound/Vibrate</item>
-        <item>Sound/Silent</item>
-        <item>Sound+Vib/Vib/Silent</item>
-        <item>Sound/Vibrate/Silent</item>
-        <item>Sound+Vibrate/Sound/Vibrate/Silent</item>
+    <string-array name="entries_ring_widget" translatable="false">
+        <item>@string/cm_sound_mode_soundVib_vib</item>
+        <item>@string/cm_sound_mode_sound_vib</item>
+        <item>@string/cm_sound_mode_sound_silent</item>
+        <item>@string/cm_sound_mode_soundVib_vib_silent</item>
+        <item>@string/cm_sound_mode_sound_vib_silent</item>
+        <item>@string/cm_sound_mode_soundVib_sound_vib_silent</item>
+        <item>@string/cm_sound_mode_vib_silent</item>
     </string-array>
 
     <string-array name="values_ring_widget" translatable="false">
@@ -468,6 +504,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <string-array name="entries_flash_widget">

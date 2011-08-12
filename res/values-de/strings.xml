@@ -91,6 +91,9 @@
     <string name="pref_rotation_180_title">180 Grad</string>
     <string name="pref_rotation_270_title">270 Grad</string>
 
+    <string name="pref_omap_dss_mode_title">DSI kernel Bug Workaround</string>
+    <string name="pref_omap_dss_mode_summary">Setzt den OMAP DSS update mode auf automatisch. Erzeugt leichtes Tearing des Displays, verhindert aber ein einfrieren des Displays und gelegentliche kernel panics.</string>
+
     <string name="pref_na_on_plug_title">Display beim Einstecken ausgeschaltet lassen.</string>
     <string name="pref_na_on_plug_summary">Wenn aktiviert, wird das Display beim Einstecken in USB oder Ladegerät nicht automatisch eingeschaltet. (z.B. nützlich bei Solarladegeräten)</string>
 
@@ -112,8 +115,19 @@
     <string name="ui_status_bar_toggle_brightness_summary">Erlaubt Änderung der Helligkeit, indem mit dem Finger über die Statuszeile gewischt wird.</string>
 
     <!-- User interface : LED Notifications -->
+    <string name="group_settings">Einstellungen</string>
     <string name="trackball_title">LED-Benachrichtigungen</string>
     <string name="trackball_summary">Trackball/LED-Benachrichtigungen kontrollieren</string>
+    <string name="trackball_category_misc">Ohne Kategorie</string>
+    <string name="trackball_category_unconfigured">Nicht konfiguriert</string>
+
+    <string name="trackball_app_email">E-Mail</string>
+    <string name="trackball_app_mms">SMS/MMS</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Google Mail</string>
+    <string name="trackball_app_gtalk">Google Talk</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Verpasster Anruf</string>
 
     <!-- User interface, WebView -->
     <string name="ui_webview_title">WebView</string>
@@ -152,6 +166,8 @@
     <string name="color_trackball_test_title">Teste Blinken</string>
     <string name="color_trackball_test_summary">Das Trackball-Blinken testen</string>
     <string name="dialog_clear_flash">Test beenden</string>
+    <string name="trackball_app_reset_title">Zurücksetzen</string>
+    <string name="trackball_app_reset_summary">Alle Einstellungen für diese Anwendung entfernen</string>
     <string name="trackball_advanced_title">Erweitert</string>
     <string name="pref_trackball_screen_title">Immer pulsieren</string>
     <string name="pref_trackball_screen_summary">Trackball-Licht pulsiert auch, wenn der Bildschirm an ist.</string>
@@ -170,18 +186,22 @@
     <string name="trackball_category_dialog_text">Neue Kategorie eingeben</string>
     <string name="trackball_category_list_title">Kategorie</string>
     <string name="trackball_category_list_summary">Kategorie auswählen</string>
-    <string name="trackball_category_screen">Kategorie verwalten</string>
+    <string name="trackball_category_screen">Kategorien verwalten</string>
     <string name="trackball_category_add_title">Kategorie hinzufügen</string>
     <string name="trackball_category_add_summary">Eine Kategorie der Liste hinzufügen</string>
     <string name="trackball_category_remove_title">Kategorie entfernen</string>
     <string name="trackball_category_remove_summary">Eine Kategorie aus der Liste entfernen</string>
-    <string name="trackball_remove_default_toast">Die Standardkategorie kann nicht entfernt werden.</string>
     <string name="trackball_reset_all">Alle Farben und Kategorien zurücksetzen.</string>
-    <string name="trackball_array_error">Leider ist ein Fehler aufgetreten. Dieses Paket ist in die Kategorie \"Verschiedenes\" verschoben worden.</string>
+
     <string name="trackball_color_notice_title">HINWEIS:</string>
     <string name="trackball_color_notice_summary">Auf manchen Geräten sind nicht alle Farben von der LED darstellbar.</string>
 
+    <string name="trackball_force_mode_title">LED-Modus</string>
+    <string name="trackball_force_mode_dialog">Modus auswählen</string>
+    <string name="trackball_force_mode_summary">Verhalten der LED konfigurieren</string>
+
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Anwendungseinstellung</string>
     <string name="trackball_color_entry_green">Grün</string>
     <string name="trackball_color_entry_white">Weiß</string>
     <string name="trackball_color_entry_red">Rot</string>
@@ -193,7 +213,6 @@
     <string name="trackball_color_entry_orange">Orange</string>
     <string name="trackball_color_entry_light_blue">Hellblau</string>
     <string name="trackball_color_entry_random">Zufällig</string>
-    <string name="trackball_color_entry_none">Keine</string>
     <string name="trackball_color_entry_amber">Amber</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -243,6 +262,14 @@
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
+    <string name="pref_lockscreen_custom_background_title">Hintergrund wählen</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Hintergrund wählen</string>
+    <string name="pref_lockscreen_custom_background_summary">Wähle ein Bild oder Farbfüllung als Hintergrund für den Lockscreen</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Aktuell: Farbfüllung</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Aktuell: Benutzerd. Hintergrund</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Aktuell: Hintergrundbild</string>
+    <string name="pref_lockscreen_background_result_successful">Hintergrund geändert</string>
+    <string name="pref_lockscreen_background_result_not_successful">Hintergrund nicht geändert</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Runterziehen zum Entsperren</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
@@ -422,7 +449,6 @@
     <string name="pref_render_effect_calibrated_cool">Kalibriert (N1) Kalt</string>
     <string name="pref_render_effect_red">Rot</string>
 
-
     <!-- Widget Types -->
     <string name="widget_render_effect_night">Nacht</string>
     <string name="widget_render_effect_terminal">Terminal</string>
@@ -434,7 +460,6 @@
     <string name="widget_render_effect_calibrated">Kal</string>
     <string name="widget_render_effect_calibrated_red">Kal Schwachrot</string>
     <string name="widget_render_effect_calibrated_cool">Kal Kalt</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Energie-Widget</string>
@@ -480,6 +505,13 @@
     <string name="pref_screentimeout_mode_summary">Verzögerung vor automatischer Bildschirmabschaltung anpassen</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Den Klingelmodus wählen</string>
+    <string name="cm_sound_mode_soundVib_vib">Töne+Vibration/Vibration</string>
+    <string name="cm_sound_mode_sound_vib">Töne/Vibration</string>
+    <string name="cm_sound_mode_sound_silent">Töne/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Töne+Vibration/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_sound_vib_silent">Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Töne+Vibration/Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_vib_silent">Vibration/Lautlos</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
     <string name="pref_flash_mode_summary">Wähle zwischen normaler und hoher Helligkeit der Taschenlampe</string>
 

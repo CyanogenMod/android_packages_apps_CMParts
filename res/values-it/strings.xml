@@ -105,6 +105,11 @@
     <string name="ui_status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permette di regolare la luminosità scorrendo il dito lungo la barra di stato.</string>
     <string name="ui_status_bar_toggle_info">La luminosità automatica è attiva</string>
+    <string name="ui_status_bar_cm_signal_text_title">Indicatore segnale alternativo</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Visualizza valore dBm al posto delle barre del segnale</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Barre</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Testo</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Testo con dBm</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifiche LED</string>
@@ -123,12 +128,24 @@
     <string name="pref_overscroll_weight_summary">Seleziona il peso degli elementi scorrevoli</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Impostazioni Lockscreen</string>
+    <string name="ui_lockscreen_title">Impostazioni blocco schermo</string>
     <string name="pref_lockscreen_delay_title">Ritardo</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Ritardo dopo timeout</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Ritardo dopo spegnimento</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo il timeout</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo averlo spento</string>
+    <string name="pref_lockscreen_security_title">Blocco di sicurezza</string>
+    <string name="pref_lockscreen_security_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Finchè la sicurezza di sblocco schermo è impostata su NESSUNA verranno utilizzate solo le impostazioni riguardanti il ritardo del blocco normale</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Ritardo dopo timeout</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Ritardo dopo spegnimento</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Di quanto ritardare il blocco di sicurezza dello schermo dopo il timeout</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Di quanto ritardare il blocco di sicurezza dello schermo dopo averlo spento</string>
+    <string name="pref_lockscreen_slide_title">Blocco normale</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Se il ritardo del blocco di sicurezza è uguale o minore di quello del blocco normale quest\'ultimo non verrà visualizzato, anche se attivo</string>
+    <string name="pref_lockscreen_slide_delay_title">Ritardo blocco normale</string>
+    <string name="pref_lockscreen_slide_delay_summary">Utilizza due ritardi diversi per le due tipologie di blocco schermo (sicuro/normale)</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Ritardo dopo timeout</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Ritardo dopo spegnimento</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo il timeout</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Di quanto ritardare il blocco dello schermo dopo averlo spento</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Scegli un colore</string>
@@ -170,9 +187,7 @@
     <string name="trackball_category_add_summary">Aggiungi una categoria alla lista</string>
     <string name="trackball_category_remove_title">Rimuovi categoria</string>
     <string name="trackball_category_remove_summary">Rimuovi una categoria dalla lista</string>
-    <string name="trackball_remove_default_toast">Non è possibile rimuovere la categoria di default.</string>
     <string name="trackball_reset_all">Ripristina le app e le categorie</string>
-    <string name="trackball_array_error">Purtroppo si è verificato un errore di array. Questa app è stata forzata nella categoria Miscellaneous.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string>
 
@@ -188,7 +203,6 @@
     <string name="trackball_color_entry_orange">Arancione</string>
     <string name="trackball_color_entry_light_blue">Blu Chiaro</string>
     <string name="trackball_color_entry_random">Random</string>
-    <string name="trackball_color_entry_none">Nessuno</string>
     <string name="trackball_color_entry_amber">Ambra</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -239,6 +253,11 @@
      <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_summary">Seleziona un\'immagine o un colore come sfondo del lockscreen</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Attuale : Colore</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Attuale : Immagine</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Attuale : Default</string>
+    <string name="pref_lockscreen_background_result_successful">Lo sfondo è stato modificato</string>
+    <string name="pref_lockscreen_background_result_not_successful">Lo sfondo non è stato modificato</string>
     <string name="pref_lockscreen_custom_icon_style_title">Icona applicazione personalizzata</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Utilizza l\'icona dell\'applicazione invece dell\'icona CM per l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Trascina in basso per sbloccare</string>
@@ -473,6 +492,13 @@
     <string name="pref_screentimeout_mode_summary">Scegli le modalità del tasto per il timeout dello schermo</string>
     <string name="pref_ring_mode_title">Mod. Audio</string>
     <string name="pref_ring_mode_summary">Scegli le modalità del tasto per l\'audio</string>
+    <string name="cm_sound_mode_soundVib_vib">Suono+Vibrazione/Vibrazione</string>
+    <string name="cm_sound_mode_sound_vib">Suono/Vibrazione</string>
+    <string name="cm_sound_mode_sound_silent">Suono/Silenzioso</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Suono+Vib/Vib/Silenzioso</string>
+    <string name="cm_sound_mode_sound_vib_silent">Suono/Vibrazione/Silenzioso</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Suono+Vib/Suono/Vib/Silenzioso</string>
+    <string name="cm_sound_mode_vib_silent">Vibrazione/Silenzioso</string>
     <string name="pref_flash_mode_title">Mod. Torcia</string>
     <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray</string>
 

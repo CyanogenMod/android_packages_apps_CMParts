@@ -63,6 +63,12 @@ public class InputActivity extends PreferenceActivity implements
 
     private static final String KEYPAD_TYPE_DEFAULT = "euro_qwerty";
 
+    private static final String QTOUCH_NUM_PREF = "pref_qtouch_num";
+
+    private static final String QTOUCH_NUM_PERSIST_PROP = "persist.sys.qtouch_num";
+
+    private static final String QTOUCH_NUM_DEFAULT = "2";
+
     private static final String BUTTON_CATEGORY = "pref_category_button_settings";
 
     private static final String USER_DEFINED_KEY1 = "pref_user_defined_key1";
@@ -84,6 +90,8 @@ public class InputActivity extends PreferenceActivity implements
     private CheckBoxPreference mDockObserverOffPref;
 
     private ListPreference mKeypadTypePref;
+
+    private ListPreference mQtouchNumPref;
 
     private Preference mUserDefinedKey1Pref;
 
@@ -134,6 +142,11 @@ public class InputActivity extends PreferenceActivity implements
         String keypadType = SystemProperties.get(KEYPAD_TYPE_PERSIST_PROP, KEYPAD_TYPE_DEFAULT);
         mKeypadTypePref.setValue(keypadType);
         mKeypadTypePref.setOnPreferenceChangeListener(this);
+
+        mQtouchNumPref = (ListPreference) prefSet.findPreference(QTOUCH_NUM_PREF);
+        String qtouchNum = SystemProperties.get(QTOUCH_NUM_PERSIST_PROP, QTOUCH_NUM_DEFAULT);
+        mQtouchNumPref.setValue(qtouchNum);
+        mQtouchNumPref.setOnPreferenceChangeListener(this);
 
         PreferenceCategory buttonCategory = (PreferenceCategory) prefSet
                 .findPreference(BUTTON_CATEGORY);
@@ -232,6 +245,10 @@ public class InputActivity extends PreferenceActivity implements
         if (preference == mKeypadTypePref) {
             String keypadType = (String) newValue;
             SystemProperties.set(KEYPAD_TYPE_PERSIST_PROP, keypadType);
+            return true;
+        } else if (preference == mQtouchNumPref) {
+            String qtouchNum = (String) newValue;
+            SystemProperties.set(QTOUCH_NUM_PERSIST_PROP, qtouchNum);
             return true;
         }
         return false;

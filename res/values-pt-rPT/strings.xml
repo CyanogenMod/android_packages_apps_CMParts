@@ -112,9 +112,7 @@
     <string name="trackball_category_add_summary">Adicionar uma categoria à lista</string>
     <string name="trackball_category_remove_title">Remover categoria</string>
     <string name="trackball_category_remove_summary">Remover uma categoria da lista</string>
-    <string name="trackball_remove_default_toast">Não pode remover esta categoria porque é a padrão.</string>
     <string name="trackball_reset_all">Reset a todas as cores e categorias.</string>
-    <string name="trackball_array_error">Infelizmente houve um erro. Este pacote foi forçado para a categoria Diversos.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">Nem todas as cores serão apresentadas em todos os aparelhos.</string>
 
@@ -130,7 +128,6 @@
     <string name="trackball_color_entry_orange">Laranja</string>
     <string name="trackball_color_entry_light_blue">Azul Claro</string>
     <string name="trackball_color_entry_random">Aleatório</string>
-    <string name="trackball_color_entry_none">Nenhum</string>
     <string name="trackball_color_entry_amber">Âmbar</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -380,6 +377,13 @@
     <string name="pref_screentimeout_mode_summary">Escolher como o botão de tempo de ecrã altera o tempo de ecrã</string>
     <string name="pref_ring_mode_title">Modos de som</string>
     <string name="pref_ring_mode_summary">Escolher como o botão de som altera o som</string>
+    <string name="cm_sound_mode_soundVib_vib">Som+Vibrar/Vibrar</string>
+    <string name="cm_sound_mode_sound_vib">Som/Vibrar</string>
+    <string name="cm_sound_mode_sound_silent">Som/Silêncio</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Som+Vibrar/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_sound_vib_silent">Som/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Som+Vibrar/Som/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_vib_silent">Vibrar/Silêncio</string>
     <string name="pref_flash_mode_title">Modo flash</string>
     <string name="pref_flash_mode_summary">Escolher elevado/raio mortal</string>
 

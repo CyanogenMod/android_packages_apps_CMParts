@@ -44,11 +44,19 @@
   </string-array>
 
   <string-array name="pref_trackball_blink_rate_entries">
+    <item>Anwendungseinstellung</item>
     <item>2 (Schnell)</item>
     <item>3</item>
     <item>4 (Mittel)</item>
     <item>5</item>
     <item>6 (Langsam)</item>
+  </string-array>
+
+  <string-array name="pref_trackball_force_mode_entries">
+    <item>Anwendungseinstellung</item>
+    <item>LED immer deaktivieren</item>
+    <item>LED nur bei Ereignisbenachrichtigung</item>
+    <item>LED immer aktivieren</item>
   </string-array>
 
   <string-array name="pref_lockscreen_delay_entries">
@@ -165,15 +173,6 @@
     <item>30Sek/2Min/5Min</item>
   </string-array>
 
-  <string-array name="entries_ring_widget">
-    <item>Töne+Vibration/Vibration</item>
-    <item>Töne/Vibration</item>
-    <item>Töne/Lautlos</item>
-    <item>Töne+Vibration/Vibration/Lautlos</item>
-    <item>Töne/Vibration/Lautlos</item>
-    <item>Töne+Vibration/Töne/Vibration/Lautlos</item>
-  </string-array>
-
   <string-array name="entries_flash_widget">
     <item>Normal</item>
     <item>Hoch</item>
@@ -212,6 +211,12 @@
     <item>Tabs zum Schieben</item>
     <item>Rotierende Tabs</item>
     <item>Rotierend umgestaltet</item>
+  </string-array>
+
+  <string-array name="pref_lockscreen_background_entries">
+    <item>Farbfüllung</item>
+    <item>Benutzerd. Hintergrundbild</item>
+    <item>Hintergrundbild</item>
   </string-array>
 
   <string-array name="pref_lockscreen_music_headset_entries">

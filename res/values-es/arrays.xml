@@ -166,15 +166,6 @@
         <item>30s/2m/5m</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Sonido+Vibración/Vibración</item>
-        <item>Sonido/Vibración</item>
-        <item>Sonido/Silencio</item>
-        <item>Sonido+Vib/Vib/Silencio</item>
-        <item>Sonido/Vibración/Silencio</item>
-        <item>Sonido+Vibración/Sonido/Vibración/Silencio</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normal</item>
         <item>Alto / Rayo Mortal</item>

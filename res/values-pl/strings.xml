@@ -170,9 +170,7 @@
     <string name="trackball_category_add_summary">Dodaje kategorię do listy</string>
     <string name="trackball_category_remove_title">Usuń kategorię</string>
     <string name="trackball_category_remove_summary">Usuwa kategorię z listy</string>
-    <string name="trackball_remove_default_toast">Nie można usunąć domyślnej kategorii</string>
     <string name="trackball_reset_all">Zresetuj kolory i kategorie.</string>
-    <string name="trackball_array_error">Wystąpił błąd tabeli. Pakiet został umieszczony w kategorii Miscellaneous</string>
     <string name="trackball_color_notice_title">UWAGA:</string>
     <string name="trackball_color_notice_summary">Niektóre kolory mogą być nieobsługiwane przez urządzenie.</string>
 
@@ -188,7 +186,6 @@
     <string name="trackball_color_entry_orange">Pomarańczowy</string>
     <string name="trackball_color_entry_light_blue">Błękitny</string>
     <string name="trackball_color_entry_random">Losowy</string>
-    <string name="trackball_color_entry_none">Brak</string>
     <string name="trackball_color_entry_amber">Bursztynowy</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -465,6 +462,13 @@
     <string name="pref_screentimeout_mode_summary">Wybierz tryby</string>
     <string name="pref_ring_mode_title">Profil dźwięku</string>
     <string name="pref_ring_mode_summary">Wybierz tryby</string>
+    <string name="cm_sound_mode_soundVib_vib">Dźwięk+Wibracje/Wibracje</string>
+    <string name="cm_sound_mode_sound_vib">Dźwięk/Wibracje</string>
+    <string name="cm_sound_mode_sound_silent">Dźwięk/Cichy</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Dźwięk+Wib/Wib/Cichy</string>
+    <string name="cm_sound_mode_sound_vib_silent">Dźwięk/Wibracje/Cichy</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Dźwięl+Wib/Dźwięk/Wib/Cichy</string>
+    <string name="cm_sound_mode_vib_silent">Wib/Cichy</string>
     <string name="pref_flash_mode_title">Latarka</string>
     <string name="pref_flash_mode_summary">Dostosuj siłę</string>
 

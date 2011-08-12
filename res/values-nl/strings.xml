@@ -161,9 +161,7 @@
     <string name="trackball_category_add_summary">Voeg categorie toe aan de lijst</string>
     <string name="trackball_category_remove_title">Verwijder categorie</string>
     <string name="trackball_category_remove_summary">Verwijder categorie van de lijst</string>
-    <string name="trackball_remove_default_toast">Kan deze categorie niet verwijderen, aangezien het de standaard categorie is</string>
     <string name="trackball_reset_all">Reset alle kleuren en categorieën</string>
-    <string name="trackball_array_error">Helaas, error!</string>
     <string name="trackball_color_notice_title">NB:</string>
     <string name="trackball_color_notice_summary">Niet alle kleuren worden op alle toestellen weergegeven</string>
 
@@ -179,7 +177,6 @@
     <string name="trackball_color_entry_orange">Oranje</string>
     <string name="trackball_color_entry_light_blue">Licht blauw</string>
     <string name="trackball_color_entry_random">Willekeurig</string>
-    <string name="trackball_color_entry_none">Geen</string>
     <string name="trackball_color_entry_amber">Oranje</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -447,6 +444,13 @@
     <string name="pref_screentimeout_mode_summary">Kies de instellingen voor de scherm time-out knop</string>
     <string name="pref_ring_mode_title">Profiel knop</string>
     <string name="pref_ring_mode_summary">Kies welke profielen gekozen kunenn worden bij het indrukken van de profiel knop</string>
+    <string name="cm_sound_mode_soundVib_vib">Geluid+Trillen/Trillen</string>
+    <string name="cm_sound_mode_sound_vib">Geluid/Trillen</string>
+    <string name="cm_sound_mode_sound_silent">Geluid/Trillen</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Geluid+Tril/Tril/Stil</string>
+    <string name="cm_sound_mode_sound_vib_silent">Geluid/Trillen/Stil</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Geluid+Trillen/Geluid/Trillen/Stil</string>
+    <string name="cm_sound_mode_vib_silent">Trillen/Stil</string>
     <string name="pref_flash_mode_title">Flashlight knop</string>
     <string name="pref_flash_mode_summary">Kies fel / Death Ray</string>
 

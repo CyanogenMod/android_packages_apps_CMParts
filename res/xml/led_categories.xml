@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:key="category_add"
+                android:persistent="false"
+                android:title="@string/trackball_category_add_title"
+                android:summary="@string/trackball_category_add_summary" />
+
+    <ListPreference android:key="category_remove"
+                    android:persistent="false"
+                    android:title="@string/trackball_category_remove_title"
+                    android:dialogTitle="@string/trackball_category_remove_summary"
+                    android:summary="@string/trackball_category_remove_summary" />
+
+</PreferenceScreen>

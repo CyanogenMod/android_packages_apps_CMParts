@@ -157,15 +157,6 @@
         <item>30秒 /2分钟 /5分钟 </item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>铃声 + 震动 / 震动</item>
-        <item>铃声 / 震动</item>
-        <item>铃声 / 静音</item>
-        <item>铃声 + 震动 / 震动 / 静音</item>
-        <item>铃声 / 震动 / 震动 / 静音</item>
-        <item>铃声 + 震动 铃声 / 震动 / 震动 / 静音</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>正常</item>
         <item>强光 / 死光</item>

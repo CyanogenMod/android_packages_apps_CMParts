@@ -106,9 +106,7 @@
   <string name="trackball_category_add_summary">הוספת קטגוריה לרשימה</string>
   <string name="trackball_category_remove_title">הסרת קטגוריה</string>
   <string name="trackball_category_remove_summary">הסרת קטגוריה מתוך הרשימה</string>
-  <string name="trackball_remove_default_toast">אין אפשרות להסיר קטגורית ברירת מחדל.</string>
   <string name="trackball_reset_all">איפוס כל הצבעים וקטגוריות.</string>
-  <string name="trackball_array_error">התרחשה שגיאה בערכים. חבילה זו נכפתה לקטגוריה שונות</string>
   <string name="trackball_color_notice_title">הערה:</string>
   <string name="trackball_color_notice_summary">לא כל הצבעים יוצגו על כל המכשירים.</string>
 
@@ -124,7 +122,6 @@
     <string name="trackball_color_entry_orange">כתום</string>
     <string name="trackball_color_entry_light_blue">תכלת</string>
     <string name="trackball_color_entry_random">אקראי</string>
-    <string name="trackball_color_entry_none">ללא</string>
     <string name="trackball_color_entry_amber">ענבר</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -319,6 +316,13 @@
   <string name="pref_screentimeout_mode_summary">בחר כיצד הלחצן כיבוי מסך משנה מצבים</string>
   <string name="pref_ring_mode_title">מצבי קול</string>
   <string name="pref_ring_mode_summary">בחר כיצד לחצן השמע משנה מצבים</string>
+  <string name="cm_sound_mode_soundVib_vib">צליל+רטט/רטט</string>
+  <string name="cm_sound_mode_sound_vib">צליל/רטט</string>
+  <string name="cm_sound_mode_sound_silent">צליל/שקט</string>
+  <string name="cm_sound_mode_soundVib_vib_silent">צליל+רטט/רטט/שקט</string>
+  <string name="cm_sound_mode_sound_vib_silent">צליל/רטט/שקט</string>
+  <string name="cm_sound_mode_soundVib_sound_vib_silent">צליל+רטט/צליל/רטט/שקט</string>
+  <string name="cm_sound_mode_vib_silent">רטט/שקט</string>
   <string name="pref_flash_mode_title">מצב פלאש</string>
   <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 

@@ -168,9 +168,7 @@
     <string name="trackball_category_add_summary">Lägg till en kategori till listan</string>
     <string name="trackball_category_remove_title">Ta bort kategori</string>
     <string name="trackball_category_remove_summary">Ta bort en kategori från listan</string>
-    <string name="trackball_remove_default_toast">Kan inte ta denna kategori då det är standardkategorin.</string>
     <string name="trackball_reset_all">Återställ alla färger och kategorier.</string>
-    <string name="trackball_array_error">Tyvärr inträffade ett listfel. Paketet har tvingats läggas i kategorin Övrigt.</string>
     <string name="trackball_color_notice_title">OBS:</string>
     <string name="trackball_color_notice_summary">Alla färger visas inte på alla enheter.</string>
 
@@ -186,7 +184,6 @@
     <string name="trackball_color_entry_orange">Orange</string>
     <string name="trackball_color_entry_light_blue">Ljusblå</string>
     <string name="trackball_color_entry_random">Slumpmässig</string>
-    <string name="trackball_color_entry_none">Ingen</string>
     <string name="trackball_color_entry_amber">Bärnsten</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -456,6 +453,13 @@
     <string name="pref_screentimeout_mode_summary">Välj hur knappen för skärmtidsgräns ändrar lägen</string>
     <string name="pref_ring_mode_title">Ljudlägen</string>
     <string name="pref_ring_mode_summary">Välj hur knappen för ljud ändrar lägen</string>
+    <string name="cm_sound_mode_soundVib_vib">Ljud+Vibration/Vibration</string>
+    <string name="cm_sound_mode_sound_vib">Ljud/Vibration</string>
+    <string name="cm_sound_mode_sound_silent">Ljud/Tyst</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Ljud+Vibration/Vibration/Tyst</string>
+    <string name="cm_sound_mode_sound_vib_silent">Ljud/Vibration/Tyst</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ljud+Vibration/Ljud/Vibration/Tyst</string>
+    <string name="cm_sound_mode_vib_silent">Vibration/Tyst</string>
     <string name="pref_flash_mode_title">Blixtläge</string>
     <string name="pref_flash_mode_summary">Välj Hög / Death Ray</string>
 

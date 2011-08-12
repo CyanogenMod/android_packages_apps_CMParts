@@ -140,9 +140,7 @@
   <string name="trackball_category_add_summary">Додання категорії до списку</string>
   <string name="trackball_category_remove_title">Видалити категорію</string>
   <string name="trackball_category_remove_summary">Видалення категорії зі списку</string>
-  <string name="trackball_remove_default_toast">Неможливо видалити типову категорію.</string>
   <string name="trackball_reset_all">Скидання всіх налаштувань кольорів і категорій.</string>
-  <string name="trackball_array_error">Сталася помилка масиву. Пакет переміщений до категорії Різне.</string>
   <string name="trackball_color_notice_title">ПРИМІТКА:</string>
   <string name="trackball_color_notice_summary">не всі пристрої здатні відтворити усю гаму кольорів.</string>
 
@@ -158,7 +156,6 @@
     <string name="trackball_color_entry_orange">Помаранчевий</string>
     <string name="trackball_color_entry_light_blue">Світло-синій</string>
     <string name="trackball_color_entry_random">Випадковий</string>
-    <string name="trackball_color_entry_none">Жоден</string>
     <string name="trackball_color_entry_amber">Бурштиновий</string>
   <string name="notification_battery_warning_title">УВАГА: активація параметра може пришвидшити розряд батареї</string>
   <string name="notification_battery_warning">Активація параметра призводить до збільшення споживання струму на ~ 3% на годину. Якщо ви помітили збільшення споживання під час миготіння трекболу, майте це на увазі. Не вмикайте якщо бажаєте зменшити розряд батареї.</string>
@@ -375,6 +372,13 @@
   <string name="pref_screentimeout_mode_summary">Виберіть значення, які може набути затримка вимк. екрана, за натисканням одноіменної кнопки</string>
   <string name="pref_ring_mode_title">Звук</string>
   <string name="pref_ring_mode_summary">Виберіть режими, які встановлюватимуться за натисканням кнопки \u201CЗвук\u201D</string>
+  <string name="cm_sound_mode_soundVib_vib">Мелодія+вібро/Вібро</string>
+  <string name="cm_sound_mode_sound_vib">Мелодія/Вібро</string>
+  <string name="cm_sound_mode_sound_silent">Мелодія/Без звуку</string>
+  <string name="cm_sound_mode_soundVib_vib_silent">Мелодія+вібро/Вібро/Без звуку</string>
+  <string name="cm_sound_mode_sound_vib_silent">Мелодія/Вібро/Без звуку</string>
+  <string name="cm_sound_mode_soundVib_sound_vib_silent">Мелодія+вібро/Мелодія/Вібро/Без звуку</string>
+  <string name="cm_sound_mode_vib_silent">Вібро/Без звуку</string>
   <string name="pref_flash_mode_title">Ліхтарик</string>
   <string name="pref_flash_mode_summary">Виберіть інтенсивність світіння ліхтарика</string>
   <string name="backlight_title">Автоматичне підсвічування</string>

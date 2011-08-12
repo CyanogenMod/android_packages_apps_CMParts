@@ -82,6 +82,18 @@
 
 	</PreferenceCategory>
 
+	<PreferenceCategory android:title="@string/qtouch_title"
+		android:key="pref_category_qtouch_settings">
+
+		<ListPreference android:key="pref_qtouch_num"
+			android:dialogTitle="@string/pref_qtouch_num_title"
+			android:title="@string/pref_qtouch_num_title"
+			android:summary="@string/pref_qtouch_num_summary"
+			android:entries="@array/pref_qtouch_num_entries"
+			android:entryValues="@array/pref_qtouch_num_values" />
+
+	</PreferenceCategory>
+
 	<PreferenceCategory android:title="@string/dock_title"
 		android:key="pref_category_dock_settings">
 

@@ -160,9 +160,7 @@
     <string name="trackball_category_add_summary">リストにカテゴリを追加する</string>
     <string name="trackball_category_remove_title">カテゴリを削除</string>
     <string name="trackball_category_remove_summary">リストからカテゴリを削除する</string>
-    <string name="trackball_remove_default_toast">デフォルトカテゴリを削除することはできません。</string>
     <string name="trackball_reset_all">すべてのカテゴリとカラーをリセット</string>
-    <string name="trackball_array_error">残念なことに配列エラーが発生しました。このパッケージは雑多カテゴリに追加されました。</string>
     <string name="trackball_color_notice_title">ノート</string>
     <string name="trackball_color_notice_summary">すべての色がすべてのデバイスで使用できるわけではありません。</string>
 
@@ -178,7 +176,6 @@
     <string name="trackball_color_entry_orange">オレンジ</string>
     <string name="trackball_color_entry_light_blue">ライトブルー</string>
     <string name="trackball_color_entry_random">ランダム</string>
-    <string name="trackball_color_entry_none">なし</string>
     <string name="trackball_color_entry_amber">アンバー</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -451,6 +448,13 @@
     <string name="pref_screentimeout_mode_summary">スクリーンタイムアウトトグルで変更するモードの選択</string>
     <string name="pref_ring_mode_title">サウンド</string>
     <string name="pref_ring_mode_summary">サウンドトグルで変更するモードの選択</string>
+    <string name="cm_sound_mode_soundVib_vib">音と振動/振動</string>
+    <string name="cm_sound_mode_sound_vib">音/振動</string>
+    <string name="cm_sound_mode_sound_silent">音/サイレント</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">音と振動/振動/サイレント</string>
+    <string name="cm_sound_mode_sound_vib_silent">音/振動/サイレント</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">音と振動/音/振動/サイレント</string>
+    <string name="cm_sound_mode_vib_silent">振動/サイレント</string>
     <string name="pref_flash_mode_title">フラッシュ</string>
     <string name="pref_flash_mode_summary">HighかDeath Rayを選択</string>
 

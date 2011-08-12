@@ -76,10 +76,16 @@
     <string name="ui_status_bar_toggle_brightness">Rétroéclairage</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permet d\'ajuster la luminosité en faisant glisser dans la barre</string>
     <string name="ui_status_bar_toggle_info">Le rétroéclairage automatique désactive cette option</string>
+    <string name="ui_status_bar_cm_signal_text_title">Niveau de réception GSM</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Afficher la valeur en dBm et/ou les barres de niveau</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Barres de niveau</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Numérique</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Numérique dBm</string>
 
     <!-- User interface : LED Notifications -->
+    <string name="group_settings">Paramètres</string>
     <string name="trackball_title">Notifications par LED</string>
-    <string name="trackball_summary">Paramètres concernant la couleur des LED et le clignotement</string>
+    <string name="trackball_summary">Couleurs et type de clignotement des notifications par LED</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Surdéfilement</string>
@@ -96,11 +102,21 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Paramètres de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_delay_title">Délai</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Délai avant timeout</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Délai avant veille</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Temps à attendre avant d\'éteindre l\'écran si l\'appareil n\'est pas déverrouillé</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Temps à attendre entre l\'extinction automatique de l\'écran et le verrouillage</string>
-
+    <string name="pref_lockscreen_security_title">Ecran de sécurité</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Lorsque l\'écran de verrouillage est \"inactif si sécurisé\", seuls ces paramètres sont utilisés, pas ceux du \"Slide Lock\"</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Timeout écran</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Délai verrouillage</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Délai avant l\'extinction automatique de l\'écran si l\'appareil n\'est pas déverrouillé</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Délai avant l\'activation du verrouillage lorsque l\'on éteint l\'écran</string>
+    <string name="pref_lockscreen_slide_title">Slide Lock</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Note</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Even if enabled, the unsecured slide lock will only appear if the security lock delay is longer than the slide lock delay</string>
+    <string name="pref_lockscreen_slide_delay_title">Délai écran de sécurité</string>
+    <string name="pref_lockscreen_slide_delay_summary">Utiliser un autre délai avant d\'activer l\'écran de sécurité</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Délai du Slide Lock</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Délai avant l\'activation du Slide Lock lorsque l\'écran est mis en veille</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Délai arrêt manuel</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Délai avant l\'activation du Slide Lock lorsque l\'on éteint manuellement l\'écran</string>
     <!-- Color Picker -->
     <string name="title_color_picker">Choisir une couleur</string>
     <string name="msg_color_picker">Appuyer au centre pour confirmer.\nBouton retour pour annuler</string>
@@ -141,12 +157,22 @@
     <string name="trackball_category_add_summary">Ajoute une catégorie à la liste</string>
     <string name="trackball_category_remove_title">Retirer catégorie</string>
     <string name="trackball_category_remove_summary">Retire une catégorie de la liste</string>
-    <string name="trackball_remove_default_toast">Impossible de retirer la catégorie par défaut.</string>
     <string name="trackball_reset_all">RàZ des couleurs et catégories</string>
     <string name="trackball_color_notice_title">NOTE :</string>
     <string name="trackball_color_notice_summary">Seules certaines couleurs seront visibles sur certains appareils.</string>
+    <string name="trackball_category_unconfigured">Non configurés</string>
+    <string name="trackball_category_misc">Divers</string>
+    <string name="trackball_app_reset_title">Remise à zéro</string>
+    <string name="trackball_app_reset_summary">Retirer les paramètres définis pour cette application</string>
+    <string name="trackball_force_mode_title">Mode LED</string>
+    <string name="trackball_force_mode_dialog">Sélection du mode</string>
+    <string name="trackball_force_mode_summary">Définir le comportement de la LED</string>
+
+    <string name="trackball_app_mms">Messages</string>
+    <string name="trackball_app_dialer">Appels manqués</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Paramètre application</string>
     <string name="trackball_color_entry_green">Vert</string>
     <string name="trackball_color_entry_white">Blanc</string>
     <string name="trackball_color_entry_red">Rouge</string>
@@ -158,7 +184,6 @@
     <string name="trackball_color_entry_orange">Orange</string>
     <string name="trackball_color_entry_light_blue">Bleu ciel</string>
     <string name="trackball_color_entry_random">Aléatoire</string>
-    <string name="trackball_color_entry_none">Aucune</string>
     <string name="trackball_color_entry_amber">Orange</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -545,8 +570,9 @@
     <string name="gestures_button_add">Ajouter un geste</string>
     <string name="gestures_button_discard">Annuler</string>
     <string name="gestures_button_done">Terminé</string>
+    <string name="gestures_draw_label">Geste:</string>
     <string name="gestures_error_missing_shortcut">Vous devez choisir une action pour ce geste !</string>
-    <string name="gestures_save_success">Geste sauvé dans %s</string>
+    <string name="gestures_save_success">Geste enregistré pour %s</string>
     <string name="gestures_cancel_action">Annuler</string>
     <string name="gestures_loading">Chargement des gestes...</string>
     <string name="gestures_empty">Aucun geste</string>
@@ -561,7 +587,6 @@
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: Vous devez activer le déverrouillage par trackball, touche menu ou par geste afin que cette option soit disponible</string>
     <string name="gestures_already_present">Attention: Un geste similaire est associé à une autre action !</string>
     <string name="gestures_run_in_background">Exécuter en arrière-plan</string>
-    <string name="gestures_explain_create_screen">Choisissez une action à effectuer et dessinez un geste sur l\'écran.</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Voir liste des modifications</string>

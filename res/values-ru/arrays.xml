@@ -153,15 +153,6 @@
         <item>30сек/2мин/5мин</item>
     </string-array>
 
-    <string-array name="entries_ring_widget" translatable="false">
-        <item>Звук+Вибро/Вибро</item>
-        <item>Звук/Вибро</item>
-        <item>Звук/Беззвучный</item>
-        <item>Звук+Вибро/Вибро/Беззвучный</item>
-        <item>Звук/Вибро/Беззвучный</item>
-        <item>Звук+Вибро/Звук/Вибро/Беззвучный</item>
-    </string-array>
-
     <string-array name="entries_flash_widget" translatable="false">
         <item>Обычный</item>
         <item>Полная яркость</item>

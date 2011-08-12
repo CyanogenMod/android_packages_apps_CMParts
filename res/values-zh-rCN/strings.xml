@@ -169,9 +169,7 @@
     <string name="trackball_category_add_summary">向类别列表中添加一个新的类别</string>
     <string name="trackball_category_remove_title">删除类别</string>
     <string name="trackball_category_remove_summary">从类别列表中删除一个类别</string>
-    <string name="trackball_remove_default_toast">无法删除默认类别</string>
     <string name="trackball_reset_all">重置所有的颜色与类别设置</string>
-    <string name="trackball_array_error">抱歉，发生了一个数组错误，该应用程序已经被强制列入其他类别。</string>
     <string name="trackball_color_notice_title">注意：</string>
     <string name="trackball_color_notice_summary">并非所有颜色能在所有设备上显示。</string>
 
@@ -187,7 +185,6 @@
     <string name="trackball_color_entry_orange">橙色</string>
     <string name="trackball_color_entry_light_blue">浅蓝色</string>
     <string name="trackball_color_entry_random">随机</string>
-    <string name="trackball_color_entry_none">无</string>
     <string name="trackball_color_entry_amber">琥珀</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -462,6 +459,13 @@
     <string name="pref_screentimeout_mode_summary">选择屏幕超时按钮的切换方式</string>
     <string name="pref_ring_mode_title">声音切换模式</string>
     <string name="pref_ring_mode_summary">选择声音按钮的切换方式</string>
+    <string name="cm_sound_mode_soundVib_vib">铃声 + 震动 / 震动</string>
+    <string name="cm_sound_mode_sound_vib">铃声 / 震动</string>
+    <string name="cm_sound_mode_sound_silent">铃声 / 静音</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">铃声 + 震动 / 震动 / 静音</string>
+    <string name="cm_sound_mode_sound_vib_silent">铃声 / 震动 / 震动 / 静音</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">铃声 + 震动 铃声 / 震动 / 震动 / 静音</string>
+    <string name="cm_sound_mode_vib_silent">震动 / 静音</string>
     <string name="pref_flash_mode_title">手电筒切换模式</string>
     <string name="pref_flash_mode_summary">选择高亮度/死亡射线</string>
 

@@ -170,9 +170,7 @@
     <string name="trackball_category_add_summary">Добавить категорию в список</string>
     <string name="trackball_category_remove_title">Удалить категорию</string>
     <string name="trackball_category_remove_summary">Удалить категорию из списка</string>
-    <string name="trackball_remove_default_toast">Невозможно удалить категорию, так как это категория по умолчанию.</string>
     <string name="trackball_reset_all">Сброс всех цветов и категорий.</string>
-    <string name="trackball_array_error">К сожалению, произошла ошибка. Этот пакет был принудительно помещен в категорию Разное.</string>
     <string name="trackball_color_notice_title">ПРИМЕЧАНИЕ:</string>
     <string name="trackball_color_notice_summary">На некоторых устройствах будут отображаться не все цвета</string>
 
@@ -188,7 +186,6 @@
     <string name="trackball_color_entry_orange">Оранжевый</string>
     <string name="trackball_color_entry_light_blue">Светло-синий</string>
     <string name="trackball_color_entry_random">Случайно</string>
-    <string name="trackball_color_entry_none">Нет</string>
     <string name="trackball_color_entry_amber">Жёлтый</string>
 
     <!--Trackball Settings : Warning dialog -->
@@ -474,6 +471,13 @@
     <string name="pref_screentimeout_mode_summary">Укажите, какие режимы отключения экрана будут меняться кнопкой \"Задержка выкл. экрана\"</string>
     <string name="pref_ring_mode_title">Режимы звука</string>
     <string name="pref_ring_mode_summary">Укажите, какие режимы будут меняться кнопкой \"Звук\"</string>
+    <string name="cm_sound_mode_soundVib_vib">Звук+Вибро/Вибро</string>
+    <string name="cm_sound_mode_sound_vib">Звук/Вибро</string>
+    <string name="cm_sound_mode_sound_silent">Звук/Беззвучный</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Звук+Вибро/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_sound_vib_silent">Звук/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Звук+Вибро/Звук/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_vib_silent">Вибро/Беззвучный</string>
     <string name="pref_flash_mode_title">Режимы фонарика</string>
     <string name="pref_flash_mode_summary">Яркий / Луч смерти</string>
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application list, filled later -->
+    <PreferenceCategory android:key="applications"
+                        android:persistent="false"
+                        android:title="@string/group_applications" />
+
+    <!-- Settings -->
+    <PreferenceCategory android:title="@string/group_settings">
+
+        <Preference android:key="categories"
+                    android:persistent="false"
+                    android:title="@string/trackball_category_screen" />
+
+        <Preference android:key="advanced"
+                    android:persistent="false"
+                    android:title="@string/trackball_advanced_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

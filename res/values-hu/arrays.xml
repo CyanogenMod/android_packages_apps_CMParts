@@ -150,15 +150,6 @@
         <item>30s/2m/5m</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Hang+Rezgés/Rezgés</item>
-        <item>Hang/Rezgés</item>
-        <item>Hang/Csendes</item>
-        <item>Hang+Vib/Vib/Csendes</item>
-        <item>Hang/Rezgés/Csendes</item>
-        <item>Hang+Rezgés/Hang/Rezgés/Csendes</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normál</item>
         <item>Magas / Halálsugár</item>

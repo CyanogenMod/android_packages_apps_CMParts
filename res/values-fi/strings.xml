@@ -147,9 +147,7 @@
     <string name="trackball_category_add_summary">Lisää kategoria listaan</string>
     <string name="trackball_category_remove_title">Poista kategoria</string>
     <string name="trackball_category_remove_summary">Poista kategoria listasta</string>
-    <string name="trackball_remove_default_toast">Ei voida poistaa kategoriaa, koska se on valittu oletuksena.</string>
     <string name="trackball_reset_all">Nollaa kaikki värit ja kategoriat.</string>
-    <string name="trackball_array_error">Taulukkovirhe. Tämä paketti pakotettiin Sekalaiset-kategoriaan.</string>
     <string name="trackball_color_notice_title">HUOMAUTUS:</string>
     <string name="trackball_color_notice_summary">Kaikki värit eivät toimi kaikilla laitteilla.</string>
 
@@ -165,7 +163,6 @@
     <string name="trackball_color_entry_orange">Oranssi</string>
     <string name="trackball_color_entry_light_blue">Vaaleansininen</string>
     <string name="trackball_color_entry_random">Satunnainen</string>
-    <string name="trackball_color_entry_none">Ei mitään</string>
     <string name="trackball_color_entry_amber">Meripihka</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -407,6 +404,13 @@
     <string name="pref_screentimeout_mode_summary">Valitse miten verkkopainike muuttaa tiloja</string>
     <string name="pref_ring_mode_title">Äänitilat</string>
     <string name="pref_ring_mode_summary">Valitse miten äänipainike muuttaa tiloja</string>
+    <string name="cm_sound_mode_soundVib_vib">Ääni+Värinä/Värinä</string>
+    <string name="cm_sound_mode_sound_vib">Ääni/Värinä</string>
+    <string name="cm_sound_mode_sound_silent">Ääni/Äänetön</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Ääni+Vär/Vär/Äänetön</string>
+    <string name="cm_sound_mode_sound_vib_silent">Ääni/Värinä/Äänetön</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ääni+Värinä/Ääni/Värinä/Äänetön</string>
+    <string name="cm_sound_mode_vib_silent">Värinä/Äänetön</string>
     <string name="pref_flash_mode_title">Lampputilat</string>
     <string name="pref_flash_mode_summary">Valitse suuri / kuolonsäde</string>
 

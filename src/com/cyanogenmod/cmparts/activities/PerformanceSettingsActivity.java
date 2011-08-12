@@ -75,6 +75,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String PURGEABLE_ASSETS_DEFAULT = "0";
 
+    private static final String LOGGER_PREF = "pref_logger";
+
+    private static final String LOGGER_PERSIST_PROP = "persist.service.aplogd.enable";
+
+    private static final String LOGGER_DEFAULT = "0";
+
     private static final String LOCK_HOME_PREF = "pref_lock_home";
 
     private static final String LOCK_MMS_PREF = "pref_lock_mms";
@@ -90,6 +96,8 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mUseDitheringPref;
 
     private CheckBoxPreference mPurgeableAssetsPref;
+
+    private CheckBoxPreference mLoggerPref;
 
     private CheckBoxPreference mLockHomePref;
 
@@ -136,6 +144,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String purgeableAssets = SystemProperties.get(PURGEABLE_ASSETS_PERSIST_PROP, PURGEABLE_ASSETS_DEFAULT);
         mPurgeableAssetsPref.setChecked("1".equals(purgeableAssets));
 
+        mLoggerPref = (CheckBoxPreference) prefSet.findPreference(LOGGER_PREF);
+        String logger = SystemProperties.get(LOGGER_PERSIST_PROP, LOGGER_DEFAULT);
+        mLoggerPref.setChecked("1".equals(logger));
+
         mHeapsizePref = (ListPreference) prefSet.findPreference(HEAPSIZE_PREF);
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
@@ -180,6 +192,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         if (preference == mPurgeableAssetsPref) {
             SystemProperties.set(PURGEABLE_ASSETS_PERSIST_PROP,
                     mPurgeableAssetsPref.isChecked() ? "1" : "0");
+            return true;
+        }
+
+        if (preference == mLoggerPref) {
+            SystemProperties.set(LOGGER_PERSIST_PROP,
+                    mLoggerPref.isChecked() ? "1" : "0");
             return true;
         }
 

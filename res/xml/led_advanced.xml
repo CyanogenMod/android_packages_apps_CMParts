@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference android:key="always_pulse"
+                        android:persistent="false"
+                        android:title="@string/pref_trackball_screen_title"
+                        android:summary="@string/pref_trackball_screen_summary" />
+
+    <CheckBoxPreference android:key="blend_colors"
+                        android:persistent="false"
+                        android:title="@string/pref_trackball_blend_title"
+                        android:summary="@string/pref_trackball_blend_summary" />
+
+    <CheckBoxPreference android:key="pulse_succession"
+                        android:persistent="false"
+                        android:title="@string/pref_trackball_sucess_title"
+                        android:summary="@string/pref_trackball_sucess_summary" />
+
+    <CheckBoxPreference android:key="pulse_random"
+                        android:persistent="false"
+                        android:title="@string/pref_trackball_random_title"
+                        android:summary="@string/pref_trackball_random_summary" />
+
+    <CheckBoxPreference android:key="pulse_in_order"
+                        android:persistent="false"
+                        android:title="@string/pref_trackball_order_title"
+                        android:summary="@string/pref_trackball_order_summary" />
+
+    <Preference android:key="reset"
+                android:persistent="false"
+                android:title="@string/pref_trackball_reset_title"
+                android:summary="@string/pref_trackball_reset_summary" />
+
+</PreferenceScreen>

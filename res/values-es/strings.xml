@@ -169,9 +169,7 @@
     <string name="trackball_category_add_summary">Añadir categoría a la lista</string>
     <string name="trackball_category_remove_title">Eliminar categoría</string>
     <string name="trackball_category_remove_summary">Eliminar categoría de la lista</string>
-    <string name="trackball_remove_default_toast">No se puede eliminar la categoría por defecto.</string>
     <string name="trackball_reset_all">Reiniciar todos los colores y categorías.</string>
-    <string name="trackball_array_error">Hay un error en la lista. Este paquete se ha añadido a la categoría Miscelánea.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">No todos los colores se verán en todos los dispositivos</string>
 
@@ -187,7 +185,6 @@
     <string name="trackball_color_entry_orange">Naranja</string>
     <string name="trackball_color_entry_light_blue">Celeste</string>
     <string name="trackball_color_entry_random">Aleatorio</string>
-    <string name="trackball_color_entry_none">Ninguno</string>
     <string name="trackball_color_entry_amber">Ambar</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -438,6 +435,13 @@
     <string name="pref_screentimeout_mode_summary">Elegir como cambia el Tiempo de espera de pantalla con el botón</string>
     <string name="pref_ring_mode_title">Modos de sonido</string>
     <string name="pref_ring_mode_summary">Elegir como cambia el sonido con el botón</string>
+    <string name="cm_sound_mode_soundVib_vib">Sonido+Vibración/Vibración</string>
+    <string name="cm_sound_mode_sound_vib">Sonido/Vibración</string>
+    <string name="cm_sound_mode_sound_silent">Sonido/Silencio</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Sonido+Vib/Vib/Silencio</string>
+    <string name="cm_sound_mode_sound_vib_silent">Sonido/Vibración/Silencio</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sonido+Vibración/Sonido/Vibración/Silencio</string>
+    <string name="cm_sound_mode_vib_silent">Vibración/Silencio</string>
     <string name="pref_flash_mode_title">Modo de flash</string>
     <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal(Evo)</string>
 
