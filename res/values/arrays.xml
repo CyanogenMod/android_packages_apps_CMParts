@@ -194,8 +194,6 @@
         <item>swe_qwerty</item>
     </string-array>
 
-<<<<<<< HEAD
-=======
     <string-array name="pref_qtouch_num_entries">
         <item>2</item>
         <item>4</item>
@@ -208,7 +206,6 @@
         <item>5</item>
     </string-array>
 
->>>>>>> upstream/gingerbread
     <string-array name="entries_mixable_dual_led_colors" translatable="false">
         <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
@@ -221,10 +218,6 @@
         <item>green</item>
         <item>red</item>
         <item>yellow</item>
-<<<<<<< HEAD
-        <item>none</item>
-=======
->>>>>>> upstream/gingerbread
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">

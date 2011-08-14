@@ -47,7 +47,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String ONEPERC_BATT_DEFAULT = "0";
 
-    private static final String PREF_STATUS_BAR_BRIGHTNESS_CONTROL = "pref_status_bar_brightness_control";
+    private static final String PREF_STATUS_BAR_BRIGHTNESS_CONTROL = 
+            "pref_status_bar_brightness_control";
 
     private static final String PREF_STATUS_BAR_CM_SIGNAL = "pref_status_bar_cm_signal";
 
