@@ -113,6 +113,12 @@
     <string name="ui_status_bar_force_plmn_display_summary">Erzwingt unabhängig von der SIM-Karteneinstellung die Anzeige des PLMN bei SPDI Netzwerken. (Erfordert Neuanmeldung am Netzwerk)</string>
     <string name="ui_status_bar_toggle_brightness">Statuszeile Helligkeitsanpassung</string>
     <string name="ui_status_bar_toggle_brightness_summary">Erlaubt Änderung der Helligkeit, indem mit dem Finger über die Statuszeile gewischt wird.</string>
+    <string name="ui_status_bar_toggle_info">Automatische Helligkeit ist aktiviert</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternative Signalanzeige</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Anzeige der Mobilfunk-Signalstärke in dBm statt der Balkenanzeige</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Balken</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Signalstärke (nur Wert)</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signalstärke inkl. "dBm"</string>
 
     <!-- User interface : LED Notifications -->
     <string name="group_settings">Einstellungen</string>
@@ -144,6 +150,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Bildschirmsperre anpassen</string>
     <string name="pref_lockscreen_delay_title">Verzögerung</string>
+    <string name="pref_lockscreen_security_title">Sicherheitssperre</string>
+    <string name="pref_lockscreen_security_delay_note_title">Hinweis</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Ist der Lockscreen deaktiviert, werden entsprechenden Timeouts ignoriert. Es wird dann nur der Timeout für die Sicherheitssperre verwendet</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Nach Abschalten des Displays</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Zeit, ab der die Sicherheitssperre aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Zeit, ab der die Sicherheitssperre aktivert wird, nachdem das Display manuell abgeschaltet wurde</string>
+    <string name="pref_lockscreen_slide_title">Slider</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Hinweis</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Der Slider-Lockscreen (ohne Sicherheitssperre) wird nur angezeigt, wenn die Zeit für die Sicherheitssperre länger ist als die Zeit für den Slider-Lockscreen</string>
+    <string name="pref_lockscreen_slide_delay_title">Separate Zeit für Slider</string>
+    <string name="pref_lockscreen_slide_delay_summary">Ermöglicht die Verwendung eines separaten Timers für den Slider-Lockscreen, bevor die Sicherheitssperre aktiviert wird</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Nach Abschalten des Displays</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display manuell abgeschaltet wurde</string>
     <string name="pref_lockscreen_timeout_lock_delay">Bei Bildschirm-Timeout</string>
     <string name="pref_lockscreen_screenoff_lock_delay">Bei Abschalten des Bildschirms</string>
     <string name="pref_lockscreen_timeout_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Timeout des Displays</string>
