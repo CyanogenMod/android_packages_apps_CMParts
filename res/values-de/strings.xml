@@ -312,6 +312,8 @@
     <string name="pref_dock_observer_off_summary">Keine Aktion bei Magnetfeldern. Nützlich bei Telefonhüllen mit magetischem Verschluss</string>
     <string name="pref_keypad_type_title">Tastaturbelegung</string>
     <string name="pref_keypad_type_summary">Einstellen der Tastaturbelegung - qwerty, qwertz, azerty... (erfordert Neustart)</string>
+    <string name="pref_qtouch_num_title">Multitouch</string>
+    <string name="pref_qtouch_num_summary">Festlegen der Anzahl der erkannten Touchpunkte (Kann ein Ein- und Ausschalten des Displays erfordern um aktiviert zu werden. Der erste Touch nach Einschalten des Displays kann ignoriert werden)</string>
     <string name="lockscreen_widgets_note_title">Hinweis</string>
     <string name="lockscreen_widgets_note_summary">Beim Stil \"Lense\" werden alle Widgets ausgeblendet mit Ausnahme der Musiksteuerung. Für einfacheres Umstellen zwischen den Locksreen-Stilen bleiben die weiteren Optionen dennoch aktiviert.</string>
 
@@ -413,6 +415,10 @@
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
     <string name="pref_purgeable_assets_summary">Erlaubt dem System, Speicherbereiche von nicht mehr benutzen Bildern freizugeben, um damit mehr RAM bereitzustellen (Neustart erforderlich)</string>
 
+    <!-- Performance Settings : Logger -->
+    <string name="pref_logger_title">Ereignisprotokollierung aktivieren</string>
+    <string name="pref_logger_summary">Schreiben der Protokolldaten nach /cache/logger</string>
+
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Größe VM-Heaps</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
@@ -445,6 +451,7 @@
     <string name="buttons_title">Tasten</string>
     <string name="dock_title">Dockingstation</string>
     <string name="keypad_title">Tastatur</string>
+    <string name="qtouch_title">Touchscreen</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Nachfragen</string>
