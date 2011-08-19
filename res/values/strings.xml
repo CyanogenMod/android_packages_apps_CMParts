@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
-    <string name="app_name">CyanogenMod settings</string>
+    <string name="app_name">CyanogenMod إعدادات</string>
 
     <!--  Primary Screen Settings -->
-    <string name="application_settings_title_head">Application</string>
-    <string name="application_settings_title_subhead">Application settings</string>
-    <string name="application_settings_summary_head">Application moving, install location, communication filtering</string>
-    <string name="display_settings_title_head">Display</string>
-    <string name="display_settings_title_subhead">Display settings</string>
+    <string name="application_settings_title_head">البرامج</string>
+    <string name="application_settings_title_subhead">إدارة البرامج</string>
+    <string name="application_settings_summary_head">نقل البرامج , أماكن التثبيت , الإتصالات</string>
+    <string name="display_settings_title_head">العرض</string>
+    <string name="display_settings_title_subhead">إدارة العرض</string>
     <string name="display_settings_summary_head">Display animations, rotation, timeouts</string>
-    <string name="input_settings_title_head">Input</string>
-    <string name="input_settings_title_subhead">Input settings</string>
+    <string name="input_settings_title_head">الإدخال</string>
+    <string name="input_settings_title_subhead">إدارة الإدخال</string>
     <string name="input_settings_summary_head">Input behavior, buttons, haptic feedback</string>
-    <string name="interface_settings_title_head">Interface</string>
-    <string name="interface_settings_title_subhead">Interface settings</string>
+    <string name="interface_settings_title_head">الواجهه</string>
+    <string name="interface_settings_title_subhead">إدارة الواجهه</string>
     <string name="interface_settings_summary_head">Interface tweaks, overscrolling, render effect</string>
-    <string name="lockscreen_settings_title_head">Lockscreen</string>
-    <string name="lockscreen_settings_title_subhead">Lockscreen settings</string>
+    <string name="lockscreen_settings_title_head">قفل الشاشه</string>
+    <string name="lockscreen_settings_title_subhead">إدارة قفل الشاشه</string>
     <string name="lockscreen_settings_summary_head">Lockscreen gestures, style, unlock options</string>
-    <string name="performance_settings_title_head">Performance</string>
-    <string name="performance_settings_title_subhead">Performance settings</string>
+    <string name="performance_settings_title_head">الأداء</string>
+    <string name="performance_settings_title_subhead">إدارة الأداء</string>
     <string name="performance_settings_summary_head">Performance tweaks, JIT, VM heap size</string>
-    <string name="sound_settings_title_head">Sound</string>
-    <string name="sound_settings_title_subhead">Sound settings</string>
+    <string name="sound_settings_title_head">الصوت</string>
+    <string name="sound_settings_title_subhead">إدارة الصوت</string>
     <string name="sound_settings_summary_head">Sound volumes, audio focus, quiet hours</string>
-    <string name="system_settings_title_head">System</string>
-    <string name="system_settings_title_subhead">System settings</string>
+    <string name="system_settings_title_head">النظام</string>
+    <string name="system_settings_title_subhead">إدارة النظام</string>
     <string name="system_settings_summary_head">System changelog, stats, update notifications</string>
 
     <!--  Update Notifications -->
-    <string name="updatenotify_title">Update notifications</string>
-    <string name="updatenotify_summary">Get push notifications of updates</string>
+    <string name="updatenotify_title">إشعار بالتحديثات</string>
+    <string name="updatenotify_summary">الحصول على إشعار بالتحديثات</string>
 
     <!-- User interface -->
-    <string name="ui_title">User interface</string>
+    <string name="ui_title">واجهة المستخدم</string>
     <string name="ui_summary">User interface settings &amp; tweaks</string>
 
     <string name="pref_electron_beam_animation_on">Screen-on animation</string>
@@ -50,8 +50,8 @@
     <string name="tablet_tweaks_soft_buttons_left_title">Soft-buttons left</string>
     <string name="tablet_tweaks_soft_buttons_left_summary">Put soft-buttons on left side of status bar</string>
     <string name="tablet_tweaks_soft_button_list_title">Choose soft-buttons</string>
-    <string name="tablet_tweaks_interface_head">Interface</string>
-    <string name="tablet_tweaks_disable_lockscreen_title">Disable lockscreen</string>
+    <string name="tablet_tweaks_interface_head">الواجهه</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">تعطيل قفل الشاشه</string>
     <string name="tablet_tweaks_disable_lockscreen_summary">When enabled, does not show the lockscreen or pattern screen. Neither on boot, nor when waking the device</string>
     <string name="tablet_tweaks_disable_fullscreen_title">Disable fullscreen</string>
     <string name="tablet_tweaks_disable_fullscreen_summary">Override the fullscreen request of applications. When enabled, status bar is always visible until hidden by button</string>
@@ -95,9 +95,9 @@
     <string name="ui_status_bar_title">Status bar tweaks</string>
     <string name="ui_status_bar_am_pm_title">AM/PM style</string>
     <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
-    <string name="ui_status_bar_clock_title">Show clock</string>
+    <string name="ui_status_bar_clock_title">إظهار الساعه</string>
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
-    <string name="ui_status_bar_cm_battery_title">Battery percentage</string>
+    <string name="ui_status_bar_cm_battery_title">البطاريه بالنسبه المؤويه</string>
     <string name="ui_status_bar_cm_battery_summary">Show battery percentage plus mini battery icon. Disable if themes make this look broken</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
@@ -111,7 +111,7 @@
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
 
     <!-- User interface : LED Notifications -->
-    <string name="trackball_title">LED notifications</string>
+    <string name="trackball_title">LED إشعارات</string>
     <string name="trackball_summary">Control trackball/LED notification colors and pulse</string>
 
     <!-- User interface : WebView -->
@@ -127,12 +127,12 @@
     <string name="pref_overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Screen lock settings</string>
-    <string name="pref_lockscreen_delay_title">Delay</string>
-    <string name="pref_lockscreen_security_title">Security Lock</string>
+    <string name="ui_lockscreen_title">إدارة قفل الشاشه</string>
+    <string name="pref_lockscreen_delay_title">التأخير</string>
+    <string name="pref_lockscreen_security_title">قفل الحمايه</string>
     <string name="pref_lockscreen_security_delay_note_title">Note</string>
     <string name="pref_lockscreen_security_delay_note_summary">While screen lock security is set to NONE only the security lock delay settings will be used</string>
-    <string name="pref_lockscreen_security_timeout_lock_delay">Screen timeout delay</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">مهلة قفل الشاشه</string>
     <string name="pref_lockscreen_security_screenoff_lock_delay">Screen turned off delay</string>
     <string name="pref_lockscreen_security_timeout_lock_delay_summary">How long to delay before enabling screen security lock when screen times out</string>
     <string name="pref_lockscreen_security_screenoff_lock_delay_summary">How long to delay before enabling screen security lock when screen is turned off</string>
@@ -193,11 +193,11 @@
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
 
     <!-- Trackball color entries -->
-    <string name="trackball_color_entry_green">Green</string>
-    <string name="trackball_color_entry_white">White</string>
-    <string name="trackball_color_entry_red">Red</string>
-    <string name="trackball_color_entry_blue">Blue</string>
-    <string name="trackball_color_entry_yellow">Yellow</string>
+    <string name="trackball_color_entry_green">أخضر</string>
+    <string name="trackball_color_entry_white">أبيض</string>
+    <string name="trackball_color_entry_red">أحمر</string>
+    <string name="trackball_color_entry_blue">أزرق</string>
+    <string name="trackball_color_entry_yellow">أصفر</string>
     <string name="trackball_color_entry_cyan">Cyan</string>
     <string name="trackball_color_entry_magenta">Magenta</string>
     <string name="trackball_color_entry_pink">Pink</string>
@@ -208,7 +208,7 @@
     <string name="trackball_color_entry_amber">Amber</string>
 
     <!-- Trackball Settings : Warning dialog -->
-    <string name="notification_battery_warning_title">WARNING: May cause battery drain</string>
+    <string name="notification_battery_warning_title">تحذير :قد يؤدي لاستهلاك البطاريه</string>
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>
 
     <!-- Lockscreen Overview -->
@@ -395,22 +395,22 @@
     <string name="performance_settings_warning">The options in here will change the performance of your system, potentially for the worse. They are included for experimentation and we request that you do not file bug reports if you have changed any from the defaults</string>
 
     <!-- Application Settings -->
-    <string name="application_settings_title">Application settings</string>
+    <string name="application_settings_title">إعدادات البرامج</string>
     <string name="application_settings_summary">Change various application settings such as install location</string>
 
     <!-- Application Settings : Move any app -->
-    <string name="pref_move_all_apps_title">Allow application moving</string>
+    <string name="pref_move_all_apps_title">السماح بنقل البرامج</string>
     <string name="pref_move_all_apps_summary">Allow moving of any application to external storage</string>
 
     <!-- Application Settings : Install Location -->
-    <string name="pref_install_location_title">Install location</string>
+    <string name="pref_install_location_title">أماكن تثبيت البرامج</string>
     <string name="pref_install_location_summary">Select where new applications should be installed</string>
 
     <string name="general_title">General</string>
     <string name="buttons_title">Buttons</string>
 
     <!-- UI Settings : Power off prompt -->
-    <string name="pref_power_prompt_title">Power prompt</string>
+    <string name="pref_power_prompt_title">تنبيه الإطفاء</string>
     <string name="pref_power_prompt_summary">Change whether there is a prompt after choosing shutdown or reboot</string>
 
     <!-- UI Settings : Render effect -->
