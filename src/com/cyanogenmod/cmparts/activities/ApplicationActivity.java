@@ -28,6 +28,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -42,6 +43,8 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
 
     private static final String INSTALL_LOCATION_PREF = "pref_install_location";
 
+    private static final String SWITCH_STORAGE_PREF = "pref_switch_storage";
+
     private static final String MOVE_ALL_APPS_PREF = "pref_move_all_apps";
 
     private static final String ENABLE_PERMISSIONS_MANAGEMENT = "enable_permissions_management";
@@ -55,6 +58,8 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
     private static final int ENABLE = 0;
     private final static int YES=1;
     private final static int NO=2;
+
+    private CheckBoxPreference mSwitchStoragePref;
 
     private CheckBoxPreference mMoveAllAppsPref;
 
@@ -88,6 +93,14 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
         mInstallLocationPref.setValue(installLocation);
         mInstallLocationPref.setOnPreferenceChangeListener(this);
 
+        mSwitchStoragePref = (CheckBoxPreference) prefSet.findPreference(SWITCH_STORAGE_PREF);
+        mSwitchStoragePref.setChecked((SystemProperties.getInt("persist.sys.vold.switchexternal", 0) == 1));
+
+        if (SystemProperties.get("ro.vold.switchablepair","").equals("")) {
+            mSwitchStoragePref.setSummary(R.string.pref_storage_switch_unavailable);
+            mSwitchStoragePref.setEnabled(false);
+        }
+
         mMoveAllAppsPref = (CheckBoxPreference) prefSet.findPreference(MOVE_ALL_APPS_PREF);
         mMoveAllAppsPref.setChecked(Settings.Secure.getInt(getContentResolver(),
             Settings.Secure.ALLOW_MOVE_ALL_APPS_EXTERNAL, 0) == 1);
@@ -104,6 +117,10 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
         if (preference == mMoveAllAppsPref) {
             Settings.Secure.putInt(getContentResolver(),
                 Settings.Secure.ALLOW_MOVE_ALL_APPS_EXTERNAL, mMoveAllAppsPref.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mSwitchStoragePref) {
+            SystemProperties.set("persist.sys.vold.switchexternal",
+		mSwitchStoragePref.isChecked() ? "1" : "0");
             return true;
         }
         return false;

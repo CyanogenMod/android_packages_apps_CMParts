@@ -16,6 +16,11 @@
             android:entries="@array/entries_install_location"
             android:entryValues="@array/values_install_location" />
 
+        <CheckBoxPreference android:key="pref_switch_storage"
+            android:title="@string/pref_switch_storage_title"
+            android:summaryOn="@string/pref_switch_storage_summary_on"
+            android:summaryOff="@string/pref_switch_storage_summary_off" />
+
         <CheckBoxPreference android:key="enable_permissions_management"
             android:title="@string/perm_enable_management"
             android:summary="@string/perm_enable_management_summary" />
