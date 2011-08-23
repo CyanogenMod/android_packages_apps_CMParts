@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
-    <string name="app_name">CyanogenMod settings</string>
+    <string name="app_name">CyanogenMod nastavení</string>
 
     <!--  Primary Screen Settings -->
-    <string name="application_settings_title_head">Application</string>
-    <string name="application_settings_title_subhead">Application settings</string>
+    <string name="application_settings_title_head">Aplikace</string>
+    <string name="application_settings_title_subhead">Nastavení aplikací</string>
     <string name="application_settings_summary_head">Application moving, install location, communication filtering</string>
     <string name="display_settings_title_head">Display</string>
-    <string name="display_settings_title_subhead">Display settings</string>
-    <string name="display_settings_summary_head">Display animations, rotation, timeouts</string>
+    <string name="display_settings_title_subhead">Nastavení displaye</string>
+    <string name="display_settings_summary_head">Animace, rotace, timeouts</string>
     <string name="input_settings_title_head">Input</string>
     <string name="input_settings_title_subhead">Input settings</string>
     <string name="input_settings_summary_head">Input behavior, buttons, haptic feedback</string>
-    <string name="interface_settings_title_head">Interface</string>
-    <string name="interface_settings_title_subhead">Interface settings</string>
+    <string name="interface_settings_title_head">Rozhraní</string>
+    <string name="interface_settings_title_subhead">Nastavení rozhraní</string>
     <string name="interface_settings_summary_head">Interface tweaks, overscrolling, render effect</string>
-    <string name="lockscreen_settings_title_head">Lockscreen</string>
-    <string name="lockscreen_settings_title_subhead">Lockscreen settings</string>
-    <string name="lockscreen_settings_summary_head">Lockscreen gestures, style, unlock options</string>
-    <string name="performance_settings_title_head">Performance</string>
-    <string name="performance_settings_title_subhead">Performance settings</string>
+    <string name="lockscreen_settings_title_head">Zámek displaye</string>
+    <string name="lockscreen_settings_title_subhead">Nastavení zamknuté obrazovky</string>
+    <string name="lockscreen_settings_summary_head">Gesta, styly, možnosti odemknutí</string>
+    <string name="performance_settings_title_head">Výkon</string>
+    <string name="performance_settings_title_subhead">Nastavení výkonu</string>
     <string name="performance_settings_summary_head">Performance tweaks, JIT, VM heap size</string>
-    <string name="sound_settings_title_head">Sound</string>
-    <string name="sound_settings_title_subhead">Sound settings</string>
+    <string name="sound_settings_title_head">Zvuk</string>
+    <string name="sound_settings_title_subhead">Nastavení zvuku</string>
     <string name="sound_settings_summary_head">Sound volumes, audio focus, quiet hours</string>
-    <string name="system_settings_title_head">System</string>
-    <string name="system_settings_title_subhead">System settings</string>
+    <string name="system_settings_title_head">Systém</string>
+    <string name="system_settings_title_subhead">Nastavení systému</string>
     <string name="system_settings_summary_head">System changelog, stats, update notifications</string>
 
     <!--  Update Notifications -->
@@ -604,43 +604,43 @@
     <string name="user_defined_not_set">Nothing Set</string>
 
     <!-- Lockscreen gesture strings -->
-    <string name="pref_lockscreen_gestures_enable_title">Use lockscreen gestures</string>
-    <string name="pref_lockscreen_gestures_trail_title">Show gesture trails</string>
-    <string name="pref_lockscreen_gestures_builder_title">Build gestures</string>
-    <string name="pref_lockscreen_gestures_sensitivity_title">Sensitivity</string>
-    <string name="pref_lockscreen_gestures_color_title">Gestures color</string>
-    <string name="label_create_gesture">Create a gesture</string>
-    <string name="gestures_button_add">Add gesture</string>
-    <string name="gestures_button_discard">Discard</string>
-    <string name="gestures_button_done">Done</string>
+    <string name="pref_lockscreen_gestures_enable_title">Použít gesta</string>
+    <string name="pref_lockscreen_gestures_trail_title">Ukázat cestu</string>
+    <string name="pref_lockscreen_gestures_builder_title">Vytvořit gesta</string>
+    <string name="pref_lockscreen_gestures_sensitivity_title">Citlivost</string>
+    <string name="pref_lockscreen_gestures_color_title">Barva gest</string>
+    <string name="label_create_gesture">Vytvořit gesto</string>
+    <string name="gestures_button_add">Přidat gesto</string>
+    <string name="gestures_button_discard">Zrušit</string>
+    <string name="gestures_button_done">Hotovo</string>
     <string name="gestures_error_missing_shortcut">You must pick an action for this gesture!</string>
     <string name="gestures_save_success">Gesture saved in %s</string>
-    <string name="gestures_cancel_action">Cancel</string>
+    <string name="gestures_cancel_action">Storno</string>
     <string name="gestures_loading">Loading gestures\u2026</string>
-    <string name="gestures_empty">No gestures</string>
-    <string name="gestures_activity">Gestures</string>
-    <string name="gestures_delete">Delete</string>
-    <string name="gestures_delete_success">Gesture deleted</string>
+    <string name="gestures_empty">Žádná gesta</string>
+    <string name="gestures_activity">Gesta</string>
+    <string name="gestures_delete">Smazat</string>
+    <string name="gestures_delete_success">Gesto smazáno</string>
     <string name="gestures_error_loading">Problem with gesture file operation.</string>
-    <string name="gestures_unlock_only">Unlock phone</string>
+    <string name="gestures_unlock_only">Odblokovat telefon</string>
     <string name="gestures_toggle_sound">Toggle sound</string>
     <string name="gestures_shortcut_or_activity">Shortcut or activity</string>
     <string name="gestures_flashlight">Flashlight</string>
     <string name="pref_lockscreen_disable_unlock_tab">Disable unlock slider</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Note: You need to enable trackball, menu key, or gesture unlocking before this option becomes available</string>
-    <string name="gestures_action_label">Action:</string>
-    <string name="gestures_draw_label">Gesture:</string>
+    <string name="gestures_action_label">Akce:</string>
+    <string name="gestures_draw_label">Gesto:</string>
     <string name="gestures_draw_for_label">Gesture for \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Warning: A similar gesture is associated to another action!</string>
     <string name="gestures_run_in_background">Run in background</string>
 
     <!-- Change Log strings -->
-    <string name="changelog_title">View changelog</string>
+    <string name="changelog_title">Prohlédnout changelog</string>
     <string name="changelog_dialog">Changelog</string>
-    <string name="changelog_loading">Loading changelog\u2026</string>
-    <string name="changelog_error">Error loading changelog\u2026</string>
-    <string name="changelog_unknown">Unknown</string>
-    <string name="changelog_version">Version</string>
+    <string name="changelog_loading">Načítán íchangelogu\u2026</string>
+    <string name="changelog_error">Problém při načítání changelogu\u2026</string>
+    <string name="changelog_unknown">Neznámý</string>
+    <string name="changelog_version">Verze</string>
 
     <!-- Phone goggles -->
     <string name="category_phone_goggles_period">Period</string>
