@@ -27,8 +27,8 @@
 
     <string-array name="entries_install_location">
         <item>自動</item>
-        <item>內存空間</item>
-        <item>SD 卡</item>
+        <item>內部儲存空間</item>
+        <item>外在儲存空間</item>
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_install_location -->

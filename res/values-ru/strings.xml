@@ -105,6 +105,11 @@
     <string name="ui_status_bar_toggle_brightness">Управление яркостью в строке состояния</string>
     <string name="ui_status_bar_toggle_brightness_summary">Позволяет изменять яркость проводя по строке состояния</string>
     <string name="ui_status_bar_toggle_info">Включена автоматическая яркость</string>
+    <string name="ui_status_bar_cm_signal_text_title">Альтернативное отображение сигнала</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Показывать значение дБм вместо графического индикатора</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Графический индикатор</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Уровень сигнала</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Уровень сигнала в дБм</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Уведомления светодиодом трекбола</string>
@@ -125,10 +130,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Настройка блокировки экрана</string>
     <string name="pref_lockscreen_delay_title">Задержка</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Задержка при автовыключении экрана</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Задержка при выключении экрана</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
+    <string name="pref_lockscreen_security_title">Блокировка с ограничением доступа</string>
+    <string name="pref_lockscreen_security_delay_note_title">Примечание</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Если безопасность экрана блокировки не установлена, будут использоваться задержки безопасной блокировки</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Задержка при автовыключении экрана</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Задержка при выключении экрана</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
+    <string name="pref_lockscreen_slide_title">Блокировка ползунками</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Примечание</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">При включенном состоянии блокировка ползунками без защиты появляется в случае, если задержка безопасной блокировки будет больше чем задержка блокировки ползунками</string>
+    <string name="pref_lockscreen_slide_delay_title">Включить задержку блокировки ползунков</string>
+    <string name="pref_lockscreen_slide_delay_summary">Показывать экран блокировки ползунков с выставленной задержкой до показа безопасной блокировки</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Задержка при автовыключении экрана</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Задержка при выключении экрана</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Как быстро срабатывает блокировка после автовыключения экрана</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Как быстро срабатывает блокировка после выключения экрана</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Выберите цвет</string>
@@ -236,6 +253,11 @@
     <string name="pref_lockscreen_custom_background_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_summary">Выберите изображение или цвет в качестве фона экрана блокировки</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Выбран цвет</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Выбрано изображение</string>
+    <string name="pref_lockscreen_custom_background_summary_default">По умолчанию</string>
+    <string name="pref_lockscreen_background_result_successful">Фон изменён</string>
+    <string name="pref_lockscreen_background_result_not_successful">Фон не изменён</string>
     <string name="pref_lockscreen_custom_icon_style_title">Иконка приложения</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку приложения вместо иконки CM для приложения пользователя</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Сдвинуть вниз для разблокировки</string>
@@ -376,6 +398,13 @@
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
     <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
+
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Внутренняя память</string>
+    <string name="pref_switch_storage_summary_on">Использование расширенной внутренней памяти для приложений и медиа</string>
+    <string name="pref_switch_storage_summary_off">Использование съёмного носителя для приложений и медиа</string>
+    <string name="pref_storage_switch_unavailable">У этого устройства нет расширенной внутренней памяти</string>
 
     <!-- Application Settings : Install Location -->
     <string name="pref_install_location_title">Место установки</string>

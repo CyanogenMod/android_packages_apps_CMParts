@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod 設定</string>
@@ -396,9 +395,15 @@
     <string name="application_settings_title">應用程式設定</string>
     <string name="application_settings_summary">變更各種應用程式設定，例如安裝位置</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">使用內部儲存空間</string>
+    <string name="pref_switch_storage_summary_on">使用延伸的內部儲存空間作為儲存應用程式和媒體的外在儲存空間</string>
+    <string name="pref_switch_storage_summary_off">使用抽取式記憶卡作為儲存應用程式和媒體的外在儲存空間</string>
+    <string name="pref_storage_switch_unavailable">此裝置沒有配備延伸的內部儲存空間</string>
+
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">允許移動應用程式</string>
-    <string name="pref_move_all_apps_summary">允許移動任何應用程式到 SD 卡</string>
+    <string name="pref_move_all_apps_summary">允許移動任何應用程式到外在儲存空間</string>
 
     <!-- Application Settings : Install Location -->
     <string name="pref_install_location_title">安裝位置</string>
@@ -436,7 +441,7 @@
     <string name="pref_render_effect_calibrated_cool">校準的（N1）冷酷</string>
     <string name="pref_render_effect_red">紅</string>
 
-    <!--  Widget Types -->
+    <!-- Widget Types -->
     <string name="widget_render_effect_night">夜視</string>
     <string name="widget_render_effect_terminal">終端機</string>
     <string name="widget_render_effect_blue">藍</string>
@@ -595,7 +600,7 @@
     <string name="user_defined_key3">快速鍵 3</string>
     <string name="user_defined_not_set">沒有設置</string>
 
-    <!--  Lockscreen gesture strings -->
+    <!-- Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">使用鎖定螢幕手勢</string>
     <string name="pref_lockscreen_gestures_trail_title">顯示手勢軌跡</string>
     <string name="pref_lockscreen_gestures_builder_title">建立手勢</string>
@@ -698,7 +703,4 @@
     <string name="perm_enable_management_summary">啟用應用程式權限管理</string>
     <string name="perm_enable_warning_message">警告！\n大多數權限若被撤消的話就很可能會導致應用程式無法運作。如有撤消了權限的應用程式強制關閉，請授予其要求的權限，或停止使用該應用程式。\n如撤消了權限的應用程式沒有預期地運作，敬請不要回報相關錯誤至 CyanogenMod！</string>
     <string name="perm_enable_warning_title">您確定嗎？</string>
-
-
-
 </resources>

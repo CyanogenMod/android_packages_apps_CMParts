@@ -29,6 +29,12 @@
         <item>Ingen (Standard)</item>
     </string-array>
 
+    <string-array name="haptic_feedback_entries">
+        <item>Globala Inställningar</item>
+        <item>På</item>
+        <item>Av</item>
+    </string-array>
+
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Snabb)</item>
         <item>3</item>
@@ -110,13 +116,13 @@
         <item>Dim/100%</item>
     </string-array>
 
-    <string-array name="entries_network_widget" translatable="false">
+    <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
         <item>2G/Endast 3G</item>   
         <item>2G/Endast 3G/3G+2G</item>
     </string-array>
 
-    <string-array name="entries_flash_widget" translatable="false">
+    <string-array name="entries_flash_widget">
         <item>Normal</item>
         <item>Hög / Death Ray</item>
     </string-array>
@@ -141,6 +147,18 @@
         <item>Roterande</item>
         <item>Rotary revamped</item>
         <item>Lense</item>
+    </string-array>
+
+    <string-array name="pref_in_call_style_entries">
+        <item>Glidskena</item>
+        <item>Roterande</item>
+        <item>Rotary revamped</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Färgfyll</item>
+        <item>Anpassad bild</item>
+        <item>Standard bakgrundsbild</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -188,6 +206,14 @@
         <item>Kamera</item>
         <item>Volym Upp</item>
         <item>Volym Ner</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Ingen</item>
+        <item>Skärmtangentbord</item>
+        <item>Sökknapp</item>
+        <item>Anpassad Applikation</item>
+        <item>Växla statusrad</item>
     </string-array>
 
 </resources>

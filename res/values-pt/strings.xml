@@ -689,4 +689,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Barras de sinal</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Texto de sinal</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Texto de sinal com dBm</string>
+    <string name="pref_switch_storage_title">Usar armazenamento interno</string>
+    <string name="pref_switch_storage_summary_on">Usando armazenamento interno expandido para aplicações e mídia</string>
+    <string name="pref_switch_storage_summary_off">Usando cartão removível para aplicações e mídia</string>
+    <string name="pref_storage_switch_unavailable">Este dispositivo não possui armazenamento interno expandido</string>
 </resources>

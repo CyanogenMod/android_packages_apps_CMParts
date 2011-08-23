@@ -235,6 +235,7 @@
     <string-array name="pref_lockscreen_background_entries">
         <item>Цвет</item>
         <item>Изображение</item>
+        <item>По умолчанию</item>
     </string-array>
 
 </resources>

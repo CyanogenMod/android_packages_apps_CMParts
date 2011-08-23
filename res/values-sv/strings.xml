@@ -86,6 +86,7 @@
 
     <!-- User interface : Rotation -->
     <string name="rotation_category_title">Accelerometer rotation</string>
+    <string name="pref_rotation_0_title">0 grader</string>
     <string name="pref_rotation_90_title">90 grader</string>
     <string name="pref_rotation_180_title">180 grader</string>
     <string name="pref_rotation_270_title">270 grader</string>
@@ -103,6 +104,11 @@
     <string name="ui_status_bar_toggle_brightness">StatusBar ljuskontroll</string>
     <string name="ui_status_bar_toggle_brightness_summary">Tillåter justering av ljusstyrka genom att skjuta över statusbar.</string>
     <string name="ui_status_bar_toggle_info">Automatisk ljusstyrka är aktiverad</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternativ visning av signalstyrka</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Visa dBm-värde istället för staplar</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Signalstaplar</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Signaltext</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signaltext med dBm</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED-aviseringar</string>
@@ -123,10 +129,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Skärmlåsinställningar</string>
     <string name="pref_lockscreen_delay_title">Fördröjning</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Skärmens tidsgräns</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Skärmens avstängningsfördröjning</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Hur lång tid att vänta innan skärmlåset aktiveras när skärmens tidsgräns går ut</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Hur lång tid att vänta innan skärmlåset aktiveras när skärmen stängs av</string>
+    <string name="pref_lockscreen_security_title">Säkerhetslås</string>
+    <string name="pref_lockscreen_security_delay_note_title">Notera</string>
+    <string name="pref_lockscreen_security_delay_note_summary">När säkerheteten för skärmlås är inställd på INGEN används endast inställningarna för säkerhetlåsets fördröjning</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Skärmens tidsgräns</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Skärmens avstängningsfördröjning</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Hur lång tid att vänta innan skärmlåset aktiveras när skärmens tidsgräns går ut</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Hur lång tid att vänta innan skärmlåset aktiveras när skärmen stängs av</string>
+    <string name="pref_lockscreen_slide_title">Glidskenslås</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Notera</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Även om aktiverad, kommer det osäkra glidskenslåset endast visas om säkerhetslåsets fördröjning är längre än glidskenslåsets fördröjning</string>
+    <string name="pref_lockscreen_slide_delay_title">Aktivera fördröjning för glidskenslås</string>
+    <string name="pref_lockscreen_slide_delay_summary">Visar skärmens glidskenslås efter en separat fördröjning innan säkerhetslåset visas</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Skärmens tidsgräns</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Skärmens avstängningsfördröjning</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Hur lång tid att vänta innan glidskenslåset aktiveras när skärmens tidsgräns går ut</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Hur lång tid att vänta innan glidskenslåset aktiveras när skärmen stängs av</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Välj en färg</string>
@@ -191,6 +209,8 @@
     <string name="notification_battery_warning">Denna inställningar har visats öka batteriförbrukningen med ca 3% per timme. Om du upplever en ökad förbrukning medans styrkulans lampa pulserar så är detta varför. Aktivera inte om du inte vill öka förbrukningen.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Inaktivera låsskärm vid säkerhetlås</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Inaktivera låsskärmen om säkerhetslås för skärmen (mönster, PIN, lösenord) är aktiverat</string>
     <string name="pref_lockscreen_stylecfg_title">Stilalternativ</string>
     <string name="pref_lockscreen_stylecfg_summary">Konfigurera låsskärmsstilen och tillhörande inställningar</string>
     <string name="pref_lockscreen_widgets_title">Widget-alternativ</string>
@@ -229,6 +249,14 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Anpassad applikationsstartare</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Visar ytterligare glidskena på glidskenstypen, visar en anpassad appliktionsfördjupning på rotationstypen.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Anpassad applikation</string>
+    <string name="pref_lockscreen_custom_background_title">Välj bakgrund</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Välj bakgrund</string>
+    <string name="pref_lockscreen_custom_background_summary">Välj bild eller färg att används som bakgrund för låsskärm</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Nuvarande : Färg</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Nuvarande : Bild</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Nuvarande : Standard</string>
+    <string name="pref_lockscreen_background_result_successful">Bakgrund ändrad</string>
+    <string name="pref_lockscreen_background_result_not_successful">Bakgrund inte ändrad</string>
     <string name="pref_lockscreen_custom_icon_style_title">Meddelandeikon för anpassad app</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Använder meddelandeikon istället för CM-ikon för anpassad programstart</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Drag ner för att låsa upp</string>
@@ -263,6 +291,13 @@
     <string name="pref_input_custom_search_app_activity_title">Anpassad applikation</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Sök-app vid långt tryck</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Startar en anpassad app vid långt tryck på sökknappen</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Inställningar för långt tryck på meny</string>
+    <string name="long_press_menu_summary">Anpassad inställning för långt tryck på meny</string>
+    <string name="pref_user_defined_long_press_menu_title">Välj anpassad applikation</string>
+    <string name="pref_long_press_menu_title">Välj beteende</string>
+    <string name="pref_long_press_menu_summary">Anpassa långt tryck på meny</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Visa titel på nyligen använda applikationer</string>
@@ -377,6 +412,10 @@
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">Renderingseffekt</string>
     <string name="pref_render_effect_summary">Ändra vilka färger som används för att rita ut skärmbilden (potentiella batteribesparningar)</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Haptisk Återkoppling</string>
+    <string name="expanded_haptic_feedback_summary">Aktivera/Inaktivera haptisk återkoppling.</string>
 
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
