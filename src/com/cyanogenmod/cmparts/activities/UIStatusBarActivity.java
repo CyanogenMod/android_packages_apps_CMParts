@@ -87,7 +87,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         String onepercBattery = SystemProperties.get(ONEPERC_BATT_PERSIST_PROP, ONEPERC_BATT_DEFAULT);
         mStatusBarOnepercBattery.setChecked("1".equals(onepercBattery));
         mStatusBarForcePlmnDisplay = (CheckBoxPreference) prefSet.findPreference(PREF_FORCE_PLMN_DISPLAY);
-        mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
 
