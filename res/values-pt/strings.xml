@@ -650,7 +650,6 @@
     <string name="pref_rotation_180_title">180 graus</string>
     <string name="pref_rotation_270_title">270 graus</string>
 
-    
     <string name="long_press_menu_title">Configurações de pressionar continuamente o menu</string>
     <string name="long_press_menu_summary">Personalizar as configurações para pressionar continuamente o menu</string>
     <string name="pref_user_defined_long_press_menu_title">Selecionar aplicação personalizada</string>
