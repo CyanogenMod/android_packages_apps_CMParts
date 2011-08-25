@@ -19,12 +19,14 @@ package com.cyanogenmod.cmparts.activities.led;
 import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -32,7 +34,6 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
-
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.activities.ColorPickerDialog;
 
@@ -69,7 +70,21 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     private Preference mResetPref;
 
     private Intent mResultIntent = new Intent(Intent.ACTION_EDIT);
+
+    private Handler mHandler = new Handler();
+    private NotificationManager mNM;
     private static final int NOTIFICATION_ID = 400;
+    private int mAlwaysPulseBeforeTest = -1;
+    private int mSuccessionBeforeTest = -1;
+    private int mBlendBeforeTest = -1;
+
+    private Runnable mCancelTestRunnable = new Runnable() {
+        @Override
+        public void run() {
+            mNM.cancel(NOTIFICATION_ID);
+            cleanupSettingsAfterTest();
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,6 +122,8 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         for (int i = 0; i < colorList.length; i++) {
             mColorList[i] = Color.parseColor(colorList[i]);
         }
+
+        mNM = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         loadInitialData();
     }
@@ -175,6 +192,40 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         return pref.getValue();
     }
 
+    private void prepareSettingsForTest() {
+        ContentResolver cr = getContentResolver();
+        if (mAlwaysPulseBeforeTest == -1) {
+            mAlwaysPulseBeforeTest = Settings.System.getInt(cr, Settings.System.TRACKBALL_SCREEN_ON, 0);
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_SCREEN_ON, 1);
+        }
+        if (mBlendBeforeTest == -1) {
+            mBlendBeforeTest = Settings.System.getInt(cr,
+                    Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 0);
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 0);
+        }
+        if (mSuccessionBeforeTest == -1) {
+            mSuccessionBeforeTest = Settings.System.getInt(cr,
+                    Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 0);
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 0);
+        }
+    }
+
+    private void cleanupSettingsAfterTest() {
+        ContentResolver cr = getContentResolver();
+        if (mAlwaysPulseBeforeTest == 0) {
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_SCREEN_ON, 0);
+        }
+        mAlwaysPulseBeforeTest = -1;
+        if (mBlendBeforeTest == 1) {
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 1);
+        }
+        mBlendBeforeTest = -1;
+        if (mSuccessionBeforeTest == 1) {
+            Settings.System.putInt(cr, Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 1);
+        }
+        mSuccessionBeforeTest = -1;
+    }
+
     private void doTest() {
         final int alwaysPulse = Settings.System.getInt(
                 getContentResolver(), Settings.System.TRACKBALL_SCREEN_ON, 0);
@@ -186,8 +237,6 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         }
 
         final Notification notification = new Notification();
-        final NotificationManager nm =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         notification.flags |= Notification.FLAG_SHOW_LIGHTS;
 
@@ -212,20 +261,16 @@ public class PackageSettingsActivity extends PreferenceActivity implements
             notification.ledARGB = Color.parseColor(color);
         }
 
-        if (alwaysPulse != 1) {
-            Settings.System.putInt(getContentResolver(), Settings.System.TRACKBALL_SCREEN_ON, 1);
-        }
-        nm.notify(NOTIFICATION_ID, notification);
+        prepareSettingsForTest();
+        mHandler.removeCallbacks(mCancelTestRunnable);
+        mNM.notify(NOTIFICATION_ID, notification);
 
         AlertDialog.Builder endFlash = new AlertDialog.Builder(this);
         endFlash.setMessage(R.string.dialog_clear_flash);
         endFlash.setCancelable(false);
         endFlash.setPositiveButton(getString(android.R.string.ok), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                nm.cancel(NOTIFICATION_ID);
-                if (alwaysPulse != 1) {
-                    Settings.System.putInt(getContentResolver(), Settings.System.TRACKBALL_SCREEN_ON, 0);
-                }
+                mHandler.post(mCancelTestRunnable);
             }
         });
         endFlash.show();
@@ -287,6 +332,17 @@ public class PackageSettingsActivity extends PreferenceActivity implements
             new ColorPickerDialog.OnColorChangedListener() {
         @Override
         public void colorUpdate(int color) {
+            final Notification notification = new Notification();
+
+            notification.flags |= Notification.FLAG_SHOW_LIGHTS;
+            notification.ledOnMS = 500;
+            notification.ledOffMS = 0;
+            notification.ledARGB = color;
+
+            prepareSettingsForTest();
+            mHandler.removeCallbacks(mCancelTestRunnable);
+            mNM.notify(NOTIFICATION_ID, notification);
+            mHandler.postDelayed(mCancelTestRunnable, 1000);
         }
 
         @Override
@@ -294,6 +350,9 @@ public class PackageSettingsActivity extends PreferenceActivity implements
             String colorString = String.format("#%02x%02x%02x",
                     Color.red(color), Color.green(color), Color.blue(color));
             updateResult(EXTRA_COLOR, colorString);
+
+            mHandler.removeCallbacks(mCancelTestRunnable);
+            mHandler.post(mCancelTestRunnable);
         }
     };
 }
