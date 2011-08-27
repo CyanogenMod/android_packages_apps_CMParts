@@ -188,11 +188,8 @@
     <string name="color_trackball_test_title">Teste Blinken</string>
     <string name="color_trackball_test_summary">Das Trackball-Blinken testen</string>
     <string name="dialog_clear_flash">Test beenden</string>
-<<<<<<< HEAD
-=======
     <string name="trackball_app_save_title">Speichern</string>
     <string name="trackball_app_save_summary">Einstellungen für diese Anwendung speichern</string>
->>>>>>> cc0b3dc... LED settings rewrite
     <string name="trackball_app_reset_title">Zurücksetzen</string>
     <string name="trackball_app_reset_summary">Alle Einstellungen für diese Anwendung entfernen</string>
     <string name="trackball_advanced_title">Erweitert</string>
