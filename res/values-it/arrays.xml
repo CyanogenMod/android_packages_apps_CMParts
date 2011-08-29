@@ -30,11 +30,19 @@
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Usa impostazioni app</item>
         <item>2 (Veloce)</item>
         <item>3</item>
         <item>4 (Media)</item>
         <item>5</item>
         <item>6 (Lenta)</item>
+    </string-array>
+
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Usa impostazioni app</item>
+        <item>Forza LED spento</item>
+        <item>Forza LED acceso per eventi</item>
+        <item>Forza LED acceso</item>
     </string-array>
  
     <string-array name="pref_lockscreen_delay_entries">

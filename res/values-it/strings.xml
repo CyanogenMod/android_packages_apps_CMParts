@@ -152,6 +152,7 @@
     <string name="msg_color_picker">Premi al centro per confermare.\nPremi indietro per annullare</string>
 
     <!-- User interface: LED notifcations -->
+    <string name="group_settings">Impostazioni</string>
     <string name="trackball_notifications_title">Colori Notifiche LED</string>
     <string name="dialog_color_trackball">Scegli un colore</string>
     <string name="dialog_blink_trackball">Scegli frequenza di lampeggio</string>
@@ -189,9 +190,29 @@
     <string name="trackball_category_remove_summary">Rimuovi una categoria dalla lista</string>
     <string name="trackball_reset_all">Ripristina le app e le categorie</string>
     <string name="trackball_color_notice_title">NOTA:</string>
-    <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string>
+    <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string><string name="trackball_category_unconfigured">Non configurate</string>
+    <string name="trackball_category_misc">Varie</string>
+    <string name="trackball_app_save_title">Salva</string>
+    <string name="trackball_app_save_summary">Salva le impostazioni per questa applicazione</string>
+    <string name="trackball_app_reset_title">Ripristina</string>
+    <string name="trackball_app_reset_summary">Rimuovi le impostazioni personalizzate per questa applicazione</string>
+
+    <string name="trackball_force_mode_title">Modalità LED</string>
+    <string name="trackball_force_mode_dialog">Seleziona una modalità</string>
+    <string name="trackball_force_mode_summary">Configura il comportamento del LED</string>
+
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Messaggi</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Chiamata persa</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Usa impostazioni app</string>
     <string name="trackball_color_entry_green">Verde</string>
     <string name="trackball_color_entry_white">Bianco</string>
     <string name="trackball_color_entry_red">Rosso</string>
