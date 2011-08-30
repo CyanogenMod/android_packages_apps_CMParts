@@ -604,6 +604,11 @@
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
+    <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
+    <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
+    <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>
+    <string name="sound_camera_shutter_disable_warning_title">WARNING: This may be illegal!</string>
+    <string name="sound_camera_shutter_disable_warning">Disabling camera shutter sound is illegal in some areas. Are you sure you want to disable it?</string>
     <string name="sound_to_speaker_title">Always play on speaker</string>
     <string name="sound_notifications_title">Notifications</string>
     <string name="sound_rings_title">Ring tones</string>

@@ -19,7 +19,9 @@ package com.cyanogenmod.cmparts.activities;
 import com.cyanogenmod.cmparts.R;
 
 import android.app.Dialog;
+import android.app.AlertDialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -64,6 +66,8 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
     private static final String ALARMS_ATTENUATION = "alarm-attn";
 
     private static final String ALARMS_LIMITVOL = "alarm-limitvol";
+
+    private static final String CAMERA_SHUTTER_DISABLE = "persist.sys.cam_shutter_disable";
 
     private static final String PREFIX = "persist.sys.";
 
@@ -136,7 +140,11 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         lp.setValue(String.valueOf(SystemProperties.getInt(getKey(ALARMS_LIMITVOL), 1)));
         lp.setSummary(lp.getEntry());
         lp.setOnPreferenceChangeListener(this);
-    }
+
+        p = (CheckBoxPreference) prefSet.findPreference(CAMERA_SHUTTER_DISABLE);
+        p.setChecked(SystemProperties.getBoolean(CAMERA_SHUTTER_DISABLE, false));
+        p.setOnPreferenceChangeListener(this);
+   }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         String key = preference.getKey();
@@ -152,6 +160,28 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         } else if (key.equals(NOTIFICATIONS_SPEAKER) || key.equals(RINGS_SPEAKER)
                 || key.equals(ALARMS_SPEAKER)) {
             SystemProperties.set(getKey(key), getBoolean(newValue) ? "1" : "0");
+        } else if (key.equals(CAMERA_SHUTTER_DISABLE)) {
+            if (getBoolean(newValue)) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.sound_camera_shutter_disable_warning_title);
+                builder.setMessage(R.string.sound_camera_shutter_disable_warning);
+                builder.setPositiveButton(com.android.internal.R.string.ok,
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            SystemProperties.set(CAMERA_SHUTTER_DISABLE, "1");
+                        }
+                    });
+                final CheckBoxPreference p = (CheckBoxPreference) preference;
+                builder.setNegativeButton(com.android.internal.R.string.cancel,
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            p.setChecked(false);
+                        }
+                    });
+                builder.show();
+            } else {
+                SystemProperties.set(CAMERA_SHUTTER_DISABLE, "0");
+            }
         } else {
             SystemProperties.set(getKey(key), String.valueOf(getInt(newValue)));
             mHandler.sendMessage(mHandler.obtainMessage(0, key));
