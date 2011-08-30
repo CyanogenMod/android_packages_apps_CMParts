@@ -152,6 +152,7 @@
     <string name="msg_color_picker">Нажмите в центр для подтверждения.\nНажмите назад для отмены</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">Настройки</string>
     <string name="trackball_notifications_title">Цвета уведомлений трекбола</string>
     <string name="dialog_color_trackball">Выберите цвет</string>
     <string name="dialog_blink_trackball">Выберите частоту мигания</string>
@@ -190,8 +191,24 @@
     <string name="trackball_reset_all">Сброс всех цветов и категорий.</string>
     <string name="trackball_color_notice_title">ПРИМЕЧАНИЕ:</string>
     <string name="trackball_color_notice_summary">На некоторых устройствах будут отображаться не все цвета</string>
+    <string name="trackball_category_unconfigured">Ненастроенные</string>
+    <string name="trackball_category_misc">Смешанные</string>
+    <string name="trackball_app_save_title">Сохранить</string>
+    <string name="trackball_app_save_summary">Сохранить настройки для этого приложения</string>
+    <string name="trackball_app_reset_title">Сброс</string>
+    <string name="trackball_app_reset_summary">Удалить пользовательские настройки для этого приложения</string>
+
+    <string name="trackball_force_mode_title">Режим светодиода</string>
+    <string name="trackball_force_mode_dialog">Пожалуйста, выберите режим</string>
+    <string name="trackball_force_mode_summary">Настройте поведение светодиода</string>
+
+    <string name="trackball_app_mms">Сообщения</string>
+    <string name="trackball_app_twitter">Твиттер</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Пропущенный вызов</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Исп. настройки приложений</string>
     <string name="trackball_color_entry_green">Зелёный</string>
     <string name="trackball_color_entry_white">Белый</string>
     <string name="trackball_color_entry_red">Красный</string>
@@ -270,6 +287,7 @@
     <string name="pref_lockscreen_style_summary">Выбор стиля экрана блокировки</string>
     <string name="pref_in_call_style_title">Стиль входящего звонка</string>
     <string name="pref_in_call_style_summary">Выбор стиля виджета принять/отклонить входящего звонка</string>
+    <string name="lockscreen_music_title">Управление музыкой</string>
     <string name="pref_volbtn_music_controls_title">Управление музыкой кнопками громкости</string>
     <string name="pref_volbtn_music_controls_summary">Листать треки долгим нажатие на кнопку громкости при выключенном экране</string>
     <string name="pref_cambtn_music_controls_title">Управление музыкой кнопкой камеры</string>
@@ -292,6 +310,8 @@
     <string name="pref_input_custom_search_app_activity_title">Выбрать своё приложение</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Долгое нажатие</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Запуск своего приложения по долгому нажатию на кнопку поиск</string>
+
+    <string name="pref_backtrack_summary">Включение/Выключение BackTrack Minipad</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Долгое нажатие на Меню</string>
@@ -411,6 +431,7 @@
     <string name="pref_install_location_summary">Укажите, куда будут устанавливаться новые приложения</string>
 
     <string name="general_title">Основные</string>
+    <string name="camera_title">Камера</string>
     <string name="buttons_title">Кнопки</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -560,6 +581,11 @@
     <string name="sound_vibrate_in_call_title">Вибрация во время разговора</string>
     <string name="sound_vibrate_in_call_summary_off">Не вибрировать при уведомлениях во время разговора</string>
     <string name="sound_vibrate_in_call_summary_on">Вибрировать при уведомлениях</string>
+    <string name="sound_camera_shutter_disable_title">Отключить звук камеры</string>
+    <string name="sound_camera_shutter_disable_summary_on">Звук камеры выключен</string>
+    <string name="sound_camera_shutter_disable_summary_off">Звук камеры включен</string>
+    <string name="sound_camera_shutter_disable_warning_title">ВНИМАНИЕ: это может быть незаконным!</string>
+    <string name="sound_camera_shutter_disable_warning">Отключение звука камеры является незаконным в некоторых местах. Вы уверены, что хотите отключить звук?</string>
     <string name="sound_to_speaker_title">Всегда проигрывать через динамик</string>
     <string name="sound_notifications_title">Уведомления</string>
     <string name="sound_rings_title">Звонки</string>
@@ -601,6 +627,8 @@
     <string name="user_defined_key1">Горячая клавиша 1</string>
     <string name="user_defined_key2">Горячая клавиша 2</string>
     <string name="user_defined_key3">Горячая клавиша 3</string>
+    <string name="user_defined_envelope_key">Клавиша конверт</string>
+    <string name="user_defined_explorer_key">Клавиша навигации</string>
     <string name="user_defined_not_set">Ничего не установлено</string>
 
     <!--  Lockscreen gesture strings -->

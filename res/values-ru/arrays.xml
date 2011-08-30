@@ -37,6 +37,13 @@
         <item>6 (Медленно)</item>
     </string-array>
 
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Исп. настройки приложений</item>
+        <item>Принудит. выкл. светодиода</item>
+        <item>Принудит. вкл. светодиода для событий</item>
+        <item>Принудит. вкл. светодиода</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_delay_entries">
         <item>Немедленно</item>
         <item>1 секунда</item>
