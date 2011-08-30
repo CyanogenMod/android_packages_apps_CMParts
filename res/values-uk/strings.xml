@@ -87,6 +87,11 @@
   <string name="ui_status_bar_toggle_brightness">Керування яскравістю рядком стану</string>
   <string name="ui_status_bar_toggle_brightness_summary">Керування яскравістю екрана протягуванням уздовж рядка стану.</string>
   <string name="ui_status_bar_toggle_info">Автоматичну яскравість увімкнено</string>
+  <string name="ui_status_bar_cm_signal_text_title">Альтернативне відобр. сигналу</string>
+  <string name="ui_status_bar_cm_signal_text_summary">Відображення рівня сигналу у дБм замість графічного індикатора</string>
+  <string name="ui_status_bar_cm_signal_text_show_bars">Графічний індикатор</string>
+  <string name="ui_status_bar_cm_signal_text_show_text">Рівень сигналу у дБм</string>
+  <string name="ui_status_bar_cm_signal_text_show_text_dbm">Рівень сигналу з один. виміру</string>
   <string name="trackball_title">Світлові сповіщення</string>
   <string name="trackball_summary">Управління кольором та миготінням трекболу чи світлодіода</string>
   <string name="ui_webview_title">Веб-перегляд</string>
@@ -98,11 +103,23 @@
   <string name="pref_overscroll_weight_title">Розмір ефекту</string>
   <string name="pref_overscroll_weight_summary">Встановлення розміру ефекту перепрокручування об\u2019єктів</string>
   <string name="ui_lockscreen_title">Налаштування блокування екрана</string>
-  <string name="pref_lockscreen_delay_title">Тайм-аут</string>
-  <string name="pref_lockscreen_timeout_lock_delay">Тайм-аут автовимк.</string>
-  <string name="pref_lockscreen_screenoff_lock_delay">Тайм-аут вимкнення</string>
-  <string name="pref_lockscreen_timeout_lock_delay_summary">Як швидко блокувати екран після автовимкнення</string>
-  <string name="pref_lockscreen_screenoff_lock_delay_summary">Як швидко блокувати екран після вимкнення</string>
+  <string name="pref_lockscreen_delay_title">Затримка</string>
+  <string name="pref_lockscreen_security_title">Блок. з обмеж. доступу</string>
+  <string name="pref_lockscreen_security_delay_note_title">Примітка:</string>
+  <string name="pref_lockscreen_security_delay_note_summary">поки не задіяні засоби обмеження доступу вікна блокування використовуватиметься лише затримка блокування з обмеженням доступу</string>
+  <string name="pref_lockscreen_security_timeout_lock_delay">Затримка після автовимкнення екрана</string>
+  <string name="pref_lockscreen_security_screenoff_lock_delay">Затримка після вимкнення екрана</string>
+  <string name="pref_lockscreen_security_timeout_lock_delay_summary">Як швидко будуть задіяні засоби обмеження доступу вікна блокування після автоматичного вимкнення екрана</string>
+  <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Як швидко будуть задіяні засоби обмеження доступу вікна блокування після вимкнення екрана</string>
+  <string name="pref_lockscreen_slide_title">Блокування повзунками</string>
+  <string name="pref_lockscreen_slide_delay_note_title">Примітка:</string>
+  <string name="pref_lockscreen_slide_delay_note_summary">навіть якщо задіяне, блокування повзунками відбуватиметься лише за умови, що затримка блокування з обмеженням доступу більша ніж затримка блокування повзунками</string>
+  <string name="pref_lockscreen_slide_delay_title">Увімк. затримку блок. повзунками</string>
+  <string name="pref_lockscreen_slide_delay_summary">Блокування повзунками відображатиметься з окремою затримкою перед блокуванням з обмеженням доступу</string>
+  <string name="pref_lockscreen_slide_timeout_lock_delay">Затримка після автовимкнення екрана</string>
+  <string name="pref_lockscreen_slide_screenoff_lock_delay">Затримка після вимкнення екрана</string>
+  <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Як швидко буде задіяне блокування повзунками після автоматичного вимкнення екрана</string>
+  <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Як швидко буде задіяне блокування повзунками після вимкнення екрана</string>
   <string name="title_color_picker">Вибір кольору</string>
   <string name="msg_color_picker">Щоб підтвердити натисніть на центр.\nЩоб скасувати вибір натисніть \u201CНазад\u201D</string>
   <string name="trackball_notifications_title">Колір спов. трекболу</string>
@@ -143,7 +160,21 @@
   <string name="trackball_reset_all">Скидання всіх налаштувань кольорів і категорій.</string>
   <string name="trackball_color_notice_title">ПРИМІТКА:</string>
   <string name="trackball_color_notice_summary">не всі пристрої здатні відтворити усю гаму кольорів.</string>
+  <string name="trackball_color_entry_green">Зелений</string>
+  <string name="trackball_color_entry_white">Білий</string>
+  <string name="trackball_color_entry_red">Червоний</string>
+  <string name="trackball_color_entry_blue">Синій</string>
+  <string name="trackball_color_entry_yellow">Жовтий</string>
+  <string name="trackball_color_entry_cyan">Блакитний</string>
+  <string name="trackball_color_entry_magenta">Пурпурний</string>
+  <string name="trackball_color_entry_pink">Рожевий</string>
+  <string name="trackball_color_entry_orange">Помаранчевий</string>
+  <string name="trackball_color_entry_light_blue">Світло-синій</string>
+  <string name="trackball_color_entry_random">Випадковий</string>
+  <string name="trackball_color_entry_none">Жоден</string>
+  <string name="trackball_color_entry_amber">Бурштиновий</string>
 
+<<<<<<< HEAD
     <!-- Trackball color entries -->
     <string name="trackball_color_entry_green">Зелений</string>
     <string name="trackball_color_entry_white">Білий</string>
@@ -157,8 +188,12 @@
     <string name="trackball_color_entry_light_blue">Світло-синій</string>
     <string name="trackball_color_entry_random">Випадковий</string>
     <string name="trackball_color_entry_amber">Бурштиновий</string>
+=======
+>>>>>>> cyanogen/gingerbread
   <string name="notification_battery_warning_title">УВАГА: активація параметра може пришвидшити розряд батареї</string>
   <string name="notification_battery_warning">Активація параметра призводить до збільшення споживання струму на ~ 3% на годину. Якщо ви помітили збільшення споживання під час миготіння трекболу, майте це на увазі. Не вмикайте якщо бажаєте зменшити розряд батареї.</string>
+  <string name="pref_lockscreen_disable_on_security_title">Вимк. вікна блокування за блок. з обмеж. доступу</string>
+  <string name="pref_lockscreen_disable_on_security_summary">Вимкнення вікна блокування коли встановлено графічний ключ, пін-код або пароль</string>
   <string name="pref_lockscreen_stylecfg_title">Стиль</string>
   <string name="pref_lockscreen_stylecfg_summary">Встановлення стилю вікна блокування та пов\u2019язані з ним налаштування</string>
   <string name="pref_lockscreen_widgets_title">Віджети</string>
@@ -192,11 +227,19 @@
   <string name="pref_menu_unlock_summary">Натискання на кнопку "Меню" розблокує пристрій</string>
   <string name="pref_lockscreen_quick_unlock_control_title">Швидке розблокування</string>
   <string name="pref_lockscreen_quick_unlock_control_summary">Вводження ПІН-коду або паролю не потребуватиме підтвердження кнопкою \u201CОК\u201D. Натискання кнопки \u201CВидалити\u201D вважається невдалою спробою.</string>
-  <string name="pref_lockscreen_custom_app_toggle_title">Стартер кор. програми</string>
+  <string name="pref_lockscreen_custom_app_toggle_title">Запуск кор. програми</string>
   <string name="pref_lockscreen_custom_app_toggle_summary">Додатковий повзунок або комірка з яликом програми в залежності від стилю вікна блокування</string>
   <string name="pref_lockscreen_custom_app_activity_title">Користувацька програма</string>
-  <string name="pref_lockscreen_custom_icon_style_title">Іконка обміну повід.</string>
-  <string name="pref_lockscreen_custom_icon_style_summary">Змінення іконки \u201Cкористувацька програма\u201D на іконку \u201Cобмін повідомленнями\u201D</string>
+  <string name="pref_lockscreen_custom_background_title">Тло</string>
+  <string name="pref_lockscreen_custom_background_dialog_title">Тло</string>
+  <string name="pref_lockscreen_custom_background_summary">Установлення зображення чи кольору в якості тла вікна блокування</string>
+  <string name="pref_lockscreen_custom_background_summary_color">Установлено колір</string>
+  <string name="pref_lockscreen_custom_background_summary_image">Установлено зображення</string>
+  <string name="pref_lockscreen_custom_background_summary_default">Типове значення</string>
+  <string name="pref_lockscreen_background_result_successful">Тло змінено</string>
+  <string name="pref_lockscreen_background_result_not_successful">Тло не змінено</string>
+  <string name="pref_lockscreen_custom_icon_style_title">Іконка користувацької прогр.</string>
+  <string name="pref_lockscreen_custom_icon_style_summary">Для запуску користувацької програми використовуватиметься іконка прогр. замість іконки СМ</string>
   <string name="pref_lockscreen_rotary_unlock_down_title">Розбл. перетяг. вниз</string>
   <string name="pref_lockscreen_rotary_unlock_down_summary">Розблокування відбуватиметься перетягуванням коліщатка вниз, а запуск користувацької програми повертанням праворуч</string>
   <string name="pref_lockscreen_rotary_hide_arrows_title">Прих. вказ. стрілок</string>
@@ -293,8 +336,12 @@
   <string name="performance_settings_warning">Ці параметри впливають на продуктивність системи, потенційно в гіршу сторону, мають експериментальний характер. Просимо не надсилати повідомлення про помилки, якщо ви змінили будь-які типові значення.</string>
   <string name="application_settings_title">Програми</string>
   <string name="application_settings_summary">Різні налаштування програм, такі як місце установки</string>
+  <string name="pref_switch_storage_title">Викор. внутр. пам\u2019яті</string>
+  <string name="pref_switch_storage_summary_on">Для програм і даних використовується додаткова внутрішня пам\u2019ять</string>
+  <string name="pref_switch_storage_summary_off">Для програм і даних використовується змінна карта</string>
+  <string name="pref_storage_switch_unavailable">Цей пристрій не має додаткової внутрішньої пам\u2019яті</string>
   <string name="pref_move_all_apps_title">Переміщення програм</string>
-  <string name="pref_move_all_apps_summary">Переміщення будь-якої програми на зовнішні накопичувачі</string>
+  <string name="pref_move_all_apps_summary">Переміщення будь-якої програми на зовнішній носій</string>
   <string name="pref_install_location_title">Місце встановлення</string>
   <string name="pref_install_location_summary">Виберіть місце становлення нових програм</string>
   <string name="general_title">Основні</string>
@@ -303,6 +350,8 @@
   <string name="pref_power_prompt_summary">Увімкнення діалогу вимкнення та перезавантаження</string>
   <string name="pref_render_effect_title">Ефекти візуалізації</string>
   <string name="pref_render_effect_summary">Змінення кольору виводження на екран (потенційно економить батарею)</string>
+  <string name="expanded_haptic_feedback_title">Тактильний зворотній зв\u2019язок</string>
+  <string name="expanded_haptic_feedback_summary">Увімк.(вимкн.) тактильного зворотного зв\u2019язку.</string>
   <string name="widget_name">Віджет RenderFX</string>
   <string name="renderfx_temp">RenderFX</string>
   <string name="prefs_render_effect">Ефекти візуалізації</string>

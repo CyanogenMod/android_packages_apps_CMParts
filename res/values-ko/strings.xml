@@ -103,6 +103,9 @@
     <string name="pref_lockscreen_always_music_controls_summary">음악을 재생하고 있지 않더라도 음악 조정 화면을 표시합니다.</string>
     <string name="pref_trackball_wake_title">트랙볼 깨어남</string>
     <string name="pref_trackball_wake_summary">트랙볼 버튼을 눌러 장비를 깨웁니다.</string>
+    <string name="pref_volume_wake_title">음량 조절 키로 깨어남</string>
+    <string name="pref_volume_wake_summary">음량 위/아래 버튼을 눌러 장비를 깨웁니다. 전원 버튼을 누르기 힘든 장비를 위해 만들었습니다.</string>
+
     <string name="pref_trackball_unlock_title">트랙볼 잠금 해제</string>
     <string name="pref_trackball_unlock_summary">트랙볼을 눌러 잠금을 해제합니다.</string>
     <string name="pref_menu_unlock_title">메뉴 잠금 해제</string>
@@ -112,7 +115,12 @@
     <string name="pref_lockscreen_style_title">잠금 화면 모양</string>
     <string name="pref_lockscreen_style_summary">잠금 화면의 모양을 선택해 주세요.</string>
 
-
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">메뉴 버튼 길게 누르기 설정</string>
+    <string name="long_press_menu_summary">메뉴 버튼을 길게 누를때의 행동 설정</string>
+    <string name="pref_user_defined_long_press_menu_title">사용자 지정 어플리케이션 선택</string>
+    <string name="pref_long_press_menu_title">행동 선택</string>
+    <string name="pref_long_press_menu_summary">메뉴 버튼 길게 누르기 사용자 정의</string>
 
     <!-- Long Press Home -->
     <string name="long_press_home_title">홈버튼 길게 누르기 설정</string>
@@ -154,6 +162,12 @@
     <string name="application_settings_title">어플리케이션 설정</string>
     <string name="application_settings_summary">설치 경로와 같은 어플리케이션 설정 변경</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">내부 저장 공간 사용</string>
+    <string name="pref_switch_storage_summary_on">앱과 미디어를 확장된 내부 저장 공간에 저장</string>
+    <string name="pref_switch_storage_summary_off">앱과 미디어를 외부 저장소에 저장</string>
+    <string name="pref_storage_switch_unavailable">이 장비는 확장된 내부 저장 공간을 지원하지 않습니다.</string>
+
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">어플리케이션 이동 허용</string>
     <string name="pref_move_all_apps_summary">외부 저장장치로 어플리케이션 이동 허용</string>
@@ -164,7 +178,7 @@
 
     <!-- HapticTweaks -->
     <string name="haptic_title">촉각 반응 설정 조정</string>
-    <string name="haptic_summary">촉각 반응이 언제, 또 얼마나 강하게 반응할 지 조절합니다.</string>
+    <string name="haptic_summary">촉각 반응이 언제 나올지, 또 얼마나 강하게 반응할 지 조절합니다.</string>
 
     <string name="title_haptic_feedback">주 촉각 반응</string>
     <string name="summary_on_haptic_feedback">가상 키보드 누름이나 특정 사용자 환경 반응에 대한 촉각 반응 사용</string>
@@ -186,8 +200,8 @@
     <string name="title_haptic_menu">촉각 반응 조정</string>
     <string name="title_haptic_notice">설정이 모두 적용되려면 다시 시작이 필요합니다.</string>
 
-    <string name="haptic_delay_desc">ms 꺼짐 시간</string>
-    <string name="haptic_vibe_desc">ms 켬 시간</string>
+    <string name="haptic_delay_desc">ms 동안 꺼짐</string>
+    <string name="haptic_vibe_desc">ms 동안 켜짐</string>
 
     <string name="haptic_down_description">버튼을 누를 때의 촉각 반응 조정\n(하드웨어 키보드나 특정한 사용자 환경 상호 작용)</string>
     <string name="haptic_up_description">버튼을 뗄 때의 촉각 반응 조정\n(하드웨어 키보드나 대부분의 화면 누름)</string>
@@ -251,6 +265,9 @@
     <string name="widget_render_effect_calibrated_red">보정 옅은 빨강</string>
     <string name="widget_render_effect_calibrated_cool">보정 시원함</string>
 
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">촉각 반응</string>
+    <string name="expanded_haptic_feedback_summary">촉각 반응을 사용하거나 사용하지 않습니다.</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">확장된 위젯</string>
@@ -258,6 +275,11 @@
     <string name="summary_expanded_widget">확장된 전윈 위젯을 사용합니다.</string>
     <string name="title_expanded_hide_onchange">상태 변경 시 숨기기</string>
     <string name="summary_expanded_hide_onchange">위젯 버튼을 눌렀을 때 알림 메뉴를 닫습니다.</string>
+    <string name="title_expanded_hide_indicator">지시기 숨기기</string>
+    <string name="summary_expanded_hide_indicator">알림 위젯 지시기를 숨깁니다.</string>
+    <string name="title_expanded_hide_scrollbar">스크롤바 숨기기</string>
+    <string name="summary_expanded_hide_scrollbar">최대 갯수보다 위젯이 더 많이 있을 때에도 스크롤바를 보이지 않습니다.</string>
+
     <string name="expanded_color_mask">지시기 색</string>
     <string name="title_widget_picker">위젯 버튼</string>
     <string name="summary_widget_picker">사용할 위젯 버튼을 골라주세요.</string>
@@ -350,7 +372,11 @@
     <string name="sound_title">소리 설정</string>
     <string name="sound_summary">소리와 오디오 집중 설정</string>
     <string name="sound_notifications_focus_title">알림 집중</string>
-    <string name="sound_notifications_focus_summary">오디오 집중은 알림 소리가 재생될 때 호환되는 어플리케이션이 음량을 낮추도록 요청하는 기능입니다.</string>
+    <string name="sound_notifications_focus_summary">오디오 집중은 알림 소리가 재생될 때 호환되는 어플리케이션이 자동으로 음량을 낮추도록 요청하는 기능입니다.</string>
+    <string name="sound_vibrate_in_call_title">통화 중 진동 설정</string>
+    <string name="sound_vibrate_in_call_summary_off">통화 중에 알림이 오더라도 진동을 발생시키지 않습니다.</string>
+    <string name="sound_vibrate_in_call_summary_on">통화 중에 알림이 오면 진동을 발생시킵니다.</string>
+
     <string name="sound_to_speaker_title">항상 스피커로 재생</string>
     <string name="sound_notifications_title">알림</string>
     <string name="sound_rings_title">벨소리</string>
@@ -546,10 +572,13 @@
     <string name="pref_lockscreen_album_art_title">앨범 아트 표시</string>
     <string name="pref_lockscreen_album_art_summary">현재 노래의 앨범 아트를 표시합니다. 세로 모드에서 기본 음악 플레이어로만 작동합니다.</string>
 
+    <string name="pref_lockscreen_disable_on_security_title">보안 설정 시 잠금 화면 비활성화</string>
+    <string name="pref_lockscreen_disable_on_security_summary">잠금 화면이 설정되어 있을 때(패턴, PIN, 비밀번호) 잠금 화면을 비활성화합니다.</string>
+
     <string name="pref_lockscreen_stylecfg_title">모양 설정</string>
-    <string name="pref_lockscreen_stylecfg_summary">잠금 화면 모양과 설정을 조정합니다.</string>
+    <string name="pref_lockscreen_stylecfg_summary">잠금 화면의 모양과 설정을 조정합니다.</string>
     <string name="pref_lockscreen_widgets_title">위젯 옵션</string>
-    <string name="pref_lockscreen_widgets_summary">잠금 화면의 다양한 위젯 활성화/비활성화</string>
+    <string name="pref_lockscreen_widgets_summary">잠금 화면의 여러 위젯 활성화/비활성화</string>
     <string name="pref_lockscreen_unlock_title">잠금 해제 옵션</string>
     <string name="pref_lockscreen_unlock_summary">버튼 잠금 해제 및 빠른 잠금 해제 설정</string>
     <string name="pref_lockscreen_gesture_title">잠금 화면 손동작</string>
@@ -598,7 +627,7 @@
     <string name="tablet_tweaks_long_volm_action_title">음량 낮춤 버튼 길게 누르기</string>
     <string name="tablet_tweaks_vol_both_action_title">버튼 두개 동시 누르기</string>
     <string name="tablet_tweaks_vol_both_action_summary">안내: 일부 장비는 볼륨 버튼 두개와 전원 버튼을 동시에 누르면 강제 재시작을 수행합니다.</string>
-    <string name="tablet_tweaks_long_vol_both_action_title">버튼 두개 동시에 길게 누르기</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">동시에 두 버튼을 길게 누르기</string>
 
     <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
     <string name="tablet_tweaks_extend_pm_list_head">전원 메뉴 버튼</string>
@@ -611,8 +640,22 @@
     <string name="tablet_soft_buttons_search_title">검색</string>
     <string name="tablet_soft_buttons_quick_na_title">빠른 알림</string>
 
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">가속도계 회전</string>
+    <string name="pref_rotation_0_title">0도</string>
+    <string name="pref_rotation_90_title">90도</string>
+    <string name="pref_rotation_180_title">180도</string>
+    <string name="pref_rotation_270_title">270도</string>
+
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">자원 제거 허용</string>
     <string name="pref_purgeable_assets_summary">시스템이 자원 비트맵 메모리를 해제하여 사용 가능한 메모리를 더 늘릴 수 있습니다. (다시 시작 필요)</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">권한 관리</string>
+    <string name="perm_enable_management_summary">어플리케이션 권환 관리를 활성화합니다.</string>
+    <string name="perm_enable_warning_message">경고!\n대부분의 경우 권한 철회는 어플리케이션이 정상적으로 작동하지 않게 할 원인이 됩니다. 만일 철회된 어플리케이션이 강제 종료된다면 권한을 다시 허용하거나 어플리케이션을 사용하지 마십시오. \n권한 철회한 어플리케이션이 정상적으로 작동하지 않는다고 해서 Cyanogenmod에 문제 보고를 하지 마십시오!</string>
+    <string name="perm_enable_warning_title">확실합니까?</string>
 
 </resources>

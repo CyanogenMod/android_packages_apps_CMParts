@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">Impostazioni CyanogenMod</string>
@@ -417,6 +416,12 @@
     <string name="application_settings_title">Impostazioni applicazioni</string>
     <string name="application_settings_summary">Modifica diverse impostazioni riguardanti le applicazioni</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Usa memoria interna</string>
+    <string name="pref_switch_storage_summary_on">Utilizza l\'espansione di memoria interna per le app e i contenuti multimediali</string>
+    <string name="pref_switch_storage_summary_off">Utilizza la scheda rimovibile per le app e i contenuti multimediali</string>
+    <string name="pref_storage_switch_unavailable">Questo dispositivo non ha una memoria interna espandibile</string>
+
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Abilita spostamento app</string>
     <string name="pref_move_all_apps_summary">Permette di spostare qualsiasi applicazione nella memoria esterna</string>
@@ -719,5 +724,4 @@
     <string name="perm_enable_management_summary">Attiva la gestione delle autorizzazioni</string>
     <string name="perm_enable_warning_message">Attenzione!\nRevocare una o più autorizzazioni può causare il malfunzionamento dell\'applicazione. Se un\'applicazione, alla quale sono state revocate delle autorizzazioni, viene interrotta forzatamente è consigliabile concedere le dovute autorizzazioni o non utilizzare l\'applicazione.\nNon inviare segnalazioni di errori a Cyanogenmod se un\'applicazione alla quale sono state revocate delle autorizzazioni non funziona correttamente!</string>
     <string name="perm_enable_warning_title">Sei sicuro?</string>
-
 </resources>

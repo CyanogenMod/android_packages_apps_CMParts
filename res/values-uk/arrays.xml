@@ -25,6 +25,11 @@
         <item>Маленький</item>
         <item>Немає (типове знач.)</item>
     </string-array>
+    <string-array name="haptic_feedback_entries">
+        <item>Глобальні налаштування</item>
+        <item>Увімк.</item>
+        <item>Вимкн.</item>
+    </string-array>
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (швидко)</item>
         <item>3</item>
@@ -97,7 +102,7 @@
         <item>26</item>
     </string-array>
     <string-array name="entries_light_decrease_hysteresis">
-        <item>0 %</item>
+        <item>0</item>
         <item>10 %</item>
         <item>20 %</item>
         <item>30 %</item>
@@ -109,7 +114,7 @@
         <item>90 %</item>
     </string-array>
     <string-array name="entries_sound_attenuation">
-        <item>0 дБ</item>
+        <item>0</item>
         <item>4 дБ</item>
         <item>6 дБ (типове значення)</item>
         <item>8 дБ</item>
@@ -157,6 +162,11 @@
         <item>Коліщатко</item>
         <item>Коліщатко (оновлене)</item>
         <item>Лінза</item>
+    </string-array>
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Колір</item>
+        <item>Зображення</item>
+        <item>Типові шпалери</item>
     </string-array>
     <string-array name="pref_in_call_style_entries">
         <item>Повзунки</item>

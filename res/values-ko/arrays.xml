@@ -168,4 +168,18 @@
         <item>음량 낮추기</item>
     </string-array>
 
+    <string-array name="haptic_feedback_entries">
+        <item>전역 설정</item>
+        <item>켜기</item>
+        <item>끄기</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>없음</item>
+        <item>소프트 키보드</item>
+        <item>검색 버튼</item>
+        <item>사용자 지정 어플리케이션</item>
+        <item>상태 표시줄 토글</item>
+    </string-array>
+
 </resources>

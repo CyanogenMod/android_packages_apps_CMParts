@@ -105,7 +105,11 @@
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
     <string name="ui_status_bar_toggle_info">自動明るさ調整は有効</string>
-
+    <string name="ui_status_bar_cm_signal_text_title">代替の電波強度表示</string>
+    <string name="ui_status_bar_cm_signal_text_summary">シグナルバーの代わりにdBm値を表示</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">シグナルバー</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">シグナルテキスト</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">dBm付きのシグナルテキスト</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED通知</string>
@@ -183,6 +187,8 @@
     <string name="notification_battery_warning">このオプションを有効にすることにより、1時間に約3%ほどのバッテリー消費が増加します。バッテリー消費が速くなったと感じたら、恐らくこのオプションが原因です。バッテリー消費が気になるのであれば、このオプションは有効にするべきではありません。</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">ロック解除セキュリティ使用時はロックスクリーン無効</string>
+    <string name="pref_lockscreen_disable_on_security_summary">画面のロック解除セキュリティ(パスワード,PIN,パターン)を使用する場合はロックスクリーンを無効にする</string>
     <string name="pref_lockscreen_stylecfg_title">スタイルオプション</string>
     <string name="pref_lockscreen_stylecfg_summary">ロックスクリーンのスタイルとそれに対応する設定</string>
     <string name="pref_lockscreen_widgets_title">ウィジェットオプション</string>
@@ -238,6 +244,15 @@
     <string name="pref_lockscreen_custom_app_toggle_title">カスタムアプリの起動</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">カスタムアプリを起動するための2つ目のスライダやロータリーの窪みを表示する</string>
     <string name="pref_lockscreen_custom_app_activity_title">カスタムアプリ</string>
+    <string name="pref_lockscreen_custom_background_title">背景を選択</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">背景を選択</string>
+    <string name="pref_lockscreen_custom_background_summary">ロックスクリーンの背景画像や色を選択する</string>
+    <string name="pref_lockscreen_custom_background_summary_color">現在 : 色</string>
+    <string name="pref_lockscreen_custom_background_summary_image">現在 : 画像</string>
+    <string name="pref_lockscreen_custom_background_summary_default">現在 : デフォルト</string>
+    <string name="pref_lockscreen_background_result_successful">背景は変更されました</string>
+    <string name="pref_lockscreen_background_result_not_successful">背景は変更されませんでした</string>
+
     <string name="pref_lockscreen_custom_icon_style_title">メッセージアイコンを使う</string>
     <string name="pref_lockscreen_custom_icon_style_summary">カスタムアプリの起動アイコンとしてCMアイコンの代わりににメッセージアイコンを使う</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">ドラッグダウンでアンロック</string>
@@ -306,6 +321,12 @@
     <string name="application_settings_title">アプリケーション設定</string>
     <string name="application_settings_summary">インストール場所など、いくつかのアプリケーション設定</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">内蔵ストレージを使用</string>
+    <string name="pref_switch_storage_summary_on">アプリケーションやメディアの格納に内蔵の拡張ストレージを使用する</string>
+    <string name="pref_switch_storage_summary_off">アプリケーションやメディアの格納に取り外し可能なカードを使用する</string>
+    <string name="pref_storage_switch_unavailable">このデバイスには内蔵の拡張ストレージはありません</string>
+
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">アプリケーションの移動を許可</string>
     <string name="pref_move_all_apps_summary">すべてのアプリケーションについて、外部ストレージへの移動を許可する</string>
@@ -372,6 +393,10 @@
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">描画エフェクト</string>
     <string name="pref_render_effect_summary">スクリーンを描画する色を変更する(バッテリ維持の可能性がある)</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">振動フィードバック</string>
+    <string name="expanded_haptic_feedback_summary">振動フィードバックを有効/無効にする</string>
 
     <string name="widget_name">RenderFXウィジェット</string>
     <string name="renderfx_temp">RenderFX</string>
@@ -466,12 +491,24 @@
     <string name="pref_lock_mms_title">メッセージアプリをメモリに維持</string>
     <string name="pref_lock_mms_summary">メモリが少ないときにメッセージが消失するのを防ぐ</string>
 
-    <string name="ui_lockscreen_title">スクリーンロックの設定</string>
-    <string name="pref_lockscreen_delay_title">ディレイ</string>
-    <string name="pref_lockscreen_timeout_lock_delay">スクリーンタイムアウトからのディレイ</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">スクリーンオフしてからのディレイ</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">スクリーンがタイムアウトしてからどのくらいの時間でロックするか</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">スクリーンをオフにしてからどのらいの時間でロックするか</string>
+    <string name="ui_lockscreen_title">画面ロックの設定</string>
+    <string name="pref_lockscreen_delay_title">遅延</string>
+    <string name="pref_lockscreen_security_title">セキュリティロック</string>
+    <string name="pref_lockscreen_security_delay_note_title">ノート</string>
+    <string name="pref_lockscreen_security_delay_note_summary">画面のロック解除セキュリティを無しに設定するとセキュリティロックの遅延のみ有効になります</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">画面タイムアウト時の遅延</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">画面オフ時の遅延</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">画面がタイムアウトしてからセキュリティロックするまでの時間</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">画面をオフにしてからセキュリティロックするまでの時間</string>
+    <string name="pref_lockscreen_slide_title">スライドロック</string>
+    <string name="pref_lockscreen_slide_delay_note_title">ノート</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">有効にした場合、通常のスライドロックはセキュリティロックの遅延がスライドロックの遅延よりも長いときのみ表示されます</string>
+    <string name="pref_lockscreen_slide_delay_title">スライドロックの遅延</string>
+    <string name="pref_lockscreen_slide_delay_summary">画面ロックの遅延をセキュリティロックの遅延とは別に設定する</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">画面タイムアウト時の遅延</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">画面オフ時の遅延</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">画面がタイムアウトしてからスライドロックするまでの時間</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">画面をオフにしてからスライドロックするまでの時間</string>
 
     <string name="dialog_clear_flash">点滅をクリア</string>
 

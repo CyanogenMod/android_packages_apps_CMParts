@@ -41,40 +41,40 @@
     <string name="pref_electron_beam_animation_off">Skärm-av animering</string>
 
     <!-- User interface: Tablet tweaks -->
-    <string name="tablet_tweaks_title_head">Tablet tweaks</string>
-    <string name="tablet_tweaks_summary_head">Inställningar mest användbara för tablet enheter samlas på ett ställe. Fungerar även för telefoner</string>
-    <string name="tablet_tweaks_sb_bottom_title">Undre statusraden</string>
-    <string name="tablet_tweaks_sb_bottom_summary">Visa statusfältet på botten. Användbart för tabletter som använder soft-knappar för hem, meny, mm på statusfältet</string>
+    <string name="tablet_tweaks_title_head">Surfplattefixar</string>
+    <string name="tablet_tweaks_summary_head">Inställningar mest användbara för surfplattor samlade på ett ställe. Fungerar dock även för telefoner</string>
+    <string name="tablet_tweaks_sb_bottom_title">Undre statusrad</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Visa statusraden på botten. Användbart för surfplattor som använder soft-knappar för hem, meny, m.m. i statusraden</string>
     <string name="tablet_tweaks_status_bar_dead_zone_title">Död zon</string>
-    <string name="tablet_tweaks_status_bar_dead_zone_summary">Lägg till en död zon halv skärmbredd till mitten av statusfältet</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Lägg till en död zon med halv skärmbredd till mitten av statusraden</string>
     <string name="tablet_tweaks_soft_buttons_left_title">Soft-knappar vänster</string>
-    <string name="tablet_tweaks_soft_buttons_left_summary">Placera soft-knappar på vänster sida av statusfältet</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Placera soft-knapparna på vänster sida av statusraden</string>
     <string name="tablet_tweaks_soft_button_list_title">Välj soft-knappar</string>
     <string name="tablet_tweaks_interface_head">Gränssnitt</string>
-    <string name="tablet_tweaks_disable_lockscreen_title">Inaktivera lås skärm</string>
-    <string name="tablet_tweaks_disable_lockscreen_summary">När den är aktiverad, visas inte lås skärm eller mönster skärm. Varken vid uppstart, eller när enheten väcks</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Inaktivera låsskärm</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">När den är aktiverad, visas inte låsskärmen eller mönsterskärmen - varken vid uppstart eller när enheten väcks</string>
     <string name="tablet_tweaks_disable_fullscreen_title">Inaktivera helskärm</string>
-    <string name="tablet_tweaks_disable_fullscreen_summary">Åsidosätt helskärms begäran av applikationer. När den är aktiverad, är statusraden alltid synlig tills den döljs av knappen</string>
-    <string name="tablet_tweaks_unhide_button_list_head">Ta fram knapp</string>
-    <string name="tablet_tweaks_unhide_button_list_title">Välj inte dölja knappen</string>
-    <string name="tablet_tweaks_extend_pm_title">Förläng power menyn</string>
-    <string name="tablet_tweaks_extend_pm_summary">Lägg till hem/tillbaka/meny åtgärder till power menyn</string>
-    <string name="tablet_tweaks_extend_pm_list_title">Välj power meny knappar</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_title">Volym beteende omvänd</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Volymknappar beter sig normalt. Tryck för volymförändring, lång tryck för användare åtgärder</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Volymknappar beter sig omvändt. Tryck för användare åtgärd, lång tryck för volymändring</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Åsidosätt helskärmsbegäran av applikationer. När den är aktiverad är statusraden alltid synlig tills den döljs av knappen</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Visa-knapp</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Välj visa-knapp</string>
+    <string name="tablet_tweaks_extend_pm_title">Utöka strömmenyn</string>
+    <string name="tablet_tweaks_extend_pm_summary">Lägg till hem/tillbaka/meny åtgärder till strömmenyn</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Knappar i strömmenyn</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Omvänt volymbeteende</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Volymknappar beter sig normalt. Tryck för volymändring, långt tryck för användaråtgärder</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Volymknappar beter sig omvänt. Tryck för användaråtgärd, långt tryck för volymändring</string>
 
     <!-- User interface: Tablet tweaks -> volume remapping -->
-    <string name="tablet_tweaks_input_head">Placera om volymknapparna</string>
-    <string name="tablet_tweaks_long_volp_action_title">Långt tryck volym upp</string>
-    <string name="tablet_tweaks_long_volp_action_summary">Tilldela hem/tillbaka/meny/etc åtgärder för att volym knappen upp långt tryck. Begränsat till skärm på</string>
-    <string name="tablet_tweaks_long_volm_action_title">Långt tryck volym ner</string>
-    <string name="tablet_tweaks_vol_both_action_title">Båda volym knapparna</string>
-    <string name="tablet_tweaks_vol_both_action_summary">Obs: Vissa enheter har en reset funktion båda volymknapparna intryckta + power knappen intryckt</string>
-    <string name="tablet_tweaks_long_vol_both_action_title">Lång tryck på båda volym knapparna</string>
+    <string name="tablet_tweaks_input_head">Mappa om volymknapparna</string>
+    <string name="tablet_tweaks_long_volp_action_title">Långt tryck på volym upp</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Tilldela hem/tillbaka/meny/etc åtgärder för långt tryck på volym upp. Gäller endast när skärmen är på</string>
+    <string name="tablet_tweaks_long_volm_action_title">Långt tryck på volym ner</string>
+    <string name="tablet_tweaks_vol_both_action_title">Båda volymknapparna</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Obs: Vissa enheter har en reset-funktion när båda volymknapparna hålls intryckta tillsammans med strömknappen</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Långt tryck på båda volymknapparna</string>
 
     <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
-    <string name="tablet_tweaks_extend_pm_list_head">Power meny knappar</string>
+    <string name="tablet_tweaks_extend_pm_list_head">Knappar i strömmenyn</string>
 
     <!-- User interface: Tablet tweaks -> soft buttons -->
     <string name="tablet_tweaks_soft_buttons_list_head">Soft-knappar</string>
@@ -82,7 +82,7 @@
     <string name="tablet_soft_buttons_menu_title">Meny</string>
     <string name="tablet_soft_buttons_back_title">Tillbaka</string>
     <string name="tablet_soft_buttons_search_title">Sök</string>
-    <string name="tablet_soft_buttons_quick_na_title">Snabb notifieringar</string>
+    <string name="tablet_soft_buttons_quick_na_title">Snabbaviseringar</string>
 
     <!-- User interface : Rotation -->
     <string name="rotation_category_title">Accelerometer rotation</string>
@@ -99,9 +99,9 @@
     <string name="ui_status_bar_clock_summary">Klockan i statusraden kommer att vara gömd om detta inaktiveras</string>
     <string name="ui_status_bar_cm_battery_title">Batteriprocent</string>
     <string name="ui_status_bar_cm_battery_summary">Visa batteriprocent samt mini-ikon för batteriet. Inaktivera om temat får detta att se trasigt ut</string>
-    <string name="ui_status_bar_compact_carrier_title">Kompakt leverantörs etikett</string>
-    <string name="ui_status_bar_compact_carrier_summary">Använd alternativ notifiering,nedrullningsbar layout med mini leverantörs etikett</string>
-    <string name="ui_status_bar_toggle_brightness">StatusBar ljuskontroll</string>
+    <string name="ui_status_bar_compact_carrier_title">Kompakt operatörsetikett</string>
+    <string name="ui_status_bar_compact_carrier_summary">Använd en alternativ layout för aviseringar med liten operatörsetikett</string>
+    <string name="ui_status_bar_toggle_brightness">Ljuskontroll i statusrad</string>
     <string name="ui_status_bar_toggle_brightness_summary">Tillåter justering av ljusstyrka genom att skjuta över statusbar.</string>
     <string name="ui_status_bar_toggle_info">Automatisk ljusstyrka är aktiverad</string>
     <string name="ui_status_bar_cm_signal_text_title">Alternativ visning av signalstyrka</string>
@@ -242,7 +242,7 @@
     <string name="pref_volume_wake_summary">Väck enheten genom att trycka på volym upp/ner. Avsett för enheter där det är svårt att trycka på strömknappen</string>
     <string name="pref_trackball_unlock_title">Upplåsning med styrkula</string>
     <string name="pref_trackball_unlock_summary">Tryck på styrkulan låser upp enheten</string>
-    <string name="pref_menu_unlock_title">Upplåsning med Meny-knapp</string>
+    <string name="pref_menu_unlock_title">Upplåsning med Meny</string>
     <string name="pref_menu_unlock_summary">Tryck på meny-knappen låser upp enheten</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Snabbupplåsning</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Slippa trycka OK när PIN eller lösenord ska skrivas. Backsteg räknas som misslyckat försök.</string>
@@ -279,10 +279,10 @@
     <!-- Input Settings -->
     <string name="input_settings_title">Inmatningsinställningar</string>
     <string name="input_settings_summary">Kontrollera knappbeteende</string>
-    <string name="haptic_title">Anpassning av haptisk feedback</string>
+    <string name="haptic_title">Anpassa haptisk feedback</string>
     <string name="haptic_summary">Justera när haptisk feedback inträffar och hur starkt</string>
     <string name="button_settings_title">Knappinställningar</string>
-    <string name="long_press_home_title">Inställningar för långt tryck på hem</string>
+    <string name="long_press_home_title">Inst. för långt tryck på hem</string>
     <string name="long_press_home_summary">Antalet nyligen använda applikationer, etc</string>
     <string name="input_search_key_title">Sökknappsbeteende</string>
     <string name="input_search_key_summary">Ställ in anpassade händelser för sökknapp och långt tryck på sökknapp</string>
@@ -293,18 +293,18 @@
     <string name="pref_input_custom_long_search_app_toggle_summary">Startar en anpassad app vid långt tryck på sökknappen</string>
 
     <!-- Long Press Menu -->
-    <string name="long_press_menu_title">Inställningar för långt tryck på meny</string>
+    <string name="long_press_menu_title">Inst. för långt tryck på meny</string>
     <string name="long_press_menu_summary">Anpassad inställning för långt tryck på meny</string>
     <string name="pref_user_defined_long_press_menu_title">Välj anpassad applikation</string>
     <string name="pref_long_press_menu_title">Välj beteende</string>
     <string name="pref_long_press_menu_summary">Anpassa långt tryck på meny</string>
 
     <!-- Long Press Home -->
-    <string name="recent_apps_show_title">Visa titel på nyligen använda applikationer</string>
-    <string name="recent_apps_num_title">Antal nyligen använda applikationer</string>
+    <string name="recent_apps_show_title">Visa titel på appar</string>
+    <string name="recent_apps_num_title">Antal appar</string>
     <string name="recent_apps_num_summary">Antal nyligen använda applikationer att visa vid långt tryck på hem-knappen</string>
     <string name="dialog_recent_apps_num_title">Ange antalen nyligen använda applikationer</string>
-    <string name="use_custom_app_title">Använd anpassad applikation</string>
+    <string name="use_custom_app_title">Använd anpassad app</string>
     <string name="use_custom_app_summary">Använd en anpassad applikation istället för dialogen med nyligen använda applikationer</string>
     <string name="select_custom_app_title">Välj anpassad applikation</string>
     <string name="group_applications">Applikationer</string>
@@ -367,11 +367,11 @@
     <string name="pref_jit_mode_summary">Använd Dalvik Just-In-Time kompilator (kräver omstart)</string>
 
     <!-- Performance Settings : Dithering -->
-    <string name="pref_use_dithering_title">Aktivera ytgråtonsändring</string>
+    <string name="pref_use_dithering_title">Använd ytgråtonsändring</string>
     <string name="pref_use_dithering_summary">Gråtonsändring av ytor förbättrar bildkvaliteten på bekostnad av prestanda (kräver omstart)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">Tillåt utrensning av tillgångar</string>
+    <string name="pref_purgeable_assets_title">Tillåt tömning av tillgångar</string>
     <string name="pref_purgeable_assets_summary">Systemet kan fria upp mer minne när det behövs, om minnet med bitmap-tillgångarna kan återtas. (kräver omstart)</string>
 
     <!-- Performance Settings : VM Heap Size -->
@@ -384,7 +384,7 @@
 
     <!-- Performance : Lock mms app in memory -->
     <string name="pref_lock_mms_title">Lås meddelandeapp i minnet</string>
-    <string name="pref_lock_mms_summary">Undvid förlorade meddelanden i situationer med lite minne</string>
+    <string name="pref_lock_mms_summary">Undvik förlorade meddelanden i situationer med lite minne</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">WARNING: Dragons Ahead!</string>
@@ -393,9 +393,13 @@
     <!-- Application Settings -->
     <string name="application_settings_title">Applikationsinställningar</string>
     <string name="application_settings_summary">Ändra diverse applikationsinställningar såsom installationsplats</string>
+    <string name="pref_switch_storage_title">Använd intern lagring</string>
+    <string name="pref_switch_storage_summary_on">Använder utökad intern lagring för program och media</string>
+    <string name="pref_switch_storage_summary_off">Använder flyttbara kort för program och media</string>
+    <string name="pref_storage_switch_unavailable">Denna enhet har ingen utökad intern lagring</string>
 
     <!-- Application Settings : Move any app -->
-    <string name="pref_move_all_apps_title">Tillåt flytt av applikationer</string>
+    <string name="pref_move_all_apps_title">Tillåt applikationsflytt</string>
     <string name="pref_move_all_apps_summary">Tillåt flytt av valfri applikation till extern lagring</string>
 
     <!-- Application Settings : Install Location -->
@@ -428,10 +432,10 @@
     <string name="pref_render_effect_blue">Blå</string>
     <string name="pref_render_effect_amber">Bärnsten</string>
     <string name="pref_render_effect_salmon">Lax</string>
-    <string name="pref_render_effect_fuscia">Fucksia</string>
+    <string name="pref_render_effect_fuscia">Fuchsia</string>
     <string name="pref_render_effect_calibrated">Kalibrerad (N1)</string>
     <string name="pref_render_effect_calibrated_red">Kalibrerad (N1) Lågt röd</string>
-    <string name="pref_render_effect_calibrated_cool">alibrerad (N1) Kall</string>
+    <string name="pref_render_effect_calibrated_cool">Kalibrerad (N1) Kall</string>
     <string name="pref_render_effect_red">Röd</string>
 
 
@@ -556,7 +560,7 @@
     <string name="sound_notifications_title">Aviseringar</string>
     <string name="sound_rings_title">Ringsignaler</string>
     <string name="sound_alarms_title">Alarm</string>
-    <string name="sound_note_title">Anteckning</string>
+    <string name="sound_note_title">Observera</string>
     <string name="sound_note_summary">Inställningarna nedan gäller endast när hörlurar används.</string>
     <string name="sound_attenuation_title">Dämpning av inställd volym</string>
     <string name="sound_limitvol_title">Volym om musik spelas</string>
@@ -618,7 +622,7 @@
     <string name="gestures_toggle_sound">Ljud På/Av</string>
     <string name="gestures_shortcut_or_activity">Genväg eller aktivitet</string>
     <string name="gestures_flashlight">Ficklampa</string>
-    <string name="pref_lockscreen_disable_unlock_tab">Inaktivera glidskena för upplåsning</string>
+    <string name="pref_lockscreen_disable_unlock_tab">Inaktivera glidskenan</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Notering: Du måste aktivera styrkula, meny-knapp eller gestupplåsning innan detta val blir tillgängligt</string>
     <string name="gestures_action_label">Handling:</string>
     <string name="gestures_draw_label">Gest:</string>
@@ -694,9 +698,9 @@
     <string name="cpu_set_on_boot_summary">Återställ CPU-inställningar vid uppstart</string>
 
     <!-- Permissions Management Settings strings -->
-    <string name="perm_enable_management">Aktivera management</string>
-    <string name="perm_enable_management_summary">Möjliggör behörighets management</string>
-    <string name="perm_enable_warning_message">Varning! Återkallande av de flesta behörigheter kommer sannolikt leda program inte fungerar. Om ett program med återkallad behörighet tvångs-avslutar,vänligen ge de förväntade tillstånd eller använd inte programmet, Vänligen skicka INTE felrapporter till Cyanogenmod om ett program med återkallat tillstånd inte fungerar som förväntat!</string>
+    <string name="perm_enable_management">Behörighetshantering</string>
+    <string name="perm_enable_management_summary">Möjliggör behörighetshantering för applikationer</string>
+    <string name="perm_enable_warning_message">Varning! Återkallande av de flesta behörigheter kommer sannolikt att leda till program som inte fungerar. Om ett program med återkallad behörighet tvångsavslutar, ge tillbaka de förväntade behörigheterna eller använd inte programmet. Skicka INTE felrapporter till Cyanogenmod om ett program med återkallade behörigheter inte fungerar som förväntat!</string>
     <string name="perm_enable_warning_title">Är du säker?</string>
 
 </resources>
