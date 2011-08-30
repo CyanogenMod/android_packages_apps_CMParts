@@ -176,7 +176,6 @@
         <item>default</item>
         <item>green</item>
         <item>red</item>
-<<<<<<< HEAD
     </string-array>
 
     <string-array name="pref_keypad_type_entries">
@@ -205,8 +204,6 @@
         <item>2</item>
         <item>4</item>
         <item>5</item>
-=======
->>>>>>> cyanogen/gingerbread
     </string-array>
 
     <string-array name="entries_mixable_dual_led_colors" translatable="false">
