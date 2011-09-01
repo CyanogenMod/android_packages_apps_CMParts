@@ -692,4 +692,27 @@
     <string name="pref_switch_storage_summary_on">Usando armazenamento interno expandido para aplicações e mídia</string>
     <string name="pref_switch_storage_summary_off">Usando cartão removível para aplicações e mídia</string>
     <string name="pref_storage_switch_unavailable">Este dispositivo não possui armazenamento interno expandido</string>
+    <string name="group_settings">Configurações</string>
+    <string name="trackball_category_unconfigured">Desconfigurado</string>
+    <string name="trackball_category_misc">Diversos</string>
+    <string name="trackball_app_save_title">Salvar</string>
+    <string name="trackball_app_save_summary">Salvar configurações para esta aplicação</string>
+    <string name="trackball_app_reset_title">Redefinir</string>
+    <string name="trackball_app_reset_summary">Remover configurações personalizadas para esta aplicação</string>
+    <string name="trackball_force_mode_title">Modo do LED</string>
+    <string name="trackball_force_mode_dialog">Por favor selecione um modo</string>
+    <string name="trackball_force_mode_summary">Configure como o LED deve-se comportar</string>
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Mensagens</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <string name="trackball_app_dialer">Ligação Perdida</string>
+    <string name="trackball_color_entry_use_app">Usar configuração da aplicação</string>
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Habilitar/desabilitar BackTrack Minipad</string>
+    <string name="user_defined_envelope_key">Tecla de Envelope</string>
+    <string name="user_defined_explorer_key">Tecla de Navegação</string>
 </resources>

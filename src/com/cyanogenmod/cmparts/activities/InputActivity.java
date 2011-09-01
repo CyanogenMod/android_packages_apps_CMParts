@@ -198,10 +198,10 @@ public class InputActivity extends PreferenceActivity implements
         mUserDefinedExplorerKeyPref = prefSet.findPreference(USER_DEFINED_EXPLORER_KEY);
 
         if (!getResources().getBoolean(R.bool.has_envelope_key)) {
-                generalCategory.removePreference(mUserDefinedEnvelopeKeyPref);
+                buttonCategory.removePreference(mUserDefinedEnvelopeKeyPref);
         }
         if (!getResources().getBoolean(R.bool.has_explorer_key)) {
-                generalCategory.removePreference(mUserDefinedExplorerKeyPref);
+                buttonCategory.removePreference(mUserDefinedExplorerKeyPref);
         }
 
         mPicker = new ShortcutPickHelper(this, this);
