@@ -77,6 +77,14 @@ public class InputActivity extends PreferenceActivity implements
 
     private static final String USER_DEFINED_KEY3 = "pref_user_defined_key3";
 
+    private static final String USER_DEFINED_ENVELOPE_KEY = "pref_user_envelope_key";
+
+    private static final String USER_DEFINED_EXPLORER_KEY = "pref_user_explorer_key";
+
+    private static final String BACKTRACK_MINIPAD_PREF = "pref_backtrack";
+
+    private static final String BACKTRACK_PROP = "persist.service.backtrack";
+
     private CheckBoxPreference mTrackballWakePref;
 
     private CheckBoxPreference mVolumeWakePref;
@@ -98,6 +106,12 @@ public class InputActivity extends PreferenceActivity implements
     private Preference mUserDefinedKey2Pref;
 
     private Preference mUserDefinedKey3Pref;
+
+    private Preference mUserDefinedEnvelopeKeyPref;
+
+    private Preference mUserDefinedExplorerKeyPref;
+
+    private CheckBoxPreference mBackTrackPref;
 
     private ShortcutPickHelper mPicker;
 
@@ -148,6 +162,10 @@ public class InputActivity extends PreferenceActivity implements
         mQtouchNumPref.setValue(qtouchNum);
         mQtouchNumPref.setOnPreferenceChangeListener(this);
 
+        /* Backtrack Minipad */
+        mBackTrackPref = (CheckBoxPreference) prefSet.findPreference(BACKTRACK_MINIPAD_PREF);
+        mBackTrackPref.setChecked(SystemProperties.getInt(BACKTRACK_PROP, 0) == 1);
+
         PreferenceCategory buttonCategory = (PreferenceCategory) prefSet
                 .findPreference(BUTTON_CATEGORY);
 
@@ -169,8 +187,22 @@ public class InputActivity extends PreferenceActivity implements
             buttonCategory.removePreference(mUserDefinedKey2Pref);
             buttonCategory.removePreference(mUserDefinedKey3Pref);
         }
-        if (!getResources().getBoolean(R.bool.has_search_button))
+        if (!getResources().getBoolean(R.bool.has_search_button)) {
                 generalCategory.removePreference((Preference) prefSet.findPreference("input_search_key"));
+        }
+        if (!getResources().getBoolean(R.bool.has_backtrack_minipad)) {
+                generalCategory.removePreference(mBackTrackPref);
+        }
+
+        mUserDefinedEnvelopeKeyPref = prefSet.findPreference(USER_DEFINED_ENVELOPE_KEY);
+        mUserDefinedExplorerKeyPref = prefSet.findPreference(USER_DEFINED_EXPLORER_KEY);
+
+        if (!getResources().getBoolean(R.bool.has_envelope_key)) {
+                generalCategory.removePreference(mUserDefinedEnvelopeKeyPref);
+        }
+        if (!getResources().getBoolean(R.bool.has_explorer_key)) {
+                generalCategory.removePreference(mUserDefinedExplorerKeyPref);
+        }
 
         mPicker = new ShortcutPickHelper(this, this);
     }
@@ -181,6 +213,9 @@ public class InputActivity extends PreferenceActivity implements
         setAppSummary(mUserDefinedKey1Pref, Settings.System.USER_DEFINED_KEY1_APP);
         setAppSummary(mUserDefinedKey2Pref, Settings.System.USER_DEFINED_KEY2_APP);
         setAppSummary(mUserDefinedKey3Pref, Settings.System.USER_DEFINED_KEY3_APP);
+
+        setAppSummary(mUserDefinedEnvelopeKeyPref, Settings.System.USER_DEFINED_KEY_ENVELOPE);
+        setAppSummary(mUserDefinedExplorerKeyPref, Settings.System.USER_DEFINED_KEY_EXPLORER);
     }
 
     private void setAppSummary(Preference pref, String key) {
@@ -236,6 +271,17 @@ public class InputActivity extends PreferenceActivity implements
             mKeyNumber = 3;
             mPicker.pickShortcut();
             return true;
+        } else if (preference == mBackTrackPref) {
+            value = mBackTrackPref.isChecked();
+            SystemProperties.set(BACKTRACK_PROP, value ? String.valueOf(1) : String.valueOf(0));
+        } else if (preference == mUserDefinedEnvelopeKeyPref) {
+            mKeyNumber = 4;
+            mPicker.pickShortcut();
+            return true;
+        } else if (preference == mUserDefinedExplorerKeyPref) {
+            mKeyNumber = 5;
+            mPicker.pickShortcut();
+            return true;
         }
 
         return false;
@@ -271,6 +317,14 @@ public class InputActivity extends PreferenceActivity implements
             case 3:
                 key = Settings.System.USER_DEFINED_KEY3_APP;
                 pref = mUserDefinedKey3Pref;
+                break;
+            case 4:
+                key = Settings.System.USER_DEFINED_KEY_ENVELOPE;
+                pref = mUserDefinedEnvelopeKeyPref;
+                break;
+            case 5:
+                key = Settings.System.USER_DEFINED_KEY_EXPLORER;
+                pref = mUserDefinedExplorerKeyPref;
                 break;
             default:
                 return;

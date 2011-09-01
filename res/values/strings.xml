@@ -333,6 +333,9 @@
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press search app</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starts a custom app when long-pressing the search key</string>
 
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Enable/disable BackTrack Minipad</string>
+
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Long-press menu settings</string>
     <string name="long_press_menu_summary">Custom setting for long press menu</string>
@@ -651,6 +654,8 @@
     <string name="user_defined_key1">Quick Key 1</string>
     <string name="user_defined_key2">Quick Key 2</string>
     <string name="user_defined_key3">Quick Key 3</string>
+    <string name="user_defined_envelope_key">Envelope Key</string>
+    <string name="user_defined_explorer_key">Explorer Key</string>
     <string name="user_defined_not_set">Nothing Set</string>
 
     <!-- Lockscreen gesture strings -->

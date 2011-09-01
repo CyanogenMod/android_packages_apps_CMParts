@@ -20,4 +20,10 @@
 
     <!-- Whether or not to display search button settings -->
     <bool name="has_search_button">true</bool>
+
+    <!--Whether or not  -->
+    <bool name="has_backtrack_minipad">false</bool>
+
+    <bool name="has_envelope_key">false</bool>
+    <bool name="has_explorer_key">false</bool>
 </resources>

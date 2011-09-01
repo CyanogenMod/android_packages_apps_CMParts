@@ -37,6 +37,11 @@
 				android:targetClass="com.cyanogenmod.cmparts.activities.HapticTweaksActivity" />
 		</PreferenceScreen>
 
+		<!-- Backtrack Minipad -->
+		<CheckBoxPreference android:key="pref_backtrack"
+			android:title="@string/pref_backtrack_title"
+			android:summary="@string/pref_backtrack_summary" />
+
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/buttons_title"
@@ -67,6 +72,11 @@
 			android:title="@string/user_defined_key2" android:summary="@string/user_defined_not_set" />
 		<Preference android:key="pref_user_defined_key3"
 			android:title="@string/user_defined_key3" android:summary="@string/user_defined_not_set" />
+
+		<Preference android:key="pref_user_envelope_key"
+			android:title="@string/user_defined_envelope_key" android:summary="@string/user_defined_not_set" />
+		<Preference android:key="pref_user_explorer_key"
+			android:title="@string/user_defined_explorer_key" android:summary="@string/user_defined_not_set" />
 
 	</PreferenceCategory>
 
