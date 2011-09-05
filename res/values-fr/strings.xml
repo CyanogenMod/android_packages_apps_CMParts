@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Paramètres d\'entrée</string>
     <string name="input_settings_summary_head">Comportement des entrées, boutons, retour haptique</string>
     <string name="interface_settings_title_head">Interface</string>
-    <string name="interface_settings_title_subhead">Paramètres d\'interface</string>
     <string name="interface_settings_summary_head">Tweaks de l\'interface, surdéfilement, effet de rendu</string>
     <string name="lockscreen_settings_title_head">Écran de verrouillage</string>
     <string name="lockscreen_settings_title_subhead">Paramètres de l\'écran de verrouillage</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Interface utilisateur</string>
-    <string name="ui_summary">Paramètres de l\'interface utilisateur &amp; tweaks</string>
 
     <string name="pref_electron_beam_animation_on">Animation allumage écran</string>
     <string name="pref_electron_beam_animation_off">Animation extinction écran</string>
@@ -95,12 +93,10 @@
     <string name="pref_overscroll_weight_summary">Choisir le poids des objets défilants</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">Pages Web</string>
     <string name="pref_pinch_reflow_title">Redessiner au zoom</string>
     <string name="pref_pinch_reflow_summary">Redessine les pages web immédiatement après un zoom avec les doigts ("pinch")</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Paramètres de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_delay_title">Délai</string>
     <string name="pref_lockscreen_security_title">Ecran de sécurité</string>
     <string name="pref_lockscreen_security_delay_note_summary">Lorsque l\'écran de verrouillage est \"inactif si sécurisé\", seuls ces paramètres sont utilisés, pas ceux du \"Slide Lock\"</string>
@@ -122,7 +118,6 @@
     <string name="msg_color_picker">Appuyer au centre pour confirmer.\nBouton retour pour annuler</string>
 
     <!-- User interface: LED notifcations -->
-    <string name="trackball_notifications_title">Couleur des notifications par LED</string>
     <string name="dialog_color_trackball">Choisir une couleur</string>
     <string name="dialog_blink_trackball">Vitesse du clignotement</string>
     <string name="color_trackball_flash_title">Couleur de la LED</string>
@@ -229,11 +224,8 @@
     <string name="pref_lockscreen_quick_unlock_control_summary">Une pression sur OK n\'est plus nécessaire lors de la saisie d\'un PIN ou mot de passe. Effacer compte comme une erreur.</string>
     <string name="pref_lockscreen_style_title">Style</string>
     <string name="pref_lockscreen_style_summary">Choisir le style de l\'écran de verrouillage</string>
-    <string name="lockscreen_style_header">Style</string>
-    <string name="lockscreen_delay_header">Délai et timeout</string>
     <string name="pref_in_call_style_title">Appels entrants</string>
     <string name="pref_in_call_style_summary">Choisir le style du widget accepter/refuser les appels entrants</string>
-    <string name="lockscreen_settings_title">Paramètres de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_custom_background_title">Fond d\'écran</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Fond d\'écran</string>
     <string name="pref_lockscreen_custom_background_summary">Modifier l\'image, la couleur ou la teinte de l\'écran de verrouillage</string>
@@ -247,8 +239,6 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Paramètres des entrées</string>
-    <string name="input_settings_summary">Comportement des contrôles</string>
-    <string name="button_settings_title">Paramètres des boutons physiques</string>
     <string name="pref_trackball_wake_title">Réveil par la trackball</string>
     <string name="pref_trackball_wake_summary">Une pression sur la trackball réveille le téléphone</string>
     <string name="pref_trackball_unlock_title">Déverrouillage par la trackball</string>
@@ -290,7 +280,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Performances</string>
-    <string name="performance_settings_summary">Paramètres de performance</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Utiliser Compcache</string>
@@ -314,7 +303,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Paramètres des applications</string>
-    <string name="application_settings_summary">Divers paramètres comme l\'installation d\'applications dans la mémoire externe</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Déplacement sur SD</string>
@@ -507,8 +495,6 @@
     <string name="ll_num_levels">Définir le nombre de niveaux</string>
 
     <!-- Sound -->
-    <string name="sound_title">Paramètres audio</string>
-    <string name="sound_summary">Paramètres et ajustements sonores</string>
     <string name="sound_notifications_focus_title">Priorité aux notifications</string>
     <string name="sound_notifications_focus_summary">Les applications compatibles baisseront leur volume en cas de notification</string>
     <string name="sound_volume_control_silent_title">État silence total</string>
@@ -566,17 +552,13 @@
     <string name="pref_lockscreen_gestures_builder_title">Créer des gestes</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilité</string>
     <string name="pref_lockscreen_gestures_color_title">Couleur des gestes</string>
-    <string name="label_create_gesture">Créer un geste</string>
     <string name="gestures_button_add">Ajouter un geste</string>
     <string name="gestures_button_discard">Annuler</string>
     <string name="gestures_button_done">Terminé</string>
     <string name="gestures_draw_label">Geste:</string>
     <string name="gestures_error_missing_shortcut">Vous devez choisir une action pour ce geste !</string>
-    <string name="gestures_save_success">Geste enregistré pour %s</string>
-    <string name="gestures_cancel_action">Annuler</string>
     <string name="gestures_loading">Chargement des gestes...</string>
     <string name="gestures_empty">Aucun geste</string>
-    <string name="gestures_activity">Gestes</string>
     <string name="gestures_delete">Supprimer</string>
     <string name="gestures_delete_success">Geste supprimé</string>
     <string name="gestures_error_loading">Un problème avec le fichier du geste est survenu.</string>
@@ -610,8 +592,6 @@
     <string name="title_phone_goggles_start">Début du mode phone goggles</string>
     <string name="title_phone_goggles_end">Fin du mode phone goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Demander une confirmation</string>
-    <string name="title_phone_goggles_phone_enabled">Téléphonie</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Difficulté</string>
     <string name="title_phone_goggles_work_filtered">Professionels</string>
     <string name="title_phone_goggles_mobile_filtered">Mobiles</string>

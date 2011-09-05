@@ -9,31 +9,23 @@
  
     <!-- User interface -->
     <string name="ui_title">사용자 환경</string>
-    <string name="ui_summary">사용자 환경 설정과 조정</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 알림</string>
     <string name="trackball_summary">트랙볼/LED 알림 색과 깜빡임 설정</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">확대 후 내용 다시 표시</string>
     <string name="pref_pinch_reflow_summary">확대 후 자동으로 내용의 크기를 조절하여 다시 표시합니다.</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">화면 잠금 설정</string>
     <string name="pref_lockscreen_delay_title">대기</string>
-    <string name="pref_lockscreen_timeout_lock_delay">화면 시간초과 대기</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">화면 꺼짐 대기</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">화면을 오랫동안 납뒀을 때 화면 잠금을 표시하기 전까지의 대기 시간입니다.</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">화면이 꺼졌을 때 화면 잠금을 표시하기 전까지의 대기 시간입니다.</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">색 선택</string>
     <string name="msg_color_picker">가운데 있는 색을 터치하여 선택합니다.\n뒤로 가기를 눌러 취소합니다.</string>
 
     <!-- User interface: Trackball notifcations -->
-    <string name="trackball_notifications_title">트랙볼 알림 색</string>
     <string name="dialog_color_trackball">색 선택</string>
     <string name="dialog_blink_trackball">깜빡임 간격 선택</string>
     <string name="color_trackball_flash_title">깜빡임 색</string>
@@ -91,9 +83,6 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">입력 설정</string>
-    <string name="input_settings_summary">버튼 작동방식 조정</string>
-    <string name="button_settings_title">버튼 설정</string>
-    <string name="lockscreen_settings_title">잠금 화면 설정</string>
     <string name="pref_lockscreen_always_battery_title">항상 배터리 남은 량 표시</string>
     <string name="pref_lockscreen_always_battery_summary">배터리 남은 량을 잠금 화면에 항상 표시합니다.</string>
 
@@ -136,7 +125,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">성능 설정</string>
-    <string name="performance_settings_summary">장비 성능 설정</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache RAM 사용</string>
@@ -160,7 +148,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">어플리케이션 설정</string>
-    <string name="application_settings_summary">설치 경로와 같은 어플리케이션 설정 변경</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">내부 저장 공간 사용</string>
@@ -369,8 +356,6 @@
     <string name="ll_num_levels">단계 수 설정</string>
 
     <!-- Sound -->
-    <string name="sound_title">소리 설정</string>
-    <string name="sound_summary">소리와 오디오 집중 설정</string>
     <string name="sound_notifications_focus_title">알림 집중</string>
     <string name="sound_notifications_focus_summary">오디오 집중은 알림 소리가 재생될 때 호환되는 어플리케이션이 자동으로 음량을 낮추도록 요청하는 기능입니다.</string>
     <string name="sound_vibrate_in_call_title">통화 중 진동 설정</string>
@@ -423,16 +408,12 @@
     <string name="pref_lockscreen_gestures_builder_title">손동작 만들기</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">감도</string>
     <string name="pref_lockscreen_gestures_color_title">손동작 색상</string>
-    <string name="label_create_gesture">손동작 만들기</string>
     <string name="gestures_button_add">손동작 추가</string>
     <string name="gestures_button_discard">취소</string>
     <string name="gestures_button_done">완료</string>
     <string name="gestures_error_missing_shortcut">이 손동작에 대한 동작을 선택해야 합니다!</string>
-    <string name="gestures_save_success">%s로 손동작 저장됨</string>
-    <string name="gestures_cancel_action">취소</string>
     <string name="gestures_loading">손동작 불러오는 중...</string>
     <string name="gestures_empty">손동작 없음</string>
-    <string name="gestures_activity">손동작</string>
     <string name="gestures_delete">삭제</string>
     <string name="gestures_delete_success">손동작 삭제됨</string>
     <string name="gestures_error_loading">손동작 파일과 관련된 문제가 발생하였습니다.</string>
@@ -475,7 +456,6 @@
     <string name="input_settings_title_subhead">입력 설정</string>
     <string name="input_settings_summary_head">입력 방식, 버튼, 촉각 반응</string>
     <string name="interface_settings_title_head">환경</string>
-    <string name="interface_settings_title_subhead">환경 설정</string>
     <string name="interface_settings_summary_head">환경 조정, 초과스크롤, 화면 효과</string>
     <string name="lockscreen_settings_title_head">잠금 화면</string>
     <string name="lockscreen_settings_title_subhead">잠금 화면 설정</string>
@@ -503,8 +483,6 @@
     <string name="title_phone_goggles_start">Phone Goggles 시작</string>
     <string name="title_phone_goggles_end">Phone Goggles 끝</string>
     <string name="title_phone_goggles_confirmation_enabled">확인 필요</string>
-    <string name="title_phone_goggles_phone_enabled">전화</string>
-    <string name="title_phone_goggles_sms_enabled">메시지</string>
     <string name="title_phone_goggles_maths_level">산수 난이도</string>
     <string name="title_phone_goggles_work_filtered">직장</string>
     <string name="title_phone_goggles_mobile_filtered">휴대전화</string>

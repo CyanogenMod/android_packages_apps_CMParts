@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">输入设置</string>
     <string name="input_settings_summary_head">输入行为、按键、振动反馈</string>
     <string name="interface_settings_title_head">界面</string>
-    <string name="interface_settings_title_subhead">界面设置</string>
     <string name="interface_settings_summary_head">界面调整、越界、渲染效果</string>
     <string name="lockscreen_settings_title_head">锁屏</string>
     <string name="lockscreen_settings_title_subhead">锁屏设置</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">用户界面</string>
-    <string name="ui_summary">用户界面设置与微调</string>
 
     <string name="pref_electron_beam_animation_on">屏幕开启动画</string>
     <string name="pref_electron_beam_animation_off">屏幕关闭动画</string>
@@ -110,7 +108,6 @@
     <string name="trackball_summary">控制轨迹球和 LED 通知的颜色和闪烁频率</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">网页视图</string>
     <string name="pref_pinch_reflow_title">触摸放大后使内容自动换行</string>
     <string name="pref_pinch_reflow_summary">通过多点触摸放大网页后立即使内容按窗口自动换行</string>
 
@@ -122,19 +119,13 @@
     <string name="pref_overscroll_weight_summary">选择越界对象的程度</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">锁屏设置</string>
     <string name="pref_lockscreen_delay_title">延迟</string>
-    <string name="pref_lockscreen_timeout_lock_delay">屏幕自动休眠时的延迟</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">屏幕手动关闭时的延迟</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">当屏幕超时自动休眠时，延迟多长时间后启用锁屏</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">当手动关闭屏幕时，延迟多长时间后启用锁屏</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">选择颜色</string>
     <string name="msg_color_picker">点击中间的颜色进行确认。\n点击返回键取消。</string>
 
     <!-- User interface: LED notifications -->
-    <string name="trackball_notifications_title">轨迹球通知颜色</string>
     <string name="dialog_color_trackball">选择颜色</string>
     <string name="dialog_blink_trackball">选择闪烁频率</string>
     <string name="color_trackball_flash_title">闪烁颜色</string>
@@ -204,7 +195,6 @@
     <string name="pref_lockscreen_timeout_summary">配置屏幕超时时间和屏幕关闭延迟</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">锁屏设置</string>
     <string name="pref_lockscreen_always_battery_title">总是显示电池状态</string>
     <string name="pref_lockscreen_always_battery_summary">在锁屏画面一直显示电池状态</string>
     <string name="pref_lockscreen_music_controls_title">锁屏音乐播放控制按钮</string>
@@ -236,8 +226,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">下拉转轮解锁。向右拉启动自定义程序</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">隐藏旋转箭头</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">在旋转风格时隐藏提示箭头</string>
-    <string name="lockscreen_style_header">风格偏好</string>
-    <string name="lockscreen_delay_header">延迟和超时</string>
     <string name="pref_lockscreen_style_title">锁屏风格</string>
     <string name="pref_lockscreen_style_summary">选择锁屏风格</string>
     <string name="pref_in_call_style_title">来电屏幕风格</string>
@@ -251,10 +239,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">输入设置</string>
-    <string name="input_settings_summary">设备按键行为选项</string>
     <string name="haptic_title">振动反馈微调</string>
     <string name="haptic_summary">调节振动反馈的发生条件和方式</string>
-    <string name="button_settings_title">按键设置</string>
     <string name="long_press_home_title">长按 Home 键设置</string>
     <string name="long_press_home_summary">最近打开的程序数等</string>
     <string name="input_search_key_title">搜索键行为</string>
@@ -329,7 +315,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">性能设置</string>
-    <string name="performance_settings_summary">设备性能调整</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">使用压缩缓存</string>
@@ -365,7 +350,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">应用程序设置</string>
-    <string name="application_settings_summary">改变各种应用程序设置，例如安装位置</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">允许移动应用程序</string>
@@ -510,8 +494,6 @@
     <string name="ll_num_levels">设置亮度级别数量</string>
 
     <!-- Sound -->
-    <string name="sound_title">声音设置</string>
-    <string name="sound_summary">声音和音频切入设置</string>
     <string name="sound_notifications_focus_title">通知声音切入</string>
     <string name="sound_notifications_focus_summary">向兼容此功能的程序发送声音切入请求，使其降低音量以便突出播放要切入的声音事件。</string>
     <string name="sound_volume_control_silent_title">静音状态</string>
@@ -568,16 +550,12 @@
     <string name="pref_lockscreen_gestures_builder_title">建立手势</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">敏感度</string>
     <string name="pref_lockscreen_gestures_color_title">手势颜色</string>
-    <string name="label_create_gesture">创建一个手势</string>
     <string name="gestures_button_add">添加手势</string>
     <string name="gestures_button_discard">舍弃</string>
     <string name="gestures_button_done">完成</string>
     <string name="gestures_error_missing_shortcut">您必需为这个手势选择一个动作！</string>
-    <string name="gestures_save_success">手势保存到 %s</string>
-    <string name="gestures_cancel_action">取消</string>
     <string name="gestures_loading">载入手势...</string>
     <string name="gestures_empty">没有手势</string>
-    <string name="gestures_activity">手势</string>
     <string name="gestures_delete">删除</string>
     <string name="gestures_delete_success">手势已删除</string>
     <string name="gestures_error_loading">手势文件操作发生问题。</string>
@@ -615,8 +593,6 @@
     <string name="title_phone_goggles_start">开始电话 goggles 模式</string>
     <string name="title_phone_goggles_end">结束电话 goggles 模式</string>
     <string name="title_phone_goggles_confirmation_enabled">请求确认</string>
-    <string name="title_phone_goggles_phone_enabled">电话</string>
-    <string name="title_phone_goggles_sms_enabled">短信</string>
     <string name="title_phone_goggles_maths_level">数量级别</string>
     <string name="title_phone_goggles_work_filtered">工作</string>
     <string name="title_phone_goggles_mobile_filtered">移动</string>
