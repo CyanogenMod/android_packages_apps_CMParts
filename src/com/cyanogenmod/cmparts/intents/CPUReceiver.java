@@ -18,9 +18,11 @@ package com.cyanogenmod.cmparts.intents;
 
 import com.cyanogenmod.cmparts.activities.CPUActivity;
 
+import android.app.UiModeManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.SharedPreferences;
 import android.os.SystemProperties;
 import android.preference.PreferenceManager;
@@ -37,13 +39,68 @@ public class CPUReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        if (SystemProperties.getBoolean(CPU_SETTINGS_PROP, false) == false
+        int uiMode;
+        uiMode = ((UiModeManager)ctx.getSystemService(Context.UI_MODE_SERVICE)).getCurrentModeType();
+        Log.w(TAG, "mode: " + uiMode);
+
+        if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
+            setScreenOffCPU(ctx, true);
+        } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
+            if (uiMode == Configuration.UI_MODE_TYPE_CAR) {
+                if (!setCarDockCPU(ctx, true))
+		    setScreenOffCPU(ctx, false);
+            } else {
+                setScreenOffCPU(ctx, false);
+            }
+        } else if (intent.getAction().equals(Intent.ACTION_DOCK_EVENT)) {
+            int state = intent.getIntExtra(Intent.EXTRA_DOCK_STATE, Intent.EXTRA_DOCK_STATE_UNDOCKED);
+            if (state == Intent.EXTRA_DOCK_STATE_CAR)
+                setCarDockCPU(ctx, true);
+            else if (state == Intent.EXTRA_DOCK_STATE_UNDOCKED)
+                setCarDockCPU(ctx, false);
+        } else if (SystemProperties.getBoolean(CPU_SETTINGS_PROP, false) == false
                 && intent.getAction().equals(Intent.ACTION_MEDIA_MOUNTED)) {
             SystemProperties.set(CPU_SETTINGS_PROP, "true");
             configureCPU(ctx);
         } else {
             SystemProperties.set(CPU_SETTINGS_PROP, "false");
         }
+    }
+
+    private void setScreenOffCPU(Context ctx, boolean screenOff) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
+        String maxFrequency = prefs.getString(CPUActivity.MAX_FREQ_PREF, null);
+        String maxSoFrequency = prefs.getString(CPUActivity.SO_MAX_FREQ_PREF, null);
+        if (maxSoFrequency == null || maxFrequency == null) {
+            Log.i(TAG, "Screen off or normal max CPU freq not saved. No change.");
+        } else {
+            if (screenOff) {
+                CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxSoFrequency);
+                Log.i(TAG, "Screen off max CPU freq set");
+            } else {
+                CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxFrequency);
+                Log.i(TAG, "Normal (screen on) max CPU freq restored");
+            }
+        }
+    }
+
+    private boolean setCarDockCPU(Context ctx, boolean carDock) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
+        String maxFrequency = prefs.getString(CPUActivity.MAX_FREQ_PREF, null);
+        String maxCdFrequency = prefs.getString(CPUActivity.CD_MAX_FREQ_PREF, null);
+        if (maxCdFrequency == null || maxFrequency == null) {
+            Log.i(TAG, "CarDock or normal max CPU frequency not saved. No change.");
+            return false;
+        } else {
+            if (carDock) {
+                CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxCdFrequency);
+                Log.i(TAG, "CarDock max CPU freq set");
+            } else {
+                CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxFrequency);
+                Log.i(TAG, "Normal max CPU freq restored");
+            }
+        }
+        return true;
     }
 
     private void configureCPU(Context ctx) {
