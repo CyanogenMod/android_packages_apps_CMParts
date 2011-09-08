@@ -52,6 +52,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_CM_SIGNAL = "pref_status_bar_cm_signal";
 
+    private static final String PREF_STATUS_BAR_HEADSET = "pref_status_bar_headset";
+
     private ListPreference mStatusBarAmPm;
 
     private ListPreference mStatusBarCmSignal;
@@ -67,6 +69,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private CheckBoxPreference mStatusBarForcePlmnDisplay;
 
     private CheckBoxPreference mStatusBarBrightnessControl;
+
+    private CheckBoxPreference mStatusBarHeadset;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -89,6 +93,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         mStatusBarForcePlmnDisplay = (CheckBoxPreference) prefSet.findPreference(PREF_FORCE_PLMN_DISPLAY);
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
+        mStatusBarHeadset = (CheckBoxPreference) prefSet
+                .findPreference(PREF_STATUS_BAR_HEADSET);
 
         mStatusBarClock.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
@@ -100,6 +106,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_FORCE_PLMN_DISPLAY, 0) == 1));
         mStatusBarBrightnessControl.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_BRIGHTNESS_TOGGLE, 0) == 1));
+        mStatusBarHeadset.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_HEADSET, 1) == 1));
 
         try {
             if (Settings.System.getInt(getContentResolver(), 
@@ -170,6 +178,11 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             value = mStatusBarBrightnessControl.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_BRIGHTNESS_TOGGLE, value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarHeadset) {
+            value = mStatusBarHeadset.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_HEADSET,
+                    value ? 1 : 0);
             return true;
         }
         return false;
