@@ -752,8 +752,12 @@
     <string name="cpu_min_freq_title">Min CPU frequency</string>
     <string name="cpu_min_freq_summary">Minimum CPU frequency\nCurrently: %s</string>
     <string name="cpu_max_freq_title">Max CPU frequency</string>
-    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently: %s</string>
-    <string name="cpu_set_on_boot">Set on boot</string>
+    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently set to: %s</string>
+    <string name="cardock_cpu_max_freq_title">Max car dock CPU freq</string>
+    <string name="cardock_cpu_max_freq_summary">Maximum car dock CPU frequency\nCurrently set to: %s</string>
+    <string name="screenoff_cpu_max_freq_title">Max screen off CPU freq</string>
+    <string name="screenoff_cpu_max_freq_summary">Maximum screen off CPU frequency\nCurrently set to: %s</string>
+    <string name="cpu_set_on_boot">Set on boot event</string>
     <string name="cpu_set_on_boot_summary">Restore CPU settings on boot</string>
 
     <!-- Permissions Management Settings strings -->

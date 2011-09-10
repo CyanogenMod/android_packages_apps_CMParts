@@ -740,6 +740,10 @@
     <string name="cpu_min_freq_summary">Minimaler CPU-Takt\nMomentan: %s</string>
     <string name="cpu_max_freq_title">Maximaler CPU-Takt</string>
     <string name="cpu_max_freq_summary">Maximaler CPU-Takt\nMomentan: %s</string>
+    <string name="cardock_cpu_max_freq_title">Maximaler CPU-Takt in der KFZ-Halterung</string>
+    <string name="cardock_cpu_max_freq_summary">Maximaler CPU-Takt in der KFZ-Halterung\nMomentan: %s</string>
+    <string name="screenoff_cpu_max_freq_title">Maximaler CPU-Takt bei ausgeschaltetem Display</string>
+    <string name="screenoff_cpu_max_freq_summary">Maximaler CPU-Takt bei ausgeschaltetem Display\nMomentan: %s</string>
     <string name="cpu_set_on_boot">Beim Booten einstellen</string>
     <string name="cpu_set_on_boot_summary">CPU-Einstellungen beim Booten wiederherstellen</string>
 
