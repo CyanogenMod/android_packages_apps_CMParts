@@ -41,7 +41,6 @@ public class CPUReceiver extends BroadcastReceiver {
     public void onReceive(Context ctx, Intent intent) {
         int uiMode;
         uiMode = ((UiModeManager)ctx.getSystemService(Context.UI_MODE_SERVICE)).getCurrentModeType();
-        Log.w(TAG, "mode: " + uiMode);
 
         if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
             setScreenOffCPU(ctx, true);
@@ -76,10 +75,10 @@ public class CPUReceiver extends BroadcastReceiver {
         } else {
             if (screenOff) {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxSoFrequency);
-                Log.i(TAG, "Screen off max CPU freq set");
+//                Log.i(TAG, "Screen off max CPU freq set");
             } else {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxFrequency);
-                Log.i(TAG, "Normal (screen on) max CPU freq restored");
+//                Log.i(TAG, "Normal (screen on) max CPU freq restored");
             }
         }
     }
@@ -89,15 +88,15 @@ public class CPUReceiver extends BroadcastReceiver {
         String maxFrequency = prefs.getString(CPUActivity.MAX_FREQ_PREF, null);
         String maxCdFrequency = prefs.getString(CPUActivity.CD_MAX_FREQ_PREF, null);
         if (maxCdFrequency == null || maxFrequency == null) {
-            Log.i(TAG, "CarDock or normal max CPU frequency not saved. No change.");
+//            Log.i(TAG, "CarDock or normal max CPU frequency not saved. No change.");
             return false;
         } else {
             if (carDock) {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxCdFrequency);
-                Log.i(TAG, "CarDock max CPU freq set");
+//                Log.i(TAG, "CarDock max CPU freq set");
             } else {
                 CPUActivity.writeOneLine(CPUActivity.FREQ_MAX_FILE, maxFrequency);
-                Log.i(TAG, "Normal max CPU freq restored");
+//                Log.i(TAG, "Normal max CPU freq restored");
             }
         }
         return true;
