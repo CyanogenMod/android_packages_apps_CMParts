@@ -36,6 +36,7 @@ public class CPUReceiver extends BroadcastReceiver {
     private static final String TAG = "CPUSettings";
 
     private static final String CPU_SETTINGS_PROP = "sys.cpufreq.restored";
+    private static final String CARDOCK_PROP = "sys.cardock.in_use";
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
@@ -53,10 +54,13 @@ public class CPUReceiver extends BroadcastReceiver {
             }
         } else if (intent.getAction().equals(Intent.ACTION_DOCK_EVENT)) {
             int state = intent.getIntExtra(Intent.EXTRA_DOCK_STATE, Intent.EXTRA_DOCK_STATE_UNDOCKED);
-            if (state == Intent.EXTRA_DOCK_STATE_CAR)
+            if (state == Intent.EXTRA_DOCK_STATE_CAR) {
                 setCarDockCPU(ctx, true);
-            else if (state == Intent.EXTRA_DOCK_STATE_UNDOCKED)
+                SystemProperties.set(CARDOCK_PROP, "1");
+            } else if (state == Intent.EXTRA_DOCK_STATE_UNDOCKED) {
                 setCarDockCPU(ctx, false);
+                SystemProperties.set(CARDOCK_PROP, "0");
+            }
         } else if (SystemProperties.getBoolean(CPU_SETTINGS_PROP, false) == false
                 && intent.getAction().equals(Intent.ACTION_MEDIA_MOUNTED)) {
             SystemProperties.set(CPU_SETTINGS_PROP, "true");
