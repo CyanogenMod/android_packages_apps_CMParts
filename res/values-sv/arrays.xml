@@ -43,6 +43,13 @@
         <item>6 (Långsam)</item>
     </string-array>
 
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Använd applikationens inställningar</item>
+        <item>Släck lysdiod</item>
+        <item>Tänd lysdiod vid händelser</item>
+        <item>Tänd lysdiod</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_delay_entries">
         <item>Omedelbart</item>
         <item>1s</item>

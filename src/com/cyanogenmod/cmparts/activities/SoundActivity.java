@@ -67,9 +67,12 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
 
     private static final String ALARMS_LIMITVOL = "alarm-limitvol";
 
-    private static final String CAMERA_SHUTTER_DISABLE = "persist.sys.cam_shutter_disable";
+    private static final String CAMERA_SHUTTER_MUTE = "camera-mute";
 
     private static final String PREFIX = "persist.sys.";
+
+    private static final String CAMERA_CATEGORY = "camera_category";
+    private static final String CAMERA_SHUTTER_DISABLE = "ro.camera.sound.disabled";
 
     private static String getKey(String suffix) {
         return PREFIX + suffix;
@@ -141,10 +144,15 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         lp.setSummary(lp.getEntry());
         lp.setOnPreferenceChangeListener(this);
 
-        p = (CheckBoxPreference) prefSet.findPreference(CAMERA_SHUTTER_DISABLE);
-        p.setChecked(SystemProperties.getBoolean(CAMERA_SHUTTER_DISABLE, false));
-        p.setOnPreferenceChangeListener(this);
-   }
+        if (SystemProperties.getBoolean(CAMERA_SHUTTER_DISABLE, false)) {
+            // we cannot configure camera sound, hide camera settigs
+            prefSet.removePreference(prefSet.findPreference(CAMERA_CATEGORY));
+        } else {
+            p = (CheckBoxPreference) prefSet.findPreference(CAMERA_SHUTTER_MUTE);
+            p.setChecked(SystemProperties.getBoolean(getKey(CAMERA_SHUTTER_MUTE), false));
+            p.setOnPreferenceChangeListener(this);
+        }
+    }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         String key = preference.getKey();
@@ -160,7 +168,7 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
         } else if (key.equals(NOTIFICATIONS_SPEAKER) || key.equals(RINGS_SPEAKER)
                 || key.equals(ALARMS_SPEAKER)) {
             SystemProperties.set(getKey(key), getBoolean(newValue) ? "1" : "0");
-        } else if (key.equals(CAMERA_SHUTTER_DISABLE)) {
+        } else if (key.equals(CAMERA_SHUTTER_MUTE)) {
             if (getBoolean(newValue)) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(R.string.sound_camera_shutter_disable_warning_title);
@@ -168,7 +176,7 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
                 builder.setPositiveButton(com.android.internal.R.string.ok,
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            SystemProperties.set(CAMERA_SHUTTER_DISABLE, "1");
+                            SystemProperties.set(getKey(CAMERA_SHUTTER_MUTE), "1");
                         }
                     });
                 final CheckBoxPreference p = (CheckBoxPreference) preference;
@@ -180,7 +188,7 @@ public class SoundActivity extends PreferenceActivity implements OnPreferenceCha
                     });
                 builder.show();
             } else {
-                SystemProperties.set(CAMERA_SHUTTER_DISABLE, "0");
+                SystemProperties.set(getKey(CAMERA_SHUTTER_MUTE), "0");
             }
         } else {
             SystemProperties.set(getKey(key), String.valueOf(getInt(newValue)));

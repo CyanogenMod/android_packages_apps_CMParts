@@ -21,11 +21,7 @@ import com.cyanogenmod.cmparts.R;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
@@ -34,7 +30,9 @@ import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.widget.TimePicker;
 import android.content.DialogInterface;
+
 import java.util.Calendar;
+import java.util.Date;
 
 public class SoundQuietHoursActivity extends PreferenceActivity implements
         OnPreferenceChangeListener {
@@ -67,7 +65,7 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
 
     private CheckBoxPreference mQuietHoursDim;
 
-    private static String returnTime(String t) {
+    private String returnTime(String t) {
         if (t == null || t.equals("")) {
             return "";
         }
@@ -76,7 +74,11 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
 
         hr = hr / 60;
         mn = mn % 60;
-        return String.format("%02d:%02d", hr, mn);
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, hr);
+        cal.set(Calendar.MINUTE, mn);
+        Date date = cal.getTime();
+        return DateFormat.getTimeFormat(getApplicationContext()).format(date);
     }
 
     @Override

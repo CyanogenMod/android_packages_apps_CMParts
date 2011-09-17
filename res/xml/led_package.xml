@@ -49,7 +49,9 @@
                 android:title="@string/trackball_app_reset_title"
                 android:summary="@string/trackball_app_reset_summary" />
 
-    <Preference android:title="@string/trackball_color_notice_title"
+    <Preference android:key="color_notice"
+                android:persistent="false"
+                android:title="@string/trackball_color_notice_title"
                 android:summary="@string/trackball_color_notice_summary" />
 
 </PreferenceScreen>

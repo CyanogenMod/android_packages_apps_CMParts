@@ -24,6 +24,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -102,21 +103,14 @@ public class PackageSettingsActivity extends PreferenceActivity implements
 
         mColorPref = (ListPreference) findPreference("color");
         mColorPref.setOnPreferenceChangeListener(this);
-        populateColors();
 
         mBlinkPref = (ListPreference) findPreference("blink");
+        mBlinkPref.setOnPreferenceChangeListener(this);
+
         mCustomPref = findPreference("custom_color");
         mTestPref = findPreference("test_color");
         mResetPref = findPreference("reset");
         mSavePref = findPreference("save");
-
-        if (getResources().getBoolean(R.bool.has_rgb_notification_led)) {
-            mBlinkPref.setOnPreferenceChangeListener(this);
-        } else {
-            PreferenceScreen screen = getPreferenceScreen();
-            screen.removePreference(mBlinkPref);
-            screen.removePreference(mCustomPref);
-        }
 
         String[] colorList = getResources().getStringArray(
                 com.android.internal.R.array.notification_led_random_color_set);
@@ -127,7 +121,23 @@ public class PackageSettingsActivity extends PreferenceActivity implements
 
         mNM = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
+        populateColors();
+        updateUiForCapabilities();
         loadInitialData();
+    }
+
+    private void updateUiForCapabilities() {
+        PreferenceScreen screen = getPreferenceScreen();
+        Resources res = getResources();
+
+        if (res.getBoolean(R.bool.has_single_notification_led)) {
+            screen.removePreference(mColorPref);
+        }
+        if (!res.getBoolean(R.bool.has_rgb_notification_led)) {
+            screen.removePreference(mBlinkPref);
+            screen.removePreference(mCustomPref);
+            screen.removePreference(findPreference("color_notice"));
+        }
     }
 
     private void loadInitialData() {
@@ -174,10 +184,7 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     }
 
     private void populateColors() {
-        if (getResources().getBoolean(R.bool.has_mixable_dual_notification_led)) {
-            mColorPref.setEntries(R.array.entries_mixable_dual_led_colors);
-            mColorPref.setEntryValues(R.array.values_mixable_dual_led_colors);
-        } else if (getResources().getBoolean(R.bool.has_dual_notification_led)) {
+        if (getResources().getBoolean(R.bool.has_dual_notification_led)) {
             mColorPref.setEntries(R.array.entries_dual_led_colors);
             mColorPref.setEntryValues(R.array.values_dual_led_colors);
         } else {

@@ -301,6 +301,7 @@
     <string name="pref_lockscreen_style_summary">Choose the style of the lockscreen</string>
     <string name="pref_in_call_style_title">Incoming call style</string>
     <string name="pref_in_call_style_summary">Choose the style of the incoming calls accept/reject widget</string>
+    <string name="lockscreen_music_title">Music Controls</string>
     <string name="pref_volbtn_music_controls_title">Volume button music controls</string>
     <string name="pref_volbtn_music_controls_summary">Seek music tracks when long-pressing the volume buttons while screen off</string>
     <string name="pref_cambtn_music_controls_title">Camera button music control</string>
@@ -457,6 +458,7 @@
     <string name="pref_install_location_summary">Select where new applications should be installed</string>
 
     <string name="general_title">General</string>
+    <string name="camera_title">Camera</string>
     <string name="buttons_title">Buttons</string>
     <string name="dock_title">Dock</string>
     <string name="keypad_title">Keyboard</string>

@@ -149,6 +149,7 @@
     <!-- Color Picker -->
     <string name="title_color_picker">Välj en färg</string>
     <string name="msg_color_picker">Tryck på mittenfärgen för att bekräfta.\nBacka för att avbryta</string>
+    <string name="group_settings">Inställningar</string>
 
     <!-- User interface: LED notifcations -->
     <string name="trackball_notifications_title">LED-aviseringsfärger</string>
@@ -189,6 +190,24 @@
     <string name="trackball_reset_all">Återställ alla färger och kategorier.</string>
     <string name="trackball_color_notice_title">OBS:</string>
     <string name="trackball_color_notice_summary">Alla färger visas inte på alla enheter.</string>
+    <string name="trackball_category_unconfigured">Okonfigurerad</string>
+    <string name="trackball_category_misc">Diverse</string>
+    <string name="trackball_app_save_title">Spara</string>
+    <string name="trackball_app_save_summary">Spara inställningar för denna applikation</string>
+    <string name="trackball_app_reset_title">Återställ</string>
+    <string name="trackball_app_reset_summary">Ta bort anpassade inställningar för denna applikation</string>
+    <string name="trackball_force_mode_title">LED-läge</string>
+    <string name="trackball_force_mode_dialog">Välj ett läge</string>
+    <string name="trackball_force_mode_summary">Konfigurera hur lysdioden ska bete sig</string>
+    <string name="trackball_app_email">E-post</string>
+    <string name="trackball_app_mms">Meddelanden</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <string name="trackball_app_dialer">Missat Samtal</string>
+    <string name="trackball_color_entry_use_app">Använd applikationens inställning</string>
 
     <!-- Trackball color entries -->
     <string name="trackball_color_entry_green">Grön</string>

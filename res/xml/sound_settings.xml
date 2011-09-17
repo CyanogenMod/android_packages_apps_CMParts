@@ -40,6 +40,16 @@
 
 	</PreferenceCategory>
 
+	<PreferenceCategory android:key="camera_category"
+		android:title="@string/camera_title">
+		<!-- Disable camera shutter sound -->
+		<CheckBoxPreference android:key="camera-mute"
+			android:title="@string/sound_camera_shutter_disable_title"
+			android:summaryOn="@string/sound_camera_shutter_disable_summary_on"
+			android:summaryOff="@string/sound_camera_shutter_disable_summary_off"
+			android:persistent="false" />
+	</PreferenceCategory>
+
 	<!-- Some spacing -->
 	<PreferenceCategory />
 
