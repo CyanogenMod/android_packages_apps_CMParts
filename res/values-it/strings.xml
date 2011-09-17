@@ -189,7 +189,8 @@
     <string name="trackball_category_remove_summary">Rimuovi una categoria dalla lista</string>
     <string name="trackball_reset_all">Ripristina le app e le categorie</string>
     <string name="trackball_color_notice_title">NOTA:</string>
-    <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string><string name="trackball_category_unconfigured">Non configurate</string>
+    <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string>
+    <string name="trackball_category_unconfigured">Non configurate</string>
     <string name="trackball_category_misc">Varie</string>
     <string name="trackball_app_save_title">Salva</string>
     <string name="trackball_app_save_summary">Salva le impostazioni per questa applicazione</string>
@@ -314,6 +315,9 @@
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press tasto cerca</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Avvia un\'applicazione personalizzata alla pressione prolungata del tasto cerca</string>
 
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Attiva/disattiva BackTrack Minipad</string>
+
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Long-press tasto menu</string>
     <string name="long_press_menu_summary">Impostazioni personalizzate per la pressione prolungata del tasto menu</string>
@@ -418,8 +422,8 @@
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Usa memoria interna</string>
-    <string name="pref_switch_storage_summary_on">Utilizza l\'espansione di memoria interna per le app e i contenuti multimediali</string>
-    <string name="pref_switch_storage_summary_off">Utilizza la scheda rimovibile per le app e i contenuti multimediali</string>
+    <string name="pref_switch_storage_summary_on">Utilizza l\'espansione di memoria interna per le app e i contenuti multimediali (riavvio richiesto)</string>
+    <string name="pref_switch_storage_summary_off">Utilizza la scheda rimovibile per le app e i contenuti multimediali (riavvio richiesto)</string>
     <string name="pref_storage_switch_unavailable">Questo dispositivo non ha una memoria interna espandibile</string>
 
     <!-- Application Settings : Move any app -->

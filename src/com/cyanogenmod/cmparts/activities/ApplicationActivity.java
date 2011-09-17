@@ -97,7 +97,7 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
         mSwitchStoragePref.setChecked((SystemProperties.getInt("persist.sys.vold.switchexternal", 0) == 1));
 
         if (SystemProperties.get("ro.vold.switchablepair","").equals("")) {
-            mSwitchStoragePref.setSummary(R.string.pref_storage_switch_unavailable);
+            mSwitchStoragePref.setSummaryOff(R.string.pref_storage_switch_unavailable);
             mSwitchStoragePref.setEnabled(false);
         }
 
@@ -120,7 +120,7 @@ public class ApplicationActivity extends PreferenceActivity implements OnPrefere
             return true;
         } else if (preference == mSwitchStoragePref) {
             SystemProperties.set("persist.sys.vold.switchexternal",
-		mSwitchStoragePref.isChecked() ? "1" : "0");
+                    mSwitchStoragePref.isChecked() ? "1" : "0");
             return true;
         }
         return false;

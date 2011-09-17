@@ -323,8 +323,8 @@
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">内蔵ストレージを使用</string>
-    <string name="pref_switch_storage_summary_on">アプリケーションやメディアの格納に内蔵の拡張ストレージを使用する</string>
-    <string name="pref_switch_storage_summary_off">アプリケーションやメディアの格納に取り外し可能なカードを使用する</string>
+    <string name="pref_switch_storage_summary_on">アプリケーションやメディアの格納に内蔵の拡張ストレージを使用する(再起動が必要)</string>
+    <string name="pref_switch_storage_summary_off">アプリケーションやメディアの格納に取り外し可能なカードを使用する(再起動が必要)</string>
     <string name="pref_storage_switch_unavailable">このデバイスには内蔵の拡張ストレージはありません</string>
 
     <!-- Application Settings : Move any app -->
