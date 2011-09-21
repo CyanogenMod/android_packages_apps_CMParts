@@ -206,20 +206,6 @@
         <item>5</item>
     </string-array>
 
-    <string-array name="entries_mixable_dual_led_colors" translatable="false">
-        <item>@string/trackball_color_entry_use_app</item>
-        <item>@string/trackball_color_entry_green</item>
-        <item>@string/trackball_color_entry_red</item>
-        <item>@string/trackball_color_entry_amber</item>
-    </string-array>
-
-    <string-array name="values_mixable_dual_led_colors" translatable="false">
-        <item>default</item>
-        <item>green</item>
-        <item>red</item>
-        <item>yellow</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>Use application setting</item>
         <item>2 (Fast)</item>
