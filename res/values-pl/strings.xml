@@ -15,6 +15,7 @@
     <string name="input_settings_title_subhead">Ustawienia wprowadzania</string>
     <string name="input_settings_summary_head">Przyciski, reakcja na dotyk</string>
     <string name="interface_settings_title_head">Interfejs</string>
+    <string name="interface_settings_title_subhead">Ustawienia interfejsu</string>
     <string name="interface_settings_summary_head">Usprawnienia, przewijanie, render effect</string>
     <string name="lockscreen_settings_title_head">Blokada ekranu</string>
     <string name="lockscreen_settings_title_subhead">Ustawienia blokady ekranu</string>
@@ -35,6 +36,7 @@
 
     <!-- User interface -->
     <string name="ui_title">Interfejs użytkownika</string>
+    <string name="ui_summary">Ustawienia interfejsu i usprawnienia</string>
 
     <string name="pref_electron_beam_animation_on">Animacja włączenia ekranu</string>
     <string name="pref_electron_beam_animation_off">Animacja wyłączenia ekranu</string>
@@ -109,6 +111,7 @@
     <string name="trackball_summary">Zarządzaj kolorem i miganiem diody/trackballa</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Zmiana układu strony po przybliżeniu</string>
     <string name="pref_pinch_reflow_summary">Zmień układ strony natychmiast po przybliżeniu (uszczypnij-by-powiększyć)</string>
 
@@ -120,13 +123,19 @@
     <string name="pref_overscroll_weight_summary">Wybierz wage przewijanych obiektów</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Ustawienia blokady ekranu</string>
     <string name="pref_lockscreen_delay_title">Opóźnienie</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Automatyczne wyłączenie ekranu</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Ręczne wyłączenie ekranu</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Po jakim czasie zostanie uaktywniony ekran blokady, kiedy ekran wyłączy się automatycznie</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Po jakim czasie zostanie uaktywniony ekran blokady, kiedy ekran zostanie wyłączony przez użytkownika</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Wybierz kolor</string>
     <string name="msg_color_picker">Puknij na środku, by potwierdzić.\nWciśnij wstecz, by anulować</string>
 
     <!-- User interface: LED notifcations -->
+    <string name="trackball_notifications_title">Kolor powiadomień</string>
     <string name="dialog_color_trackball">Wybierz kolor</string>
     <string name="dialog_blink_trackball">Częstotliwość migania</string>
     <string name="color_trackball_flash_title">Kolor</string>
@@ -196,6 +205,7 @@
     <string name="pref_lockscreen_timeout_summary">Skonfiguruj opóźnienia blokady ekranu</string>
 
     <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">Ustawienia ekranu blokady</string>
     <string name="pref_lockscreen_always_battery_title">Stan baterii</string>
     <string name="pref_lockscreen_always_battery_summary">Wyświetlaj stan baterii na ekranie blokady przez cały czas</string>
     <string name="pref_lockscreen_music_controls_title">Sterowanie muzyką</string>
@@ -227,6 +237,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Przeciągnięcie w dół odblokowuje ekran. Przeciągnięcie w prawo uruchamia wybraną aplikację</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Ukryj strzałki</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Ukrywa strzałki w stylu obrotowym</string>
+    <string name="lockscreen_style_header">Opcje stylu</string>
+    <string name="lockscreen_delay_header">Opóźnienie blokady ekranut</string>
     <string name="pref_lockscreen_style_title">Styl ekranu blokady</string>
     <string name="pref_lockscreen_style_summary">Wybierz styl ekranu blokady</string>
     <string name="pref_in_call_style_title">Styl połączenia przychodzącego</string>
@@ -240,8 +252,10 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ustawienia wprowadzania</string>
+    <string name="input_settings_summary">Kontroluj zachowania przycisków</string>
     <string name="haptic_title">Reakcja na dotyk</string>
     <string name="haptic_summary">Wybierz kiedy i jak mocno wibrować, podczas dotyku ekranu</string>
+    <string name="button_settings_title">Ustawienia przycisków</string>
     <string name="long_press_home_title">Przytrzymanie przycisku home</string>
     <string name="long_press_home_summary">Liczba aplikacji, własna aplikacja</string>
     <string name="input_search_key_title">Zachowanie przycisku szukaj</string>
@@ -316,6 +330,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Ustawienia aplikacji</string>
+    <string name="performance_settings_summary">Usprawnienia wydajności urządzenia</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache</string>
@@ -351,6 +366,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Ustawienia aplikacji</string>
+    <string name="application_settings_summary">Zmień różne ustawienia aplikacji, np. miejsce ich instalacji</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Pozwól na przenoszenie aplikacji</string>
@@ -497,6 +513,8 @@
     <string name="ll_num_levels">Liczba poziomów</string>
 
     <!-- Sound -->
+    <string name="sound_title">Ustawienia dżwięku</string>
+    <string name="sound_summary">Ustawienia dźwięku i skupienia</string>
     <string name="sound_notifications_focus_title">Skupienie na powiadomieniach</string>
     <string name="sound_notifications_focus_summary">Powoduje ściszenie dźwięków aplikacji podczas powiadomienia.</string>
     <string name="sound_volume_control_silent_title">Profil cichy</string>
@@ -553,12 +571,16 @@
     <string name="pref_lockscreen_gestures_builder_title">Dodaj gesty</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Czułość</string>
     <string name="pref_lockscreen_gestures_color_title">Kolor gestów</string>
+    <string name="label_create_gesture">Utwórz gest</string>
     <string name="gestures_button_add">Dodaj gest</string>
     <string name="gestures_button_discard">Odrzuć</string>
     <string name="gestures_button_done">Zapisz</string>
     <string name="gestures_error_missing_shortcut">Musisz wybrać akcję dla tego gestu!</string>
+    <string name="gestures_save_success">Gest zapisany w %s</string>
+    <string name="gestures_cancel_action">Anuluj</string>
     <string name="gestures_loading">Wczytywanie...</string>
     <string name="gestures_empty">Brak gestów</string>
+    <string name="gestures_activity">Gesty</string>
     <string name="gestures_delete">Usuń</string>
     <string name="gestures_delete_success">Usunięty</string>
     <string name="gestures_error_loading">Błąd pliku gestu.</string>
@@ -595,6 +617,8 @@
     <string name="title_phone_goggles_start">Start trybu Phone Goggles</string>
     <string name="title_phone_goggles_end">Koniec trybu Phone Goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Poporoś o potwierdzenie</string>
+    <string name="title_phone_goggles_phone_enabled">Telefon</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Poziom równania</string>
     <string name="title_phone_goggles_work_filtered">Praca</string>
     <string name="title_phone_goggles_mobile_filtered">Komórka</string>

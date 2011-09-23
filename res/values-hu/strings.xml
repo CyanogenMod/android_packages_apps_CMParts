@@ -14,6 +14,7 @@
     <string name="input_settings_title_subhead">Beviteli beállítások</string>
     <string name="input_settings_summary_head">Beviteli viselkedés, gombok, rezgő visszajelzés</string>
     <string name="interface_settings_title_head">Felület</string>
+    <string name="interface_settings_title_subhead">Felület beállítások</string>
     <string name="interface_settings_summary_head">Felület tuningolás, scrollozás, hatások</string>
     <string name="lockscreen_settings_title_head">Zárképernyő</string>
     <string name="lockscreen_settings_title_subhead">Zárképernyő beállítások</string>
@@ -34,6 +35,7 @@
 
     <!-- User interface -->
     <string name="ui_title">Felhasználói felület</string>
+    <string name="ui_summary">A felhasználói felület beállításai és finomhangolás</string>
 
     <string name="pref_electron_beam_animation_on">Képernyő-be animáció</string>
     <string name="pref_electron_beam_animation_off">Képernyő-ki animáció</string>
@@ -52,6 +54,7 @@
     <string name="trackball_summary">Irányító gomb / LED visszajelzés szín és gyakoriság</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">Webnézet</string>
     <string name="pref_pinch_reflow_title">Összehúzás betekintés után</string>
     <string name="pref_pinch_reflow_summary">Tartalom összehúzása követlenül nagyítás után</string>
 
@@ -63,13 +66,19 @@
     <string name="pref_overscroll_weight_summary">Adja meg a gördíthető objektumok mértékét</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Képernyőzár beállításai</string>
     <string name="pref_lockscreen_delay_title">Késleltetés</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Képernyő időkorlátja</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Képernyő kikapcsolásának késleltetése</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Készenlétbe kapcsoláskor mennyi idő telik el mielőtt a képernyőzár aktiválódik</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Készenlétbe kapcsoláskor mennyi idő telik el mielőtt a képernyő kikapcsol</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Szín kiválasztása</string>
     <string name="msg_color_picker">Érintse meg középen a színt a megerősítéshez / Nyomdja meg a "Vissza" gombot az elutasításhoz</string>
 
     <!-- User interface: LED notifcations -->
+    <string name="trackball_notifications_title">Pozícionáló értesítéseinek a színe</string>
     <string name="dialog_color_trackball">Válasszon egy színt</string>
     <string name="dialog_blink_trackball">Válassza ki a villogás mértékét</string>
     <string name="color_trackball_flash_title">Villanás színe</string>
@@ -139,6 +148,7 @@
     <string name="pref_lockscreen_timeout_summary">Képernyő késleltetés és képernyő kikapcsolás beállítása</string>
 
     <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">Képernyőzár beállítások</string>
     <string name="pref_lockscreen_always_battery_title">Akkumulátor állapot megjelenítése</string>
     <string name="pref_lockscreen_always_battery_summary">Mindig jelenjen meg az akkumulátor állapota a zárképernyőn</string>
     <string name="pref_lockscreen_music_controls_title">Zenelejátszó vezérlő a képernyőzáron</string>
@@ -168,6 +178,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Húzd le a kereket a feloldáshoz. Jobbra húzásnál egyéni alkalmazás indul</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Nyilak elrejése</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Elrejti az irányított nyilakat</string>
+    <string name="lockscreen_style_header">Stílus beállítások</string>
+    <string name="lockscreen_delay_header">Késleltetés és a időtúllépés</string>
     <string name="pref_lockscreen_style_title">Zárképernyő stílus</string>
     <string name="pref_lockscreen_style_summary">Zárképernyő stílusának kiválasztása</string>
     <string name="pref_volbtn_music_controls_title">Zene irányítása hangerő gombbal</string>
@@ -179,8 +191,10 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Beviteli beállítások</string>
+    <string name="input_settings_summary">Kezelőgomb működése</string>
     <string name="haptic_title">Rezgő visszajelzés beállítása</string>
     <string name="haptic_summary">Beállítja hogy mikor és milyen erősen rezegjen</string>
+    <string name="button_settings_title">Gomb beállítások</string>
     <string name="long_press_home_title">Beállítások Home gomb hosszú nyomásával</string>
     <string name="long_press_home_summary">Gyakran használt alkalmazások száma, stb</string>
     <string name="input_search_key_title">Kereső gomb viselkedése</string>
@@ -248,6 +262,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Teljesítmény beállítások</string>
+    <string name="performance_settings_summary">Készülék teljesítményének finomhangolása</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache RAM használat</string>
@@ -279,6 +294,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Alkalmazás beállítások</string>
+    <string name="application_settings_summary">Alkalmazás beállítások, pl. telepítési hely</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Alkalmazás áthelyezés engedélyezése</string>
@@ -421,6 +437,8 @@
     <string name="ll_num_levels">Szintek száma</string>
 
     <!-- Sound -->
+    <string name="sound_title">Hangbeállítások</string>
+    <string name="sound_summary">Hang és audio fókusz beállítások</string>
     <string name="sound_notifications_focus_title">Értesítési fókusz</string>
     <string name="sound_notifications_focus_summary">Az értesítés alatt a kompatibilis alkalmazások lehalkulnak.</string>
     <string name="sound_volume_control_silent_title">Csenges állapot</string>
@@ -474,12 +492,16 @@
     <string name="pref_lockscreen_gestures_builder_title">Gesztusok készítése</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Érzékenység</string>
     <string name="pref_lockscreen_gestures_color_title">Gesztus színe</string>
+    <string name="label_create_gesture">Gesztus létrehozása</string>
     <string name="gestures_button_add">Gesztus hozzáadása</string>
     <string name="gestures_button_discard">Elvetés</string>
     <string name="gestures_button_done">Rendben</string>
     <string name="gestures_error_missing_shortcut">Állíts be egy parancsot ehhez a gesztushoz!</string>
+    <string name="gestures_save_success">Gesztus mentve: %s</string>
+    <string name="gestures_cancel_action">Mégsem</string>
     <string name="gestures_loading">Gesztusok betöltése...</string>
     <string name="gestures_empty">Nincs gesztus</string>
+    <string name="gestures_activity">Gesztusok</string>
     <string name="gestures_delete">Törlés</string>
     <string name="gestures_delete_success">Gesztus törölve</string>
     <string name="gestures_error_loading">Hiba történ a gesztussal.</string>
@@ -512,6 +534,8 @@
     <string name="title_phone_goggles_start">Telefon védelmi mód indítása</string>
     <string name="title_phone_goggles_end">Telefon védelmi mód befejezése</string>
     <string name="title_phone_goggles_confirmation_enabled">Megerősítés kérése</string>
+    <string name="title_phone_goggles_phone_enabled">Telefon</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Matematikai</string>
     <string name="title_phone_goggles_work_filtered">Munkahely</string>
     <string name="title_phone_goggles_mobile_filtered">Mobil</string>

@@ -14,6 +14,7 @@
     <string name="input_settings_title_subhead">Paràmetres d\'entrada</string>
     <string name="input_settings_summary_head">Comportament d\'entrada, botons, retroalimentació hàptica</string>
     <string name="interface_settings_title_head">Interfície</string>
+    <string name="interface_settings_title_subhead">Configuració de la interfície</string>
     <string name="interface_settings_summary_head">Ajustaments de la interfície, sobredesplaçament, efectes de render</string>
     <string name="lockscreen_settings_title_head">Bloqueig de pantalla</string>
     <string name="lockscreen_settings_title_subhead">Paràmetres del bloqueig de pantalla</string>
@@ -34,6 +35,7 @@
 
     <!-- User interface -->
     <string name="ui_title">Interfície d\'usuari</string>
+    <string name="ui_summary">Paràmetres de la interfície d\'usuari</string>
 
     <string name="pref_electron_beam_animation_on">Animació d\'encesa de pantalla</string>
     <string name="pref_electron_beam_animation_off">Animació d\'apagat de pantalla</string>
@@ -52,6 +54,7 @@
     <string name="trackball_summary">Notificació i batec de la bola i LED</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">VistaWeb</string>
     <string name="pref_pinch_reflow_title">Redibuixa després d\'ampliar</string>
     <string name="pref_pinch_reflow_summary">Redibuixa el contingut immediatament després de pessigar per ampliar</string>
 
@@ -63,13 +66,19 @@
     <string name="pref_overscroll_weight_summary">Seleccioneu el pes dels objectes desplaçables</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Configuració del bloqueig de la pantalla</string>
     <string name="pref_lockscreen_delay_title">Retard</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Retard del temps de bloqueig de la pantalla</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Retard del temps d\'apagat de la pantalla</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Temps de retard abans de bloquejar la pantalla quan s\'esgota el temps d\'espera</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Temps de retard abans de bloquejar la pantalla quan s\'apaga</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Selecció de color</string>
     <string name="msg_color_picker">Toqueu al centre del color per confirmar\nPitgeu Enrere per a cancel·lar</string>
 
     <!-- User interface: LED notifications -->
+    <string name="trackball_notifications_title">Colors de les notificacions de la bola de desplaçament</string>
     <string name="dialog_color_trackball">Escolliu un color</string>
     <string name="dialog_blink_trackball">Trieu una freqüència d\'intermitència</string>
     <string name="color_trackball_flash_title">Color del llum</string>
@@ -139,6 +148,7 @@
     <string name="pref_lockscreen_timeout_summary">Configura els retards del temps d\'espera i de l\'apagat de la pantalla</string>
 
     <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">Configuració del bloqueig</string>
     <string name="pref_lockscreen_always_battery_title">Mostra sempre l\'estat de la bateria</string>
     <string name="pref_lockscreen_always_battery_summary">Mostra sempre l\'estat de la bateria amb la pantalla bloquejada</string>
     <string name="pref_lockscreen_music_controls_title">Control de música en bloqueig</string>
@@ -168,6 +178,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Arrossegant la roda avall es desbloqueja. Arrossegant a la dreta s\'inicia l\'aplicació personalitzada</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Amaga les fletxes de rotació</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Amaga les fletxes direccionals en l\'estil rotatori</string>
+    <string name="lockscreen_style_header">Preferències d\'estil</string>
+    <string name="lockscreen_delay_header">Retard i temps d\'espera</string>
     <string name="pref_lockscreen_style_title">Estil de bloqueig de pantalla</string>
     <string name="pref_lockscreen_style_summary">Tria l\'estil de la pantalla de bloqueig</string>
     <string name="pref_volbtn_music_controls_title">Control de música amb les tecles de volum</string>
@@ -179,8 +191,10 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Paràmetres d\'entrada</string>
+    <string name="input_settings_summary">Control del comportament dels botons</string>
     <string name="haptic_title">Ajustaments de la retroacció tàctil</string>
     <string name="haptic_summary">Ajusteu quan i com es produeixen les retroaccions tàctils</string>
+    <string name="button_settings_title">Preferències dels botons</string>
     <string name="long_press_home_title">Paràmetres de prémer llarg Inici</string>
     <string name="long_press_home_summary">Nombre d\'aplicacions recents, etc</string>
     <string name="input_search_key_title">Comportament de la tecla de cerca</string>
@@ -248,6 +262,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Configuració del rendiment</string>
+    <string name="performance_settings_summary">Ajustaments de rendiment</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Utilització de RAM Compcache</string>
@@ -283,6 +298,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Paràmetres de les aplicacions</string>
+    <string name="application_settings_summary">Canvia diverses configuracions per a les aplicacions, com ara el lloc on s\'instal·len</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Permet moure aplicacions</string>
@@ -417,6 +433,8 @@
     <string name="ll_num_levels">Estableix el nombre de nivells</string>
 
     <!-- Sound -->
+    <string name="sound_title">Paràmetres del so</string>
+    <string name="sound_summary">Paràmetres de so i focus d\'àudio</string>
     <string name="sound_notifications_focus_title">Focus de les notificacions</string>
     <string name="sound_notifications_focus_summary">Les peticions d\' ús de l\'àudio fan que les aplicacions compatibles abaixin el volum mentre sonen les notificacions.</string>
     <string name="sound_volume_control_silent_title">Altres/Ni EUA ni Canadà</string>
@@ -470,12 +488,16 @@
     <string name="pref_lockscreen_gestures_builder_title">Construcció de gestos</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilitat</string>
     <string name="pref_lockscreen_gestures_color_title">Color dels gestos</string>
+    <string name="label_create_gesture">Crea un gest</string>
     <string name="gestures_button_add">Afegeix gest</string>
     <string name="gestures_button_discard">Descarta</string>
     <string name="gestures_button_done">Fet</string>
     <string name="gestures_error_missing_shortcut">Has de triar una acció per al gest!</string>
+    <string name="gestures_save_success">Gest desat a %s</string>
+    <string name="gestures_cancel_action">Cancel·la</string>
     <string name="gestures_loading">Carregant gestos...</string>
     <string name="gestures_empty">Sense gestos</string>
+    <string name="gestures_activity">Gestos</string>
     <string name="gestures_delete">Elimina</string>
     <string name="gestures_delete_success">Gest eliminat</string>
     <string name="gestures_error_loading">Error en l\'operació amb el fitxer de gestos.</string>
@@ -508,6 +530,8 @@
     <string name="title_phone_goggles_start">Inicia el mode Phone Goggles</string>
     <string name="title_phone_goggles_end">Atura el mode Phone Goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Demana confirmació</string>
+    <string name="title_phone_goggles_phone_enabled">Telèfon</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Nivell de matemàtiques</string>
     <string name="title_phone_goggles_work_filtered">Feina</string>
     <string name="title_phone_goggles_mobile_filtered">Mòbil</string>

@@ -14,6 +14,7 @@
     <string name="input_settings_title_subhead">Invoer instellingen</string>
     <string name="input_settings_summary_head">Invoergedrag, knoppen, haptische feedback</string>
     <string name="interface_settings_title_head">Interface</string>
+    <string name="interface_settings_title_subhead">Interface instellingen</string>
     <string name="interface_settings_summary_head">Interface tweaks, overscrolling, render effect</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Lockscreen instellingen</string>
@@ -34,6 +35,7 @@
 
     <!-- User interface -->
     <string name="ui_title">Gebruikersinterface</string>
+    <string name="ui_summary">Gebruikersinterface instellingen &amp; tweaks</string>
 
     <string name="pref_electron_beam_animation_on">Scherm-aan animatie</string>
     <string name="pref_electron_beam_animation_off">Scherm-uit animatie</string>
@@ -100,6 +102,7 @@
     <string name="trackball_summary">Verander kleur en oplicht instellingen trackball/LED notificaties</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Reflow na pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow webview content direct na pinch to zoom in</string>
 
@@ -111,13 +114,19 @@
     <string name="pref_overscroll_weight_summary">Selecteer de intensiteit van de scrollbare objecten</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Scherm-vergrendel instellingen</string>
     <string name="pref_lockscreen_delay_title">Vertraging</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Time-out vertraging</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Uitschakel vertraging</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Vertraging in seconden voordat scherm-vergrendeling geactiveerd wordt</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Vertraging in seconden voordat scherm-vergrendeling geactiveerd wordt wanneer het scherm uit is</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Kies een kleur</string>
     <string name="msg_color_picker">Druk in het midden van de kleur om te bevestigen.\nKies terug om te annuleren</string>
 
     <!-- User interface: LED notifications -->
+    <string name="trackball_notifications_title">LED notificatie kleuren</string>
     <string name="dialog_color_trackball">Kies een kleur</string>
     <string name="dialog_blink_trackball">Kies oplicht snelheid</string>
     <string name="color_trackball_flash_title">Flash kleur</string>
@@ -187,6 +196,7 @@
     <string name="pref_lockscreen_timeout_summary">Configureer scherm time-out vertraging en scherm uitzet vertraging</string>
 
     <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">Lockscreen instellingen</string>
     <string name="pref_lockscreen_always_battery_title">Laat batterij status altijd zien</string>
     <string name="pref_lockscreen_always_battery_summary">Laat batterij status altijd op het lockscreen zien</string>
     <string name="pref_lockscreen_music_controls_title">Muziek knoppen</string>
@@ -218,6 +228,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Sleep het draaiwiel naar beneden om te unlocken. Sleep het wiel naar rechts om de zelf gekozen app te starten</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Verberg draaiwiel pijlen</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Verbergt de pijlen op het draaiwiel lockscreen</string>
+    <string name="lockscreen_style_header">Thema instellingen</string>
+    <string name="lockscreen_delay_header">Vertraging en time-out</string>
     <string name="pref_lockscreen_style_title">Lockscreen thema</string>
     <string name="pref_lockscreen_style_summary">Kies een thema voor het lockscreen</string>
     <string name="pref_in_call_style_title">Inkomend gesprek stijl</string>
@@ -231,8 +243,10 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Invoer instellingen</string>
+    <string name="input_settings_summary">Beheer gedrag van knoppen</string>
     <string name="haptic_title">Haptische feedback tweaks</string>
     <string name="haptic_summary">Bepaal wanneer en hoe hevig haptische feedback optreedt</string>
+    <string name="button_settings_title">Knop instellingen</string>
     <string name="long_press_home_title">Lang drukken home knop</string>
     <string name="long_press_home_summary">Aantal recente apps, etc</string>
     <string name="input_search_key_title">Zoek knop gedrag</string>
@@ -300,6 +314,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Prestatie instellingen</string>
+    <string name="performance_settings_summary">Toestel prestatie tweaks</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache RAM Usage</string>
@@ -335,6 +350,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Applicatie instellingen</string>
+    <string name="application_settings_summary">Verander verschillende applicatie instellingen, zoals bijvoorbeeld de opslaglocatie</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Apps verplaatsen</string>
@@ -479,6 +495,8 @@
     <string name="ll_num_levels">Stel het aantal niveaus in</string>
 
     <!-- Sound -->
+    <string name="sound_title">Geluid instellingen</string>
+    <string name="sound_summary">Geluid en focus instellingen</string>
     <string name="sound_notifications_focus_title">Notificatie focus</string>
     <string name="sound_notifications_focus_summary">Geluid focus toestemming zorgt ervoor dat ondersteunde apps het geluid verlagen wanneer een notificatie afgespeeld wordt</string>
     <string name="sound_volume_control_silent_title">Stille modus</string>
@@ -535,12 +553,16 @@
     <string name="pref_lockscreen_gestures_builder_title">Ontwikkel gestures</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Gevoeligheid</string>
     <string name="pref_lockscreen_gestures_color_title">Gestures kleur</string>
+    <string name="label_create_gesture">Maak een gesture</string>
     <string name="gestures_button_add">Voeg een gesture toe</string>
     <string name="gestures_button_discard">Annuleren</string>
     <string name="gestures_button_done">Klaar</string>
     <string name="gestures_error_missing_shortcut">Er moet een actie voor deze gesture gekozen worden!</string>
+    <string name="gestures_save_success">Gesture opgeslagen in %s</string>
+    <string name="gestures_cancel_action">Annuleren</string>
     <string name="gestures_loading">Gestures laden...</string>
     <string name="gestures_empty">Geen gestures</string>
+    <string name="gestures_activity">Gestures</string>
     <string name="gestures_delete">Verwijder</string>
     <string name="gestures_delete_success">Gesture verwijderd</string>
     <string name="gestures_error_loading">Er is een probleem opgetreden met de gesture.</string>
@@ -573,6 +595,8 @@
     <string name="title_phone_goggles_start">Start Phone Goggles modus</string>
     <string name="title_phone_goggles_end">Beëindig Phone Goggles modus</string>
     <string name="title_phone_goggles_confirmation_enabled">Vraag om bevestiging</string>
+    <string name="title_phone_goggles_phone_enabled">Telefoon</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Reken niveau</string>
     <string name="title_phone_goggles_work_filtered">Werk</string>
     <string name="title_phone_goggles_mobile_filtered">Mobiel</string>

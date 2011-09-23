@@ -15,6 +15,7 @@
   <string name="input_settings_title_subhead">הגדרות קלט</string>
   <string name="input_settings_summary_head">התנהגות קלט, לחצנים, משוב רטט</string>
   <string name="interface_settings_title_head">ממשק</string>
+  <string name="interface_settings_title_subhead">הגדרות ממשק</string>
   <string name="interface_settings_summary_head">הגדרות ממשק, גלילת יתר, אפקט מעבד</string>
   <string name="lockscreen_settings_title_head">נעילת מסך</string>
   <string name="lockscreen_settings_title_subhead">הגדרות נעילת מסך</string>
@@ -35,6 +36,7 @@
 
     <!-- User interface -->
   <string name="ui_title">ממשק משתמש</string>
+  <string name="ui_summary">הגדרות ממשק משתמש</string>
   <string name="pref_electron_beam_animation_on">אנימציה בהדלקת מסך</string>
   <string name="pref_electron_beam_animation_off">אנימציה בכיבוי מסך</string>
 
@@ -45,6 +47,7 @@
   <string name="trackball_summary">שליטה בצבע ובהבהוב של נורית ההתראות/כדור הגלגלת</string>
  
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">תצוגת אינטרנט</string>
   <string name="pref_pinch_reflow_title">Reflow after pinch in</string>
   <string name="pref_pinch_reflow_summary">Reflow content immediately after pinch to zoom in</string>
 
@@ -56,13 +59,19 @@
   <string name="pref_overscroll_weight_summary">בחר את הערך של אובייקטים הניתנים לגלילה</string>
 
     <!-- User interface : Lock Screen -->
+  <string name="ui_lockscreen_title">הגדרות נעילת מסך</string>
   <string name="pref_lockscreen_delay_title">השהיה</string>
+  <string name="pref_lockscreen_timeout_lock_delay">השהיית כיבוי מסך</string>
+  <string name="pref_lockscreen_screenoff_lock_delay">השהיית נעילת מסך</string>
+  <string name="pref_lockscreen_timeout_lock_delay_summary">כמה זמן להשהות לפני כיבוי מסך</string>
+  <string name="pref_lockscreen_screenoff_lock_delay_summary">כמה זמן לשהות לפני נעילת המסך כאשר המסך כבוי</string>
 
     <!-- Color Picker -->
  <string name="title_color_picker">בחר צבע</string>
   <string name="msg_color_picker">לחץ במרכז כדי לאשר.\nלחץ חזרה כדי לבטל</string>
 
     <!-- User interface: LED notifcations -->
+  <string name="trackball_notifications_title">צבעי נורית ההתראות</string>
   <string name="dialog_color_trackball">בחר צבע</string>
   <string name="dialog_blink_trackball">בחר קצב הבהוב</string>
   <string name="color_trackball_flash_title">צבע הפלאש</string>
@@ -122,6 +131,9 @@
 
     <!-- Input Settings -->
   <string name="input_settings_title">הגדרות קלט</string>
+  <string name="input_settings_summary">אופן פעולה של לחצן</string>
+  <string name="button_settings_title">הגדרת לחצן</string>
+  <string name="lockscreen_settings_title">הגדרות נעילת מסך</string>
   <string name="pref_lockscreen_music_controls_title">פקדי מוזיקה בנעילת מסך</string>
   <string name="pref_lockscreen_music_controls_summary">הצג פקדי מוזיקה בנעילת מסך</string>
   <string name="pref_lockscreen_always_music_controls_title">הצג תמיד פקדי מוזיקה</string>
@@ -151,6 +163,7 @@
 
     <!-- Performance Settings -->
   <string name="performance_settings_title">הגדרות ביצועים</string>
+  <string name="performance_settings_summary">שינוי ביצועי מערכת</string>
 
     <!-- Performance Settings : Compcache -->
   <string name="pref_compcache_title">שימוש בזכרון וירטואלי</string>
@@ -182,6 +195,7 @@
  
  <!-- Application Settings -->
   <string name="application_settings_title">הגדרות יישום</string>
+  <string name="application_settings_summary">שינוי הגדרות יישומים כמו לדוגמה מקום ההתקנה</string>
 
     <!-- Application Settings : Move any app -->
   <string name="pref_move_all_apps_title">אפשר העברה של יישום</string>
@@ -354,6 +368,8 @@
   <string name="ll_num_levels">הגדר מספר רמות</string>
 
   <!-- Sound -->
+  <string name="sound_title">הגדרות קול</string>
+  <string name="sound_summary">הגדרות מיקוד שמע וקול</string>
   <string name="sound_notifications_focus_title">מוקד ההתראות</string>
   <string name="sound_notifications_focus_summary">.בקשות קול ממוקדות גורמות לאפליקציות תואמות להוריד את עוצמת הקול כאשר נשמעת התראה</string>
   <string name="sound_volume_control_silent_title">מצב שקט</string>
@@ -404,12 +420,16 @@
   <string name="pref_lockscreen_gestures_builder_title">בנה מחוות</string>
   <string name="pref_lockscreen_gestures_sensitivity_title">רגישות</string>
   <string name="pref_lockscreen_gestures_color_title">צבע מחוות</string>
+  <string name="label_create_gesture">יצירת מחווה</string>
   <string name="gestures_button_add">הוסף מחווה</string>
   <string name="gestures_button_discard">בטל</string>
   <string name="gestures_button_done">בוצע</string>
   <string name="gestures_error_missing_shortcut">!עליך לבחור פעולה עבור המחווה הזו</string>
+  <string name="gestures_save_success">תנועת מחווה נשמרה ב %s</string>
+  <string name="gestures_cancel_action">ביטול</string>
   <string name="gestures_loading">טוען תנועות...</string>
   <string name="gestures_empty">ללא מחוות</string>
+  <string name="gestures_activity">מחוות</string>
   <string name="gestures_delete">מחק</string>
   <string name="gestures_delete_success">מחווה נמחקה</string>
   <string name="gestures_error_loading">בעיה עם פעולת הקובץ של המחווה.</string>

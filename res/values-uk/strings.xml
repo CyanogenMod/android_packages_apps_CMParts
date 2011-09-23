@@ -12,6 +12,7 @@
   <string name="input_settings_title_subhead">Налаштування вводження</string>
   <string name="input_settings_summary_head">Кнопки, тактильний зворотній зв\u2019язок</string>
   <string name="interface_settings_title_head">Інтерфейс</string>
+  <string name="interface_settings_title_subhead">Налаштування інтерфейсу</string>
   <string name="interface_settings_summary_head">Налаштування інтерфейсу, перепрокручування, ефектів візуалізації</string>
   <string name="lockscreen_settings_title_head">Вікно блокування</string>
   <string name="lockscreen_settings_title_subhead">Налаштування вікна блокування</string>
@@ -28,6 +29,7 @@
   <string name="updatenotify_title">Сповіщення про оновлення</string>
   <string name="updatenotify_summary">Отримання сповіщень про оновлення.</string>
   <string name="ui_title">Інтерфейс користувача</string>
+  <string name="ui_summary">Налаштування та вдосконалення інтерфейсу користувача</string>
   <string name="pref_electron_beam_animation_on">Анімація увімк. екрана</string>
   <string name="pref_electron_beam_animation_off">Анімація вимк. екрана</string>
   <string name="tablet_tweaks_title_head">Налашт. для планшетів</string>
@@ -92,6 +94,7 @@
   <string name="ui_status_bar_cm_signal_text_show_text_dbm">Рівень сигналу з один. виміру</string>
   <string name="trackball_title">Світлові сповіщення</string>
   <string name="trackball_summary">Управління кольором та миготінням трекболу чи світлодіода</string>
+  <string name="ui_webview_title">Веб-перегляд</string>
   <string name="pref_pinch_reflow_title">Перекомпонування</string>
   <string name="pref_pinch_reflow_summary">Перекомпонування вмісту відразу після збільшення</string>
   <string name="ui_overscroll_title">Перепрокручування</string>
@@ -99,6 +102,7 @@
   <string name="pref_overscroll_summary">Вигляд об\u2019єктів, що виходять за межі зони прокручування</string>
   <string name="pref_overscroll_weight_title">Розмір ефекту</string>
   <string name="pref_overscroll_weight_summary">Встановлення розміру ефекту перепрокручування об\u2019єктів</string>
+  <string name="ui_lockscreen_title">Налаштування блокування екрана</string>
   <string name="pref_lockscreen_delay_title">Затримка</string>
   <string name="pref_lockscreen_security_title">Блок. з обмеж. доступу</string>
   <string name="pref_lockscreen_security_delay_note_title">Примітка:</string>
@@ -118,6 +122,7 @@
   <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Як швидко буде задіяне блокування повзунками після вимкнення екрана</string>
   <string name="title_color_picker">Вибір кольору</string>
   <string name="msg_color_picker">Щоб підтвердити натисніть на центр.\nЩоб скасувати вибір натисніть \u201CНазад\u201D</string>
+  <string name="trackball_notifications_title">Колір спов. трекболу</string>
   <string name="dialog_color_trackball">Виберіть колір</string>
   <string name="dialog_blink_trackball">Виберіть частоту миготіння</string>
   <string name="color_trackball_flash_title">Колір спалаху</string>
@@ -166,6 +171,7 @@
   <string name="trackball_color_entry_orange">Помаранчевий</string>
   <string name="trackball_color_entry_light_blue">Світло-синій</string>
   <string name="trackball_color_entry_random">Випадковий</string>
+  <string name="trackball_color_entry_none">Жоден</string>
   <string name="trackball_color_entry_amber">Бурштиновий</string>
   <string name="notification_battery_warning_title">УВАГА: активація параметра може пришвидшити розряд батареї</string>
   <string name="notification_battery_warning">Активація параметра призводить до збільшення споживання струму на ~ 3% на годину. Якщо ви помітили збільшення споживання під час миготіння трекболу, майте це на увазі. Не вмикайте якщо бажаєте зменшити розряд батареї.</string>
@@ -181,6 +187,7 @@
   <string name="pref_lockscreen_gesture_summary">Увімкнення та налаштування жестів вікна блокування</string>
   <string name="pref_lockscreen_timeout_title">Тайм-аути</string>
   <string name="pref_lockscreen_timeout_summary">Встановлення тайм-ауту автовикнення і вимкнення екрана</string>
+  <string name="lockscreen_settings_title">Налаштування вікна блокування</string>
   <string name="pref_lockscreen_always_battery_title">Стан батареї</string>
   <string name="pref_lockscreen_always_battery_summary">Постійне відображення стану батареї у вікні блокування</string>
   <string name="pref_lockscreen_music_controls_title">Управління плеєром</string>
@@ -220,6 +227,8 @@
   <string name="pref_lockscreen_rotary_unlock_down_summary">Розблокування відбуватиметься перетягуванням коліщатка вниз, а запуск користувацької програми повертанням праворуч</string>
   <string name="pref_lockscreen_rotary_hide_arrows_title">Прих. вказ. стрілок</string>
   <string name="pref_lockscreen_rotary_hide_arrows_summary">Приховання вказівних стрілок за поворотного стилю</string>
+  <string name="lockscreen_style_header">Стиль</string>
+  <string name="lockscreen_delay_header">Тайм-аути</string>
   <string name="pref_lockscreen_style_title">Стиль вікна блокування</string>
   <string name="pref_lockscreen_style_summary">Установлення стилю вікна блокування</string>
   <string name="pref_in_call_style_title">Стиль вікна вхідного виклику</string>
@@ -231,8 +240,10 @@
   <string name="lockscreen_widgets_note_title">Примітка.</string>
   <string name="lockscreen_widgets_note_summary">За мінімалістського стилю \u201CЛінза\u201D приховуються всі віджети, окрім управління плеєром. Незважаючи на це значення параметрів, розташованих нижче, зберігаються, що дозволяє легко змінити стиль вікна блокування, без необхідності повторного налаштування.</string>
   <string name="input_settings_title">Налаштування вводження</string>
+  <string name="input_settings_summary">Управління властивостями кнопок</string>
   <string name="haptic_title">Тактильний звор. зв\u2019язок</string>
   <string name="haptic_summary">Налаштування моменту та інтенсивності тактильного зворотнього зв\u2019язку</string>
+  <string name="button_settings_title">Налаштування кнопок</string>
   <string name="long_press_home_title">Довге натиск. кн. \u201CДомівка\u201D</string>
   <string name="long_press_home_summary">Програми, які нещодавно використовувалися, тощо</string>
   <string name="input_search_key_title">Кнопка \u201CПошук\u201D</string>
@@ -289,6 +300,7 @@
   <string name="haptic_revert_toast">Відновлені значення, які в остане використовувалися</string>
   <string name="haptic_default_toast">Завантажені типові значення</string>
   <string name="performance_settings_title">Продуктивність</string>
+  <string name="performance_settings_summary">Налаштування продуктивності пристрою</string>
   <string name="pref_compcache_title">Стиснення пам\u2019яті</string>
   <string name="pref_compcache_summary">Стиснення пам\u2019яті з метою збільшення віртуальної ємності (потрібне перезавантаження)</string>
   <string name="pref_jit_mode_title">JIT</string>
@@ -306,6 +318,7 @@
   <string name="performance_settings_warning_title">УВАГА!</string>
   <string name="performance_settings_warning">Ці параметри впливають на продуктивність системи, потенційно в гіршу сторону, мають експериментальний характер. Просимо не надсилати повідомлення про помилки, якщо ви змінили будь-які типові значення.</string>
   <string name="application_settings_title">Програми</string>
+  <string name="application_settings_summary">Різні налаштування програм, такі як місце установки</string>
   <string name="pref_switch_storage_title">Викор. внутр. пам\u2019яті</string>
   <string name="pref_switch_storage_summary_on">Для програм і даних використовується додаткова внутрішня пам\u2019ять</string>
   <string name="pref_switch_storage_summary_off">Для програм і даних використовується змінна карта</string>
@@ -436,6 +449,8 @@
   <string name="ll_reload">Завантажити поточні</string>
   <string name="ll_bad_levels">Значення має бути більшим</string>
   <string name="ll_num_levels">Кількість рівнів</string>
+  <string name="sound_title">Налаштування звуку</string>
+  <string name="sound_summary">Налаштування звуку та аудіофокусу</string>
   <string name="sound_notifications_focus_title">Фокус на сповіщення</string>
   <string name="sound_notifications_focus_summary">Запит аудіофокусування викликає зменшення гучності сумісними програмами на час відтворення сповіщень.</string>
   <string name="sound_volume_control_silent_title">Беззвучний режим</string>
@@ -487,12 +502,16 @@
   <string name="pref_lockscreen_gestures_builder_title">Створення жестів</string>
   <string name="pref_lockscreen_gestures_sensitivity_title">Точність малювання</string>
   <string name="pref_lockscreen_gestures_color_title">Колір слідів</string>
+  <string name="label_create_gesture">Створення жесту</string>
   <string name="gestures_button_add">Додати жест</string>
   <string name="gestures_button_discard">Відкинути</string>
   <string name="gestures_button_done">Готово</string>
   <string name="gestures_error_missing_shortcut">Ви повинні вибрати дію для цього жесту!</string>
+  <string name="gestures_save_success">Жест збережений %s</string>
+  <string name="gestures_cancel_action">Скасувати</string>
   <string name="gestures_loading">Завантаження жестів\u2026</string>
   <string name="gestures_empty">Немає жестів</string>
+  <string name="gestures_activity">Жести</string>
   <string name="gestures_delete">Видалити</string>
   <string name="gestures_delete_success">Жест видалений</string>
   <string name="gestures_error_loading">Помилка під час операції з файлом жестів.</string>
@@ -526,6 +545,8 @@
   <string name="title_phone_goggles_start">Початок</string>
   <string name="title_phone_goggles_end">Кінець</string>
   <string name="title_phone_goggles_confirmation_enabled">Запит підтвердження</string>
+  <string name="title_phone_goggles_phone_enabled">Телефонія</string>
+  <string name="title_phone_goggles_sms_enabled">SMS</string>
   <string name="title_phone_goggles_maths_level">Математичний рівень</string>
   <string name="title_phone_goggles_work_filtered">Робочі</string>
   <string name="title_phone_goggles_mobile_filtered">Мобільні</string>

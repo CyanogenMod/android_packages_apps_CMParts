@@ -14,6 +14,7 @@
     <string name="input_settings_title_subhead">輸入設定</string>
     <string name="input_settings_summary_head">輸入行為，按鍵，觸動回饋</string>
     <string name="interface_settings_title_head">介面</string>
+    <string name="interface_settings_title_subhead">介面設定</string>
     <string name="interface_settings_summary_head">介面調整，過度捲動，渲染效果</string>
     <string name="lockscreen_settings_title_head">鎖定螢幕</string>
     <string name="lockscreen_settings_title_subhead">設定鎖定螢幕</string>
@@ -34,6 +35,7 @@
 
     <!-- User interface -->
     <string name="ui_title">使用者介面</string>
+    <string name="ui_summary">使用者介面設定與調整</string>
 
     <string name="pref_electron_beam_animation_on">喚醒動畫</string>
     <string name="pref_electron_beam_animation_off">睡眠動畫</string>
@@ -113,6 +115,7 @@
     <string name="trackball_summary">控制軌跡球／LED 通知的色彩和閃爍</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">網頁檢視</string>
     <string name="pref_pinch_reflow_title">雙指放大後重新排列</string>
     <string name="pref_pinch_reflow_summary">雙指放大後立即重新排列網頁檢視的內容</string>
 
@@ -124,6 +127,7 @@
     <string name="pref_overscroll_weight_summary">選擇可捲動物件的沉重程度</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">螢幕鎖定設定</string>
     <string name="pref_lockscreen_delay_title">延遲</string>
     <string name="pref_lockscreen_security_title">安全性鎖定</string>
     <string name="pref_lockscreen_security_delay_note_title">注意</string>
@@ -147,6 +151,7 @@
     <string name="msg_color_picker">輕按中央顏色來確定。\n要取消請按返回鍵。</string>
 
     <!-- User interface: LED notifications -->
+    <string name="trackball_notifications_title">LED 通知色彩</string>
     <string name="dialog_color_trackball">選擇顏色</string>
     <string name="dialog_blink_trackball">選擇閃爍速率</string>
     <string name="color_trackball_flash_title">閃爍色彩</string>
@@ -218,6 +223,7 @@
     <string name="pref_lockscreen_timeout_summary">設定螢幕逾時及螢幕關閉的鎖定延遲</string>
 
     <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">鎖定螢幕設定</string>
     <string name="pref_lockscreen_always_battery_title">總是顯示電量</string>
     <string name="pref_lockscreen_always_battery_summary">總是在鎖定螢幕上顯示電池狀況</string>
     <string name="pref_lockscreen_music_controls_title">鎖定螢幕音樂面版</string>
@@ -257,6 +263,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">向下拉動撥輪來解鎖，向右撥動來啟動自訂應用程式。</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">隱藏撥輪箭頭</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">在撥輪模式中隱藏方向提示箭頭</string>
+    <string name="lockscreen_style_header">風格偏好設定</string>
+    <string name="lockscreen_delay_header">延遲與逾時</string>
     <string name="pref_lockscreen_style_title">鎖定螢幕風格</string>
     <string name="pref_lockscreen_style_summary">選擇鎖定螢幕的風格</string>
     <string name="pref_in_call_style_title">來電螢幕風格</string>
@@ -270,8 +278,10 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">輸入設定</string>
+    <string name="input_settings_summary">按鍵行為</string>
     <string name="haptic_title">觸動回饋調整</string>
     <string name="haptic_summary">設定觸動回饋的時機和強度</string>
+    <string name="button_settings_title">按鍵設定</string>
     <string name="long_press_home_title">長按主畫面鍵設定</string>
     <string name="long_press_home_summary">自訂長按主畫面鍵的行為</string>
 
@@ -347,6 +357,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">效能設定</string>
+    <string name="performance_settings_summary">裝置效能調整</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">運用 Compcache RAM</string>
@@ -382,6 +393,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">應用程式設定</string>
+    <string name="application_settings_summary">變更各種應用程式設定，例如安裝位置</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">使用內部儲存空間</string>
@@ -536,6 +548,8 @@
     <string name="ll_num_levels">設定水平數目</string>
 
     <!-- Sound -->
+    <string name="sound_title">音效設定</string>
+    <string name="sound_summary">音效與聚焦設定</string>
     <string name="sound_notifications_focus_title">通知聚焦</string>
     <string name="sound_notifications_focus_summary">音效聚焦請求使相容的應用程式在有通知播放時減低其本身音量</string>
     <string name="sound_volume_control_silent_title">靜音狀態</string>
@@ -592,12 +606,16 @@
     <string name="pref_lockscreen_gestures_builder_title">建立手勢</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">靈敏度</string>
     <string name="pref_lockscreen_gestures_color_title">手勢軌跡色彩</string>
+    <string name="label_create_gesture">建立手勢</string>
     <string name="gestures_button_add">新增手勢</string>
     <string name="gestures_button_discard">捨棄</string>
     <string name="gestures_button_done">完成</string>
     <string name="gestures_error_missing_shortcut">您必須為這個手勢選取一個動作！</string>
+    <string name="gestures_save_success">已儲存手勢在 %s</string>
+    <string name="gestures_cancel_action">取消</string>
     <string name="gestures_loading">正在載入手勢…</string>
     <string name="gestures_empty">暫無手勢</string>
+    <string name="gestures_activity">手勢</string>
     <string name="gestures_delete">刪除</string>
     <string name="gestures_delete_success">手勢已被刪除</string>
     <string name="gestures_error_loading">載入手勢時發生問題。</string>
@@ -635,6 +653,8 @@
     <string name="title_phone_goggles_start">手機 Goggles 模式開始時間</string>
     <string name="title_phone_goggles_end">手機 Goggles 模式結束時間</string>
     <string name="title_phone_goggles_confirmation_enabled">徵求確認</string>
+    <string name="title_phone_goggles_phone_enabled">撥號</string>
+    <string name="title_phone_goggles_sms_enabled">簡訊</string>
     <string name="title_phone_goggles_maths_level">數學題難易度</string>
     <string name="title_phone_goggles_work_filtered">工作</string>
     <string name="title_phone_goggles_mobile_filtered">行動裝置</string>

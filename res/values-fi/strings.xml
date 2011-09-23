@@ -14,6 +14,7 @@
     <string name="input_settings_title_subhead">Syöte-asetukset</string>
     <string name="input_settings_summary_head">Syötekäyttäytyminen, painikkeet, haptinen palaute</string>
     <string name="interface_settings_title_head">Käyttöliittymä</string>
+    <string name="interface_settings_title_subhead">Käyttöliittymäasetukset</string>
     <string name="interface_settings_summary_head">Käyttöliittymän säädöt, vierittäminen, renderöintiefektit</string>
     <string name="lockscreen_settings_title_head">Näyttölukitus</string>
     <string name="lockscreen_settings_title_subhead">Näyttölukituksen asetukset</string>
@@ -32,6 +33,7 @@
     <string name="updatenotify_summary">Vastaanota push-ilmoituksia päivityksistä.</string>
 
     <string name="ui_title">Käyttöliittymä</string>
+    <string name="ui_summary">Käyttöliittymän &amp; säädöt</string>
 
     <string name="pref_electron_beam_animation_on">Näyttö päälle -animaatio</string>
     <string name="pref_electron_beam_animation_off">Näyttö pois päältä -animaatio</string>
@@ -86,6 +88,7 @@
     <string name="trackball_summary">Hallitse trackball/LED-ilmoituksien väriä ja sykettä</string>
 
     <!-- User interface : WebView -->
+    <string name="ui_webview_title">Web-näkymä</string>
     <string name="pref_pinch_reflow_title">Uudelleenasettele tarkennuksen jälkeen</string>
     <string name="pref_pinch_reflow_summary">Uudelleenasettelee sisällön heti nipistys-tarkennuksen jälkeen</string>
 
@@ -97,13 +100,19 @@
     <string name="pref_overscroll_weight_summary">Valitse vieritettävien objektien raskaus</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Näyttölukituksen asetukset</string>
     <string name="pref_lockscreen_delay_title">Viive</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Näytön aikakatkaisun viive</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Näyttö sammuttamisen viive</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Kauan odotetaan ennen kuin asetetaan näyttölukitus, kun näyttö sammuu aikakatkaisulla</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Kauan odotetaan ennen kuin asetetaan näyttölukitus, kun näyttö sammutetaan itse</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Valitse väri</string>
     <string name="msg_color_picker">Valitse väri keskeltä hyväksyäksesi.\nValitse Takaisin peruuttaaksesi</string>
 
     <!-- User interface: LED notifcations -->
+    <string name="trackball_notifications_title">LED-ilmoituksien värit</string>
     <string name="dialog_color_trackball">Valitse väri</string>
     <string name="dialog_blink_trackball">Valitse vilkkumisrytmi</string>
     <string name="color_trackball_flash_title">Välähdyksen väri</string>
@@ -161,6 +170,9 @@
     <string name="notification_battery_warning">Tämän valinnan on osoitettu lisäävän akunkulutusta n. 3% tunnissa. Jos havaitset akun nopeaa kulumista trackball-valon välähdellessä, tämä on syy. Älä käytä tätä, jos haluat säästää akkua.</string>
 
     <string name="input_settings_title">Syöte-asetukset</string>
+    <string name="input_settings_summary">Hallitse painikkeiden toimintaa</string>
+    <string name="button_settings_title">Painikeasetukset</string>
+    <string name="lockscreen_settings_title">Näyttölukituksen asetukset</string>
     <string name="pref_lockscreen_always_battery_title">Näytä aina akun tila</string>
     <string name="pref_lockscreen_always_battery_summary">Näyttää aina akun tilan lukitusnäytöllä</string>
     <string name="pref_lockscreen_music_controls_title">Lukitusnäytön musikkiohjaimet</string>
@@ -199,6 +211,8 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Kiertosäätimen alaspäin vetäminen avaa lukituksen. Oikealle päin käynnistää oman sovelluksen</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Piilota kiertosäätimen nuolet</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Piilottaa suuntanuolet kiertotyylissä</string>
+    <string name="lockscreen_style_header">Tyylivalinnat</string>
+    <string name="lockscreen_delay_header">Viive ja aikasammutus</string>
     <string name="pref_lockscreen_style_title">Näyttölukituksen tyyli</string>
     <string name="pref_lockscreen_style_summary">Valitse näyttölukituksen tyyli</string>
     <string name="pref_volbtn_music_controls_title">Äänenvoimakkuuspainikkeet musiikkiohjaimina</string>
@@ -219,6 +233,7 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Suorituskyvyn asetukset</string>
+    <string name="performance_settings_summary">Laitteen suorituskyvyn säädöt</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcachen RAM-käyttö</string>
@@ -250,6 +265,7 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Sovellusasetukset</string>
+    <string name="application_settings_summary">Muuta erilaisia sovellusasetuksia kuten asennussijaintia</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Salli sovellusten siirtäminen</string>
@@ -439,6 +455,8 @@
     <string name="ll_num_levels">Aseta tasojen lukumäärä</string>
 
     <!-- Sound -->
+    <string name="sound_title">Ääniasetukset</string>
+    <string name="sound_summary">Ääni ja äänikeskittymisen asetukset</string>
     <string name="sound_notifications_focus_title">Ilmoituksen keskittyminen</string>
     <string name="sound_notifications_focus_summary">Äänikeskittyminen pyytää yhteensopivia sovelluksia laskemaan äänenvoimakkuutta ilmoituksien ajaksi.</string>
     <string name="sound_volume_control_silent_title">Äänetön</string>
@@ -490,12 +508,16 @@
     <string name="pref_lockscreen_gestures_builder_title">Rakenna eleitä</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Herkkyys</string>
     <string name="pref_lockscreen_gestures_color_title">Eleiden väri</string>
+    <string name="label_create_gesture">Luo ele</string>
     <string name="gestures_button_add">Lisää ele</string>
     <string name="gestures_button_discard">Hylkää</string>
     <string name="gestures_button_done">Valmis</string>
     <string name="gestures_error_missing_shortcut">Sinun täytyy valita toiminto tälle eleelle!</string>
+    <string name="gestures_save_success">Ele tallennettu %s</string>
+    <string name="gestures_cancel_action">Peruuta</string>
     <string name="gestures_loading">Ladataan eleitä...</string>
     <string name="gestures_empty">Ei eleitä</string>
+    <string name="gestures_activity">Eleet</string>
     <string name="gestures_delete">Poista</string>
     <string name="gestures_delete_success">Ele poistettu</string>
     <string name="gestures_error_loading">Ongelma eletiedoston toiminnassa.</string>
@@ -528,6 +550,8 @@
     <string name="title_phone_goggles_start">Phone goggles -tilan aloitus</string>
     <string name="title_phone_goggles_end">Phone goggles -tilan lopetus</string>
     <string name="title_phone_goggles_confirmation_enabled">Pyydä hyväksymistä</string>
+    <string name="title_phone_goggles_phone_enabled">Puhelin</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Matematiikkataso</string>
     <string name="title_phone_goggles_work_filtered">Työ</string>
     <string name="title_phone_goggles_mobile_filtered">Mobiili</string>
