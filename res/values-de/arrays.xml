@@ -22,14 +22,6 @@
     <item>Extern</item>
   </string-array>
 
-  <string-array name="entries_heapsize">
-    <item>12&#x2009;MB</item>
-    <item>16&#x2009;MB</item>
-    <item>24&#x2009;MB</item>
-    <item>32&#x2009;MB</item>
-    <item>48&#x2009;MB</item>
-  </string-array>
-
   <string-array name="entries_status_bar_am_pm">
     <item>Normal</item>
     <item>Klein</item>
@@ -39,7 +31,7 @@
   <string-array name="pref_overscroll_effect_entries">
     <item>Kein</item>
     <item>Glimmende Kante</item>
-    <item>Prallen und glimmen</item>
+    <item>Prallen und Glimmen</item>
     <item>Nur prallen</item>
   </string-array>
 
@@ -82,9 +74,9 @@
 
   <string-array name="pref_compcache_size_entries">
     <item>Ausgeschaltet</item>
-    <item>10&#x2009;%</item>
-    <item>18&#x2009;% (Standard)</item>
-    <item>26&#x2009;%</item>
+    <item>10%</item>
+    <item>18% (Standard)</item>
+    <item>26%</item>
   </string-array>
 
   <string-array name="entries_light_filter_window">
@@ -138,24 +130,24 @@
   </string-array>
 
   <string-array name="entries_light_decrease_hysteresis">
-    <item>0&#x2009;%</item>
-    <item>10&#x2009;%</item>
-    <item>20&#x2009;%</item>
-    <item>30&#x2009;%</item>
-    <item>40&#x2009;%</item>
-    <item>50&#x2009;%</item>
-    <item>60&#x2009;%</item>
-    <item>70&#x2009;%</item>
-    <item>80&#x2009;%</item>
-    <item>90&#x2009;%</item>
+    <item>0 %</item>
+    <item>10 %</item>
+    <item>20 %</item>
+    <item>30 %</item>
+    <item>40 %</item>
+    <item>50 %</item>
+    <item>60 %</item>
+    <item>70 %</item>
+    <item>80 %</item>
+    <item>90 %</item>
   </string-array>
 
   <string-array name="entries_sound_attenuation">
-    <item>0&#x2009;dB</item>
-    <item>4&#x2009;dB</item>
-    <item>6&#x2009;dB (Standard)</item>
-    <item>8&#x2009;dB</item>
-    <item>10&#x2009;dB</item>
+    <item>0 dB</item>
+    <item>4 dB</item>
+    <item>6 dB (Standard)</item>
+    <item>8 dB</item>
+    <item>10 dB</item>
   </string-array>
 
   <string-array name="entries_sound_limitvol">
@@ -164,21 +156,21 @@
   </string-array>
 
   <string-array name="entries_brightness_widget" formatted="false">
-    <item>Auto&#x2009;/&#x2009;Dunkel&#x2009;/\n40&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Auto&#x2009;/&#x2009;Dunkel&#x2009;/\n25&#x2009;%&#x2009;/&#x2009;50&#x2009;%&#x2009;/&#x2009;75&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Auto&#x2009;/\n25&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Dunkel&#x2009;/&#x2009;100&#x2009;%</item>
+    <item>Auto/Dunkel/40%/100%</item>
+    <item>Auto/Dunkel/25%/50%/75%/100%</item>
+    <item>Auto/25%/100%</item>
+    <item>Dunkel/100%</item>
   </string-array>
 
   <string-array name="entries_network_widget">
-    <item>2G&#x2009;/&#x2009;3G+2G</item>
-    <item>Nur 2G&#x2009;/&#x2009;nur 3G</item>
-    <item>Nur 2G&#x2009;/&#x2009;nur 3G&#x2009;/&#x2009;3G+2G</item>
+    <item>2G/3G+2G</item>
+    <item>Nur 2G/nur 3G</item>
+    <item>Nur 2G/nur 3G/3G+2G</item>
   </string-array>
 
   <string-array name="entries_screentimeout_widget">
-    <item>15&#x2009;s&#x2009;/&#x2009;1&#x2009;min&#x2009;/&#x2009;5&#x2009;min</item>
-    <item>30&#x2009;s&#x2009;/&#x2009;2&#x2009;min&#x2009;/&#x2009;5&#x2009;min</item>
+    <item>15Sek/1Min/5Min</item>
+    <item>30Sek/2Min/5Min</item>
   </string-array>
 
   <string-array name="entries_flash_widget">
@@ -209,16 +201,16 @@
   </string-array>
 
   <string-array name="pref_lockscreen_style_entries">
-    <item>Schieber</item>
-    <item>Rad</item>
-    <item>Rad umgestaltet</item>
-    <item>Linse</item>
+    <item>Tabs zum Schieben</item>
+    <item>Rotierende Tabs</item>
+    <item>Rotierend umgestaltet</item>
+    <item>Lense</item>
   </string-array>
 
   <string-array name="pref_in_call_style_entries">
-    <item>Schieber</item>
-    <item>Rad</item>
-    <item>Rad umgestaltet</item>
+    <item>Tabs zum Schieben</item>
+    <item>Rotierende Tabs</item>
+    <item>Rotierend umgestaltet</item>
   </string-array>
 
   <string-array name="pref_lockscreen_background_entries">
@@ -246,7 +238,7 @@
     <item>Wiedergabe/Pause</item>
     <item>Nächster Titel</item>
     <item>Letzter Titel</item>
-    <item>Homescreen (lange drücken)</item>
+    <item>Homescreen (gedrückhalten)</item>
   </string-array>
 
   <string-array name="entries_unhide_button">
@@ -259,17 +251,11 @@
     <item>Leiser</item>
   </string-array>
 
-  <string-array name="entries_long_press_menu">
-    <item>Nichts</item>
-    <item>Bildschirmtastatur</item>
-    <item>Suche</item>
-    <item>Eigene Anwendung</item>
-    <item>Statusleiste ein/aus</item>
-  </string-array>
-
-  <string-array name="haptic_feedback_entries">
-    <item>Globale Einstellungen</item>
-    <item>Ein</item>
-    <item>Aus</item>
-  </string-array>
+    <string-array name="entries_long_press_menu">
+        <item>Nichts</item>
+        <item>Bildschirmtastatur</item>
+        <item>Suche</item>
+        <item>Eigene Anwendung</item>
+        <item>Statusbar ein/aus</item>
+    </string-array>
 </resources>

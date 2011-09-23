@@ -40,7 +40,7 @@
             android:dialogTitle="@string/pref_heapsize_title"
             android:title="@string/pref_heapsize_title" android:summary="@string/pref_heapsize_summary"
             android:entries="@array/entries_heapsize"
-            android:entryValues="@array/values_heapsize" />
+            android:entryValues="@array/entries_heapsize" />
 
         <!-- Motorola specific aplogd pref -->
         <CheckBoxPreference android:key="pref_logger"
