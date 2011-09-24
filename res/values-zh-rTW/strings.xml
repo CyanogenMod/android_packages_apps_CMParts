@@ -109,6 +109,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">信號條狀圖示</string>
     <string name="ui_status_bar_cm_signal_text_show_text">信號文字</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">信號文字、dBm</string>
+    <string name="ui_status_bar_headset_title">顯示耳機圖示</string>
+    <string name="ui_status_bar_headset_summary">在插入耳機時是否要顯示耳機圖示</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 通知</string>
@@ -151,6 +153,7 @@
     <string name="msg_color_picker">輕按中央顏色來確定。\n要取消請按返回鍵。</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">設定</string>
     <string name="trackball_notifications_title">LED 通知色彩</string>
     <string name="dialog_color_trackball">選擇顏色</string>
     <string name="dialog_blink_trackball">選擇閃爍速率</string>
@@ -189,8 +192,29 @@
     <string name="trackball_reset_all">重設所有色彩與分類</string>
     <string name="trackball_color_notice_title">注意</string>
     <string name="trackball_color_notice_summary">並非每一款裝置都能夠顯示全部每一種色彩</string>
+    <string name="trackball_category_unconfigured">尚未設置</string>
+    <string name="trackball_category_misc">其他</string>
+    <string name="trackball_app_save_title">儲存</string>
+    <string name="trackball_app_save_summary">儲存此應用程式的設定</string>
+    <string name="trackball_app_reset_title">重設</string>
+    <string name="trackball_app_reset_summary">移除此應用程式的自訂設定</string>
+
+    <string name="trackball_force_mode_title">LED 模式</string>
+    <string name="trackball_force_mode_dialog">請選擇模式</string>
+    <string name="trackball_force_mode_summary">設定 LED 該如何運作</string>
+
+    <string name="trackball_app_email">電子郵件</string>
+    <string name="trackball_app_mms">簡訊</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">Google Talk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">未接來電</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">使用應用程式設定</string>
     <string name="trackball_color_entry_green">綠</string>
     <string name="trackball_color_entry_white">白</string>
     <string name="trackball_color_entry_red">紅</string>
@@ -269,6 +293,7 @@
     <string name="pref_lockscreen_style_summary">選擇鎖定螢幕的風格</string>
     <string name="pref_in_call_style_title">來電螢幕風格</string>
     <string name="pref_in_call_style_summary">選擇用來接聽／拒絕來電的道具風格</string>
+    <string name="lockscreen_music_title">音樂控制</string>
     <string name="pref_volbtn_music_controls_title">音量鍵音樂控制</string>
     <string name="pref_volbtn_music_controls_summary">在螢幕關閉時長按音量鍵來搜尋曲目</string>
     <string name="pref_cambtn_music_controls_title">相機快門鍵音樂控制</string>
@@ -292,6 +317,9 @@
     <string name="pref_input_custom_search_app_activity_title">自訂應用程式</string>
     <string name="pref_input_custom_long_search_app_toggle_title">長按搜尋鍵應用程式</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">長按搜尋鍵時啟動的自訂應用程式</string>
+
+    <string name="pref_backtrack_title">BackTrack 解控板</string>
+    <string name="pref_backtrack_summary">啟用／停用 BackTrack 機背觸控板</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">長按選單鍵設定</string>
@@ -397,8 +425,8 @@
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">使用內部儲存空間</string>
-    <string name="pref_switch_storage_summary_on">使用延伸的內部儲存空間作為儲存應用程式和媒體的外在儲存空間</string>
-    <string name="pref_switch_storage_summary_off">使用抽取式記憶卡作為儲存應用程式和媒體的外在儲存空間</string>
+    <string name="pref_switch_storage_summary_on">使用延伸的內部儲存空間作為儲存應用程式和媒體的外在儲存空間\n（需要重新啟動）</string>
+    <string name="pref_switch_storage_summary_off">使用抽取式記憶卡作為儲存應用程式和媒體的外在儲存空間\n（需要重新啟動）</string>
     <string name="pref_storage_switch_unavailable">此裝置沒有配備延伸的內部儲存空間</string>
 
     <!-- Application Settings : Move any app -->
@@ -410,6 +438,7 @@
     <string name="pref_install_location_summary">選擇新應用程式要安裝到的位置</string>
 
     <string name="general_title">一般</string>
+    <string name="camera_title">相機</string>
     <string name="buttons_title">按鍵</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -557,6 +586,11 @@
     <string name="sound_vibrate_in_call_title">通話中震動</string>
     <string name="sound_vibrate_in_call_summary_off">在通話期間作出的通知不會震動</string>
     <string name="sound_vibrate_in_call_summary_on">通知會如常震動</string>
+    <string name="sound_camera_shutter_disable_title">相機快門靜音</string>
+    <string name="sound_camera_shutter_disable_summary_on">將不會播放快門音效</string>
+    <string name="sound_camera_shutter_disable_summary_off">將會播放快門音效</string>
+    <string name="sound_camera_shutter_disable_warning_title">警告：可能會觸犯法律！</string>
+    <string name="sound_camera_shutter_disable_warning">在某些地區，停用相機快門音效是違法的。您確定想要停用快門音效嗎？</string>
     <string name="sound_to_speaker_title">總是以揚聲器播放</string>
     <string name="sound_notifications_title">通知</string>
     <string name="sound_rings_title">鈴聲</string>
@@ -598,6 +632,8 @@
     <string name="user_defined_key1">快速鍵 1</string>
     <string name="user_defined_key2">快速鍵 2</string>
     <string name="user_defined_key3">快速鍵 3</string>
+    <string name="user_defined_envelope_key">信封鍵</string>
+    <string name="user_defined_explorer_key">語言鍵／瀏覽鍵</string>
     <string name="user_defined_not_set">沒有設置</string>
 
     <!-- Lockscreen gesture strings -->

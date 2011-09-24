@@ -14,10 +14,17 @@
             android:title="@string/pref_lockscreen_always_battery_title"
             android:summary="@string/pref_lockscreen_always_battery_summary" />
 
+        <ListPreference android:key="pref_lockscreen_widgets_layout"
+            android:dialogTitle="@string/pref_lockscreen_widgets_layout_title"
+            android:title="@string/pref_lockscreen_widgets_layout_title"
+            android:summary="@string/pref_lockscreen_widgets_layout_summary"
+            android:entries="@array/pref_lockscreen_widget_layout_entries"
+            android:entryValues="@array/pref_lockscreen_widget_layout_values"
+            android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/lockscreen_music_title">
-
         <CheckBoxPreference android:key="lockscreen_music_controls"
             android:title="@string/pref_lockscreen_music_controls_title"
             android:summary="@string/pref_lockscreen_music_controls_summary" />
@@ -44,6 +51,33 @@
             android:dependency="lockscreen_music_controls"
             android:title="@string/pref_lockscreen_always_music_controls_title"
             android:summary="@string/pref_lockscreen_always_music_controls_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/lockscreen_calendar_title">
+
+        <CheckBoxPreference android:key="lockscreen_calendar_alarm"
+            android:title="@string/pref_lockscreen_calendar_alarm_title"
+            android:summary="@string/pref_lockscreen_calendar_alarm_summary" />
+
+        <MultiSelectListPreference android:key="lockscreen_calendars"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendars_title"
+            android:title="@string/pref_lockscreen_calendars_title"
+            android:summary="@string/pref_lockscreen_calendars_summary" />
+
+        <CheckBoxPreference android:key="lockscreen_calendar_reminders_only"
+            android:dependency="lockscreen_calendar_alarm"
+            android:title="@string/pref_lockscreen_calendar_reminders_only_title"
+            android:summary="@string/pref_lockscreen_calendar_reminders_only_summary" />
+
+        <ListPreference android:key="lockscreen_calendar_lookahead"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_lookahead_title"
+            android:title="@string/pref_lockscreen_calendar_lookahead_title"
+            android:summary="@string/pref_lockscreen_calendar_lookahead_summary"
+            android:entries="@array/pref_lockscreen_calendar_lookahead_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_lookahead_values" />
 
     </PreferenceCategory>
 

@@ -81,6 +81,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Barres de niveau</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Numérique</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Numérique dBm</string>
+    <string name="ui_status_bar_headset_title">Icône des écouteurs</string>
+    <string name="ui_status_bar_headset_summary">Afficher l\'icône du casque ou des écouteurs dans la barre de notification</string>
 
     <!-- User interface : LED Notifications -->
     <string name="group_settings">Paramètres</string>
@@ -233,6 +235,11 @@
     <string name="lockscreen_delay_header">Délai et timeout</string>
     <string name="pref_in_call_style_title">Appels entrants</string>
     <string name="pref_in_call_style_summary">Choisir le style du widget accepter/refuser les appels entrants</string>
+    <string name="lockscreen_music_title">Contrôle de la musique</string>
+    <string name="pref_volbtn_music_controls_title">Piste suivante par volume</string>
+    <string name="pref_volbtn_music_controls_summary">Change la chanson en cours par longue pression sur les boutons Volume lorque l\'écran est éteint</string>
+    <string name="pref_cambtn_music_controls_title">Bouton Photo pour la musique</string>
+    <string name="pref_cambtn_music_controls_summary">Lecture et pause en laissant appuyé le bouton Photo lorsque l\'écran est éteint</string>
     <string name="lockscreen_settings_title">Paramètres de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_custom_background_title">Fond d\'écran</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Fond d\'écran</string>
@@ -257,8 +264,6 @@
     <string name="pref_menu_unlock_summary">Une pression sur le bouton menu déverrouille le téléphone</string>
     <string name="pref_volume_wake_title">Eveil par boutons volume</string>
     <string name="pref_volume_wake_summary">L\'appui sur les boutons de volume sort l\'appareil de la veille. Destiné aux appareils avec un bouton Power difficilement accessible</string>
-    <string name="pref_volbtn_music_controls_title">Piste suivante par volume</string>
-    <string name="pref_volbtn_music_controls_summary">Change la chanson en cours par longue pression sur les boutons Volume lorque l\'écran est éteint</string>
 
    <!-- Search key behavior -->
     <string name="input_search_key_title">Bouton Recherche</string>
@@ -559,6 +564,14 @@
     <string name="user_defined_key2">Touche rapide 2</string>
     <string name="user_defined_key3">Touche rapide 3</string>
     <string name="user_defined_not_set">Non configuré</string>
+
+    <!-- Camera -->
+    <string name="camera_title">Appareil photo</string>
+    <string name="sound_camera_shutter_disable_title">Mode silencieux</string>
+    <string name="sound_camera_shutter_disable_summary_on">Fonctionnement silencieux</string>
+    <string name="sound_camera_shutter_disable_summary_off">Fonctionnement normal</string>
+    <string name="sound_camera_shutter_disable_warning_title">Attention: ceci peut être illégal !</string>
+    <string name="sound_camera_shutter_disable_warning">Certains pays ont une loi qui oblige les téléphones à émettre un son lors de la prise d\'une photo. Etes-vous sûr de vouloir désactiver le son ?</string>
 
     <!--  Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Utiliser les gestes</string>

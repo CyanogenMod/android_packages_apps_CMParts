@@ -689,8 +689,8 @@
     <string name="ui_status_bar_cm_signal_text_show_text">Texto de sinal</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Texto de sinal com dBm</string>
     <string name="pref_switch_storage_title">Usar armazenamento interno</string>
-    <string name="pref_switch_storage_summary_on">Usando armazenamento interno expandido para aplicações e mídia</string>
-    <string name="pref_switch_storage_summary_off">Usando cartão removível para aplicações e mídia</string>
+    <string name="pref_switch_storage_summary_on">Usando armazenamento interno expandido para aplicações e mídia (requer a reinicialização)</string>
+    <string name="pref_switch_storage_summary_off">Usando cartão removível para aplicações e mídia (requer a reinicialização)</string>
     <string name="pref_storage_switch_unavailable">Este dispositivo não possui armazenamento interno expandido</string>
     <string name="group_settings">Configurações</string>
     <string name="trackball_category_unconfigured">Desconfigurado</string>
@@ -715,4 +715,13 @@
     <string name="pref_backtrack_summary">Habilitar/desabilitar BackTrack Minipad</string>
     <string name="user_defined_envelope_key">Tecla de Envelope</string>
     <string name="user_defined_explorer_key">Tecla de Navegação</string>
+    <string name="ui_status_bar_headset_title">Mostrar ícone de fone de ouvido</string>
+    <string name="ui_status_bar_headset_summary">Ícone de fone de ouvido irá aparecer quando fone de ouvido estiver plugado</string>
+    <string name="lockscreen_music_title">Controles de Música</string>
+    <string name="camera_title">Câmera</string>
+    <string name="sound_camera_shutter_disable_title">Silenciar câmera</string>
+    <string name="sound_camera_shutter_disable_summary_on">Som de disparo não vai ser tocado</string>
+    <string name="sound_camera_shutter_disable_summary_off">Som de disparo vai ser tocado</string>
+    <string name="sound_camera_shutter_disable_warning_title">AVISO: Isto pode ser ilegal!</string>
+    <string name="sound_camera_shutter_disable_warning">Desativando o som de disparo da câmera é ilegal em algumas áreas. Você tem certeza que deseja desativar?</string>
 </resources>

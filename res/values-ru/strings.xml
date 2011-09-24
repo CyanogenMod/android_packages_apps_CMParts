@@ -110,6 +110,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Графический индикатор</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Уровень сигнала</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Уровень сигнала в дБм</string>
+    <string name="ui_status_bar_headset_title">Показывать значок наушников</string>
+    <string name="ui_status_bar_headset_summary">Значок появляется при подключении наушников</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Уведомления светодиодом трекбола</string>

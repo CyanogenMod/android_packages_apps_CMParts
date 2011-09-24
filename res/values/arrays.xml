@@ -583,6 +583,18 @@
         <item>2</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Default</item>
+        <item>Hidden</item>
+        <item>Centered</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Disabled</item>
         <item>Wired Headset</item>
@@ -595,6 +607,24 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+        <item>3 days</item>
+        <item>1 week</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_values" translatable="false">
+        <item>10800000</item>
+        <item>21600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+        <item>259200000</item>
+        <item>604800000</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">

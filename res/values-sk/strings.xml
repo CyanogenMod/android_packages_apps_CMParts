@@ -116,13 +116,13 @@
     <string name="trackball_summary">Ovládanie trackball a LED notifikačných farieb a pulzovania</string>
     <!-- User interface : WebView -->
     <string name="ui_webview_title">WebView</string>
-    <string name="pref_pinch_reflow_title">Znovu načítať po pinch in</string>
-    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po aväčšení</string>
+    <string name="pref_pinch_reflow_title">Znovu načítať</string>
+    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po zväčšení</string>
     <!-- User interface : Overscroll -->
-    <string name="ui_overscroll_title">Overscrolling</string>
-    <string name="pref_overscroll_title">Overscroll efekt</string>
-    <string name="pref_overscroll_summary">Vyberte ako budú vyzerať skrolovateľné objekty po presiahnutí</string>
-    <string name="pref_overscroll_weight_title">Váha Overscrollu</string>
+    <string name="ui_overscroll_title">Koniec zoznamu</string>
+    <string name="pref_overscroll_title">Efekt konca zoznamu</string>
+    <string name="pref_overscroll_summary">Vyberte ako budú vyzerať skrolovateľné objekty po presiahnutí veľkosti</string>
+    <string name="pref_overscroll_weight_title">Váha efektu konca zoznamu</string>
     <string name="pref_overscroll_weight_summary">Vyberte váhu skrolovateľných objektov</string>
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Nastavenia uzamknutia obrazovky</string>
@@ -147,6 +147,7 @@
     <string name="title_color_picker">Vyberte farbu</string>
     <string name="msg_color_picker">Stlačte strednú farbu pre potvrdenie.\nStlačte späť pre zrušenie</string>
     <!-- User interface: LED notifications -->
+    <string name="group_settings">Nastavenia</string>
     <string name="trackball_notifications_title">Farba LED upozornení</string>
     <string name="dialog_color_trackball">Vyberte farbu</string>
     <string name="dialog_blink_trackball">Vyberte rýchlosť blikania</string>
@@ -182,12 +183,29 @@
     <string name="trackball_category_add_summary">Pridá kategóriu do zoznamu</string>
     <string name="trackball_category_remove_title">Odstrániť kategóriu</string>
     <string name="trackball_category_remove_summary">Odstráni kategóriu zo zoznamu</string>
-    <string name="trackball_remove_default_toast">Nemožno odobrať kategóriu, keďže je nastavená ako predvolená.</string>
     <string name="trackball_reset_all">Resetnúť všetky farby a kategórie.</string>
-    <string name="trackball_array_error">Žiaľ nastala chyba pri práci s poľom. Tento balíček bol zaradený do kategórie Rozličné.</string>
     <string name="trackball_color_notice_title">POZNÁMKA:</string>
     <string name="trackball_color_notice_summary">Nie všetky farby sa zobrazia na všetkých zariadeniach</string>
+    <string name="trackball_category_unconfigured">Nenakonfigurované</string>
+    <string name="trackball_category_misc">Rôzne</string>
+    <string name="trackball_app_save_title">Uložiť</string>
+    <string name="trackball_app_save_summary">Uložiť nastavenia pre túto aplikáciu</string>
+    <string name="trackball_app_reset_title">Obnoviť</string>
+    <string name="trackball_app_reset_summary">Ostrániť užívateľské natavenia pre túto aplikáciu</string>
+    <string name="trackball_force_mode_title">Mód LED</string>
+    <string name="trackball_force_mode_dialog">Vyberte mód prosím</string>
+    <string name="trackball_force_mode_summary">Nastaviť správanie LED</string>
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Správy</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Zmeškaný hovor</string>
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Použiť nastavenia aplikácie</string>
     <string name="trackball_color_entry_green">Zelená</string>
     <string name="trackball_color_entry_white">Biela</string>
     <string name="trackball_color_entry_red">Červená</string>
@@ -199,7 +217,6 @@
     <string name="trackball_color_entry_orange">Oranžová</string>
     <string name="trackball_color_entry_light_blue">Svetlo modrá</string>
     <string name="trackball_color_entry_random">Náhodná</string>
-    <string name="trackball_color_entry_none">Žiadna</string>
     <string name="trackball_color_entry_amber">Tmavá</string>
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">UPOZORNENIE: Môže spôsobiť vybíjanie batérie</string>
@@ -285,6 +302,8 @@
     <string name="pref_input_custom_search_app_activity_title">Užívateľská aplikácia</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Aplikácia pre dlhé stlačenie hľadania</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Spustí užívateľskú aplikáciu pri dlhom stlačení tlač. hľadať</string>
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Povoliť/zakázať BackTrack Minipad</string>
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Nastavenia dlhého stlačenia Menu</string>
     <string name="long_press_menu_summary">Užívateľské nastavenia pre dlhé stlačenie Menu</string>
@@ -356,16 +375,20 @@
     <string name="pref_lock_home_title">Zamknúť home v pamäti</string>
     <string name="pref_lock_home_summary">Pokúsi sa udržať súčasnú domovskú aplikáciu v pamäti po celý čas</string>
     <!-- Performance : Lock mms app in memory -->
-    <string name="pref_lock_mms_title">Zamknúť aplikáciu správ v pamäti</string>
-    <string name="pref_lock_mms_summary">Predchádza strate pamäte pri nedostatku pamäte</string>
+    <string name="pref_lock_mms_title">Zamknúť aplikáciu SMS</string>
+    <string name="pref_lock_mms_summary">Predchádza strate správ pri nedostatku pamäte</string>
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">UPOZORNENIE: Draci!</string>
-    <string name="performance_settings_warning">Nastavenie zmenia výkonu systému, potenciálne aj k horšiemu. Sú tu pre experimentovanie a žiadame, aby ste nehlásili chyby, ak zmeníte niektorú z predvolených hodnôt</string>
+    <string name="performance_settings_warning">Nastavenie zmenia výkon systému, potenciálne aj k horšiemu. Sú tu pre experimentovanie a žiadame, aby ste nehlásili chyby, ak zmeníte niektorú z predvolených hodnôt</string>
     <!-- Application Settings -->
     <string name="application_settings_title">Nastavenia aplikácií</string>
     <string name="application_settings_summary">Viaceré nastavenia aplikácií, ako napr. umiestnenie inštalácie</string>
+    <string name="pref_switch_storage_title">Použiť vnútorné úložisko</string>
+    <string name="pref_switch_storage_summary_on">Používa sa rozšírenie vnútornej pamäte pre app a médiá</string>
+    <string name="pref_switch_storage_summary_off">Používa sa vymeniteľná karta pre app a médiá</string>
+    <string name="pref_storage_switch_unavailable">Toto zariadenie nemá rozšírenú vnútornú pamäť</string>
     <!-- Application Settings : Move any app -->
-    <string name="pref_move_all_apps_title">Povoliť premiestňovanie aplikácií</string>
+    <string name="pref_move_all_apps_title">Povoliť prem. aplikácií</string>
     <string name="pref_move_all_apps_summary">Povolí premiestňovanie všetkých aplikácií na externé úložisko</string>
     <!-- Application Settings : Install Location -->
     <string name="pref_install_location_title">Umiestnenie inštalácií</string>
@@ -548,6 +571,8 @@
     <string name="user_defined_key1">Rýchly kľúč 1</string>
     <string name="user_defined_key2">Rýchly kľúč 2</string>
     <string name="user_defined_key3">Rýchly kľúč 3</string>
+    <string name="user_defined_envelope_key">Kľúč obálky</string>
+    <string name="user_defined_explorer_key">Klúč Exploreru</string>
     <string name="user_defined_not_set">Nič</string>
     <!-- Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Použiť gestá na obrazovke uzamknutia</string>

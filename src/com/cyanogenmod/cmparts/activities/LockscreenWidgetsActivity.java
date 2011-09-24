@@ -16,16 +16,24 @@
 
 package com.cyanogenmod.cmparts.activities;
 
+import android.content.ContentResolver;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.MultiSelectListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
+import android.provider.BaseColumns;
+import android.provider.Calendar;
 import android.provider.Settings;
 
 import com.cyanogenmod.cmparts.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LockscreenWidgetsActivity extends PreferenceActivity implements
         OnPreferenceChangeListener {
@@ -42,6 +50,16 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
 
     private static final String LOCKSCREEN_ALWAYS_BATTERY = "lockscreen_always_battery";
 
+    private static final String LOCKSCREEN_CALENDARS = "lockscreen_calendars";
+
+    private static final String LOCKSCREEN_CALENDAR_ALARM = "lockscreen_calendar_alarm";
+
+    private static final String LOCKSCREEN_CALENDAR_REMINDERS_ONLY = "lockscreen_calendar_reminders_only";
+
+    private static final String LOCKSCREEN_CALENDAR_LOOKAHEAD = "lockscreen_calendar_lookahead";
+
+    private static final String LOCKSCREEN_WIDGETS_LAYOUT = "pref_lockscreen_widgets_layout";
+
     private CheckBoxPreference mMusicControlPref;
 
     private CheckBoxPreference mNowPlayingPref;
@@ -52,7 +70,17 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
 
     private CheckBoxPreference mAlwaysBatteryPref;
 
+    private CheckBoxPreference mCalendarAlarmPref;
+
+    private CheckBoxPreference mCalendarRemindersOnlyPref;
+
     private ListPreference mLockscreenMusicHeadsetPref;
+
+    private MultiSelectListPreference mCalendarsPref;
+
+    private ListPreference mCalendarAlarmLookaheadPref;
+
+    private ListPreference mLockscreenWidgetLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -94,10 +122,46 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
         mAlwaysMusicControlPref.setChecked(alwaysMusicControlPref);
         mLockscreenMusicHeadsetPref.setEnabled(!alwaysMusicControlPref);
 
+        mLockscreenWidgetLayout = (ListPreference) prefSet
+                .findPreference(LOCKSCREEN_WIDGETS_LAYOUT);
+        mLockscreenWidgetLayout.setOnPreferenceChangeListener(this);
+
         /* Always Display Battery Status */
         mAlwaysBatteryPref = (CheckBoxPreference) prefSet.findPreference(LOCKSCREEN_ALWAYS_BATTERY);
         mAlwaysBatteryPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_ALWAYS_BATTERY, 0) == 1);
+
+        /* Calendars */
+        mCalendarsPref = (MultiSelectListPreference) prefSet.findPreference(LOCKSCREEN_CALENDARS);
+        mCalendarsPref.setValue(Settings.System.getString(getContentResolver(),
+                Settings.System.LOCKSCREEN_CALENDARS));
+        mCalendarsPref.setOnPreferenceChangeListener(this);
+        CalendarEntries calEntries = CalendarEntries.findCalendars(getContentResolver());
+        mCalendarsPref.setEntries(calEntries.getEntries());
+        mCalendarsPref.setEntryValues(calEntries.getEntryValues());
+
+        /* Calendar Reminders Only */
+        mCalendarRemindersOnlyPref = (CheckBoxPreference) prefSet
+                .findPreference(LOCKSCREEN_CALENDAR_REMINDERS_ONLY);
+        mCalendarRemindersOnlyPref.setChecked(Settings.System.getInt(getContentResolver(),
+                LOCKSCREEN_CALENDAR_REMINDERS_ONLY, 0) == 1);
+
+        /* Calendar Alarm Lookahead */
+        mCalendarAlarmLookaheadPref = (ListPreference) prefSet
+                .findPreference(LOCKSCREEN_CALENDAR_LOOKAHEAD);
+        long calendarAlarmLookaheadPref = Settings.System.getLong(getContentResolver(),
+                Settings.System.LOCKSCREEN_CALENDAR_LOOKAHEAD, 10800000);
+        mCalendarAlarmLookaheadPref.setValue(String.valueOf(calendarAlarmLookaheadPref));
+        mCalendarAlarmLookaheadPref.setOnPreferenceChangeListener(this);
+
+        /* Show next Calendar Alarm */
+        mCalendarAlarmPref = (CheckBoxPreference) prefSet.findPreference(LOCKSCREEN_CALENDAR_ALARM);
+        mCalendarAlarmPref.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_CALENDAR_ALARM, 0) == 1);
+
+        boolean hideAlwaysBatteryPref = mLockscreenWidgetLayout.getEntry().equals(getResources()
+                .getStringArray(R.array.pref_lockscreen_widget_layout_entries)[1]);
+        mAlwaysBatteryPref.setEnabled(hideAlwaysBatteryPref);
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -128,6 +192,16 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_ALWAYS_BATTERY,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mCalendarAlarmPref) {
+            value = mCalendarAlarmPref.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_CALENDAR_ALARM,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mCalendarRemindersOnlyPref) {
+            value = mCalendarRemindersOnlyPref.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_CALENDAR_REMINDERS_ONLY, value ? 1 : 0);
+            return true;
         }
         return false;
     }
@@ -138,7 +212,67 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_MUSIC_CONTROLS_HEADSET, lockscreenMusicHeadsetPref);
             return true;
+        } else if (preference == mCalendarAlarmLookaheadPref) {
+            long calendarAlarmLookaheadPref = Long.valueOf((String) newValue);
+            Settings.System.putLong(getContentResolver(),
+                    Settings.System.LOCKSCREEN_CALENDAR_LOOKAHEAD, calendarAlarmLookaheadPref);
+            return true;
+        } else if (preference == mCalendarsPref) {
+            String calendarsPref = (String) newValue;
+            Settings.System.putString(getContentResolver(), Settings.System.LOCKSCREEN_CALENDARS,
+                    calendarsPref);
+            return true;
+        } else if (preference == mLockscreenWidgetLayout) {
+            Integer val = Integer.valueOf(newValue.toString());
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_WIDGETS_LAYOUT,val);
+            mAlwaysBatteryPref.setEnabled(val != 1);
+            return true;
         }
         return false;
+    }
+
+    private static class CalendarEntries {
+
+        private final static String CALENDARS_WHERE = Calendar.CalendarsColumns.SELECTED + "=1 AND "
+                + Calendar.CalendarsColumns.ACCESS_LEVEL + ">=200";
+
+        private final CharSequence[] mEntries;
+
+        private final CharSequence[] mEntryValues;
+
+        static CalendarEntries findCalendars(ContentResolver contentResolver) {
+            List<CharSequence> entries = new ArrayList<CharSequence>();
+            List<CharSequence> entryValues = new ArrayList<CharSequence>();
+            Cursor cursor = null;
+            try {
+                cursor = Calendar.Calendars.query(contentResolver, new String[] {
+                    Calendar.Calendars.DISPLAY_NAME, BaseColumns._ID
+                }, CALENDARS_WHERE, null);
+                while (cursor.moveToNext()) {
+                    String entry = cursor.getString(0);
+                    entries.add(entry);
+                    String entryValue = cursor.getString(1);
+                    entryValues.add(entryValue);
+                }
+            } finally {
+                if (cursor != null) {
+                    cursor.close();
+                }
+            }
+            return new CalendarEntries(entries, entryValues);
+        }
+
+        private CalendarEntries(List<CharSequence> mEntries, List<CharSequence> mEntryValues) {
+            this.mEntries = mEntries.toArray(new CharSequence[mEntries.size()]);
+            this.mEntryValues = mEntryValues.toArray(new CharSequence[mEntryValues.size()]);
+        }
+
+        CharSequence[] getEntries() {
+            return mEntries;
+        }
+
+        CharSequence[] getEntryValues() {
+            return mEntryValues;
+        }
     }
 }

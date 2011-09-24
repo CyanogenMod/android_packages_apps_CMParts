@@ -36,11 +36,18 @@
         <item>Vyp</item>
     </string-array>
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Podľa nastavenia aplikácie</item>
         <item>2 (Rýchlo)</item>
         <item>3</item>
         <item>4 (Stredne)</item>
         <item>5</item>
         <item>6 (Pomaly)</item>
+    </string-array>
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>Podľa nastavenia aplikácie</item>
+        <item>Vynútiť LED vyp</item>
+        <item>Vynútiť LED zap pre udalosti</item>
+        <item>Vynútiť LED zap</item>
     </string-array>
     <string-array name="pref_lockscreen_delay_entries">
         <item>Okamžite</item>

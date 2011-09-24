@@ -69,11 +69,8 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_dual_led_colors -->
 
-    <!-- skipping untranslatable /resources:0/string-array:name=entries_mixable_dual_led_colors -->
-
-    <!-- skipping untranslatable /resources:0/string-array:name=values_mixable_dual_led_colors -->
-
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>使用應用程式設定</item>
         <item>2（快）</item>
         <item>3</item>
         <item>4（中）</item>
@@ -82,6 +79,15 @@
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_trackball_blink_rate_values -->
+
+    <string-array name="pref_trackball_force_mode_entries">
+        <item>使用應用程式設定</item>
+        <item>強制關閉 LED</item>
+        <item>為進行中事件強制開啟 LED</item>
+        <item>強制開啟 LED</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_trackball_force_mode_values -->
 
     <string-array name="pref_lockscreen_delay_entries">
         <item>立即</item>

@@ -109,6 +109,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Barre</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Testo</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Testo con dBm</string>
+    <string name="ui_status_bar_headset_title">Usa icona cuffie</string>
+    <string name="ui_status_bar_headset_summary">Visualizza l\'icona quando si inseriscono le cuffie</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifiche LED</string>
@@ -291,6 +293,7 @@
     <string name="pref_lockscreen_style_summary">Scegli lo stile del lockscreen</string>
     <string name="pref_in_call_style_title">Stile chiamata in arrivo</string>
     <string name="pref_in_call_style_summary">Seleziona lo stile del widget accetta/rifiuta per le chiamate in arrivo</string>
+    <string name="lockscreen_music_title">Controlli musicali</string>
     <string name="pref_volbtn_music_controls_title">Seleziona traccia con tasto volume</string>
     <string name="pref_volbtn_music_controls_summary">Seleziona la traccia musicale tenendo premuto il tasto volume quando lo schermo è spento</string>
     <string name="pref_cambtn_music_controls_title">Play/pause con tasto fotocamera</string>
@@ -435,6 +438,7 @@
     <string name="pref_install_location_summary">Seleziona dove vuoi che vengano installate le nuove applicazioni</string>
 
     <string name="general_title">Generale</string>
+    <string name="camera_title">Fotocamera</string>
     <string name="buttons_title">Tasti</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -582,6 +586,11 @@
     <string name="sound_vibrate_in_call_title">Vibra durante chiamata</string>
     <string name="sound_vibrate_in_call_summary_off">Nessuna vibrazione in caso di notifiche durante una chiamata</string>
     <string name="sound_vibrate_in_call_summary_on">Vibrazione attiva in caso di notifiche durante una chiamata</string>
+    <string name="sound_camera_shutter_disable_title">Silenzia otturatore</string>
+    <string name="sound_camera_shutter_disable_summary_on">Non verrà riprodotto il suono dell\'otturatore</string>
+    <string name="sound_camera_shutter_disable_summary_off">Verrà riprodotto il suono dell\'otturatore</string>
+    <string name="sound_camera_shutter_disable_warning_title">ATTENZIONE: Questo può essere illegale!</string>
+    <string name="sound_camera_shutter_disable_warning">In alcuni stati è illegale disattivare il suono dell\'otturatore. Sei sicuro di volerlo disattivare?</string>
     <string name="sound_to_speaker_title">Riproduci solo tramite speaker</string>
     <string name="sound_notifications_title">Notifiche</string>
     <string name="sound_rings_title">Suonerie</string>
@@ -623,6 +632,8 @@
     <string name="user_defined_key1">Tasto Rapido 1</string>
     <string name="user_defined_key2">Tasto Rapido 2</string>
     <string name="user_defined_key3">Tasto Rapido 3</string>
+    <string name="user_defined_envelope_key">Tasto Busta</string>
+    <string name="user_defined_explorer_key">Tasto Explorer</string>
     <string name="user_defined_not_set">Non definito</string>
 
     <!--  Lockscreen gesture strings -->
