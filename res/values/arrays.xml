@@ -34,6 +34,18 @@
         <item>48m</item>
     </string-array>
 
+    <string-array name="entries_sd_readahead">
+        <item>16k</item>
+        <item>32k</item>
+        <item>64k</item>
+    </string-array>
+
+    <string-array name="values_sd_readahead">
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+    </string-array>
+
     <string-array name="entries_install_location">
         <item>Automatic</item>
         <item>Internal</item>
