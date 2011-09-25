@@ -95,7 +95,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String SDREADAHEAD_PERSIST_PROP = "persist.sys.sd_readahead";
 
-    private static final String SDREADAHEAD_DEFAULT = "16kb";
+    private static final String SDREADAHEAD_DEFAULT = "16k";
 
     private ListPreference mCompcachePref;
 
