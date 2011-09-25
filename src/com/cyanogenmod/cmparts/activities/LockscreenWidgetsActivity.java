@@ -159,9 +159,9 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
         mCalendarAlarmPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_CALENDAR_ALARM, 0) == 1);
 
-        boolean hideAlwaysBatteryPref = mLockscreenWidgetLayout.getEntry().equals(getResources()
+        boolean enableAlwaysBatteryPref = !mLockscreenWidgetLayout.getEntry().equals(getResources()
                 .getStringArray(R.array.pref_lockscreen_widget_layout_entries)[1]);
-        mAlwaysBatteryPref.setEnabled(hideAlwaysBatteryPref);
+        mAlwaysBatteryPref.setEnabled(enableAlwaysBatteryPref);
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
