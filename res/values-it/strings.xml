@@ -244,6 +244,8 @@
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Visualizza sempre stato batteria</string>
     <string name="pref_lockscreen_always_battery_summary">Visualizza sempre lo stato della batteria nel lockscreen</string>
+    <string name="pref_lockscreen_widgets_layout_title">Layout del widget</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Modifica il layout di orologio, data, operatore e stato</string>
     <string name="pref_lockscreen_music_controls_title">Comandi musicali</string>
     <string name="pref_lockscreen_music_controls_summary">Visualizza i comandi del player musicale nel lockscreen</string>
     <string name="pref_lockscreen_now_playing_title">Nome brano</string>
@@ -292,6 +294,15 @@
     <string name="pref_cambtn_music_controls_summary">Play/pause tenendo premuto il tasto della fotocamera quando lo schermo è spento</string>
     <string name="lockscreen_widgets_note_title">Nota</string>
     <string name="lockscreen_widgets_note_summary">Con lo stile \"lense\" verranno visualizzati solo i comandi musicali. Le impostazioni seguenti non verrano perse per permettere di passare facilmente da uno stile all\'altro.</string>
+    <string name="lockscreen_calendar_title">Calendario nel lockscreen</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Visualizza prossimo evento</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Visualizza la data e l\'ora del prossimo evento nel calendario</string>
+    <string name="pref_lockscreen_calendars_title">Calendari</string>
+    <string name="pref_lockscreen_calendars_summary">Cerca gli eventi tra questi calendari</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Solo promemoria</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Tieni in considerazione solo gli eventi con promemoria</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Intervallo di ricerca</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Seleziona l\'intervallo di tempo entro il quale cercare i prossimi eventi</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Impostazioni input</string>
