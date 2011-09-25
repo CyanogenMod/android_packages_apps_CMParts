@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Eingabe-Einstellungen</string>
     <string name="input_settings_summary_head">Eingabeverhalten, Tasten, Haptisches Feedback</string>
     <string name="interface_settings_title_head">Benutzeroberfläche</string>
-    <string name="interface_settings_title_subhead">Benutzeroberfläche-Einstellungen</string>
     <string name="interface_settings_summary_head">Tweaks, Überscrollen, Render-Effekt</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Lockscreen-Einstellungen</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Benutzeroberfläche</string>
-    <string name="ui_summary">Einstellungen &amp; Tweaks für Benutzeroberfläche</string>
 
     <string name="pref_electron_beam_animation_on">Einschalten animieren</string>
     <string name="pref_electron_beam_animation_off">Ausschalten animieren</string>
@@ -136,7 +134,6 @@
     <string name="trackball_app_dialer">Verpasster Anruf</string>
 
     <!-- User interface, WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Textfluss nach Pinch</string>
     <string name="pref_pinch_reflow_summary">Nach Pinch-To-Zoom Inhalte sofort neu anpassen</string>
 
@@ -148,7 +145,6 @@
     <string name="pref_overscroll_weight_summary">Stärke des Überscroll-Effekts anpassen</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Bildschirmsperre anpassen</string>
     <string name="pref_lockscreen_delay_title">Verzögerung</string>
     <string name="pref_lockscreen_security_title">Sicherheitssperre</string>
     <string name="pref_lockscreen_security_delay_note_title">Hinweis</string>
@@ -166,17 +162,12 @@
     <string name="pref_lockscreen_slide_screenoff_lock_delay">Nach Abschalten des Displays</string>
     <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
     <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display manuell abgeschaltet wurde</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Bei Bildschirm-Timeout</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Bei Abschalten des Bildschirms</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Timeout des Displays</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Ausschalten des Displays</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Farbe wählen</string>
     <string name="msg_color_picker">Zum Bestätigen auf Mitte der Farbe tippen.\nZum Abbrechen Zurück-Taste drücken.</string>
 
     <!-- User interface: Trackball notifcations -->
-    <string name="trackball_notifications_title">Farbe der Trackball-Benachrichtigungen</string>
     <string name="dialog_color_trackball">Wähle eine Farbe</string>
     <string name="dialog_blink_trackball">Wähle die Blinkrate</string>
     <string name="color_trackball_flash_title">Blinkfarbe</string>
@@ -258,7 +249,6 @@
     <string name="pref_lockscreen_timeout_summary">Verzögerungen des Lockscreens anpassen</string>
 
     <!-- Input Settings -->
-    <string name="lockscreen_settings_title">Bildschirmsperre-Einstellungen</string>
     <string name="pref_lockscreen_always_battery_title">Batteriestatus immer anzeigen</string>
     <string name="pref_lockscreen_always_battery_summary">Den Batteriestatus immer auf dem Lockscreen anzeigen</string>
     <string name="pref_lockscreen_music_controls_title">Musiksteuerung bei Bildschirmsperre</string>
@@ -298,8 +288,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Blendet die Richtungshinweise beim rotierenden Slider aus</string>
-    <string name="lockscreen_style_header">Aussehen</string>
-    <string name="lockscreen_delay_header">Verzögerung und Abschaltung</string>
     <string name="pref_lockscreen_style_title">Lockscreen-Aussehen</string>
     <string name="pref_lockscreen_style_summary">Einen Stil für den Lockscreen auswählen</string>
     <string name="pref_in_call_style_title">Eingehender Anruf Stil</string>
@@ -321,10 +309,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Eingabeeinstellungen</string>
-    <string name="input_settings_summary">Tastenverhalten</string>
     <string name="haptic_title">Haptisches Feedback</string>
     <string name="haptic_summary">Anpassungen für Stärke und Auftreten des haptischen Feedbacks (HF)</string>
-    <string name="button_settings_title">Tasteneinstellungen</string>
     <string name="long_press_home_title">Home-Taste</string>
     <string name="long_press_home_summary">Aktion für das gedrückt Halten der Home-Taste anpassen</string>
     <string name="input_search_key_title">Suchen-Taste</string>
@@ -399,7 +385,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Leistung</string>
-    <string name="performance_settings_summary">Tweaks für Geräteleistung</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache-Speichernutzung</string>
@@ -443,7 +428,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Anwendungseinstellungen</string>
-    <string name="application_settings_summary">Verschiedene Anwendungseinstellungen ändern, wie zB. Installationsort, etc...</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Nutze internen Speicher</string>
@@ -597,8 +581,6 @@
     <string name="ll_num_levels">Anzahl an Stufen anpassen</string>
 
     <!-- Sound -->
-    <string name="sound_title">Klang-Einstellungen</string>
-    <string name="sound_summary">Einstellungen für Klang und Audio-Fokus</string>
     <string name="sound_notifications_focus_title">Benachrichtigung betonen</string>
     <string name="sound_notifications_focus_summary">Verringert die Lautstärke kompatibler Apps um die Benachrichtigung deutlicher hörbar zu machen</string>
     <string name="sound_volume_control_silent_title">Absolute Ruhe</string>
@@ -655,16 +637,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Gesten erstellen</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Empfindlichkeit</string>
     <string name="pref_lockscreen_gestures_color_title">Farbe der Spur</string>
-    <string name="label_create_gesture">Geste erstellen</string>
     <string name="gestures_button_add">Geste hinzufügen</string>
     <string name="gestures_button_discard">Verwerfen</string>
     <string name="gestures_button_done">Fertig</string>
     <string name="gestures_error_missing_shortcut">Es muss noch eine Aktion für die Geste gewählt werden!</string>
-    <string name="gestures_save_success">Geste gespeichert in %s</string>
-    <string name="gestures_cancel_action">Abbrechen</string>
     <string name="gestures_loading">Lade Gesten...</string>
     <string name="gestures_empty">Keine Gesten</string>
-    <string name="gestures_activity">Gesten</string>
     <string name="gestures_delete">Löschen</string>
     <string name="gestures_delete_success">Geste gelöscht</string>
     <string name="gestures_error_loading">Problem mit Gesten-Datei Vorgang.</string>
@@ -702,8 +680,6 @@
     <string name="title_phone_goggles_start">Start des Phone Goggles Modus</string>
     <string name="title_phone_goggles_end">Ende des Phone Goggles Modus</string>
     <string name="title_phone_goggles_confirmation_enabled">Bestätigungsanfrage</string>
-    <string name="title_phone_goggles_phone_enabled">Telefon</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Mathe-Schwierigkeit</string>
     <string name="title_phone_goggles_work_filtered">Arbeit</string>
     <string name="title_phone_goggles_mobile_filtered">Mobil</string>

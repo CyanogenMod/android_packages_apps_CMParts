@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Input settings</string>
     <string name="input_settings_summary_head">Input behavior, buttons, haptic feedback</string>
     <string name="interface_settings_title_head">Interface</string>
-    <string name="interface_settings_title_subhead">Interface settings</string>
     <string name="interface_settings_summary_head">Interface tweaks, overscrolling, render effect</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Lockscreen settings</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">User interface</string>
-    <string name="ui_summary">User interface settings &amp; tweaks</string>
 
     <string name="pref_electron_beam_animation_on">Screen-on animation</string>
     <string name="pref_electron_beam_animation_off">Screen-off animation</string>
@@ -127,7 +125,6 @@
     <string name="trackball_summary">Control trackball/LED notification colors and pulse</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Reflow after pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow webview content immediately after pinch to zoom in</string>
 
@@ -139,7 +136,6 @@
     <string name="pref_overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Screen lock settings</string>
     <string name="pref_lockscreen_delay_title">Delay</string>
     <string name="pref_lockscreen_security_title">Security Lock</string>
     <string name="pref_lockscreen_security_delay_note_title">Note</string>
@@ -164,7 +160,6 @@
 
     <!-- User interface: LED notifications -->
     <string name="group_settings">Settings</string>
-    <string name="trackball_notifications_title">LED notification colors</string>
     <string name="dialog_color_trackball">Choose a color</string>
     <string name="dialog_blink_trackball">Choose a blink rate</string>
     <string name="color_trackball_flash_title">Flash color</string>
@@ -257,7 +252,6 @@
     <string name="pref_lockscreen_timeout_summary">Configure screen timeout delay and screen turn off delay</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Lockscreen settings</string>
     <string name="pref_lockscreen_always_battery_title">Always display battery status</string>
     <string name="pref_lockscreen_always_battery_summary">Display battery status on the lockscreen at all times</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget layout</string>
@@ -299,8 +293,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Dragging down rotary wheel unlocks. Dragging right starts custom app</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Hide rotary arrows</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Hides the directional hint arrows on rotary style</string>
-    <string name="lockscreen_style_header">Style preferences</string>
-    <string name="lockscreen_delay_header">Delay and timeout</string>
     <string name="pref_lockscreen_style_title">Lockscreen style</string>
     <string name="pref_lockscreen_style_summary">Choose the style of the lockscreen</string>
     <string name="pref_in_call_style_title">Incoming call style</string>
@@ -332,10 +324,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Input settings</string>
-    <string name="input_settings_summary">Control button behavior</string>
     <string name="haptic_title">Haptic feedback tweaks</string>
     <string name="haptic_summary">Adjust when and how strong haptic feedback occurs</string>
-    <string name="button_settings_title">Button settings</string>
     <string name="long_press_home_title">Long-press home settings</string>
     <string name="long_press_home_summary">Number of recent applications, etc</string>
 
@@ -414,7 +404,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Performance settings</string>
-    <string name="performance_settings_summary">Device performance tweaks</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcache RAM Usage</string>
@@ -458,7 +447,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Application settings</string>
-    <string name="application_settings_summary">Change various application settings such as install location</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Use internal storage</string>
@@ -617,8 +605,6 @@
     <string name="ll_num_levels">Set number of levels</string>
 
     <!-- Sound -->
-    <string name="sound_title">Sound settings</string>
-    <string name="sound_summary">Sound and audio focus settings</string>
     <string name="sound_notifications_focus_title">Notification focus</string>
     <string name="sound_notifications_focus_summary">Audio focus requests causes compatible apps to lower the volume while notifications play</string>
     <string name="sound_volume_control_silent_title">Silent state</string>
@@ -683,16 +669,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Build gestures</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensitivity</string>
     <string name="pref_lockscreen_gestures_color_title">Gestures color</string>
-    <string name="label_create_gesture">Create a gesture</string>
     <string name="gestures_button_add">Add gesture</string>
     <string name="gestures_button_discard">Discard</string>
     <string name="gestures_button_done">Done</string>
     <string name="gestures_error_missing_shortcut">You must pick an action for this gesture!</string>
-    <string name="gestures_save_success">Gesture saved in %s</string>
-    <string name="gestures_cancel_action">Cancel</string>
     <string name="gestures_loading">Loading gestures\u2026</string>
     <string name="gestures_empty">No gestures</string>
-    <string name="gestures_activity">Gestures</string>
     <string name="gestures_delete">Delete</string>
     <string name="gestures_delete_success">Gesture deleted</string>
     <string name="gestures_error_loading">Problem with gesture file operation.</string>
@@ -730,8 +712,6 @@
     <string name="title_phone_goggles_start">Start of phone goggles mode</string>
     <string name="title_phone_goggles_end">End of phone goggles mode</string>
     <string name="title_phone_goggles_confirmation_enabled">Request for confirmation</string>
-    <string name="title_phone_goggles_phone_enabled">Phone</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Math level</string>
     <string name="title_phone_goggles_work_filtered">Work</string>
     <string name="title_phone_goggles_mobile_filtered">Mobile</string>

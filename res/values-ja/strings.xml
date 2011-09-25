@@ -15,7 +15,6 @@
     <string name="input_settings_title_subhead">入力設定</string>
     <string name="input_settings_summary_head">入力の挙動, ボタン, 振動フィードバック</string>
     <string name="interface_settings_title_head">インタフェース</string>
-    <string name="interface_settings_title_subhead">インタフェース設定</string>
     <string name="interface_settings_summary_head">インタフェースの調整, オーバースクロール, 描画エフェクト</string>
     <string name="lockscreen_settings_title_head">ロックスクリーン</string>
     <string name="lockscreen_settings_title_subhead">ロックスクリーン設定</string>
@@ -36,7 +35,6 @@
 
     <!-- User interface -->
     <string name="ui_title">ユーザインタフェース</string>
-    <string name="ui_summary">ユーザインタフェース設定と調整</string>
 
     <string name="pref_electron_beam_animation_on">スクリーンオンアニメ</string>
     <string name="pref_electron_beam_animation_off">スクリーンオフアニメ</string>
@@ -116,7 +114,6 @@
     <string name="trackball_summary">トラックボール/LEDでの通知の色や点滅を制御する</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">ピンチインリフロー</string>
     <string name="pref_pinch_reflow_summary">つまんでズームした後、改行を調整する</string>
 
@@ -132,7 +129,6 @@
     <string name="msg_color_picker">中央をタップして確定\n戻るボタンでキャンセル</string>
 
     <!-- User interface: Trackball notifcations -->
-    <string name="trackball_notifications_title">トラックーボールの通知色</string>
     <string name="dialog_color_trackball">色を選択</string>
     <string name="dialog_blink_trackball">点滅間隔を選択</string>
     <string name="color_trackball_flash_title">点灯色</string>
@@ -202,9 +198,6 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">入力設定</string>
-    <string name="input_settings_summary">コントロールボタンの挙動など</string>
-    <string name="button_settings_title">ボタン設定</string>
-    <string name="lockscreen_settings_title">ロック画面設定</string>
     <string name="input_search_key_title">検索キーの挙動</string>
     <string name="input_search_key_summary">検索キーを押したときのアクションをカスタマイズする</string>
     <string name="pref_input_custom_search_app_toggle_title">検索キーのアプリ</string>
@@ -259,8 +252,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">ロータリーホイールをドラッグダウンしてアンロック、右へドラッグしてカスタムアプリを起動する</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">矢印を表示しない</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">ロータリースタイルで回転方向のヒントの矢印を表示しない</string>
-    <string name="lockscreen_style_header">スタイル設定</string>
-    <string name="lockscreen_delay_header">遅延とタイムアウト</string>
     <string name="pref_lockscreen_style_title">ロックスクリーンスタイル</string>
     <string name="pref_in_call_style_title">呼び出しスタイル</string>
     <string name="pref_in_call_style_summary">電話の呼び出し時に表示される応答/拒否のウィジェットスタイルを選択する</string>
@@ -291,7 +282,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">パフォーマンス設定</string>
-    <string name="performance_settings_summary">デバイスパフォーマンスの調整</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Compcacheを使用する</string>
@@ -319,7 +309,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">アプリケーション設定</string>
-    <string name="application_settings_summary">インストール場所など、いくつかのアプリケーション設定</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">内蔵ストレージを使用</string>
@@ -491,7 +480,6 @@
     <string name="pref_lock_mms_title">メッセージアプリをメモリに維持</string>
     <string name="pref_lock_mms_summary">メモリが少ないときにメッセージが消失するのを防ぐ</string>
 
-    <string name="ui_lockscreen_title">画面ロックの設定</string>
     <string name="pref_lockscreen_delay_title">遅延</string>
     <string name="pref_lockscreen_security_title">セキュリティロック</string>
     <string name="pref_lockscreen_security_delay_note_title">ノート</string>
@@ -553,8 +541,6 @@
     <string name="ll_num_levels">レベル数をセット</string>
 
     <!-- Sound -->
-    <string name="sound_title">サウンド設定</string>
-    <string name="sound_summary">サウンドとオーディオフォーカスの設定</string>
     <string name="sound_notifications_focus_title">通知音フォーカス</string>
     <string name="sound_notifications_focus_summary">通知音再生時に、オーディオフォーカスリクエストに対応しているアプリの音量を下げる</string>
     <string name="sound_volume_control_silent_title">消音状態</string>
@@ -612,16 +598,12 @@
     <string name="pref_lockscreen_gestures_builder_title">ジェスチャーを作成</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">感度</string>
     <string name="pref_lockscreen_gestures_color_title">色</string>
-    <string name="label_create_gesture">ジェスチャーを作成</string>
     <string name="gestures_button_add">ジェスチャーを追加</string>
     <string name="gestures_button_discard">破棄</string>
     <string name="gestures_button_done">完了</string>
     <string name="gestures_error_missing_shortcut">ジェスチャーにアクションを割り当てる必要があります！</string>
-    <string name="gestures_save_success">%s にジェスチャーを保存しました</string>
-    <string name="gestures_cancel_action">キャンセル</string>
     <string name="gestures_loading">ジェスチャーをロード中...</string>
     <string name="gestures_empty">ジェスチャーなし</string>
-    <string name="gestures_activity">ジェスチャー</string>
     <string name="gestures_delete">削除</string>
     <string name="gestures_delete_success">ジェスチャーを削除しました</string>
     <string name="gestures_error_loading">ジェスチャーファイルの操作に問題が発生しました</string>
@@ -659,8 +641,6 @@
     <string name="title_phone_goggles_start">Phone Goggles開始時刻</string>
     <string name="title_phone_goggles_end">Phone Goggles終了時刻</string>
     <string name="title_phone_goggles_confirmation_enabled">確認を求める</string>
-    <string name="title_phone_goggles_phone_enabled">電話</string>
-    <string name="title_phone_goggles_sms_enabled">メッセージ</string>
     <string name="title_phone_goggles_maths_level">数学のレベル</string>
     <string name="title_phone_goggles_work_filtered">仕事</string>
     <string name="title_phone_goggles_mobile_filtered">モバイル</string>

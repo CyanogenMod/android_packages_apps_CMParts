@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Definições de entrada</string>
     <string name="input_settings_summary_head">Comportamento de entrada, botões, resposta tátil</string>
     <string name="interface_settings_title_head">Interface</string>
-    <string name="interface_settings_title_subhead">Definições da interface</string>
     <string name="interface_settings_summary_head">Ajustes da interface, overscrolling, efeitos</string>
     <string name="lockscreen_settings_title_head">Ecrã de bloqueio</string>
     <string name="lockscreen_settings_title_subhead">Definições do ecrã de bloqueio</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Interface de utilizador</string>
-    <string name="ui_summary">Definições de interface de utilizador &amp; ajustes</string>
     <string name="pref_electron_beam_animation_on">Animação ao ligar o ecrã</string>
     <string name="pref_electron_beam_animation_off">Animação ao desligar o ecrã</string>
 
@@ -53,7 +51,6 @@
     <string name="trackball_summary">Controlar LEDs na trackball/botões e som das notificações</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">Vista de web</string>
     <string name="pref_pinch_reflow_title">Reajustar após toque</string>
     <string name="pref_pinch_reflow_summary">Reajustar conteúdo imediatamente após o toque para fazer zoom</string>
 
@@ -65,19 +62,13 @@
     <string name="pref_overscroll_weight_summary">Escolher a dimensão do overscrolling</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Definições do bloqueio de ecrã</string>
     <string name="pref_lockscreen_delay_title">Atraso</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Atraso de tempo do ecrã</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Atraso para desligar ecrã</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">Quanto tempo aguardar para bloquear ecrã depois de o tempo do ecrã acabar</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">Quanto tempo aguardar para bloquear ecrã depois de o ecrã ser desligado</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Escolha uma cor</string>
     <string name="msg_color_picker">Toque na cor do centro para confirmar.\nPressione voltar para cancelar.</string>
 
     <!-- User interface: LED notifcations -->
-    <string name="trackball_notifications_title">Cor dos LEDs das notificações</string>
     <string name="dialog_color_trackball">Escolha uma cor</string>
     <string name="dialog_blink_trackball">Escolha uma taxa de intermitência</string>
     <string name="color_trackball_flash_title">Cor</string>
@@ -147,7 +138,6 @@
     <string name="pref_lockscreen_timeout_summary">Configurar atraso ao desligar o ecrã</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Definições do ecrã de bloqueio</string>
     <string name="pref_lockscreen_always_battery_title">Mostrar carga da bateria</string>
     <string name="pref_lockscreen_always_battery_summary">Mostra sempre os detalhes da bateria no ecrã de bloqueio</string>
     <string name="pref_lockscreen_music_controls_title">Controlos da musica</string>
@@ -177,8 +167,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Ao arrastar para baixo desbloqueia. Ao arrastar para a direita inicia a aplicação personalizada</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Esconder setas no rotary</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Esconde as setas direccionais no estilo rotary</string>
-    <string name="lockscreen_style_header">Preferencias do estilo</string>
-    <string name="lockscreen_delay_header">Atraso e limite de tempo</string>
     <string name="pref_lockscreen_style_title">Estilo do ecrã de bloqueio</string>
     <string name="pref_lockscreen_style_summary">Escolher o estilo do ecrã de bloqueio</string>
     <string name="pref_volbtn_music_controls_title">Controlo dos botões de volume</string>
@@ -190,10 +178,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Definições de entrada</string>
-    <string name="input_settings_summary">Controlar funções dos botões</string>
     <string name="haptic_title">Ajustar resposta tátil</string>
     <string name="haptic_summary">Ajustar quando e quanto forte a resposta tátil acontece</string>
-    <string name="button_settings_title">Definições dos botões</string>
     <string name="long_press_home_title">Função do botão Home</string>
     <string name="long_press_home_summary">Numero de aplicações recentes, aplicação personalizada, etc</string>
     <string name="input_search_key_title">Função do botão Search</string>
@@ -251,7 +237,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Definições de desempenho</string>
-    <string name="performance_settings_summary">Ajustar desempenho do dispositivo</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Uso de RAM para Compcache</string>
@@ -287,7 +272,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Definições de aplicação</string>
-    <string name="application_settings_summary">Alterar várias definições de aplicação, tal como o local de instalação</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Permitir mover aplicações</string>
@@ -428,8 +412,6 @@
     <string name="ll_num_levels">Definir número de níveis</string>
 
     <!-- Sound -->
-    <string name="sound_title">Definições de som</string>
-    <string name="sound_summary">Definições de foco de som e áudio</string>
     <string name="sound_notifications_focus_title">Foco de notificações</string>
     <string name="sound_notifications_focus_summary">Foco de áudio faz com que as aplicações compatíveis diminuam o volume enquanto a notificação é apresentada.</string>
     <string name="sound_volume_control_silent_title">Estado silencioso</string>
@@ -482,16 +464,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Construir gestos</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilidade</string>
     <string name="pref_lockscreen_gestures_color_title">Cor dos gestos</string>
-    <string name="label_create_gesture">Criar gesto</string>
     <string name="gestures_button_add">Adicionar gesto</string>
     <string name="gestures_button_discard">Cancelar</string>
     <string name="gestures_button_done">Concluído</string>
     <string name="gestures_error_missing_shortcut">Tem de escolher uma acção para este gesto!</string>
-    <string name="gestures_save_success">Gesto guardado em %s</string>
-    <string name="gestures_cancel_action">Cancelar</string>
     <string name="gestures_loading">A carregar gestos...</string>
     <string name="gestures_empty">Sem gestos</string>
-    <string name="gestures_activity">Gestos</string>
     <string name="gestures_delete">Apagar</string>
     <string name="gestures_delete_success">Gesto apagado</string>
     <string name="gestures_error_loading">Problema com operação de ficheiro do gesto.</string>
@@ -524,8 +502,6 @@
     <string name="title_phone_goggles_start">Inicio do modo phone goggles</string>
     <string name="title_phone_goggles_end">Fim do modo phone goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Pedido de confirmação</string>
-    <string name="title_phone_goggles_phone_enabled">Phone</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Nível de matemática</string>
     <string name="title_phone_goggles_work_filtered">Trabalho</string>
     <string name="title_phone_goggles_mobile_filtered">Móveis</string>

@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Impostazioni input</string>
     <string name="input_settings_summary_head">Gestione input, tasti, feedback aptico</string>
     <string name="interface_settings_title_head">Interfaccia</string>
-    <string name="interface_settings_title_subhead">Impostazioni interfaccia</string>
     <string name="interface_settings_summary_head">Modifiche interfaccia, overscrolling, effetto render</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Impostazioni lockscreen</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Interfaccia utente</string>
-    <string name="ui_summary">Impostazioni e modifiche interfaccia utente</string>
 
     <string name="pref_electron_beam_animation_on">Animazione accensione schermo</string>
     <string name="pref_electron_beam_animation_off">Animazione spegnimento schermo</string>
@@ -117,7 +115,6 @@
     <string name="trackball_summary">Imposta colore e pulsazione delle notifiche trackball/LED</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Reflow dopo il pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow dei contenuti web dopo il pinch to zoom</string>
 
@@ -129,7 +126,6 @@
     <string name="pref_overscroll_weight_summary">Seleziona il peso degli elementi scorrevoli</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Impostazioni blocco schermo</string>
     <string name="pref_lockscreen_delay_title">Ritardo</string>
     <string name="pref_lockscreen_security_title">Blocco di sicurezza</string>
     <string name="pref_lockscreen_security_delay_note_title">Nota</string>
@@ -154,7 +150,6 @@
 
     <!-- User interface: LED notifcations -->
     <string name="group_settings">Impostazioni</string>
-    <string name="trackball_notifications_title">Colori Notifiche LED</string>
     <string name="dialog_color_trackball">Scegli un colore</string>
     <string name="dialog_blink_trackball">Scegli frequenza di lampeggio</string>
     <string name="color_trackball_flash_title">Colore lampeggio</string>
@@ -247,7 +242,6 @@
     <string name="pref_lockscreen_timeout_summary">Imposta il ritardo per il blocco del dispositivo dopo il timeout o lo spegnimento dello schermo</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Impostazioni Lockscreen</string>
     <string name="pref_lockscreen_always_battery_title">Visualizza sempre stato batteria</string>
     <string name="pref_lockscreen_always_battery_summary">Visualizza sempre lo stato della batteria nel lockscreen</string>
     <string name="pref_lockscreen_music_controls_title">Comandi musicali</string>
@@ -287,8 +281,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Sblocca lo schermo trascinando verso il basso la barra rotante. Trascina a destra per avviare l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Nascondi frecce</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Nascondi le frecce direzionali nel lockscreen rotante</string>
-    <string name="lockscreen_style_header">Preferenze stile</string>
-    <string name="lockscreen_delay_header">Ritardo e timeout</string>
     <string name="pref_lockscreen_style_title">Stile lockscreen</string>
     <string name="pref_lockscreen_style_summary">Scegli lo stile del lockscreen</string>
     <string name="pref_in_call_style_title">Stile chiamata in arrivo</string>
@@ -303,10 +295,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Impostazioni input</string>
-    <string name="input_settings_summary">Scegli il comportamento dei tasti</string>
     <string name="haptic_title">Modifiche feedback aptico</string>
     <string name="haptic_summary">Scegli quando e con che intensità vuoi che intervenga il feedback aptico</string>
-    <string name="button_settings_title">Impostazioni tasti</string>
     <string name="long_press_home_title">Long-press tasto home</string>
     <string name="long_press_home_summary">Numero di applicazioni recenti, etc.</string>
 
@@ -385,7 +375,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Impostazioni performance</string>
-    <string name="performance_settings_summary">Modifiche alle performance del dispositivo</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Usa compcache</string>
@@ -421,7 +410,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Impostazioni applicazioni</string>
-    <string name="application_settings_summary">Modifica diverse impostazioni riguardanti le applicazioni</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Usa memoria interna</string>
@@ -577,8 +565,6 @@
     <string name="ll_num_levels">Imposta numero livelli</string>
 
     <!-- Sound -->
-    <string name="sound_title">Impostazioni audio</string>
-    <string name="sound_summary">Impostazioni audio e audio focus</string>
     <string name="sound_notifications_focus_title">Focus Notifiche</string>
     <string name="sound_notifications_focus_summary">L\'Audio focus fa in modo che durante una notifica venga diminuito il volume delle app compatibili.</string>
     <string name="sound_volume_control_silent_title">Stato silenzioso</string>
@@ -642,16 +628,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Crea gesture</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilità</string>
     <string name="pref_lockscreen_gestures_color_title">Colore gesture</string>
-    <string name="label_create_gesture">Crea una gesture</string>
     <string name="gestures_button_add">Aggiungi gesture</string>
     <string name="gestures_button_discard">Annulla</string>
     <string name="gestures_button_done">Fatto</string>
     <string name="gestures_error_missing_shortcut">Devi selezionare un\'azione per questa gesture!</string>
-    <string name="gestures_save_success">Gesture salvata in %s</string>
-    <string name="gestures_cancel_action">Cancella</string>
     <string name="gestures_loading">Caricando gesture...</string>
     <string name="gestures_empty">Nessuna gesture</string>
-    <string name="gestures_activity">Gesture</string>
     <string name="gestures_delete">Elimina</string>
     <string name="gestures_delete_success">Gesture eliminata</string>
     <string name="gestures_error_loading">Problema nel caricare il file delle gesture.</string>
@@ -689,8 +671,6 @@
     <string name="title_phone_goggles_start">Inizio modalità phone goggles</string>
     <string name="title_phone_goggles_end">Fine modalità phone goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Richiedi conferma</string>
-    <string name="title_phone_goggles_phone_enabled">Telefono</string>
-    <string name="title_phone_goggles_sms_enabled">Messaggi</string>
     <string name="title_phone_goggles_maths_level">Difficoltà problemi</string>
     <string name="title_phone_goggles_work_filtered">Lavoro</string>
     <string name="title_phone_goggles_mobile_filtered">Mobile</string>

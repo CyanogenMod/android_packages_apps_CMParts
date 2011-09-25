@@ -15,7 +15,6 @@
     <string name="input_settings_title_subhead">Настройки ввода</string>
     <string name="input_settings_summary_head">Настройки ввода, кнопок, тактильного отклика</string>
     <string name="interface_settings_title_head">Интерфейс</string>
-    <string name="interface_settings_title_subhead">Настройки интерфейса</string>
     <string name="interface_settings_summary_head">Настройки интерфейса, перепрокрутки, эффектов экрана</string>
     <string name="lockscreen_settings_title_head">Экран блокировки</string>
     <string name="lockscreen_settings_title_subhead">Настройки экрана блокировки</string>
@@ -36,7 +35,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Интерфейс</string>
-    <string name="ui_summary">Настройки пользовательского интерфейса</string>
 
     <string name="pref_electron_beam_animation_on">Анимация включения экрана</string>
     <string name="pref_electron_beam_animation_off">Анимация выключения экрана</string>
@@ -118,7 +116,6 @@
     <string name="trackball_summary">Настройка цветов и ритма уведомлений через светодиод трекбола</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Перерисовка после увеличения</string>
     <string name="pref_pinch_reflow_summary">Перерисовывать веб-контент сразу после увеличения</string>
 
@@ -130,7 +127,6 @@
     <string name="pref_overscroll_weight_summary">Выбор размера прокручиваемых объектов</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Настройка блокировки экрана</string>
     <string name="pref_lockscreen_delay_title">Задержка</string>
     <string name="pref_lockscreen_security_title">Блокировка с ограничением доступа</string>
     <string name="pref_lockscreen_security_delay_note_title">Примечание</string>
@@ -154,8 +150,6 @@
     <string name="msg_color_picker">Нажмите в центр для подтверждения.\nНажмите назад для отмены</string>
 
     <!-- User interface: LED notifications -->
-    <string name="group_settings">Настройки</string>
-    <string name="trackball_notifications_title">Цвета уведомлений трекбола</string>
     <string name="dialog_color_trackball">Выберите цвет</string>
     <string name="dialog_blink_trackball">Выберите частоту мигания</string>
     <string name="color_trackball_flash_title">Цвет мигания</string>
@@ -243,7 +237,6 @@
     <string name="pref_lockscreen_timeout_summary">Настройки времени задержки блокировки экрана</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Настройки экрана блокировки</string>
     <string name="pref_lockscreen_always_battery_title">Состояние батареи</string>
     <string name="pref_lockscreen_always_battery_summary">Всегда показывать состояние батареи на экране блокировки</string>
     <string name="pref_lockscreen_music_controls_title">Управление плеером</string>
@@ -283,8 +276,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Сдвиг вниз для разблокировки. Сдвиг вправо для запуска пользовательского приложения</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Скрыть стрелки</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Скрывает стрелки-подсказки (для стиля Вращение)</string>
-    <string name="lockscreen_style_header">Настройки стиля</string>
-    <string name="lockscreen_delay_header">Задержка и таймаут</string>
     <string name="pref_lockscreen_style_title">Стиль экрана блокировки</string>
     <string name="pref_lockscreen_style_summary">Выбор стиля экрана блокировки</string>
     <string name="pref_in_call_style_title">Стиль входящего звонка</string>
@@ -299,10 +290,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ввод</string>
-    <string name="input_settings_summary">Настройка поведения кнопок</string>
     <string name="haptic_title">Настройки отклика</string>
     <string name="haptic_summary">Настройка условий и силы тактильного отклика</string>
-    <string name="button_settings_title">Настройки кнопок</string>
     <string name="long_press_home_title">Долгое нажатие на Home</string>
     <string name="long_press_home_summary">Количество последних приложений и т.д.</string>
     <string name="input_search_key_title">Настройки кнопки поиск</string>
@@ -379,7 +368,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Производительность</string>
-    <string name="performance_settings_summary">Настройки производительности устройства</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Включить Compcache</string>
@@ -415,7 +403,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Приложения</string>
-    <string name="application_settings_summary">Изменение различных настроек приложений, такие как место установки</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
@@ -574,8 +561,6 @@
     <string name="ll_num_levels">Установите количество уровней</string>
 
     <!-- Sound -->
-    <string name="sound_title">Звук</string>
-    <string name="sound_summary">Настройки звуков и фокуса на уведомление</string>
     <string name="sound_notifications_focus_title">Фокус на уведомление</string>
     <string name="sound_notifications_focus_summary">Приложения будут приглушать звук, когда проигрывается уведомление</string>
     <string name="sound_volume_control_silent_title">Состояние тишины</string>
@@ -639,16 +624,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Созданные жесты</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Чувствительность</string>
     <string name="pref_lockscreen_gestures_color_title">Цвет жеста</string>
-    <string name="label_create_gesture">Создать жест</string>
     <string name="gestures_button_add">Добавить жест</string>
     <string name="gestures_button_discard">Отменить</string>
     <string name="gestures_button_done">Готово</string>
     <string name="gestures_error_missing_shortcut">Вы должны выбрать действия для этого жеста!</string>
-    <string name="gestures_save_success">Жест сохранен в %s</string>
-    <string name="gestures_cancel_action">Отмена</string>
     <string name="gestures_loading">Загрузка жестов...</string>
     <string name="gestures_empty">Нет жестов</string>
-    <string name="gestures_activity">Жесты</string>
     <string name="gestures_delete">Удалить</string>
     <string name="gestures_delete_success">Жест удален</string>
     <string name="gestures_error_loading">Проблема с жестом для выполнения операции.</string>
@@ -686,8 +667,6 @@
     <string name="title_phone_goggles_start">Старт пьяного режима</string>
     <string name="title_phone_goggles_end">Конец пьяного режима</string>
     <string name="title_phone_goggles_confirmation_enabled">Запрос на подтверждение</string>
-    <string name="title_phone_goggles_phone_enabled">Телефон</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Математические задачи</string>
     <string name="title_phone_goggles_work_filtered">Рабочий</string>
     <string name="title_phone_goggles_mobile_filtered">Мобильный</string>

@@ -104,6 +104,28 @@
         <item>Par défaut</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Par défaut</item>
+        <item>Invisible</item>
+        <item>Centré</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>Désactivé</item>
+        <item>Casque / Ecouteurs</item>
+        <item>Sortie Bluetooth A2DP</item>
+        <item>Casque et Bluetooth</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 heures</item>
+        <item>6 heures</item>
+        <item>12 heures</item>
+        <item>1 jour</item>
+        <item>3 jours</item>
+        <item>1 semaine</item>
+    </string-array>
+
     <string-array name="pref_overscroll_effect_entries">
         <item>Aucun</item>
         <item>Lueur</item>

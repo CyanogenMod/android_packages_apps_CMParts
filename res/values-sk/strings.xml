@@ -25,7 +25,6 @@
     <string name="input_settings_title_subhead">Nastavenia Vstupu</string>
     <string name="input_settings_summary_head">Správanie vstupu, tlačidiel, vibračná odozva</string>
     <string name="interface_settings_title_head">Rozhranie</string>
-    <string name="interface_settings_title_subhead">Nastavenia rozhrania</string>
     <string name="interface_settings_summary_head">Vylepšenia rozhrania, overscrolling, efekt renderovania</string>
     <string name="lockscreen_settings_title_head">Obrazovka uzamknutia</string>
     <string name="lockscreen_settings_title_subhead">Nastavenia obrazovky uzamknutia</string>
@@ -44,7 +43,6 @@
     <string name="updatenotify_summary">Získať push notifikácie o aktualizáciách</string>
     <!-- User interface -->
     <string name="ui_title">Užívateľské rozhranie</string>
-    <string name="ui_summary">Nastavenia užívateľského rozhrania  &amp; vylepšenia</string>
     <string name="pref_electron_beam_animation_on">Animácia zapnutia obrazovky</string>
     <string name="pref_electron_beam_animation_off">Animácia vypnutia obrazovky</string>
     <!-- User interface: Tablet tweaks -->
@@ -115,9 +113,8 @@
     <string name="trackball_title">LED upozornenia</string>
     <string name="trackball_summary">Ovládanie trackball a LED notifikačných farieb a pulzovania</string>
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
-    <string name="pref_pinch_reflow_title">Znovu načítať</string>
-    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po zväčšení</string>
+    <string name="pref_pinch_reflow_title">Znovu načítať po pinch in</string>
+    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po aväčšení</string>
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Koniec zoznamu</string>
     <string name="pref_overscroll_title">Efekt konca zoznamu</string>
@@ -125,7 +122,6 @@
     <string name="pref_overscroll_weight_title">Váha efektu konca zoznamu</string>
     <string name="pref_overscroll_weight_summary">Vyberte váhu skrolovateľných objektov</string>
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Nastavenia uzamknutia obrazovky</string>
     <string name="pref_lockscreen_delay_title">Oneskorenie</string>
     <string name="pref_lockscreen_security_title">Bezpečnostné Uzamknutie</string>
     <string name="pref_lockscreen_security_delay_note_title">Poznámka</string>
@@ -235,7 +231,6 @@
     <string name="pref_lockscreen_timeout_title">Oneskorenie a časovanie</string>
     <string name="pref_lockscreen_timeout_summary">Nastavenie časovača obrazovky a oneskorenie vypnutia obrazovky</string>
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Nastavenia obrazovky zamknutia</string>
     <string name="pref_lockscreen_always_battery_title">Vždy zobrazovať stav batérie</string>
     <string name="pref_lockscreen_always_battery_summary">Vždy zobrazí stav batérie na obrazovke zamknutia</string>
     <string name="pref_lockscreen_music_controls_title">Ovládanie hudby na obrazovke zamknutia</string>
@@ -275,8 +270,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Odomknutie pomocou rotačného pásu. Potiahnutie doprava spustí užívateľskú aplikáciu</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Skryť šípky otáčania</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Skryje šípky nápovedy otáčania pri rotačnom štýle</string>
-    <string name="lockscreen_style_header">Predvoľby štýlu</string>
-    <string name="lockscreen_delay_header">Oneskorenie a časovač</string>
     <string name="pref_lockscreen_style_title">Štýl obrazovky uzamknutia</string>
     <string name="pref_lockscreen_style_summary">Vyberte štýl obrazovky uzamknutia</string>
     <string name="pref_in_call_style_title">Štýl prichádzajúceho hovoru</string>
@@ -289,10 +282,8 @@
     <string name="lockscreen_widgets_note_summary">Vybratie štýlu minimálneho lúča, skryje všetky nástroje okrem ovládania hudby. Nižšie možnosti nie sú zakázané pre ľahšiu zmenu na iný štýl</string>
     <!-- Input Settings -->
     <string name="input_settings_title">Nastavenia vstupu</string>
-    <string name="input_settings_summary">Nastavenie správania tlačidiel</string>
     <string name="haptic_title">Vylepšenia vibračnej odozvy</string>
     <string name="haptic_summary">Nastaviť kedy a ako silno sa objaví vibračná odozva</string>
-    <string name="button_settings_title">Nastavenie tlačidiel</string>
     <string name="long_press_home_title">Dlhé podržanie tlač. Domov</string>
     <string name="long_press_home_summary">Počet posledných aplikácií, atď</string>
     <string name="input_search_key_title">Nastavenie tlačidla hľadania</string>
@@ -355,7 +346,6 @@
     <string name="haptic_default_toast">Načítavanie predvolených hodnôt</string>
     <!-- Performance Settings -->
     <string name="performance_settings_title">Nastavenia výkonu</string>
-    <string name="performance_settings_summary">Vylepšenia výkonu zariadenia</string>
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Zhustenie použitia RAM</string>
     <string name="pref_compcache_summary">Zhustiť pamäť pre zvýšenie virtuálnej kapacity (vyžaduje reštart)</string>
@@ -523,8 +513,6 @@
     <string name="ll_bad_levels">Stupne musia rásť</string>
     <string name="ll_num_levels">Zadajte počet stupňov</string>
     <!-- Sound -->
-    <string name="sound_title">Nastavenia zvuku</string>
-    <string name="sound_summary">Nastavenia stredu zvuku a audia</string>
     <string name="sound_notifications_focus_title">Zaostrenie na upozornenie</string>
     <string name="sound_notifications_focus_summary">Požiadavka upozornenia donúti kompatibilné aplikácie znížiť hlasitosť počas prehrávanie upozornenia</string>
     <string name="sound_volume_control_silent_title">Stav ticho</string>
@@ -580,16 +568,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Vytvoriť gestá</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Citlivosť</string>
     <string name="pref_lockscreen_gestures_color_title">Farba giest</string>
-    <string name="label_create_gesture">Vytvoriť gesto</string>
     <string name="gestures_button_add">Pridať gesto</string>
     <string name="gestures_button_discard">Zrušiť</string>
     <string name="gestures_button_done">Hotovo</string>
     <string name="gestures_error_missing_shortcut">Musíte vybrať akciu pre toto gesto!</string>
-    <string name="gestures_save_success">Gesto uložené v  %s</string>
-    <string name="gestures_cancel_action">Zrušiť</string>
     <string name="gestures_loading">Nahrávanie giest\u2026</string>
     <string name="gestures_empty">Žiadne gestá</string>
-    <string name="gestures_activity">Gestá</string>
     <string name="gestures_delete">Zmazať</string>
     <string name="gestures_delete_success">Gesto zmazané</string>
     <string name="gestures_error_loading">Problém pri práci so súborom giest.</string>
@@ -625,8 +609,6 @@
     <string name="title_phone_goggles_start">Štart ochranného módu telefónu</string>
     <string name="title_phone_goggles_end">Koniec ochranného módu telefónu</string>
     <string name="title_phone_goggles_confirmation_enabled">Požiadavka potvrdenia</string>
-    <string name="title_phone_goggles_phone_enabled">Telefón</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Matematický level1</string>
     <string name="title_phone_goggles_work_filtered">Práca</string>
     <string name="title_phone_goggles_mobile_filtered">Mobil</string>
