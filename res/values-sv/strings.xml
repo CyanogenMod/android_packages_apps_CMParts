@@ -241,6 +241,8 @@
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Visa alltid batteristatus</string>
     <string name="pref_lockscreen_always_battery_summary">Visa alltid batteristatus på låsskärmen</string>
+    <string name="pref_lockscreen_widgets_layout_title">Widget-layout</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Växla layout för klocka, datum, operatör och status</string>
     <string name="pref_lockscreen_music_controls_title">Musikkontroller på låsskärmen</string>
     <string name="pref_lockscreen_music_controls_summary">Visar musikkontroller på låsskärmen</string>
     <string name="pref_lockscreen_now_playing_title">Visa låttitel</string>
@@ -289,6 +291,15 @@
     <string name="pref_cambtn_music_controls_summary">Växla mellan play/pause med långt tryck på kameraknappen när skärmen är avstängd</string>
     <string name="lockscreen_widgets_note_title">OBS</string>
     <string name="lockscreen_widgets_note_summary">Vid val av minimalistisk Lense-stil göms alla widgets utom musikkontroll. Dock avaktiveras inte valen nedan för att underlätta byte mellan stilar.</string>
+    <string name="lockscreen_calendar_title">Låsskärmskalender</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Visa nästa kalenderhändelse</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Visa tiden och titeln för nästa kalenderhändelse</string>
+    <string name="pref_lockscreen_calendars_title">Händelsekalendrar</string>
+    <string name="pref_lockscreen_calendars_summary">Hitta händelser från dessa kalendrar</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Endast påminnelser</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Hitta bara händelser med påminnelser</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Kalenderhändelsers framförhållning</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Hur långt i förväg kan händelser visas</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Inmatningsinställningar</string>
