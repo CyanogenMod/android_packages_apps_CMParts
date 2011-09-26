@@ -182,12 +182,14 @@
         <item>旋转拨动</item>
         <item>旋转反拨</item>
         <item>镜面</item>
+        <item>环</item>
     </string-array>
 
     <string-array name="pref_in_call_style_entries">
         <item>滑动</item>
         <item>旋转拨动</item>
         <item>旋转反拨</item>
+        <item>环</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">

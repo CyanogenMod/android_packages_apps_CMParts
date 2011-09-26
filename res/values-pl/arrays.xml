@@ -154,12 +154,14 @@
         <item>Obrotowy</item>
         <item>Odświeżony obrotowy</item>
         <item>Soczewka</item>
+        <item>Pierścień</item>
     </string-array>
 
     <string-array name="pref_in_call_style_entries">
         <item>Suwak</item>
         <item>Obrotowy</item>
         <item>Odświeżony obrotowy</item>
+        <item>Pierścień</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">

@@ -175,6 +175,7 @@
         <item>Forgó</item>
         <item>Megújult forgó</item>
         <item>Lense</item>
+        <item>Gyűrű</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">

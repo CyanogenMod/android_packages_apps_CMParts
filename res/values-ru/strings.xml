@@ -239,6 +239,8 @@
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Состояние батареи</string>
     <string name="pref_lockscreen_always_battery_summary">Всегда показывать состояние батареи на экране блокировки</string>
+    <string name="pref_lockscreen_widgets_layout_title">Положение виджета</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Расположение часов, даты, оператора</string>
     <string name="pref_lockscreen_music_controls_title">Управление плеером</string>
     <string name="pref_lockscreen_music_controls_summary">Показывать на экране блокировки элементы управления плеером</string>
     <string name="pref_lockscreen_now_playing_title">Название песни</string>
@@ -287,6 +289,16 @@
     <string name="pref_cambtn_music_controls_summary">Воспроизведение/пауза долгим нажатие на кнопку камеры при выключенном экране</string>
     <string name="lockscreen_widgets_note_title">Примечание</string>
     <string name="lockscreen_widgets_note_summary">Использование минималистичного стиля \"Линза\" скрывает все виджеты, кроме управления плеером. Тем не менее, настройки ниже продолжают быть доступны для легкого переключения на другие стили</string>
+
+     <string name="lockscreen_calendar_title">Календарь</string>
+     <string name="pref_lockscreen_calendar_alarm_title">Показывать следующее событие календаря</string>
+     <string name="pref_lockscreen_calendar_alarm_summary">Показывать время и название следующего события в календаре</string>
+     <string name="pref_lockscreen_calendars_title">События календарей</string>
+     <string name="pref_lockscreen_calendars_summary">Отобразить события из этих календарей</string>
+     <string name="pref_lockscreen_calendar_reminders_only_title">Только напоминания</string>
+     <string name="pref_lockscreen_calendar_reminders_only_summary">Отобразить события которые имеют напоминания</string>
+     <string name="pref_lockscreen_calendar_lookahead_title">Просмотр будущих событий</string>
+     <string name="pref_lockscreen_calendar_lookahead_summary">На сколько дней (часов) вперёд будут отображаться события в календарях</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ввод</string>

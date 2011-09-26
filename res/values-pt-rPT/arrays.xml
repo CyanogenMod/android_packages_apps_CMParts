@@ -169,6 +169,7 @@
         <item>Rotary</item>
         <item>Rotary revamped</item>
         <item>Lense</item>
+        <item>Ring</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">

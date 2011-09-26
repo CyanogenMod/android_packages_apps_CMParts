@@ -119,6 +119,7 @@
         <item>회전</item>
         <item>개정된 회전</item>
         <item>Lense</item>
+        <item>반지</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">

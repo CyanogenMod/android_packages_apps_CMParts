@@ -277,8 +277,14 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Quick Unlock</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">No need to press OK when entering Pin or Password. Delete counts as bad try</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style, shows a third ring on ring style</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Select which shortcut to set</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Select which shortcut to un-set</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Cancel</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Add</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Remove</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Not Set</string>
     <string name="pref_lockscreen_custom_background_title">Choose background</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Choose background</string>
     <string name="pref_lockscreen_custom_background_summary">Choose image or color as lockscreen background</string>

@@ -162,6 +162,7 @@
         <item>Коліщатко</item>
         <item>Коліщатко (оновлене)</item>
         <item>Лінза</item>
+        <item>Кільця</item>
     </string-array>
     <string-array name="pref_lockscreen_background_entries">
         <item>Колір</item>
@@ -172,6 +173,7 @@
         <item>Повзунки</item>
         <item>Коліщатко</item>
         <item>Коліщатко (оновлене)</item>
+        <item>Кільця</item>
     </string-array>
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Вимкнене</item>

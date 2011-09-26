@@ -96,6 +96,7 @@
         <item>Rotatif</item>
         <item>Rotatif revamped</item>
         <item>Lense</item>
+        <item>Anneau</item>
     </string-array>
 
     <string-array name="pref_lockscreen_background_entries">

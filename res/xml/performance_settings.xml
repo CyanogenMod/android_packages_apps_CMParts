@@ -40,7 +40,7 @@
             android:dialogTitle="@string/pref_heapsize_title"
             android:title="@string/pref_heapsize_title" android:summary="@string/pref_heapsize_summary"
             android:entries="@array/entries_heapsize"
-            android:entryValues="@array/entries_heapsize" />
+            android:entryValues="@array/values_heapsize" />
 
         <ListPreference android:key="pref_sd_readahead"
             android:dialogTitle="@string/pref_sd_readahead_title"
