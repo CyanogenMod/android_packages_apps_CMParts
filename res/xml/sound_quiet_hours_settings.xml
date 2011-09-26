@@ -35,5 +35,9 @@
 			android:title="@string/quiet_hours_dim" android:summaryOn="@string/quiet_hours_dim_on"
 			android:summaryOff="@string/quiet_hours_dim_off" android:dependency="quiet_hours_enabled" />
 
+		<CheckBoxPreference android:key="quiet_hours_haptic"
+			android:title="@string/quiet_hours_haptic" android:summaryOn="@string/quiet_hours_haptic_on"
+			android:summaryOff="@string/quiet_hours_haptic_off" android:dependency="quiet_hours_enabled" />
+
 	</PreferenceCategory>
 </PreferenceScreen>
