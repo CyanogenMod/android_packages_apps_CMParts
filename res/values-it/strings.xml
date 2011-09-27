@@ -267,9 +267,15 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Sblocco veloce</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Non è richiesto premere OK dopo aver inserito il PIN o la Password. Cancellare conta come tentativo fallito.</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Lanciatore app personalizzato</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante.</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante, aggiunge un terzo anello nel lockscreen ad anelli.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Applicazione personalizzata</string>
-     <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Seleziona il collegamento da aggiungere</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Seleziona il collegamento da rimuovere</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Annulla</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Aggiungi</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Rimuovi</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Non impostato</string>
+    <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_summary">Seleziona un\'immagine o un colore come sfondo del lockscreen</string>
     <string name="pref_lockscreen_custom_background_summary_color">Attuale : Colore</string>

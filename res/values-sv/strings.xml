@@ -266,6 +266,12 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Anpassad applikationsstartare</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Visar ytterligare glidskena på glidskenstypen, visar en anpassad appliktionsfördjupning på rotationstypen.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Anpassad applikation</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Välj genväg att ställa in</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Välj genväg att återställa</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Avbryt</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Lägg till</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Ta bort</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Ej definierad</string>
     <string name="pref_lockscreen_custom_background_title">Välj bakgrund</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Välj bakgrund</string>
     <string name="pref_lockscreen_custom_background_summary">Välj bild eller färg att används som bakgrund för låsskärm</string>

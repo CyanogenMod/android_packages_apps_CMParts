@@ -170,11 +170,26 @@
         <item>Standard bakgrundsbild</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Standard</item>
+        <item>Gömd</item>
+        <item>Centrerad</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Inaktiverad</item>
         <item>Headset med sladd</item>
         <item>Bluetooth A2DP Headset</item>
         <item>Båda</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 timmar</item>
+        <item>6 timmar</item>
+        <item>12 timmar</item>
+        <item>1 dag</item>
+        <item>3 dagar</item>
+        <item>1 vecka</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">

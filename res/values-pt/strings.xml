@@ -134,7 +134,7 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Destravamento rápido</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Não é necessário pressionar OK quando digitar PIN ou Senha. Deletar conta como tentativa incorreta</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Inicializador de aplicação personalizada</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Mostra um estilo de rolagem, mostra uma ondulação em estilo rotativo no aplicativo personalizado </string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Mostra um estilo de rolagem, mostra uma ondulação em estilo rotativo no aplicativo personalizado, mostra um terceiro anel em estilo anel</string>
     <string name="pref_lockscreen_custom_app_activity_title">Aplicativo personalizado</string>
     <string name="pref_lockscreen_custom_icon_style_title">Ícone de mensagem</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Usa ícone de mensagem ao invés do ícone do CM para inicializar um aplicativo personalizado</string>
@@ -700,4 +700,21 @@
     <string name="sound_camera_shutter_disable_summary_off">Som de disparo vai ser tocado</string>
     <string name="sound_camera_shutter_disable_warning_title">AVISO: Isto pode ser ilegal!</string>
     <string name="sound_camera_shutter_disable_warning">Desativando o som de disparo da câmera é ilegal em algumas áreas. Você tem certeza que deseja desativar?</string>
+    <string name="pref_lockscreen_widgets_layout_title">Layout do widget</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Alternar entre relógio, data, operadora, layout do status</string>
+    <string name="lockscreen_calendar_title">Calendário da Tela de Bloqueio</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Exibit próximo evento do calendário</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Exibir a hora e título do próximo evento do calendário</string>
+    <string name="pref_lockscreen_calendars_title">Eventos de calendários</string>
+    <string name="pref_lockscreen_calendars_summary">Procura por eventos destes calendários</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Apenas lembretes</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Procurar apenas eventos que têm lembretes</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Eventos a frente no calendário</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Quão longe no futuro deverão ser encontrados eventos do calendário</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Selecione qual atalho para acionar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Selecione qual atalho para desacionar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Cancelar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Adicionar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Remover</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Não Acionar</string>
 </resources>

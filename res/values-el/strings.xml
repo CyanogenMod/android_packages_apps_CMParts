@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Ρυθμίσεις εισαγωγής</string>
     <string name="input_settings_summary_head">Συμπεριφορά, πλήκτρα, απτική ανάδραση</string>
     <string name="interface_settings_title_head">Διεπαφή</string>
-    <string name="interface_settings_title_subhead">Ρυθμίσεις διεπαφής</string>
     <string name="interface_settings_summary_head">Tweaks, overscrolling, render effect</string>
     <string name="lockscreen_settings_title_head">Οθόνη κλειδώματος</string>
     <string name="lockscreen_settings_title_subhead">Ρυθμίσεις οθόνης κλειδώματος</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Διεπαφή χρήστη</string>
-    <string name="ui_summary">Ρυθμίσεις &amp; tweaks διεπαφής χρήστη</string>
 
     <string name="pref_electron_beam_animation_on">Εφέ ανάμματος οθόνης</string>
     <string name="pref_electron_beam_animation_off">Εφέ σβησίματος οθόνης</string>
@@ -109,13 +107,14 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Μπάρες σήματος</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Κείμενο σήματος</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Κείμενο σήματος με dBm</string>
+    <string name="ui_status_bar_headset_title">Εμφάνιση εικονιδίου ακουστικών</string>
+    <string name="ui_status_bar_headset_summary">Εμφάνιση εικονιδίου όταν είναι συνδεδεμένα ακουστικά</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Ειδοποιήσεις LED</string>
     <string name="trackball_summary">Έλεγχος χρωμάτων ειδποίησης και παλμός trackball/LED</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Αναδιαμόρφωση μετά το pinch in</string>
     <string name="pref_pinch_reflow_summary">Αναδιαμόρφωση του περιεχομένου webview αμέσως μετά το pinch για zoom in</string>
 
@@ -127,7 +126,6 @@
     <string name="pref_overscroll_weight_summary">Επιλέξτε το βάρος των κυλιόμενων αντικειμένων</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Ρυθμίσεις κλειδώματος οθόνης</string>
     <string name="pref_lockscreen_delay_title">Καθυστέρηση</string>
     <string name="pref_lockscreen_security_title">Κλείδωμα ασφαλείας</string>
     <string name="pref_lockscreen_security_delay_note_title">Σημείωση</string>
@@ -152,7 +150,6 @@
 
     <!-- User interface: LED notifications -->
     <string name="group_settings">Ρυθμίσεις</string>
-    <string name="trackball_notifications_title">Χρώματα ειδοποιήσεων LED</string>
     <string name="dialog_color_trackball">Επιλέξτε ένα χρώμα</string>
     <string name="dialog_blink_trackball">Επιλέξτε ρυθμό παλμού</string>
     <string name="color_trackball_flash_title">Χρώμα flash</string>
@@ -245,9 +242,10 @@
     <string name="pref_lockscreen_timeout_summary">Ρυθμίστε το όριο χρόνου και την καθυστέρηση σβησίματος της οθόνης</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Ρυθμίσεις οθόνης κλειδώματος</string>
     <string name="pref_lockscreen_always_battery_title">Συνεχής εμφάνιση επιπέδου μπαταρίας</string>
     <string name="pref_lockscreen_always_battery_summary">Συνεχής εμφάνιση επιπέδου μπαταρίας στην οθόνη κλειδώματος</string>
+    <string name="pref_lockscreen_widgets_layout_title">Διάταξη γραφικών στοιχείων</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Διάταξη ρολογιού, ημερομηνίας, πάροχου, κατάστασης</string>
     <string name="pref_lockscreen_music_controls_title">Έλεγχοι μουσικής οθόνης κλειδώματος</string>
     <string name="pref_lockscreen_music_controls_summary">Εμφάνιση ελέγχων μουσικής στην οθόνη κλειδώματος</string>
     <string name="pref_lockscreen_now_playing_title">Εμφάνιση ονόματος κομματιού</string>
@@ -269,8 +267,14 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Γρήγορο Ξεκλείδωμα</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Δε χρειάζεται να πατήσετε το OK κατά την εισαγωγή του Pin ή Κωδικού. Η διαγραφή μετρά ως εσφαλμένη προσπάθεια</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Εκκινητής εφαρμογής</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Εμφανίζει δεύτερο slider στο στυλ sliding, εμφανίζει προσαρμοσμένο πλήκτρο εφαρμογής στο στυλ rotary</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Εμφανίζει δεύτερο slider στο στυλ sliding, εμφανίζει προσαρμοσμένο πλήκτρο εφαρμογής στο στυλ rotary, εμφανίζει τρίτο δακτυλίδι στο στυλ ring</string>
     <string name="pref_lockscreen_custom_app_activity_title">Προσαρμοσμένη εφαρμογή</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Επιλέξτε τη συντόμευση που θέλετε να ρυθμίσετε</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Επιλέξτε τη συντόμευση που θέλετε να καταργήσετε</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Ακύρωση</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Προσθήκη</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Αφαίρεση</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Χωρίς Ρύθμιση</string>
     <string name="pref_lockscreen_custom_background_title">Επιλογή φόντου</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Επιλέξτε φόντο</string>
     <string name="pref_lockscreen_custom_background_summary">Επιλέξτε εικόνα ή χρώμα ως φόντο της οθόνης κλειδώματος</string>
@@ -285,18 +289,26 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Σέρνωντας προς τα κάτο το rotary wheel ξεκλειδώνει. Σέρνωντας δεξιά εκκινεί την προσαρμοσμένη εφαρμογή</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Απόκρυψη των βελών rotary</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Αποκρύπτει τα βοηθητικά βέλη στο στυλ rotary</string>
-    <string name="lockscreen_style_header">Προτιμήσεις στυλ</string>
-    <string name="lockscreen_delay_header">Καθυστέρηση και όριο χρόνου</string>
     <string name="pref_lockscreen_style_title">Στυλ οθόνης κλειδώματος</string>
     <string name="pref_lockscreen_style_summary">Επιλέξτε το στυλ της οθόνης κλειδώματος</string>
     <string name="pref_in_call_style_title">Στυλ εισερχόμενης κλήσης</string>
     <string name="pref_in_call_style_summary">Επιλέξτε το στυλ του γραφικού στοιχείου των εισερχομένων κλήσεων</string>
+    <string name="lockscreen_music_title">Έλεγχος Μουσικής</string>
     <string name="pref_volbtn_music_controls_title">Έλεγχος μουσικής με πλήκτρα έντασης</string>
     <string name="pref_volbtn_music_controls_summary">Αναζήτηση στο κομμάτι με κρατημένο πάτημα των πλήκτρων έντασης όταν η οθόνη είναι σβηστή</string>
     <string name="pref_cambtn_music_controls_title">Έλεγχος μουσικής με το πλήκτρο Camera</string>
     <string name="pref_cambtn_music_controls_summary">Αλλαγή σε play/pause με κρατημένο πάτημα του πλήκτρου camera όταν η οθόνη είναι σβηστή</string>
     <string name="lockscreen_widgets_note_title">Σημείωση</string>
     <string name="lockscreen_widgets_note_summary">Η επιλογή του μίνιμαλ στυλ lense αποκρύπτει όλα τα γραφικά στοιχεία εκτός από τους έλεγχους μουσικής. Οι παρακάτω επιλογές όμως παραμένουν για να σας δώσουν τη δυνατότητα της εύκολης εναλλαγής στυλ</string>
+    <string name="lockscreen_calendar_title">Ημερολόγιο Οθόνης Κλειδώματος</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Προβολή επόμενου συμβάντος</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Εμφανίζει την ώρα και τον τίτλο του επόμενου συμβάντος στο ημερολόγιο</string>
+    <string name="pref_lockscreen_calendars_title">Ημερολόγια συμβάντων</string>
+    <string name="pref_lockscreen_calendars_summary">Εύρεση συμβάντων από τα παρακάτω ημερολόγια</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Μόνο υπενθυμίσεις</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Εύρεση μόνο συμβάντων που έχουν υπενθύμιση</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Χρονικό παράθυρο ημερολογίου</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Χρονικό παράθυρο εύρεσης συμβάντων ημερολογίου</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ρυθμίσεις εισόδου</string>
@@ -380,7 +392,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Ρυθμίσεις επιδόσεων</string>
-    <string name="performance_settings_summary">Ρυθμίσεις επιδόσεων συσκευής</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Χρήση Compcache RAM</string>
@@ -416,7 +427,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Ρυθμίσεις εφαρμογών</string>
-    <string name="application_settings_summary">Αλλάξτε διάφορες ρυθμίσεις εφαρμογών όπως η τοποθεσία εγκατάστασης</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Χρήση εσωτερικής μνήμης</string>
@@ -433,6 +443,7 @@
     <string name="pref_install_location_summary">Επιλέξτε που θέλετε να εγκαθίστανται οι νέες εφαρμογές</string>
 
     <string name="general_title">Γενικές</string>
+    <string name="camera_title">Κάμερα</string>
     <string name="buttons_title">Πλήκτρα</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -571,8 +582,6 @@
     <string name="ll_num_levels">Set number of levels</string>
 
     <!-- Sound -->
-    <string name="sound_title">Ρυθμίσεις ήχου</string>
-    <string name="sound_summary">Ρυθμίσεις ήχου και εστίασης ήχου</string>
     <string name="sound_notifications_focus_title">Εστίαση ειδοποίησης</string>
     <string name="sound_notifications_focus_summary">Η αίτηση για εστίαση ήχου προκαλεί ελάττωση της έντασης του ήχου όταν αναπαράγεται ο ήχος ειδοποίησης στις συμβατές εφαρμογές</string>
     <string name="sound_volume_control_silent_title">Κατάσταση αθόρυβου</string>
@@ -580,6 +589,11 @@
     <string name="sound_vibrate_in_call_title">Δόνηση κατά τις κλήσεις</string>
     <string name="sound_vibrate_in_call_summary_off">Η συσκευή δε θα δονείται για ειδοποιήσεις κατά τη διάρκεια κλήσεων</string>
     <string name="sound_vibrate_in_call_summary_on">Η συσκευή θα δονείται κανονικά</string>
+    <string name="sound_camera_shutter_disable_title">Σίγαση κλείστρου κάμερας</string>
+    <string name="sound_camera_shutter_disable_summary_on">Δε θα αναπαράγεται ήχος κλείστρου</string>
+    <string name="sound_camera_shutter_disable_summary_off">Θα αναπαράγεται ήχος κλείστρου</string>
+    <string name="sound_camera_shutter_disable_warning_title">ΠΡΟΣΟΧΗ: Αυτό ίσως να είναι παράνομο!</string>
+    <string name="sound_camera_shutter_disable_warning">Η απενεργοποίηση του ήχου του κλείστρου της κάμερας είναι παράνομο σε μερικές περιοχές. Είστε σίγουρος/η ότι θέλετε να τον απενεργοποιήσετε;</string>
     <string name="sound_to_speaker_title">Πάντα αναπαραγωγή από το ηχείο</string>
     <string name="sound_notifications_title">Ειδοποιήσεις</string>
     <string name="sound_rings_title">Ήχοι κλήσεων</string>
@@ -631,16 +645,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Δημιουργία χειρονομιών</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Ευαισθησία</string>
     <string name="pref_lockscreen_gestures_color_title">Χρώμα χειρονομιών</string>
-    <string name="label_create_gesture">Δημιουργία χειρονομίας</string>
     <string name="gestures_button_add">Προσθήκη χειρονομίας</string>
     <string name="gestures_button_discard">Απόρριψη</string>
     <string name="gestures_button_done">Τέλος</string>
     <string name="gestures_error_missing_shortcut">Πρέπει να επιλέξετε μία ενέργεια για αυτήν τη χειρονομία!</string>
-    <string name="gestures_save_success">Η χειρονομία αποθηκεύτηκε στο %s</string>
-    <string name="gestures_cancel_action">Ακύρωση</string>
     <string name="gestures_loading">Φόρτωση χειρονομιών\u2026</string>
     <string name="gestures_empty">Χωρίς χειρονομίες</string>
-    <string name="gestures_activity">Χειρονομίες</string>
     <string name="gestures_delete">Διαγραφή</string>
     <string name="gestures_delete_success">Η χειρονομία διαγράφηκε</string>
     <string name="gestures_error_loading">Πρόβλημα κατά την αποθήκευση/διαγραφή της χειρονομίας.</string>
@@ -673,13 +683,11 @@
     <string name="title_phone_goggles_apps">Εφαρμογές που φιλτράρονται</string>
     <string name="title_phone_goggles_app_enabled">Ενεργοποίηση Phone Goggles</string>
     <string name="title_phone_goggles_use_custom">Χρήση προσαρμοσμένων ρυθμίσεων</string>
-    <string name="title_phone_goggles_filter">Αριθμόι που φιλτράρονται</string>
+    <string name="title_phone_goggles_filter">Αριθμοί που φιλτράρονται</string>
     <string name="title_phone_goggles_enabled">Ενεργοποίηση phone goggles</string>
     <string name="title_phone_goggles_start">Εκκίνηση λειτουργίας phone goggles</string>
     <string name="title_phone_goggles_end">Λήξη λειτουργίας phone goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Απαίτηση επιβεβαίωσης</string>
-    <string name="title_phone_goggles_phone_enabled">Τηλέφωνο</string>
-    <string name="title_phone_goggles_sms_enabled">SMS</string>
     <string name="title_phone_goggles_maths_level">Επίπεδο μαθηματικών</string>
     <string name="title_phone_goggles_work_filtered">Εργασία</string>
     <string name="title_phone_goggles_mobile_filtered">Κινητό</string>

@@ -262,8 +262,14 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Не требуется нажимать ОК после ввода пароля или PIN. Стирание засчитывается как неудачная попытка</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Запуск приложения пользователя</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок) или приложение пользователя (для стиля Вращение)</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок), приложение пользователя (для стиля Вращение) или третье кольцо (для стиля Кольца)</string>
     <string name="pref_lockscreen_custom_app_activity_title">Выбрать приложение</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Выберите ярлык для установки</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Выберите ярлык для сброса</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Отменить</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Добавить</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Удалить</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Не установлено</string>
     <string name="pref_lockscreen_custom_background_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_summary">Выберите изображение или цвет в качестве фона экрана блокировки</string>
