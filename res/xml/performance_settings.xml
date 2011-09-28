@@ -25,6 +25,10 @@
             android:title="@string/pref_use_dithering_title"
             android:summary="@string/pref_use_dithering_summary" />
 
+        <CheckBoxPreference android:key="pref_use_16bpp_alpha"
+            android:title="@string/pref_use_16bpp_alpha_title"
+            android:summary="@string/pref_use_16bpp_alpha_summary" />
+
         <CheckBoxPreference android:key="pref_purgeable_assets"
             android:title="@string/pref_purgeable_assets_title"
             android:summary="@string/pref_purgeable_assets_summary" />
@@ -41,6 +45,12 @@
             android:title="@string/pref_heapsize_title" android:summary="@string/pref_heapsize_summary"
             android:entries="@array/entries_heapsize"
             android:entryValues="@array/values_heapsize" />
+
+        <ListPreference android:key="pref_sd_readahead"
+            android:dialogTitle="@string/pref_sd_readahead_title"
+            android:title="@string/pref_sd_readahead_title" android:summary="@string/pref_sd_readahead_summary"
+            android:entries="@array/entries_sd_readahead"
+            android:entryValues="@array/values_sd_readahead" />
 
         <!-- Motorola specific aplogd pref -->
         <CheckBoxPreference android:key="pref_logger"

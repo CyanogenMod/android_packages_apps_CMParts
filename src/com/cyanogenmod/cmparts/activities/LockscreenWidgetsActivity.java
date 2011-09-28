@@ -159,9 +159,10 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
         mCalendarAlarmPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_CALENDAR_ALARM, 0) == 1);
 
-        boolean enableAlwaysBatteryPref = !mLockscreenWidgetLayout.getEntry().equals(getResources()
+        boolean enableShowWidgetsPref = !mLockscreenWidgetLayout.getEntry().equals(getResources()
                 .getStringArray(R.array.pref_lockscreen_widget_layout_entries)[1]);
-        mAlwaysBatteryPref.setEnabled(enableAlwaysBatteryPref);
+        mAlwaysBatteryPref.setEnabled(enableShowWidgetsPref);
+        mCalendarAlarmPref.setEnabled(enableShowWidgetsPref);
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -226,6 +227,7 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
             Integer val = Integer.valueOf(newValue.toString());
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_WIDGETS_LAYOUT,val);
             mAlwaysBatteryPref.setEnabled(val != 1);
+            mCalendarAlarmPref.setEnabled(val != 1);
             return true;
         }
         return false;

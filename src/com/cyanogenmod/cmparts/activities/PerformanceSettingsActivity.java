@@ -69,6 +69,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     
     private static final String USE_DITHERING_DEFAULT = "1";
 
+    private static final String USE_16BPP_ALPHA_PREF = "pref_use_16bpp_alpha";
+
+    private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
+
     private static final String PURGEABLE_ASSETS_PREF = "pref_purgeable_assets";
 
     private static final String PURGEABLE_ASSETS_PERSIST_PROP = "persist.sys.purgeable_assets";
@@ -89,11 +93,21 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final int LOCK_MMS_DEFAULT = 1;
 
+    private static final String SDREADAHEAD_PREF = "pref_sd_readahead";
+
+    private static final String SDREADAHEAD_PROP = "sd_readahead";
+
+    private static final String SDREADAHEAD_PERSIST_PROP = "persist.sys.sd_readahead";
+
+    private static final String SDREADAHEAD_DEFAULT = "16kb";
+
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mJitPref;
 
     private CheckBoxPreference mUseDitheringPref;
+
+    private CheckBoxPreference mUse16bppAlphaPref;
 
     private CheckBoxPreference mPurgeableAssetsPref;
 
@@ -104,6 +118,8 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mLockMmsPref;
 
     private ListPreference mHeapsizePref;
+
+    private ListPreference mSdReadAheadPref;
 
     private AlertDialog alertDialog;
 
@@ -140,6 +156,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String useDithering = SystemProperties.get(USE_DITHERING_PERSIST_PROP, USE_DITHERING_DEFAULT);
         mUseDitheringPref.setChecked("1".equals(useDithering));
 
+        mUse16bppAlphaPref = (CheckBoxPreference) prefSet.findPreference(USE_16BPP_ALPHA_PREF);
+        String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
+        mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
+
         mPurgeableAssetsPref = (CheckBoxPreference) prefSet.findPreference(PURGEABLE_ASSETS_PREF);
         String purgeableAssets = SystemProperties.get(PURGEABLE_ASSETS_PERSIST_PROP, PURGEABLE_ASSETS_DEFAULT);
         mPurgeableAssetsPref.setChecked("1".equals(purgeableAssets));
@@ -152,6 +172,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
         mHeapsizePref.setOnPreferenceChangeListener(this);
+
+        mSdReadAheadPref = (ListPreference) prefSet.findPreference(SDREADAHEAD_PREF);
+        mSdReadAheadPref.setValue(SystemProperties.get(SDREADAHEAD_PERSIST_PROP,
+                SystemProperties.get(SDREADAHEAD_PROP, SDREADAHEAD_DEFAULT)));
+        mSdReadAheadPref.setOnPreferenceChangeListener(this);
 
         mLockHomePref = (CheckBoxPreference) prefSet.findPreference(LOCK_HOME_PREF);
         mLockHomePref.setChecked(Settings.System.getInt(getContentResolver(),
@@ -186,6 +211,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         if (preference == mUseDitheringPref) {
             SystemProperties.set(USE_DITHERING_PERSIST_PROP,
                     mUseDitheringPref.isChecked() ? "1" : "0");
+            return true;
+        }
+
+        if (preference == mUse16bppAlphaPref) {
+            SystemProperties.set(USE_16BPP_ALPHA_PROP,
+                    mUse16bppAlphaPref.isChecked() ? "1" : "0");
             return true;
         }
 

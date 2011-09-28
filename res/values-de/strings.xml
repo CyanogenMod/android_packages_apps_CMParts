@@ -419,6 +419,11 @@
     <string name="pref_use_dithering_title">Dithering</string>
     <string name="pref_use_dithering_summary">Dithering von Oberflächen verbessert die Bildqualität auf Kosten der Geräteleistung (Neustart erforderlich)</string>
 
+<!-- Performance Settings : 16bpp Alpha -->
+
+    <string name="pref_use_16bpp_alpha_title">16bit Transparenz verwenden</string>
+    <string name="pref_use_16bpp_alpha_summary">Nutzung von 16bit Transparenz kann die Leistung des Scrollens erhöhen, kann aber Grafikartefakte erzeugen. (Neustart erforderlich)</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
     <string name="pref_purgeable_assets_summary">Erlaubt dem System, Speicherbereiche von nicht mehr benutzen Bildern freizugeben, um mehr RAM bereitzustellen (Neustart erforderlich)</string>
@@ -430,6 +435,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Größe VM-Heap</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
+
+    <!-- Performance Settings : SD Read Ahead Cache Size -->
+    <string name="pref_sd_readahead_title">Größe SD Read-ahead Puffer</string>
+    <string name="pref_sd_readahead_summary">Größe des Read-ahead Puffers für die SD Karte (Neustart erforderlich)</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Home-Anw. persistent</string>

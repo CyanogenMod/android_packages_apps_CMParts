@@ -425,6 +425,10 @@
     <string name="pref_use_dithering_title">Enable surface dithering</string>
     <string name="pref_use_dithering_summary">Dithering surfaces improves image quality at the cost of performance (requires reboot)</string>
 
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">Use 16bit transparency</string>
+    <string name="pref_use_16bpp_alpha_summary">Using 16 bit transparency can improve scrolling performance, but may cause visual artifacts. (requires reboot)</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">System can free more RAM when needed if asset bitmap memory can be reclaimed (requires reboot)</string>
@@ -436,6 +440,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
+
+    <!-- Performance Settings : SD Read Ahead Cache Size -->
+    <string name="pref_sd_readahead_title">SD Read Ahead Size</string>
+    <string name="pref_sd_readahead_summary">Size of the SD Read Ahead Cache (requires reboot)</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
