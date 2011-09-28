@@ -40,11 +40,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_CM_BATTERY = "pref_status_bar_cm_battery";
 
-<<<<<<< HEAD
     private static final String PREF_STATUS_BAR_ONEPERC_BATTERY = "pref_status_bar_oneperc_battery";
 
-=======
->>>>>>> 2f1109a... MIUI-like Battery Bar (2/2)
     private static final String PREF_STATUS_BAR_CM_BATTERY_COLOR = "pref_status_bar_cm_battery_color";
 
     private static final String PREF_STATUS_BAR_COMPACT_CARRIER = "pref_status_bar_compact_carrier";
@@ -67,19 +64,12 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private ListPreference mStatusBarCmSignal;
 
     private ListPreference mStatusBarCmBattery;
-<<<<<<< HEAD
 
     private ListPreference mStatusBarCmBatteryColor;
 
     private CheckBoxPreference mStatusBarClock;
 
     private CheckBoxPreference mStatusBarOnepercBattery;
-=======
-
-    private ListPreference mStatusBarCmBatteryColor;
-
-    private CheckBoxPreference mStatusBarClock;
->>>>>>> 2f1109a... MIUI-like Battery Bar (2/2)
 
     private CheckBoxPreference mStatusBarCompactCarrier;
 
