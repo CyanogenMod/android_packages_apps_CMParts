@@ -206,14 +206,14 @@
     <item>Rad</item>
     <item>Rad umgestaltet</item>
     <item>Linse</item>
-    <item>Ring</item>
+    <item>Blasen</item>
   </string-array>
 
   <string-array name="pref_in_call_style_entries">
     <item>Schieber</item>
     <item>Rad</item>
     <item>Rad umgestaltet</item>
-    <item>Ring</item>
+    <item>Blasen</item>
   </string-array>
 
   <string-array name="pref_lockscreen_background_entries">

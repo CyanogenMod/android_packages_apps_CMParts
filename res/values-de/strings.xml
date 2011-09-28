@@ -7,10 +7,10 @@
     <string name="application_settings_title_head">Anwendungen</string>
     <string name="application_settings_title_subhead">Anwendungseinstellungen</string>
     <string name="application_settings_summary_head">Anwendungen verschieben, Installationsort, Berechtigungen, Phone Goggles</string>
-    <string name="display_settings_title_head">Display</string>
-    <string name="display_settings_title_subhead">Display-Einstellungen</string>
-    <string name="display_settings_summary_head">Display-Animationen, Ausrichtung, Helligkeitssteuerung</string>
-    <string name="display_settings_summary_head_nobacklight">Display-Animationen, Ausrichtung</string>
+    <string name="display_settings_title_head">Bildschirm</string>
+    <string name="display_settings_title_subhead">Bildschirm-Einstellungen</string>
+    <string name="display_settings_summary_head">Bildschirm-Animationen, Ausrichtung, Helligkeitssteuerung</string>
+    <string name="display_settings_summary_head_nobacklight">Bildschirm-Animationen, Ausrichtung</string>
     <string name="input_settings_title_head">Eingabe</string>
     <string name="input_settings_title_subhead">Eingabeeinstellungen</string>
     <string name="input_settings_summary_head">Tasten, Haptisches Feedback, …</string>
@@ -50,8 +50,8 @@
     <string name="tablet_tweaks_soft_buttons_left_summary">Die Tasten auf die linke Seite der Statusleiste verlagern</string>
     <string name="tablet_tweaks_soft_button_list_title">Tasten wählen</string>
     <string name="tablet_tweaks_interface_head">Oberfläche</string>
-    <string name="tablet_tweaks_disable_lockscreen_title">Displaysperre deaktiv.</string>
-    <string name="tablet_tweaks_disable_lockscreen_summary">Nach Bootvorgang oder bei Aufwachen weder die Display- noch die Sicherheitssperre anzeigen</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Bildschirmsperre deakt.</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Nach Bootvorgang oder bei Aufwachen weder die Bildschirm- noch die Sicherheitssperre anzeigen</string>
     <string name="tablet_tweaks_disable_fullscreen_title">Vollbild verhindern</string>
     <string name="tablet_tweaks_disable_fullscreen_summary">Anfrage einer Anwendung nach Vollbildmodus blockieren. Statusleiste bleibt immer sichtbar, außer wenn sie manuell ausgeblendet wird</string>
     <string name="tablet_tweaks_unhide_button_list_head">Aufdecken-Taste</string>
@@ -118,8 +118,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Nur Balken</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Signalstärke (nur Wert)</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signalstärke inkl. „dBm“</string>
-    <string name="ui_status_bar_headset_title">Headset-Icon zeigen</string>
-    <string name="ui_status_bar_headset_summary">Headset-Icon anzeigen, wenn ein Headset angeschlossen ist</string>
+    <string name="ui_status_bar_headset_title">Headset-Symbol zeigen</string>
+    <string name="ui_status_bar_headset_summary">Headset-Symbol anzeigen, wenn ein Headset angeschlossen ist</string>
 
     <!-- User interface : LED Notifications -->
     <string name="group_settings">Einstellungen</string>
@@ -151,20 +151,20 @@
     <string name="pref_lockscreen_delay_title">Verzögerung</string>
     <string name="pref_lockscreen_security_title">Sicherheitssperre</string>
     <string name="pref_lockscreen_security_delay_note_title">Hinweis</string>
-    <string name="pref_lockscreen_security_delay_note_summary">Ist keine Sicherheitssperre aktiviert, gelten die nachfolgenden Einstellungen für die Displaysperre</string>
-    <string name="pref_lockscreen_security_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Ist keine Sicherheitssperre aktiviert, gelten die nachfolgenden Einstellungen für die Bildschirmsperre</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Nach Timeout</string>
     <string name="pref_lockscreen_security_screenoff_lock_delay">Nach Abschalten</string>
-    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Zeit, nach der die Sicherheitssperre aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
-    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Zeit, nach der die Sicherheitssperre aktiviert wird, nachdem das Display manuell abgeschaltet wurde</string>
-    <string name="pref_lockscreen_slide_title">Displaysperre</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Zeit, nach der die Sicherheitssperre aktiviert wird, nachdem der Bildschirm automatisch abgeschaltet wurde</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Zeit, nach der die Sicherheitssperre aktiviert wird, nachdem der Bildschirm manuell abgeschaltet wurde</string>
+    <string name="pref_lockscreen_slide_title">Bildschirmsperre</string>
     <string name="pref_lockscreen_slide_delay_note_title">Hinweis</string>
-    <string name="pref_lockscreen_slide_delay_note_summary">Die Displaysperre (ohne Sicherheitssperre) wird nur angezeigt, wenn die Zeit für die Sicherheitssperre länger ist als die Zeit für die Displaysperre</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Die Bildschirmsperre (ohne Sicherheitssperre) wird nur angezeigt, wenn die Zeit für die Sicherheitssperre länger ist als die Zeit für die Bildschirmsperre</string>
     <string name="pref_lockscreen_slide_delay_title">Separate Zeit</string>
-    <string name="pref_lockscreen_slide_delay_summary">Ermöglicht die Verwendung eines separaten Timers für die Displaysperre, bevor die Sicherheitssperre aktiviert wird</string>
-    <string name="pref_lockscreen_slide_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_slide_delay_summary">Ermöglicht die Verwendung eines separaten Timers für die Bildschirmsperre, bevor die Sicherheitssperre aktiviert wird</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Nach Timeout</string>
     <string name="pref_lockscreen_slide_screenoff_lock_delay">Nach Abschalten</string>
-    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Zeit, nach der die Bildschirmsperre aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
-    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Zeit, nach der die Bildschirmsperre aktiviert wird, nachdem das Display manuell abgeschaltet wurde</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Zeit, nach der die Bildschirmsperre aktiviert wird, nachdem der Bildschirm automatisch abgeschaltet wurde</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Zeit, nach der die Bildschirmsperre aktiviert wird, nachdem der Bildschirm manuell abgeschaltet wurde</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Farbe wählen</string>
@@ -239,7 +239,7 @@
 
     <!-- Lockscreen Overview -->
     <string name="pref_lockscreen_disable_on_security_title">Nur Sicherheitssperre</string>
-    <string name="pref_lockscreen_disable_on_security_summary">Displaysperre deaktivieren, wenn eine Sicherheitssperre (Muster, PIN, Passwort) aktiviert ist</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Bildschirmsperre deaktivieren, wenn eine Sicherheitssperre (Muster, PIN, Passwort) aktiviert ist</string>
     <string name="pref_lockscreen_stylecfg_title">Aussehen</string>
     <string name="pref_lockscreen_stylecfg_summary">Das Aussehen des Sperrbildschirms anpassen</string>
     <string name="pref_lockscreen_widgets_title">Widget-Optionen</string>
@@ -277,10 +277,16 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Schnelles Entsperren</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">PIN oder Passwort ohne Bestätigung eingeben. Löschen gilt als Fehlversuch</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Eigener Starter</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen zweiten Schieber im Schieber-Stil bzw. Mulde im Rad-Stil zum Starten einer Anwendung</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen weiteren Schieber, Mulde oder Blase (je nach Stil) zum Starten einer Anwendung an</string>
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Anwendungs-Icon</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den Starter verwenden</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Verknüpfung ändern</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Verknüpfung löschen</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Abbrechen</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Hinzufügen</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Entfernen</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Nicht belegt</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs- statt CM-Symbol für den Starter verwenden</string>
     <string name="pref_lockscreen_custom_background_title">Hintergrund</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Hintergrund wählen</string>
     <string name="pref_lockscreen_custom_background_summary">Wählen Sie ein Bild oder eine Füllfarbe als Hintergrund für den Sperrbildschirm</string>
@@ -311,7 +317,7 @@
     <string name="pref_qtouch_num_title">Multitouch</string>
     <string name="pref_qtouch_num_summary">Festlegen der Anzahl der erkannten Touchpunkte (Kann ein Ein- und Ausschalten des Displays erfordern um aktiviert zu werden. Der erste Touch nach Einschalten des Displays kann ignoriert werden)</string>
     <string name="lockscreen_widgets_note_title">Hinweis</string>
-    <string name="lockscreen_widgets_note_summary">Beim Stil „Linse“ werden alle Widgets, mit Ausnahme der Musiksteuerung, ausgeblendet. Die Folgenden Optionen bleiben dennoch aktiv.</string>
+    <string name="lockscreen_widgets_note_summary">Beim Stil „Linse“ wird nur das Musiksteuerungs-Widget eingeblendet und die restlichen Optionen ignoriert.</string>
     <string name="lockscreen_calendar_title">Kalender</string>
     <string name="pref_lockscreen_calendar_alarm_title">Nächster Termin</string>
     <string name="pref_lockscreen_calendar_alarm_summary">Name und Uhrzeit des nächsten Termins anzeigen</string>
@@ -521,7 +527,7 @@
     <string name="title_toggle_brightness">Helligkeit</string>
     <string name="title_toggle_sync">Synchronisierung</string>
     <string name="title_toggle_wifiap">WLAN-Hotspot</string>
-    <string name="title_toggle_screentimeout">Display-Timeout</string>
+    <string name="title_toggle_screentimeout">Bildschirm-Timeout</string>
     <string name="title_toggle_mobiledata">Mobilfunk-Daten</string>
     <string name="title_toggle_lockscreen">Bildschirmsperre</string>
     <string name="title_toggle_networkmode">2G/3G</string>
@@ -538,7 +544,7 @@
     <string name="pref_brightness_mode_summary">Helligkeitsstufen, zwischen denen umgeschaltet wird</string>
     <string name="pref_network_mode_title">Netzwerkmodi</string>
     <string name="pref_network_mode_summary">Netzwerkmodi, zwischen denen umgeschaltet wird</string>
-    <string name="pref_screentimeout_mode_title">Display-Timeout</string>
+    <string name="pref_screentimeout_mode_title">Bildschirm-Timeout</string>
     <string name="pref_screentimeout_mode_summary">Auswählbare Timeouts für automatische Bildschirmabschaltung</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Klingelmodi, zwischen denen umgeschaltet wird</string>
@@ -600,11 +606,11 @@
     <string name="sound_vibrate_in_call_title">Im Gespräch vibrieren</string>
     <string name="sound_vibrate_in_call_summary_on">Normale Vibration bei Benachrichtigungen während eines Gesprächs</string>
     <string name="sound_vibrate_in_call_summary_off">Keine Vibration bei Benachrichtigungen während eines Gesprächs</string>
-    <string name="sound_camera_shutter_disable_title">Verschlusston deakt.</string>
-    <string name="sound_camera_shutter_disable_summary_on">Kamera-Verschlusston wird nicht abgespielt</string>
-    <string name="sound_camera_shutter_disable_summary_off">Kamera-Verschlusston wird abgespielt</string>
+    <string name="sound_camera_shutter_disable_title">Auslöseton deakt.</string>
+    <string name="sound_camera_shutter_disable_summary_on">Kamera-Auslöseton wird nicht abgespielt</string>
+    <string name="sound_camera_shutter_disable_summary_off">Kamera-Auslöseton wird abgespielt</string>
     <string name="sound_camera_shutter_disable_warning_title">ACHTUNG: Rechtslage beachten!</string>
-    <string name="sound_camera_shutter_disable_warning">Das Deaktivieren des Kamera-Verschlusstons ist in einigen Ländern verboten. Sind Sie sicher, dass Sie ihn deaktivieren wollen?</string>
+    <string name="sound_camera_shutter_disable_warning">Das Deaktivieren des Kamera-Auslösetons ist in einigen Ländern verboten. Sind Sie sicher, dass Sie ihn deaktivieren wollen?</string>
     <string name="sound_to_speaker_title">Immer über Lautsprecher</string>
     <string name="sound_notifications_title">Benachrichtigungen</string>
     <string name="sound_rings_title">Klingeltöne</string>
@@ -662,7 +668,7 @@
     <string name="gestures_empty">Keine Gesten</string>
     <string name="gestures_delete">Löschen</string>
     <string name="gestures_delete_success">Geste gelöscht</string>
-    <string name="gestures_error_loading">Problem bei Zugriff auf Gesten-Datei</string>
+    <string name="gestures_error_loading">Problem beim Zugriff auf Gesten-Datei</string>
     <string name="gestures_unlock_only">Entsperren</string>
     <string name="gestures_toggle_sound">Klingelmodus</string>
     <string name="gestures_shortcut_or_activity">Verknüpfung oder Anwendung</string>
