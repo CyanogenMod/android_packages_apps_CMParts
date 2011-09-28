@@ -635,7 +635,6 @@
     <string name="sound_notifications_limitvol_dialog">Notification volume</string>
     <string name="sound_rings_limitvol_dialog">Ring tone volume</string>
     <string name="sound_alarms_limitvol_dialog">Alarm volume</string>
-
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Quiet hours</string>
     <string name="quiet_hours_note_title">Note</string>

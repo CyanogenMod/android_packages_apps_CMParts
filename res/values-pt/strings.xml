@@ -619,13 +619,11 @@
     <string name="gestures_draw_label">Gesto:</string>
     <string name="gestures_draw_for_label">Gesto para \"%s\":</string>
     <string name="gestures_run_in_background">Executar em segundo plano</string>
-
     <string name="rotation_category_title">Rotação com acelerômetro</string>
-    <string name="pref_rotation_0_title">0 grau</string>
     <string name="pref_rotation_90_title">90 graus</string>
     <string name="pref_rotation_180_title">180 graus</string>
     <string name="pref_rotation_270_title">270 graus</string>
-
+    <string name="pref_rotation_0_title">0 grau</string>
     <string name="long_press_menu_title">Configurações de pressionar continuamente o menu</string>
     <string name="long_press_menu_summary">Personalizar as configurações para pressionar continuamente o menu</string>
     <string name="pref_user_defined_long_press_menu_title">Selecionar aplicação personalizada</string>
