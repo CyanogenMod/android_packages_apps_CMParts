@@ -46,12 +46,6 @@
             android:entries="@array/entries_heapsize"
             android:entryValues="@array/values_heapsize" />
 
-        <ListPreference android:key="pref_sd_readahead"
-            android:dialogTitle="@string/pref_sd_readahead_title"
-            android:title="@string/pref_sd_readahead_title" android:summary="@string/pref_sd_readahead_summary"
-            android:entries="@array/entries_sd_readahead"
-            android:entryValues="@array/values_sd_readahead" />
-
         <!-- Motorola specific aplogd pref -->
         <CheckBoxPreference android:key="pref_logger"
             android:title="@string/pref_logger_title"

@@ -93,14 +93,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final int LOCK_MMS_DEFAULT = 1;
 
-    private static final String SDREADAHEAD_PREF = "pref_sd_readahead";
-
-    private static final String SDREADAHEAD_PROP = "sd_readahead";
-
-    private static final String SDREADAHEAD_PERSIST_PROP = "persist.sys.sd_readahead";
-
-    private static final String SDREADAHEAD_DEFAULT = "16kb";
-
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mJitPref;
@@ -118,8 +110,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mLockMmsPref;
 
     private ListPreference mHeapsizePref;
-
-    private ListPreference mSdReadAheadPref;
 
     private AlertDialog alertDialog;
 
@@ -172,11 +162,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
         mHeapsizePref.setOnPreferenceChangeListener(this);
-
-        mSdReadAheadPref = (ListPreference) prefSet.findPreference(SDREADAHEAD_PREF);
-        mSdReadAheadPref.setValue(SystemProperties.get(SDREADAHEAD_PERSIST_PROP,
-                SystemProperties.get(SDREADAHEAD_PROP, SDREADAHEAD_DEFAULT)));
-        mSdReadAheadPref.setOnPreferenceChangeListener(this);
 
         mLockHomePref = (CheckBoxPreference) prefSet.findPreference(LOCK_HOME_PREF);
         mLockHomePref.setChecked(Settings.System.getInt(getContentResolver(),
