@@ -101,8 +101,10 @@
     <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
     <string name="ui_status_bar_clock_title">Show clock</string>
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
-    <string name="ui_status_bar_cm_battery_title">Battery percentage</string>
-    <string name="ui_status_bar_cm_battery_summary">Show battery percentage plus mini battery icon. Disable if themes make this look broken</string>
+    <string name="ui_status_bar_cm_battery_title">Battery style</string>
+    <string name="ui_status_bar_cm_battery_summary">Change battery style. Set to \'Default\' if themes make this look broken</string>
+    <string name="ui_status_bar_cm_battery_color_title">Status bar battery color</string>
+    <string name="ui_status_bar_cm_battery_color_summary">Color to use for the status bar battery style</string>
     <string name="ui_status_bar_oneperc_battery_title">1% battery steps</string>
     <string name="ui_status_bar_oneperc_battery_summary">Show battery percentage in 1% steps. May cause issues with third party batteries and AC adapters. (Requires reboot)</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
