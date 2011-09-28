@@ -420,7 +420,6 @@
     <string name="pref_use_dithering_summary">Dithering von Oberflächen verbessert die Bildqualität auf Kosten der Geräteleistung (Neustart erforderlich)</string>
 
 <!-- Performance Settings : 16bpp Alpha -->
-
     <string name="pref_use_16bpp_alpha_title">16bit Transparenz verwenden</string>
     <string name="pref_use_16bpp_alpha_summary">Nutzung von 16bit Transparenz kann die Leistung des Scrollens erhöhen, kann aber Grafikartefakte erzeugen. (Neustart erforderlich)</string>
 
