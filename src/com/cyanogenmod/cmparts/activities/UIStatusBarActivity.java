@@ -27,6 +27,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.text.TextUtils;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.activities.ColorPickerDialog.OnColorChangedListener;
@@ -39,8 +40,11 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_CM_BATTERY = "pref_status_bar_cm_battery";
 
+<<<<<<< HEAD
     private static final String PREF_STATUS_BAR_ONEPERC_BATTERY = "pref_status_bar_oneperc_battery";
 
+=======
+>>>>>>> 2f1109a... MIUI-like Battery Bar (2/2)
     private static final String PREF_STATUS_BAR_CM_BATTERY_COLOR = "pref_status_bar_cm_battery_color";
 
     private static final String PREF_STATUS_BAR_COMPACT_CARRIER = "pref_status_bar_compact_carrier";
@@ -63,12 +67,19 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private ListPreference mStatusBarCmSignal;
 
     private ListPreference mStatusBarCmBattery;
+<<<<<<< HEAD
 
     private ListPreference mStatusBarCmBatteryColor;
 
     private CheckBoxPreference mStatusBarClock;
 
     private CheckBoxPreference mStatusBarOnepercBattery;
+=======
+
+    private ListPreference mStatusBarCmBatteryColor;
+
+    private CheckBoxPreference mStatusBarClock;
+>>>>>>> 2f1109a... MIUI-like Battery Bar (2/2)
 
     private CheckBoxPreference mStatusBarCompactCarrier;
 
@@ -169,10 +180,13 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             String statusBarCmBatteryColor = (String) newValue;
             if ("custom".equals(statusBarCmBatteryColor)) {
                 int color = -1;
-                try {
-                    color = Color.parseColor(Settings.System.getString(getContentResolver(),
-                            Settings.System.STATUS_BAR_CM_BATTERY_COLOR));
-                } catch (IllegalArgumentException e) { }
+                String colorString = Settings.System.getString(getContentResolver(),
+                        Settings.System.STATUS_BAR_CM_BATTERY_COLOR);
+                if (!TextUtils.isEmpty(colorString)) {
+                    try {
+                        color = Color.parseColor(colorString);
+                    } catch (IllegalArgumentException e) { }
+                }
                 new ColorPickerDialog(this, mColorListener, color).show();
             } else {
                 Settings.System.putString(getContentResolver(),
