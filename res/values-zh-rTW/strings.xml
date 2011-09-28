@@ -150,7 +150,6 @@
 
     <!-- User interface: LED notifications -->
     <string name="group_settings">設定</string>
-    <string name="trackball_notifications_title">LED 通知色彩</string>
     <string name="dialog_color_trackball">選擇顏色</string>
     <string name="dialog_blink_trackball">選擇閃爍速率</string>
     <string name="color_trackball_flash_title">閃爍色彩</string>
@@ -245,6 +244,8 @@
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">總是顯示電量</string>
     <string name="pref_lockscreen_always_battery_summary">總是在鎖定螢幕上顯示電池狀況</string>
+    <string name="pref_lockscreen_widgets_layout_title">小工具版面配置</string>
+    <string name="pref_lockscreen_widgets_layout_summary">切換時鐘、日期、電信業者、狀態等的版面配置</string>
     <string name="pref_lockscreen_music_controls_title">鎖定螢幕音樂面版</string>
     <string name="pref_lockscreen_music_controls_summary">在鎖定螢幕上顯示音樂控制面版</string>
     <string name="pref_lockscreen_now_playing_title">顯示曲目</string>
@@ -266,8 +267,14 @@
     <string name="pref_lockscreen_quick_unlock_control_title">快速解鎖</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">輸入 PIN 或密碼時無需按 OK 確定，刪除會被視作輸入錯誤。</string>
     <string name="pref_lockscreen_custom_app_toggle_title">啟動自訂應用程式</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">在滑桿模式中以額外的滑桿，或在撥輪模式中以額外的撥孔，來啟動自訂應用程式。</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">視乎鎖定螢幕風格，以額外的滑桿、撥輪孔、或飛環來啟動自訂應用程式</string>
     <string name="pref_lockscreen_custom_app_activity_title">自訂應用程式</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">選擇要設置的捷徑</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">選擇要移除的捷徑</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">取消</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">新增</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">移除</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">未設置</string>
     <string name="pref_lockscreen_custom_background_title">背境</string>
     <string name="pref_lockscreen_custom_background_dialog_title">選擇背境</string>
     <string name="pref_lockscreen_custom_background_summary">選擇自訂桌布，或以單一色彩填滿鎖定螢幕背境</string>
@@ -293,6 +300,15 @@
     <string name="pref_cambtn_music_controls_summary">在螢幕關閉時長按相機快門鍵來播放／暫停曲目</string>
     <string name="lockscreen_widgets_note_title">注意</string>
     <string name="lockscreen_widgets_note_summary">選擇簡約透鏡風格會將音樂面版以外所有小工具隱藏。可是為了方便轉換到其他風格，以下選項的設置將不會被清除。</string>
+    <string name="lockscreen_calendar_title">鎖定螢幕日曆</string>
+    <string name="pref_lockscreen_calendar_alarm_title">顯示日曆的下一個活動</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">顯示日曆中下一個活動的時間和標題</string>
+    <string name="pref_lockscreen_calendars_title">活動日曆</string>
+    <string name="pref_lockscreen_calendars_summary">從這些日曆中尋找活動</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">只要設有提醒的</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">只尋找那些有提醒設定的活動</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">日曆活動展望</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">尋找日曆中距今多久的未來之內的活動</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">輸入設定</string>

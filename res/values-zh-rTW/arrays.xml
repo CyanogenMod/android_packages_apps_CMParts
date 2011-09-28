@@ -23,7 +23,15 @@
         <item>15</item>
     </string-array>
 
-    <!-- skipping untranslatable /resources:0/string-array:name=entries_heapsize -->
+    <string-array name="entries_heapsize">
+        <item>12 MB</item>
+        <item>16 MB</item>
+        <item>24 MB</item>
+        <item>32 MB</item>
+        <item>48 MB</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=values_heapsize -->
 
     <string-array name="entries_install_location">
         <item>自動</item>
@@ -262,7 +270,7 @@
         <item>撥輪</item>
         <item>撥輪（改）</item>
         <item>透鏡</item>
-        <item>環</item>
+        <item>飛環</item>
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_style_values -->
@@ -271,7 +279,7 @@
         <item>滑桿</item>
         <item>撥輪</item>
         <item>撥輪（改）</item>
-        <item>環</item>
+        <item>飛環</item>
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_values -->
@@ -284,6 +292,14 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_background_values -->
 
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>預設</item>
+        <item>隱藏</item>
+        <item>置中</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_widget_layout_values -->
+
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>不顯示</item>
         <item>有線耳機</item>
@@ -292,6 +308,17 @@
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_music_headset_values -->
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 小時</item>
+        <item>6 小時</item>
+        <item>12 小時</item>
+        <item>1 天</item>
+        <item>3 天</item>
+        <item>1 週</item>
+    </string-array>
+
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_calendar_lookahead_values -->
 
     <string-array name="pref_overscroll_effect_entries">
         <item>無</item>
