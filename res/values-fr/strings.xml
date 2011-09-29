@@ -236,7 +236,6 @@
     <string name="pref_volbtn_music_controls_summary">Change la chanson en cours par longue pression sur les boutons Volume lorque l\'écran est éteint</string>
     <string name="pref_cambtn_music_controls_title">Bouton Photo pour la musique</string>
     <string name="pref_cambtn_music_controls_summary">Lecture et pause en laissant appuyé le bouton Photo lorsque l\'écran est éteint</string>
-    <string name="lockscreen_settings_title">Paramètres de l\'écran de verrouillage</string>
     <string name="pref_lockscreen_custom_background_title">Fond d\'écran</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Fond d\'écran</string>
     <string name="pref_lockscreen_custom_background_summary">Modifier l\'image, la couleur ou la teinte de l\'écran de verrouillage</string>
@@ -309,7 +308,11 @@
 
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Activer le tramage</string>
-    <string name="pref_use_dithering_summary">Le tramage améliore la qualité des images au détriment des performances (nécessite un redémarrage)</string>
+    <string name="pref_use_dithering_summary">Le tramage (dithering) améliore la qualité des images au détriment des performances (nécessite un redémarrage)</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
+    <string name="pref_purgeable_assets_summary">Le système peut libérer plus de RAM si la mémoire des bitmaps peut être réclamée (nécessite un redémarrage)</string>
 
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">Transparence 16bits</string>
@@ -469,11 +472,11 @@
     <string name="pref_flash_mode_summary">Choisir la puissance du flash : Haute ou Death Ray</string>
 
     <!-- Performance : Lock home memory -->
-    <string name="pref_lock_home_title">Garder l\'accueil en RAM</string>
+    <string name="pref_lock_home_title">Ecran d\'accueil en RAM</string>
     <string name="pref_lock_home_summary">Essayer de conserver l\'application Accueil en mémoire tout le temps</string>
 
     <!-- Performance : Lock mms app in memory -->
-    <string name="pref_lock_mms_title">Garder SMS/MMS en RAM</string>
+    <string name="pref_lock_mms_title">SMS/MMS en RAM</string>
     <string name="pref_lock_mms_summary">Essayer de conserver l\'application SMS/MMS en mémoire. Ceci permet d\'éviter de louper des messages si la mémoire est insuffisante</string>
 
     <!-- Backlight -->
