@@ -218,12 +218,12 @@ public class LockscreenWidgetsActivity extends PreferenceActivity implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_CALENDAR_SHOW_LOCATION, calendarShowLocationPref);
             return true;
-         } else if (preference == mCalendarShowDescriptionPref) {
+        } else if (preference == mCalendarShowDescriptionPref) {
             int calendarShowDescriptionPref = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_CALENDAR_SHOW_DESCRIPTION, calendarShowDescriptionPref);
             return true;
-         } else if (preference == mCalendarAlarmLookaheadPref) {
+        } else if (preference == mCalendarAlarmLookaheadPref) {
             long calendarAlarmLookaheadPref = Long.valueOf((String) newValue);
             Settings.System.putLong(getContentResolver(),
                     Settings.System.LOCKSCREEN_CALENDAR_LOOKAHEAD, calendarAlarmLookaheadPref);
