@@ -668,6 +668,18 @@
         <item>604800000</item>
     </string-array>
 
+    <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
+        <item>Do not show</item>
+        <item>Show first line</item>
+        <item>Show all</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_show_event_metadata_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <string-array name="pref_overscroll_effect_entries">
         <item>None</item>
         <item>Edge Glow</item>

@@ -79,6 +79,22 @@
             android:entries="@array/pref_lockscreen_calendar_lookahead_entries"
             android:entryValues="@array/pref_lockscreen_calendar_lookahead_values" />
 
+        <ListPreference android:key="lockscreen_calendar_show_location"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_show_location_title"
+            android:title="@string/pref_lockscreen_calendar_show_location_title"
+            android:summary="@string/pref_lockscreen_calendar_show_location_summary"
+            android:entries="@array/pref_lockscreen_calendar_show_event_metadata_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_show_event_metadata_values" />
+
+        <ListPreference android:key="lockscreen_calendar_show_description"
+            android:dependency="lockscreen_calendar_alarm"
+            android:dialogTitle="@string/pref_lockscreen_calendar_show_description_title"
+            android:title="@string/pref_lockscreen_calendar_show_description_title"
+            android:summary="@string/pref_lockscreen_calendar_show_description_summary"
+            android:entries="@array/pref_lockscreen_calendar_show_event_metadata_entries"
+            android:entryValues="@array/pref_lockscreen_calendar_show_event_metadata_values" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

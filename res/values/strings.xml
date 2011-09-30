@@ -329,6 +329,10 @@
     <string name="pref_lockscreen_calendar_reminders_only_summary">Find only events that have reminders</string>
     <string name="pref_lockscreen_calendar_lookahead_title">Calendar event lookahead</string>
     <string name="pref_lockscreen_calendar_lookahead_summary">How far in the future should calendar events be found</string>
+    <string name="pref_lockscreen_calendar_show_location_title">Display event location</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">Show event location under title</string>
+    <string name="pref_lockscreen_calendar_show_description_title">Display event description</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">Show event description under title</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Input settings</string>
