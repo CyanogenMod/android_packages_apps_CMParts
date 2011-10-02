@@ -445,10 +445,6 @@
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
 
-    <!-- Performance Settings : SD Read Ahead Cache Size -->
-    <string name="pref_sd_readahead_title">SD Read Ahead Size</string>
-    <string name="pref_sd_readahead_summary">Size of the SD Read Ahead Cache (requires reboot)</string>
-
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
     <string name="pref_lock_home_summary">Attempt to keep the current home app in memory at all times</string>

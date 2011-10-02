@@ -435,10 +435,6 @@
     <string name="pref_heapsize_title">Größe VM-Heap</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
 
-    <!-- Performance Settings : SD Read Ahead Cache Size -->
-    <string name="pref_sd_readahead_title">Größe SD Read-ahead Puffer</string>
-    <string name="pref_sd_readahead_summary">Größe des Read-ahead Puffers für die SD Karte (Neustart erforderlich)</string>
-
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Home-Anw. persistent</string>
     <string name="pref_lock_home_summary">Versuchen, die derzeitige Home-Anwendung im Speicher zu halten</string>
