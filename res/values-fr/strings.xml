@@ -310,13 +310,13 @@
     <string name="pref_use_dithering_title">Activer le tramage</string>
     <string name="pref_use_dithering_summary">Le tramage (dithering) améliore la qualité des images au détriment des performances (nécessite un redémarrage)</string>
 
-    <!-- Performance Settings : Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
-    <string name="pref_purgeable_assets_summary">Le système peut libérer plus de RAM si la mémoire des bitmaps peut être réclamée (nécessite un redémarrage)</string>
-
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">Transparence 16bits</string>
     <string name="pref_use_16bpp_alpha_summary">Utiliser le mode 16 bits améliore la vitesse de défilement et des animations, mais peut affecter l\'affichage des éléments transparents (nécessite un redémarrage)</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
+    <string name="pref_purgeable_assets_summary">Le système peut libérer plus de RAM si la mémoire des bitmaps peut être réclamée (nécessite un redémarrage)</string>
 
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Taille de pile par VM</string>

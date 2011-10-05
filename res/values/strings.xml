@@ -431,7 +431,7 @@
 
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">Use 16bit transparency</string>
-    <string name="pref_use_16bpp_alpha_summary">Using 16 bit transparency can improve scrolling performance, but may cause visual artifacts. (requires reboot)</string>
+    <string name="pref_use_16bpp_alpha_summary">Using 16bit transparency can improve scrolling performance, but may cause visual artifacts (requires reboot)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
