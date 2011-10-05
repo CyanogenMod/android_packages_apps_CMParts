@@ -576,13 +576,10 @@
     <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">Choose how the sound button changes modes</string>
-    <string name="cm_sound_mode_soundVib_vib">Sound+Vibrate/Vibrate</string>
-    <string name="cm_sound_mode_sound_vib">Sound/Vibrate</string>
-    <string name="cm_sound_mode_sound_silent">Sound/Silent</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Sound+Vib/Vib/Silent</string>
-    <string name="cm_sound_mode_sound_vib_silent">Sound/Vibrate/Silent</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sound+Vibrate/Sound/Vibrate/Silent</string>
-    <string name="cm_sound_mode_vib_silent">Vibrate/Silent</string>
+    <string name="cm_sound_mode_silent">Silent</string>
+    <string name="cm_sound_mode_vibrate">Vibrate</string>
+    <string name="cm_sound_mode_sound">Sound</string>
+    <string name="cm_sound_mode_soundVibrate">Sound+Vibrate</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 

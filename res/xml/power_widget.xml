@@ -3,9 +3,10 @@
     <PreferenceCategory android:key="pref_buttons" android:title="@string/title_buttons" />
 
     <PreferenceCategory android:title="@string/title_button_modes">
-        <ListPreference android:key="pref_brightness_mode" android:dialogTitle="@string/pref_brightness_mode_title"
+        <MultiSelectListPreference android:key="pref_brightness_mode" android:dialogTitle="@string/pref_brightness_mode_title"
             android:title="@string/pref_brightness_mode_title" android:summary="@string/pref_brightness_mode_summary"
-            android:entries="@array/entries_brightness_widget" android:entryValues="@array/values_brightness_widget" />
+            android:entries="@array/entries_brightness_widget" android:entryValues="@array/values_brightness_widget"
+            android:persistent="false" />
 
         <ListPreference android:key="pref_network_mode" android:dialogTitle="@string/pref_network_mode_title"
             android:title="@string/pref_network_mode_title" android:summary="@string/pref_network_mode_summary"
@@ -15,9 +16,10 @@
             android:title="@string/pref_screentimeout_mode_title" android:summary="@string/pref_screentimeout_mode_summary"  
             android:entries="@array/entries_screentimeout_widget" android:entryValues="@array/values_screentimeout_widget" />
 
-        <ListPreference android:key="pref_ring_mode" android:dialogTitle="@string/pref_ring_mode_title"
+        <MultiSelectListPreference android:key="pref_ring_mode" android:dialogTitle="@string/pref_ring_mode_title"
             android:title="@string/pref_ring_mode_title" android:summary="@string/pref_ring_mode_summary"
-            android:entries="@array/entries_ring_widget" android:entryValues="@array/values_ring_widget" />
+            android:entries="@array/entries_ring_widget" android:entryValues="@array/values_ring_widget"
+            android:persistent="false" />
 
         <ListPreference android:key="pref_flash_mode" android:dialogTitle="@string/pref_flash_mode_title"
             android:title="@string/pref_flash_mode_title" android:summary="@string/pref_flash_mode_summary"

@@ -480,10 +480,12 @@
     </string-array>
 
    <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Dim/40%/100%</item>
-        <item>Auto/Dim/25%/50%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Dim/100%</item>
+        <item>Auto</item>
+        <item>Dim</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
     </string-array>
 
    <string-array name="values_brightness_widget" translatable="false">
@@ -491,6 +493,8 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 
     <string-array name="entries_network_widget">
@@ -516,13 +520,10 @@
     </string-array>
 
     <string-array name="entries_ring_widget" translatable="false">
-        <item>@string/cm_sound_mode_soundVib_vib</item>
-        <item>@string/cm_sound_mode_sound_vib</item>
-        <item>@string/cm_sound_mode_sound_silent</item>
-        <item>@string/cm_sound_mode_soundVib_vib_silent</item>
-        <item>@string/cm_sound_mode_sound_vib_silent</item>
-        <item>@string/cm_sound_mode_soundVib_sound_vib_silent</item>
-        <item>@string/cm_sound_mode_vib_silent</item>
+        <item>@string/cm_sound_mode_silent</item>
+        <item>@string/cm_sound_mode_vibrate</item>
+        <item>@string/cm_sound_mode_sound</item>
+        <item>@string/cm_sound_mode_soundVibrate</item>
     </string-array>
 
     <string-array name="values_ring_widget" translatable="false">
@@ -530,9 +531,6 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
     </string-array>
 
     <string-array name="entries_flash_widget">
