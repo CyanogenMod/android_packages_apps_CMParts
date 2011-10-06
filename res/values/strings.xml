@@ -624,6 +624,8 @@
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
+    <string name="sound_lock_volume_keys_title">Lock volume keys</string>
+    <string name="sound_lock_volume_keys_summary">Prevents accidental unset of silent mode by pressing volume keys</string>
     <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
     <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
     <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>

@@ -610,6 +610,8 @@
     <string name="sound_vibrate_in_call_title">Im Gespräch vibrieren</string>
     <string name="sound_vibrate_in_call_summary_on">Normale Vibration bei Benachrichtigungen während eines Gesprächs</string>
     <string name="sound_vibrate_in_call_summary_off">Keine Vibration bei Benachrichtigungen während eines Gesprächs</string>
+    <string name="sound_lock_volume_keys_title">Lautstärketasten sperren</string>
+    <string name="sound_lock_volume_keys_summary">Verhindert Verlassen des Lautlos Modus durch versehentliches Drücken der Lautstäreketasten</string>
     <string name="sound_camera_shutter_disable_title">Auslöseton deakt.</string>
     <string name="sound_camera_shutter_disable_summary_on">Kamera-Auslöseton wird nicht abgespielt</string>
     <string name="sound_camera_shutter_disable_summary_off">Kamera-Auslöseton wird abgespielt</string>
