@@ -715,4 +715,6 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Adicionar</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Remover</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">Não Acionar</string>
+    <string name="pref_use_16bpp_alpha_title">Usar transparência 16bit</string>
+    <string name="pref_use_16bpp_alpha_summary">Usando transparência 16bit pode melhorar a performance de rolagem, mas pode causar artefatos visuais (requer reinicialização)</string>
 </resources>
