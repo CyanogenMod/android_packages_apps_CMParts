@@ -102,6 +102,11 @@ public class CPUActivity extends PreferenceActivity implements
         mGovernorPref.setSummary(String.format(mGovernorFormat, temp));
         mGovernorPref.setOnPreferenceChangeListener(this);
 
+        /* Some systems might not use governors */
+        if (temp == null) {
+            PrefScreen.removePreference(mGovernorPref);
+        }
+
         temp = readOneLine(FREQ_MIN_FILE);
 
         mMinFrequencyPref = (ListPreference) PrefScreen.findPreference(MIN_FREQ_PREF);
