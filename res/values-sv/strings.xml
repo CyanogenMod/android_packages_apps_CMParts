@@ -399,6 +399,8 @@
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Använd ytgråtonsändring</string>
     <string name="pref_use_dithering_summary">Gråtonsändring av ytor förbättrar bildkvaliteten på bekostnad av prestanda (kräver omstart)</string>
+    <string name="pref_use_16bpp_alpha_title">Använd 16 bitars genomskinlighet</string>
+    <string name="pref_use_16bpp_alpha_summary">Att använda 16 bitars genomskinlighet kan förbättra prestandan vid scrollning, men kan orsaka visuella artefakter (kräver omstart)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Tillåt tömning av tillgångar</string>

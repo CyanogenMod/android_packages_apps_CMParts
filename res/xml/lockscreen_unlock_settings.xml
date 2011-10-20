@@ -4,9 +4,17 @@
     <PreferenceCategory android:title="@string/general_title"
         android:key="pref_category_unlock_settings">
 
+        <CheckBoxPreference android:key="pref_lockscreen_disable_on_security"
+            android:title="@string/pref_lockscreen_disable_on_security_title"
+            android:summary="@string/pref_lockscreen_disable_on_security_summary" />
+
         <CheckBoxPreference android:key="pref_trackball_unlock"
             android:title="@string/pref_trackball_unlock_title"
             android:summary="@string/pref_trackball_unlock_summary" />
+
+        <CheckBoxPreference android:key="pref_slider_unlock"
+            android:title="@string/pref_slider_unlock_title"
+            android:summary="@string/pref_slider_unlock_summary" />
 
         <CheckBoxPreference android:key="pref_menu_unlock"
             android:title="@string/pref_menu_unlock_title"

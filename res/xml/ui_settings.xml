@@ -40,6 +40,9 @@
 
 		<CheckBoxPreference android:key="pref_pinch_reflow"
 			android:title="@string/pref_pinch_reflow_title" android:summary="@string/pref_pinch_reflow_summary" />
+
+		<CheckBoxPreference android:key="pref_share_screenshot"
+			android:title="@string/pref_share_screenshot_title" android:summary="@string/pref_share_screenshot_summary" />
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/ui_overscroll_title">

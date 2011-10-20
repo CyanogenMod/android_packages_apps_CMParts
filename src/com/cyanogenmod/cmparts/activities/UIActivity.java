@@ -58,6 +58,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
 
     private static final String POWER_PROMPT_PREF = "power_dialog_prompt";
 
+    private static final String SHARE_SCREENSHOT_PREF = "pref_share_screenshot";
+
     private static final String OVERSCROLL_PREF = "pref_overscroll_effect";
 
     private static final String OVERSCROLL_WEIGHT_PREF = "pref_overscroll_weight";
@@ -67,6 +69,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     private CheckBoxPreference mPowerPromptPref;
 
     private ListPreference mRenderEffectPref;
+
+    private CheckBoxPreference mShareScreenshotPref;
 
     private ListPreference mOverscrollPref;
 
@@ -105,6 +109,11 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         mRenderEffectPref.setOnPreferenceChangeListener(this);
         updateFlingerOptions();
 
+        /* Share Screenshot */
+        mShareScreenshotPref = (CheckBoxPreference) prefSet.findPreference(SHARE_SCREENSHOT_PREF);
+        mShareScreenshotPref.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.SHARE_SCREENSHOT, 0) == 1);
+
         /* Overscroll Effect */
         mOverscrollPref = (ListPreference) prefSet.findPreference(OVERSCROLL_PREF);
         int overscrollEffect = Settings.System.getInt(getContentResolver(),
@@ -139,6 +148,11 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         } else if (preference == mPinchReflowPref) {
             value = mPinchReflowPref.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.WEB_VIEW_PINCH_REFLOW,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mShareScreenshotPref) {
+            value = mShareScreenshotPref.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.SHARE_SCREENSHOT,
                     value ? 1 : 0);
             return true;
         } else if (preference == mPowerPromptPref) {

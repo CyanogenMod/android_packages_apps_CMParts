@@ -405,6 +405,10 @@
     <string name="pref_use_dithering_title">Abilita dithering</string>
     <string name="pref_use_dithering_summary">Il dithering migliora la qualità dell\'immagine a scapito delle performance (riavvio richiesto)</string>
 
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">Usa trasparenza a 16bit</string>
+    <string name="pref_use_16bpp_alpha_summary">La modalità a 16bit migliora la velocità di scrolling ma può influenzare negativamente la visualizzazione degli elementi trasparenti (riavvio richiesto)</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Recupera memoria bitmap</string>
     <string name="pref_purgeable_assets_summary">Permette al sistema di recuperare la memoria occupata dalle bitmap (riavvio richiesto)</string>

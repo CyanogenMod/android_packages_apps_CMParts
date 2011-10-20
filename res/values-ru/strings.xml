@@ -399,6 +399,10 @@
     <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
     <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
 
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
+    <string name="pref_use_16bpp_alpha_summary">Использование 16-битной прозрачности может улучшить скорость прокрутки, но возможно появление визуальных артефактов (требуется перезагрузка)</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Разрешить сброс активов</string>
     <string name="pref_purgeable_assets_summary">Система может освободить больше памяти, когда это необходимо, если память активов битмапов разрешено освобождать (требуется перезагрузка)</string>

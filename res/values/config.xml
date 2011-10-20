@@ -3,6 +3,9 @@
     <!-- Whether or not to display the trackball settings -->
     <bool name="has_trackball">true</bool>
 
+    <!--  Whether or not to display the slider settings -->
+    <bool name="has_slider">false</bool>
+
     <!-- Whether or not to display the camera button settings -->
     <bool name="has_camera_button">false</bool>
 

@@ -18,6 +18,7 @@ package com.cyanogenmod.cmparts.activities;
 
 import java.io.File;
 
+import android.app.admin.DevicePolicyManager;
 import android.gesture.GestureLibraries;
 import android.gesture.GestureLibrary;
 import android.os.Bundle;
@@ -33,7 +34,11 @@ import com.cyanogenmod.cmparts.R;
 
 public class LockscreenUnlockActivity extends PreferenceActivity {
 
+    private final static String LOCKSCREEN_DISABLE_ON_SECURITY = "pref_lockscreen_disable_on_security";
+
     private static final String TRACKBALL_UNLOCK_PREF = "pref_trackball_unlock";
+
+    private static final String SLIDER_UNLOCK_PREF = "pref_slider_unlock";
 
     private static final String MENU_UNLOCK_PREF = "pref_menu_unlock";
 
@@ -43,7 +48,11 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
 
     private static final String LOCKSCREEN_UNLOCK_SETTINGS = "pref_category_unlock_settings";
 
+    private CheckBoxPreference mLockscreenDisableOnSecurity;
+
     private CheckBoxPreference mTrackballUnlockPref;
+
+    private CheckBoxPreference mSliderUnlockPref;
 
     private CheckBoxPreference mMenuUnlockPref;
 
@@ -60,6 +69,12 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        /* skip lockscreen on pin/pattern/password */
+        mLockscreenDisableOnSecurity = (CheckBoxPreference) prefSet
+            .findPreference(LOCKSCREEN_DISABLE_ON_SECURITY);
+        mLockscreenDisableOnSecurity.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_DISABLE_ON_SECURITY, 0) == 1);
+
         /* Quick Unlock Screen Control */
         mQuickUnlockScreenPref = (CheckBoxPreference) prefSet
                 .findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL);
@@ -70,6 +85,11 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
         mTrackballUnlockPref = (CheckBoxPreference) prefSet.findPreference(TRACKBALL_UNLOCK_PREF);
         mTrackballUnlockPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.TRACKBALL_UNLOCK_SCREEN, 0) == 1);
+
+        /* Slider Unlock */
+        mSliderUnlockPref = (CheckBoxPreference) prefSet.findPreference(SLIDER_UNLOCK_PREF);
+        mSliderUnlockPref.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.SLIDER_UNLOCK_SCREEN, 0) == 1);
 
         /* Menu Unlock */
         mMenuUnlockPref = (CheckBoxPreference) prefSet.findPreference(MENU_UNLOCK_PREF);
@@ -87,6 +107,9 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
         if (!getResources().getBoolean(R.bool.has_trackball)) {
             generalCategory.removePreference(mTrackballUnlockPref);
         }
+        if (!getResources().getBoolean(R.bool.has_slider)) {
+            generalCategory.removePreference(mSliderUnlockPref);
+        }
 
     }
 
@@ -99,7 +122,12 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;
-        if (preference == mQuickUnlockScreenPref) {
+        if (preference == mLockscreenDisableOnSecurity) {
+            value = mLockscreenDisableOnSecurity.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_DISABLE_ON_SECURITY, value ? 1 : 0);
+            return true;
+        } else if (preference == mQuickUnlockScreenPref) {
             value = mQuickUnlockScreenPref.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, value ? 1 : 0);
@@ -110,6 +138,12 @@ public class LockscreenUnlockActivity extends PreferenceActivity {
                     value ? 1 : 0);
             refreshDisableUnlock();
             return true;
+        } else if (preference == mSliderUnlockPref) {
+          value = mSliderUnlockPref.isChecked();
+          Settings.System.putInt(getContentResolver(), Settings.System.SLIDER_UNLOCK_SCREEN,
+                  value ? 1 : 0);
+          refreshDisableUnlock();
+          return true;
         } else if (preference == mMenuUnlockPref) {
             value = mMenuUnlockPref.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.MENU_UNLOCK_SCREEN,

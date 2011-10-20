@@ -130,6 +130,10 @@
     <string name="pref_pinch_reflow_title">Reflow after pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow webview content immediately after pinch to zoom in</string>
 
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Share screenshots</string>
+    <string name="pref_share_screenshot_summary">Show share menu on taking a screenshot</string>
+
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Overscrolling</string>
     <string name="pref_overscroll_title">Overscroll effect</string>
@@ -240,7 +244,7 @@
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>
 
     <!-- Lockscreen Overview -->
-    <string name="pref_lockscreen_disable_on_security_title">Disable lockscreen on security</string>
+    <string name="pref_lockscreen_disable_on_security_title">Skip on security</string>
     <string name="pref_lockscreen_disable_on_security_summary">Disable the lockscreen if security screen lock (pattern, PIN, password) is enabled</string>
     <string name="pref_lockscreen_stylecfg_title">Style options</string>
     <string name="pref_lockscreen_stylecfg_summary">Configure the lockscreen style and the corresponding settings</string>
@@ -274,6 +278,8 @@
     <string name="pref_volume_wake_summary">Pressing the volume up/down wakes the device. Intended for devices with hard to press power key</string>
     <string name="pref_trackball_unlock_title">Trackball unlock</string>
     <string name="pref_trackball_unlock_summary">Pressing the trackball unlocks the device</string>
+    <string name="pref_slider_unlock_title">Sliding keyboard unlock</string>
+    <string name="pref_slider_unlock_summary">Sliding out the keyboard unlocks the device</string>
     <string name="pref_menu_unlock_title">Menu unlock</string>
     <string name="pref_menu_unlock_summary">Pressing the menu button unlocks the device</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Quick Unlock</string>

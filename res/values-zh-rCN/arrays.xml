@@ -23,6 +23,14 @@
         <item>15</item>
     </string-array>
 
+    <string-array name="entries_heapsize">
+        <item>12 MB</item>
+        <item>16 MB</item>
+        <item>24 MB</item>
+        <item>32 MB</item>
+        <item>48 MB</item>
+    </string-array>
+  
     <string-array name="entries_install_location">
         <item>自动</item>
         <item>内部存储</item>
@@ -246,4 +254,32 @@
         <item>自定义程序</item>
         <item>显示 / 隐藏通知列</item>
     </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>跟随系统设定</item>
+        <item>启用</item>
+        <item>停用</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>默认</item>
+        <item>隐藏</item>
+        <item>居中</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3个小时</item>
+        <item>6个小时</item>
+        <item>12个小时</item>
+        <item>1天</item>
+        <item>3天</item>
+        <item>1周</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>填充颜色</item>
+        <item>自定义图片</item>
+        <item>默认墙纸</item>
+    </string-array>
+
 </resources>

@@ -405,6 +405,10 @@
     <string name="pref_use_dithering_title">啟用表面抖動</string>
     <string name="pref_use_dithering_summary">抖動表面會以效能作為代價來提升圖像的品質\n（需要重新啟動）</string>
 
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">使用 16 位元透明度</string>
+    <string name="pref_use_16bpp_alpha_summary">能提升捲動效能，但或會導致影像異常\n（需要重新啟動）</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">允許清除資源</string>
     <string name="pref_purgeable_assets_summary">如果點陣圖資源的記憶體可以被回收，讓系統能夠視乎需要釋放更多的記憶體\n（需要重新啟動）</string>

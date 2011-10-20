@@ -119,13 +119,41 @@
     <string name="pref_overscroll_weight_summary">选择越界对象的程度</string>
 
     <!-- User interface : Lock Screen -->
+    <string name="pref_lockscreen_disable_on_security_title">只显示解锁屏幕</string>
+    <string name="pref_lockscreen_disable_on_security_summary">当屏幕安全性（图形、PIN、密码）为启用时不显示锁定屏幕，直接显示解锁输入介面</string>
     <string name="pref_lockscreen_delay_title">延迟</string>
+    <string name="pref_lockscreen_widgets_layout_title">小部件布局</string>
+    <string name="pref_lockscreen_widgets_layout_summary">切换时钟,日期,载体,状态布局</string>
+    <string name="pref_lockscreen_security_title">安全性锁定</string>
+    <string name="pref_lockscreen_security_delay_note_title">注意</string>
+    <string name="pref_lockscreen_security_delay_note_summary">当屏幕锁定安全性设定为“无”时，被使用的将会是这一组延迟时间</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">屏幕超时延迟</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">屏幕关闭延迟</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">屏幕超时后延迟多久才启用安全性锁定屏幕</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">屏幕关闭后延迟多久才启用安全性锁定屏幕</string>
+    <string name="pref_lockscreen_slide_title">滑动式锁定</string>
+    <string name="pref_lockscreen_slide_delay_note_title">注意</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">即使这启用了，安全性锁定延迟的时间亦必须比滑动式锁定延迟的时间长，滑动式锁定屏幕才会被显示出来</string>
+    <string name="pref_lockscreen_slide_delay_title">启用滑动式锁定延迟</string>
+    <string name="pref_lockscreen_slide_delay_summary">以另外的延迟时间显示滑动式锁定屏幕，然后才显示安全性锁定屏幕</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">屏幕超时延迟</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">屏幕关闭延迟</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">屏幕超时后延迟多久才启用滑动式锁定屏幕</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">屏幕关闭后延迟多久才启用滑动式锁定屏幕</string>
+
+    <string name="camera_title">相机</string>
+    <string name="sound_camera_shutter_disable_title">相机快门静音</string>
+    <string name="sound_camera_shutter_disable_summary_on">快门声音不开启</string>
+    <string name="sound_camera_shutter_disable_summary_off">快门声音开启</string>
+    <string name="sound_camera_shutter_disable_warning_title">警告: 这可能是违法的!</string>
+    <string name="sound_camera_shutter_disable_warning">相机快门静音在某些地区是违法的. 你确定要静音吗?</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">选择颜色</string>
     <string name="msg_color_picker">点击中间的颜色进行确认。\n点击返回键取消。</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">设定</string>
     <string name="dialog_color_trackball">选择颜色</string>
     <string name="dialog_blink_trackball">选择闪烁频率</string>
     <string name="color_trackball_flash_title">闪烁颜色</string>
@@ -220,6 +248,12 @@
     <string name="pref_lockscreen_custom_app_toggle_title">自定义程序启动</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">在滑动风格时显示第二个滑动条，在旋转风格时显示自定义程序按键</string>
     <string name="pref_lockscreen_custom_app_activity_title">自定义程序</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">选择要设置的快捷方式</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">选择要移除的快捷方式</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">取消</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">新增</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">移除</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">未设置</string>
     <string name="pref_lockscreen_custom_icon_style_title">自定义程序消息图标</string>
     <string name="pref_lockscreen_custom_icon_style_summary">为自定义程序使用消息图标代替 CM 图标</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">下拉解锁</string>
@@ -327,6 +361,10 @@
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">启用贴图插值抖动</string>
     <string name="pref_use_dithering_summary">启用贴图插值抖动可以提高图像质量，但会影响性能 (需要重启)</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">使用16位透明度</string>
+    <string name="pref_use_16bpp_alpha_summary">使用16位透明度能改善滚动性能, 但可能影响视觉效果 (需要重启)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">允许清理图片</string>
@@ -642,4 +680,41 @@
     <string name="perm_enable_warning_message">警告!\n撤销大多数权限将有可能导致应用程序出现故障。如果具有撤销权限强制关闭应用程序，请给予预期的权限或不使用该应用程序。请不要发送错误报告给Cyanogenmod如果具有撤销权限的应用程序不按预期工作！</string>
     <string name="perm_enable_warning_title">请确认?</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">使用内部存储空间</string>
+    <string name="pref_switch_storage_summary_on">使用延伸的内部存储空间作为存储应用程序和媒体的外在储存空间\n（需要重新启动）</string>
+    <string name="pref_switch_storage_summary_off">使用抽取式记忆卡作为储存应用程序和媒体的外在储存空间\n（需要重新启动）</string>
+    <string name="pref_storage_switch_unavailable">此装置没有配备延伸的内部储存空间</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">触动反馈</string>
+    <string name="expanded_haptic_feedback_summary">启用／停用触动反馈</string>
+
+    <string name="ui_status_bar_cm_signal_text_title">替代的信号显示</string>
+    <string name="ui_status_bar_cm_signal_text_summary">显示信号的dBm数值或条状图示</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">信号条状图示</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">信号文字</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">信号文字、dBm</string>
+    <string name="ui_status_bar_headset_title">显示耳机</string>
+    <string name="ui_status_bar_headset_summary">在插入耳机时是否要显示耳机</string>
+
+    <string name="pref_lockscreen_custom_background_title">背景</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">选择背景</string>
+    <string name="pref_lockscreen_custom_background_summary">选择自定义桌布，或以单一色彩填满锁定屏幕背景</string>
+    <string name="pref_lockscreen_custom_background_summary_color">填满色彩</string>
+    <string name="pref_lockscreen_custom_background_summary_image">自定义桌布</string>
+    <string name="pref_lockscreen_custom_background_summary_default">预设背景</string>
+    <string name="pref_lockscreen_background_result_successful">背景已变更。</string>
+    <string name="pref_lockscreen_background_result_not_successful">未更改背景。</string>
+
+    <string name="lockscreen_music_title">音乐控制</string>
+    <string name="lockscreen_calendar_title">锁屏日历</string>
+    <string name="pref_lockscreen_calendar_alarm_title">显示日历的下一个活动</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">显示日历中下一个活动的时间和标题</string>
+    <string name="pref_lockscreen_calendars_title">活动日历</string>
+    <string name="pref_lockscreen_calendars_summary">从这些日历中寻找活动</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">只要设有提醒的</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">只查找那些有提醒设定的活动</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">日历活动展望</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">查找日历中距今多久的未来之内的活动</string>
 </resources>
