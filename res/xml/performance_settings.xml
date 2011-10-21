@@ -40,6 +40,10 @@
         <CheckBoxPreference android:key="pref_lock_mms"
             android:title="@string/pref_lock_mms_title" android:summary="@string/pref_lock_mms_summary" />
 
+        <CheckBoxPreference android:key="pref_gmaps_hack"
+            android:dialogTitle="@string/pref_gmaps_hack_title"
+            android:title="@string/pref_gmaps_hack_title" android:summary="@string/pref_gmaps_hack_summary" />
+
         <ListPreference android:key="pref_heapsize"
             android:dialogTitle="@string/pref_heapsize_title"
             android:title="@string/pref_heapsize_title" android:summary="@string/pref_heapsize_summary"

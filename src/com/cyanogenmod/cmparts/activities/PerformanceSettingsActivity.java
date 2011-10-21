@@ -93,6 +93,14 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final int LOCK_MMS_DEFAULT = 1;
 
+    private static final String GMAPS_HACK_PREF = "pref_gmaps_hack";
+
+    private static final String GMAPS_HACK_PROP = "sd_readahead";
+
+    private static final String GMAPS_HACK_PERSIST_PROP = "persist.sys.gmaps_hack";
+
+    private static final String GMAPS_HACK_DEFAULT = "1";
+
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mJitPref;
@@ -108,6 +116,8 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mLockHomePref;
 
     private CheckBoxPreference mLockMmsPref;
+
+    private CheckBoxPreference mGmapsHackPref;
 
     private ListPreference mHeapsizePref;
 
@@ -170,6 +180,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mLockMmsPref = (CheckBoxPreference) prefSet.findPreference(LOCK_MMS_PREF);
         mLockMmsPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCK_MMS_IN_MEMORY, LOCK_MMS_DEFAULT) == 1);
+
+        mGmapsHackPref = (ListPreference) prefSet.findPreference(GMAPS_HACK_PREF);
+        mGmapsHackPref.setValue(SystemProperties.get(GMAPS_HACK_PERSIST_PROP,
+                SystemProperties.get(GMAPS_HACK_PROP, GMAPS_HACK_DEFAULT)));
+        mSdReadAheadPref.setOnPreferenceChangeListener(this);
 
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
