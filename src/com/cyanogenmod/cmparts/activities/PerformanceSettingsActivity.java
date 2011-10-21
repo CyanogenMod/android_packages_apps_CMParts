@@ -95,8 +95,6 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String GMAPS_HACK_PREF = "pref_gmaps_hack";
 
-    private static final String GMAPS_HACK_PROP = "sd_readahead";
-
     private static final String GMAPS_HACK_PERSIST_PROP = "persist.sys.gmaps_hack";
 
     private static final String GMAPS_HACK_DEFAULT = "1";
@@ -181,10 +179,9 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mLockMmsPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCK_MMS_IN_MEMORY, LOCK_MMS_DEFAULT) == 1);
 
-        mGmapsHackPref = (ListPreference) prefSet.findPreference(GMAPS_HACK_PREF);
-        mGmapsHackPref.setValue(SystemProperties.get(GMAPS_HACK_PERSIST_PROP,
-                SystemProperties.get(GMAPS_HACK_PROP, GMAPS_HACK_DEFAULT)));
-        mGmapsHackPref.setOnPreferenceChangeListener(this);
+        mGmapsHackPref = (CheckBoxPreference) prefSet.findPreference(GMAPS_HACK_PREF);
+        String gmapshack = SystemProperties.get(GMAPS_HACK_PERSIST_PROP, GMAPS_HACK_DEFAULT);
+        mGmapsHackPref.setChecked("1".equals(gmapshack));
 
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
@@ -241,6 +238,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         if (preference == mLockMmsPref) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCK_MMS_IN_MEMORY, mLockMmsPref.isChecked() ? 1 : 0);
+            return true;
+        }
+
+        if (preference == mGmapsHackPref) {
+            SystemProperties.set(GMAPS_HACK_PERSIST_PROP,
+                    mGmapsHackPref.isChecked() ? "1" : "0");
             return true;
         }
 
