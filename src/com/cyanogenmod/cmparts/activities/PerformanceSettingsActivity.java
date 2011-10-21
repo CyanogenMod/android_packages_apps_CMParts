@@ -184,7 +184,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mGmapsHackPref = (ListPreference) prefSet.findPreference(GMAPS_HACK_PREF);
         mGmapsHackPref.setValue(SystemProperties.get(GMAPS_HACK_PERSIST_PROP,
                 SystemProperties.get(GMAPS_HACK_PROP, GMAPS_HACK_DEFAULT)));
-        mSdReadAheadPref.setOnPreferenceChangeListener(this);
+        mGmapsHackPref.setOnPreferenceChangeListener(this);
 
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
