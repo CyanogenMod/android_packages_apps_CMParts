@@ -30,7 +30,7 @@
         <item>32 MB</item>
         <item>48 MB</item>
     </string-array>
-  
+
     <string-array name="entries_install_location">
         <item>自动</item>
         <item>内部存储</item>

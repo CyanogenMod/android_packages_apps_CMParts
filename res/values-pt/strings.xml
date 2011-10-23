@@ -714,4 +714,10 @@
     <string name="pref_lockscreen_ring_custom_apps_notset">Não Acionar</string>
     <string name="pref_use_16bpp_alpha_title">Usar transparência 16bit</string>
     <string name="pref_use_16bpp_alpha_summary">Usando transparência 16bit pode melhorar a performance de rolagem, mas pode causar artefatos visuais (requer reinicialização)</string>
+    <string name="cm_brightness_mode_dim">Escuro</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="pref_slider_unlock_title">Destravar ao abrir o teclado</string>
+    <string name="pref_slider_unlock_summary">Ao abrir o teclado o dispositivo é destravado</string>
+    <string name="pref_share_screenshot_title">Compartilhar capturas de tela</string>
+    <string name="pref_share_screenshot_summary">Mostrar menu para compartilhar quando capturar a tela</string>
 </resources>
