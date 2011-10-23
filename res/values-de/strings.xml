@@ -442,6 +442,10 @@
     <string name="pref_lock_mms_title">MMS-Anw. persistent</string>
     <string name="pref_lock_mms_summary">Versuchen, die MMS-Anwendung im Speicher zu halten, um zu verhinden, dass Nachrichten bei wenig Speicher verloren gehen</string>
 
+    <!-- Performance : GMAPS hack -->
+    <string name="pref_gmaps_hack_title">GMAPS hack</string>
+    <string name="pref_gmaps_hack_summary">Mehr freier RAM durch beenden des NetworkLocationService. Latitude kann die Position nicht mehr zuverlässig melden. (Neustart erforderlich)</string>
+
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">HC SVNT DRACONES</string>
     <string name="performance_settings_warning">Diese Optionen beeinflussen die Leistung des Systems, möglicherweise zum Schlechten. Die Optionen sind zum Experimentieren gedacht - bitte melden Sie keine Fehler, wenn Sie die Standardeinstellungen geändert haben.</string>
