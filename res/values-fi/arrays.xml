@@ -114,13 +114,6 @@
         <item>Musiikin äänenvoimakkuus (oletus)</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Himmeä/40%/100%</item>
-        <item>Auto/Himmeä/25%/50%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Himmeä/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
         <item>2G/3G Vain</item>   

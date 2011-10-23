@@ -105,12 +105,6 @@
     <item>הגדרות מערכת מוחלשות</item>
     <item>עוצמת מוזיקה (ברירת מחדל)</item>
   </string-array>
-  <string-array name="entries_brightness_widget" formatted="false">
-    <item>אוטומטי/עמעום/40%/100%</item>
-    <item>אוטומטי/עמעום/25%/75%/100%</item>
-    <item>אוטומטי/25%/100%</item>
-    <item>עמעום/100%</item>
-  </string-array>
   <string-array name="entries_network_widget">
     <item>2G/3G 2G</item>
     <item>2G/3G בלבד</item>

@@ -456,19 +456,18 @@
     <string name="title_button_modes">ボタンモード</string>
     <string name="pref_brightness_mode_title">明るさ</string>
     <string name="pref_brightness_mode_summary">明るさトグルで変更するモードの選択</string>
+    <string name="cm_brightness_mode_auto">自動</string>
+    <string name="cm_brightness_mode_dim">暗い</string>
     <string name="pref_network_mode_title">ネットワーク</string>
     <string name="pref_network_mode_summary">ネットワークのトグルで変更するモードの選択</string>
     <string name="pref_screentimeout_mode_title">スクリーンタイムアウト</string>
     <string name="pref_screentimeout_mode_summary">スクリーンタイムアウトトグルで変更するモードの選択</string>
     <string name="pref_ring_mode_title">サウンド</string>
     <string name="pref_ring_mode_summary">サウンドトグルで変更するモードの選択</string>
-    <string name="cm_sound_mode_soundVib_vib">音と振動/振動</string>
-    <string name="cm_sound_mode_sound_vib">音/振動</string>
-    <string name="cm_sound_mode_sound_silent">音/サイレント</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">音と振動/振動/サイレント</string>
-    <string name="cm_sound_mode_sound_vib_silent">音/振動/サイレント</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">音と振動/音/振動/サイレント</string>
-    <string name="cm_sound_mode_vib_silent">振動/サイレント</string>
+    <string name="cm_sound_mode_silent">サイレント</string>
+    <string name="cm_sound_mode_vibrate">振動</string>
+    <string name="cm_sound_mode_sound">音</string>
+    <string name="cm_sound_mode_soundVibrate">音と振動</string>
     <string name="pref_flash_mode_title">フラッシュ</string>
     <string name="pref_flash_mode_summary">HighかDeath Rayを選択</string>
 

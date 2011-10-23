@@ -361,13 +361,10 @@
     <string name="pref_screentimeout_mode_summary">Escolher como o botão de tempo de ecrã altera o tempo de ecrã</string>
     <string name="pref_ring_mode_title">Modos de som</string>
     <string name="pref_ring_mode_summary">Escolher como o botão de som altera o som</string>
-    <string name="cm_sound_mode_soundVib_vib">Som+Vibrar/Vibrar</string>
-    <string name="cm_sound_mode_sound_vib">Som/Vibrar</string>
-    <string name="cm_sound_mode_sound_silent">Som/Silêncio</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Som+Vibrar/Vibrar/Silêncio</string>
-    <string name="cm_sound_mode_sound_vib_silent">Som/Vibrar/Silêncio</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Som+Vibrar/Som/Vibrar/Silêncio</string>
-    <string name="cm_sound_mode_vib_silent">Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_silent">Silêncio</string>
+    <string name="cm_sound_mode_vibrate">Vibrar</string>
+    <string name="cm_sound_mode_sound">Som</string>
+    <string name="cm_sound_mode_soundVibrate">Som+Vibrar</string>
     <string name="pref_flash_mode_title">Modo flash</string>
     <string name="pref_flash_mode_summary">Escolher elevado/raio mortal</string>
 

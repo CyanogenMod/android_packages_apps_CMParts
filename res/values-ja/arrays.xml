@@ -184,13 +184,6 @@
         <item>両方</item>
     </string-array>
 
-    <string-array name="entries_brightness_widget" formatted="false">
-        <item>自動/暗い/40%/100%</item>
-        <item>自動/暗い/25%/50%/75%/100%</item>
-        <item>自動/25%/100%</item>
-        <item>暗い/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G/3Gと2G</item>
         <item>2G/3Gのみ</item>

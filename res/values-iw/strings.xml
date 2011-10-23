@@ -296,19 +296,18 @@
   <string name="title_button_modes">מצבי לחצן</string>
   <string name="pref_brightness_mode_title">מצבי בהירות</string>
   <string name="pref_brightness_mode_summary">בחר כיצד כפתור הבהירות משנה מצבים</string>
+  <string name="cm_brightness_mode_auto">אוטומטי</string>
+  <string name="cm_brightness_mode_dim">עמעום</string>
   <string name="pref_network_mode_title">מצבי רשת</string>
   <string name="pref_network_mode_summary">בחר כיצד הלחצן מצבי רשת משנה מצבים</string>
   <string name="pref_screentimeout_mode_title">מצבי כיבוי מסך</string>
   <string name="pref_screentimeout_mode_summary">בחר כיצד הלחצן כיבוי מסך משנה מצבים</string>
   <string name="pref_ring_mode_title">מצבי קול</string>
   <string name="pref_ring_mode_summary">בחר כיצד לחצן השמע משנה מצבים</string>
-  <string name="cm_sound_mode_soundVib_vib">צליל+רטט/רטט</string>
-  <string name="cm_sound_mode_sound_vib">צליל/רטט</string>
-  <string name="cm_sound_mode_sound_silent">צליל/שקט</string>
-  <string name="cm_sound_mode_soundVib_vib_silent">צליל+רטט/רטט/שקט</string>
-  <string name="cm_sound_mode_sound_vib_silent">צליל/רטט/שקט</string>
-  <string name="cm_sound_mode_soundVib_sound_vib_silent">צליל+רטט/צליל/רטט/שקט</string>
-  <string name="cm_sound_mode_vib_silent">רטט/שקט</string>
+  <string name="cm_sound_mode_silent">שקט</string>
+  <string name="cm_sound_mode_vibrate">רטט</string>
+  <string name="cm_sound_mode_sound">צליל</string>
+  <string name="cm_sound_mode_soundVibrate">צליל+רטט</string>
   <string name="pref_flash_mode_title">מצב פלאש</string>
   <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 

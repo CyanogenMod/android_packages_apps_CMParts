@@ -147,13 +147,6 @@
         <item>音乐音量 (默认)</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>自动 / 最暗 /40%/100%</item>
-        <item>自动 / 最暗 /25%/50%/75%/100%</item>
-        <item>自动 / 25%/100%</item>
-        <item>自动 / 100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G / 3G+2G</item>  
         <item>仅 2G / 3G</item>   

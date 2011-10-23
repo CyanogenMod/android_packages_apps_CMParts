@@ -413,19 +413,18 @@
     <string name="title_button_modes">Modos de botón</string>
     <string name="pref_brightness_mode_title">Modos de brillo</string>
     <string name="pref_brightness_mode_summary">Elegir como cambia el brillo con el botón</string>
+    <string name="cm_brightness_mode_auto">Automático</string>
+    <string name="cm_brightness_mode_dim">Difuminado</string>
     <string name="pref_network_mode_title">Modos de red</string>
     <string name="pref_network_mode_summary">Elegir como cambian los modos con el botón</string>
     <string name="pref_screentimeout_mode_title">Modos de tiempo de espera de pantalla</string>
     <string name="pref_screentimeout_mode_summary">Elegir como cambia el Tiempo de espera de pantalla con el botón</string>
     <string name="pref_ring_mode_title">Modos de sonido</string>
     <string name="pref_ring_mode_summary">Elegir como cambia el sonido con el botón</string>
-    <string name="cm_sound_mode_soundVib_vib">Sonido+Vibración/Vibración</string>
-    <string name="cm_sound_mode_sound_vib">Sonido/Vibración</string>
-    <string name="cm_sound_mode_sound_silent">Sonido/Silencio</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Sonido+Vib/Vib/Silencio</string>
-    <string name="cm_sound_mode_sound_vib_silent">Sonido/Vibración/Silencio</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sonido+Vibración/Sonido/Vibración/Silencio</string>
-    <string name="cm_sound_mode_vib_silent">Vibración/Silencio</string>
+    <string name="cm_sound_mode_silent">Silencio</string>
+    <string name="cm_sound_mode_vibrate">Vibración</string>
+    <string name="cm_sound_mode_sound">Sonido</string>
+    <string name="cm_sound_mode_soundVibrate">Sonido+Vibración</string>
     <string name="pref_flash_mode_title">Modo de flash</string>
     <string name="pref_flash_mode_summary">Elegir Alto / Rayo Mortal(Evo)</string>
 

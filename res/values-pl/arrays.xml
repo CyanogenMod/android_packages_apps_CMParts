@@ -111,13 +111,6 @@
         <item>10 dB</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Ciemny/40%/100%</item>
-        <item>Auto/Ciemny/25%/50%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Ciemny/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
         <item>2G/Tylko 3G</item>   

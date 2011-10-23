@@ -529,19 +529,18 @@
     <string name="title_button_modes">Modalità di funzionamento dei tasti</string>
     <string name="pref_brightness_mode_title">Mod. Luminosità</string>
     <string name="pref_brightness_mode_summary">Scegli le modalità del tasto per la luminosità</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Debole</string>
     <string name="pref_network_mode_title">Mod. Rete</string>
     <string name="pref_network_mode_summary">Scegli le modalità del tasto per la rete</string>
     <string name="pref_screentimeout_mode_title">Mod. Timeout</string>
     <string name="pref_screentimeout_mode_summary">Scegli le modalità del tasto per il timeout dello schermo</string>
     <string name="pref_ring_mode_title">Mod. Audio</string>
     <string name="pref_ring_mode_summary">Scegli le modalità del tasto per l\'audio</string>
-    <string name="cm_sound_mode_soundVib_vib">Suono+Vibrazione/Vibrazione</string>
-    <string name="cm_sound_mode_sound_vib">Suono/Vibrazione</string>
-    <string name="cm_sound_mode_sound_silent">Suono/Silenzioso</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Suono+Vib/Vib/Silenzioso</string>
-    <string name="cm_sound_mode_sound_vib_silent">Suono/Vibrazione/Silenzioso</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Suono+Vib/Suono/Vib/Silenzioso</string>
-    <string name="cm_sound_mode_vib_silent">Vibrazione/Silenzioso</string>
+    <string name="cm_sound_mode_silent">Silenzioso</string>
+    <string name="cm_sound_mode_vibrate">Vib</string>
+    <string name="cm_sound_mode_sound">Suono</string>
+    <string name="cm_sound_mode_soundVibrate">Suono+Vib</string>
     <string name="pref_flash_mode_title">Mod. Torcia</string>
     <string name="pref_flash_mode_summary">Scegli tra Normale e Forte / Death Ray</string>
 

@@ -211,12 +211,7 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=values_sound_limitvol -->
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>自動/暗淡/40%/100%</item>
-        <item>自動/暗淡/25%/50%/75%/100%</item>
-        <item>自動/25%/100%</item>
-        <item>暗淡/100%</item>
-    </string-array>
+   <!-- skipping untranslatable /resources:0/string-array:name=entries_brightness_widget -->
 
    <!-- skipping untranslatable /resources:0/string-array:name=values_brightness_widget -->
 

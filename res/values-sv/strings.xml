@@ -522,19 +522,18 @@
     <string name="title_button_modes">Knapplägen</string>
     <string name="pref_brightness_mode_title">Lägen för ljusstyrka</string>
     <string name="pref_brightness_mode_summary">Välj hur knappen för ljusstyrka ändrar lägen</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Dim</string>
     <string name="pref_network_mode_title">Nätverkslägen</string>
     <string name="pref_network_mode_summary">Välj hur knappen för 2G/3G ändrar lägen</string>
     <string name="pref_screentimeout_mode_title">Lägen för Skärmtidsgräns</string>
     <string name="pref_screentimeout_mode_summary">Välj hur knappen för skärmtidsgräns ändrar lägen</string>
     <string name="pref_ring_mode_title">Ljudlägen</string>
     <string name="pref_ring_mode_summary">Välj hur knappen för ljud ändrar lägen</string>
-    <string name="cm_sound_mode_soundVib_vib">Ljud+Vibration/Vibration</string>
-    <string name="cm_sound_mode_sound_vib">Ljud/Vibration</string>
-    <string name="cm_sound_mode_sound_silent">Ljud/Tyst</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Ljud+Vibration/Vibration/Tyst</string>
-    <string name="cm_sound_mode_sound_vib_silent">Ljud/Vibration/Tyst</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ljud+Vibration/Ljud/Vibration/Tyst</string>
-    <string name="cm_sound_mode_vib_silent">Vibration/Tyst</string>
+    <string name="cm_sound_mode_silent">Tyst</string>
+    <string name="cm_sound_mode_vibrate">Vibration</string>
+    <string name="cm_sound_mode_sound">Ljud</string>
+    <string name="cm_sound_mode_soundVibrate">Ljud+Vibration</string>
     <string name="pref_flash_mode_title">Blixtläge</string>
     <string name="pref_flash_mode_summary">Välj Hög / Death Ray</string>
 

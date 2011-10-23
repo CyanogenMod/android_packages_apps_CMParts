@@ -440,19 +440,18 @@
     <string name="title_button_modes">Ustawienia widżetów</string>
     <string name="pref_brightness_mode_title">Jasność</string>
     <string name="pref_brightness_mode_summary">Wybierz tryby</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Ciemny</string>
     <string name="pref_network_mode_title">Sieć</string>
     <string name="pref_network_mode_summary">Wybierz tryby</string>
     <string name="pref_screentimeout_mode_title">Wygaszenie ekranu</string>
     <string name="pref_screentimeout_mode_summary">Wybierz tryby</string>
     <string name="pref_ring_mode_title">Profil dźwięku</string>
     <string name="pref_ring_mode_summary">Wybierz tryby</string>
-    <string name="cm_sound_mode_soundVib_vib">Dźwięk+Wibracje/Wibracje</string>
-    <string name="cm_sound_mode_sound_vib">Dźwięk/Wibracje</string>
-    <string name="cm_sound_mode_sound_silent">Dźwięk/Cichy</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Dźwięk+Wib/Wib/Cichy</string>
-    <string name="cm_sound_mode_sound_vib_silent">Dźwięk/Wibracje/Cichy</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Dźwięl+Wib/Dźwięk/Wib/Cichy</string>
-    <string name="cm_sound_mode_vib_silent">Wib/Cichy</string>
+    <string name="cm_sound_mode_silent">Cichy</string>
+    <string name="cm_sound_mode_vibrate">Wib</string>
+    <string name="cm_sound_mode_sound">Dźwięk</string>
+    <string name="cm_sound_mode_soundVibrate">Dźwięl+Wib</string>
     <string name="pref_flash_mode_title">Latarka</string>
     <string name="pref_flash_mode_summary">Dostosuj siłę</string>
 

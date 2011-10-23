@@ -167,13 +167,6 @@
     <item>Musik-Lautstärke (Standard)</item>
   </string-array>
 
-  <string-array name="entries_brightness_widget" formatted="false">
-    <item>Auto&#x2009;/&#x2009;Dunkel&#x2009;/\n40&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Auto&#x2009;/&#x2009;Dunkel&#x2009;/\n25&#x2009;%&#x2009;/&#x2009;50&#x2009;%&#x2009;/&#x2009;75&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Auto&#x2009;/\n25&#x2009;%&#x2009;/&#x2009;100&#x2009;%</item>
-    <item>Dunkel&#x2009;/&#x2009;100&#x2009;%</item>
-  </string-array>
-
   <string-array name="entries_network_widget">
     <item>2G&#x2009;/&#x2009;3G+2G</item>
     <item>Nur 2G&#x2009;/&#x2009;nur 3G</item>

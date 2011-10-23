@@ -364,19 +364,18 @@
     <string name="title_button_modes">Gomb módok</string>
     <string name="pref_brightness_mode_title">Fényerő módok</string>
     <string name="pref_brightness_mode_summary">A fényerő gomb működésének beállítása</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Dim</string>
     <string name="pref_network_mode_title">Hálózati módok</string>
     <string name="pref_network_mode_summary">A hálózati mód gomb működésének beállítása</string>
     <string name="pref_screentimeout_mode_title">Képernyőzárási módok</string>
     <string name="pref_screentimeout_mode_summary">A képernyőzárási gomb működésének beállítása</string>
     <string name="pref_ring_mode_title">Hang módok</string>
     <string name="pref_ring_mode_summary">A hang gomb működésének beállítása</string>
-    <string name="cm_sound_mode_soundVib_vib">Hang+Rezgés/Rezgés</string>
-    <string name="cm_sound_mode_sound_vib">Hang/Rezgés</string>
-    <string name="cm_sound_mode_sound_silent">Hang/Csendes</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Hang+Vib/Vib/Csendes</string>
-    <string name="cm_sound_mode_sound_vib_silent">Hang/Rezgés/Csendes</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Hang+Rezgés/Hang/Rezgés/Csendes</string>
-    <string name="cm_sound_mode_vib_silent">Rezgés/Csendes</string>
+    <string name="cm_sound_mode_silent">Csendes</string>
+    <string name="cm_sound_mode_vibrate">Rezgés</string>
+    <string name="cm_sound_mode_sound">Hang</string>
+    <string name="cm_sound_mode_soundVibrate">Hang+Rezgés</string>
     <string name="pref_flash_mode_title">Vaku üzemmód</string>
     <string name="pref_flash_mode_summary">Magas/halálos sugár</string>
 

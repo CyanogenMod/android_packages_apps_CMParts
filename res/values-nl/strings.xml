@@ -428,13 +428,10 @@
     <string name="pref_screentimeout_mode_summary">Kies de instellingen voor de scherm time-out knop</string>
     <string name="pref_ring_mode_title">Profiel knop</string>
     <string name="pref_ring_mode_summary">Kies welke profielen gekozen kunenn worden bij het indrukken van de profiel knop</string>
-    <string name="cm_sound_mode_soundVib_vib">Geluid+Trillen/Trillen</string>
-    <string name="cm_sound_mode_sound_vib">Geluid/Trillen</string>
-    <string name="cm_sound_mode_sound_silent">Geluid/Trillen</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Geluid+Tril/Tril/Stil</string>
-    <string name="cm_sound_mode_sound_vib_silent">Geluid/Trillen/Stil</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Geluid+Trillen/Geluid/Trillen/Stil</string>
-    <string name="cm_sound_mode_vib_silent">Trillen/Stil</string>
+    <string name="cm_sound_mode_silent">Stil</string>
+    <string name="cm_sound_mode_vibrate">Trillen</string>
+    <string name="cm_sound_mode_sound">Geluid</string>
+    <string name="cm_sound_mode_soundVibrate">Geluid+Trillen</string>
     <string name="pref_flash_mode_title">Flashlight knop</string>
     <string name="pref_flash_mode_summary">Kies fel / Death Ray</string>
 

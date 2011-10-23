@@ -526,19 +526,18 @@
     <string name="title_button_modes">Режимы кнопок</string>
     <string name="pref_brightness_mode_title">Режимы подсветки</string>
     <string name="pref_brightness_mode_summary">Укажите, какие режимы будут меняться кнопкой \"Подсветка\"</string>
+    <string name="cm_brightness_mode_auto">Авто</string>
+    <string name="cm_brightness_mode_dim">Тусклый</string>
     <string name="pref_network_mode_title">Режимы сети (2G/3G)</string>
     <string name="pref_network_mode_summary">Укажите, какие режимы сети будут меняться кнопкой \"2G/3G\"</string>
     <string name="pref_screentimeout_mode_title">Режимы откл. экрана</string>
     <string name="pref_screentimeout_mode_summary">Укажите, какие режимы отключения экрана будут меняться кнопкой \"Задержка выкл. экрана\"</string>
     <string name="pref_ring_mode_title">Режимы звука</string>
     <string name="pref_ring_mode_summary">Укажите, какие режимы будут меняться кнопкой \"Звук\"</string>
-    <string name="cm_sound_mode_soundVib_vib">Звук+Вибро/Вибро</string>
-    <string name="cm_sound_mode_sound_vib">Звук/Вибро</string>
-    <string name="cm_sound_mode_sound_silent">Звук/Беззвучный</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Звук+Вибро/Вибро/Беззвучный</string>
-    <string name="cm_sound_mode_sound_vib_silent">Звук/Вибро/Беззвучный</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Звук+Вибро/Звук/Вибро/Беззвучный</string>
-    <string name="cm_sound_mode_vib_silent">Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_silent">Беззвучный</string>
+    <string name="cm_sound_mode_vibrate">Вибро</string>
+    <string name="cm_sound_mode_sound">Звук</string>
+    <string name="cm_sound_mode_soundVibrate">Звук+Вибро</string>
     <string name="pref_flash_mode_title">Режимы фонарика</string>
     <string name="pref_flash_mode_summary">Яркий / Луч смерти</string>
 

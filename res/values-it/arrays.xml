@@ -101,13 +101,6 @@
         <item>Volume musica (default)</item>
     </string-array>
 
-    <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Debole/40%/100%</item>
-        <item>Auto/Debole/25%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Debole/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>
         <item>2G/Solo 3G</item>

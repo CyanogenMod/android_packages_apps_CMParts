@@ -475,19 +475,18 @@
     <string name="title_button_modes">按钮切换模式</string>
     <string name="pref_brightness_mode_title">亮度切换模式</string>
     <string name="pref_brightness_mode_summary">选择亮度按钮的切换方式</string>
+    <string name="cm_brightness_mode_auto">自动</string>
+    <string name="cm_brightness_mode_dim">最暗</string>
     <string name="pref_network_mode_title">网络切换模式</string>
     <string name="pref_network_mode_summary">选择网络按钮的切换方式</string>
     <string name="pref_screentimeout_mode_title">屏幕超时切换模式</string>
     <string name="pref_screentimeout_mode_summary">选择屏幕超时按钮的切换方式</string>
     <string name="pref_ring_mode_title">声音切换模式</string>
     <string name="pref_ring_mode_summary">选择声音按钮的切换方式</string>
-    <string name="cm_sound_mode_soundVib_vib">铃声 + 震动 / 震动</string>
-    <string name="cm_sound_mode_sound_vib">铃声 / 震动</string>
-    <string name="cm_sound_mode_sound_silent">铃声 / 静音</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">铃声 + 震动 / 震动 / 静音</string>
-    <string name="cm_sound_mode_sound_vib_silent">铃声 / 震动 / 震动 / 静音</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">铃声 + 震动 铃声 / 震动 / 震动 / 静音</string>
-    <string name="cm_sound_mode_vib_silent">震动 / 静音</string>
+    <string name="cm_sound_mode_silent">静音</string>
+    <string name="cm_sound_mode_vibrate">震动</string>
+    <string name="cm_sound_mode_sound">铃声</string>
+    <string name="cm_sound_mode_soundVibrate">铃声＋震动</string>
     <string name="pref_flash_mode_title">手电筒切换模式</string>
     <string name="pref_flash_mode_summary">选择高亮度/死亡射线</string>
 

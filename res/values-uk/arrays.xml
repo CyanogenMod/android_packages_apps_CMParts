@@ -124,12 +124,6 @@
         <item>Знижена гучність</item>
         <item>Гучність музики (типове значення)</item>
     </string-array>
-    <string-array name="entries_brightness_widget" formatted="false">
-        <item>Авто/Пригл./40%/100%</item>
-        <item>Авто/Пригл./25%/50%/75%/100%</item>
-        <item>Авто/25%/100%</item>
-        <item>Пригл./100%</item>
-    </string-array>
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>
         <item>2G/Тільки 3G</item>

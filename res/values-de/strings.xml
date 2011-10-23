@@ -10,7 +10,6 @@
     <string name="display_settings_title_head">Bildschirm</string>
     <string name="display_settings_title_subhead">Bildschirm-Einstellungen</string>
     <string name="display_settings_summary_head">Bildschirm-Animationen, Ausrichtung, Helligkeitssteuerung</string>
-    <string name="display_settings_summary_head_nobacklight">Bildschirm-Animationen, Ausrichtung</string>
     <string name="input_settings_title_head">Eingabe</string>
     <string name="input_settings_title_subhead">Eingabeeinstellungen</string>
     <string name="input_settings_summary_head">Tasten, Haptisches Feedback, …</string>
@@ -546,19 +545,18 @@
     <string name="title_button_modes">Schaltflächenfunktionen</string>
     <string name="pref_brightness_mode_title">Helligkeitsstufen</string>
     <string name="pref_brightness_mode_summary">Helligkeitsstufen, zwischen denen umgeschaltet wird</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Dunkel</string>
     <string name="pref_network_mode_title">Netzwerkmodi</string>
     <string name="pref_network_mode_summary">Netzwerkmodi, zwischen denen umgeschaltet wird</string>
     <string name="pref_screentimeout_mode_title">Bildschirm-Timeout</string>
     <string name="pref_screentimeout_mode_summary">Auswählbare Timeouts für automatische Bildschirmabschaltung</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Klingelmodi, zwischen denen umgeschaltet wird</string>
-    <string name="cm_sound_mode_soundVib_vib">Ton+Vibration&#x2009;/&#x2009;Vibration</string>
-    <string name="cm_sound_mode_sound_vib">Ton&#x2009;/&#x2009;Vibration</string>
-    <string name="cm_sound_mode_sound_silent">Ton&#x2009;/&#x2009;Lautlos</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Ton+Vibration&#x2009;/&#x2009;Vibration&#x2009;/&#x2009;Lautlos</string>
-    <string name="cm_sound_mode_sound_vib_silent">Ton&#x2009;/&#x2009;Vibration&#x2009;/&#x2009;Lautlos</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ton+Vibration&#x2009;/&#x2009;Ton&#x2009;/&#x2009;Vibration&#x2009;/&#x2009;Lautlos</string>
-    <string name="cm_sound_mode_vib_silent">Vibration&#x2009;/&#x2009;Lautlos</string>
+    <string name="cm_sound_mode_silent">Lautlos</string>
+    <string name="cm_sound_mode_vibrate">Vibration</string>
+    <string name="cm_sound_mode_sound">Ton</string>
+    <string name="cm_sound_mode_soundVibrate">Ton+Vibration</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
     <string name="pref_flash_mode_summary">Helligkeit der Taschenlampe</string>
 

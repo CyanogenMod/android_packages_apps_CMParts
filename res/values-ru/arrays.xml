@@ -142,13 +142,6 @@
         <item>12 (строгий)</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" translatable="false">
-        <item>Авто/Тусклый/40%/100%</item>
-        <item>Авто/Тусклый/25%/50%/75%/100%</item>
-        <item>Авто/25%/100%</item>
-        <item>Тусклый/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget" translatable="false">
         <item>2G/3G+2G</item>  
         <item>Только 2G/3G</item>   

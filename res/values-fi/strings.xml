@@ -382,19 +382,18 @@
     <string name="title_button_modes">Painiketilat</string>
     <string name="pref_brightness_mode_title">Kirkkaustilat</string>
     <string name="pref_brightness_mode_summary">Valitse miten kirkkauspainike muuttaa tiloja</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Himmeä</string>
     <string name="pref_network_mode_title">Verkkotilat</string>
     <string name="pref_network_mode_summary">Valitse miten verkkopainike muuttaa tiloja</string>
     <string name="pref_screentimeout_mode_title">Näytön aikasammutus-tilat</string>
     <string name="pref_screentimeout_mode_summary">Valitse miten verkkopainike muuttaa tiloja</string>
     <string name="pref_ring_mode_title">Äänitilat</string>
     <string name="pref_ring_mode_summary">Valitse miten äänipainike muuttaa tiloja</string>
-    <string name="cm_sound_mode_soundVib_vib">Ääni+Värinä/Värinä</string>
-    <string name="cm_sound_mode_sound_vib">Ääni/Värinä</string>
-    <string name="cm_sound_mode_sound_silent">Ääni/Äänetön</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Ääni+Vär/Vär/Äänetön</string>
-    <string name="cm_sound_mode_sound_vib_silent">Ääni/Värinä/Äänetön</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ääni+Värinä/Ääni/Värinä/Äänetön</string>
-    <string name="cm_sound_mode_vib_silent">Värinä/Äänetön</string>
+    <string name="cm_sound_mode_silent">Äänetön</string>
+    <string name="cm_sound_mode_vibrate">Värinä</string>
+    <string name="cm_sound_mode_sound">Ääni</string>
+    <string name="cm_sound_mode_soundVibrate">Ääni+Värinä</string>
     <string name="pref_flash_mode_title">Lampputilat</string>
     <string name="pref_flash_mode_summary">Valitse suuri / kuolonsäde</string>
 

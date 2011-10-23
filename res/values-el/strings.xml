@@ -312,10 +312,8 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ρυθμίσεις εισόδου</string>
-    <string name="input_settings_summary">Έλεγχος συμπεριφοράς πλήκτρων</string>
     <string name="haptic_title">Tweaks απτικής ανάδρασης</string>
     <string name="haptic_summary">Ρυθμίστε πότε και πόσο δυνατά θα χρησιμοποιείται η απτική ανάδραση</string>
-    <string name="button_settings_title">Ρυθμίσεις πλήκτρων</string>
     <string name="long_press_home_title">Κρατημένο πάτημα πλήκτρου home</string>
     <string name="long_press_home_summary">Πλήθος πρόσφατων εφαρμογών, κτλ</string>
     <string name="input_search_key_title">Συμπεριφορά πλήκτρου αναζήτησης</string>
@@ -531,13 +529,10 @@
     <string name="pref_screentimeout_mode_summary">Επιλέξτε πως το πλήκτρο Screentimeout θα αλλάζει λειτουργίες</string>
     <string name="pref_ring_mode_title">Λειτουργίες ήχου</string>
     <string name="pref_ring_mode_summary">Επιλέξτε πως το πλήκτρο ήχου θα αλλάζει λειτουργίες</string>
-    <string name="cm_sound_mode_soundVib_vib">Ήχος+Δόνηση/Δόνηση</string>
-    <string name="cm_sound_mode_sound_vib">Ήχος/Δόνηση</string>
-    <string name="cm_sound_mode_sound_silent">Ήχος/Αθόρυβο</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Ήχος+Δόνηση/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_sound_vib_silent">Ήχος/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Ήχος+Δόνηση/Ήχος/Δόνηση/Αθόρυβο</string>
-    <string name="cm_sound_mode_vib_silent">Δόνηση/Αθόρυβο</string>
+    <string name="cm_sound_mode_silent">Αθόρυβο</string>
+    <string name="cm_sound_mode_vibrate">Δόνηση</string>
+    <string name="cm_sound_mode_sound">Ήχος</string>
+    <string name="cm_sound_mode_soundVibrate">Ήχος+Δόνηση</string>
     <string name="pref_flash_mode_title">Λειτουργία φακού</string>
     <string name="pref_flash_mode_summary">Επιλογή Υψηλού / Death Ray</string>
 

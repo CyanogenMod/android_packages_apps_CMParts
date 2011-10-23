@@ -144,7 +144,6 @@
     <string name="msg_color_picker">Stlačte strednú farbu pre potvrdenie.\nStlačte späť pre zrušenie</string>
     <!-- User interface: LED notifications -->
     <string name="group_settings">Nastavenia</string>
-    <string name="trackball_notifications_title">Farba LED upozornení</string>
     <string name="dialog_color_trackball">Vyberte farbu</string>
     <string name="dialog_blink_trackball">Vyberte rýchlosť blikania</string>
     <string name="color_trackball_flash_title">Farba blesku</string>
@@ -372,7 +371,6 @@
     <string name="performance_settings_warning">Nastavenie zmenia výkon systému, potenciálne aj k horšiemu. Sú tu pre experimentovanie a žiadame, aby ste nehlásili chyby, ak zmeníte niektorú z predvolených hodnôt</string>
     <!-- Application Settings -->
     <string name="application_settings_title">Nastavenia aplikácií</string>
-    <string name="application_settings_summary">Viaceré nastavenia aplikácií, ako napr. umiestnenie inštalácie</string>
     <string name="pref_switch_storage_title">Použiť vnútorné úložisko</string>
     <string name="pref_switch_storage_summary_on">Používa sa rozšírenie vnútornej pamäte pre app a médiá</string>
     <string name="pref_switch_storage_summary_off">Používa sa vymeniteľná karta pre app a médiá</string>
@@ -465,13 +463,10 @@
     <string name="pref_screentimeout_mode_summary">Vyberte ako sa budú meniť časy časovača obrazovky</string>
     <string name="pref_ring_mode_title">Módy zvuku</string>
     <string name="pref_ring_mode_summary">Vyberte ako sa budú meniť módy zvuku</string>
-    <string name="cm_sound_mode_soundVib_vib">Zvuk+Vibrácia/Vibrácia</string>
-    <string name="cm_sound_mode_sound_vib">Zvuk/Vibrácia</string>
-    <string name="cm_sound_mode_sound_silent">Zvuk/Ticho</string>
-    <string name="cm_sound_mode_soundVib_vib_silent">Zvuk+Vib/Vib/Ticho</string>
-    <string name="cm_sound_mode_sound_vib_silent">Zvuk/Vibrácia/Ticho</string>
-    <string name="cm_sound_mode_soundVib_sound_vib_silent">Zvuk+Vibrácia/Zvuk/Vibrácia/Ticho</string>
-    <string name="cm_sound_mode_vib_silent">Vibrácia/Ticho</string>
+    <string name="cm_sound_mode_silent">Ticho</string>
+    <string name="cm_sound_mode_vibrate">Vibrácia</string>
+    <string name="cm_sound_mode_sound">Zvuk</string>
+    <string name="cm_sound_mode_soundVibrate">Zvuk+Vibrácia</string>
     <string name="pref_flash_mode_title">Mód blesku</string>
     <string name="pref_flash_mode_summary">Vybrať Silný / Smrteľný Lúč</string>
     <!-- Backlight -->

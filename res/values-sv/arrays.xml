@@ -116,13 +116,6 @@
         <item>Musikvolym (standard)</item>
     </string-array>
 
-   <string-array name="entries_brightness_widget" formatted="false">
-        <item>Auto/Dim/40%/100%</item>
-        <item>Auto/Dim/25%/50%/75%/100%</item>
-        <item>Auto/25%/100%</item>
-        <item>Dim/100%</item>
-    </string-array>
-
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
         <item>2G/Endast 3G</item>   
