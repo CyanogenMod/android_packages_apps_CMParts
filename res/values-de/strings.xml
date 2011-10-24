@@ -105,8 +105,6 @@
     <string name="ui_status_bar_cm_battery_summary">Ladezustand der Batterie in Prozent anzeigen. Bei Anzeigeproblemen mit anderen Designs ausschalten</string>
     <string name="ui_status_bar_oneperc_battery_title">Batterie in 1% Schritten</string>
     <string name="ui_status_bar_oneperc_battery_summary">Zeigt den Ladezustand der Batterie in 1% Schritten. Kann Probleme mit Batterien und Ladegeräten von Fremdherstellern verursachen. (erfordert Neustart)</string>
-    <string name="ui_status_bar_cm_battery_title">Batterie-Prozentanzeige</string>
-    <string name="ui_status_bar_cm_battery_summary">Ladezustand der Batterie in Prozent anzeigen. Bei Anzeigeproblemen mit anderen Designs ausschalten</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakter Betreiber</string>
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen</string>
     <string name="ui_status_bar_force_plmn_display">Erzwinge Anzeige des PLMN</string>
