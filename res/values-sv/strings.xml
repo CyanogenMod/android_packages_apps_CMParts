@@ -95,6 +95,8 @@
     <string name="ui_status_bar_am_pm_summary">Visning stil AM / PM bredvid klockan</string>
     <string name="ui_status_bar_clock_title">Visa klockan</string>
     <string name="ui_status_bar_clock_summary">Klockan i statusraden kommer att vara gömd om detta inaktiveras</string>
+    <string name="ui_status_bar_cm_battery_title">Batteriprocent</string>
+    <string name="ui_status_bar_cm_battery_summary">Visa batteriprocent samt mini-ikon för batteriet. Inaktivera om temat får detta att se trasigt ut</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakt operatörsetikett</string>
     <string name="ui_status_bar_compact_carrier_summary">Använd en alternativ layout för aviseringar med liten operatörsetikett</string>
     <string name="ui_status_bar_toggle_brightness">Ljuskontroll i statusrad</string>

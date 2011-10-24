@@ -95,6 +95,8 @@
     <string name="ui_status_bar_am_pm_summary">時鐘旁邊的上午／下午的顯示格式</string>
     <string name="ui_status_bar_clock_title">顯示時鐘</string>
     <string name="ui_status_bar_clock_summary">在通知列顯示時鐘</string>
+    <string name="ui_status_bar_cm_battery_title">電池百分比</string>
+    <string name="ui_status_bar_cm_battery_summary">顯示電池百分比和幼細的電池圖示。如佈景主題使這個不美觀，請停用這選項</string>
     <string name="ui_status_bar_compact_carrier_title">縮小電信業者名稱</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，將電信業者名稱縮小顯示</string>
     <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>

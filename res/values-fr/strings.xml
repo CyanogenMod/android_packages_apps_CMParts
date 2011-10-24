@@ -67,6 +67,8 @@
     <string name="ui_status_bar_am_pm_summary">Affiche l\'indicateur AM/PM à côté de l\'heure</string>
     <string name="ui_status_bar_clock_title">Afficher l\'heure</string>
     <string name="ui_status_bar_clock_summary">L\'heure sera cachée de la barre si cette option est désactivée</string>
+    <string name="ui_status_bar_cm_battery_title">Pourcentage de batterie</string>
+    <string name="ui_status_bar_cm_battery_summary">Afficher le pourcentage de la batterie, en plus de l\'icône de la batterie.</string>
     <string name="ui_status_bar_compact_carrier_title">Fournisseur abrégé</string>
     <string name="ui_status_bar_compact_carrier_summary">Utilise le nom abrégé du fournisseur d\'accès GSM</string>
     <string name="ui_status_bar_toggle_brightness">Rétroéclairage</string>

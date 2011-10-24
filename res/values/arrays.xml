@@ -71,7 +71,6 @@
         <item>2</item>
     </string-array>
 
-<<<<<<< HEAD
     <string-array name="entries_status_bar_cm_battery">
         <item>Default</item>
         <item>Percentage</item>
@@ -79,21 +78,11 @@
     </string-array>
 
     <string-array name="values_status_bar_cm_battery" translatable="false">
-=======
-    <string-array name="entries_status_bar_battery">
-        <item>Icon (Default)</item>
-        <item>Percentage</item>
-        <item>Hidden</item>
-    </string-array>
-
-    <string-array name="values_status_bar_battery" translatable="false">
->>>>>>> cyanogen/gingerbread
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
 
-<<<<<<< HEAD
     <string-array name="entries_status_bar_cm_battery_color">
         <item>Theme</item>
         <item>Black</item>
@@ -118,8 +107,6 @@
         <item>custom</item>
     </string-array>
 
-=======
->>>>>>> cyanogen/gingerbread
      <string-array name="entries_status_bar_signal" translatable="false">
         <item>@string/ui_status_bar_cm_signal_text_show_bars</item>
         <item>@string/ui_status_bar_cm_signal_text_show_text</item>

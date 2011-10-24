@@ -44,6 +44,8 @@
     <string name="ui_status_bar_title">Ajustaments de la barra d\'estat</string>
     <string name="ui_status_bar_clock_title">Mostra rellotge</string>
     <string name="ui_status_bar_clock_summary">Si es desactiva s\'amaga el rellotge de la barra d\'estat</string>
+    <string name="ui_status_bar_cm_battery_title">Percentatge de bateria</string>
+    <string name="ui_status_bar_cm_battery_summary">Mostra el percentatge de la bateria juntament amb la icona. Algunes aparences fan que no es mostri correctament</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notificacions LED</string>

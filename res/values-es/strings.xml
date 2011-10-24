@@ -95,6 +95,8 @@
     <string name="ui_status_bar_am_pm_summary">Ver estilo de AM/PM siguiente del reloj</string>
     <string name="ui_status_bar_clock_title">Mostrar reloj</string>
     <string name="ui_status_bar_clock_summary">Se esconde si se deshabilita</string>
+    <string name="ui_status_bar_cm_battery_title">Porcentaje de batería</string>
+    <string name="ui_status_bar_cm_battery_summary">Mostrar el porcentaje de batería y un icono pequeño. Deshabilitar si no aparece bien el tema</string>
     <string name="ui_status_bar_compact_carrier_title">Etiqueta de compañía compacta</string>
     <string name="ui_status_bar_compact_carrier_summary">Usar un diseño alternativo de notificación desplegable con la etiqueta de compañía pequeña</string>
     <string name="ui_status_bar_toggle_brightness">Barra de estado de control de brillo</string>

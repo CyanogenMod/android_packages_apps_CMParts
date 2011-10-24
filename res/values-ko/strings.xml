@@ -571,6 +571,8 @@
     <string name="ui_status_bar_title">상태 표시줄 조정</string>
     <string name="ui_status_bar_clock_title">시계 보이기</string>
     <string name="ui_status_bar_clock_summary">비활성화되어있으면 시계가 보이지 않습니다.</string>
+    <string name="ui_status_bar_cm_battery_title">배터리 백분율</string>
+    <string name="ui_status_bar_cm_battery_summary">작은 배터리 아이콘과 배터리 백분율을 표시합니다. 일부 테마와 충돌할 수 있습니다.</string>
 
     <!-- User interface: Tablet tweaks -->
     <string name="tablet_tweaks_title_head">태블릿 조정</string>
