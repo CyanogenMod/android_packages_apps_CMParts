@@ -41,8 +41,6 @@
     <string name="ui_status_bar_title">Ajustes na barra de status</string>
     <string name="ui_status_bar_clock_title">Mostrar relógio</string>
     <string name="ui_status_bar_clock_summary">Se desabilitado, esconde o relógio da barra de status</string>
-    <string name="ui_status_bar_cm_battery_title">Percentual de bateria</string>
-    <string name="ui_status_bar_cm_battery_summary">Mostrar percentual de bateria e um mini ícone de bateria. Desabilite se o tema quebrar o layout</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notificações de LED</string>

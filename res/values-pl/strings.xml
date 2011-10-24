@@ -96,8 +96,6 @@
     <string name="ui_status_bar_am_pm_summary">Styl wyświetlania AM/PM obok zegara</string>
     <string name="ui_status_bar_clock_title">Pokaż zegar</string>
     <string name="ui_status_bar_clock_summary">Zegar na pasku stanu zostanie ukryty, kiedy wyłączone</string>
-    <string name="ui_status_bar_cm_battery_title">Procentowy stan baterii</string>
-    <string name="ui_status_bar_cm_battery_summary">Pokaż procentowy stan baterii i jej pomniejszoną ikonę.</string>
     <string name="ui_status_bar_compact_carrier_title">Pomniejszona etykieta operatora</string>
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
     <string name="ui_status_bar_toggle_brightness">Ustawienia jasności</string>

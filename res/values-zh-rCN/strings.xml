@@ -95,8 +95,6 @@
     <string name="ui_status_bar_am_pm_summary">始终旁边的上午／下午格式</string>
     <string name="ui_status_bar_clock_title">显示时钟</string>
     <string name="ui_status_bar_clock_summary">如果禁用，状态栏中的时钟将不会显示</string>
-    <string name="ui_status_bar_cm_battery_title">电量百分比</string>
-    <string name="ui_status_bar_cm_battery_summary">在小电池图标上显示电量百分比。如果主题破坏了外观则禁用它</string>
     <string name="ui_status_bar_compact_carrier_title">减小电信运营商名称</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，将电信运营商名称缩小显示</string>
     <string name="ui_status_bar_toggle_brightness">状态栏亮度控制</string>

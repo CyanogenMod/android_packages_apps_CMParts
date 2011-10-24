@@ -13,6 +13,7 @@
 			android:summary="@string/ui_status_bar_am_pm_summary"
 			android:entries="@array/entries_status_bar_am_pm"
 			android:entryValues="@array/values_status_bar_am_pm" />
+<<<<<<< HEAD
 		<ListPreference android:key="pref_status_bar_cm_battery"
 			android:dialogTitle="@string/ui_status_bar_cm_battery_title"
 			android:title="@string/ui_status_bar_cm_battery_title"
@@ -30,6 +31,14 @@
 			android:title="@string/ui_status_bar_oneperc_battery_title"
 			android:summary="@string/ui_status_bar_oneperc_battery_summary"
 			android:defaultValue="true" />
+=======
+		<ListPreference android:key="pref_status_bar_battery"
+			android:dialogTitle="@string/ui_status_bar_battery_title"
+			android:title="@string/ui_status_bar_battery_title"
+			android:summary="@string/ui_status_bar_battery_summary"
+			android:entries="@array/entries_status_bar_battery"
+			android:entryValues="@array/values_status_bar_battery" />
+>>>>>>> cyanogen/gingerbread
 		<CheckBoxPreference android:key="pref_status_bar_compact_carrier"
 			android:title="@string/ui_status_bar_compact_carrier_title"
 			android:summary="@string/ui_status_bar_compact_carrier_summary"

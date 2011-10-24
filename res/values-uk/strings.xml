@@ -78,8 +78,6 @@
   <string name="ui_status_bar_am_pm_summary">Відображення індексів AM/PM позаду годинника</string>
   <string name="ui_status_bar_clock_title">Годинник</string>
   <string name="ui_status_bar_clock_summary">Годинник рядка стану</string>
-  <string name="ui_status_bar_cm_battery_title">Відсоток заряду</string>
-  <string name="ui_status_bar_cm_battery_summary">Відсоток заряду та мінііконка батареї відображатиметься в рядкові стану. Вимкніть, якщо псує вигляд</string>
   <string name="ui_status_bar_compact_carrier_title">Компактна назва оператора</string>
   <string name="ui_status_bar_compact_carrier_summary">Використання альтернативного компонування панелі з компактною назвою оператора. Пасує віджету панелі сповіщень (потрібне перезавантаження).</string>
   <string name="ui_status_bar_toggle_brightness">Керування яскравістю рядком стану</string>
