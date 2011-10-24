@@ -30,10 +30,6 @@
 			android:title="@string/ui_status_bar_oneperc_battery_title"
 			android:summary="@string/ui_status_bar_oneperc_battery_summary"
 			android:defaultValue="true" />
-		<CheckBoxPreference android:key="pref_status_bar_cm_battery"
-			android:title="@string/ui_status_bar_cm_battery_title"
-			android:summary="@string/ui_status_bar_cm_battery_summary"
-			android:defaultValue="true" />
 		<CheckBoxPreference android:key="pref_status_bar_compact_carrier"
 			android:title="@string/ui_status_bar_compact_carrier_title"
 			android:summary="@string/ui_status_bar_compact_carrier_summary"

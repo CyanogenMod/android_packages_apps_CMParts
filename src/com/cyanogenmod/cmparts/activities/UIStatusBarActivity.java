@@ -38,11 +38,11 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_CLOCK = "pref_status_bar_clock";
 
+    private static final String PREF_STATUS_BAR_CM_BATTERY = "pref_status_bar_cm_battery";
+
     private static final String PREF_STATUS_BAR_ONEPERC_BATTERY = "pref_status_bar_oneperc_battery";
 
     private static final String PREF_STATUS_BAR_CM_BATTERY_COLOR = "pref_status_bar_cm_battery_color";
-
-    private static final String PREF_STATUS_BAR_CM_BATTERY = "pref_status_bar_cm_battery";
 
     private static final String PREF_STATUS_BAR_COMPACT_CARRIER = "pref_status_bar_compact_carrier";
 
@@ -56,7 +56,7 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             "pref_status_bar_brightness_control";
 
     private static final String PREF_STATUS_BAR_CM_SIGNAL = "pref_status_bar_cm_signal";
-
+        mStatusBarCmBattery = (CheckBoxPreference) prefSet\n                .findPreference(PREF_STATUS_BAR_CM_BATTERY);
     private static final String PREF_STATUS_BAR_HEADSET = "pref_status_bar_headset";
 
     private ListPreference mStatusBarAmPm;
@@ -100,8 +100,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         mStatusBarForcePlmnDisplay = (CheckBoxPreference) prefSet.findPreference(PREF_FORCE_PLMN_DISPLAY);
         mStatusBarCmBatteryColor = (ListPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_CM_BATTERY_COLOR);
-        mStatusBarCmBattery = (CheckBoxPreference) prefSet
-                .findPreference(PREF_STATUS_BAR_CM_BATTERY);
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarHeadset = (CheckBoxPreference) prefSet
@@ -109,8 +107,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
         mStatusBarClock.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
-        mStatusBarCmBattery.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_CM_BATTERY, 0) == 1));
         mStatusBarCompactCarrier.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_COMPACT_CARRIER, 0) == 1));
         mStatusBarForcePlmnDisplay.setChecked((Settings.System.getInt(getContentResolver(),

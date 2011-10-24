@@ -107,8 +107,6 @@
     <string name="ui_status_bar_cm_battery_color_summary">Color to use for the status bar battery style</string>
     <string name="ui_status_bar_oneperc_battery_title">1% battery steps</string>
     <string name="ui_status_bar_oneperc_battery_summary">Show battery percentage in 1% steps. May cause issues with third party batteries and AC adapters. (Requires reboot)</string>
-    <string name="ui_status_bar_cm_battery_title">Battery percentage</string>
-    <string name="ui_status_bar_cm_battery_summary">Show battery percentage plus mini battery icon. Disable if themes make this look broken</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
     <string name="ui_status_bar_force_plmn_display">Force PLMN display</string>

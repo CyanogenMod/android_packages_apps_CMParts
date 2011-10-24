@@ -66,13 +66,11 @@
   <string name="tablet_soft_buttons_back_title">Назад</string>
   <string name="tablet_soft_buttons_search_title">Пошук</string>
   <string name="tablet_soft_buttons_quick_na_title">Швидкі сповіщення</string>
-
   <string name="rotation_category_title">Обернення за акселерометром</string>
   <string name="pref_rotation_0_title">0 градусів</string>
   <string name="pref_rotation_90_title">90 градусів</string>
   <string name="pref_rotation_180_title">180 градусів</string>
   <string name="pref_rotation_270_title">270 градусів</string>
-
   <string name="ui_status_bar_title">Рядок стану</string>
   <string name="ui_status_bar_am_pm_title">Індекси AM/PM</string>
   <string name="ui_status_bar_am_pm_summary">Відображення індексів AM/PM позаду годинника</string>
