@@ -40,6 +40,12 @@
     <item>Nichts (Standard)</item>
   </string-array>
 
+  <string-array name="entries_status_bar_battery">
+    <item>Symbol (Standard)</item>
+    <item>Prozent</item>
+    <item>Versteckt</item>
+  </string-array>
+
   <string-array name="pref_overscroll_effect_entries">
     <item>Kein</item>
     <item>Glimmende Kante</item>

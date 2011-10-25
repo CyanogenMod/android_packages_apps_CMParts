@@ -103,6 +103,8 @@
     <string name="ui_status_bar_clock_summary">Die Uhrzeit wird nicht angezeigt, wenn deaktiviert</string>
     <string name="ui_status_bar_oneperc_battery_title">Batterie in 1% Schritten</string>
     <string name="ui_status_bar_oneperc_battery_summary">Zeigt den Ladezustand der Batterie in 1% Schritten. Kann Probleme mit Batterien und Ladegeräten von Fremdherstellern verursachen. (erfordert Neustart)</string>
+    <string name="ui_status_bar_battery_title">Batteriestatusanzeige</string>
+    <string name="ui_status_bar_battery_summary">Anzeigestil des Batteriestatus</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakter Betreiber</string>
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen</string>
     <string name="ui_status_bar_force_plmn_display">Erzwinge Anzeige des PLMN</string>
@@ -119,23 +121,16 @@
     <string name="ui_status_bar_headset_summary">Headset-Symbol anzeigen, wenn ein Headset angeschlossen ist</string>
 
     <!-- User interface : LED Notifications -->
-    <string name="group_settings">Einstellungen</string>
     <string name="trackball_title">LED-Benachrichtigungen</string>
     <string name="trackball_summary">Trackball-/LED-Benachrichtigungen kontrollieren</string>
-    <string name="trackball_category_misc">Ohne Kategorie</string>
-    <string name="trackball_category_unconfigured">Nicht konfiguriert</string>
-
-    <string name="trackball_app_email">E-Mail</string>
-    <string name="trackball_app_mms">SMS/MMS</string>
-    <string name="trackball_app_gvoice">Google Voice</string>
-    <string name="trackball_app_gmail">Google Mail</string>
-    <string name="trackball_app_gtalk">Google Talk</string>
-    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
-    <string name="trackball_app_dialer">Verpasster Anruf</string>
 
     <!-- User interface, WebView -->
     <string name="pref_pinch_reflow_title">Anpassen nach Pinch</string>
     <string name="pref_pinch_reflow_summary">Nach Pinch-To-Zoom Inhalte sofort neu anpassen</string>
+
+    <!-- User Interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Bildschirmfotos teilen</string>
+    <string name="pref_share_screenshot_summary">Menü „Teilen“ nach Bildschirmfoto anzeigen</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Überscrollen</string>
@@ -168,6 +163,7 @@
     <string name="msg_color_picker">Zum Bestätigen in die Mitte tippen.\nZum Abbrechen Zurück-Taste drücken.</string>
 
     <!-- User interface: Trackball notifcations -->
+    <string name="group_settings">Einstellungen</string>
     <string name="dialog_color_trackball">Farbe wählen</string>
     <string name="dialog_blink_trackball">Blinkfrequenz wählen</string>
     <string name="color_trackball_flash_title">Blinkfarbe</string>
@@ -179,10 +175,6 @@
     <string name="color_trackball_test_title">Teste Blinken</string>
     <string name="color_trackball_test_summary">Das Blinken testen</string>
     <string name="dialog_clear_flash">Test beenden</string>
-    <string name="trackball_app_save_title">Speichern</string>
-    <string name="trackball_app_save_summary">Einstellungen für diese Anwendung speichern</string>
-    <string name="trackball_app_reset_title">Zurücksetzen</string>
-    <string name="trackball_app_reset_summary">Alle Einstellungen für diese Anwendung entfernen</string>
     <string name="trackball_advanced_title">Erweitert</string>
     <string name="pref_trackball_screen_title">Immer blinken</string>
     <string name="pref_trackball_screen_summary">LED blinkt auch, wenn der Bildschirm an ist</string>
@@ -207,13 +199,26 @@
     <string name="trackball_category_remove_title">Kategorie entfernen</string>
     <string name="trackball_category_remove_summary">Eine Kategorie aus der Liste entfernen</string>
     <string name="trackball_reset_all">Alle Farben und Kategorien zurücksetzen</string>
-
     <string name="trackball_color_notice_title">Hinweis</string>
     <string name="trackball_color_notice_summary">Auf manchen Geräten sind nicht alle Farben darstellbar.</string>
+    <string name="trackball_category_misc">Ohne Kategorie</string>
+    <string name="trackball_category_unconfigured">Nicht konfiguriert</string>
+    <string name="trackball_app_save_title">Speichern</string>
+    <string name="trackball_app_save_summary">Einstellungen für diese Anwendung speichern</string>
+    <string name="trackball_app_reset_title">Zurücksetzen</string>
+    <string name="trackball_app_reset_summary">Alle Einstellungen für diese Anwendung entfernen</string>
 
     <string name="trackball_force_mode_title">LED-Modus</string>
     <string name="trackball_force_mode_dialog">Modus auswählen</string>
     <string name="trackball_force_mode_summary">Verhalten der LED konfigurieren</string>
+
+    <string name="trackball_app_email">E-Mail</string>
+    <string name="trackball_app_mms">SMS/MMS</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Google Mail</string>
+    <string name="trackball_app_gtalk">Google Talk</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Verpasster Anruf</string>
 
     <!-- Trackball color entries -->
     <string name="trackball_color_entry_use_app">Anwendungseinstellung</string>
@@ -248,7 +253,7 @@
     <string name="pref_lockscreen_timeout_title">Timeouts</string>
     <string name="pref_lockscreen_timeout_summary">Timeouts des Sperrbildschirms anpassen</string>
 
-    <!-- Input Settings -->
+    <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Batteriestatus immer</string>
     <string name="pref_lockscreen_always_battery_summary">Den Batteriestatus immer auf dem Sperrbildschirm anzeigen</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget-Layout</string>
@@ -269,6 +274,8 @@
     <string name="pref_volume_wake_summary">Aufwecken des Gerätes durch Drücken einer Lautstärketaste</string>
     <string name="pref_trackball_unlock_title">Trackball-Entsperren</string>
     <string name="pref_trackball_unlock_summary">Entsperren des Gerätes durch Drücken des Trackballs</string>
+    <string name="pref_slider_unlock_title">Tastatur-Entsperren</string>
+    <string name="pref_slider_unlock_summary">Entsperren des Gerätes durch Herausschieben der Tastatur</string>
     <string name="pref_menu_unlock_title">Mit Menü entsperren</string>
     <string name="pref_menu_unlock_summary">Entsperren des Gerätes durch Drücken der Menütaste</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Schnelles Entsperren</string>
@@ -338,6 +345,8 @@
     <string name="pref_input_custom_search_app_activity_title">Anwendung festlegen</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Suchen-Taste lange drücken</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim langem Drücken der Suchen-Taste</string>
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">BackTrack Minipad ein-/ausschalten</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Menü-Taste</string>
@@ -416,9 +425,9 @@
     <string name="pref_use_dithering_title">Dithering</string>
     <string name="pref_use_dithering_summary">Dithering von Oberflächen verbessert die Bildqualität auf Kosten der Geräteleistung (Neustart erforderlich)</string>
 
-<!-- Performance Settings : 16bpp Alpha -->
-    <string name="pref_use_16bpp_alpha_title">16bit Transparenz verwenden</string>
-    <string name="pref_use_16bpp_alpha_summary">Nutzung von 16bit Transparenz kann die Leistung des Scrollens erhöhen, kann aber Grafikartefakte erzeugen. (Neustart erforderlich)</string>
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">Verwende 16-bit-Transparenz</string>
+    <string name="pref_use_16bpp_alpha_summary">Verwenden der 16-bit-Transparenz kann die Performance beim Scrollen verbessern, aber kann Grafikfehler verursachen (Neustart erforderlich)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
@@ -475,6 +484,10 @@
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Ausschalten-Abfrage</string>
     <string name="pref_power_prompt_summary">Nachfrage, ob wirklich ausgeschaltet oder neu gestartet werden soll</string>
+
+    <!-- UI Settings: Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Haptisches Feedback</string>
+    <string name="expanded_haptic_feedback_summary">Haptisches Feedback ein-/ausschalten</string>
 
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">Render-Effekt</string>
@@ -658,6 +671,8 @@
     <string name="user_defined_key1">Schnelltaste 1</string>
     <string name="user_defined_key2">Schnelltaste 2</string>
     <string name="user_defined_key3">Schnelltaste 3</string>
+    <string name="user_defined_envelope_key">Briefumschlag-Taste</string>
+    <string name="user_defined_explorer_key">Explorer-Taste</string>
     <string name="user_defined_not_set">Nichts gesetzt</string>
 
     <!-- Lockscreen gesture strings -->
@@ -761,13 +776,4 @@
     <string name="perm_enable_management_summary">Berechtigungsverwaltung für Anwendungen aktivieren</string>
     <string name="perm_enable_warning_message">Warnung!\nDas Entziehen von Berechtigungen kann Anwendungsfehler verursachen. Wenn eine Anwendung mit entzogenen Berechtigungen abstürzt, müssen die benötigten Berechtigungen wieder erteilt werden.\nBitte KEINE Bugreports an CyanogenMod senden, wenn eine Anwendung mit entzogenen Berechtigungen nicht wie erwartet funktioniert!</string>
     <string name="perm_enable_warning_title">Sicher?</string>
-
-    <string name="trackball_app_twitter">Twitter</string>
-    <string name="trackball_app_twicca">Twicca</string>
-    <string name="pref_backtrack_title">BackTrack Minipad</string>
-    <string name="pref_backtrack_summary">BackTrack Minipad ein-/ausschalten</string>
-    <string name="expanded_haptic_feedback_title">Haptisches Feedback</string>
-    <string name="expanded_haptic_feedback_summary">Haptisches Feedback ein-/ausschalten</string>
-    <string name="user_defined_envelope_key">Briefumschlag-Taste</string>
-    <string name="user_defined_explorer_key">Explorer-Taste</string>
 </resources>

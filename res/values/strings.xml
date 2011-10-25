@@ -344,7 +344,6 @@
     <string name="haptic_summary">Adjust when and how strong haptic feedback occurs</string>
     <string name="long_press_home_title">Long-press home settings</string>
     <string name="long_press_home_summary">Number of recent applications, etc</string>
-
     <string name="input_search_key_title">Search key behavior</string>
     <string name="input_search_key_summary">Define custom actions for search key and long-press search key</string>
     <string name="pref_input_custom_search_app_toggle_title">Search key app</string>
@@ -352,7 +351,6 @@
     <string name="pref_input_custom_search_app_activity_title">Custom application</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press search app</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starts a custom app when long-pressing the search key</string>
-
     <string name="pref_backtrack_title">BackTrack Minipad</string>
     <string name="pref_backtrack_summary">Enable/disable BackTrack Minipad</string>
 
@@ -493,13 +491,13 @@
     <string name="pref_power_prompt_title">Power prompt</string>
     <string name="pref_power_prompt_summary">Change whether there is a prompt after choosing shutdown or reboot</string>
 
-    <!-- UI Settings : Render effect -->
-    <string name="pref_render_effect_title">Render effect</string>
-    <string name="pref_render_effect_summary">Change what colors are used to draw the screen (potential battery savings)</string>
-
     <!-- UI Settings : Haptic feedback -->
     <string name="expanded_haptic_feedback_title">Haptic Feedback</string>
     <string name="expanded_haptic_feedback_summary">Enable/Disable haptic feedback.</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">Render effect</string>
+    <string name="pref_render_effect_summary">Change what colors are used to draw the screen (potential battery savings)</string>
 
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
@@ -652,6 +650,7 @@
     <string name="sound_notifications_limitvol_dialog">Notification volume</string>
     <string name="sound_rings_limitvol_dialog">Ring tone volume</string>
     <string name="sound_alarms_limitvol_dialog">Alarm volume</string>
+
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Quiet hours</string>
     <string name="quiet_hours_note_title">Note</string>
