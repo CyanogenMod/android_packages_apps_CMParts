@@ -529,7 +529,7 @@
     <string name="gestures_error_missing_shortcut">¡Debe seleccionar una acción para este gesto!</string>
     <string name="gestures_loading">Cargando gestos...</string>
     <string name="gestures_empty">Sin gestos</string>
-    <string name="gestures_delete">Eleminar</string>
+    <string name="gestures_delete">Eliminar</string>
     <string name="gestures_delete_success">Gesto eliminado</string>
     <string name="gestures_error_loading">Problema en operación con archivo de gestos.</string>
     <string name="gestures_unlock_only">Desbloquear</string>
