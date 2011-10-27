@@ -71,40 +71,18 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_status_bar_cm_battery">
-        <item>Default</item>
+    <string-array name="entries_status_bar_battery">
+        <item>Icon (Default)</item>
         <item>Percentage</item>
         <item>Status Bar</item>
+        <item>Hidden</item>
     </string-array>
 
-    <string-array name="values_status_bar_cm_battery" translatable="false">
+    <string-array name="values_status_bar_battery" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="entries_status_bar_cm_battery_color">
-        <item>Theme</item>
-        <item>Black</item>
-        <item>Blue</item>
-        <item>Gray</item>
-        <item>Green</item>
-        <item>Red</item>
-        <item>White</item>
-        <item>Yellow</item>
-        <item>Custom</item>
-    </string-array>
-
-    <string-array name="values_status_bar_cm_battery_color" translatable="false">
-        <item>theme</item>
-        <item>black</item>
-        <item>blue</item>
-        <item>gray</item>
-        <item>green</item>
-        <item>red</item>
-        <item>white</item>
-        <item>yellow</item>
-        <item>custom</item>
+        <item>3</item>
     </string-array>
 
      <string-array name="entries_status_bar_signal" translatable="false">

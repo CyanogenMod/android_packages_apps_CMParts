@@ -52,8 +52,7 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String ONEPERC_BATT_DEFAULT = "0";
 
-    private static final String PREF_STATUS_BAR_BRIGHTNESS_CONTROL =
-            "pref_status_bar_brightness_control";
+    private static final String PREF_STATUS_BAR_BRIGHTNESS_CONTROL = "pref_status_bar_brightness_control";
 
     private static final String PREF_STATUS_BAR_CM_SIGNAL = "pref_status_bar_cm_signal";
 
@@ -91,19 +90,24 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_CLOCK);
         mStatusBarCompactCarrier = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_COMPACT_CARRIER);
+<<<<<<< HEAD
         mStatusBarCmBattery = (ListPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_CM_BATTERY);
+=======
+>>>>>>> upstream/gingerbread
         mStatusBarOnepercBattery = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_ONEPERC_BATTERY);
         String onepercBattery = SystemProperties.get(ONEPERC_BATT_PERSIST_PROP, ONEPERC_BATT_DEFAULT);
         mStatusBarOnepercBattery.setChecked("1".equals(onepercBattery));
         mStatusBarForcePlmnDisplay = (CheckBoxPreference) prefSet.findPreference(PREF_FORCE_PLMN_DISPLAY);
+<<<<<<< HEAD
         mStatusBarCmBatteryColor = (ListPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_CM_BATTERY_COLOR);
+=======
+>>>>>>> upstream/gingerbread
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
-        mStatusBarHeadset = (CheckBoxPreference) prefSet
-                .findPreference(PREF_STATUS_BAR_HEADSET);
+        mStatusBarHeadset = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_HEADSET);
 
         mStatusBarClock.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
@@ -117,8 +121,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_HEADSET, 1) == 1));
 
         try {
-            if (Settings.System.getInt(getContentResolver(), 
-                    Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+            if (Settings.System
+                    .getInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
                 mStatusBarBrightnessControl.setEnabled(false);
                 mStatusBarBrightnessControl.setSummary(R.string.ui_status_bar_toggle_info);
             }
@@ -137,16 +141,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, 0);
         mStatusBarCmSignal.setValue(String.valueOf(signalStyle));
         mStatusBarCmSignal.setOnPreferenceChangeListener(this);
-
-        int statusBarCmBattery = Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_CM_BATTERY, 0);
-        mStatusBarCmBattery.setValue(String.valueOf(statusBarCmBattery));
-        mStatusBarCmBattery.setOnPreferenceChangeListener(this);
-
-        mStatusBarCmBatteryColor.setValue(Settings.System.getString(getContentResolver(),
-                Settings.System.STATUS_BAR_CM_BATTERY_COLOR));
-        mStatusBarCmBatteryColor.setOnPreferenceChangeListener(this);
-        mStatusBarCmBatteryColor.setEnabled(statusBarCmBattery == 2);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -159,29 +153,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             int signalStyle = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_CM_SIGNAL_TEXT,
                     signalStyle);
-            return true;
-        } else if (preference == mStatusBarCmBattery) {
-            int statusBarCmBattery = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_CM_BATTERY,
-                    statusBarCmBattery);
-            mStatusBarCmBatteryColor.setEnabled(statusBarCmBattery == 2);
-            return true;
-        } else if (preference == mStatusBarCmBatteryColor) {
-            String statusBarCmBatteryColor = (String) newValue;
-            if ("custom".equals(statusBarCmBatteryColor)) {
-                int color = -1;
-                String colorString = Settings.System.getString(getContentResolver(),
-                        Settings.System.STATUS_BAR_CM_BATTERY_COLOR);
-                if (!TextUtils.isEmpty(colorString)) {
-                    try {
-                        color = Color.parseColor(colorString);
-                    } catch (IllegalArgumentException e) { }
-                }
-                new ColorPickerDialog(this, mColorListener, color).show();
-            } else {
-                Settings.System.putString(getContentResolver(),
-                        Settings.System.STATUS_BAR_CM_BATTERY_COLOR, statusBarCmBatteryColor);
-            }
             return true;
         }
         return false;
@@ -222,19 +193,4 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         }
         return false;
     }
-
-    private OnColorChangedListener mColorListener = new OnColorChangedListener() {
-        @Override
-        public void colorUpdate(int color) {
-            // no-op
-        }
-
-        @Override
-        public void colorChanged(int color) {
-            String colorString = String.format("#%02x%02x%02x", Color.red(color),
-                    Color.green(color), Color.blue(color));
-            Settings.System.putString(getContentResolver(),
-                    Settings.System.STATUS_BAR_CM_BATTERY_COLOR, colorString);
-        }
-    };
 }

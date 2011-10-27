@@ -30,6 +30,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.view.KeyCharacterMap;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
@@ -60,6 +61,8 @@ public class InputActivity extends PreferenceActivity implements
     private static final String KEYPAD_TYPE_PREF = "pref_keypad_type";
 
     private static final String KEYPAD_TYPE_PERSIST_PROP = "persist.sys.keypad_type";
+
+    private static final String KEYPAD_TYPE_HW_PROP = "hw.keyboards.0.devname";
 
     private static final String KEYPAD_TYPE_DEFAULT = "euro_qwerty";
 
@@ -291,6 +294,8 @@ public class InputActivity extends PreferenceActivity implements
         if (preference == mKeypadTypePref) {
             String keypadType = (String) newValue;
             SystemProperties.set(KEYPAD_TYPE_PERSIST_PROP, keypadType);
+            SystemProperties.set(KEYPAD_TYPE_HW_PROP, "sholesp2a-keypad-" + keypadType);
+            KeyCharacterMap.reload(0);
             return true;
         } else if (preference == mQtouchNumPref) {
             String qtouchNum = (String) newValue;
