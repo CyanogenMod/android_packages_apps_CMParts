@@ -295,7 +295,7 @@ public class InputActivity extends PreferenceActivity implements
             String keypadType = (String) newValue;
             SystemProperties.set(KEYPAD_TYPE_PERSIST_PROP, keypadType);
             SystemProperties.set(KEYPAD_TYPE_HW_PROP, "sholesp2a-keypad-" + keypadType);
-            KeyCharacterMap.reload(0);
+            KeyCharacterMap.load(0);
             return true;
         } else if (preference == mQtouchNumPref) {
             String qtouchNum = (String) newValue;
