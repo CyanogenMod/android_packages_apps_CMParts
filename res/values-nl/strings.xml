@@ -90,8 +90,6 @@
     <string name="ui_status_bar_am_pm_summary">Geef AM/PM stijl naast klok weer</string>
     <string name="ui_status_bar_clock_title">Geef klok weer</string>
     <string name="ui_status_bar_clock_summary">Statusbalk klok wordt verborgen, wanneer uitgeschakeld</string>
-    <string name="ui_status_bar_cm_battery_title">Batterij percentage</string>
-    <string name="ui_status_bar_cm_battery_summary">Geef batterij percentage plus mini batterij icoon weer. Schakel deze functie uit wanneer het thema dit niet ondersteund</string>
     <string name="ui_status_bar_compact_carrier_title">Mini provider label</string>
     <string name="ui_status_bar_compact_carrier_summary">Gebruik alternatieve notificatie dropdown layout met mini provider label. Ziet er het best uit met power widget (Herstart noodzakelijk)</string>
 

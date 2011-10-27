@@ -96,8 +96,6 @@
     <string name="ui_status_bar_am_pm_summary">AM/PMの表示スタイル</string>
     <string name="ui_status_bar_clock_title">時計を表示</string>
     <string name="ui_status_bar_clock_summary">無効にするとステータスバーの時計を隠します</string>
-    <string name="ui_status_bar_cm_battery_title">バッテリー残量数値</string>
-    <string name="ui_status_bar_cm_battery_summary">バッテリー残量をパーセンテージと小さなアイコンで表示する。テーマが壊れて見えるようであれば無効にしてください。</string>
     <string name="ui_status_bar_compact_carrier_title">コンパクトなキャリアラベル</string>
     <string name="ui_status_bar_compact_carrier_summary">小さなキャリアラベルを用いた代替のドロップダウンレイアウトを使用する</string>
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>

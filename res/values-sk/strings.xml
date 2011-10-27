@@ -97,8 +97,6 @@
     <string name="ui_status_bar_am_pm_summary">Zobraziť AM/PM vedľa hodín</string>
     <string name="ui_status_bar_clock_title">Zobraziť hodiny</string>
     <string name="ui_status_bar_clock_summary">Ak je vypnuté, hodiny v stavovom riadku sú zakázané</string>
-    <string name="ui_status_bar_cm_battery_title">Percentá batérie</string>
-    <string name="ui_status_bar_cm_battery_summary">Zobraziť percentá batérie s malou ikonou batérie. Zakážte ak témy vyzerajú zle</string>
     <string name="ui_status_bar_compact_carrier_title">Zmenšiť názov operátora</string>
     <string name="ui_status_bar_compact_carrier_summary">Použiť alternatívny vzhľad notifikačného menu s malým názvom operátora</string>
     <string name="ui_status_bar_toggle_brightness">Ovládanie jasu pomocou stavového riadku</string>

@@ -44,8 +44,6 @@
     <string name="ui_status_bar_title">Állapotsor tuningolása</string>
     <string name="ui_status_bar_clock_title">Óra megjelenítése</string>
     <string name="ui_status_bar_clock_summary">Állapotsori óra elrejtése</string>
-    <string name="ui_status_bar_cm_battery_title">Százalékos akkumulátor</string>
-    <string name="ui_status_bar_cm_battery_summary">Százalékos akkumulátor megjelenése kis akksival. Ha hibásnak tűnik, kapcsold ki.</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED visszajelzés</string>

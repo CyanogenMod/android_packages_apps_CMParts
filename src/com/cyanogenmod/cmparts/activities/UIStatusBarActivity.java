@@ -38,8 +38,6 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_CLOCK = "pref_status_bar_clock";
 
-    private static final String PREF_STATUS_BAR_CM_BATTERY = "pref_status_bar_cm_battery";
-
     private static final String PREF_STATUS_BAR_ONEPERC_BATTERY = "pref_status_bar_oneperc_battery";
 
     private static final String PREF_STATUS_BAR_CM_BATTERY_COLOR = "pref_status_bar_cm_battery_color";
@@ -59,6 +57,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private static final String PREF_STATUS_BAR_HEADSET = "pref_status_bar_headset";
 
     private ListPreference mStatusBarAmPm;
+
+    private ListPreference mStatusBarBattery;
 
     private ListPreference mStatusBarCmSignal;
 
@@ -120,12 +120,18 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         }
 
         mStatusBarAmPm = (ListPreference) prefSet.findPreference(PREF_STATUS_BAR_AM_PM);
+        mStatusBarBattery = (ListPreference) prefSet.findPreference(PREF_STATUS_BAR_BATTERY);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(PREF_STATUS_BAR_CM_SIGNAL);
 
         int statusBarAmPm = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_AM_PM, 2);
         mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
         mStatusBarAmPm.setOnPreferenceChangeListener(this);
+
+        int statusBarBattery = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_BATTERY, 0);
+        mStatusBarBattery.setValue(String.valueOf(statusBarBattery));
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
 
         int signalStyle = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, 0);
@@ -138,6 +144,11 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             int statusBarAmPm = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_AM_PM,
                     statusBarAmPm);
+            return true;
+        } else if (preference == mStatusBarBattery) {
+            int statusBarBattery = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_BATTERY,
+                    statusBarBattery);
             return true;
         } else if (preference == mStatusBarCmSignal) {
             int signalStyle = Integer.valueOf((String) newValue);
