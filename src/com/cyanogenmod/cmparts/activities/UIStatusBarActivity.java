@@ -90,21 +90,11 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_CLOCK);
         mStatusBarCompactCarrier = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_COMPACT_CARRIER);
-<<<<<<< HEAD
-        mStatusBarCmBattery = (ListPreference) prefSet
-                .findPreference(PREF_STATUS_BAR_CM_BATTERY);
-=======
->>>>>>> upstream/gingerbread
         mStatusBarOnepercBattery = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_ONEPERC_BATTERY);
         String onepercBattery = SystemProperties.get(ONEPERC_BATT_PERSIST_PROP, ONEPERC_BATT_DEFAULT);
         mStatusBarOnepercBattery.setChecked("1".equals(onepercBattery));
         mStatusBarForcePlmnDisplay = (CheckBoxPreference) prefSet.findPreference(PREF_FORCE_PLMN_DISPLAY);
-<<<<<<< HEAD
-        mStatusBarCmBatteryColor = (ListPreference) prefSet
-                .findPreference(PREF_STATUS_BAR_CM_BATTERY_COLOR);
-=======
->>>>>>> upstream/gingerbread
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet
                 .findPreference(PREF_STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarHeadset = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_HEADSET);
