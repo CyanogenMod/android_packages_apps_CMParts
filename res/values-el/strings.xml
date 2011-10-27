@@ -95,8 +95,6 @@
     <string name="ui_status_bar_am_pm_summary">Προβολή AM/PM δίπλα στο ρολόι</string>
     <string name="ui_status_bar_clock_title">Εμφάνιση ρολογιού</string>
     <string name="ui_status_bar_clock_summary">Το ρολόι της μπάρας κατάστασης θα είναι κρυμμένο, αν το απενεργοποιήσετε</string>
-    <string name="ui_status_bar_cm_battery_title">Ποσοστό μπαταρίας</string>
-    <string name="ui_status_bar_cm_battery_summary">Προβολή ποσοστού μπαταρίας και ενός μικρού εικονιδίου. Απενεργοποιήστε το αν κάποιο θέμα το κάνει να μη φαίνεται σωστά</string>
     <string name="ui_status_bar_compact_carrier_title">Συμπαγής ετικέτα παρόχου</string>
     <string name="ui_status_bar_compact_carrier_summary">Χρήση εναλλακτικού χώρου ειδοποιήσεων με μικρή ετικέτα παρόχου</string>
     <string name="ui_status_bar_toggle_brightness">Έλεγχος φωτεινότητας από τη μπάρα κατάστασης</string>

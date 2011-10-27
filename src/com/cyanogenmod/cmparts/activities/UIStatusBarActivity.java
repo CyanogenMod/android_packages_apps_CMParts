@@ -36,6 +36,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private static final String PREF_STATUS_BAR_AM_PM = "pref_status_bar_am_pm";
 
+    private static final String PREF_STATUS_BAR_BATTERY = "pref_status_bar_battery";
+
     private static final String PREF_STATUS_BAR_CLOCK = "pref_status_bar_clock";
 
     private static final String PREF_STATUS_BAR_ONEPERC_BATTERY = "pref_status_bar_oneperc_battery";
