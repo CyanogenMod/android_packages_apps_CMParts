@@ -30,7 +30,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.view.KeyCharacterMap;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
@@ -59,6 +58,8 @@ public class InputActivity extends PreferenceActivity implements
     private static final String DOCK_OBSERVER_OFF_DEFAULT = "0";
 
     private static final String KEYPAD_TYPE_PREF = "pref_keypad_type";
+
+    private static final String KEYPAD_TYPE_PREFIX_PROP = "ro.sys.keypad_type_prefix";
 
     private static final String KEYPAD_TYPE_PERSIST_PROP = "persist.sys.keypad_type";
 
@@ -99,6 +100,8 @@ public class InputActivity extends PreferenceActivity implements
     private CheckBoxPreference mVolBtnOrientationPref;
 
     private CheckBoxPreference mDockObserverOffPref;
+
+    private String mKeypadTypePrefix;
 
     private ListPreference mKeypadTypePref;
 
@@ -155,6 +158,7 @@ public class InputActivity extends PreferenceActivity implements
         String dockObserverOff = SystemProperties.get(DOCK_OBSERVER_OFF_PERSIST_PROP, DOCK_OBSERVER_OFF_DEFAULT);
         mDockObserverOffPref.setChecked("1".equals(dockObserverOff));
 
+        mKeypadTypePrefix = SystemProperties.get(KEYPAD_TYPE_PREFIX_PROP, "0");
         mKeypadTypePref = (ListPreference) prefSet.findPreference(KEYPAD_TYPE_PREF);
         String keypadType = SystemProperties.get(KEYPAD_TYPE_PERSIST_PROP, KEYPAD_TYPE_DEFAULT);
         mKeypadTypePref.setValue(keypadType);
@@ -294,8 +298,9 @@ public class InputActivity extends PreferenceActivity implements
         if (preference == mKeypadTypePref) {
             String keypadType = (String) newValue;
             SystemProperties.set(KEYPAD_TYPE_PERSIST_PROP, keypadType);
-            SystemProperties.set(KEYPAD_TYPE_HW_PROP, "sholesp2a-keypad-" + keypadType);
-            KeyCharacterMap.load(0);
+            if (!mKeypadTypePrefix.equals("0")) {
+                SystemProperties.set(KEYPAD_TYPE_HW_PROP, mKeypadTypePrefix + keypadType);
+            }
             return true;
         } else if (preference == mQtouchNumPref) {
             String qtouchNum = (String) newValue;
