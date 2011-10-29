@@ -70,13 +70,6 @@
     <item>6 (Langsam)</item>
   </string-array>
 
-  <string-array name="pref_trackball_force_mode_entries">
-    <item>Anwendungseinstellung</item>
-    <item>LED immer deaktivieren</item>
-    <item>LED nur bei Ereignisbenachrichtigung</item>
-    <item>LED immer aktivieren</item>
-  </string-array>
-
   <string-array name="pref_lockscreen_delay_entries">
     <item>Sofort</item>
     <item>1 Sekunde</item>
@@ -98,11 +91,11 @@
   </string-array>
 
   <string-array name="entries_light_filter_window">
+    <item>2 Sekunden</item>
+    <item>5 Sekunden</item>
     <item>10 Sekunden</item>
     <item>20 Sekunden</item>
     <item>30 Sekunden</item>
-    <item>40 Sekunden</item>
-    <item>50 Sekunden</item>
     <item>60 Sekunden</item>
   </string-array>
 

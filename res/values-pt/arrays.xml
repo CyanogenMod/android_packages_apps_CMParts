@@ -37,13 +37,6 @@
         <item>6 (Lento)</item>
     </string-array>
 
-    <string-array name="pref_trackball_force_mode_entries">
-        <item>Usar configurações da aplicação</item>
-        <item>Forçar LED a ficar desligado</item>
-        <item>Forçar LED a acender em eventos</item>
-        <item>Forçar LED a acender</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_delay_entries">
         <item>Imediatamente</item>
         <item>1 s</item>

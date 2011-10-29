@@ -57,11 +57,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2 mp</item>
+        <item>5 mp</item>
         <item>10 mp</item>
         <item>20 mp</item>
         <item>30 mp</item>
-        <item>40 mp</item>
-        <item>50 mp</item>
         <item>60 mp</item>
     </string-array>
 

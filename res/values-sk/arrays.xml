@@ -43,12 +43,6 @@
         <item>5</item>
         <item>6 (Pomaly)</item>
     </string-array>
-    <string-array name="pref_trackball_force_mode_entries">
-        <item>Podľa nastavenia aplikácie</item>
-        <item>Vynútiť LED vyp</item>
-        <item>Vynútiť LED zap pre udalosti</item>
-        <item>Vynútiť LED zap</item>
-    </string-array>
     <string-array name="pref_lockscreen_delay_entries">
         <item>Okamžite</item>
         <item>1s</item>
@@ -67,14 +61,6 @@
         <item>18% (default)</item>
         <item>26%</item>
     </string-array>
-    <string-array name="entries_light_filter_window">
-        <item>10 s</item>
-        <item>20 s</item>
-        <item>30 s</item>
-        <item>40 s</item>
-        <item>50 s</item>
-        <item>60 s</item>
-    </string-array>
     <string-array name="entries_light_filter_reset">
         <item>Disabled</item>
         <item>400 lux</item>
@@ -87,13 +73,6 @@
         <item>1500 lux</item>
         <item>2000 lux</item>
         <item>2500 lux</item>
-    </string-array>
-    <string-array name="entries_light_filter_interval">
-        <item>0.5 s</item>
-        <item>1 s</item>
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
     </string-array>
     <string-array name="entries_light_levels_dim">
         <item>1</item>

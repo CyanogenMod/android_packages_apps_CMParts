@@ -221,6 +221,12 @@
     <string name="trackball_color_entry_random">Τυχαίο</string>
     <string name="trackball_color_entry_amber">Amber</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Χρήση ρύθμισης εφαρμογής</string>
+    <string name="trackball_force_mode_off">Εξαναγκ. ανενεργό LED</string>
+    <string name="trackball_force_mode_events">Εξαναγκ. ενεργό LED για συμβάντα</string>
+    <string name="trackball_force_mode_on">Εξαναγκ. ενεργό LED</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ΠΡΟΣΟΧΗ: Ίσως καταναλώσει την μπαταρία</string>
     <string name="notification_battery_warning">Αυτή η επιλογή αποδεδειγμένα μειώνει τη μπαταρία κατα ~3% ανά ώρα. Αν παρατηρήσετε αύξηση της κατανάλωσης κατά τον παλμό του φωτισμόυ του trackball τότε αυτή η επιλογή είναι η αιτία. Μην την ενεργοποιήσετε αν δε θέλετε να επιβαρυνθείτε την κατανάλωση αυτή.</string>

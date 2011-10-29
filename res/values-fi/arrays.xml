@@ -52,11 +52,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2sek</item>
+        <item>5sek</item>
         <item>10sek</item>
         <item>20sek</item>
         <item>30sek</item>
-        <item>40sek</item>
-        <item>50sek</item>
         <item>60sek</item>
     </string-array>
 

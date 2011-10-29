@@ -70,11 +70,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2秒</item>
+        <item>5秒</item>
         <item>10秒</item>
         <item>20秒</item>
         <item>30秒</item>
-        <item>40秒</item>
-        <item>50秒</item>
         <item>60秒</item>
     </string-array>
 

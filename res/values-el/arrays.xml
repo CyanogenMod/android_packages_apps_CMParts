@@ -38,13 +38,6 @@
         <item>6 (Αργά)</item>
     </string-array>
 
-    <string-array name="pref_trackball_force_mode_entries">
-        <item>Χρήση ρύθμισης εφαρμογής</item>
-        <item>Εξαναγκ. ανενεργό LED</item>
-        <item>Εξαναγκ. ενεργό LED για συμβάντα</item>
-        <item>Εξαναγκ. ενεργό LED</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_delay_entries">
         <item>Άμεσα</item>
         <item>1s</item>

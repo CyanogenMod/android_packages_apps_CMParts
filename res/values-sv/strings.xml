@@ -95,6 +95,8 @@
     <string name="ui_status_bar_am_pm_summary">Visning stil AM / PM bredvid klockan</string>
     <string name="ui_status_bar_clock_title">Visa klockan</string>
     <string name="ui_status_bar_clock_summary">Klockan i statusraden kommer att vara gömd om detta inaktiveras</string>
+    <string name="ui_status_bar_battery_title">Stil för batteristatus</string>
+    <string name="ui_status_bar_battery_summary">Visningsstil för batteristatus</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakt operatörsetikett</string>
     <string name="ui_status_bar_compact_carrier_summary">Använd en alternativ layout för aviseringar med liten operatörsetikett</string>
     <string name="ui_status_bar_toggle_brightness">Ljuskontroll i statusrad</string>
@@ -115,6 +117,8 @@
     <!-- User interface : WebView -->
     <string name="pref_pinch_reflow_title">Återströmma efter pinch</string>
     <string name="pref_pinch_reflow_summary">Återströmma innehåll omedelbart efter pinch för inzoomning</string>
+    <string name="pref_share_screenshot_title">Dela skärmdumpar</string>
+    <string name="pref_share_screenshot_summary">Visa delningsmenyn när en skärmdump tas</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Överscrollning</string>
@@ -218,6 +222,12 @@
     <string name="trackball_color_entry_random">Slumpmässig</string>
     <string name="trackball_color_entry_amber">Bärnsten</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Använd applikationens inställningar</string>
+    <string name="trackball_force_mode_off">Släck lysdiod</string>
+    <string name="trackball_force_mode_events">Tänd lysdiod vid händelser</string>
+    <string name="trackball_force_mode_on">Tänd lysdiod</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">VARNING: Kan orsaka ökad batteriförbrukning</string>
     <string name="notification_battery_warning">Denna inställningar har visats öka batteriförbrukningen med ca 3% per timme. Om du upplever en ökad förbrukning medans styrkulans lampa pulserar så är detta varför. Aktivera inte om du inte vill öka förbrukningen.</string>
@@ -257,6 +267,8 @@
     <string name="pref_volume_wake_summary">Väck enheten genom att trycka på volym upp/ner. Avsett för enheter där det är svårt att trycka på strömknappen</string>
     <string name="pref_trackball_unlock_title">Upplåsning med styrkula</string>
     <string name="pref_trackball_unlock_summary">Tryck på styrkulan låser upp enheten</string>
+    <string name="pref_slider_unlock_title">Lås upp med skjutbart tangentbord</string>
+    <string name="pref_slider_unlock_summary">Att skjuta ut tangentbordet låser upp enheten</string>
     <string name="pref_menu_unlock_title">Upplåsning med Meny</string>
     <string name="pref_menu_unlock_summary">Tryck på meny-knappen låser upp enheten</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Snabbupplåsning</string>

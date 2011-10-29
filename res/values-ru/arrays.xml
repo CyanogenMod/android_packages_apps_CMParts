@@ -37,13 +37,6 @@
         <item>6 (Медленно)</item>
     </string-array>
 
-    <string-array name="pref_trackball_force_mode_entries">
-        <item>Исп. настройки приложений</item>
-        <item>Принудит. выкл. светодиода</item>
-        <item>Принудит. вкл. светодиода для событий</item>
-        <item>Принудит. вкл. светодиода</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_delay_entries">
         <item>Немедленно</item>
         <item>1 секунда</item>
@@ -58,11 +51,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2 секунд</item>
+        <item>5 секунд</item>
         <item>10 секунд</item>
         <item>20 секунд</item>
         <item>30 секунд</item>
-        <item>40 секунд</item>
-        <item>50 секунд</item>
         <item>60 секунд</item>
     </string-array>
 
@@ -253,6 +246,12 @@
         <item>1 день</item>
         <item>3 дня</item>
         <item>1 неделя</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_battery">
+        <item>Иконка (По умолчанию)</item>
+        <item>Процентный</item>
+        <item>Скрытый</item>
     </string-array>
 
 </resources>

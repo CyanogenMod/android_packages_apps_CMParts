@@ -26,6 +26,10 @@
 			android:title="@string/quiet_hours_mute" android:summaryOn="@string/quiet_hours_mute_on"
 			android:summaryOff="@string/quiet_hours_mute_off" android:dependency="quiet_hours_enabled" />
 
+        <CheckBoxPreference android:key="quiet_hours_haptic"
+            android:title="@string/quiet_hours_haptic" android:summaryOn="@string/quiet_hours_haptic_on"
+            android:summaryOff="@string/quiet_hours_haptic_off" android:dependency="quiet_hours_enabled" />
+
 		<CheckBoxPreference android:key="quiet_hours_still"
 			android:title="@string/quiet_hours_still" android:summaryOn="@string/quiet_hours_still_on"
 			android:summaryOff="@string/quiet_hours_still_off"

@@ -94,7 +94,9 @@
     <string name="ui_status_bar_am_pm_title">Stile AM/PM</string>
     <string name="ui_status_bar_am_pm_summary">Scegli come visualizzare l\'indicazione AM/PM accanto all\'orologio</string>
     <string name="ui_status_bar_clock_title">Mostra orologio</string>
-    <string name="ui_status_bar_clock_summary">Se disattivato l\'orologio verrà nascosto</string>
+    <string name="ui_status_bar_clock_summary">Se disattivato, l\'orologio verrà nascosto</string>
+    <string name="ui_status_bar_battery_title">Stile batteria</string>
+    <string name="ui_status_bar_battery_summary">Scegli come visualizzare lo stato della batteria</string>
     <string name="ui_status_bar_compact_carrier_title">Etichetta operatore compatta</string>
     <string name="ui_status_bar_compact_carrier_summary">Utilizza un layout alternativo per l\'area delle notifiche rimpicciolendo l\'etichetta operatore.</string>
     <string name="ui_status_bar_toggle_brightness">Controllo luminosità</string>
@@ -115,6 +117,10 @@
     <!-- User interface : WebView -->
     <string name="pref_pinch_reflow_title">Reflow dopo il pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow dei contenuti web dopo il pinch to zoom</string>
+
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Condividi schermate</string>
+    <string name="pref_share_screenshot_summary">Visualizza il menu di condivisione dopo aver catturato una schermata</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Overscrolling</string>
@@ -221,6 +227,12 @@
     <string name="trackball_color_entry_random">Random</string>
     <string name="trackball_color_entry_amber">Ambra</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Usa impostazioni app</string>
+    <string name="trackball_force_mode_off">Forza LED spento</string>
+    <string name="trackball_force_mode_events">Forza LED acceso per eventi</string>
+    <string name="trackball_force_mode_on">Forza LED acceso</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATTENZIONE:Aumento consumo di batteria</string>
     <string name="notification_battery_warning">È stato provato che questa opzione aumenta il consumo di batteria del ~3% ogni ora. Se noti un aumento del consumo mentre sono attive le notifiche pulsanti questa ne è la causa. Non attivarla se non vuoi peggiorare la durata della batteria.</string>
@@ -260,12 +272,14 @@
     <string name="pref_volume_wake_summary">Sveglia il telefono premendo i tasti per il controllo volume</string>
     <string name="pref_trackball_unlock_title">Trackball unlock</string>
     <string name="pref_trackball_unlock_summary">Sblocca il telefono premendo la trackball</string>
+    <string name="pref_slider_unlock_title">Sliding keyboard unlock</string>
+    <string name="pref_slider_unlock_summary">Sblocca il telefono aprendo la tastiera</string>
     <string name="pref_menu_unlock_title">Menu unlock</string>
     <string name="pref_menu_unlock_summary">Sblocca il telefono premendo il tasto menu</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Sblocco veloce</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Non è richiesto premere OK dopo aver inserito il PIN o la Password. Cancellare conta come tentativo fallito.</string>
-    <string name="pref_lockscreen_custom_app_toggle_title">Lanciatore app personalizzato</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante, aggiunge un terzo anello nel lockscreen ad anelli.</string>
+    <string name="pref_lockscreen_custom_app_toggle_title">App personalizzata</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Aggiunge un secondo tab nel lockscreen a tab scorrevoli, l\'icona dell\'app nel lockscreen rotante o un terzo anello nel lockscreen ad anelli.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Applicazione personalizzata</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Seleziona il collegamento da aggiungere</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Seleziona il collegamento da rimuovere</string>

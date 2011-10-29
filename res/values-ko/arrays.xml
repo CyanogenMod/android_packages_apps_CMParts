@@ -52,11 +52,11 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2초</item>
+        <item>5초</item>
         <item>10초</item>
         <item>20초</item>
         <item>30초</item>
-        <item>40초</item>
-        <item>50초</item>
         <item>60초</item>
     </string-array>
 

@@ -95,6 +95,8 @@
     <string name="ui_status_bar_am_pm_summary">時鐘旁邊的上午／下午的顯示格式</string>
     <string name="ui_status_bar_clock_title">顯示時鐘</string>
     <string name="ui_status_bar_clock_summary">在通知列顯示時鐘</string>
+    <string name="ui_status_bar_battery_title">電池狀況風格</string>
+    <string name="ui_status_bar_battery_summary">電池狀況的顯示風格</string>
     <string name="ui_status_bar_compact_carrier_title">縮小電信業者名稱</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，將電信業者名稱縮小顯示</string>
     <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>
@@ -115,6 +117,10 @@
     <!-- User interface : WebView -->
     <string name="pref_pinch_reflow_title">雙指放大後重新排列</string>
     <string name="pref_pinch_reflow_summary">雙指放大後立即重新排列網頁檢視的內容</string>
+
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">分享螢幕擷取畫面</string>
+    <string name="pref_share_screenshot_summary">擷取螢幕畫面後顯示分享選單</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">過度捲動</string>
@@ -221,6 +227,12 @@
     <string name="trackball_color_entry_random">隨機</string>
     <string name="trackball_color_entry_amber">琥珀</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">使用應用程式設定</string>
+    <string name="trackball_force_mode_off">強制關閉 LED</string>
+    <string name="trackball_force_mode_events">為進行中事件強制開啟 LED</string>
+    <string name="trackball_force_mode_on">強制開啟 LED</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">警告：會引致加速耗電</string>
     <string name="notification_battery_warning">這個選項已被證實會增加每小時3％的耗電量。如發現啟用了閃爍後耗電速度增快，那麼這個選項就是原因。如不希望招致耗電加快就請勿啟用。</string>
@@ -260,6 +272,8 @@
     <string name="pref_volume_wake_summary">按一下音量的上升／下降鍵來喚醒裝置。適用於難以按壓電源鍵的裝置</string>
     <string name="pref_trackball_unlock_title">軌跡球解鎖</string>
     <string name="pref_trackball_unlock_summary">按一下軌跡球解除裝置鎖定</string>
+    <string name="pref_slider_unlock_title">滑出鍵盤時解鎖</string>
+    <string name="pref_slider_unlock_summary">滑出實體鍵盤時解除裝置鎖定</string>
     <string name="pref_menu_unlock_title">選單鍵解鎖</string>
     <string name="pref_menu_unlock_summary">按一下選單鍵解除裝置鎖定</string>
     <string name="pref_lockscreen_quick_unlock_control_title">快速解鎖</string>
@@ -405,23 +419,23 @@
 
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">使用 16 位元透明度</string>
-    <string name="pref_use_16bpp_alpha_summary">能提升捲動效能，但或會導致影像異常\n（需要重新啟動）</string>
+    <string name="pref_use_16bpp_alpha_summary">能提升捲動效能，但或會導致圖像異常\n（需要重新啟動）</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">允許清除資源</string>
-    <string name="pref_purgeable_assets_summary">如果點陣圖資源的記憶體可以被回收，讓系統能夠視乎需要釋放更多的記憶體\n（需要重新啟動）</string>
+    <string name="pref_purgeable_assets_summary">如果點陣圖資源記憶體可以被回收，讓系統能夠視乎需要釋放更多的記憶體\n（需要重新啟動）</string>
 
     <!-- Performance Settings : VM Heap Size -->
-    <string name="pref_heapsize_title">VM heap 大小</string>
-    <string name="pref_heapsize_summary">每一 VM heap 的記憶體上限值\n（需要重新啟動）</string>
+    <string name="pref_heapsize_title">VM Heap 大小</string>
+    <string name="pref_heapsize_summary">每一組虛擬機器的堆積記憶體上限值\n（需要重新啟動）</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">主介面常駐於記憶體</string>
-    <string name="pref_lock_home_summary">企圖將目前的主介面應用程式常駐於記憶體中</string>
+    <string name="pref_lock_home_summary">企圖將目前的主介面應用程式常駐於記憶體</string>
 
     <!-- Performance : Lock mms app in memory -->
     <string name="pref_lock_mms_title">簡訊程式常駐於記憶體</string>
-    <string name="pref_lock_mms_summary">企圖將簡訊應用程式常駐於記憶體中，避免在記憶體低落的情況下喪失簡訊</string>
+    <string name="pref_lock_mms_summary">企圖將簡訊應用程式常駐於記憶體，籍此避免在記憶體低落的情況下喪失簡訊</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">警告：潛龍勿用！</string>

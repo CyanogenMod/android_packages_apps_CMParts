@@ -57,15 +57,6 @@
         <item>26%</item>
     </string-array>
 
-    <string-array name="entries_light_filter_window">
-        <item>10 s</item>
-        <item>20 s</item>
-        <item>30 s</item>
-        <item>40 s</item>
-        <item>50 s</item>
-        <item>60 s</item>
-    </string-array>
-
     <string-array name="entries_light_filter_reset">
         <item>Uitgeschakeld</item>
         <item>400 lux</item>
@@ -78,14 +69,6 @@
         <item>1500 lux</item>
         <item>2000 lux</item>
         <item>2500 lux</item>
-    </string-array>
-
-    <string-array name="entries_light_filter_interval">
-        <item>0.5 s</item>
-        <item>1 s</item>
-        <item>2 s</item>
-        <item>5 s</item>
-        <item>10 s</item>
     </string-array>
 
     <string-array name="entries_light_levels_dim">

@@ -251,14 +251,16 @@
         <item>6</item>
     </string-array>
 
-    <string-array name="pref_trackball_force_mode_entries">
-        <item>Use application settings</item>
-        <item>Force LED off</item>
-        <item>Force LED on for events</item>
-        <item>Force LED on</item>
+    <string-array name="pref_trackball_force_mode_entries" translatable="false">
+        <item>@string/trackball_force_mode_category</item>
+        <item>@string/trackball_force_mode_application</item>
+        <item>@string/trackball_force_mode_off</item>
+        <item>@string/trackball_force_mode_events</item>
+        <item>@string/trackball_force_mode_on</item>
     </string-array>
 
     <string-array name="pref_trackball_force_mode_values" translatable="false">
+        <item>category</item>
         <item>default</item>
         <item>forceoff</item>
         <item>forceeventon</item>
@@ -306,20 +308,20 @@
     </string-array>
 
     <string-array name="entries_light_filter_window">
+        <item>2 s</item>
+        <item>5 s</item>
         <item>10 s</item>
         <item>20 s</item>
         <item>30 s</item>
-        <item>40 s</item>
-        <item>50 s</item>
         <item>60 s</item>
     </string-array>
 
     <string-array name="values_light_filter_window" translatable="false">
+        <item>2000</item>
+        <item>5000</item>
         <item>10000</item>
         <item>20000</item>
         <item>30000</item>
-        <item>40000</item>
-        <item>50000</item>
         <item>60000</item>
     </string-array>
 

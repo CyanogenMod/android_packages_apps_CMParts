@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/general_title">
+    <PreferenceCategory
+        android:key="pref_lockscreen_style_general"
+        android:title="@string/general_title"
+        android:order="1">
 
         <ListPreference android:key="pref_lockscreen_style"
             android:dialogTitle="@string/pref_lockscreen_style_title"
@@ -17,28 +20,6 @@
             android:entries="@array/pref_in_call_style_entries"
             android:entryValues="@array/pref_in_call_style_values" />
 
-        <CheckBoxPreference android:key="pref_lockscreen_custom_app_toggle"
-            android:title="@string/pref_lockscreen_custom_app_toggle_title"
-            android:summary="@string/pref_lockscreen_custom_app_toggle_summary" />
-
-        <CheckBoxPreference android:key="pref_lockscreen_rotary_unlock_down_toggle"
-            android:title="@string/pref_lockscreen_rotary_unlock_down_title"
-            android:summary="@string/pref_lockscreen_rotary_unlock_down_summary" />
-
-        <CheckBoxPreference android:key="pref_lockscreen_rotary_hide_arrows_toggle"
-            android:title="@string/pref_lockscreen_rotary_hide_arrows_title"
-            android:summary="@string/pref_lockscreen_rotary_hide_arrows_summary" />
-
-        // currently a toggle/checkbox but may be expanded if more icons are added
-        <CheckBoxPreference android:key="pref_lockscreen_custom_icon_style"
-            android:title="@string/pref_lockscreen_custom_icon_style_title"
-            android:summary="@string/pref_lockscreen_custom_icon_style_summary" 
-            android:dependency="pref_lockscreen_custom_app_toggle" />
-
-        <Preference android:key="pref_lockscreen_custom_app_activity"
-            android:dependency="pref_lockscreen_custom_app_toggle"
-            android:title="@string/pref_lockscreen_custom_app_activity_title" />
-
         <ListPreference android:key="pref_lockscreen_background"
             android:dialogTitle="@string/pref_lockscreen_custom_background_dialog_title"
             android:title="@string/pref_lockscreen_custom_background_title"
@@ -47,5 +28,44 @@
             android:entryValues="@array/pref_lockscreen_background_values"/>
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_lockscreen_style_lockscreen"
+        android:title="@string/lockscreen_style_options_title"
+        android:order="2">
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_lockscreen_style_incall"
+        android:title="@string/lockscreen_style_options_title"
+        android:order="3">
+    </PreferenceCategory>
+
+    <CheckBoxPreference android:key="pref_lockscreen_custom_app_toggle"
+        android:title="@string/pref_lockscreen_custom_app_toggle_title"
+        android:summary="@string/pref_lockscreen_custom_app_toggle_ring_summary"
+        android:order="10" />
+
+    <CheckBoxPreference android:key="pref_lockscreen_rotary_unlock_down_toggle"
+        android:title="@string/pref_lockscreen_rotary_unlock_down_title"
+        android:summary="@string/pref_lockscreen_rotary_unlock_down_summary"
+        android:order="20" />
+
+    <CheckBoxPreference android:key="pref_lockscreen_rotary_hide_arrows_toggle"
+        android:title="@string/pref_lockscreen_rotary_hide_arrows_title"
+        android:summary="@string/pref_lockscreen_rotary_hide_arrows_summary"
+        android:order="30" />
+
+    <!-- currently a toggle/checkbox but may be expanded if more icons are added -->
+    <CheckBoxPreference android:key="pref_lockscreen_custom_icon_style"
+        android:title="@string/pref_lockscreen_custom_icon_style_title"
+        android:summary="@string/pref_lockscreen_custom_icon_style_summary"
+        android:dependency="pref_lockscreen_custom_app_toggle"
+        android:order="40" />
+
+    <Preference android:key="pref_lockscreen_custom_app_activity"
+        android:dependency="pref_lockscreen_custom_app_toggle"
+        android:title="@string/pref_lockscreen_custom_app_activity_title"
+        android:order="50" />
 
 </PreferenceScreen>

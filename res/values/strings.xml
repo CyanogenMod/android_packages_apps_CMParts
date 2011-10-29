@@ -196,8 +196,12 @@
     <string name="trackball_category_screen">Manage categories</string>
     <string name="trackball_category_add_title">Add category</string>
     <string name="trackball_category_add_summary">Add a category to the list</string>
+    <string name="trackball_category_add_error_title">ERROR</string>
+    <string name="trackball_category_add_error_summary">The category name may not contain \'=\'</string>
     <string name="trackball_category_remove_title">Remove category</string>
     <string name="trackball_category_remove_summary">Remove a category from the list</string>
+    <string name="trackball_category_edit_title">Edit category settings</string>
+    <string name="trackball_category_edit_summary">Edit the default settings for this category</string>
     <string name="trackball_reset_all">Reset all colors and categories.</string>
     <string name="trackball_color_notice_title">NOTE:</string>
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
@@ -236,6 +240,13 @@
     <string name="trackball_color_entry_light_blue">Light Blue</string>
     <string name="trackball_color_entry_random">Random</string>
     <string name="trackball_color_entry_amber">Amber</string>
+
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Use category settings</string>
+    <string name="trackball_force_mode_application">Use application settings</string>
+    <string name="trackball_force_mode_off">Force LED off</string>
+    <string name="trackball_force_mode_events">Force LED on for events</string>
+    <string name="trackball_force_mode_on">Force LED on</string>
 
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNING: May cause battery drain</string>
@@ -282,8 +293,11 @@
     <string name="pref_menu_unlock_summary">Pressing the menu button unlocks the device</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Quick Unlock</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">No need to press OK when entering Pin or Password. Delete counts as bad try</string>
+    <string name="lockscreen_style_options_title">Style-specific Options</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style, shows a third ring on ring style</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">Shows a second set of sliders to launch a custom app</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">Shows a custom app dimple to launch a custom app</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">Shows a third ring to launch up to four custom apps</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Select which shortcut to set</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Select which shortcut to un-set</string>
@@ -671,6 +685,9 @@
     <string name="quiet_hours_dim">Dim LED</string>
     <string name="quiet_hours_dim_on">LED will dim if possible</string>
     <string name="quiet_hours_dim_off">LED will be full brightness</string>
+    <string name="quiet_hours_haptic">Disable haptic feedback</string>
+    <string name="quiet_hours_haptic_on">Haptic feedback is disabled</string>
+    <string name="quiet_hours_haptic_off">Haptic feedback is enabled</string>
 
     <string name="cmstats_title">Anonymous statistics</string>
     <string name="cmstats_summary">Help make CM better by opting-in to anonymous statistics reporting</string>

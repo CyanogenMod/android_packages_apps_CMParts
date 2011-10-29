@@ -235,6 +235,12 @@
     <string name="trackball_color_entry_random">Zufällig</string>
     <string name="trackball_color_entry_amber">Bernstein</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Anwendungseinstellung</string>
+    <string name="trackball_force_mode_off">LED immer deaktivieren</string>
+    <string name="trackball_force_mode_events">LED nur bei Ereignisbenachrichtigung</string>
+    <string name="trackball_force_mode_on">LED immer aktivieren</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNUNG: Kann Akkuverbrauch erhöhen</string>
     <string name="notification_battery_warning">Diese Option führte in einigen Fällen zu einer erhöhten Akkuentladung von ca. 3 Prozentpunkten pro Stunde. Sollten Sie einen ungewöhnlich hohen Akkuverbrauch feststellen und LED-Benachrichtigungen aktiviert haben, versuchen Sie, die LED-Benachrichtigungen wieder zu deaktivieren.</string>

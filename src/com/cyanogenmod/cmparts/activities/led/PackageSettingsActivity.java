@@ -35,6 +35,7 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.text.TextUtils;
+
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.activities.ColorPickerDialog;
 
@@ -43,7 +44,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-
 public class PackageSettingsActivity extends PreferenceActivity implements
             Preference.OnPreferenceChangeListener {
 
@@ -53,6 +53,9 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     public static final String EXTRA_FORCE_MODE = "forcemode";
     public static final String EXTRA_PACKAGE = "package";
     public static final String EXTRA_TITLE = "title";
+
+    // Categories settings will be stored in this package
+    public static final String CATEGORY_PACKAGE_PREFIX = "com.cyanogenmod.led.categories_settings.";
 
     private static final String COLOR_RANDOM = "random";
     private static final String VALUE_DEFAULT = "default";
@@ -146,6 +149,22 @@ public class PackageSettingsActivity extends PreferenceActivity implements
         setTitle(intent.getStringExtra(EXTRA_TITLE));
         mResultIntent.putExtra(EXTRA_PACKAGE, intent.getStringExtra(EXTRA_PACKAGE));
 
+        String pkgName = intent.getStringExtra(EXTRA_PACKAGE);
+        if (pkgName.startsWith(PackageSettingsActivity.CATEGORY_PACKAGE_PREFIX)) {
+            // We are editing a category setting, hide "category" list
+            PreferenceScreen screen = (PreferenceScreen) findPreference("package_screen");
+            screen.removePreference(mCategoryPref);
+
+            // Also remove "Use category settings" from LED modes
+            CharSequence[] oldArray = mForceModePref.getEntries();
+            CharSequence[] newArray = Arrays.copyOfRange(oldArray, 1, oldArray.length);
+            mForceModePref.setEntries(newArray);
+
+            oldArray = mForceModePref.getEntryValues();
+            newArray = Arrays.copyOfRange(oldArray, 1, oldArray.length);
+            mForceModePref.setEntryValues(newArray);
+        }
+
         setPrefWithDefault(mCategoryPref, intent, EXTRA_CATEGORY);
         setPrefWithDefault(mBlinkPref, intent, EXTRA_BLINK);
         setPrefWithDefault(mForceModePref, intent, EXTRA_FORCE_MODE);
@@ -164,7 +183,7 @@ public class PackageSettingsActivity extends PreferenceActivity implements
     }
 
     private void updateEnabledStates(String forceModeValue) {
-        boolean isOn = !TextUtils.equals(forceModeValue, "forceoff");
+        boolean isOn = !TextUtils.equals(forceModeValue, "forceoff") && !TextUtils.equals(forceModeValue, "category");
         mCustomPref.setEnabled(isOn);
         mTestPref.setEnabled(isOn);
         mColorPref.setEnabled(isOn);

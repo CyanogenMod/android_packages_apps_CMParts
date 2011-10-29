@@ -65,6 +65,8 @@
     <string name="ui_status_bar_title">Barre de notification</string>
     <string name="ui_status_bar_am_pm_title">Indicateur AM/PM</string>
     <string name="ui_status_bar_am_pm_summary">Affiche l\'indicateur AM/PM à côté de l\'heure</string>
+    <string name="ui_status_bar_battery_title">Batterie</string>
+    <string name="ui_status_bar_battery_summary">Style de l\'indicateur de niveau de charge</string>
     <string name="ui_status_bar_clock_title">Afficher l\'heure</string>
     <string name="ui_status_bar_clock_summary">L\'heure sera cachée de la barre si cette option est désactivée</string>
     <string name="ui_status_bar_compact_carrier_title">Fournisseur abrégé</string>
@@ -95,6 +97,10 @@
     <!-- User interface : WebView -->
     <string name="pref_pinch_reflow_title">Redessiner au zoom</string>
     <string name="pref_pinch_reflow_summary">Redessine les pages web immédiatement après un zoom avec les doigts ("pinch")</string>
+
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Partager Screenshots</string>
+    <string name="pref_share_screenshot_summary">Affiche le menu de partage après une capture d\'écran</string>
 
     <!-- User interface : Lock Screen -->
     <string name="pref_lockscreen_delay_title">Délai</string>
@@ -181,6 +187,12 @@
     <string name="trackball_color_entry_random">Aléatoire</string>
     <string name="trackball_color_entry_amber">Orange</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Paramètres application</string>
+    <string name="trackball_force_mode_off">Pas de LED</string>
+    <string name="trackball_force_mode_events">LED si évenements</string>
+    <string name="trackball_force_mode_on">LED active</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ATTENTION : Peut vider votre batterie</string>
     <string name="notification_battery_warning">Il a été prouvé que cette option accentue l\'utilisation de la batterie d\'environ 3% par heure. Si vous constatez ce phénomène, c\'est certainement cette option qui en est la cause directe. N\'activez cette option uniquement en connaissance de cause !</string>
@@ -256,10 +268,12 @@
 
     <!-- Input Settings -->
     <string name="input_settings_title">Paramètres des entrées</string>
-    <string name="pref_trackball_wake_title">Réveil par la trackball</string>
-    <string name="pref_trackball_wake_summary">Une pression sur la trackball réveille le téléphone</string>
-    <string name="pref_trackball_unlock_title">Déverrouillage par la trackball</string>
-    <string name="pref_trackball_unlock_summary">Une pression sur la trackball déverrouille le téléphone</string>
+    <string name="pref_trackball_wake_title">Réveil par trackball</string>
+    <string name="pref_trackball_wake_summary">Une pression sur le trackball réveille le téléphone</string>
+    <string name="pref_trackball_unlock_title">Déverrouillage par trackball</string>
+    <string name="pref_trackball_unlock_summary">Une pression sur le trackball déverrouille le téléphone</string>
+    <string name="pref_slider_unlock_title">Déverrouillage par clavier</string>
+    <string name="pref_slider_unlock_summary">L\'ouverture du clavier physique déverrouille le téléphone</string>
     <string name="pref_menu_unlock_title">Déverrouillage par menu</string>
     <string name="pref_menu_unlock_summary">Une pression sur le bouton menu déverrouille le téléphone</string>
     <string name="pref_volume_wake_title">Eveil par boutons volume</string>
@@ -460,12 +474,18 @@
     <string name="title_button_modes">Modes de fonctionnement des boutons</string>
     <string name="pref_brightness_mode_title">Modes de luminosité</string>
     <string name="pref_brightness_mode_summary">Sélection des modes de fonctionnement du bouton Luminosité</string>
+    <string name="cm_brightness_mode_auto">Auto</string>
+    <string name="cm_brightness_mode_dim">Dim</string>
     <string name="pref_network_mode_title">Modes 2G/3G</string>
     <string name="pref_network_mode_summary">Choisir comment le bouton 2G/3G se comportera</string>
     <string name="pref_screentimeout_mode_title">Modes Timeout de l\'écran</string>
     <string name="pref_screentimeout_mode_summary">Sélection des modes de fonctionnement du bouton Timeout de l\'écran</string>
     <string name="pref_ring_mode_title">Modes Sonnerie</string>
     <string name="pref_ring_mode_summary">Sélection des modes de fonctionnement du bouton Sonnerie</string>
+    <string name="cm_sound_mode_silent">Silencieux</string>
+    <string name="cm_sound_mode_vibrate">Vibreur</string>
+    <string name="cm_sound_mode_sound">Son</string>
+    <string name="cm_sound_mode_soundVibrate">Son et vibreur</string>
     <string name="pref_flash_mode_title">Mode flash</string>
     <string name="pref_flash_mode_summary">Choisir la puissance du flash : Haute ou Death Ray</string>
 

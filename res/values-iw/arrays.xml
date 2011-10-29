@@ -37,11 +37,11 @@
     <item>26%</item>
   </string-array>
   <string-array name="entries_light_filter_window">
+    <item>2ש</item>
+    <item>5ש</item>
     <item>10ש</item>
     <item>20ש</item>
     <item>30ש</item>
-    <item>40ש</item>
-    <item>50ש</item>
     <item>60ש</item>
   </string-array>
   <string-array name="entries_light_filter_reset">

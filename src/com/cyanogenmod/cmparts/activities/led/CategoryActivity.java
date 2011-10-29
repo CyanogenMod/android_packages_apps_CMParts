@@ -90,7 +90,14 @@ public class CategoryActivity extends PreferenceActivity implements
                     new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     EditText textBox = (EditText) textEntryView.findViewById(R.id.cat_text);
-                    mCategories.add(textBox.getText().toString());
+                    String name = textBox.getText().toString();
+
+                    if (name.contains("=")) {
+                        showDisallowedNameError();
+                        return;
+                    }
+
+                    mCategories.add(name);
                     saveCategories();
                     updateRemoveEntries();
                 }
@@ -128,5 +135,14 @@ public class CategoryActivity extends PreferenceActivity implements
         mCategoryRemovePref.setEntries(categories);
         mCategoryRemovePref.setEntryValues(categories);
         mCategoryRemovePref.setEnabled(categories.length > 0);
+    }
+
+    private void showDisallowedNameError() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.trackball_category_add_error_title))
+               .setMessage(getString(R.string.trackball_category_add_error_summary))
+               .setCancelable(false)
+               .setPositiveButton(android.R.string.ok, null);
+        builder.create().show();
     }
 }

@@ -94,6 +94,12 @@
     <string name="trackball_category_remove_summary">Remover uma categoria da lista</string>
     <string name="trackball_reset_all">Resetar todas as cores e categorias.</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_application">Usar configurações da aplicação</string>
+    <string name="trackball_force_mode_off">Forçar LED a ficar desligado</string>
+    <string name="trackball_force_mode_events">Forçar LED a acender em eventos</string>
+    <string name="trackball_force_mode_on">Forçar LED a acender</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ALERTA: Pode consumir mais bateria</string>
     <string name="notification_battery_warning">Essa opção provou aumentar o gasto da bateria em ~3% por hora. Se você perceber um aumento no gasto enquanto a luz da trackball pulsa então este será o motivo. Não ative se você não deseja que isso ocorra.</string>
