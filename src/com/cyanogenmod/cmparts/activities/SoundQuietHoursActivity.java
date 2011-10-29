@@ -21,6 +21,7 @@ import com.cyanogenmod.cmparts.R;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -52,6 +53,8 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
     private static final String KEY_QUIET_HOURS_STILL = "quiet_hours_still";
 
     private static final String KEY_QUIET_HOURS_DIM = "quiet_hours_dim";
+    
+    private static final String KEY_QUIET_HOURS_HAPTIC = "quiet_hours_haptic"; 
 
     private CheckBoxPreference mQuietHoursEnabled;
 
@@ -64,6 +67,8 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
     private CheckBoxPreference mQuietHoursStill;
 
     private CheckBoxPreference mQuietHoursDim;
+    
+    private CheckBoxPreference mQuietHoursHaptic;
 
     private String returnTime(String t) {
         if (t == null || t.equals("")) {
@@ -102,6 +107,7 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
         mQuietHoursMute = (CheckBoxPreference) findPreference(KEY_QUIET_HOURS_MUTE);
         mQuietHoursStill = (CheckBoxPreference) findPreference(KEY_QUIET_HOURS_STILL);
         mQuietHoursDim = (CheckBoxPreference) findPreference(KEY_QUIET_HOURS_DIM);
+        mQuietHoursHaptic = (CheckBoxPreference) findPreference(KEY_QUIET_HOURS_HAPTIC);
     }
 
     @Override
@@ -123,6 +129,12 @@ public class SoundQuietHoursActivity extends PreferenceActivity implements
             Settings.System.putInt(getContentResolver(), Settings.System.QUIET_HOURS_DIM,
                     mQuietHoursDim.isChecked() ? 1 : 0);
             return true;
+            
+        } else if (preference == mQuietHoursHaptic) {
+            Settings.System.putInt(getContentResolver(), Settings.System.QUIET_HOURS_HAPTIC,
+                    mQuietHoursHaptic.isChecked() ? 1 : 0);
+            return true;
+            
         } else if (preference == mQuietHoursStart) {
             showDialog(DIALOG_QUIET_HOURS_START);
             mQuietHoursStart.setSummary(returnTime(Settings.System.getString(getContentResolver(),
