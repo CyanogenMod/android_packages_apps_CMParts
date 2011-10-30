@@ -163,7 +163,6 @@
   <string name="trackball_color_entry_light_blue">Світло-синій</string>
   <string name="trackball_color_entry_random">Випадковий</string>
   <string name="trackball_color_entry_amber">Бурштиновий</string>
-
   <string name="notification_battery_warning_title">УВАГА: активація параметра може пришвидшити розряд батареї</string>
   <string name="notification_battery_warning">Активація параметра призводить до збільшення споживання струму на ~ 3% на годину. Якщо ви помітили збільшення споживання під час миготіння трекболу, майте це на увазі. Не вмикайте якщо бажаєте зменшити розряд батареї.</string>
   <string name="pref_lockscreen_disable_on_security_title">Вимк. вікна блокування за блок. з обмеж. доступу</string>

@@ -24,6 +24,12 @@
 			android:summaryOff="@string/sound_vibrate_in_call_summary_off"
 			android:persistent="false" />
 
+        <!-- Lock volume keys -->
+		<CheckBoxPreference android:key="lock-volume-keys"
+			android:title="@string/sound_lock_volume_keys_title"
+			android:summary="@string/sound_lock_volume_keys_summary"
+			android:persistent="false" />
+
 		<PreferenceScreen android:key="sound_category_quiet_hours"
 			android:title="@string/sound_category_quiet_hours_title">
 			<intent android:action="android.intent.action.MAIN"

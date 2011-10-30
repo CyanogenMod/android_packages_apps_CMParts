@@ -89,18 +89,28 @@
     <string name="pref_rotation_180_title">180 degrees</string>
     <string name="pref_rotation_270_title">270 degrees</string>
 
+    <string name="pref_omap_dss_mode_title">DSI kernel bug workaround</string>
+    <string name="pref_omap_dss_mode_summary">Sets OMAP DSS update mode to automatic. Causes slight display tearing but prevents display freezes and occasional kernel panic.</string>
+
+    <string name="pref_na_on_plug_title">Keep display off on plug</string>
+    <string name="pref_na_on_plug_summary">When enabled, display will not turn on automatically when phone is plugged to usb or power (useful e.g. for solar power adapters).</string>
+
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Status bar tweaks</string>
     <string name="ui_status_bar_am_pm_title">AM/PM style</string>
     <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
     <string name="ui_status_bar_clock_title">Show clock</string>
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
+    <string name="ui_status_bar_oneperc_battery_title">1% battery steps</string>
+    <string name="ui_status_bar_oneperc_battery_summary">Show battery percentage in 1% steps. May cause issues with third party batteries and AC adapters. (Requires reboot)</string>
     <string name="ui_status_bar_battery_title">Battery status style</string>
     <string name="ui_status_bar_battery_summary">Display style of battery status</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
-    <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
-    <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
+    <string name="ui_status_bar_force_plmn_display">Force PLMN display</string>
+    <string name="ui_status_bar_force_plmn_display_summary">This forces displaying PLMN for SPDI networks, regardless of SIM card setting. (Requires re-registering to the network)</string>
+    <string name="ui_status_bar_toggle_brightness">StatusBar brightness control</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar.</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
     <string name="ui_status_bar_cm_signal_text_title">Alternate signal display</string>
     <string name="ui_status_bar_cm_signal_text_summary">Show dBm value instead of signal bars</string>
@@ -318,6 +328,14 @@
     <string name="pref_volbtn_music_controls_summary">Seek music tracks when long-pressing the volume buttons while screen off</string>
     <string name="pref_cambtn_music_controls_title">Camera button music control</string>
     <string name="pref_cambtn_music_controls_summary">Toggle play/pause when long-pressing the camera button while screen off</string>
+    <string name="pref_volbtn_orientation_title">Swap volume buttons in landscape</string>
+    <string name="pref_volbtn_orientation_summary">Enable swapping of volume button function according to phone orientation (requires reboot)</string>
+    <string name="pref_dock_observer_off_title">Disable dock observer</string>
+    <string name="pref_dock_observer_off_summary">No action on magnets, useful for users of carrying cases with magnetic closure</string>
+    <string name="pref_keypad_type_title">Keyboard layout</string>
+    <string name="pref_keypad_type_summary">Set hardware keyboard layout - qwerty, qwertz, azerty... (requires reboot)</string>
+    <string name="pref_qtouch_num_title">Multitouch</string>
+    <string name="pref_qtouch_num_summary">Set number of distinct touches to be recognized by touchscreen</string>
     <string name="lockscreen_widgets_note_title">Note</string>
     <string name="lockscreen_widgets_note_summary">Choosing minimalistic lense style hides all widgets except music control. Yet below options are not unset to allow easy switching to other styles</string>
     <string name="lockscreen_calendar_title">Lockscreen Calendar</string>
@@ -435,6 +453,10 @@
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">System can free more RAM when needed if asset bitmap memory can be reclaimed (requires reboot)</string>
 
+    <!-- Performance Settings : Logger -->
+    <string name="pref_logger_title">Enable logger</string>
+    <string name="pref_logger_summary">Enable logging to /cache/logger</string>
+
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
@@ -446,6 +468,10 @@
     <!-- Performance : Lock mms app in memory -->
     <string name="pref_lock_mms_title">Lock messaging app in memory</string>
     <string name="pref_lock_mms_summary">Avoid lost messages on low memory situations</string>
+
+    <!-- Performance : GMAPS hack -->
+    <string name="pref_gmaps_hack_title">GMAPS hack</string>
+    <string name="pref_gmaps_hack_summary">Make NetworkLocationService killable. Frees some RAM, but Latitude isn\'t reporting location any more (requires reboot)</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">WARNING: Dragons Ahead!</string>
@@ -471,6 +497,9 @@
     <string name="general_title">General</string>
     <string name="camera_title">Camera</string>
     <string name="buttons_title">Buttons</string>
+    <string name="dock_title">Dock</string>
+    <string name="keypad_title">Keyboard</string>
+    <string name="qtouch_title">Touchscreen</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Power prompt</string>
@@ -614,6 +643,8 @@
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
+    <string name="sound_lock_volume_keys_title">Lock volume keys</string>
+    <string name="sound_lock_volume_keys_summary">Prevents accidental unset of silent mode by pressing volume keys</string>
     <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
     <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
     <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>
@@ -756,7 +787,11 @@
     <string name="cpu_min_freq_title">Min CPU frequency</string>
     <string name="cpu_min_freq_summary">Minimum CPU frequency\nCurrently: %s</string>
     <string name="cpu_max_freq_title">Max CPU frequency</string>
-    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently: %s</string>
+    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently set to: %s</string>
+    <string name="cardock_cpu_max_freq_title">Max car dock CPU freq</string>
+    <string name="cardock_cpu_max_freq_summary">Maximum car dock CPU frequency\nCurrently set to: %s</string>
+    <string name="screenoff_cpu_max_freq_title">Max screen off CPU freq</string>
+    <string name="screenoff_cpu_max_freq_summary">Maximum screen off CPU frequency\nCurrently set to: %s</string>
     <string name="cpu_set_on_boot">Set on boot</string>
     <string name="cpu_set_on_boot_summary">Restore CPU settings on boot</string>
 

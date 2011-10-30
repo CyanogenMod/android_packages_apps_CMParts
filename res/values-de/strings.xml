@@ -89,16 +89,26 @@
     <string name="pref_rotation_180_title">180 Grad</string>
     <string name="pref_rotation_270_title">270 Grad</string>
 
+    <string name="pref_omap_dss_mode_title">DSI kernel Bug Workaround</string>
+    <string name="pref_omap_dss_mode_summary">Setzt den OMAP DSS update mode auf automatisch. Erzeugt leichtes Tearing des Displays, verhindert aber ein einfrieren des Displays und gelegentliche kernel panics.</string>
+
+    <string name="pref_na_on_plug_title">Display beim Einstecken ausgeschaltet lassen.</string>
+    <string name="pref_na_on_plug_summary">Wenn aktiviert, wird das Display beim Einstecken in USB oder Ladegerät nicht automatisch eingeschaltet. (z.B. nützlich bei Solarladegeräten)</string>
+
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Statusleiste</string>
     <string name="ui_status_bar_am_pm_title">Tageszeitanzeige</string>
     <string name="ui_status_bar_am_pm_summary">Anzeigestil von vorm./nachm. neben der Uhrzeit</string>
     <string name="ui_status_bar_clock_title">Zeige Uhr</string>
     <string name="ui_status_bar_clock_summary">Die Uhrzeit wird nicht angezeigt, wenn deaktiviert</string>
+    <string name="ui_status_bar_oneperc_battery_title">Batterie in 1% Schritten</string>
+    <string name="ui_status_bar_oneperc_battery_summary">Zeigt den Ladezustand der Batterie in 1% Schritten. Kann Probleme mit Batterien und Ladegeräten von Fremdherstellern verursachen. (erfordert Neustart)</string>
     <string name="ui_status_bar_battery_title">Batteriestatusanzeige</string>
     <string name="ui_status_bar_battery_summary">Anzeigestil des Batteriestatus</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakter Betreiber</string>
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen</string>
+    <string name="ui_status_bar_force_plmn_display">Erzwinge Anzeige des PLMN</string>
+    <string name="ui_status_bar_force_plmn_display_summary">Erzwingt unabhängig von der SIM-Karteneinstellung die Anzeige des PLMN bei SPDI Netzwerken. (Erfordert Neuanmeldung am Netzwerk)</string>
     <string name="ui_status_bar_toggle_brightness">Helligkeitsregler</string>
     <string name="ui_status_bar_toggle_brightness_summary">Erlaubt Änderung der Helligkeit, indem mit dem Finger über die Statusleiste gewischt wird</string>
     <string name="ui_status_bar_toggle_info">Automatische Helligkeit ist aktiviert</string>
@@ -308,6 +318,14 @@
     <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel durch langes Drücken der Lautstärketasten suchen</string>
     <string name="pref_cambtn_music_controls_title">Play/Pause mit Kamerataste</string>
     <string name="pref_cambtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Wiedergabe fortsetzen/anhalten durch langes Drücken der Kamerataste</string>
+    <string name="pref_volbtn_orientation_title">Funktion der Lautstärketasten im Querformat austauschen</string>
+    <string name="pref_volbtn_orientation_summary">Die Funktion der Lautstärketasten wird abhängig von der Orientierung des Telefons ausgetauscht. (erfordert Neustart)</string>
+    <string name="pref_dock_observer_off_title">Erkennung von Dockingstationen deaktivieren</string>
+    <string name="pref_dock_observer_off_summary">Keine Aktion bei Magnetfeldern. Nützlich bei Telefonhüllen mit magetischem Verschluss</string>
+    <string name="pref_keypad_type_title">Tastaturbelegung</string>
+    <string name="pref_keypad_type_summary">Einstellen der Tastaturbelegung - qwerty, qwertz, azerty... (erfordert Neustart)</string>
+    <string name="pref_qtouch_num_title">Multitouch</string>
+    <string name="pref_qtouch_num_summary">Festlegen der Anzahl der erkannten Touchpunkte (Kann ein Ein- und Ausschalten des Displays erfordern um aktiviert zu werden. Der erste Touch nach Einschalten des Displays kann ignoriert werden)</string>
     <string name="lockscreen_widgets_note_title">Hinweis</string>
     <string name="lockscreen_widgets_note_summary">Beim Stil „Linse“ wird nur das Musiksteuerungs-Widget eingeblendet und die restlichen Optionen ignoriert.</string>
     <string name="lockscreen_calendar_title">Kalender</string>
@@ -421,6 +439,10 @@
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
     <string name="pref_purgeable_assets_summary">Erlaubt dem System, Speicherbereiche von nicht mehr benutzen Bildern freizugeben, um mehr RAM bereitzustellen (Neustart erforderlich)</string>
 
+    <!-- Performance Settings : Logger -->
+    <string name="pref_logger_title">Ereignisprotokollierung aktivieren</string>
+    <string name="pref_logger_summary">Schreiben der Protokolldaten nach /cache/logger</string>
+
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Größe VM-Heap</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
@@ -432,6 +454,10 @@
     <!-- Performance : Lock mms app in memory -->
     <string name="pref_lock_mms_title">MMS-Anw. persistent</string>
     <string name="pref_lock_mms_summary">Versuchen, die MMS-Anwendung im Speicher zu halten, um zu verhinden, dass Nachrichten bei wenig Speicher verloren gehen</string>
+
+    <!-- Performance : GMAPS hack -->
+    <string name="pref_gmaps_hack_title">GMAPS hack</string>
+    <string name="pref_gmaps_hack_summary">Mehr freier RAM durch beenden des NetworkLocationService. Latitude kann die Position nicht mehr zuverlässig melden. (Neustart erforderlich)</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">HC SVNT DRACONES</string>
@@ -457,6 +483,9 @@
     <string name="general_title">Allgemein</string>
     <string name="camera_title">Kamera</string>
     <string name="buttons_title">Tasten</string>
+    <string name="dock_title">Dockingstation</string>
+    <string name="keypad_title">Tastatur</string>
+    <string name="qtouch_title">Touchscreen</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Ausschalten-Abfrage</string>
@@ -600,6 +629,8 @@
     <string name="sound_vibrate_in_call_title">Im Gespräch vibrieren</string>
     <string name="sound_vibrate_in_call_summary_on">Normale Vibration bei Benachrichtigungen während eines Gesprächs</string>
     <string name="sound_vibrate_in_call_summary_off">Keine Vibration bei Benachrichtigungen während eines Gesprächs</string>
+    <string name="sound_lock_volume_keys_title">Lautstärketasten sperren</string>
+    <string name="sound_lock_volume_keys_summary">Verhindert Verlassen des Lautlos Modus durch versehentliches Drücken der Lautstäreketasten</string>
     <string name="sound_camera_shutter_disable_title">Auslöseton deakt.</string>
     <string name="sound_camera_shutter_disable_summary_on">Kamera-Auslöseton wird nicht abgespielt</string>
     <string name="sound_camera_shutter_disable_summary_off">Kamera-Auslöseton wird abgespielt</string>
@@ -619,7 +650,6 @@
     <string name="sound_notifications_limitvol_dialog">Benachrichtigungslautstärke</string>
     <string name="sound_rings_limitvol_dialog">Klingeltonlautstärke</string>
     <string name="sound_alarms_limitvol_dialog">Weckerlautstärke</string>
-
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Ruhige Stunden</string>
     <string name="quiet_hours_note_title">Hinweis</string>
@@ -740,6 +770,10 @@
     <string name="cpu_min_freq_summary">Minimaler CPU-Takt\nMomentan: %s</string>
     <string name="cpu_max_freq_title">Maximaler CPU-Takt</string>
     <string name="cpu_max_freq_summary">Maximaler CPU-Takt\nMomentan: %s</string>
+    <string name="cardock_cpu_max_freq_title">Maximaler CPU-Takt in der KFZ-Halterung</string>
+    <string name="cardock_cpu_max_freq_summary">Maximaler CPU-Takt in der KFZ-Halterung\nMomentan: %s</string>
+    <string name="screenoff_cpu_max_freq_title">Maximaler CPU-Takt bei ausgeschaltetem Display</string>
+    <string name="screenoff_cpu_max_freq_summary">Maximaler CPU-Takt bei ausgeschaltetem Display\nMomentan: %s</string>
     <string name="cpu_set_on_boot">Beim Booten setzen</string>
     <string name="cpu_set_on_boot_summary">CPU-Einstellungen beim Booten wiederherstellen</string>
 

@@ -79,13 +79,25 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String PURGEABLE_ASSETS_DEFAULT = "0";
 
+    private static final String LOGGER_PREF = "pref_logger";
+
+    private static final String LOGGER_PERSIST_PROP = "persist.service.aplogd.enable";
+
+    private static final String LOGGER_DEFAULT = "0";
+
     private static final String LOCK_HOME_PREF = "pref_lock_home";
 
     private static final String LOCK_MMS_PREF = "pref_lock_mms";
 
-    private static final int LOCK_HOME_DEFAULT = 0;
+    private static final int LOCK_HOME_DEFAULT = 1;
 
-    private static final int LOCK_MMS_DEFAULT = 0;
+    private static final int LOCK_MMS_DEFAULT = 1;
+
+    private static final String GMAPS_HACK_PREF = "pref_gmaps_hack";
+
+    private static final String GMAPS_HACK_PERSIST_PROP = "persist.sys.gmaps_hack";
+
+    private static final String GMAPS_HACK_DEFAULT = "1";
 
     private ListPreference mCompcachePref;
 
@@ -97,9 +109,13 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private CheckBoxPreference mPurgeableAssetsPref;
 
+    private CheckBoxPreference mLoggerPref;
+
     private CheckBoxPreference mLockHomePref;
 
     private CheckBoxPreference mLockMmsPref;
+
+    private CheckBoxPreference mGmapsHackPref;
 
     private ListPreference mHeapsizePref;
 
@@ -146,6 +162,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String purgeableAssets = SystemProperties.get(PURGEABLE_ASSETS_PERSIST_PROP, PURGEABLE_ASSETS_DEFAULT);
         mPurgeableAssetsPref.setChecked("1".equals(purgeableAssets));
 
+        mLoggerPref = (CheckBoxPreference) prefSet.findPreference(LOGGER_PREF);
+        String logger = SystemProperties.get(LOGGER_PERSIST_PROP, LOGGER_DEFAULT);
+        mLoggerPref.setChecked("1".equals(logger));
+
         mHeapsizePref = (ListPreference) prefSet.findPreference(HEAPSIZE_PREF);
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
@@ -158,6 +178,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mLockMmsPref = (CheckBoxPreference) prefSet.findPreference(LOCK_MMS_PREF);
         mLockMmsPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCK_MMS_IN_MEMORY, LOCK_MMS_DEFAULT) == 1);
+
+        mGmapsHackPref = (CheckBoxPreference) prefSet.findPreference(GMAPS_HACK_PREF);
+        String gmapshack = SystemProperties.get(GMAPS_HACK_PERSIST_PROP, GMAPS_HACK_DEFAULT);
+        mGmapsHackPref.setChecked("1".equals(gmapshack));
 
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
@@ -199,6 +223,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
+        if (preference == mLoggerPref) {
+            SystemProperties.set(LOGGER_PERSIST_PROP,
+                    mLoggerPref.isChecked() ? "1" : "0");
+            return true;
+        }
+
         if (preference == mLockHomePref) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCK_HOME_IN_MEMORY, mLockHomePref.isChecked() ? 1 : 0);
@@ -208,6 +238,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         if (preference == mLockMmsPref) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCK_MMS_IN_MEMORY, mLockMmsPref.isChecked() ? 1 : 0);
+            return true;
+        }
+
+        if (preference == mGmapsHackPref) {
+            SystemProperties.set(GMAPS_HACK_PERSIST_PROP,
+                    mGmapsHackPref.isChecked() ? "1" : "0");
             return true;
         }
 

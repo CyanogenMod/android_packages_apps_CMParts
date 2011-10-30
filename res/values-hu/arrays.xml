@@ -21,7 +21,7 @@
         <item>12</item>
         <item>15</item>
     </string-array>
-  
+
     <string-array name="entries_install_location">
         <item>Automatikus</item>
         <item>Belső</item>

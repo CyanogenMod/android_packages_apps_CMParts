@@ -12,10 +12,17 @@
 
     <application android:label="@string/app_name"
         android:icon="@drawable/cm_icon">
-        <receiver android:name=".intents.CPUReceiver" android:enabled="true">
+        <receiver android:name=".intents.CPUReceiver" android:enabled="true" android:process="com.android.systemui">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_MOUNTED" />
                 <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".intents.CPUReceiver" android:enabled="true" android:process="com.android.systemui">
+            <intent-filter>
+                <action android:name="android.intent.action.DOCK_EVENT" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
             </intent-filter>
         </receiver>
         <receiver android:name=".intents.LEDNotificationReceiver" android:enabled="true">

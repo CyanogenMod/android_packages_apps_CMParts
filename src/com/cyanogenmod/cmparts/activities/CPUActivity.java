@@ -18,10 +18,12 @@ package com.cyanogenmod.cmparts.activities;
 
 import com.cyanogenmod.cmparts.R;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 
@@ -41,6 +43,8 @@ public class CPUActivity extends PreferenceActivity implements
     public static final String GOVERNOR = "/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor";
     public static final String MIN_FREQ_PREF = "pref_freq_min";
     public static final String MAX_FREQ_PREF = "pref_freq_max";
+    public static final String CD_MAX_FREQ_PREF = "pref_cardock_freq_max";
+    public static final String SO_MAX_FREQ_PREF = "pref_screenoff_freq_max";
     public static final String FREQ_LIST_FILE = "/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies";
     public static final String FREQ_MAX_FILE = "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq";
     public static final String FREQ_MIN_FILE = "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq";
@@ -51,18 +55,25 @@ public class CPUActivity extends PreferenceActivity implements
     private String mGovernorFormat;
     private String mMinFrequencyFormat;
     private String mMaxFrequencyFormat;
+    private String mMaxCdFrequencyFormat;
+    private String mMaxSoFrequencyFormat;
 
     private ListPreference mGovernorPref;
     private ListPreference mMinFrequencyPref;
     private ListPreference mMaxFrequencyPref;
+    private ListPreference mMaxCdFrequencyPref;
+    private ListPreference mMaxSoFrequencyPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         mGovernorFormat = getString(R.string.cpu_governors_summary);
         mMinFrequencyFormat = getString(R.string.cpu_min_freq_summary);
         mMaxFrequencyFormat = getString(R.string.cpu_max_freq_summary);
+        mMaxCdFrequencyFormat = getString(R.string.cardock_cpu_max_freq_summary);
+        mMaxSoFrequencyFormat = getString(R.string.screenoff_cpu_max_freq_summary);
 
         String[] availableGovernors = readOneLine(GOVERNORS_LIST_FILE).split(" ");
         String[] availableFrequencies = new String[0];
@@ -105,7 +116,7 @@ public class CPUActivity extends PreferenceActivity implements
         mMinFrequencyPref.setSummary(String.format(mMinFrequencyFormat, toMHz(temp)));
         mMinFrequencyPref.setOnPreferenceChangeListener(this);
 
-        temp = readOneLine(FREQ_MAX_FILE);
+        temp = prefs.getString(MAX_FREQ_PREF, null);
 
         mMaxFrequencyPref = (ListPreference) PrefScreen.findPreference(MAX_FREQ_PREF);
         mMaxFrequencyPref.setEntryValues(availableFrequencies);
@@ -113,17 +124,39 @@ public class CPUActivity extends PreferenceActivity implements
         mMaxFrequencyPref.setValue(temp);
         mMaxFrequencyPref.setSummary(String.format(mMaxFrequencyFormat, toMHz(temp)));
         mMaxFrequencyPref.setOnPreferenceChangeListener(this);
+
+        temp = prefs.getString(CD_MAX_FREQ_PREF, null);
+
+        mMaxCdFrequencyPref = (ListPreference) PrefScreen.findPreference(CD_MAX_FREQ_PREF);
+        mMaxCdFrequencyPref.setEntryValues(availableFrequencies);
+        mMaxCdFrequencyPref.setEntries(frequencies);
+        mMaxCdFrequencyPref.setValue(temp);
+        mMaxCdFrequencyPref.setSummary(String.format(mMaxCdFrequencyFormat, toMHz(temp)));
+        mMaxCdFrequencyPref.setOnPreferenceChangeListener(this);
+
+        temp = prefs.getString(SO_MAX_FREQ_PREF, null);
+
+        mMaxSoFrequencyPref = (ListPreference) PrefScreen.findPreference(SO_MAX_FREQ_PREF);
+        mMaxSoFrequencyPref.setEntryValues(availableFrequencies);
+        mMaxSoFrequencyPref.setEntries(frequencies);
+        mMaxSoFrequencyPref.setValue(temp);
+        mMaxSoFrequencyPref.setSummary(String.format(mMaxSoFrequencyFormat, toMHz(temp)));
+        mMaxSoFrequencyPref.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public void onResume() {
         String temp;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         super.onResume();
 
-        temp = readOneLine(FREQ_MAX_FILE);
-        mMaxFrequencyPref.setValue(temp);
-        mMaxFrequencyPref.setSummary(String.format(mMaxFrequencyFormat, toMHz(temp)));
+        temp = prefs.getString(MAX_FREQ_PREF, null);
+        if (temp == null) {
+            temp = readOneLine(FREQ_MAX_FILE);
+            mMaxFrequencyPref.setValue(temp);
+            mMaxFrequencyPref.setSummary(String.format(mMaxFrequencyFormat, toMHz(temp)));
+        }
 
         temp = readOneLine(FREQ_MIN_FILE);
         mMinFrequencyPref.setValue(temp);
@@ -137,7 +170,15 @@ public class CPUActivity extends PreferenceActivity implements
         String fname = "";
 
         if (newValue != null) {
-            if (preference == mGovernorPref) {
+            if (preference == mMaxCdFrequencyPref) {
+                mMaxCdFrequencyPref.setSummary(String.format(mMaxCdFrequencyFormat,
+                        toMHz((String) newValue)));
+                return true;
+	    } else if (preference == mMaxSoFrequencyPref) {
+                mMaxSoFrequencyPref.setSummary(String.format(mMaxSoFrequencyFormat,
+                        toMHz((String) newValue)));
+                return true;
+	    } else if (preference == mGovernorPref) {
                 fname = GOVERNOR;
             } else if (preference == mMinFrequencyPref) {
                 fname = FREQ_MIN_FILE;
@@ -197,6 +238,8 @@ public class CPUActivity extends PreferenceActivity implements
     }
 
     private String toMHz(String mhzString) {
+        if (mhzString == null)
+            return "-";
         return new StringBuilder().append(Integer.valueOf(mhzString) / 1000).append(" MHz").toString();
     }
 }

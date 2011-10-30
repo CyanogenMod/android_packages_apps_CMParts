@@ -23,7 +23,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -32,7 +34,8 @@ import android.provider.Settings;
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
-public class InputActivity extends PreferenceActivity implements ShortcutPickHelper.OnPickListener {
+public class InputActivity extends PreferenceActivity implements
+        OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener {
 
     private static final String TRACKBALL_WAKE_PREF = "pref_trackball_wake";
 
@@ -41,6 +44,34 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
     private static final String VOLBTN_MUSIC_CTRL_PREF = "pref_volbtn_music_controls";
 
     private static final String CAMBTN_MUSIC_CTRL_PREF = "pref_cambtn_music_controls";
+
+    private static final String VOLBTN_ORIENT_PREF = "pref_volbtn_orientation";
+
+    private static final String VOLBTN_ORIENT_PERSIST_PROP = "persist.sys.volbtn_orient_swap";
+
+    private static final String VOLBTN_ORIENT_DEFAULT = "0";
+
+    private static final String DOCK_OBSERVER_OFF_PREF = "pref_dock_observer_off";
+
+    private static final String DOCK_OBSERVER_OFF_PERSIST_PROP = "persist.sys.dock_observer_off";
+
+    private static final String DOCK_OBSERVER_OFF_DEFAULT = "0";
+
+    private static final String KEYPAD_TYPE_PREF = "pref_keypad_type";
+
+    private static final String KEYPAD_TYPE_PREFIX_PROP = "ro.sys.keypad_type_prefix";
+
+    private static final String KEYPAD_TYPE_PERSIST_PROP = "persist.sys.keypad_type";
+
+    private static final String KEYPAD_TYPE_HW_PROP = "hw.keyboards.0.devname";
+
+    private static final String KEYPAD_TYPE_DEFAULT = "euro_qwerty";
+
+    private static final String QTOUCH_NUM_PREF = "pref_qtouch_num";
+
+    private static final String QTOUCH_NUM_PERSIST_PROP = "persist.sys.qtouch_num";
+
+    private static final String QTOUCH_NUM_DEFAULT = "2";
 
     private static final String BUTTON_CATEGORY = "pref_category_button_settings";
 
@@ -65,6 +96,16 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
     private CheckBoxPreference mVolBtnMusicCtrlPref;
 
     private CheckBoxPreference mCamBtnMusicCtrlPref;
+
+    private CheckBoxPreference mVolBtnOrientationPref;
+
+    private CheckBoxPreference mDockObserverOffPref;
+
+    private String mKeypadTypePrefix;
+
+    private ListPreference mKeypadTypePref;
+
+    private ListPreference mQtouchNumPref;
 
     private Preference mUserDefinedKey1Pref;
 
@@ -108,6 +149,25 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
         mCamBtnMusicCtrlPref = (CheckBoxPreference) prefSet.findPreference(CAMBTN_MUSIC_CTRL_PREF);
         mCamBtnMusicCtrlPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.CAMBTN_MUSIC_CONTROLS, 0) == 1);
+
+        mVolBtnOrientationPref = (CheckBoxPreference) prefSet.findPreference(VOLBTN_ORIENT_PREF);
+        String volBtnOrientation = SystemProperties.get(VOLBTN_ORIENT_PERSIST_PROP, VOLBTN_ORIENT_DEFAULT);
+        mVolBtnOrientationPref.setChecked("1".equals(volBtnOrientation));
+
+        mDockObserverOffPref = (CheckBoxPreference) prefSet.findPreference(DOCK_OBSERVER_OFF_PREF);
+        String dockObserverOff = SystemProperties.get(DOCK_OBSERVER_OFF_PERSIST_PROP, DOCK_OBSERVER_OFF_DEFAULT);
+        mDockObserverOffPref.setChecked("1".equals(dockObserverOff));
+
+        mKeypadTypePrefix = SystemProperties.get(KEYPAD_TYPE_PREFIX_PROP, "0");
+        mKeypadTypePref = (ListPreference) prefSet.findPreference(KEYPAD_TYPE_PREF);
+        String keypadType = SystemProperties.get(KEYPAD_TYPE_PERSIST_PROP, KEYPAD_TYPE_DEFAULT);
+        mKeypadTypePref.setValue(keypadType);
+        mKeypadTypePref.setOnPreferenceChangeListener(this);
+
+        mQtouchNumPref = (ListPreference) prefSet.findPreference(QTOUCH_NUM_PREF);
+        String qtouchNum = SystemProperties.get(QTOUCH_NUM_PERSIST_PROP, QTOUCH_NUM_DEFAULT);
+        mQtouchNumPref.setValue(qtouchNum);
+        mQtouchNumPref.setOnPreferenceChangeListener(this);
 
         /* Backtrack Minipad */
         mBackTrackPref = (CheckBoxPreference) prefSet.findPreference(BACKTRACK_MINIPAD_PREF);
@@ -198,6 +258,14 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
             Settings.System.putInt(getContentResolver(), Settings.System.CAMBTN_MUSIC_CONTROLS,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mVolBtnOrientationPref) {
+            SystemProperties.set(VOLBTN_ORIENT_PERSIST_PROP,
+                    mVolBtnOrientationPref.isChecked() ? "1" : "0");
+            return true;
+        } else if (preference == mDockObserverOffPref) {
+            SystemProperties.set(DOCK_OBSERVER_OFF_PERSIST_PROP,
+                    mDockObserverOffPref.isChecked() ? "1" : "0");
+            return true;
         } else if (preference == mUserDefinedKey1Pref) {
             mKeyNumber = 1;
             mPicker.pickShortcut();
@@ -223,6 +291,22 @@ public class InputActivity extends PreferenceActivity implements ShortcutPickHel
             return true;
         }
 
+        return false;
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mKeypadTypePref) {
+            String keypadType = (String) newValue;
+            SystemProperties.set(KEYPAD_TYPE_PERSIST_PROP, keypadType);
+            if (!mKeypadTypePrefix.equals("0")) {
+                SystemProperties.set(KEYPAD_TYPE_HW_PROP, mKeypadTypePrefix + keypadType);
+            }
+            return true;
+        } else if (preference == mQtouchNumPref) {
+            String qtouchNum = (String) newValue;
+            SystemProperties.set(QTOUCH_NUM_PERSIST_PROP, qtouchNum);
+            return true;
+        }
         return false;
     }
 

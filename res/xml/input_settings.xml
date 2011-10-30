@@ -62,6 +62,10 @@
 			android:title="@string/pref_cambtn_music_controls_title"
 			android:summary="@string/pref_cambtn_music_controls_summary" />
 
+		<CheckBoxPreference android:key="pref_volbtn_orientation"
+			android:title="@string/pref_volbtn_orientation_title"
+			android:summary="@string/pref_volbtn_orientation_summary" />
+
 		<Preference android:key="pref_user_defined_key1"
 			android:title="@string/user_defined_key1" android:summary="@string/user_defined_not_set" />
 		<Preference android:key="pref_user_defined_key2"
@@ -73,6 +77,39 @@
 			android:title="@string/user_defined_envelope_key" android:summary="@string/user_defined_not_set" />
 		<Preference android:key="pref_user_explorer_key"
 			android:title="@string/user_defined_explorer_key" android:summary="@string/user_defined_not_set" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/keypad_title"
+		android:key="pref_category_keypad_settings">
+
+		<ListPreference android:key="pref_keypad_type"
+			android:dialogTitle="@string/pref_keypad_type_title"
+			android:title="@string/pref_keypad_type_title"
+			android:summary="@string/pref_keypad_type_summary"
+			android:entries="@array/pref_keypad_type_entries"
+			android:entryValues="@array/pref_keypad_type_values" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/qtouch_title"
+		android:key="pref_category_qtouch_settings">
+
+		<ListPreference android:key="pref_qtouch_num"
+			android:dialogTitle="@string/pref_qtouch_num_title"
+			android:title="@string/pref_qtouch_num_title"
+			android:summary="@string/pref_qtouch_num_summary"
+			android:entries="@array/pref_qtouch_num_entries"
+			android:entryValues="@array/pref_qtouch_num_values" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/dock_title"
+		android:key="pref_category_dock_settings">
+
+		<CheckBoxPreference android:key="pref_dock_observer_off"
+			android:title="@string/pref_dock_observer_off_title"
+			android:summary="@string/pref_dock_observer_off_summary" />
 
 	</PreferenceCategory>
 

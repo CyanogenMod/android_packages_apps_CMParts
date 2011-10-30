@@ -22,7 +22,7 @@
         <item>12</item>
         <item>15</item>
     </string-array>
-  
+
     <string-array name="entries_heapsize">
         <item>12m</item>
         <item>16m</item>
@@ -66,6 +66,7 @@
     <string-array name="entries_status_bar_battery">
         <item>Icon (Default)</item>
         <item>Percentage</item>
+        <item>Status Bar</item>
         <item>Hidden</item>
     </string-array>
 
@@ -73,6 +74,7 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
      <string-array name="entries_status_bar_signal" translatable="false">
@@ -193,6 +195,34 @@
         <item>default</item>
         <item>green</item>
         <item>red</item>
+    </string-array>
+
+    <string-array name="pref_keypad_type_entries">
+        <item>azerty</item>
+        <item>euro-qwerty</item>
+        <item>qwerty</item>
+        <item>qwertz</item>
+        <item>swe-qwerty</item>
+    </string-array>
+
+    <string-array name="pref_keypad_type_values" translatable="false">
+        <item>azerty</item>
+        <item>euro_qwerty</item>
+        <item>qwerty</item>
+        <item>qwertz</item>
+        <item>swe_qwerty</item>
+    </string-array>
+
+    <string-array name="pref_qtouch_num_entries">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="pref_qtouch_num_values" translatable="false">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">

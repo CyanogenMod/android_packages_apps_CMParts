@@ -19,6 +19,16 @@
         <CheckBoxPreference android:key="electron_beam_animation_off"
             android:title="@string/pref_electron_beam_animation_off" />
 
+        <!-- Milestone specific kernel bug workaround (temporary) -->
+        <CheckBoxPreference android:key="pref_omap_dss_mode"
+            android:title="@string/pref_omap_dss_mode_title"
+            android:summary="@string/pref_omap_dss_mode_summary" />
+
+        <!-- Keep display off on plug -->
+        <CheckBoxPreference android:key="pref_na_on_plug"
+            android:title="@string/pref_na_on_plug_title"
+            android:summary="@string/pref_na_on_plug_summary" />
+
     </PreferenceCategory>
 
     <!-- Rotation -->
