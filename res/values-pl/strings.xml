@@ -96,11 +96,20 @@
     <string name="ui_status_bar_am_pm_summary">Styl wyświetlania AM/PM obok zegara</string>
     <string name="ui_status_bar_clock_title">Pokaż zegar</string>
     <string name="ui_status_bar_clock_summary">Zegar na pasku stanu zostanie ukryty, kiedy wyłączone</string>
+    <string name="ui_status_bar_battery_title">Styl stanu akumulatora</string>
+    <string name="ui_status_bar_battery_summary">Wygląd ikony stanu akumulatora</string>
     <string name="ui_status_bar_compact_carrier_title">Pomniejszona etykieta operatora</string>
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
     <string name="ui_status_bar_toggle_brightness">Ustawienia jasności</string>
     <string name="ui_status_bar_toggle_brightness_summary">Pozwala na dostosowywanie jasności poprzez przesuwanie palca po pasku stanu.</string>
     <string name="ui_status_bar_toggle_info">Automatyczna jasność jest włączona</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternatywny wskaźnik zasięgu sieci</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Pokazuje wartość w dBm zamiast kresek</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Kreski zasięgu</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Liczba</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Liczba z tekstem dBm</string>
+    <string name="ui_status_bar_headset_title">Pokaż ikonę zestawu słuchawkowego</string>
+    <string name="ui_status_bar_headset_summary">Ikona zestawu słuchawkowego pojawi się kiedy zostanie podłączony</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Dioda powiadomień</string>
@@ -500,7 +509,12 @@
     <string name="sound_volume_control_silent_summary">Dodaje profil całkowitego wyciszenia do sterowania głośnością</string>
     <string name="sound_vibrate_in_call_title">Wibruj podczas połączeń</string>
     <string name="sound_vibrate_in_call_summary_off">Urządzenie nie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
-    <string name="sound_vibrate_in_call_summary_on">>Urządzenie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
+    <string name="sound_vibrate_in_call_summary_on">Urządzenie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
+    <string name="sound_camera_shutter_disable_title">Wycisz dźwięk migawki</string>
+    <string name="sound_camera_shutter_disable_summary_on">Dźwięk migawki aparatu nie będzie odtwarzany</string>
+    <string name="sound_camera_shutter_disable_summary_off">Dźwięk migawki aparatu będzie odtwarzany</string>
+    <string name="sound_camera_shutter_disable_warning_title">OSTRZEŻENIE: To może być nielegalne!</string>
+    <string name="sound_camera_shutter_disable_warning">Wyciszenie dźwięku podczas robienia zdjęć jest nielegalne w niektórych krajach, w tym w Polsce. Czy jesteś pewien, że chcesz to zrobić?</string>
     <string name="sound_to_speaker_title">Odtwarzaj zawsze na głośniku</string>
     <string name="sound_notifications_title">Powiadomienia</string>
     <string name="sound_rings_title">Nadchodzące połączenie</string>
@@ -535,6 +549,9 @@
     <string name="quiet_hours_dim">Przygaś diodę</string>
     <string name="quiet_hours_dim_on">Dioda będzie przyciemniona jeśli możliwe</string>
     <string name="quiet_hours_dim_off">Dioda będzie świecić z pełną jasnością</string>
+    <string name="quiet_hours_haptic">Reakcja na dotyk</string>
+    <string name="quiet_hours_haptic_on">Reakcja na dotyk jest wyłączona</string>
+    <string name="quiet_hours_haptic_off">Reakcja na dotyk jest włączona</string>
 
     <string name="cmstats_title">Anonimowe statystyki</string>
     <string name="cmstats_summary">Pomóż sprawić, by CyanogenMOD był lepszy, pozwalając na wysyłanie anonimowych informacji</string>
