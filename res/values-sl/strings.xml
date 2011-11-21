@@ -755,21 +755,21 @@
     <string name="phone_goggles_confirmation_maths">Math problems</string>
 
     <!-- CPU Settings strings -->
-    <string name="cpu_settings_title">CPU settings</string>
-    <string name="cpu_title">CPU settings</string>
+    <string name="cpu_settings_title">CPE nastavitve</string>
+    <string name="cpu_title">CPE nastavitve</string>
     <string name="cpu_summary">Governor and clock settings</string>
     <string name="cpu_governors_title">Available governors</string>
     <string name="cpu_governors_summary">List of available governors\nCurrently selected: %S</string>
-    <string name="cpu_min_freq_title">Min CPU frequency</string>
-    <string name="cpu_min_freq_summary">Minimum CPU frequency\nCurrently: %s</string>
-    <string name="cpu_max_freq_title">Max CPU frequency</string>
-    <string name="cpu_max_freq_summary">Maximum CPU frequency\nCurrently: %s</string>
-    <string name="cpu_set_on_boot">Set on boot</string>
-    <string name="cpu_set_on_boot_summary">Restore CPU settings on boot</string>
+    <string name="cpu_min_freq_title">Najmanjša ferkvenca CPE</string>
+    <string name="cpu_min_freq_summary">Najmanjša ferkvenca CPE\nTrenutno: %s</string>
+    <string name="cpu_max_freq_title">Največja ferkvenca CPE</string>
+    <string name="cpu_max_freq_summary">Največja ferkvenca CPE\nTrenutno: %s</string>
+    <string name="cpu_set_on_boot">Nastavi ob zagonu</string>
+    <string name="cpu_set_on_boot_summary">Ponastavi CPE nastavitve ob zagonu</string>
 
     <!-- Permissions Management Settings strings -->
-    <string name="perm_enable_management">Permission management</string>
-    <string name="perm_enable_management_summary">Enable application permissions management</string>
-    <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
-    <string name="perm_enable_warning_title">Are you sure?</string>
+    <string name="perm_enable_management">Upravljanje dovoljenj</string>
+    <string name="perm_enable_management_summary">Omogoči upravljanje dovoljenj programov</string>
+    <string name="perm_enable_warning_message">Pozor!\nBlokiranje dovoljenj lahko povzroči sesutje programa. Če se program z blokiranimi dovoljenji sesuje, odblokirajte dovoljenja ali pa ne uporabljajte tega programa.\nNE pošiljajte poročil o hroščih CyanogenMod ekipi, če program z blokiranimi dovoljenji ne deluje kot bi moral!</string>
+    <string name="perm_enable_warning_title">Ste prepričani?</string>
 </resources>
