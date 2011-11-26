@@ -38,12 +38,77 @@
     <string name="pref_electron_beam_animation_on">Animació d\'encesa de pantalla</string>
     <string name="pref_electron_beam_animation_off">Animació d\'apagat de pantalla</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Ajustos de tablet</string>
+    <string name="tablet_tweaks_summary_head">Ajustos més útils per dispositius tablet recullida en un lloc. També funciona per mòbils</string>
+    <string name="tablet_tweaks_sb_bottom_title">Barra d\'estat inferior</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Mostrar la barra d\'estat a la part inferior. Útil per tablets que utilitzen botóns per Inici, Menú... a la barra d\'estat</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zona morta</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Afegeix una zona morta de mitja pantalla d\'amplada al mig de la barra d\'estat</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Botons a l\'esquerra</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Col·loca els botons a l\'esquerra de la barra d\'estat</string>
+    <string name="tablet_tweaks_soft_button_list_title">Escull botons</string>
+    <string name="tablet_tweaks_interface_head">Interfície</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Desactiva bloqueig de pantalla</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">Quan està activat no mostra la pantalla de bloqueig ni la pantalla de patró de desbloqueig. Ni quan s\'engega ni quanes desperta el dispositiu</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Desactiva la pantalla completa</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Anul·la la petició de pantalla completa de les aplicacions. Quan està activat la barra d\'estat està sempre visible fins que s\'oculta per botó</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Mostrar botó</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Escollir botó de mostrar</string>
+    <string name="tablet_tweaks_extend_pm_title">Ampliar el menú d\'energia</string>
+    <string name="tablet_tweaks_extend_pm_summary">Afegeix els botons d\'inici/enrere/menú al menú d\'energia</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Escull els botons del menú d\'energia</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Invertir el comportament del volum</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Comportament normal dels botons de volum. Prémer per canviar el volum, mantenir premut per acció d\'usuari</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Comportament invers dels botons de volum. Prémer per acció d\'usuari, mantenir premut per canviar el volum</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">Definir tecles de volum</string>
+    <string name="tablet_tweaks_long_volp_action_title">Pulsació llarga tecla de pujar el volum</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Assignar acció d\'inici/enrere/menú/etc a pulsació llarga de la tecla de pujar volum. Limitat a quan la pantalla estigui encesa</string>
+    <string name="tablet_tweaks_long_volm_action_title">Pulsació llarga tecla de baixar el volum</string>
+    <string name="tablet_tweaks_vol_both_action_title">Ambdós botons de volum</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Nota: Alguns dispositius forcen un reinici quan es premen les dues tecles de volum i el botó d\'apagar</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Pulsació llarga dels dos botons de volum</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">Botons de menú d\'apagat</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">Botons</string>
+    <string name="tablet_soft_buttons_home_title">Inici</string>
+    <string name="tablet_soft_buttons_menu_title">Menú</string>
+    <string name="tablet_soft_buttons_back_title">Enrere</string>
+    <string name="tablet_soft_buttons_search_title">Buscar</string>
+    <string name="tablet_soft_buttons_quick_na_title">Notificacions ràpides</string>
+    
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Rotació de pantalla</string>
+    <string name="pref_rotation_0_title">0 graus</string>
+    <string name="pref_rotation_90_title">90 graus</string>
+    <string name="pref_rotation_180_title">180 graus</string>
+    <string name="pref_rotation_270_title">270 graus</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Ajustaments de la barra d\'estat</string>
+    <string name="ui_status_bar_am_pm_title">Estil AM/PM</string>
+    <string name="ui_status_bar_am_pm_summary">Mostrar AM/PM al costat del rellotge</string>
     <string name="ui_status_bar_clock_title">Mostra rellotge</string>
     <string name="ui_status_bar_clock_summary">Si es desactiva s\'amaga el rellotge de la barra d\'estat</string>
+    <string name="ui_status_bar_battery_title">Estil de l\'estat de la bateria</string>
+    <string name="ui_status_bar_battery_summary">Mostrar l\'estat de la bateria</string>
+    <string name="ui_status_bar_compact_carrier_title">Etiqueta compacta de l\'operador</string>
+    <string name="ui_status_bar_compact_carrier_summary">Utilitza el disseny alternatiu de notificació desplegable amb l\'etiqueta petita</string>
+    <string name="ui_status_bar_toggle_brightness">Barra d\'estat de control de brillantor</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permet ajustar la brillantor lliscant a través de la barra d\'estat</string>
+    <string name="ui_status_bar_toggle_info">Brillantor automàtica activada</string>
+    <string name="ui_status_bar_cm_signal_text_title">Estil alternatiu de senyal</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Mostra el valor en dBm enlloc de barres de senyal</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Senyal amb barres</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Senyal amb text</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Senyal amb text en dBm</string>
+    <string name="ui_status_bar_headset_title">Mostra la icona dels auticulars</string>
+    <string name="ui_status_bar_headset_summary">La icona d\'auriculars apareixerà quan els auriculars estiguin connectats</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notificacions LED</string>
@@ -53,6 +118,10 @@
     <string name="pref_pinch_reflow_title">Redibuixa després d\'ampliar</string>
     <string name="pref_pinch_reflow_summary">Redibuixa el contingut immediatament després de pessigar per ampliar</string>
 
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Compartir captures de pantalla</string>
+    <string name="pref_share_screenshot_summary">Mostra el menú de compartir quan facis una captura de pantalla</string>
+    
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Sobredesplaçament</string>
     <string name="pref_overscroll_title">Efectes de sobredesplaçament</string>
@@ -62,12 +131,29 @@
 
     <!-- User interface : Lock Screen -->
     <string name="pref_lockscreen_delay_title">Retard</string>
+    <string name="pref_lockscreen_security_title">Bloqueig de seguretat</string>
+    <string name="pref_lockscreen_security_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Mentre la seguretat de bloqueig de pantalla estigui a "CAP" només els ajustaments de temps d\'espera seràn utilitzats</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Temps d\'espera de la pantalla</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Temps d\'espera per apagar la pantalla</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Quan temps esperar per activar el bloqueig de pantalla quan s\'esgota el temps d\'espera de pantalla</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Quan temps esperar per activar el bloqueig de pantalla quan s\'apaga la pantalla</string>
+    <string name="pref_lockscreen_slide_title">Bloqueig lliscant</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Encara que estigui habilitat, el bloqueig lliscant no segur només apareixerà si el temps d\'espera blogueig de seguretat és més gran que el de la pantalla lliscant</string>
+    <string name="pref_lockscreen_slide_delay_title">Habilitar temps d\'espera de blogueig lliscant</string>
+    <string name="pref_lockscreen_slide_delay_summary">Mostra la pantalla de bloqueig lliscant amb un temps adicional abans que el bloqueig de seguretat</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Temps d\'espera de la pantalla</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Temps d\'espera per apagar la pantalla</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Quant temps esperar abans d\'activar el blogueig de pantalla lliscant quan s\'esgota el temps d\'espera</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Quant temps esperar abans d\'activar el blogueig de pantalla lliscant quan s\'apaga la pantalla</string>  
 
     <!-- Color Picker -->
     <string name="title_color_picker">Selecció de color</string>
     <string name="msg_color_picker">Toqueu al centre del color per confirmar\nPitgeu Enrere per a cancel·lar</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">Ajustaments</string>
     <string name="dialog_color_trackball">Escolliu un color</string>
     <string name="dialog_blink_trackball">Trieu una freqüència d\'intermitència</string>
     <string name="color_trackball_flash_title">Color del llum</string>
@@ -100,13 +186,38 @@
     <string name="trackball_category_screen">Gestioneu les categories</string>
     <string name="trackball_category_add_title">Afegeix una categoria</string>
     <string name="trackball_category_add_summary">Afegeix una categoria a la llista</string>
+    <string name="trackball_category_add_error_title">ERROR</string>
+    <string name="trackball_category_add_error_summary">El nom de la categoria no pot contenir \'=\'</string>
     <string name="trackball_category_remove_title">Elimina una categoria</string>
     <string name="trackball_category_remove_summary">Elimina una categoria de la llista</string>
+    <string name="trackball_category_edit_title">Edita els ajustaments de la categoria</string>
+    <string name="trackball_category_edit_summary">Edita els ajustaments per defecte per aquesta categoria</string>
     <string name="trackball_reset_all">Restableix tots els colors i categories.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">No tots els colors es mostren en tots els dispositius</string>
+    <string name="trackball_category_unconfigured">No configurat</string>
+    <string name="trackball_category_misc">Miscel·lani</string>
+    <string name="trackball_app_save_title">Desa</string>
+    <string name="trackball_app_save_summary">Desa els ajustaments per aquesta aplicació</string>
+    <string name="trackball_app_reset_title">Reinicia</string>
+    <string name="trackball_app_reset_summary">Elimina els ajustaments personalitzats per aquesta aplicació</string>
 
+    <string name="trackball_force_mode_title">Mode del LED</string>
+    <string name="trackball_force_mode_dialog">Seleccioni un mode</string>
+    <string name="trackball_force_mode_summary">Configuri com el comportament del LED</string>
+
+    <string name="trackball_app_email">Correu</string>
+    <string name="trackball_app_mms">Missatgeria</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Trucada perduda</string>
+    
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Utilitza els ajustaments de l\'aplicació</string>
     <string name="trackball_color_entry_green">Verd</string>
     <string name="trackball_color_entry_white">Blanc</string>
     <string name="trackball_color_entry_red">Vermell</string>
@@ -120,11 +231,20 @@
     <string name="trackball_color_entry_random">Aleatori</string>
     <string name="trackball_color_entry_amber">Ambre</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Utilitza els ajustaments de la categoria</string>
+    <string name="trackball_force_mode_application">Utilitza els ajustaments de l\'aplicació</string>
+    <string name="trackball_force_mode_off">Forçar desactivació del LED</string>
+    <string name="trackball_force_mode_events">Forçar activació del LED per events</string>
+    <string name="trackball_force_mode_on">Forçar activació del LED</string>
+    
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">ADVERTÈNCIA: Pot causar que la bateria s\'esgoti ràpidament</string>
     <string name="notification_battery_warning">Aquesta opció fa que la bateria es descarregui un ~3% cada hora. Si noteu una disminució sobtada de la bateria mentre hi ha intermitències de la bola de desplaçament, aquest és el motiu. No ho activeu si no voleu que això passi.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Saltar en mode segur</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Desactivar el bloqueig de pantalla si els bloqueig de seguretat(patró, PIN, contrasenya) està activat</string>
     <string name="pref_lockscreen_stylecfg_title">Opcions d\'estil</string>
     <string name="pref_lockscreen_stylecfg_summary">Estil del bloqueig de pantalla i els ajustaments corresponents</string>
     <string name="pref_lockscreen_widgets_title">Opcions dels estris</string>
@@ -139,6 +259,8 @@
     <!-- Lockscreen Settings -->
     <string name="pref_lockscreen_always_battery_title">Mostra sempre l\'estat de la bateria</string>
     <string name="pref_lockscreen_always_battery_summary">Mostra sempre l\'estat de la bateria amb la pantalla bloquejada</string>
+    <string name="pref_lockscreen_widgets_layout_title">Diseny del widgets</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Canviar disseny de rellotge, data, operador o estat</string>
     <string name="pref_lockscreen_music_controls_title">Control de música en bloqueig</string>
     <string name="pref_lockscreen_music_controls_summary">Mostra els controls de música a la pantalla de bloqueig</string>
     <string name="pref_lockscreen_now_playing_title">Mostra el nom de la cançó</string>
@@ -151,15 +273,40 @@
     <string name="pref_lockscreen_always_music_controls_summary">Mostra els controls de la música sense tenir en compte si es reprodueix música o no</string>
     <string name="pref_trackball_wake_title">La bola desperta</string>
     <string name="pref_trackball_wake_summary">Pressionant la bola de desplaçament es desperta el dispositiu</string>
+    <string name="pref_volume_wake_title">Activarció amb el botó de volum</string>
+    <string name="pref_volume_wake_summary">Pémer el boto de baixar/pujar volum desperta el dispositiu. Útil per dispositius amb la tecla d\'energia difícil de pulsar</string>
     <string name="pref_trackball_unlock_title">La bola desbloqueja</string>
     <string name="pref_trackball_unlock_summary">Pressionant la bola de desplaçament es desbloqueja el dispositiu</string>
+    <string name="pref_slider_unlock_title">Desbloqueig amb teclat lliscant</string>
+    <string name="pref_slider_unlock_summary">Extraient el teclat es desbloqueja el dispositiu</string>
     <string name="pref_menu_unlock_title">Menú desbloqueja</string>
     <string name="pref_menu_unlock_summary">En prémer el botó de menú es desbloqueja el dispositiu</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Desbloqueig ràpid</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">No cal prémer D\'acord quan s\'introdueix el PIN o la contrasenya. Esborrar compta com un intent erroni.</string>
+    <string name="lockscreen_style_options_title">Opcions específiques d\'estil</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Iniciador personalitzat d\'aplicació</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Mostra un segon desplaçable en l\'estil lliscant, i mostra un clotet d\'aplicació personalitzada en l\'estil rotatori</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">Mostra un segons conjunt de desplaçadors per llançar una aplicació personalitzada</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">Mostra una entrada per llançar una aplicació personalitzada</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">Mostra un tercer anell per llançar fins a quatre aplicacions personalitzades</string>
     <string name="pref_lockscreen_custom_app_activity_title">Aplicació personalitzada</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Selecciona una drecera a afegir</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Selecciona una drecera a eliminar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Cancel·lar</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Afegir</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Eliminar</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">No creat</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Desbloqueja amb l\'anell central</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Tria anell de desbloqueig i llançador d\'aplicacions</string>
+    <string name="pref_lockscreen_ring_minimal_title">Estil minimal·lístic de l\'anell</string>
+    <string name="pref_lockscreen_ring_minimal_summary">Un anell al mig per desbloquejar</string>
+    <string name="pref_lockscreen_custom_background_title">Escull fons</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Escull fons</string>
+    <string name="pref_lockscreen_custom_background_summary">Escull imatge o color com a fons de la pantalla de bloqueig</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Actual : Color</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Actual : Imatge</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Actual : Per defecte</string>
+    <string name="pref_lockscreen_background_result_successful">S\'ha canviat el fons</string>
+    <string name="pref_lockscreen_background_result_not_successful">No s\'ha canviat el fons</string>
     <string name="pref_lockscreen_custom_icon_style_title">Icona de missatge per a l\'aplicació personalitzada</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Utilitza una icona de missatge en lloc de la icona cm per a l\'iniciador de l\'aplicació</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Arrossega avall per desbloquejar</string>
@@ -168,12 +315,28 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Amaga les fletxes direccionals en l\'estil rotatori</string>
     <string name="pref_lockscreen_style_title">Estil de bloqueig de pantalla</string>
     <string name="pref_lockscreen_style_summary">Tria l\'estil de la pantalla de bloqueig</string>
+    <string name="pref_in_call_style_title">Estil de trucada entrant</string>
+    <string name="pref_in_call_style_summary">Tria l\'estil de l\'estri d\'acceptar/refusar trucades entrants</string>
+    <string name="lockscreen_music_title">Controls de música</string>
     <string name="pref_volbtn_music_controls_title">Control de música amb les tecles de volum</string>
     <string name="pref_volbtn_music_controls_summary">Busca pistes de música en prémer llarg les tecles de volum amb la pantalla apagada</string>
     <string name="pref_cambtn_music_controls_title">Control de música amb el botó de la càmera</string>
     <string name="pref_cambtn_music_controls_summary">Commuta reproducció/pausa prement llarg el botó de la càmera amb la pantalla apagada</string>
     <string name="lockscreen_widgets_note_title">Nota</string>
     <string name="lockscreen_widgets_note_summary">Triar l\'estil minimalista amaga tots els estris excepte els control de la música. No obstant, no es desactiven les opcions de sota per permetre canviar fàcilment a altres estils</string>
+    <string name="lockscreen_calendar_title">Calendari com a pantalla de bloqueig</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Mostra el següent event del calendari</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Mostra l\'hora i el títol del següent event de calendari</string>
+    <string name="pref_lockscreen_calendars_title">Calendaris d\'events</string>
+    <string name="pref_lockscreen_calendars_summary">Troba events d\'aquests calendaris</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Només recordatoris</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Troba només events que tinguin recordatoris</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Període de búsqueda d\'events</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Com de llunyans en el temps haurien de ser els events trobats en el calendari</string>
+    <string name="pref_lockscreen_calendar_show_location_title">Mostra el localització de l\'event</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">Mostra la localització de l\'event sota el títol</string>
+    <string name="pref_lockscreen_calendar_show_description_title">Mostra la descripció de l\'event</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">Mostra la descripció de l\'event sota el títol</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Paràmetres d\'entrada</string>
@@ -188,6 +351,15 @@
     <string name="pref_input_custom_search_app_activity_title">Aplicació personalitzada</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Aplicació de prémer llarg la tecla de cerca</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Inicia una aplicació personalitzada en prémer llarg la tecla de cerca</string>
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Activar/desactivar BackTrack Minipad</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Ajustaments de pulsació llarga de menú</string>
+    <string name="long_press_menu_summary">Ajustaments personalitzats de pulsació llarga de la tecla de menú</string>
+    <string name="pref_user_defined_long_press_menu_title">Selecciona una aplicació personalitzada</string>
+    <string name="pref_long_press_menu_title">Tria comportament</string>
+    <string name="pref_long_press_menu_summary">Personalitza la pulsació llarga de la tecla de menú</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Mostra títol d\'aplicacions recents</string>
@@ -258,6 +430,10 @@
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Habilita la trama de superfície</string>
     <string name="pref_use_dithering_summary">La trama de superfície millora la qualitat de la imatge, empitjorant el rendiment (requereix reiniciar)</string>
+    
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">Utilitzar transparència de 16 bits</string>
+    <string name="pref_use_16bpp_alpha_summary">Utilitzar transparència de 16 bits por millorar el rendiment de deplaçament, pero pot provocar defectes visuals (requereix reiniciar)</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Permet la purga </string>
@@ -281,6 +457,12 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Paràmetres de les aplicacions</string>
+    
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Utilitza emmegatzemament intern</string>
+    <string name="pref_switch_storage_summary_on">Utilitza emmegatzemament extès intern per aplicacions i media (requereix reinici)</string>
+    <string name="pref_switch_storage_summary_off">Utilitza tarjeta externa per aplicacions i media (requereix reinici)</string>
+    <string name="pref_storage_switch_unavailable">Aquest dispositiu no té emmegatzemament extès intern</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Permet moure aplicacions</string>
@@ -291,11 +473,16 @@
     <string name="pref_install_location_summary">Seleccioneu el lloc on s\'han d\'instal·lar les noves aplicacions</string>
 
     <string name="general_title">General</string>
+    <string name="camera_title">Càmera</string>
     <string name="buttons_title">Botons</string>
 
     <!-- UI Settings : Power off prompt -->
     <string name="pref_power_prompt_title">Demanda de càrrega</string>
     <string name="pref_power_prompt_summary">Canviar el diàleg posterior a triar l\'apagada o reiniciada</string>
+    
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Comunicació hàptica</string>
+    <string name="expanded_haptic_feedback_summary">Activar/desactivar comunicació hàptica.</string>
 
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">Efectes de render</string>
@@ -318,8 +505,7 @@
     <string name="pref_render_effect_calibrated_cool">Calibrat (N1) Fred</string>
     <string name="pref_render_effect_red">Vermell</string>
 
-
-    <!--  Widget Types -->
+    <!-- Widget Types -->
     <string name="widget_render_effect_night">Nocturn</string>
     <string name="widget_render_effect_terminal">Term</string>
     <string name="widget_render_effect_blue">Blau</string>
@@ -337,6 +523,10 @@
     <string name="summary_expanded_widget">Utilitza la vista ampliada de l\'estri d\'ajustaments d\'energia</string>
     <string name="title_expanded_hide_onchange">Amaga en canviar</string>
     <string name="summary_expanded_hide_onchange">Amaga el menú desplegable de notificació després de commutar un botó d\'estri</string>
+    <string name="title_expanded_hide_indicator">Amaga indicador</string>
+    <string name="summary_expanded_hide_indicator">Amaga els estris de notificació indicadors</string>
+    <string name="title_expanded_hide_scrollbar">Amaga la barra de desplaçament</string>
+    <string name="summary_expanded_hide_scrollbar">Amaga la barra de desplaçament quan hi hagi més del màxim de botons d\'estris.</string>
     <string name="expanded_color_mask">Color de l\'indicador</string>
     <string name="title_widget_picker">Botons de l\'estri</string>
     <string name="summary_widget_picker">Trieu els botons de l\'estri</string>
@@ -365,12 +555,18 @@
     <string name="title_button_modes">Modes de botó</string>
     <string name="pref_brightness_mode_title">Modes de brillantor</string>
     <string name="pref_brightness_mode_summary">Tria com el botó de la brillantor canvia els modes</string>
+    <string name="cm_brightness_mode_auto">Automàtic</string>
+    <string name="cm_brightness_mode_dim">Difuminat</string>
     <string name="pref_network_mode_title">Modes de xarxa</string>
     <string name="pref_network_mode_summary">Trieu com el botó de nivells de xarxa canvia els modes</string>
     <string name="pref_screentimeout_mode_title">Modes d\'apagat de la pantalla</string>
     <string name="pref_screentimeout_mode_summary">Trieu com el botó d\'apagat de la pantalla canvia els modes</string>
     <string name="pref_ring_mode_title">Modes de so</string>
     <string name="pref_ring_mode_summary">Escolliu de quina manera els botons de so canvien els modes</string>
+    <string name="cm_sound_mode_silent">Silenci</string>
+    <string name="cm_sound_mode_vibrate">Vibració</string>
+    <string name="cm_sound_mode_sound">So</string>
+    <string name="cm_sound_mode_soundVibrate">So+Vibració</string>
     <string name="pref_flash_mode_title">Mode de flaix</string>
     <string name="pref_flash_mode_summary">Tria Alt/Raig de la Mort</string>
 
@@ -419,6 +615,14 @@
     <string name="sound_notifications_focus_summary">Les peticions d\' ús de l\'àudio fan que les aplicacions compatibles abaixin el volum mentre sonen les notificacions.</string>
     <string name="sound_volume_control_silent_title">Altres/Ni EUA ni Canadà</string>
     <string name="sound_volume_control_silent_summary">Altres/Ni EUA ni Canadà</string>
+    <string name="sound_vibrate_in_call_title">Vibració durant les trucades</string>
+    <string name="sound_vibrate_in_call_summary_off">Les notificacions no vibraran durant una trucada</string>
+    <string name="sound_vibrate_in_call_summary_on">Les notificacions vibraran normalment</string>
+    <string name="sound_camera_shutter_disable_title">So del disparador de la càmera</string>
+    <string name="sound_camera_shutter_disable_summary_on">No es reproduirà el so del disparador</string>
+    <string name="sound_camera_shutter_disable_summary_off">El so del disparador es reproduirà</string>
+    <string name="sound_camera_shutter_disable_warning_title">ALERTA: Aixo pot ser il·legal!</string>
+    <string name="sound_camera_shutter_disable_warning">Desactivar el so del disparador de la càmera és il·legal en algunes àrees. Estàs segur que el vols desactivar?</string>
     <string name="sound_to_speaker_title">Sempre sona per l\'altaveu</string>
     <string name="sound_notifications_title">Notificacions</string>
     <string name="sound_rings_title">Tons de trucada</string>
@@ -433,6 +637,7 @@
     <string name="sound_notifications_limitvol_dialog">Volum de notificació</string>
     <string name="sound_rings_limitvol_dialog">Volum del timbre de trucada</string>
     <string name="sound_alarms_limitvol_dialog">Volum de l\'alarma</string>
+    
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Hores de silenci</string>
     <string name="quiet_hours_note_title">Nota</string>
@@ -453,6 +658,9 @@
     <string name="quiet_hours_dim">Enfosquiment del LED</string>
     <string name="quiet_hours_dim_on">El LED s\'enfosquirà si és possible</string>
     <string name="quiet_hours_dim_off">LED amb brillantor normal</string>
+    <string name="quiet_hours_haptic">Deshabilitar comunicació hàptica</string>
+    <string name="quiet_hours_haptic_on">Comunicació hàptica deshabilitada</string>
+    <string name="quiet_hours_haptic_off">Comunicació hàptica habilitada</string>
 
     <string name="cmstats_title">Estadístiques anònimes</string>
     <string name="cmstats_summary">Ajudeu a millorar CM participant en les estadístiques anònimes</string>
@@ -460,6 +668,8 @@
     <string name="user_defined_key1">Tecla ràpida 1</string>
     <string name="user_defined_key2">Tecla ràpida 2</string>
     <string name="user_defined_key3">Tecla ràpida 3</string>
+    <string name="user_defined_envelope_key">Tecla de missatge</string>
+    <string name="user_defined_explorer_key">Tecla d\'explorador</string>
     <string name="user_defined_not_set">Res definit</string>
 
     <!--  Lockscreen gesture strings -->
@@ -479,10 +689,18 @@
     <string name="gestures_error_loading">Error en l\'operació amb el fitxer de gestos.</string>
     <string name="gestures_unlock_only">Desbloqueja telèfon</string>
     <string name="gestures_toggle_sound">Commuta so</string>
+    <string name="gestures_shortcut_or_activity">Drecera o activitat</string>
     <string name="gestures_flashlight">Llanterna</string>
+	<string name="gestures_next">Cançó següent</string>
+    <string name="gestures_previous">Cançó anterior</string>
+    <string name="gestures_playpause">Reproduir/pausar música</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desactiva el botó lliscant de desbloqueig</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: has d\'activar la bola de desplaçament, la tecla menú, o el desbloqueig per gestos per tenir aquesta opció disponible</string>
+    <string name="gestures_action_label">Acció:</string>
+    <string name="gestures_draw_label">Gest:</string>
+    <string name="gestures_draw_for_label">Gest per \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Alerta: s\'ha associat un gest similar a una altra acció!</string>
+    <string name="gestures_run_in_background">Executa en segon plà</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">Veure llista de canvis</string>
@@ -548,4 +766,10 @@
     <string name="cpu_max_freq_summary">Freqüència màxima de CPU\nActual: %s</string>
     <string name="cpu_set_on_boot">Estableix en arrancar</string>
     <string name="cpu_set_on_boot_summary">Restaura paràmetres de CPU en arrancar</string>
+    
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Gestió de permisos</string>
+    <string name="perm_enable_management_summary">Activar gestió de permisos d\'aplicacions</string>
+    <string name="perm_enable_warning_message">Alerta!\nRevocar permisos probablement causarà que l\'aplicació funcioni malament. Si una aplicació amb permisos revocats força la sortida permet-li els permisos esperats o no utilitzis l\'aplicació.\n Si us plau no envieu informes d\'error a Cyanogenmod si una aplicació amb permisos revocats no funciona com s\'espera!</string>
+    <string name="perm_enable_warning_title">N\'estàs segur?</string>
 </resources>
