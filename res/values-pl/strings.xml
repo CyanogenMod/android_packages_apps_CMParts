@@ -14,16 +14,16 @@
     <string name="input_settings_title_subhead">Ustawienia wprowadzania</string>
     <string name="input_settings_summary_head">Przyciski, reakcja na dotyk</string>
     <string name="interface_settings_title_head">Interfejs</string>
-    <string name="interface_settings_summary_head">Usprawnienia, przewijanie, render effect</string>
+    <string name="interface_settings_summary_head">Usprawnienia, przewijanie, efekt renderowania</string>
     <string name="lockscreen_settings_title_head">Blokada ekranu</string>
     <string name="lockscreen_settings_title_subhead">Ustawienia blokady ekranu</string>
     <string name="lockscreen_settings_summary_head">Gesty, styl, opcje odblokowania</string>
     <string name="performance_settings_title_head">Wydajność</string>
     <string name="performance_settings_title_subhead">Ustawienia wydajności</string>
-    <string name="performance_settings_summary_head">Usprawnienia, JIT, VM heap size</string>
+    <string name="performance_settings_summary_head">Usprawnienia, JIT, rozmiar bufora WM</string>
     <string name="sound_settings_title_head">Dźwięk</string>
     <string name="sound_settings_title_subhead">Ustawienia dźwięku</string>
-    <string name="sound_settings_summary_head">Głośność, ciche godziny</string>
+    <string name="sound_settings_summary_head">Profile dźwięku, głośność, ciche godziny</string>
     <string name="system_settings_title_head">System</string>
     <string name="system_settings_title_subhead">Ustawienia systemowe</string>
     <string name="system_settings_summary_head">Lista zmian, statystyki, aktualizacje</string>
@@ -99,6 +99,14 @@
     <string name="ui_status_bar_battery_summary">Wygląd ikony stanu akumulatora</string>
     <string name="ui_status_bar_compact_carrier_title">Pomniejszona etykieta operatora</string>
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
+    <string name="ui_status_bar_carrier_label_title">Typ nazwy sieci</string>
+    <string name="ui_status_bar_carrier_label_summary">Ustal, co jest pokazywane jako nazwa sieci</string>
+    <string name="ui_status_bar_carrier_label_use_default">Domyślnie</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Pokaż SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Pokaż PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Własny tekst</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Własna nazwa sieci</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Tekst używany zamiast standardowej nazwy sieci</string>
     <string name="ui_status_bar_toggle_brightness">Ustawienia jasności</string>
     <string name="ui_status_bar_toggle_brightness_summary">Pozwala na dostosowywanie jasności poprzez przesuwanie palca po pasku stanu.</string>
     <string name="ui_status_bar_toggle_info">Automatyczna jasność jest włączona</string>
@@ -402,7 +410,7 @@
     <string name="pref_purgeable_assets_summary">System może zwolnić więcej pamięci RAM zajmowanej przez bitmapy (wymagane ponowne uruchomienie)</string>
 
     <!-- Performance Settings : VM Heap Size -->
-    <string name="pref_heapsize_title">VM heap size</string>
+    <string name="pref_heapsize_title">Rozmiar bufora WM</string>
     <string name="pref_heapsize_summary">Maksymalna ilość pamięci przeznaczona na maszynę wirtualną (wymagane ponowne uruchomienie)</string>
 
     <!-- Performance : Lock home memory -->
@@ -603,24 +611,24 @@
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">Ciche godziny</string>
     <string name="quiet_hours_note_title">Uwaga</string>
-    <string name="quiet_hours_note_summary">Nadchodzące połączenia będą działać jak zwykle</string>
-    <string name="quiet_hours_enabled">Włącz</string>
+    <string name="quiet_hours_note_summary">Połączenia przychodzące będą działać, jak zwykle</string>
+    <string name="quiet_hours_enabled">Włącz ciche godziny</string>
     <string name="quiet_hours_enabled_on">Ciche godziny będą wymuszane</string>
     <string name="quiet_hours_enabled_off">Powiadomienia będą zachowywać się standardowo</string>
     <string name="quiet_hours_start">Start</string>
-    <string name="quiet_hours_start_summary">Kiedy rozpocząć</string>
+    <string name="quiet_hours_start_summary">Kiedy rozpocząć ciche godziny</string>
     <string name="quiet_hours_end">Koniec</string>
-    <string name="quiet_hours_end_summary">Kiedy zakończyć</string>
+    <string name="quiet_hours_end_summary">Kiedy zakończyć ciche godziny</string>
     <string name="quiet_hours_mute">Wycisz powiadomienia</string>
     <string name="quiet_hours_mute_on">Dźwięk nie będzie odtwarzany</string>
     <string name="quiet_hours_mute_off">Dźwięk będzie odtwarzany</string>
-    <string name="quiet_hours_still">Wibracje</string>
+    <string name="quiet_hours_still">Wyłącz wibracje</string>
     <string name="quiet_hours_still_on">Urządzenie nie będzie wibrować</string>
     <string name="quiet_hours_still_off">Urządzenie będzie wibrować</string>
     <string name="quiet_hours_dim">Przygaś diodę</string>
     <string name="quiet_hours_dim_on">Dioda będzie przyciemniona jeśli możliwe</string>
     <string name="quiet_hours_dim_off">Dioda będzie świecić z pełną jasnością</string>
-    <string name="quiet_hours_haptic">Reakcja na dotyk</string>
+    <string name="quiet_hours_haptic">Wyłącz reakcję na dotyk</string>
     <string name="quiet_hours_haptic_on">Reakcja na dotyk jest wyłączona</string>
     <string name="quiet_hours_haptic_off">Reakcja na dotyk jest włączona</string>
 
