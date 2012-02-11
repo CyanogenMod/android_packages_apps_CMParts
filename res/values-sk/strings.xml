@@ -112,7 +112,7 @@
     <string name="trackball_summary">Ovládanie trackball a LED notifikačných farieb a pulzovania</string>
     <!-- User interface : WebView -->
     <string name="pref_pinch_reflow_title">Znovu načítať po pinch in</string>
-    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po aväčšení</string>
+    <string name="pref_pinch_reflow_summary">Znovu načítať obsah webview okamžite po zväčšení</string>
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Koniec zoznamu</string>
     <string name="pref_overscroll_title">Efekt konca zoznamu</string>
