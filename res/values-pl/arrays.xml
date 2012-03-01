@@ -29,6 +29,18 @@
         <item>Brak (Domyślnie)</item>
     </string-array>
 
+    <string-array name="entries_status_bar_battery">
+        <item>Ikona (Domyślnie)</item>
+        <item>Procentowo</item>
+        <item>Ukryte</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Globalne ustawienia</item>
+        <item>Włączony</item>
+        <item>Wyłączony</item>
+    </string-array>
+
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Szybko)</item>
         <item>3</item>
@@ -111,6 +123,7 @@
         <item>10 dB</item>
     </string-array>
 
+
     <string-array name="entries_network_widget">
         <item>2G/3G+2G</item>  
         <item>2G/Tylko 3G</item>   
@@ -142,19 +155,16 @@
         <item>12 (ściśle)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Suwak</item>
-        <item>Obrotowy</item>
-        <item>Odświeżony obrotowy</item>
-        <item>Soczewka</item>
-        <item>Pierścień</item>
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Kolor</item>
+        <item>Własna grafika</item>
+        <item>Domyślna tapeta</item>
     </string-array>
 
-    <string-array name="pref_in_call_style_entries">
-        <item>Suwak</item>
-        <item>Obrotowy</item>
-        <item>Odświeżony obrotowy</item>
-        <item>Pierścień</item>
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Default</item>
+        <item>Hidden</item>
+        <item>Centered</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -162,6 +172,15 @@
         <item>Zestaw przewodowy</item>
         <item>Zestaw Bluetooth A2DP</item>
         <item>Oba</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 godziny</item>
+        <item>6 godzin</item>
+        <item>12 godzin</item>
+        <item>1 dzień</item>
+        <item>3 dni</item>
+        <item>1 tydzień</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">
@@ -202,5 +221,13 @@
         <item>Aparat</item>
         <item>Zwiększ głośność</item>
         <item>Zmniejsz głośność</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Żadna</item>
+        <item>Klawiatura ekranowa</item>
+        <item>Wyszukiwanie</item>
+        <item>Własna aplikacja</item>
+        <item>Pokaż/Ukryj pasek statusu</item>
     </string-array>
 </resources>

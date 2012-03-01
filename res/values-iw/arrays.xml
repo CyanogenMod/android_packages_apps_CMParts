@@ -132,10 +132,6 @@
     <item>11</item>
     <item>12 (הכי צר)</item>
   </string-array>
-  <string-array name="pref_lockscreen_style_entries">
-    <item>חוצץ הזזה</item>
-    <item>מסתובב</item>
-  </string-array>
   <string-array name="pref_overscroll_effect_entries">
     <item>ללא</item>
     <item>Edge Glow</item>

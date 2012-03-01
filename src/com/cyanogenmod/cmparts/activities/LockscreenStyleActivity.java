@@ -37,6 +37,10 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.Window;
 import android.widget.Toast;
+import android.provider.CmSystem.LockscreenStyle;
+import android.provider.CmSystem.InCallStyle;
+import android.provider.CmSystem.RotaryStyle;
+import android.provider.CmSystem.RinglockStyle;
 
 import com.cyanogenmod.cmparts.R;
 import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
@@ -59,6 +63,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private static final String LOCKSCREEN_STYLE_PREF = "pref_lockscreen_style";
 
     private static final String IN_CALL_STYLE_PREF = "pref_in_call_style";
+
+    private static final String ROTARY_STYLE_PREF = "pref_rotary_style";
+
+    private static final String RINGLOCK_STYLE_PREF = "pref_ringlock_style";
 
     private static final String LOCKSCREEN_CUSTOM_APP_TOGGLE = "pref_lockscreen_custom_app_toggle";
 
@@ -98,6 +106,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
     private ListPreference mInCallStylePref;
 
+    private ListPreference mRotaryStylePref;
+
+    private ListPreference mRinglockStylePref;
+
     private Preference mCustomAppActivityPref;
 
     private ListPreference mCustomBackground;
@@ -110,95 +122,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
     private int mMaxRingCustomApps = Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES.length;
 
-    enum LockscreenStyle{
-        Slider,
-        Rotary,
-        RotaryRevamped,
-        Lense,
-        Ring;
-
-        static public LockscreenStyle getStyleById(int id){
-            switch (id){
-                case 1:
-                    return Slider;
-                case 2:
-                    return Rotary;
-                case 3:
-                    return RotaryRevamped;
-                case 4:
-                    return Lense;
-                case 5:
-                    return Ring;
-                default:
-                    return Ring;
-            }
-        }
-
-        static public LockscreenStyle getStyleById(String id){
-            return getStyleById(Integer.valueOf(id));
-        }
-
-        static public int getIdByStyle(LockscreenStyle lockscreenstyle){
-            switch (lockscreenstyle){
-                case Slider:
-                    return 1;
-                case Rotary:
-                    return 2;
-                case RotaryRevamped:
-                    return 3;
-                case Lense:
-                    return 4;
-                case Ring:
-                    return 5;
-                default:
-                    return 5;
-            }
-        }
-    }
-
-    enum InCallStyle {
-        Slider,
-        Rotary,
-        RotaryRevamped,
-        Ring;
-
-        static public InCallStyle getStyleById(int id){
-            switch (id){
-                case 1:
-                    return Slider;
-                case 2:
-                    return Rotary;
-                case 3:
-                    return RotaryRevamped;
-                case 4:
-                    return Ring;
-                default:
-                    return Ring;
-            }
-        }
-
-        static public InCallStyle getStyleById(String id){
-            return getStyleById(Integer.valueOf(id));
-        }
-
-        static public int getIdByStyle(InCallStyle inCallStyle){
-            switch (inCallStyle){
-                case Slider:
-                    return 1;
-                case Rotary:
-                    return 2;
-                case RotaryRevamped:
-                    return 3;
-                case Ring:
-                    return 4;
-                default:
-                    return 4;
-            }
-        }
-    }
-
     private LockscreenStyle mLockscreenStyle;
     private InCallStyle mInCallStyle;
+    private RotaryStyle mRotaryStyle;
+    private RinglockStyle mRinglockStyle;
     private ShortcutPickHelper mPicker;
 
     @Override
@@ -210,20 +137,37 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        /* Lockscreen Style and related related settings */
+        /* Lockscreen Style */
         mLockscreenStylePref = (ListPreference) prefSet.findPreference(LOCKSCREEN_STYLE_PREF);
         mLockscreenStyle = LockscreenStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKSCREEN_STYLE_PREF, 5));
+                Settings.System.LOCKSCREEN_STYLE_PREF, LockscreenStyle.getIdByStyle(LockscreenStyle.Ring)));
         mLockscreenStylePref.setValue(String.valueOf(LockscreenStyle.getIdByStyle(mLockscreenStyle)));
         mLockscreenStylePref.setOnPreferenceChangeListener(this);
 
+        /* Incall Style */
         mInCallStylePref = (ListPreference) prefSet.findPreference(IN_CALL_STYLE_PREF);
         mInCallStyle = InCallStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
-                Settings.System.IN_CALL_STYLE_PREF, 4));
+                Settings.System.IN_CALL_STYLE_PREF, InCallStyle.getIdByStyle(InCallStyle.Ring)));
         mInCallStylePref.setValue(String.valueOf(InCallStyle.getIdByStyle(mInCallStyle)));
         mInCallStylePref.setOnPreferenceChangeListener(this);
+
+        /* Rotary Style */
+        mRotaryStylePref = (ListPreference) prefSet.findPreference(ROTARY_STYLE_PREF);
+        mRotaryStyle = RotaryStyle.getStyleById(
+                Settings.System.getInt(getContentResolver(),
+                Settings.System.ROTARY_STYLE_PREF, RotaryStyle.getIdByStyle(RotaryStyle.Normal)));
+        mRotaryStylePref.setValue(String.valueOf(RotaryStyle.getIdByStyle(mRotaryStyle)));
+        mRotaryStylePref.setOnPreferenceChangeListener(this);
+
+        /* Ringlock Style */
+        mRinglockStylePref = (ListPreference) prefSet.findPreference(RINGLOCK_STYLE_PREF);
+        mRinglockStyle = RinglockStyle.getStyleById(
+                Settings.System.getInt(getContentResolver(),
+                Settings.System.RINGLOCK_STYLE_PREF, RinglockStyle.getIdByStyle(RinglockStyle.Bubble)));
+        mRinglockStylePref.setValue(String.valueOf(RinglockStyle.getIdByStyle(mRinglockStyle)));
+        mRinglockStylePref.setOnPreferenceChangeListener(this);
 
         mRingUnlockMiddleToggle = (CheckBoxPreference) prefSet
                 .findPreference(LOCKSCREEN_RING_UNLOCK_MIDDLE_TOGGLE);
@@ -235,6 +179,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         mRingMinimalToggle.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_RING_MINIMAL, 0) == 1);
 
+        /* Rotary related options */
         mRotaryUnlockDownToggle = (CheckBoxPreference) prefSet
                 .findPreference(LOCKSCREEN_ROTARY_UNLOCK_DOWN_TOGGLE);
         mRotaryUnlockDownToggle.setChecked(Settings.System.getInt(getContentResolver(),
@@ -480,6 +425,18 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             updateStylePrefs(mLockscreenStyle, mInCallStyle);
             return true;
         }
+        if (preference == mRotaryStylePref) {
+            mRotaryStyle = RotaryStyle.getStyleById((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.ROTARY_STYLE_PREF,
+                    RotaryStyle.getIdByStyle(mRotaryStyle));
+            return true;
+        }
+        if (preference == mRinglockStylePref) {
+            mRinglockStyle = RinglockStyle.getStyleById((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.RINGLOCK_STYLE_PREF,
+                    RinglockStyle.getIdByStyle(mRinglockStyle));
+            return true;
+        }
         if (preference == mCustomBackground) {
             int indexOf = mCustomBackground.findIndexOfValue(val);
             switch (indexOf) {
@@ -582,6 +539,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 break;
             case Ring:
                 mCustomAppTogglePref.setSummary(R.string.pref_lockscreen_custom_app_toggle_ring_summary);
+
+                lockscreenCatPrefs.add(mRinglockStylePref);
+                lockscreenCatPrefsEnable.add(true);
+
                 lockscreenCatPrefs.add(mCustomAppTogglePref);
                 lockscreenCatPrefsEnable.add(true);
 
@@ -596,8 +557,11 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
                 break;
             case Rotary:
-            case RotaryRevamped:
                 mCustomAppTogglePref.setSummary(R.string.pref_lockscreen_custom_app_toggle_rotary_summary);
+
+                lockscreenCatPrefs.add(mRotaryStylePref);
+                lockscreenCatPrefsEnable.add(true);
+
                 lockscreenCatPrefs.add(mCustomAppTogglePref);
                 lockscreenCatPrefsEnable.add(true);
 
@@ -618,11 +582,15 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 prefSet.removePreference(mCategoryStyleLockscreen);
         }
 
-        if ((inCallStyle == InCallStyle.Rotary || inCallStyle == InCallStyle.RotaryRevamped) &&
-                !(lockscreenStyle == LockscreenStyle.Rotary || lockscreenStyle == LockscreenStyle.RotaryRevamped)) {
+        if (inCallStyle == InCallStyle.Rotary && lockscreenStyle != LockscreenStyle.Rotary) {
             prefSet.addPreference(mCategoryStyleInCall);
-
+            inCallCatPrefs.add(mRotaryStylePref);
+            inCallCatPrefsEnable.add(true);
             inCallCatPrefs.add(mRotaryHideArrowsToggle);
+            inCallCatPrefsEnable.add(true);
+        } else if (inCallStyle == InCallStyle.Ring && lockscreenStyle != LockscreenStyle.Ring) {
+            prefSet.addPreference(mCategoryStyleInCall);
+            inCallCatPrefs.add(mRinglockStylePref);
             inCallCatPrefsEnable.add(true);
         }
 

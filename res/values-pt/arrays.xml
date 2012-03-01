@@ -130,14 +130,6 @@
         <item>12 (estrita)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Aba Deslizante</item>
-        <item>Rotativo</item>
-        <item>Rotativo Remodelado</item>
-        <item>Lente</item>
-        <item>Anel</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Desabilitado</item>
         <item>Fone de Ouvido com fio</item>
@@ -185,13 +177,6 @@
         <item>Diminuir Volume</item>
     </string-array>
 
-    <string-array name="pref_in_call_style_entries">
-        <item>Aba Deslizante</item>
-        <item>Giratório</item>
-        <item>Giratório renovado</item>
-        <item>Anel</item>
-    </string-array>
-
     <string-array name="entries_long_press_menu">
         <item>Nenhum</item>
         <item>Teclado virtual</item>
@@ -213,11 +198,5 @@
         <item>1 dia</item>
         <item>3 dias</item>
         <item>1 semana</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>Padrão</item>
-        <item>Oculto</item>
-        <item>Centralizado</item>
     </string-array>
 </resources>

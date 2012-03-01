@@ -17,16 +17,25 @@
 package com.cyanogenmod.cmparts.activities;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.activities.DisplayActivity;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
 public class MainActivity extends PreferenceActivity {
+    private static final String DISPLAY_SETTINGS = "display_settings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.cmparts);
+
+        /* Show a different summary for display settings if no backlight settings
+         * are supported. */
+        if (!DisplayActivity.supportsBacklightSettings(this)) {
+            getPreferenceScreen().findPreference(DISPLAY_SETTINGS)
+                .setSummary(R.string.display_settings_summary_head_nobacklight);
+        }
     }
 }

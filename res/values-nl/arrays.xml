@@ -144,6 +144,11 @@
         <item>Hoog</item>
     </string-array>
 
+    <string-array name="entries_mobiledatanetwork_widget">
+        <item>Uitgeschakeld</item>
+        <item>Ingeschakeld</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
         <item>1 (Meest sensitief)</item>
         <item>2</item>
@@ -159,31 +164,10 @@
         <item>12 (Minst sensitief)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Schuifbalk</item>
-        <item>Draaiend</item>
-        <item>Draaiend (nieuw)</item>
-        <item>Lense</item>
-        <item>Ring</item>
-    </string-array>
-
-    <string-array name="pref_in_call_style_entries">
-        <item>Schuifbalk</item>
-        <item>Draaiend</item>
-        <item>Draaiend (nieuw)</item>
-        <item>Ring</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_background_entries">
         <item>Kleur</item>
         <item>Te kiezen afbeelding</item>
         <item>Standaard achtergrond</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>Standaard</item>
-        <item>Verborgen</item>
-        <item>Gecentreerd</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -204,7 +188,7 @@
 
     <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
         <item>Verberg</item>
-        <item>Laat eerste regen zien</item>
+        <item>Laat eerste regel zien</item>
         <item>Geef helemaal weer</item>
     </string-array>
 

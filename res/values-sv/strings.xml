@@ -184,8 +184,12 @@
     <string name="trackball_category_screen">Hantera kategorier</string>
     <string name="trackball_category_add_title">Lägg till kategori</string>
     <string name="trackball_category_add_summary">Lägg till en kategori till listan</string>
+    <string name="trackball_category_add_error_title">FEL</string>
+    <string name="trackball_category_add_error_summary">Kategorinamnet får inte innehålla \'=\'</string>
     <string name="trackball_category_remove_title">Ta bort kategori</string>
     <string name="trackball_category_remove_summary">Ta bort en kategori från listan</string>
+    <string name="trackball_category_edit_title">Ändra kategoriinställningar</string>
+    <string name="trackball_category_edit_summary">Ändra standardinställningarna för denna kategori</string>
     <string name="trackball_reset_all">Återställ alla färger och kategorier.</string>
     <string name="trackball_color_notice_title">OBS:</string>
     <string name="trackball_color_notice_summary">Alla färger visas inte på alla enheter.</string>
@@ -221,6 +225,7 @@
     <string name="trackball_color_entry_light_blue">Ljusblå</string>
     <string name="trackball_color_entry_random">Slumpmässig</string>
     <string name="trackball_color_entry_amber">Bärnsten</string>
+    <string name="trackball_force_mode_category">Använd kategoriinställningar</string>
 
     <!-- Trackball Settings : Force modes -->
     <string name="trackball_force_mode_application">Använd applikationens inställningar</string>
@@ -251,6 +256,9 @@
     <string name="pref_lockscreen_always_battery_summary">Visa alltid batteristatus på låsskärmen</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget-layout</string>
     <string name="pref_lockscreen_widgets_layout_summary">Växla layout för klocka, datum, operatör och status</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Standard</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Gömd</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Centrerad</string>
     <string name="pref_lockscreen_music_controls_title">Musikkontroller på låsskärmen</string>
     <string name="pref_lockscreen_music_controls_summary">Visar musikkontroller på låsskärmen</string>
     <string name="pref_lockscreen_now_playing_title">Visa låttitel</string>
@@ -273,8 +281,11 @@
     <string name="pref_menu_unlock_summary">Tryck på meny-knappen låser upp enheten</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Snabbupplåsning</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Slippa trycka OK när PIN eller lösenord ska skrivas. Backsteg räknas som misslyckat försök.</string>
+    <string name="lockscreen_style_options_title">Stilspecifika inställningar</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Anpassad applikationsstartare</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Visar ytterligare glidskena på glidskenstypen, visar en anpassad appliktionsfördjupning på rotationstypen.</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">Visar en ytterligare grupp av glidskenor för att starta anpassade appar</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">Visar en anpassad app-fördjupning för att starta en anpassad app</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">Visar en tredje ring för att starta upp till fyra anpassade appar</string>
     <string name="pref_lockscreen_custom_app_activity_title">Anpassad applikation</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Välj genväg att ställa in</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Välj genväg att återställa</string>
@@ -282,6 +293,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Lägg till</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Ta bort</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">Ej definierad</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Lås upp med mittenring</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Byt plats på upplåsnings- och appstartarringen</string>
+    <string name="pref_lockscreen_ring_minimal_title">Minimalistisk ringstil</string>
+    <string name="pref_lockscreen_ring_minimal_summary">En ring i mitten för att låsa upp</string>
     <string name="pref_lockscreen_custom_background_title">Välj bakgrund</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Välj bakgrund</string>
     <string name="pref_lockscreen_custom_background_summary">Välj bild eller färg att används som bakgrund för låsskärm</string>
@@ -298,8 +313,14 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Gömmer pilarna som antyder riktning på rotationshjulet</string>
     <string name="pref_lockscreen_style_title">Låsskärmsstil</string>
     <string name="pref_lockscreen_style_summary">Välj stil på låsskärmen</string>
+    <string name="lockscreen_style_entry_tabs">Glidskena</string>
+    <string name="lockscreen_style_entry_rotary">Roterande</string>
+    <string name="lockscreen_style_entry_ring">Ring</string>
     <string name="pref_in_call_style_title">Inkommande samtal stil</string>
     <string name="pref_in_call_style_summary">Välj utseende på inkommande samtal acceptera / avvisa widget</string>
+    <string name="incall_style_entry_tabs">Glidskena</string>
+    <string name="incall_style_entry_rotary">Roterande</string>
+    <string name="incall_style_entry_ring">Ring</string>
     <string name="lockscreen_music_title">Musikkontroller</string>
     <string name="pref_volbtn_music_controls_title">Musikkontroller med volymknapparna</string>
     <string name="pref_volbtn_music_controls_summary">Gå till föregående/nästa låt med långa tryck på volymknapparna när skärmen är avstängd</string>
@@ -316,6 +337,10 @@
     <string name="pref_lockscreen_calendar_reminders_only_summary">Hitta bara händelser med påminnelser</string>
     <string name="pref_lockscreen_calendar_lookahead_title">Kalenderhändelsers framförhållning</string>
     <string name="pref_lockscreen_calendar_lookahead_summary">Hur långt i förväg kan händelser visas</string>
+    <string name="pref_lockscreen_calendar_show_location_title">Visa händelsens plats</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">Visa händelsens plats under titeln</string>
+    <string name="pref_lockscreen_calendar_show_description_title">Visa händelsebeskrivning</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">Visa händelsens beskrivning under titeln</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Inmatningsinställningar</string>
@@ -634,6 +659,9 @@
     <string name="quiet_hours_dim">Dämpa LED</string>
     <string name="quiet_hours_dim_on">LED kommer dämpas om möjligt</string>
     <string name="quiet_hours_dim_off">LED kommer lysa med full ljusstyrka</string>
+    <string name="quiet_hours_haptic">Inaktivera haptisk återkoppling</string>
+    <string name="quiet_hours_haptic_on">Haptisk återkoppling är inaktiverad</string>
+    <string name="quiet_hours_haptic_off">Haptisk återkoppling är aktiverad</string>
 
     <string name="cmstats_title">Anonym statistik</string>
     <string name="cmstats_summary">Hjälp till att göra CM bättre genom att vara med i den anonyma statistikinsamlingen</string>
@@ -664,6 +692,9 @@
     <string name="gestures_toggle_sound">Ljud På/Av</string>
     <string name="gestures_shortcut_or_activity">Genväg eller aktivitet</string>
     <string name="gestures_flashlight">Ficklampa</string>
+    <string name="gestures_next">Nästa låt</string>
+    <string name="gestures_previous">Föregående låt</string>
+    <string name="gestures_playpause">Spela/pausa musik</string>
     <string name="pref_lockscreen_disable_unlock_tab">Inaktivera glidskenan</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Notering: Du måste aktivera styrkula, meny-knapp eller gestupplåsning innan detta val blir tillgängligt</string>
     <string name="gestures_action_label">Handling:</string>

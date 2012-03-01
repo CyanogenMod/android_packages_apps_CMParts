@@ -142,17 +142,6 @@
         <item>11</item>
         <item>12 (stiahnutý)</item>
     </string-array>
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Posúvací Tab</item>
-        <item>Otočný</item>
-        <item>Renovovaný otočný</item>
-        <item>Lúč</item>
-    </string-array>
-   <string-array name="pref_in_call_style_entries">
-        <item>Posúvací Tab</item>
-        <item>Otočný</item>
-        <item>Renovovaný otočný</item>
-    </string-array>
     <string-array name="pref_lockscreen_background_entries">
         <item>Vyplnenie farbou</item>
         <item>Vlastný obrázok</item>

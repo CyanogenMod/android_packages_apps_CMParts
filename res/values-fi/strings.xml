@@ -201,6 +201,8 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Piilottaa suuntanuolet kiertotyylissä</string>
     <string name="pref_lockscreen_style_title">Näyttölukituksen tyyli</string>
     <string name="pref_lockscreen_style_summary">Valitse näyttölukituksen tyyli</string>
+    <string name="lockscreen_style_entry_tabs">Liukusäädin</string>
+    <string name="lockscreen_style_entry_rotary">Kiertosäädin</string>
     <string name="pref_volbtn_music_controls_title">Äänenvoimakkuuspainikkeet musiikkiohjaimina</string>
     <string name="pref_volbtn_music_controls_summary">Etsii musiikkiraitoja kun äänenvoimakkuuspainikkeita painetaan pitkään näytön ollessa sammuneena</string>
     <string name="pref_cambtn_music_controls_title">Kamerapainike musiikkiohjaimena</string>

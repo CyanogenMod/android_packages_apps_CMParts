@@ -73,11 +73,23 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
 
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+
+    private static final String SCROLLINGCACHE_DEFAULT = "1";
+
     private static final String PURGEABLE_ASSETS_PREF = "pref_purgeable_assets";
 
     private static final String PURGEABLE_ASSETS_PERSIST_PROP = "persist.sys.purgeable_assets";
 
     private static final String PURGEABLE_ASSETS_DEFAULT = "0";
+
+    private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
+
+    private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
+
+    private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
 
     private static final String LOCK_HOME_PREF = "pref_lock_home";
 
@@ -95,7 +107,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private CheckBoxPreference mUse16bppAlphaPref;
 
+    private ListPreference mScrollingCachePref;
+
     private CheckBoxPreference mPurgeableAssetsPref;
+
+    private CheckBoxPreference mDisableBootanimPref;
 
     private CheckBoxPreference mLockHomePref;
 
@@ -142,6 +158,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
         mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
 
+        mScrollingCachePref = (ListPreference) prefSet.findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
+
         mPurgeableAssetsPref = (CheckBoxPreference) prefSet.findPreference(PURGEABLE_ASSETS_PREF);
         String purgeableAssets = SystemProperties.get(PURGEABLE_ASSETS_PERSIST_PROP, PURGEABLE_ASSETS_DEFAULT);
         mPurgeableAssetsPref.setChecked("1".equals(purgeableAssets));
@@ -150,6 +171,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
         mHeapsizePref.setOnPreferenceChangeListener(this);
+
+        mDisableBootanimPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTANIMATION_PREF);
+        String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
+        mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
         mLockHomePref = (CheckBoxPreference) prefSet.findPreference(LOCK_HOME_PREF);
         mLockHomePref.setChecked(Settings.System.getInt(getContentResolver(),
@@ -199,6 +224,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
+        if (preference == mDisableBootanimPref) {
+            SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
+                    mDisableBootanimPref.isChecked() ? "1" : "0");
+            return true;
+        }
+
         if (preference == mLockHomePref) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCK_HOME_IN_MEMORY, mLockHomePref.isChecked() ? 1 : 0);
@@ -215,6 +246,13 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mScrollingCachePref) {
+            if (newValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
+                return true;
+            }
+        }
+
         if (preference == mHeapsizePref) {
             if (newValue != null) {
                 SystemProperties.set(HEAPSIZE_PERSIST_PROP, (String)newValue);

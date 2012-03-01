@@ -9,7 +9,8 @@
     <string name="application_settings_summary_head">Emplacement d\'installation des applications et gestion des permissions</string>
     <string name="display_settings_title_head">Affichage</string>
     <string name="display_settings_title_subhead">Paramètres d\'affichage</string>
-    <string name="display_settings_summary_head">Rétroéclairage, animations de l\'écran, rotation automatique</string>
+    <string name="display_settings_summary_head">Rétroéclairage, animations, rotation de l\'écran</string>
+    <string name="display_settings_summary_head_nobacklight">Animations, rotation de l\'écran</string>
     <string name="input_settings_title_head">Boutons</string>
     <string name="input_settings_title_subhead">Paramètres des boutons</string>
     <string name="input_settings_summary_head">Comportement des boutons, retour haptique</string>
@@ -69,8 +70,16 @@
     <string name="ui_status_bar_battery_summary">Style de l\'indicateur de niveau de charge</string>
     <string name="ui_status_bar_clock_title">Afficher l\'heure</string>
     <string name="ui_status_bar_clock_summary">L\'heure sera cachée de la barre si cette option est désactivée</string>
-    <string name="ui_status_bar_compact_carrier_title">Fournisseur abrégé</string>
-    <string name="ui_status_bar_compact_carrier_summary">Utilise le nom abrégé du fournisseur d\'accès GSM</string>
+    <string name="ui_status_bar_compact_carrier_title">Opérateur abrégé</string>
+    <string name="ui_status_bar_compact_carrier_summary">Utilise le nom abrégé du fournisseur d\'accès mobile</string>
+    <string name="ui_status_bar_carrier_label_title">Nom de l\'opérateur</string>
+    <string name="ui_status_bar_carrier_label_summary">Type d\'information utilisée pour afficher l\'opérateur</string>
+    <string name="ui_status_bar_carrier_label_use_default">Par défaut</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Utiliser SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Utiliser PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Texte personnalisé</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Opérateur personnalisé</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Texte utilisé à la place du nom de l\'opérateur</string>
     <string name="ui_status_bar_toggle_brightness">Rétroéclairage</string>
     <string name="ui_status_bar_toggle_brightness_summary">Permet d\'ajuster la luminosité en faisant glisser dans la barre</string>
     <string name="ui_status_bar_toggle_info">Le rétroéclairage automatique désactive cette option</string>
@@ -216,12 +225,23 @@
     <string name="pref_lockscreen_always_battery_summary">Afficher l\'état de la batterie sur l\'écran de verrouillage, à tout moment</string>
     <string name="pref_lockscreen_widgets_layout_title">Position</string>
     <string name="pref_lockscreen_widgets_layout_summary">Position des libellés opérateur, heure, date et état</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Par défaut</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Invisible</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Centré</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">À droite</string>
+    <!-- Lockscreen Music Settings -->
+    <string name="lockscreen_music_title">Lecture de la musique</string>
+    <string name="pref_lockscreen_music_controls_title">Contrôle de la musique</string>
+    <string name="pref_lockscreen_music_controls_summary">Afficher les boutons permettant de commander la musique sur l\'écran de verrouillage</string>
     <string name="pref_lockscreen_now_playing_title">Nom de la chanson</string>
     <string name="pref_lockscreen_now_playing_summary">Affiche le nom et l\'artiste du morceau en cours de lecture</string>
     <string name="pref_lockscreen_album_art_title">Pochette des albums</string>
     <string name="pref_lockscreen_album_art_summary">Afficher la pochette de l\'album en cours. Fonctionne uniquement avec le lecteur de musique original en mode portrait</string>
-    <string name="pref_lockscreen_music_headset_title">Contrôle de la musique</string>
-    <string name="pref_lockscreen_music_headset_summary">Afficher les contrôles pour la musique quand un casque est branché (et/ou Bluetooth A2DP)</string>
+    <string name="pref_lockscreen_music_headset_title">Afficher si écouteurs</string>
+    <string name="pref_lockscreen_music_headset_summary">Afficher les boutons pour la musique quand un casque est branché (et/ou Bluetooth A2DP)</string>
+    <string name="pref_lockscreen_always_music_controls_title">Toujours afficher</string>
+    <string name="pref_lockscreen_always_music_controls_summary">Toujours afficher les contrôles, même sans lecture en cours</string>
+    <!-- Lockscreen Other -->
     <string name="pref_lockscreen_custom_app_activity_title">Sélectionner l\'application</string>
     <string name="pref_lockscreen_custom_icon_style_title">Icône de l\'application</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Utiliser l\'icône de l\'application au lieu de celle par défaut</string>
@@ -229,10 +249,6 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Glisser vers le bas déverrouille. Glisser à droite démarre l\'application</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Masquer flèches</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Masque les flèches directionnelles de rotation</string>
-    <string name="pref_lockscreen_music_controls_title">Contrôles de la musique</string>
-    <string name="pref_lockscreen_music_controls_summary">Afficher les contrôles permettant de commander la musique sur l\'écran de verrouillage</string>
-    <string name="pref_lockscreen_always_music_controls_title">Toujours les afficher</string>
-    <string name="pref_lockscreen_always_music_controls_summary">Toujours afficher les contrôles permettant de commander la musique, même sans lecture en cours</string>
     <string name="pref_lockscreen_quick_unlock_control_title">Déverrouillage rapide</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Une pression sur OK n\'est plus nécessaire lors de la saisie d\'un PIN ou mot de passe. Effacer compte comme une erreur.</string>
     <string name="lockscreen_style_options_title">Options spécifiques</string>
@@ -243,9 +259,14 @@
 
     <string name="pref_lockscreen_style_title">Style</string>
     <string name="pref_lockscreen_style_summary">Choisir le style de l\'écran de verrouillage</string>
+    <string name="lockscreen_style_entry_tabs">Curseurs</string>
+    <string name="lockscreen_style_entry_rotary">Rotatif</string>
+    <string name="lockscreen_style_entry_ring">Anneau</string>
     <string name="pref_in_call_style_title">Appels entrants</string>
     <string name="pref_in_call_style_summary">Choisir le style du widget accepter/refuser les appels entrants</string>
-    <string name="lockscreen_music_title">Contrôle de la musique</string>
+    <string name="incall_style_entry_tabs">Curseurs</string>
+    <string name="incall_style_entry_rotary">Rotatif</string>
+    <string name="incall_style_entry_ring">Anneau</string>
     <string name="pref_volbtn_music_controls_title">Piste suivante par volume</string>
     <string name="pref_volbtn_music_controls_summary">Change la chanson en cours par longue pression sur les boutons Volume lorque l\'écran est éteint</string>
     <string name="pref_cambtn_music_controls_title">Bouton Photo pour la musique</string>
@@ -258,6 +279,20 @@
     <string name="pref_lockscreen_custom_background_summary_default">Mode actuel: Par défault</string>
     <string name="pref_lockscreen_background_result_successful">Fond d\'écran modifié</string>
     <string name="pref_lockscreen_background_result_not_successful">Fond d\'écran non modifié</string>
+    <string name="pref_rotary_style_title">Style rotatif</string>
+    <string name="pref_rotary_style_summary">Choisir le style de l\'anneau rotatif</string>
+    <string name="rotary_style_entry_normal">Normal</string>
+    <string name="rotary_style_entry_revamped">Revamped</string>
+    <string name="pref_ringlock_style_title">Style des anneaux</string>
+    <string name="pref_ringlock_style_summary">Sélectionner l\'apparence des anneaux</string>
+    <string name="ringlock_style_entry_bubbles">Bulles</string>
+    <string name="ringlock_style_entry_revamped">Revamped</string>
+    <string name="ringlock_style_entry_holo">Holo</string>
+    <string name="ringlock_style_entry_blade">Lame</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Déverrouiller au milieu</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Inverser l\'anneau de déverrouillage et celui de l\'application perso</string>
+    <string name="pref_lockscreen_ring_minimal_title">Style minimal</string>
+    <string name="pref_lockscreen_ring_minimal_summary">Un seul anneau au milieu de l\'écran pour déverrouiller</string>
     <string name="pref_lockscreen_disable_on_security_title">Inactif si sécurisé</string>
     <string name="pref_lockscreen_disable_on_security_summary">Désactive l\'écran de verrouillage si l\'écran de sécurité est activé (Code PIN, Mot de passe)</string>
     <string name="lockscreen_calendar_title">Agenda</string>
@@ -334,6 +369,14 @@
     <string name="pref_use_16bpp_alpha_title">Transparence 16bits</string>
     <string name="pref_use_16bpp_alpha_summary">Utiliser le mode 16 bits améliore la vitesse de défilement et des animations, mais peut affecter l\'affichage des éléments transparents (nécessite un redémarrage)</string>
 
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Cache de défilement</string>
+    <string name="pref_scrollingcache_summary">La mise en cache du défilement peut améliorer la vitesse de défilement mais utilise plus de mémoire</string>
+    <string name="pref_scrollingcache_force_enable">Toujours activé</string>
+    <string name="pref_scrollingcache_default_enable">Activé par défaut</string>
+    <string name="pref_scrollingcache_default_disable">Désactivé par défaut</string>
+    <string name="pref_scrollingcache_force_disable">Toujours désactivé</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Purge des bitmaps</string>
     <string name="pref_purgeable_assets_summary">Le système peut libérer plus de RAM si la mémoire des bitmaps peut être réclamée (nécessite un redémarrage)</string>
@@ -348,6 +391,12 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Paramètres des applications</string>
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Utiliser la mémoire interne</string>
+    <string name="pref_switch_storage_summary_on">Utilise la mémoire interne étendue pour les applications et les médias (redémarrage requis)</string>
+    <string name="pref_switch_storage_summary_off">Utilise la carte amovible pour les applications et les médias (redémarrage requis)</string>
+    <string name="pref_storage_switch_unavailable">Cet appareil n\'a pas de mémoire interne étendue</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Déplacement sur SD</string>
@@ -419,6 +468,7 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Effet de rendu</string>
     <string name="notify_render_effect">Effet de rendu activé</string>
+    <string name="pref_widget_options_category_title">Général</string>
     <string name="add_widget">Ajouter le widget</string>
     <string name="pref_render_effect_none">Pas d\'effet de rendu</string>
     <string name="pref_render_effect_night">Mode nuit (3700K)</string>
@@ -497,6 +547,10 @@
     <string name="pref_flash_mode_title">Mode flash</string>
     <string name="pref_flash_mode_summary">Choisir la puissance du flash : Haute ou Death Ray</string>
 
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">Pas d\'animation de boot</string>
+    <string name="pref_disable_bootanimation_summary">Ne pas afficher l\'animation pour améliorer la vitesse de démarrage</string>
+
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Ecran d\'accueil en RAM</string>
     <string name="pref_lock_home_summary">Essayer de conserver l\'application Accueil en mémoire tout le temps</string>
@@ -553,6 +607,8 @@
     <string name="sound_vibrate_in_call_title">Vibreur lors des appels</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications par vibreur désactivées</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications par vibreur activées</string>
+    <string name="sound_lock_volume_keys_title">Verrouiller boutons volume</string>
+    <string name="sound_lock_volume_keys_summary">Évite la désactivation involontaire du mode silencieux en appuyant sur les boutons de volume</string>
     <string name="sound_to_speaker_title">Toujours dans le haut-parleur</string>
     <string name="sound_notifications_title">Notifications</string>
     <string name="sound_rings_title">Sonneries</string>

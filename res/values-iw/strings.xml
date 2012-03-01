@@ -136,6 +136,8 @@
   <string name="pref_lockscreen_quick_unlock_control_summary">.מחיקה איננה נחשבת כנסיון שגוי .PIN אין צורך ללחוץ על אישור כאשר מכניסים סיסמא או קוד</string>
   <string name="pref_lockscreen_style_title">סגנון נעילת מסך</string>
   <string name="pref_lockscreen_style_summary">בחר סיגנון לנעילת מסך</string>
+  <string name="lockscreen_style_entry_tabs">חוצץ הזזה</string>
+  <string name="lockscreen_style_entry_rotary">מסתובב</string>
 
     <!-- Long Press Home -->
   <string name="long_press_home_title">הגדרות לחיצה ארוכה על מקש הבית</string>

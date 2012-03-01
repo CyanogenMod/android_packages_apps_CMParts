@@ -99,6 +99,14 @@
     <string name="ui_status_bar_battery_summary">Anzeigestil des Batteriestatus</string>
     <string name="ui_status_bar_compact_carrier_title">Kompakter Betreiber</string>
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen</string>
+    <string name="ui_status_bar_carrier_label_title">Betreibername</string>
+    <string name="ui_status_bar_carrier_label_summary">Auswahl des angezeigten Betreibernamens</string>
+    <string name="ui_status_bar_carrier_label_use_default">Standard</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Service-Provider-Name (SPN)</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Netzwerk-Betreiber-Name (PLMN)</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Benutzerdefiniert</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Benutzerdef. Betreiber</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Als Betreibername angezeigter Text</string>
     <string name="ui_status_bar_toggle_brightness">Helligkeitsregler</string>
     <string name="ui_status_bar_toggle_brightness_summary">Erlaubt Änderung der Helligkeit, indem mit dem Finger über die Statusleiste gewischt wird</string>
     <string name="ui_status_bar_toggle_info">Automatische Helligkeit ist aktiviert</string>
@@ -211,6 +219,8 @@
     <string name="trackball_app_gvoice">Google Voice</string>
     <string name="trackball_app_gmail">Google Mail</string>
     <string name="trackball_app_gtalk">Google Talk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
     <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
     <string name="trackball_app_dialer">Verpasster Anruf</string>
 
@@ -259,6 +269,10 @@
     <string name="pref_lockscreen_always_battery_summary">Den Batteriestatus immer auf dem Sperrbildschirm anzeigen</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget-Layout</string>
     <string name="pref_lockscreen_widgets_layout_summary">Layout für Uhrzeit, Datum, Netzbetreiber und Status wählen</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Standard</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Versteckt</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Zentriert</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">Rechtsbündig</string>
     <string name="pref_lockscreen_music_controls_title">Musiksteuerung</string>
     <string name="pref_lockscreen_music_controls_summary">Steuerelemente für Musik auf Sperrbildschirm anzeigen</string>
     <string name="pref_lockscreen_now_playing_title">Titel anzeigen</string>
@@ -293,6 +307,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Hinzufügen</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Entfernen</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">Nicht belegt</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Entsperr-Blase in der Mitte</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Entsperr-Blase und Anwendung-Starten-Blase vertauschen</string>
+    <string name="pref_lockscreen_ring_minimal_title">Minimales Layout</string>
+    <string name="pref_lockscreen_ring_minimal_summary">Zeigt nur eine Blase in der Mitte zum Entsperren</string>
     <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs- statt CM-Symbol für den Starter verwenden</string>
     <string name="pref_lockscreen_custom_background_title">Hintergrund</string>
@@ -309,8 +327,25 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Blendet die Richtungshinweise beim Rad aus</string>
     <string name="pref_lockscreen_style_title">Sperrbildschirm-Stil</string>
     <string name="pref_lockscreen_style_summary">Stil des Sperrbildschirms auswählen</string>
+    <string name="lockscreen_style_entry_tabs">Schieber</string>
+    <string name="lockscreen_style_entry_rotary">Rad</string>
+    <string name="lockscreen_style_entry_lense">Linse</string>
+    <string name="lockscreen_style_entry_ring">Blasen</string>
     <string name="pref_in_call_style_title">Anrufbildschirm-Stil</string>
     <string name="pref_in_call_style_summary">Stil des Bildschirms bei einem eingehenden Anruf auswählen</string>
+    <string name="incall_style_entry_tabs">Schieber</string>
+    <string name="incall_style_entry_rotary">Rad</string>
+    <string name="incall_style_entry_ring">Blasen</string>
+    <string name="pref_rotary_style_title">Rad-Stil</string>
+    <string name="pref_rotary_style_summary">Aussehen des Rades anpassen</string>
+    <string name="rotary_style_entry_normal">Standard</string>
+    <string name="rotary_style_entry_revamped">Umgestaltet</string>
+    <string name="pref_ringlock_style_title">Blasen-Stil</string>
+    <string name="pref_ringlock_style_summary">Aussehen der Blasen anpassen</string>
+    <string name="ringlock_style_entry_bubbles">Blasen</string>
+    <string name="ringlock_style_entry_revamped">Ringe</string>
+    <string name="ringlock_style_entry_holo">Holo</string>
+    <string name="ringlock_style_entry_blade">Scheiben</string>
     <string name="lockscreen_music_title">Musiksteuerung</string>
     <string name="pref_volbtn_music_controls_title">Titelwahl m. Lautstärket.</string>
     <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel durch langes Drücken der Lautstärketasten suchen</string>
@@ -426,8 +461,16 @@
     <string name="pref_use_dithering_summary">Dithering von Oberflächen verbessert die Bildqualität auf Kosten der Geräteleistung (Neustart erforderlich)</string>
 
     <!-- Performance Settings : 16bpp Alpha -->
-    <string name="pref_use_16bpp_alpha_title">Verwende 16-bit-Transparenz</string>
+    <string name="pref_use_16bpp_alpha_title">16-bit-Transparenz</string>
     <string name="pref_use_16bpp_alpha_summary">Verwenden der 16-bit-Transparenz kann die Performance beim Scrollen verbessern, aber kann Grafikfehler verursachen (Neustart erforderlich)</string>
+
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Scroll-Cache</string>
+    <string name="pref_scrollingcache_summary">Aktivieren des Scroll-Caches verbessert die Scroll-Performance, verbraucht aber mehr Speicher</string>
+    <string name="pref_scrollingcache_force_enable">Immer aktiviert</string>
+    <string name="pref_scrollingcache_default_enable">Standardmäßig aktiviert</string>
+    <string name="pref_scrollingcache_default_disable">Standardmäßig deaktiviert</string>
+    <string name="pref_scrollingcache_force_disable">Immer deaktiviert</string>
 
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Freigabe von Ressourcen</string>
@@ -436,6 +479,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Größe VM-Heap</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
+
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">Boot-Animation deakt.</string>
+    <string name="pref_disable_bootanimation_summary">Boot-Animation zur Beschleunigung des Systemstarts deaktivieren</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Home-Anw. persistent</string>
@@ -486,6 +533,7 @@
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render-Effekt</string>
     <string name="notify_render_effect">Render-Effekt ein</string>
+    <string name="pref_widget_options_category_title">Allgemeine Optionen</string>
     <string name="add_widget">Widget hinzufügen</string>
     <string name="pref_render_effect_none">Kein Render-Effekt</string>
     <string name="pref_render_effect_night">Nachtmodus (3700&#x2009;K)</string>
@@ -543,7 +591,7 @@
     <string name="title_toggle_flashlight">Taschenlampe</string>
     <string name="title_toggle_sleep">In Standby wechseln</string>
     <string name="title_toggle_media_play_pause">Medien: Play/Pause</string>
-    <string name="title_toggle_media_previous">Medien: Letzter Titel</string>
+    <string name="title_toggle_media_previous">Medien: Vorheriger Titel</string>
     <string name="title_toggle_media_next">Medien: Nächster Titel</string>
     <string name="title_toggle_wimax">WiMAX</string>
     <string name="title_button_modes">Schaltflächenfunktionen</string>
@@ -563,6 +611,8 @@
     <string name="cm_sound_mode_soundVibrate">Ton+Vibration</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
     <string name="pref_flash_mode_summary">Helligkeit der Taschenlampe</string>
+    <string name="pref_mobiledatanetwork_mode_title">Auto-2G/3G bei Daten</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Schaltfläche \'Mobilfunk-Daten\' wechselt automatisch zwischen 2G- und 3G-Modus</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatische Helligkeit</string>
@@ -612,6 +662,8 @@
     <string name="sound_vibrate_in_call_title">Im Gespräch vibrieren</string>
     <string name="sound_vibrate_in_call_summary_on">Normale Vibration bei Benachrichtigungen während eines Gesprächs</string>
     <string name="sound_vibrate_in_call_summary_off">Keine Vibration bei Benachrichtigungen während eines Gesprächs</string>
+    <string name="sound_lock_volume_keys_title">Lautstärketasten sperren</string>
+    <string name="sound_lock_volume_keys_summary">Lautstärketasten im Lautlosmodus sperren; verhindert versehentliches Deaktivieren des Lautlosmodus</string>
     <string name="sound_camera_shutter_disable_title">Auslöseton deakt.</string>
     <string name="sound_camera_shutter_disable_summary_on">Kamera-Auslöseton wird nicht abgespielt</string>
     <string name="sound_camera_shutter_disable_summary_off">Kamera-Auslöseton wird abgespielt</string>
@@ -685,6 +737,9 @@
     <string name="gestures_toggle_sound">Klingelmodus</string>
     <string name="gestures_shortcut_or_activity">Verknüpfung oder Anwendung</string>
     <string name="gestures_flashlight">Taschenlampe</string>
+    <string name="gestures_next">Nächster Titel</string>
+    <string name="gestures_previous">Vorheriger Titel</string>
+    <string name="gestures_playpause">Play/Pause</string>
     <string name="pref_lockscreen_disable_unlock_tab">Schieber verbergen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Hinweis: Es muss Trackball-, Menü- oder Gesten-Entsperren für diese Option aktiviert sein</string>
     <string name="gestures_action_label">Aktion:</string>

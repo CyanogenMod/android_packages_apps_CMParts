@@ -50,6 +50,7 @@ public class PowerWidgetActivity extends PreferenceActivity implements OnPrefere
     private static final String EXP_SCREENTIMEOUT_MODE = "pref_screentimeout_mode";
     private static final String EXP_RING_MODE = "pref_ring_mode";
     private static final String EXP_FLASH_MODE = "pref_flash_mode";
+    private static final String EXP_MOBILEDATANETWORK_MODE = "pref_mobiledatanetwork_mode";
 
     private HashMap<CheckBoxPreference, String> mCheckBoxPrefs = new HashMap<CheckBoxPreference, String>();
 
@@ -58,6 +59,7 @@ public class PowerWidgetActivity extends PreferenceActivity implements OnPrefere
     ListPreference mScreentimeoutMode;
     MultiSelectListPreference mRingMode;
     ListPreference mFlashMode;
+    ListPreference mMobileDataNetworkMode;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +81,8 @@ public class PowerWidgetActivity extends PreferenceActivity implements OnPrefere
         mRingMode.setOnPreferenceChangeListener(this);
         mFlashMode = (ListPreference) prefSet.findPreference(EXP_FLASH_MODE);
         mFlashMode.setOnPreferenceChangeListener(this);
+        mMobileDataNetworkMode = (ListPreference) prefSet.findPreference(EXP_MOBILEDATANETWORK_MODE);
+        mMobileDataNetworkMode.setOnPreferenceChangeListener(this);
 
         PreferenceCategory prefButtons = (PreferenceCategory) prefSet.findPreference(BUTTONS_CATEGORY);
 
@@ -195,6 +199,9 @@ public class PowerWidgetActivity extends PreferenceActivity implements OnPrefere
         } else if(preference == mFlashMode) {
             int value = Integer.valueOf((String)newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_FLASH_MODE, value);
+        } else if(preference == mMobileDataNetworkMode) {
+            int value = Integer.valueOf((String)newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_MOBILEDATANETWORK_MODE, value);
         }
         return true;
     }

@@ -10,6 +10,7 @@
     <string name="display_settings_title_head">Wyświetlacz</string>
     <string name="display_settings_title_subhead">Ustawienia wyświetlacza</string>
     <string name="display_settings_summary_head">Animacje, obrót ekranu, podświetlenie</string>
+    <string name="display_settings_summary_head_nobacklight">Animacje, obrót ekranu, podświetlenie</string>
     <string name="input_settings_title_head">Wprowadzanie</string>
     <string name="input_settings_title_subhead">Ustawienia wprowadzania</string>
     <string name="input_settings_summary_head">Przyciski, reakcja na dotyk</string>
@@ -99,6 +100,14 @@
     <string name="ui_status_bar_battery_summary">Wygląd ikony stanu akumulatora</string>
     <string name="ui_status_bar_compact_carrier_title">Pomniejszona etykieta operatora</string>
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
+    <string name="ui_status_bar_carrier_label_title">Typ etykiety operatora</string>
+    <string name="ui_status_bar_carrier_label_summary">Zmień etykietę operatora</string>
+    <string name="ui_status_bar_carrier_label_use_default">Domyślnie</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Pokaż SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Pokaż PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Własny tekst</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Niestandardowe etykiety operatora</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Tekst, który będzie zamiast etykiety operatora</string>
     <string name="ui_status_bar_toggle_brightness">Ustawienia jasności</string>
     <string name="ui_status_bar_toggle_brightness_summary">Pozwala na dostosowywanie jasności poprzez przesuwanie palca po pasku stanu.</string>
     <string name="ui_status_bar_toggle_info">Automatyczna jasność jest włączona</string>
@@ -248,10 +257,13 @@
     <string name="pref_lockscreen_timeout_summary">Skonfiguruj opóźnienia blokady ekranu</string>
 
     <!-- Lockscreen Settings -->
-    <string name="pref_lockscreen_always_battery_title">Stan baterii</string>
+    <string name="pref_lockscreen_always_battery_title">Zawsze pokazuj stan baterii</string>
     <string name="pref_lockscreen_always_battery_summary">Wyświetlaj stan baterii na ekranie blokady przez cały czas</string>
     <string name="pref_lockscreen_widgets_layout_title">Położenie widżetów</string>
     <string name="pref_lockscreen_widgets_layout_summary">Przełącza położenie zegara, daty, sieci, statusu</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Domyślny</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Ukryty</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Wycentrowany</string>
     <string name="pref_lockscreen_music_controls_title">Sterowanie muzyką</string>
     <string name="pref_lockscreen_music_controls_summary">Wyświetlaj sterowanie muzyką na ekranie blokady</string>
     <string name="pref_lockscreen_now_playing_title">Tytuł utworu</string>
@@ -279,15 +291,38 @@
     <string name="pref_lockscreen_custom_app_toggle_summary">Pokazuje dodatkowy suwak w przypadku stylu suwaka lub ikonę w przypadku stylu obrotowego</string>
     <string name="pref_lockscreen_custom_app_activity_title">Własna aplikacja</string>
     <string name="pref_lockscreen_custom_icon_style_title">Ikona wiadomości dla własnej aplikacji</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Anuluj</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Dodaj</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Usuń</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Używa ikony wiadomości zamiast ikony CyanogenMOD</string>
+    <string name="pref_lockscreen_custom_background_title">Wybierz tło</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Wybierz tło</string>
+    <string name="pref_lockscreen_custom_background_summary">Wybierz obraz lub kolor jako tło ekranu blokady</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Aktualnie : Kolor</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Aktualnie : Obraz</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Aktualnie : Domyślne</string>
+    <string name="pref_lockscreen_background_result_successful">Tło zostało zmienione</string>
+    <string name="pref_lockscreen_background_result_not_successful">Tło nie zostało zmienione</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Przeciągnij w dół, by odblokować</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Przeciągnięcie w dół odblokowuje ekran. Przeciągnięcie w prawo uruchamia wybraną aplikację</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Ukryj strzałki</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Ukrywa strzałki w stylu obrotowym</string>
     <string name="pref_lockscreen_style_title">Styl ekranu blokady</string>
     <string name="pref_lockscreen_style_summary">Wybierz styl ekranu blokady</string>
+    <string name="lockscreen_style_entry_tabs">Suwak</string>
+    <string name="lockscreen_style_entry_rotary">Obrotowy</string>
+    <string name="lockscreen_style_entry_lense">Soczewka</string>
+    <string name="lockscreen_style_entry_ring">Pierścień</string>
+    <string name="pref_rotary_style_title">Styl obrotowego koła</string>
+    <string name="pref_rotary_style_summary">Wybierz styl obrotowego koła</string>
+    <string name="rotary_style_entry_normal">Normalny</string>
+    <string name="rotary_style_entry_revamped">Odnowiony</string>
     <string name="pref_in_call_style_title">Styl połączenia przychodzącego</string>
     <string name="pref_in_call_style_summary">Wybierz styl ekranu połączenia przychodzącego</string>
+    <string name="incall_style_entry_tabs">Suwak</string>
+    <string name="incall_style_entry_rotary">Obrotowy</string>
+    <string name="incall_style_entry_ring">Pierścień</string>
+    <string name="lockscreen_music_title">Sterowanie muzyką</string>
     <string name="pref_volbtn_music_controls_title">Sterowanie muzyką przyciskami głośności</string>
     <string name="pref_volbtn_music_controls_summary">Zmieniaj utwory przytrzymując przycisk głośności, kiedy ekran jest wyłączony</string>
     <string name="pref_cambtn_music_controls_title">Sterowanie muzyką przyciskiem aparatu</string>
@@ -307,8 +342,10 @@
     <string name="pref_input_custom_search_app_toggle_summary">Uruchamia wskazaną aplikację po wciśnięciu przycisku szukaj</string>
     <string name="pref_input_custom_search_app_activity_title">Własna aplikacja</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Przytrzymanie przycisku szukaj</string>
-    <string name="pref_input_custom_long_search_app_toggle_summary">Uruchamia wskazaną aplikację po przytrzymaniu przycisku szukaj</string>
-    
+    <string name="pref_input_custom_long_search_app_toggle_summary">Uruchamia wskazaną aplikację po przytrzymaniu przycisku szukaj</string>  
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Włącz/Wyłącz BackTrack Minipad</string>
+	
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Ustawienia przytrzymania przycisku "menu"</string>
     <string name="long_press_menu_summary">Własne ustawienia dla przytrzymania przycisku "menu"</string>
@@ -397,6 +434,9 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maksymalna ilość pamięci przeznaczona na maszynę wirtualną (wymagane ponowne uruchomienie)</string>
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">Wyłącz animację przy uruchamianiu</string>
+    <string name="pref_disable_bootanimation_summary">Nie pokazuj animacji, aby przyspieszyć uruchamianie.</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Chroń launcher w pamięci</string>
@@ -445,6 +485,7 @@
 
     <string name="widget_name">Widżet RenderFX</string>
     <string name="renderfx_temp">RenderFX</string>
+    <string name="pref_widget_options_category_title">Opcje ogólne</string>
     <string name="prefs_render_effect">Render Effect</string>
     <string name="notify_render_effect">Render effect aktywny</string>
     <string name="add_widget">Dodaj widżet</string>
@@ -572,7 +613,9 @@
     <string name="sound_volume_control_silent_summary">Dodaje profil całkowitego wyciszenia do sterowania głośnością</string>
     <string name="sound_vibrate_in_call_title">Wibruj podczas połączeń</string>
     <string name="sound_vibrate_in_call_summary_off">Urządzenie nie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
-    <string name="sound_vibrate_in_call_summary_on">>Urządzenie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
+    <string name="sound_vibrate_in_call_summary_on">Urządzenie będzie wibrować, kiedy nadejdą powiadomienia podczas rozmowy</string>
+    <string name="sound_lock_volume_keys_title">Blokada klawiszy głośności</string>
+    <string name="sound_lock_volume_keys_summary">Zapobiega przypadkowemu wyłączeniu trybu cichego, przez naciśnięcie klawiszy głośności</string>
     <string name="sound_camera_shutter_disable_title">Wycisz dźwięk migawki</string>
     <string name="sound_camera_shutter_disable_summary_on">Dźwięk migawki aparatu nie będzie odtwarzany</string>
     <string name="sound_camera_shutter_disable_summary_off">Dźwięk migawki aparatu będzie odtwarzany</string>
@@ -644,6 +687,9 @@
     <string name="gestures_toggle_sound">Zmień profil dźwięku</string>
     <string name="gestures_shortcut_or_activity">Skrót lub czynność</string>
     <string name="gestures_flashlight">Latarka</string>
+    <string name="gestures_next">Następna piosenka</string>
+    <string name="gestures_previous">Poprzednia piosenka</string>
+    <string name="gestures_playpause">Odtwórz/wstrzymaj</string>
     <string name="pref_lockscreen_disable_unlock_tab">Wyłącz suwak</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Uwaga: Musisz uaktywnić inny sposób odblokowania urządzenia by ta opcja była dostępna</string>
     <string name="gestures_action_label">Akcja:</string>

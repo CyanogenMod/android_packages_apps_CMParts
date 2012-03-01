@@ -255,6 +255,9 @@
     <string name="pref_lockscreen_always_battery_summary">Всегда показывать состояние батареи на экране блокировки</string>
     <string name="pref_lockscreen_widgets_layout_title">Положение виджета</string>
     <string name="pref_lockscreen_widgets_layout_summary">Расположение часов, даты, оператора</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">По умолчанию</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Скрытый</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">По центру</string>
     <string name="pref_lockscreen_music_controls_title">Управление плеером</string>
     <string name="pref_lockscreen_music_controls_summary">Показывать на экране блокировки элементы управления плеером</string>
     <string name="pref_lockscreen_now_playing_title">Название песни</string>
@@ -291,6 +294,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Добавить</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Удалить</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">Не установлено</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Разблокировка средним кольцом</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Переключатель разблокировки и кольца запуска приложений</string>
+    <string name="pref_lockscreen_ring_minimal_title">Минимальный стиль колец</string>
+    <string name="pref_lockscreen_ring_minimal_summary">Одно кольцо в середине для разблокировки</string>
     <string name="pref_lockscreen_custom_background_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Выбрать фон</string>
     <string name="pref_lockscreen_custom_background_summary">Выберите изображение или цвет в качестве фона экрана блокировки</string>
@@ -307,8 +314,23 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Скрывает стрелки-подсказки (для стиля Вращение)</string>
     <string name="pref_lockscreen_style_title">Стиль экрана блокировки</string>
     <string name="pref_lockscreen_style_summary">Выбор стиля экрана блокировки</string>
+    <string name="lockscreen_style_entry_tabs">Ползунок</string>
+    <string name="lockscreen_style_entry_rotary">Вращение</string>
+    <string name="lockscreen_style_entry_lense">Линза</string>
+    <string name="lockscreen_style_entry_ring">Кольцa</string>
+    <string name="pref_rotary_style_title">Стиль вращения</string>
+    <string name="pref_rotary_style_summary">Выбор стиля вращающегося круга</string>
+    <string name="rotary_style_entry_normal">Обычный стиль</string>
+    <string name="rotary_style_entry_revamped">Новый стиль</string>
+    <string name="pref_ringlock_style_title">Стиль колец</string>
+    <string name="pref_ringlock_style_summary">Выбор стиля колец разблокировки</string>
+    <string name="ringlock_style_entry_bubbles">Пузыри</string>
+    <string name="ringlock_style_entry_revamped">Новый стиль</string>
     <string name="pref_in_call_style_title">Стиль входящего звонка</string>
     <string name="pref_in_call_style_summary">Выбор стиля виджета принять/отклонить входящего звонка</string>
+    <string name="incall_style_entry_tabs">Ползунок</string>
+    <string name="incall_style_entry_rotary">Вращение</string>
+    <string name="incall_style_entry_ring">Кольцa</string>
     <string name="lockscreen_music_title">Управление музыкой</string>
     <string name="pref_volbtn_music_controls_title">Управление музыкой кнопками громкости</string>
     <string name="pref_volbtn_music_controls_summary">Листать треки долгим нажатие на кнопку громкости при выключенном экране</string>
@@ -428,6 +450,14 @@
     <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
     <string name="pref_use_16bpp_alpha_summary">Использование 16-битной прозрачности может улучшить скорость прокрутки, но возможно появление визуальных артефактов (требуется перезагрузка)</string>
 
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Кэш прокрутки</string>
+    <string name="pref_scrollingcache_summary">Кэш прокрутки может улучшить скорость прокрутки за счет памяти</string>
+    <string name="pref_scrollingcache_force_enable">Принудительно вкл.</string>
+    <string name="pref_scrollingcache_default_enable">По умолчанию вкл.</string>
+    <string name="pref_scrollingcache_default_disable">По умолчанию выкл.</string>
+    <string name="pref_scrollingcache_force_disable">Принудительно выкл.</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Разрешить сброс активов</string>
     <string name="pref_purgeable_assets_summary">Система может освободить больше памяти, когда это необходимо, если память активов битмапов разрешено освобождать (требуется перезагрузка)</string>
@@ -435,6 +465,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">Размер VM heap</string>
     <string name="pref_heapsize_summary">Максимум допустимой памяти для VM heap (требуется перезагрузка)</string>
+
+    <!-- Performance : Disable bootanimation -->
+     <string name="pref_disable_bootanimation_title">Выкл. анимацию загрузки</string>
+     <string name="pref_disable_bootanimation_summary">Не показывать анимацию загрузки для более быстрого включения устройства</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Блокировать рабочий стол в памяти</string>
@@ -686,6 +720,9 @@
     <string name="gestures_toggle_sound">Перекл. звук</string>
     <string name="gestures_shortcut_or_activity">Ярлык или действие</string>
     <string name="gestures_flashlight">Фонарик</string>
+    <string name="gestures_next">Следующий трек</string>
+    <string name="gestures_previous">Предыдущий трек</string>
+    <string name="gestures_playpause">Воспроизведение/Пауза</string>
     <string name="pref_lockscreen_disable_unlock_tab">Отключить слайдер</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Примечание: Вы должны включить разблокировку посредством трекбола, кнопки Меню или жеста для того, чтобы эта опция была доступна</string>
     <string name="gestures_action_label">Действие:</string>

@@ -274,8 +274,13 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Skryje šípky nápovedy otáčania pri rotačnom štýle</string>
     <string name="pref_lockscreen_style_title">Štýl obrazovky uzamknutia</string>
     <string name="pref_lockscreen_style_summary">Vyberte štýl obrazovky uzamknutia</string>
+    <string name="lockscreen_style_entry_tabs">Posúvací Tab</string>
+    <string name="lockscreen_style_entry_rotary">Otočný</string>
+    <string name="lockscreen_style_entry_lense">Lúč</string>
     <string name="pref_in_call_style_title">Štýl prichádzajúceho hovoru</string>
     <string name="pref_in_call_style_summary">Vyberte štýl nástroja prijatie/odmietnutie prichádzajúceho hovoru.</string>
+    <string name="incall_style_entry_tabs">Posúvací Tab</string>
+    <string name="incall_style_entry_rotary">Otočný</string>
     <string name="pref_volbtn_music_controls_title">Ovládanie hudby pomocou tlač. hlasitosti</string>
     <string name="pref_volbtn_music_controls_summary">Posúvanie v hudobnej stope dlhým podržaním tlač. hlasitosti pri vypnutej obrazovke</string>
     <string name="pref_cambtn_music_controls_title">Ovládanie hudby pomocou tlač. fotoaparátu</string>

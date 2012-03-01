@@ -24,5 +24,9 @@
         <ListPreference android:key="pref_flash_mode" android:dialogTitle="@string/pref_flash_mode_title"
             android:title="@string/pref_flash_mode_title" android:summary="@string/pref_flash_mode_summary"
             android:entries="@array/entries_flash_widget" android:entryValues="@array/values_flash_widget" />
+
+        <ListPreference android:key="pref_mobiledatanetwork_mode" android:dialogTitle="@string/pref_mobiledatanetwork_mode_title"
+            android:title="@string/pref_mobiledatanetwork_mode_title" android:summary="@string/pref_mobiledatanetwork_mode_summary"
+            android:entries="@array/entries_mobiledatanetwork_widget" android:entryValues="@array/values_mobiledatanetwork_widget" />
     </PreferenceCategory>
 </PreferenceScreen>

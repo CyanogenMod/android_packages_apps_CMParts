@@ -41,6 +41,14 @@
         android:order="3">
     </PreferenceCategory>
 
+    <ListPreference android:key="pref_rotary_style"
+        android:dialogTitle="@string/pref_rotary_style_title"
+        android:title="@string/pref_rotary_style_title"
+        android:summary="@string/pref_rotary_style_summary"
+        android:entries="@array/pref_rotary_style_entries"
+        android:entryValues="@array/pref_rotary_style_values"
+        android:order="5" />
+
     <CheckBoxPreference android:key="pref_lockscreen_custom_app_toggle"
         android:title="@string/pref_lockscreen_custom_app_toggle_title"
         android:summary="@string/pref_lockscreen_custom_app_toggle_ring_summary"
@@ -55,6 +63,14 @@
         android:title="@string/pref_lockscreen_rotary_hide_arrows_title"
         android:summary="@string/pref_lockscreen_rotary_hide_arrows_summary"
         android:order="30" />
+
+    <ListPreference android:key="pref_ringlock_style"
+        android:dialogTitle="@string/pref_ringlock_style_title"
+        android:title="@string/pref_ringlock_style_title"
+        android:summary="@string/pref_ringlock_style_summary"
+        android:entries="@array/pref_ringlock_style_entries"
+        android:entryValues="@array/pref_ringlock_style_values"
+        android:order="5" />
 
     <!-- currently a toggle/checkbox but may be expanded if more icons are added -->
     <CheckBoxPreference android:key="pref_lockscreen_custom_icon_style"

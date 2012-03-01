@@ -103,6 +103,9 @@
     <string name="pref_lockscreen_quick_unlock_control_summary">Pin이나 비밀번호를 입력할 때 확인을 누르지 않아도 됩니다. 단 글자 지우기는 잘못된 시도로 집계됩니다.</string>
     <string name="pref_lockscreen_style_title">잠금 화면 모양</string>
     <string name="pref_lockscreen_style_summary">잠금 화면의 모양을 선택해 주세요.</string>
+    <string name="lockscreen_style_entry_tabs">옆으로 밀기</string>
+    <string name="lockscreen_style_entry_rotary">회전</string>
+    <string name="lockscreen_style_entry_ring">반지</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">메뉴 버튼 길게 누르기 설정</string>

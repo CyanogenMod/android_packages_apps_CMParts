@@ -23,6 +23,7 @@
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
+        <item>Paramètre de l\'application</item>
         <item>2 (Rapide)</item>
         <item>3</item>
         <item>4 (Moyen)</item>
@@ -69,6 +70,12 @@
         <item>Volume de la musique (par défaut)</item>
     </string-array>
 
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Seulement</item>
+        <item>2G/3G Seulement/3G+2G</item>
+    </string-array>
+
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
         <item>1 (le plus vague)</item>
         <item>2</item>
@@ -84,24 +91,10 @@
         <item>12 (le plus strict)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Curseurs</item>
-        <item>Rotatif</item>
-        <item>Rotatif revamped</item>
-        <item>Lense</item>
-        <item>Anneau</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_background_entries">
         <item>Couleur ou filtre</item>
         <item>Image perso.</item>
         <item>Par défaut</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>Par défaut</item>
-        <item>Invisible</item>
-        <item>Centré</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -123,7 +116,7 @@
     <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
         <item>Ne pas afficher</item>
         <item>Première ligne</item>
-        <item>Afficher tout</item>
+        <item>Tout afficher</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">

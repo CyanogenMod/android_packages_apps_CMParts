@@ -99,6 +99,14 @@
     <string name="ui_status_bar_battery_summary">バッテリー状態の表示スタイル</string>
     <string name="ui_status_bar_compact_carrier_title">コンパクトなキャリアラベル</string>
     <string name="ui_status_bar_compact_carrier_summary">小さなキャリアラベルを用いた代替のドロップダウンレイアウトを使用する</string>
+    <string name="ui_status_bar_carrier_label_title">キャリアラベルタイプ</string>
+    <string name="ui_status_bar_carrier_label_summary">表示するキャリアラベルを変更</string>
+    <string name="ui_status_bar_carrier_label_use_default">デフォルト</string>
+    <string name="ui_status_bar_carrier_label_use_spn">SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">カスタムテキスト</string>
+    <string name="ui_status_bar_carrier_label_custom_title">カスタムキャリアラベル</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">通信事業者のキャリアラベル以外のテキストを指定</string>
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
     <string name="ui_status_bar_toggle_info">自動明るさ調整は有効</string>
@@ -186,8 +194,12 @@
     <string name="trackball_category_screen">カテゴリを管理</string>
     <string name="trackball_category_add_title">カテゴリを追加</string>
     <string name="trackball_category_add_summary">リストにカテゴリを追加する</string>
+    <string name="trackball_category_add_error_title">エラー</string>
+    <string name="trackball_category_add_error_summary">カテゴリ名に\'=\'を含んではいけません</string>
     <string name="trackball_category_remove_title">カテゴリを削除</string>
     <string name="trackball_category_remove_summary">リストからカテゴリを削除する</string>
+    <string name="trackball_category_edit_title">カテゴリの設定を編集</string>
+    <string name="trackball_category_edit_summary">このカテゴリのデフォルト設定を編集する</string>
     <string name="trackball_reset_all">すべてのカテゴリとカラーをリセット</string>
     <string name="trackball_color_notice_title">ノート</string>
     <string name="trackball_color_notice_summary">すべての色がすべてのデバイスで使用できるわけではありません。</string>
@@ -227,6 +239,13 @@
     <string name="trackball_color_entry_random">ランダム</string>
     <string name="trackball_color_entry_amber">アンバー</string>
 
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">カテゴリ設定を使用</string>
+    <string name="trackball_force_mode_application">アプリの設定を使用</string>
+    <string name="trackball_force_mode_off">強制的にLEDをOFF</string>
+    <string name="trackball_force_mode_events">イベント時にLEDをON</string>
+    <string name="trackball_force_mode_on">強制的にLEDをON</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">注意: バッテリーが消費します</string>
     <string name="notification_battery_warning">このオプションを有効にすることにより、1時間に約3%ほどのバッテリー消費が増加します。バッテリー消費が速くなったと感じたら、恐らくこのオプションが原因です。バッテリー消費が気になるのであれば、このオプションは有効にするべきではありません。</string>
@@ -250,6 +269,10 @@
     <string name="pref_lockscreen_always_battery_summary">常にバッテリーの状態をロックスクリーンに表示する</string>
     <string name="pref_lockscreen_widgets_layout_title">ウィジェットレイアウト</string>
     <string name="pref_lockscreen_widgets_layout_summary">時計、日付、キャリア、ステータスのレイアウト</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">デフォルト</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">隠す</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">中心</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">右</string>
     <string name="pref_lockscreen_music_controls_title">音楽コントロール</string>
     <string name="pref_lockscreen_music_controls_summary">ロック画面に音楽コントロールを表示する</string>
     <string name="pref_lockscreen_now_playing_title">曲名を表示</string>
@@ -272,8 +295,11 @@
     <string name="pref_menu_unlock_summary">メニューボタンを押して端末をロックから解除する</string>
     <string name="pref_lockscreen_quick_unlock_control_title">クイックアンロック</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">PINやパワードを入力後、OKを押す必要を省きます。不正入力時のカウントは無効になります。</string>
+    <string name="lockscreen_style_options_title">スタイル独自のオプション</string>
     <string name="pref_lockscreen_custom_app_toggle_title">カスタムアプリの起動</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">カスタムアプリを起動するための2つ目のスライダやロータリーの窪みを表示する</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">カスタムアプリ起動用の2つ目のスライダセットを表示</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">カスタムアプリ起動用のくぼみを表示</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">カスタムアプリ起動用の3つ目のリングを表示</string>
     <string name="pref_lockscreen_custom_app_activity_title">カスタムアプリ</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">設定するショートカットを選択</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">解除するショートカットを選択</string>
@@ -281,6 +307,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">追加</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">削除</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">未設定</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">中央のリングでアンロック</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">アプリ起動リングとアンロックリングを入れ替える</string>
+    <string name="pref_lockscreen_ring_minimal_title">ミニマルリングスタイル</string>
+    <string name="pref_lockscreen_ring_minimal_summary">中央にアンロックリングが1つあるだけのスタイル</string>
     <string name="pref_lockscreen_custom_background_title">背景を選択</string>
     <string name="pref_lockscreen_custom_background_dialog_title">背景を選択</string>
     <string name="pref_lockscreen_custom_background_summary">ロックスクリーンの背景画像や色を選択する</string>
@@ -296,9 +326,26 @@
     <string name="pref_lockscreen_rotary_hide_arrows_title">矢印を表示しない</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">ロータリースタイルで回転方向のヒントの矢印を表示しない</string>
     <string name="pref_lockscreen_style_title">ロックスクリーンスタイル</string>
+    <string name="pref_lockscreen_style_summary">ロックスクリーンのスタイルを選択する</string>
+    <string name="lockscreen_style_entry_tabs">スライディングタブ</string>
+    <string name="lockscreen_style_entry_rotary">ロータリー</string>
+    <string name="lockscreen_style_entry_lense">レンズ</string>
+    <string name="lockscreen_style_entry_ring">リング</string>
+    <string name="pref_rotary_style_title">ロータリースタイル</string>
+    <string name="pref_rotary_style_summary">ロータリーホイールのスタイルを選択する</string>
+    <string name="rotary_style_entry_normal">ノーマルスタイル</string>
+    <string name="rotary_style_entry_revamped">リヴァンプスタイル</string>
+    <string name="pref_ringlock_style_title">リング-ロックスタイル</string>
+    <string name="pref_ringlock_style_summary">リング-ロックのスタイルを選択する</string>
+    <string name="ringlock_style_entry_bubbles">バブルスタイル</string>
+    <string name="ringlock_style_entry_revamped">リヴァンプスタイル</string>
+    <string name="ringlock_style_entry_holo">ホロスタイル</string>
+    <string name="ringlock_style_entry_blade">ブレードスタイル</string>
     <string name="pref_in_call_style_title">呼び出しスタイル</string>
     <string name="pref_in_call_style_summary">電話の呼び出し時に表示される応答/拒否のウィジェットスタイルを選択する</string>
-    <string name="pref_lockscreen_style_summary">ロックスクリーンのスタイルを選択する</string>
+    <string name="incall_style_entry_tabs">スライディングタブ</string>
+    <string name="incall_style_entry_rotary">ロータリー</string>
+    <string name="incall_style_entry_ring">リング</string>
     <string name="lockscreen_music_title">ミュージックコントロール</string>
     <string name="pref_volbtn_music_controls_title">音量ボタンによるミュージックコントロール</string>
     <string name="pref_volbtn_music_controls_summary">スクリーンオフの時、音量ボタンを長押しすることで曲のシークを行う</string>
@@ -315,6 +362,10 @@
     <string name="pref_lockscreen_calendar_reminders_only_summary">リマインダーイベントのみ検索する</string>
     <string name="pref_lockscreen_calendar_lookahead_title">カレンダーイベント検索期間</string>
     <string name="pref_lockscreen_calendar_lookahead_summary">どのくらい先のイベントまで検索するか</string>
+    <string name="pref_lockscreen_calendar_show_location_title">イベントの場所を表示</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">タイトルの下にイベントの場所を表示する</string>
+    <string name="pref_lockscreen_calendar_show_description_title">イベントの詳細を表示</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">タイトルの下にイベントの詳細を表示する</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">入力設定</string>
@@ -322,7 +373,6 @@
     <string name="haptic_summary">タッチフィードバックの強さなどを調整する</string>
     <string name="long_press_home_title">ホーム長押し設定</string>
     <string name="long_press_home_summary">最近使ったアプリ履歴の数、その他</string>
-
     <string name="input_search_key_title">検索キーの挙動</string>
     <string name="input_search_key_summary">検索キーを押したときのアクションをカスタマイズする</string>
     <string name="pref_input_custom_search_app_toggle_title">検索キーのアプリ</string>
@@ -330,7 +380,6 @@
     <string name="pref_input_custom_search_app_activity_title">カスタムアプリケーション</string>
     <string name="pref_input_custom_long_search_app_toggle_title">検索キー長押しのアプリ</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">検索キーを長押ししたときにカスタムアプリを起動する</string>
-
     <string name="pref_backtrack_title">バックトラック ミニパッド</string>
     <string name="pref_backtrack_summary">バックトラックミニパッドの有効を切り替える</string>
 
@@ -549,6 +598,8 @@
     <string name="cm_sound_mode_soundVibrate">音と振動</string>
     <string name="pref_flash_mode_title">フラッシュ</string>
     <string name="pref_flash_mode_summary">HighかDeath Rayを選択</string>
+    <string name="pref_mobiledatanetwork_mode_title">モバイルデータ 2G/3Gモード自動切り替え</string>
+    <string name="pref_mobiledatanetwork_mode_summary">モバイルデータボタンで2G/3Gモードに切り替える</string>
 
     <!-- Backlight -->
     <string name="backlight_title">自動バックライト</string>
@@ -617,6 +668,7 @@
     <string name="sound_notifications_limitvol_dialog">通知音量</string>
     <string name="sound_rings_limitvol_dialog">着信音量</string>
     <string name="sound_alarms_limitvol_dialog">アラーム音量</string>
+
     <!-- Quiet hours -->
     <string name="sound_category_quiet_hours_title">サイレントタイム</string>
     <string name="quiet_hours_note_title">ノート</string>
@@ -637,6 +689,9 @@
     <string name="quiet_hours_dim">LEDを暗くする</string>
     <string name="quiet_hours_dim_on">可能であればLEDを暗くします</string>
     <string name="quiet_hours_dim_off">LEDは最大照度で点灯します</string>
+    <string name="quiet_hours_haptic">振動フィードバックを無効にする</string>
+    <string name="quiet_hours_haptic_on">振動フィードバックは無効</string>
+    <string name="quiet_hours_haptic_off">振動フィードバックは有効</string>
 
     <string name="cmstats_title">匿名利用状況</string>
     <string name="cmstats_summary">匿名の利用状況レポートを有効にすることによってCMの改善に協力できます</string>
@@ -667,6 +722,9 @@
     <string name="gestures_toggle_sound">サウンドトグル</string>
     <string name="gestures_shortcut_or_activity">ショートカットやアクティビティ</string>
     <string name="gestures_flashlight">フラッシュライト</string>
+    <string name="gestures_next">次の曲</string>
+    <string name="gestures_previous">前の曲</string>
+    <string name="gestures_playpause">音楽の再生/停止</string>
     <string name="pref_lockscreen_disable_unlock_tab">アンロックスライダーを無効にする</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">ノート: このオプションを有効にする前に、トラックボールやメニューキー、ジェスチャーでのアンロックを設定する必要があります。</string>
     <string name="gestures_action_label">アクション:</string>

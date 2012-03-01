@@ -135,31 +135,10 @@
         <item>12 (striktast)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Glidskena</item>
-        <item>Roterande</item>
-        <item>Rotary revamped</item>
-        <item>Lense</item>
-        <item>Ring</item>
-    </string-array>
-
-    <string-array name="pref_in_call_style_entries">
-        <item>Glidskena</item>
-        <item>Roterande</item>
-        <item>Rotary revamped</item>
-        <item>Ring</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_background_entries">
         <item>Färgfyll</item>
         <item>Anpassad bild</item>
         <item>Standard bakgrundsbild</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>Standard</item>
-        <item>Gömd</item>
-        <item>Centrerad</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">

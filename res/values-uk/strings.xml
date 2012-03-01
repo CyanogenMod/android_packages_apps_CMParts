@@ -219,8 +219,15 @@
   <string name="pref_lockscreen_rotary_hide_arrows_summary">Приховання вказівних стрілок за поворотного стилю</string>
   <string name="pref_lockscreen_style_title">Стиль вікна блокування</string>
   <string name="pref_lockscreen_style_summary">Установлення стилю вікна блокування</string>
+  <string name="lockscreen_style_entry_tabs">Повзунки</string>
+  <string name="lockscreen_style_entry_rotary">Коліщатко</string>
+  <string name="lockscreen_style_entry_lense">Лінза</string>
+  <string name="lockscreen_style_entry_ring">Кільця</string>
   <string name="pref_in_call_style_title">Стиль вікна вхідного виклику</string>
   <string name="pref_in_call_style_summary">Установлення стилю віджета прийняття (відхилення) вхідного виклику</string>
+  <string name="incall_style_entry_tabs">Повзунки</string>
+  <string name="incall_style_entry_rotary">Коліщатко</string>
+  <string name="incall_style_entry_ring">Кільця</string>
   <string name="pref_volbtn_music_controls_title">Упр. плеєром кн. гучності</string>
   <string name="pref_volbtn_music_controls_summary">Перебирання музичних записів довгим натисканням кнопок гучності за вимкненого екрана</string>
   <string name="pref_cambtn_music_controls_title">Упр. відтв. кн. камери</string>

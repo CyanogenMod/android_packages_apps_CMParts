@@ -260,6 +260,9 @@
     <string name="pref_lockscreen_always_battery_summary">Visualizza sempre lo stato della batteria nel lockscreen</string>
     <string name="pref_lockscreen_widgets_layout_title">Layout del widget</string>
     <string name="pref_lockscreen_widgets_layout_summary">Modifica il layout di orologio, data, operatore e stato</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Default</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Nascosto</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Al centro</string>
     <string name="pref_lockscreen_music_controls_title">Comandi musicali</string>
     <string name="pref_lockscreen_music_controls_summary">Visualizza i comandi del player musicale nel lockscreen</string>
     <string name="pref_lockscreen_now_playing_title">Nome brano</string>
@@ -294,6 +297,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Aggiungi</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Rimuovi</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">Non impostato</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Sblocca con anello centrale</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Scambia di posto l\'anello per lo sblocco e il lanciatore</string>
+    <string name="pref_lockscreen_ring_minimal_title">Singolo anello</string>
+    <string name="pref_lockscreen_ring_minimal_summary">>Visualizza un solo anello al centro per lo sblocco</string>
     <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_summary">Seleziona un\'immagine o un colore come sfondo del lockscreen</string>
@@ -310,8 +317,15 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Nascondi le frecce direzionali nel lockscreen rotante</string>
     <string name="pref_lockscreen_style_title">Stile lockscreen</string>
     <string name="pref_lockscreen_style_summary">Scegli lo stile del lockscreen</string>
+    <string name="lockscreen_style_entry_tabs">Tab scorrevoli</string>
+    <string name="lockscreen_style_entry_rotary">Rotante</string>
+    <string name="lockscreen_style_entry_lense">Lense</string>
+    <string name="lockscreen_style_entry_ring">Anelli</string>
     <string name="pref_in_call_style_title">Stile chiamata in arrivo</string>
     <string name="pref_in_call_style_summary">Seleziona lo stile del widget accetta/rifiuta per le chiamate in arrivo</string>
+    <string name="incall_style_entry_tabs">Tab scorrevoli</string>
+    <string name="incall_style_entry_rotary">Rotante</string>
+    <string name="incall_style_entry_ring">Anelli</string>
     <string name="lockscreen_music_title">Controlli musicali</string>
     <string name="pref_volbtn_music_controls_title">Seleziona traccia con tasto volume</string>
     <string name="pref_volbtn_music_controls_summary">Seleziona la traccia musicale tenendo premuto il tasto volume quando lo schermo è spento</string>
@@ -687,6 +701,9 @@
     <string name="gestures_toggle_sound">Interruttore audio</string>
     <string name="gestures_shortcut_or_activity">Collegamento o attività</string>
     <string name="gestures_flashlight">Torcia</string>
+    <string name="gestures_next">Brano successivo</string>
+    <string name="gestures_previous">Brano precedente</string>
+    <string name="gestures_playpause">Play/Pausa</string>
     <string name="pref_lockscreen_disable_unlock_tab">Disattiva slider di sblocco</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Perchè quest\'opzione sia disponibile devi aver prima abilitato lo sblocco tramite trackball, tasto menu o gesture</string>
     <string name="gestures_action_label">Azione:</string>

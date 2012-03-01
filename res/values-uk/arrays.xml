@@ -151,23 +151,10 @@
         <item>11</item>
         <item>12 (висока)</item>
     </string-array>
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Повзунки</item>
-        <item>Коліщатко</item>
-        <item>Коліщатко (оновлене)</item>
-        <item>Лінза</item>
-        <item>Кільця</item>
-    </string-array>
     <string-array name="pref_lockscreen_background_entries">
         <item>Колір</item>
         <item>Зображення</item>
         <item>Типові шпалери</item>
-    </string-array>
-    <string-array name="pref_in_call_style_entries">
-        <item>Повзунки</item>
-        <item>Коліщатко</item>
-        <item>Коліщатко (оновлене)</item>
-        <item>Кільця</item>
     </string-array>
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Вимкнене</item>

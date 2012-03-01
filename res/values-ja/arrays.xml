@@ -29,6 +29,12 @@
         <item>なし (デフォルト)</item>
     </string-array>
 
+    <string-array name="entries_status_bar_battery">
+        <item>アイコン (デフォルト)</item>
+        <item>パーセンテージ</item>
+        <item>隠す</item>
+    </string-array>
+
     <string-array name="haptic_feedback_entries">
         <item>グローバル設定</item>
         <item>オン</item>
@@ -39,6 +45,21 @@
         <item>単色</item>
         <item>カスタム画像</item>
         <item>デフォルトの壁紙</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3時間</item>
+        <item>6時間</item>
+        <item>12時間</item>
+        <item>1日間</item>
+        <item>3日間</item>
+        <item>1週間</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
+        <item>表示しない</item>
+        <item>最初の1行を表示</item>
+        <item>すべて表示</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
@@ -147,21 +168,6 @@
         <item>12 (最も狭い)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>スライディングタブ</item>
-        <item>ロータリー</item>
-        <item>ロータリー改</item>
-        <item>レンズ</item>
-        <item>リング</item>
-    </string-array>
-
-    <string-array name="pref_in_call_style_entries">
-        <item>スライディングタブ</item>
-        <item>ロータリー</item>
-        <item>ロータリー改</item>
-        <item>リング</item>
-    </string-array>
-
     <string-array name="pref_overscroll_effect_entries">
         <item>なし</item>
         <item>エッジを光らせる</item>
@@ -198,6 +204,11 @@
     <string-array name="entries_flash_widget">
         <item>ノーマル</item>
         <item>ハイ / デスレイ</item>
+    </string-array>
+
+    <string-array name="entries_mobiledatanetwork_widget">
+        <item>オフ</item>
+        <item>オン</item>
     </string-array>
 
     <string-array name="entries_vol_actions">

@@ -263,22 +263,11 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_gesture_action_entries -->
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>滑桿</item>
-        <item>撥輪</item>
-        <item>撥輪（改）</item>
-        <item>透鏡</item>
-        <item>飛環</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_style_entries -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_style_values -->
 
-    <string-array name="pref_in_call_style_entries">
-        <item>滑桿</item>
-        <item>撥輪</item>
-        <item>撥輪（改）</item>
-        <item>飛環</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_entries -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_values -->
 
@@ -290,11 +279,7 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_background_values -->
 
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>預設</item>
-        <item>隱藏</item>
-        <item>置中</item>
-    </string-array>
+    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_widget_layout_entries -->
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_widget_layout_values -->
 

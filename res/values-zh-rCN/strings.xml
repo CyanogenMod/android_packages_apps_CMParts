@@ -9,7 +9,8 @@
     <string name="application_settings_summary_head">应用程序移动、安装位置、通信过滤</string>
     <string name="display_settings_title_head">显示</string>
     <string name="display_settings_title_subhead">显示设置</string>
-    <string name="display_settings_summary_head">显示动画、旋转、超时</string>
+    <string name="display_settings_summary_head">显示背光灯、动画、旋转</string>
+    <string name="display_settings_summary_head_nobacklight">显示动画、旋转</string>
     <string name="input_settings_title_head">输入</string>
     <string name="input_settings_title_subhead">输入设置</string>
     <string name="input_settings_summary_head">输入行为、按键、振动反馈</string>
@@ -92,13 +93,21 @@
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">状态栏调整</string>
     <string name="ui_status_bar_am_pm_title">上午／下午格式</string>
-    <string name="ui_status_bar_am_pm_summary">始终旁边的上午／下午格式</string>
+    <string name="ui_status_bar_am_pm_summary">时钟旁边的上午／下午格式</string>
     <string name="ui_status_bar_clock_title">显示时钟</string>
     <string name="ui_status_bar_clock_summary">如果禁用，状态栏中的时钟将不会显示</string>
     <string name="ui_status_bar_battery_title">电池状态样式</string>
     <string name="ui_status_bar_battery_summary">显示电池状态的样式</string>
     <string name="ui_status_bar_compact_carrier_title">减小电信运营商名称</string>
     <string name="ui_status_bar_compact_carrier_summary">使用替代的下拉通知列格式，将电信运营商名称缩小显示</string>
+    <string name="ui_status_bar_carrier_label_title">运营商名称类型</string>
+    <string name="ui_status_bar_carrier_label_summary">修改运营商名称</string>
+    <string name="ui_status_bar_carrier_label_use_default">默认</string>
+    <string name="ui_status_bar_carrier_label_use_spn">显示 SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">显示 PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">自定义文本</string>
+    <string name="ui_status_bar_carrier_label_custom_title">自定义运营商名称</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">使用文本替代管理者提供的运营商名称</string>
     <string name="ui_status_bar_toggle_brightness">状态栏亮度控制</string>
     <string name="ui_status_bar_toggle_brightness_summary">允许滑动状态栏以调整亮度</string>
     <string name="ui_status_bar_toggle_info">亮度自动调整已启用</string>
@@ -128,6 +137,10 @@
     <string name="pref_lockscreen_delay_title">延迟</string>
     <string name="pref_lockscreen_widgets_layout_title">小部件布局</string>
     <string name="pref_lockscreen_widgets_layout_summary">切换时钟,日期,载体,状态布局</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">默认</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">隐藏</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">居中</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">靠右</string>
     <string name="pref_lockscreen_security_title">安全性锁定</string>
     <string name="pref_lockscreen_security_delay_note_title">注意</string>
     <string name="pref_lockscreen_security_delay_note_summary">当屏幕锁定安全性设定为“无”时，被使用的将会是这一组延迟时间</string>
@@ -192,6 +205,8 @@
     <string name="trackball_category_add_summary">向类别列表中添加一个新的类别</string>
     <string name="trackball_category_remove_title">删除类别</string>
     <string name="trackball_category_remove_summary">从类别列表中删除一个类别</string>
+    <string name="trackball_category_edit_title">编辑分类设置</string>
+    <string name="trackball_category_edit_summary">为该分类编辑默认设置</string>
     <string name="trackball_reset_all">重置所有的颜色与类别设置</string>
     <string name="trackball_color_notice_title">注意：</string>
     <string name="trackball_color_notice_summary">并非所有颜色能在所有设备上显示。</string>
@@ -264,7 +279,11 @@
     <string name="pref_menu_unlock_summary">按下菜单键可解锁设备</string>
     <string name="pref_lockscreen_quick_unlock_control_title">快速解锁</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">输入数字 PIN 或密码后无需按确定按钮即可解锁，按删除键重新输入。</string>
+    <string name="lockscreen_style_options_title">特别风格选项</string>
     <string name="pref_lockscreen_custom_app_toggle_title">自定义程序启动</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">启动自定义程序时显示第二个滑动条</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">显示一个自定义的程序凹座来启动一个自定义程序</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">显示第三个环来启动最多四个自定义程序中的其中一个</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">在滑动风格时显示第二个滑动条，在旋转风格时显示自定义程序按键</string>
     <string name="pref_lockscreen_custom_app_activity_title">自定义程序</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">选择要设置的快捷方式</string>
@@ -273,6 +292,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">新增</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">移除</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">未设置</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">使用中间环解锁</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">切换解锁和启动应用程序时环的位置</string>
+    <string name="pref_lockscreen_ring_minimal_title">简约环风格</string>
+    <string name="pref_lockscreen_ring_minimal_summary">只显示一个位于中间、用于解锁的环</string>
     <string name="pref_lockscreen_custom_icon_style_title">自定义程序消息图标</string>
     <string name="pref_lockscreen_custom_icon_style_summary">为自定义程序使用消息图标代替 CM 图标</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">下拉解锁</string>
@@ -281,8 +304,24 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">在旋转风格时隐藏提示箭头</string>
     <string name="pref_lockscreen_style_title">锁屏风格</string>
     <string name="pref_lockscreen_style_summary">选择锁屏风格</string>
+    <string name="lockscreen_style_entry_tabs">滑动</string>
+    <string name="lockscreen_style_entry_rotary">旋转拨动</string>
+    <string name="lockscreen_style_entry_lense">镜面</string>
+    <string name="lockscreen_style_entry_ring">环</string>
+    <string name="pref_rotary_style_title">旋转风格</string>
+    <string name="pref_rotary_style_summary">选择旋转轮的风格</string>
+    <string name="rotary_style_entry_normal">正常风格</string>
+    <string name="rotary_style_entry_revamped">革新风格</string>
+    <string name="pref_ringlock_style_title">锁环风格</string>
+    <string name="pref_ringlock_style_summary">选择锁环风格</string>
+    <string name="ringlock_style_entry_bubbles">气泡风格</string>
+    <string name="ringlock_style_entry_revamped">革新风格</string>
+    <string name="ringlock_style_entry_holo">Holo风格</string>
     <string name="pref_in_call_style_title">来电屏幕风格</string>
     <string name="pref_in_call_style_summary">选择来电接听/拒绝的小插件风格</string>
+    <string name="incall_style_entry_tabs">滑动</string>
+    <string name="incall_style_entry_rotary">旋转拨动</string>
+    <string name="incall_style_entry_ring">环</string>
     <string name="pref_volbtn_music_controls_title">音量键音乐控制</string>
     <string name="pref_volbtn_music_controls_summary">在屏幕关闭时长按音量键寻找音乐曲目</string>
     <string name="pref_cambtn_music_controls_title">照相键音乐控制</string>
@@ -393,6 +432,9 @@
     <string name="pref_heapsize_title">虚拟机内存大小</string>
     <string name="pref_heapsize_summary">设置每个虚拟机进程的可用内存最大值（需要重启）</string>
 
+    <string name="pref_disable_bootanimation_title">禁用开机动画</string>
+    <string name="pref_disable_bootanimation_summary">禁用开机动画以便快速开机</string>
+
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">锁定桌面的内存</string>
     <string name="pref_lock_home_summary">在任何情况下试图防止当前的桌面程序被系统从内存中清除</string>
@@ -429,6 +471,7 @@
 
     <string name="widget_name">渲染效果桌面部件</string>
     <string name="renderfx_temp">渲染效果</string>
+    <string name="pref_widget_options_category_title">常规选项</string>
     <string name="prefs_render_effect">渲染效果</string>
     <string name="notify_render_effect">渲染效果开启</string>
     <string name="add_widget">添加小部件</string>
@@ -557,6 +600,8 @@
     <string name="sound_vibrate_in_call_title">通话中震动</string>
     <string name="sound_vibrate_in_call_summary_off">在通话中的通知不震动</string>
     <string name="sound_vibrate_in_call_summary_on">通话中的通知仍然震动</string>
+    <string name="sound_lock_volume_keys_title">锁定音量键</string>
+    <string name="sound_lock_volume_keys_summary">避免通过按下音量键意外解除静音模式</string>
     <string name="sound_to_speaker_title">总是通过扬声器播放</string>
     <string name="sound_notifications_title">通知</string>
     <string name="sound_rings_title">铃声</string>
@@ -591,6 +636,9 @@
     <string name="quiet_hours_dim">降低 LED 亮度</string>
     <string name="quiet_hours_dim_on">LED 将在可能的情况下降低亮度</string>
     <string name="quiet_hours_dim_off">LED 将使用正常亮度</string>
+    <string name="quiet_hours_haptic">禁用触动反馈</string>
+    <string name="quiet_hours_haptic_on">触动反馈已禁用</string>
+    <string name="quiet_hours_haptic_off">触动反馈已开启</string>
 
     <string name="cmstats_title">匿名统计数据</string>
     <string name="cmstats_summary">发送您的匿名使用统计数据以帮助我们改善 CyanogenMod</string>
@@ -619,6 +667,9 @@
     <string name="gestures_toggle_sound">切换声音</string>
     <string name="gestures_shortcut_or_activity">快捷方式或动作</string>
     <string name="gestures_flashlight">手电筒</string>
+    <string name="gestures_next">下一首曲目</string>
+    <string name="gestures_previous">上一首曲目</string>
+    <string name="gestures_playpause">播放／暂停音乐</string>
     <string name="pref_lockscreen_disable_unlock_tab">禁用解锁滑块</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">注意：在此选项可用前您需要启用轨迹球、菜单键或手势解锁</string>
     <string name="gestures_action_label">动作：</string>

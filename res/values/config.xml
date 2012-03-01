@@ -27,6 +27,9 @@
     <!--Whether or not  -->
     <bool name="has_backtrack_minipad">false</bool>
 
+    <!-- Supports backlight settings? -->
+    <bool name="supports_backlight_settings">true</bool>
+
     <bool name="has_envelope_key">false</bool>
     <bool name="has_explorer_key">false</bool>
 </resources>

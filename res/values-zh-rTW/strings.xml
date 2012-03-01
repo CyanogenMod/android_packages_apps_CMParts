@@ -261,6 +261,10 @@
     <string name="pref_lockscreen_always_battery_summary">總是在鎖定螢幕上顯示電池狀況</string>
     <string name="pref_lockscreen_widgets_layout_title">小工具版面配置</string>
     <string name="pref_lockscreen_widgets_layout_summary">切換時鐘、日期、電信業者、狀態等的版面配置</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">預設</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">隱藏</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">置中</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">靠右</string>
     <string name="pref_lockscreen_music_controls_title">鎖定螢幕音樂面版</string>
     <string name="pref_lockscreen_music_controls_summary">在鎖定螢幕上顯示音樂控制面版</string>
     <string name="pref_lockscreen_now_playing_title">顯示曲目</string>
@@ -295,6 +299,10 @@
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">新增</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">移除</string>
     <string name="pref_lockscreen_ring_custom_apps_notset">未設置</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">以中央飛環解鎖</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">交換用以解鎖和啟動應用程式的飛環的位置</string>
+    <string name="pref_lockscreen_ring_minimal_title">簡約飛環風格</string>
+    <string name="pref_lockscreen_ring_minimal_summary">只顯示一個位於中央、用以解鎖的飛環</string>
     <string name="pref_lockscreen_custom_background_title">背境</string>
     <string name="pref_lockscreen_custom_background_dialog_title">選擇背境</string>
     <string name="pref_lockscreen_custom_background_summary">選擇自訂桌布，或以單一色彩填滿鎖定螢幕背境</string>
@@ -311,8 +319,15 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">在撥輪模式中隱藏方向提示箭頭</string>
     <string name="pref_lockscreen_style_title">鎖定螢幕風格</string>
     <string name="pref_lockscreen_style_summary">選擇鎖定螢幕的風格</string>
+    <string name="lockscreen_style_entry_tabs">滑桿</string>
+    <string name="lockscreen_style_entry_rotary">撥輪</string>
+    <string name="lockscreen_style_entry_lense">透鏡</string>
+    <string name="lockscreen_style_entry_ring">飛環</string>
     <string name="pref_in_call_style_title">來電螢幕風格</string>
     <string name="pref_in_call_style_summary">選擇用來接聽／拒絕來電的道具風格</string>
+    <string name="incall_style_entry_tabs">滑桿</string>
+    <string name="incall_style_entry_rotary">撥輪</string>
+    <string name="incall_style_entry_ring">飛環</string>
     <string name="lockscreen_music_title">音樂控制</string>
     <string name="pref_volbtn_music_controls_title">音量鍵音樂控制</string>
     <string name="pref_volbtn_music_controls_summary">在螢幕關閉時長按音量鍵來搜尋曲目</string>
@@ -687,6 +702,9 @@
     <string name="gestures_toggle_sound">音效切換</string>
     <string name="gestures_shortcut_or_activity">捷徑或動作</string>
     <string name="gestures_flashlight">手電筒開關</string>
+    <string name="gestures_next">下一首曲目</string>
+    <string name="gestures_previous">上一首曲目</string>
+    <string name="gestures_playpause">播放／暫停音樂</string>
     <string name="pref_lockscreen_disable_unlock_tab">隱藏解鎖道具</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">注意：要使用這個選項您必須先啟用軌跡球、選單鍵、或手勢解鎖。</string>
     <string name="gestures_action_label">動作：</string>

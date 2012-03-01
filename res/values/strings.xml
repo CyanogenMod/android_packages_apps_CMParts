@@ -9,7 +9,8 @@
     <string name="application_settings_summary_head">Application moving, install location, communication filtering</string>
     <string name="display_settings_title_head">Display</string>
     <string name="display_settings_title_subhead">Display settings</string>
-    <string name="display_settings_summary_head">Display animations, rotation, timeouts</string>
+    <string name="display_settings_summary_head">Display backlight, animations, rotation</string>
+    <string name="display_settings_summary_head_nobacklight">Display animations, rotation</string>
     <string name="input_settings_title_head">Input</string>
     <string name="input_settings_title_subhead">Input settings</string>
     <string name="input_settings_summary_head">Input behavior, buttons, haptic feedback</string>
@@ -99,6 +100,14 @@
     <string name="ui_status_bar_battery_summary">Display style of battery status</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
+    <string name="ui_status_bar_carrier_label_title">Carrier label type</string>
+    <string name="ui_status_bar_carrier_label_summary">Change what is used as carrier label</string>
+    <string name="ui_status_bar_carrier_label_use_default">Default</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Show SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Show PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Custom text</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Custom carrier label</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Text used instead of the operator provided carrier label</string>
     <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
     <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
@@ -261,6 +270,10 @@
     <string name="pref_lockscreen_always_battery_summary">Display battery status on the lockscreen at all times</string>
     <string name="pref_lockscreen_widgets_layout_title">Widget layout</string>
     <string name="pref_lockscreen_widgets_layout_summary">Toggle clock, date, carrier, status layout</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Default</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Hidden</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Centered</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">Right</string>
     <string name="pref_lockscreen_music_controls_title">Lockscreen music controls</string>
     <string name="pref_lockscreen_music_controls_summary">Display music controls on the lockscreen</string>
     <string name="pref_lockscreen_now_playing_title">Display song name</string>
@@ -315,8 +328,25 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Hides the directional hint arrows on rotary style</string>
     <string name="pref_lockscreen_style_title">Lockscreen style</string>
     <string name="pref_lockscreen_style_summary">Choose the style of the lockscreen</string>
+    <string name="lockscreen_style_entry_tabs">Sliding Tab</string>
+    <string name="lockscreen_style_entry_rotary">Rotary</string>
+    <string name="lockscreen_style_entry_lense">Lense</string>
+    <string name="lockscreen_style_entry_ring">Ring</string>
+    <string name="pref_rotary_style_title">Rotary style</string>
+    <string name="pref_rotary_style_summary">Choose the style of the rotary wheel</string>
+    <string name="rotary_style_entry_normal">Normal style</string>
+    <string name="rotary_style_entry_revamped">Revamped style</string>
+    <string name="pref_ringlock_style_title">Ring-Lock style</string>
+    <string name="pref_ringlock_style_summary">Choose the style of the lock rings</string>
+    <string name="ringlock_style_entry_bubbles">Bubble style</string>
+    <string name="ringlock_style_entry_revamped">Revamped style</string>
+    <string name="ringlock_style_entry_holo">Holo style</string>
+    <string name="ringlock_style_entry_blade">Blade style</string>
     <string name="pref_in_call_style_title">Incoming call style</string>
     <string name="pref_in_call_style_summary">Choose the style of the incoming calls accept/reject widget</string>
+    <string name="incall_style_entry_tabs">Sliding Tab</string>
+    <string name="incall_style_entry_rotary">Rotary</string>
+    <string name="incall_style_entry_ring">Ring</string>
     <string name="lockscreen_music_title">Music Controls</string>
     <string name="pref_volbtn_music_controls_title">Volume button music controls</string>
     <string name="pref_volbtn_music_controls_summary">Seek music tracks when long-pressing the volume buttons while screen off</string>
@@ -435,6 +465,14 @@
     <string name="pref_use_16bpp_alpha_title">Use 16bit transparency</string>
     <string name="pref_use_16bpp_alpha_summary">Using 16bit transparency can improve scrolling performance, but may cause visual artifacts (requires reboot)</string>
 
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Scrolling cache</string>
+    <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
+    <string name="pref_scrollingcache_force_enable">Force enable</string>
+    <string name="pref_scrollingcache_default_enable">Default enable</string>
+    <string name="pref_scrollingcache_default_disable">Default disable</string>
+    <string name="pref_scrollingcache_force_disable">Force disable</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">System can free more RAM when needed if asset bitmap memory can be reclaimed (requires reboot)</string>
@@ -442,6 +480,10 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
+
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">Disable boot animation</string>
+    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
@@ -490,6 +532,7 @@
 
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
+    <string name="pref_widget_options_category_title">General options</string>
     <string name="prefs_render_effect">Render Effect</string>
     <string name="notify_render_effect">Render effect on</string>
     <string name="add_widget">Add widget</string>
@@ -569,6 +612,8 @@
     <string name="cm_sound_mode_soundVibrate">Sound+Vibrate</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
+    <string name="pref_mobiledatanetwork_mode_title">Mobiledata auto 2G/3G</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Mobiledata button toggles 2G/3G mode</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatic backlight</string>
@@ -618,6 +663,8 @@
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
+    <string name="sound_lock_volume_keys_title">Lock volume keys</string>
+    <string name="sound_lock_volume_keys_summary">Prevents accidental unset of silent mode by pressing volume keys</string>
     <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
     <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
     <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>

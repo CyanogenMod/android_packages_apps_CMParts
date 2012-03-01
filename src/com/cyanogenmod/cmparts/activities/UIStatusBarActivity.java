@@ -19,12 +19,16 @@ package com.cyanogenmod.cmparts.activities;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.text.InputFilter;
+import android.text.InputFilter.LengthFilter;
+import android.widget.EditText;
 
 import com.cyanogenmod.cmparts.R;
 
@@ -35,6 +39,12 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private static final String PREF_STATUS_BAR_BATTERY = "pref_status_bar_battery";
 
     private static final String PREF_STATUS_BAR_CLOCK = "pref_status_bar_clock";
+
+    private static final String PREF_STATUS_BAR_CARRIER_LABEL =
+            "pref_status_bar_carrier_label";
+
+    private static final String PREF_STATUS_BAR_CARRIER_LABEL_CUSTOM =
+            "pref_status_bar_carrier_label_custom";
 
     private static final String PREF_STATUS_BAR_COMPACT_CARRIER = "pref_status_bar_compact_carrier";
 
@@ -51,6 +61,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
 
     private ListPreference mStatusBarCmSignal;
 
+    private ListPreference mStatusBarCarrierLabel;
+
     private CheckBoxPreference mStatusBarClock;
 
     private CheckBoxPreference mStatusBarCompactCarrier;
@@ -58,6 +70,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private CheckBoxPreference mStatusBarBrightnessControl;
 
     private CheckBoxPreference mStatusBarHeadset;
+
+    private EditTextPreference mStatusBarCarrierLabelCustom;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -112,6 +126,41 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, 0);
         mStatusBarCmSignal.setValue(String.valueOf(signalStyle));
         mStatusBarCmSignal.setOnPreferenceChangeListener(this);
+
+        mStatusBarCarrierLabel = (ListPreference) prefSet
+                .findPreference(PREF_STATUS_BAR_CARRIER_LABEL);
+        mStatusBarCarrierLabelCustom = (EditTextPreference) prefSet
+                .findPreference(PREF_STATUS_BAR_CARRIER_LABEL_CUSTOM);
+
+        if (mStatusBarCarrierLabelCustom != null) {
+            EditText carrierEditText = mStatusBarCarrierLabelCustom.getEditText();
+
+            if (carrierEditText != null) {
+                InputFilter lengthFilter = new InputFilter.LengthFilter(20);
+                carrierEditText.setFilters(new InputFilter[]{lengthFilter});
+                carrierEditText.setSingleLine(true);
+            }
+        }
+
+        int statusBarCarrierLabel = Settings.System.getInt(getContentResolver(),
+                Settings.System.CARRIER_LABEL_TYPE, 0);
+        String statusBarCarrierLabelCustom = Settings.System.getString(getContentResolver(),
+                Settings.System.CARRIER_LABEL_CUSTOM_STRING);
+
+        if (statusBarCarrierLabelCustom == null) {
+            statusBarCarrierLabelCustom = "CyanogenMod 7";
+            Settings.System.putString(getContentResolver(),
+                    Settings.System.CARRIER_LABEL_CUSTOM_STRING,
+                    statusBarCarrierLabelCustom);
+        }
+
+        mStatusBarCarrierLabel.setValue(String.valueOf(statusBarCarrierLabel));
+        mStatusBarCarrierLabel.setOnPreferenceChangeListener(this);
+
+        mStatusBarCarrierLabelCustom.setText(statusBarCarrierLabelCustom);
+        mStatusBarCarrierLabelCustom.setOnPreferenceChangeListener(this);
+        mStatusBarCarrierLabelCustom.setEnabled(
+                statusBarCarrierLabel == 3);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -129,6 +178,18 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
             int signalStyle = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.STATUS_BAR_CM_SIGNAL_TEXT,
                     signalStyle);
+            return true;
+        } else if (preference == mStatusBarCarrierLabel) {
+            int carrierLabelType = Integer.valueOf((String) newValue);
+            mStatusBarCarrierLabelCustom.setEnabled(carrierLabelType == 3);
+            Settings.System.putInt(getContentResolver(), Settings.System.CARRIER_LABEL_TYPE,
+                    carrierLabelType);
+            return true;
+        } else if (preference == mStatusBarCarrierLabelCustom) {
+            String carrierLabelCustom = String.valueOf(newValue);
+            Settings.System.putString(getContentResolver(),
+                    Settings.System.CARRIER_LABEL_CUSTOM_STRING,
+                    carrierLabelCustom);
             return true;
         }
         return false;

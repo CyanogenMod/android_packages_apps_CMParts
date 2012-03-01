@@ -23,6 +23,17 @@
 			android:title="@string/ui_status_bar_compact_carrier_title"
 			android:summary="@string/ui_status_bar_compact_carrier_summary"
 			android:defaultValue="falses" />
+		<ListPreference android:key="pref_status_bar_carrier_label"
+			android:dialogTitle="@string/ui_status_bar_carrier_label_title"
+			android:title="@string/ui_status_bar_carrier_label_title"
+			android:summary="@string/ui_status_bar_carrier_label_summary"
+			android:entries="@array/entries_status_bar_carrier_label"
+			android:entryValues="@array/values_status_bar_carrier_label" />
+		<EditTextPreference android:key="pref_status_bar_carrier_label_custom"
+			android:dialogTitle="@string/ui_status_bar_carrier_label_custom_title"
+			android:title="@string/ui_status_bar_carrier_label_custom_title"
+			android:summary="@string/ui_status_bar_carrier_label_custom_summary"
+			android:defaultValue="CyanogenMod 7" />
 		<ListPreference android:key="pref_status_bar_cm_signal"
 			android:dialogTitle="@string/ui_status_bar_cm_signal_text_title"
 			android:title="@string/ui_status_bar_cm_signal_text_title"

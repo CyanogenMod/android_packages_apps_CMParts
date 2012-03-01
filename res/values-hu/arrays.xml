@@ -166,22 +166,25 @@
     <string-array name="pref_lockscreen_style_entries">
         <item>Csúszó fül</item>
         <item>Forgó</item>
-        <item>Megújult forgó</item>
         <item>Lense</item>
         <item>Gyűrű</item>
+    </string-array>
+
+   <string-array name="pref_rotary_style_entries">
+        <item>Normál</item>
+        <item>Megújúlt</item>
+    </string-array>
+
+    <string-array name="pref_ringlock_style_entries">
+        <item>Buborék</item>
+        <item>Megújúlt</item>
+        <item>Holo</item>
     </string-array>
 
     <string-array name="pref_in_call_style_entries">
         <item>Csúszó fül</item>
         <item>Forgó</item>
-        <item>Megújúlt forgó</item>
         <item>Gyűrű</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>Alapértelmezett</item>
-        <item>Rejtett</item>
-        <item>Középre</item>
     </string-array>
 
     <string-array name="pref_lockscreen_calendar_lookahead_entries">

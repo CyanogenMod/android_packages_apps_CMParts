@@ -173,6 +173,19 @@
     <string name="pref_cambtn_music_controls_summary">Alternar em play/pause ao premir continuamente o botão da cãmara quando o ecrã está desligado</string>
     <string name="lockscreen_widgets_note_title">Nota</string>
     <string name="lockscreen_widgets_note_summary">Ao escolher o tema minimalistico Lense, todas as widgets estão escondidas á excepção dos controlos de musica. Mesmo assim as opções abaixo não são alteradas para permitir a alteração de estilo rápidamente.</string>
+	<string name="lockscreen_calendar_title">Calendar do ecrã de bloqueio</string>
+	<string name="pref_lockscreen_calendar_alarm_title">Mostar próximo evento do calendário</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Mostrar o tempo e título do próximo evento do calendário</string>
+    <string name="pref_lockscreen_calendars_title">Eventos de calendários</string>
+    <string name="pref_lockscreen_calendars_summary">Encontrar eventos destes calendários</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Lembretes apenas</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Encontrar apenas eventos com lembretes</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Ver à frente no calendário</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Quão distante no futuro deseja que os eventos sejam encontrados</string>
+    <string name="pref_lockscreen_calendar_show_location_title">Mostrar localização de evento</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">Mostrar localização do evento sob o título</string>
+    <string name="pref_lockscreen_calendar_show_description_title">Mostrar descrição do evento</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">Mostrar descrição do evento sob o título</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Definições de entrada</string>

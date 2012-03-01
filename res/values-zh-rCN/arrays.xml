@@ -178,21 +178,6 @@
         <item>12 (最严格)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>滑动</item>
-        <item>旋转拨动</item>
-        <item>旋转反拨</item>
-        <item>镜面</item>
-        <item>环</item>
-    </string-array>
-
-    <string-array name="pref_in_call_style_entries">
-        <item>滑动</item>
-        <item>旋转拨动</item>
-        <item>旋转反拨</item>
-        <item>环</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>禁用</item>
         <item>有线耳机</item>
@@ -258,12 +243,6 @@
         <item>跟随系统设定</item>
         <item>启用</item>
         <item>停用</item>
-    </string-array>
-
-    <string-array name="pref_lockscreen_widget_layout_entries">
-        <item>默认</item>
-        <item>隐藏</item>
-        <item>居中</item>
     </string-array>
 
     <string-array name="pref_lockscreen_calendar_lookahead_entries">

@@ -148,6 +148,10 @@
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Esconde as setas de ajuda direcionais</string>
     <string name="pref_lockscreen_style_title">Estilo da tela de bloqueio</string>
     <string name="pref_lockscreen_style_summary">Escolhe o estilo da tela de bloqueio</string>
+    <string name="lockscreen_style_entry_tabs">Aba Deslizante</string>
+    <string name="lockscreen_style_entry_rotary">Rotativo</string>
+    <string name="lockscreen_style_entry_lense">Lente</string>
+    <string name="lockscreen_style_entry_ring">Anel</string>
     <string name="pref_volbtn_music_controls_title">Controle de música</string>
     <string name="pref_volbtn_music_controls_summary">Quando a tela está desligada, procura faixas de música quando pressiona os botões de volume por um longo período</string>
     <string name="pref_cambtn_music_controls_title">Controle a música com o botão da câmera</string>
@@ -602,6 +606,9 @@
     <string name="ui_status_bar_am_pm_summary">Mostrar AM/PM ao lado do relógio</string>
     <string name="pref_in_call_style_title">Estilo de ligação recebida</string>
     <string name="pref_in_call_style_summary">Escolher o estilo do widget de aceitar/rejeitar ligações recebidas</string>
+    <string name="incall_style_entry_tabs">Aba Deslizante</string>
+    <string name="incall_style_entry_rotary">Giratório</string>
+    <string name="incall_style_entry_ring">Anel</string>
     <string name="pref_volume_wake_title">Acordar com botão volume</string>
     <string name="pref_volume_wake_summary">Acorda o dispositivo ao apertar o botão de aumentar/abaixar volume. É indicado para dispositivos com botão de ligar difícil de apertar.</string>
     <string name="perm_enable_management">Habilitar gerenciamento</string>
@@ -701,6 +708,9 @@
     <string name="sound_camera_shutter_disable_warning">Desativando o som de disparo da câmera é ilegal em algumas áreas. Você tem certeza que deseja desativar?</string>
     <string name="pref_lockscreen_widgets_layout_title">Layout do widget</string>
     <string name="pref_lockscreen_widgets_layout_summary">Alternar entre relógio, data, operadora, layout do status</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Padrão</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Oculto</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Centralizado</string>
     <string name="lockscreen_calendar_title">Calendário da Tela de Bloqueio</string>
     <string name="pref_lockscreen_calendar_alarm_title">Exibit próximo evento do calendário</string>
     <string name="pref_lockscreen_calendar_alarm_summary">Exibir a hora e título do próximo evento do calendário</string>

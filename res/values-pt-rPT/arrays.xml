@@ -155,14 +155,6 @@
         <item>12 (restrito)</item>
     </string-array>
 
-    <string-array name="pref_lockscreen_style_entries">
-        <item>Sliding Tab</item>
-        <item>Rotary</item>
-        <item>Rotary revamped</item>
-        <item>Lense</item>
-        <item>Ring</item>
-    </string-array>
-
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Desactivado</item>
         <item>Auricular com fio</item>
