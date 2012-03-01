@@ -9,7 +9,8 @@
     <string name="application_settings_summary_head">Application moving, install location, communication filtering</string>
     <string name="display_settings_title_head">Zaslon</string>
     <string name="display_settings_title_subhead">Zaslonske nastavitve</string>
-    <string name="display_settings_summary_head">Display animations, rotation, timeouts</string>
+    <string name="display_settings_summary_head">Osvetlitev zaslona, animacije, vrtenje zaslona</string>
+    <string name="display_settings_summary_head_nobacklight">Animacije in vrtenje zaslona</string>
     <string name="input_settings_title_head">Vhodne nastavitve</string>
     <string name="input_settings_title_subhead">Vhodne nastavitve</string>
     <string name="input_settings_summary_head">Input behavior, buttons, haptic feedback</string>
