@@ -24,14 +24,14 @@
     <string name="performance_settings_summary_head">Performance tweaks, JIT, VM heap size</string>
     <string name="sound_settings_title_head">Zvok</string>
     <string name="sound_settings_title_subhead">Zvočne nastavitve</string>
-    <string name="sound_settings_summary_head">Sound volumes, audio focus, quiet hours</string>
+    <string name="sound_settings_summary_head">Glasnosti zvonenj, zvočni fokus, tihe ure</string>
     <string name="system_settings_title_head">Sistem</string>
     <string name="system_settings_title_subhead">Sistemske nastavitve</string>
-    <string name="system_settings_summary_head">System changelog, stats, update notifications</string>
+    <string name="system_settings_summary_head">Opombe ob izdaji, stanje, obvestila o posodobitvah</string>
 
     <!--  Update Notifications -->
     <string name="updatenotify_title">Obvestila o posodobitvah</string>
-    <string name="updatenotify_summary">Get push notifications of updates</string>
+    <string name="updatenotify_summary">Omogoči potisna obvestila o posodobitvah</string>
 
     <!-- User interface -->
     <string name="ui_title">Uporabniški vmesnik</string>
@@ -45,11 +45,11 @@
     <string name="tablet_tweaks_sb_bottom_title">Vrstica stanja na dnu</string>
     <string name="tablet_tweaks_sb_bottom_summary">Prikaže vrstico stanja na dnu. Uporabno za tablice, ki uporabljajo gumbe za domov, meni, itd na vrstici stanja</string>
     <string name="tablet_tweaks_status_bar_dead_zone_title">Mrtva cona</string>
-    <string name="tablet_tweaks_status_bar_dead_zone_summary">Add a dead zone of half screen width to the middle of the status bar</string>
-    <string name="tablet_tweaks_soft_buttons_left_title">Soft-buttons left</string>
-    <string name="tablet_tweaks_soft_buttons_left_summary">Put soft-buttons on left side of status bar</string>
-    <string name="tablet_tweaks_soft_button_list_title">Choose soft-buttons</string>
-    <string name="tablet_tweaks_interface_head">Interface</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Dodaj mrtvo cono od polovice ekrana pa do sredine vrstice stanja</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Gumbi za upravljanje na levi</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Postavi gumbe za upravljanje na levo stran vrstice stanja</string>
+    <string name="tablet_tweaks_soft_button_list_title">Izberi gumbe za upravljanje</string>
+    <string name="tablet_tweaks_interface_head">Vmesnik</string>
     <string name="tablet_tweaks_disable_lockscreen_title">Onemogoči zaklepanje zaslona</string>
     <string name="tablet_tweaks_disable_lockscreen_summary">Ne prikaže zaklepanje zaslona ob zagonu in ob zbujanju naprave</string>
     <string name="tablet_tweaks_disable_fullscreen_title">Onemogoči celozaslonski način</string>
@@ -60,8 +60,8 @@
     <string name="tablet_tweaks_extend_pm_summary">Add home/back/menu actions to the power menu</string>
     <string name="tablet_tweaks_extend_pm_list_title">Choose power menu buttons</string>
     <string name="tablet_tweaks_reverse_volume_behavior_title">Spremeni obnašanje gumbov za glasnost</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Press for volume change, long press for user action</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Volume buttons behave reversed. Press for user action, long press for volume change</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Gumbi za glasnost se obnašajo normalno. Pritisni za spremembo glasnosti, pridrži za dodatne možnosti</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Gumbi za glasnost se obnašajo drugače. Pritisni za dodatne možnosti, pridrži za spremembo glasnosti</string>
 
     <!-- User interface: Tablet tweaks -> volume remapping -->
     <string name="tablet_tweaks_input_head">Remap volume keys</string>
@@ -76,7 +76,7 @@
     <string name="tablet_tweaks_extend_pm_list_head">Power menu buttons</string>
 
     <!-- User interface: Tablet tweaks -> soft buttons -->
-    <string name="tablet_tweaks_soft_buttons_list_head">Soft-buttons</string>
+    <string name="tablet_tweaks_soft_buttons_list_head">Gumbi za upravljanje</string>
     <string name="tablet_soft_buttons_home_title">Domov</string>
     <string name="tablet_soft_buttons_menu_title">Meni</string>
     <string name="tablet_soft_buttons_back_title">Nazaj</string>
@@ -96,10 +96,18 @@
     <string name="ui_status_bar_am_pm_summary">Prikaže AM(dopoldne) oziroma PM(popoldne) poleg ure</string>
     <string name="ui_status_bar_clock_title">Prikaži uro</string>
     <string name="ui_status_bar_clock_summary">Če je onemogočeno, ura ne bo prikazana v vrstici stanja</string>
-    <string name="ui_status_bar_battery_title">Battery status style</string>
-    <string name="ui_status_bar_battery_summary">Display style of battery status</string>
-    <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
-    <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
+    <string name="ui_status_bar_battery_title">Prikaz stanja baterije</string>
+    <string name="ui_status_bar_battery_summary">Različni načini prikaza stanje baterije</string>
+    <string name="ui_status_bar_compact_carrier_title">Pomanjšani napis operaterja</string>
+    <string name="ui_status_bar_compact_carrier_summary">Pomanjša napis Vašega operaterja ter ga prestavi na desno stran spustnega menija vrstice stanja</string>
+    <string name="ui_status_bar_carrier_label_title">Spremeni napis operaterja</string>
+    <string name="ui_status_bar_carrier_label_summary">Change what is used as carrier label</string>
+    <string name="ui_status_bar_carrier_label_use_default">Default</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Show SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Show PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Custom text</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Custom carrier label</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Text used instead of the operator provided carrier label</string>
     <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
     <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
