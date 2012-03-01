@@ -98,38 +98,38 @@
     <string name="ui_status_bar_clock_summary">Če je onemogočeno, ura ne bo prikazana v vrstici stanja</string>
     <string name="ui_status_bar_battery_title">Prikaz stanja baterije</string>
     <string name="ui_status_bar_battery_summary">Različni načini prikaza stanje baterije</string>
-    <string name="ui_status_bar_compact_carrier_title">Pomanjšani napis operaterja</string>
-    <string name="ui_status_bar_compact_carrier_summary">Pomanjša napis Vašega operaterja ter ga prestavi na desno stran spustnega menija vrstice stanja</string>
-    <string name="ui_status_bar_carrier_label_title">Spremeni napis operaterja</string>
-    <string name="ui_status_bar_carrier_label_summary">Change what is used as carrier label</string>
-    <string name="ui_status_bar_carrier_label_use_default">Default</string>
-    <string name="ui_status_bar_carrier_label_use_spn">Show SPN</string>
-    <string name="ui_status_bar_carrier_label_use_plmn">Show PLMN</string>
-    <string name="ui_status_bar_carrier_label_use_custom">Custom text</string>
-    <string name="ui_status_bar_carrier_label_custom_title">Custom carrier label</string>
-    <string name="ui_status_bar_carrier_label_custom_summary">Text used instead of the operator provided carrier label</string>
-    <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
-    <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
-    <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
-    <string name="ui_status_bar_cm_signal_text_title">Alternate signal display</string>
-    <string name="ui_status_bar_cm_signal_text_summary">Show dBm value instead of signal bars</string>
-    <string name="ui_status_bar_cm_signal_text_show_bars">Signal bars</string>
-    <string name="ui_status_bar_cm_signal_text_show_text">Signal text</string>
-    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
-    <string name="ui_status_bar_headset_title">Show headset icon</string>
-    <string name="ui_status_bar_headset_summary">Headset icon will appear when headset is plugged in</string>
+    <string name="ui_status_bar_compact_carrier_title">Pomanjšani ime operaterja</string>
+    <string name="ui_status_bar_compact_carrier_summary">Pomanjša ime Vašega operaterja ter ga prestavi na desno stran spustnega menija vrstice stanja</string>
+    <string name="ui_status_bar_carrier_label_title">Spremeni ime operaterja</string>
+    <string name="ui_status_bar_carrier_label_summary">Spremeni ime operaterja v spustnem mineju vrstice stanja</string>
+    <string name="ui_status_bar_carrier_label_use_default">Privzeto</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Prikaži SPN</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Prikaži PLMN</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Besedilo po meri</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Besedilo po meri</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Besedilo uporabljeno namesto imena operaterja</string>
+    <string name="ui_status_bar_toggle_brightness">Spreminjanje svetlosti zaslona preko vrstice stanja</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Dovoli spreminjanje svetlosti zaslona z drsanjem s prstom po vrstici stanja</string>
+    <string name="ui_status_bar_toggle_info">Samodejna svetlost je omogočena</string>
+    <string name="ui_status_bar_cm_signal_text_title">Nadomestni prikaz singala</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Prikaži dBm vrednost namesto črtic signala</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Črtice signala</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Besedilo signal</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Besedilo signala z dBm</string>
+    <string name="ui_status_bar_headset_title">Prikaži ikono slušalk</string>
+    <string name="ui_status_bar_headset_summary">Ikona slušalk se bo prikazala, ko bodo le-te priključene v telefon</string>
 
     <!-- User interface : LED Notifications -->
-    <string name="trackball_title">LED notifications</string>
-    <string name="trackball_summary">Control trackball/LED notification colors and pulse</string>
+    <string name="trackball_title">LED obvestila</string>
+    <string name="trackball_summary">Nazdoruj barve in pulz obvestil z sledilno kroglico/LED</string>
 
     <!-- User interface : WebView -->
-    <string name="pref_pinch_reflow_title">Reflow after pinch in</string>
-    <string name="pref_pinch_reflow_summary">Reflow webview content immediately after pinch to zoom in</string>
+    <string name="pref_pinch_reflow_title">Ponovno naloži po zoomiranju</string>
+    <string name="pref_pinch_reflow_summary">Ponovno naloži vesbino spletne strani takoj po zoomiranju</string>
 
     <!-- User interface : Share menu for screenshots -->
-    <string name="pref_share_screenshot_title">Share screenshots</string>
-    <string name="pref_share_screenshot_summary">Show share menu on taking a screenshot</string>
+    <string name="pref_share_screenshot_title">Deli zaslonsko sliko</string>
+    <string name="pref_share_screenshot_summary">Prikaži meni za skupno rabo po zajemu zaslonske slike</string>
 
     <!-- User interface : Overscroll -->
     <string name="ui_overscroll_title">Overscrolling</string>
