@@ -50,7 +50,7 @@
     </string-array>
     
     <string-array name="pref_lockscreen_delay_entries">
-        <item>Gelijk</item>
+        <item>Direct</item>
         <item>1s</item>
         <item>5s</item>
         <item>10s</item>
@@ -141,7 +141,7 @@
 
     <string-array name="entries_flash_widget">
         <item>Normaal</item>
-        <item>Hoog</item>
+        <item>Hoog / Zeer fel</item>
     </string-array>
 
     <string-array name="entries_mobiledatanetwork_widget">
@@ -150,7 +150,7 @@
     </string-array>
 
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
-        <item>1 (Meest sensitief)</item>
+        <item>1 (Meest gevoelig)</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
@@ -161,7 +161,7 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
-        <item>12 (Minst sensitief)</item>
+        <item>12 (Minst gevoelig)</item>
     </string-array>
 
     <string-array name="pref_lockscreen_background_entries">
@@ -174,7 +174,7 @@
         <item>Uitgeschakeld</item>
         <item>Bedraadde headset</item>
         <item>Bluetooth A2DP Headset</item>
-        <item>Beiden</item>
+        <item>Beide</item>
     </string-array>
 
     <string-array name="pref_lockscreen_calendar_lookahead_entries">
@@ -234,10 +234,10 @@
 
     <string-array name="entries_long_press_menu">
         <item>Geen</item>
-        <item>Soft keyboard</item>
+        <item>Scherm toetsenbord</item>
         <item>Zoek knop</item>
         <item>Zelf gekozen app</item>
-        <item>Toggle statusbalk</item>
+        <item>Schakelen statusbalk</item>
     </string-array>
 
 </resources> 
