@@ -22,6 +22,24 @@
         <item>Extern</item>
     </string-array>
 
+    <string-array name="entries_status_bar_am_pm">
+        <item>Normal</item>
+        <item>Petit</item>
+        <item>Cap (per defecte)</item>
+    </string-array>
+
+    <string-array name="entries_status_bar_battery">
+        <item>Icona (per defecte)</item>
+        <item>Percentatge</item>
+        <item>Ocult</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Preferències globals</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
 	<string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Ràpid)</item>
         <item>3</item>
@@ -64,8 +82,159 @@
         <item>2500 lux</item>
     </string-array>
 
+    <string-array name="entries_light_levels_dim">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20 (per defecte)</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="entries_sound_attenuation">
+        <item>0 dB</item>
+        <item>4 dB</item>
+        <item>6 dB (per defecte)</item>
+        <item>8 dB</item>
+        <item>10 dB</item>
+    </string-array>
+
     <string-array name="entries_sound_limitvol">
         <item>Configuració atenuada del sistema</item>
         <item>Volum de la música (per defecte)</item>
     </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Només</item>
+        <item>2G/3G Només/3G+2G</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>Alt / Raig mortal</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_gestures_sensitivity_entries">
+        <item>1 (tolerant)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 (stricte)</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_style_entries">
+        <item>Pestanya</item>
+        <item>Giratòri</item>
+        <item>Giratòri renovat</item>
+        <item>Lent</item>
+        <item>Anell</item>
+    </string-array>
+
+    <string-array name="pref_in_call_style_entries">
+        <item>Pestanya</item>
+        <item>Giratòri</item>
+        <item>Giratòri renovat</item>
+        <item>Anell</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Color</item>
+        <item>Imatge personalitzada</item>
+        <item>Fons de pantalla per defecte</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_widget_layout_entries">
+        <item>Per defecte</item>
+        <item>Ocult</item>
+        <item>Centrat</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>Desactivat</item>
+        <item>Auriculars per cable</item>
+        <item>Auriculars A2DP Bluetooth</item>
+        <item>Ambdós</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_lookahead_entries">
+        <item>3 hores</item>
+        <item>6 hores</item>
+        <item>12 hores</item>
+        <item>1 dia</item>
+        <item>3 dies</item>
+        <item>1 setmana</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
+        <item>No ho mostris</item>
+        <item>Mostra la primera línia</item>
+        <item>Mostra-ho tot</item>
+    </string-array>
+
+    <string-array name="pref_overscroll_effect_entries">
+        <item>Cap</item>
+        <item>Vora brillant</item>
+        <item>Rebot i brillantor</item>
+        <item>Rebot</item>
+    </string-array>
+
+    <string-array name="entries_overscroll_weight">
+        <item>Molt pesat</item>
+        <item>Pesat</item>
+        <item>Mitjà</item>
+        <item>Lleuger</item>
+        <item>Molt lleuger</item>
+    </string-array>
+
+    <string-array name="entries_vol_actions">
+        <item>Cap/Per defecte</item>
+        <item>Inici</item>
+        <item>Menú</item>
+        <item>Enrere</item>
+        <item>Buscar</item>
+        <item>Energia</item>
+        <item>Trucar</item>
+        <item>Finalitzar trucada</item>
+        <item>Reprodueix/Pausa</item>
+        <item>Pista següent</item>
+        <item>Pista anterior</item>
+        <item>Pulsació llarga d\'inici</item>
+    </string-array>
+
+    <string-array name="entries_unhide_button">
+        <item>Inici</item>
+        <item>Menú</item>
+        <item>Enrere</item>
+        <item>Buscar</item>
+        <item>Càmera</item>
+        <item>Pujar volum</item>
+        <item>Baixar volum</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Cap</item>
+        <item>Teclat</item>
+        <item>Búsqueda</item>
+        <item>Aplicació personalitzada</item>
+        <item>Canviar la barra d\'estat</item>
+    </string-array>
+
 </resources>
