@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Generic -->
+    <string name="app_name">CM تەڭشەكلىرى</string>
+
+    <!--  Primary Screen Settings -->
+    <string name="application_settings_title_head">ئەپ</string>
+    <string name="application_settings_title_subhead">ئەپ تەڭشىكى</string>
+    <string name="application_settings_summary_head">ئەپ يۆتكىلىشى، ئورنىتىش ئورنى، ئالاقە سۈزگۈچى</string>
+    <string name="display_settings_title_head">ئېكران</string>
+    <string name="display_settings_title_subhead">كۆرسىتىش تەڭشەك</string>
+    <string name="display_settings_summary_head">تەگلىك نۇرى، جانلاندۇرۇم، ئايلاندۇرۇمنى كۆرسەت</string>
+    <string name="display_settings_summary_head_nobacklight">جانلاندۇرۇم، ئايلاندۇرۇمنى كۆرسەت</string>
+    <string name="input_settings_title_head">كىرگۈزگۈچ</string>
+    <string name="input_settings_title_subhead">كىرگۈزگۈچ تەڭشەك</string>
+    <string name="input_settings_summary_head">كىرگۈزۈش ھەرىكىتى، توپچا، تىترەش ئىنكاسى</string>
+    <string name="interface_settings_title_head">ئارايۈز</string>
+    <string name="interface_settings_summary_head">ئارايۈز تەڭشەك، چېگرا ھالقىشى، رەڭلەش ئۈنۈمى</string>
+    <string name="lockscreen_settings_title_head">ئېكران قۇلۇپ</string>
+    <string name="lockscreen_settings_title_subhead">ئېكران قۇلۇپ تەڭشىكى</string>
+    <string name="lockscreen_settings_summary_head">ئېكران قۇلۇپ قول ئىشارىتى، ئۇسلۇب، قۇلۇپ ئاچ تاللانمىسى</string>
+    <string name="performance_settings_title_head">ئۈنۈم</string>
+    <string name="performance_settings_title_subhead">ئۈنۈم تەڭشەكلىرى</string>
+    <string name="performance_settings_summary_head">ئۈنۈم ئەلالاشتۇرۇشلىرى، JIT، مەۋھۇم ماشىنا دۆۋە چوڭلۇقى</string>
+    <string name="sound_settings_title_head">ئاۋاز</string>
+    <string name="sound_settings_title_subhead">ئاۋاز تەڭشەكلىرى</string>
+    <string name="sound_settings_summary_head">ئاۋاز مىقدارى، ئاۋاز فوكۇسى، ئۈنسىز ۋاقتى</string>
+    <string name="system_settings_title_head">سىستېما</string>
+    <string name="system_settings_title_subhead">سىستېما تەڭشەكلىرى</string>
+    <string name="system_settings_summary_head">سىستېما ئۆزگىرىش خاتىرىسى، ھالەتلىرى، يېڭىلاش ئۇقتۇرۇشى</string>
+
+    <!--  Update Notifications -->
+    <string name="updatenotify_title">يېڭىلاش ئۇقتۇرۇشلىرى</string>
+    <string name="updatenotify_summary">ئەۋەتىلگەن يېڭىلاش ئۇقتۇرۇشىغا ئېرىشىش</string>
+
+    <!-- User interface -->
+    <string name="ui_title">ئىشلەتكۈچى ئارايۈزى</string>
+
+    <string name="pref_electron_beam_animation_on">ئېكران ئېچىلغاندىكى جانلاندۇرۇم</string>
+    <string name="pref_electron_beam_animation_off">ئېكران تاقالغاندىكى جانلاندۇرۇم</string>
+    <string name="pref_rotation_animation_title">ئايلاندۇرۇش جانلاندۇرۇمى</string>
+    <string name="pref_rotation_animation_summary">قايتا قوزغىتىش زۆرۈر</string>
+
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">سەزگۈر تاختا ئەلالاشتۇرۇشلىرى</string>
+    <string name="tablet_tweaks_summary_head">ئەڭ زۆرۈر تاختا تەڭشەكلىرى مۇشۇ جايغا توپلانغان، يانفوندىمۇ بۇ تەڭشەكلەرنى ئىشلەتكىلى بولىدۇ</string>
+    <string name="tablet_tweaks_sb_bottom_title">ئاستى ھالەت بالداق</string>
+    <string name="tablet_tweaks_sb_bottom_summary">ئاستىدا ھالەت بالداقنى كۆرسىتىدۇ. بۇ باش بەت، تىزىملىك قاتارلىق يۇمشاق توپچىلارنى ھالەت بالداققا جايلاشتۇرغان تاختىلارغا نىسبەتەن ناھايىتى قولايلىق</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">ئۆلۈك جاي</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">ھالەت بالداقنىڭ ئوتتۇرىسىغا يېرىم ئېكران كەڭلىكىدە پەرۋا قىلىنمايدىغان ئۆلۈك جايدىن بىرنى قوشىدۇ</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">يۇمشاق توپچا سولدا</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">يۇمشاق توپچىنى ھالەت بالداقنىڭ سول تەرىپىگە جايلاشتۇرىدۇ</string>
+    <string name="tablet_tweaks_soft_button_list_title">يۇمشاق توپچا تاللاڭ</string>
+    <string name="tablet_tweaks_interface_head">ئارايۈز</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">ئېكران قۇلۇپىنى چەكلە</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">قوزغىتىلغاندا مەيلى قوزغىلىۋاتقاندا ياكى ئىجرا قىلىنىۋاتقاندا بولسۇن ئېكران قۇلۇپ ياكى ئېكران قۇلۇپ ئاچ ئېكرانىنى كۆرسەتمەيدۇ</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">پۈتۈن ئېكراننى چەكلە</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">بۇ تاللانما قوزغىتىلسا مەيلى قوزغىلىۋاتقاندا ياكى ئىجرا قىلىنىۋاتقاندا بولسۇن ئېكران قۇلۇپ ياكى ئېكران قۇلۇپ ئاچ ئېكرانىنى كۆرسەتمەيدۇ</string>
+    <string name="tablet_tweaks_unhide_button_list_head">توپچىنى كۆرسەت</string>
+    <string name="tablet_tweaks_unhide_button_list_title">كۆرسىتىدىغان توپچىنى تاللاڭ</string>
+    <string name="tablet_tweaks_extend_pm_title">كېڭەيتىلگەن توك مەنبە تىزىملىك</string>
+    <string name="tablet_tweaks_extend_pm_summary">باش بەت/قايت/تىزىملىك قاتارلىق مەشغۇلاتلارنى توك مەنبە تىزىملىكىگە قوش</string>
+    <string name="tablet_tweaks_extend_pm_list_title">توك مەنبە تىزىملىك توپچىنى تاللاڭ</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">ئاۋاز مىقداراى مەشغۇلاتىنى ئەسلىگە قايتۇر</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">ئاۋاز مىقدارى توپچىسىنىڭ قىلمىشى ئادەتتىكىدەك. بېسىلسا ئاۋاز مىقدارىنى ئۆزگەرتىدۇ، ئۇزۇن بېسىلسا ئىشلەتكۈچى مەشغۇلاتىنى ئىجرا قىلىدۇ</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">ئاۋاز مىقدارى توپچىسىنىڭ قىلمىشىنى ئەسلىگە قايتۇرىدۇ. بېسىلسا ئىشلەتكۈچى مەشغۇلاتىنى ئىجرا قىلىدۇ، ئۇزۇن بېسىلسا ئاۋاز مىقدارىنى ئۆزگەرتىدۇ</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">ئاۋا مىقدارى كۇنۇپكىسىنى قايتا خەرىتىلەيدۇ</string>
+    <string name="tablet_tweaks_long_volp_action_title">ئۇزۇن بېسىلسا ئاۋازنى يۇقىرىلىتىدۇ</string>
+    <string name="tablet_tweaks_long_volp_action_summary">ئاۋاز مىقدارى توپچىسى ئۇزۇن بېسىلسا باش بەت/قايت/تىزىملىك قاتارلىق مەشغۇلاتلارنى ئىجرا قىلىش تەڭشىكى. ئېكران ئوچۇق ۋاقتىدىلا كۈچكە ئىگە</string>
+    <string name="tablet_tweaks_long_volm_action_title">ئۇزۇن بېسىلسا ئاۋازنى تۆۋەنلىتىدۇ</string>
+    <string name="tablet_tweaks_vol_both_action_title">قوش ئاۋاز توپچىسى</string>
+    <string name="tablet_tweaks_vol_both_action_summary">دىققەت: بەزى ئۈسكۈنىلەردە ئاۋاز مىقدارى توپچىسى بىلەن توك مەنبە توپچىسى بېسىلغاندا قاتتىق دېتال مەجبۇرىي قايتا قوزغىلىدۇ</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">قوش ئاۋاز توپچىسى ئۇزۇن بېسىلسا</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">توك مەنبە تىزىملىك توپچا</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">يۇمشاق توپچا</string>
+    <string name="tablet_soft_buttons_home_title">باش بەت</string>
+    <string name="tablet_soft_buttons_menu_title">تىزىملىك</string>
+    <string name="tablet_soft_buttons_back_title">قايت</string>
+    <string name="tablet_soft_buttons_search_title">ئىزدە</string>
+    <string name="tablet_soft_buttons_quick_na_title">تېز ئۇقتۇرۇش</string>
+
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">ئۆزلۈكىدىن ئايلاندۇرۇش بۇلۇڭى</string>
+    <string name="pref_rotation_0_title">0 گرادۇس</string>
+    <string name="pref_rotation_90_title">90 گرادۇس</string>
+    <string name="pref_rotation_180_title">180 گرادۇس</string>
+    <string name="pref_rotation_270_title">270 گرادۇس</string>
+
+    <!-- User interface: Status bar tweaks -->
+    <string name="ui_status_bar_title">ھالەت بالداق ئەلالاشتۇرۇشلىرى</string>
+    <string name="ui_status_bar_am_pm_title">چۈشتىن بۇرۇن/چۈشتىن كېيىن ئۇسلۇبى</string>
+    <string name="ui_status_bar_am_pm_summary">سائەتتىن كېيىن چۈشتىن بۇرۇن/چۈشتىن كېيىن ئۇسلۇبىنى كۆرسىتىدۇ</string>
+    <string name="ui_status_bar_clock_title">سائەتنى كۆرسەت</string>
+    <string name="ui_status_bar_clock_summary">ئەگەر چەكلەنسە، ھالەت بالداقتىكى سائەتنى يوشۇرىدۇ</string>
+    <string name="ui_status_bar_battery_title">توكدان ھالەت ئۇسلۇبى</string>
+    <string name="ui_status_bar_battery_summary">توكدان ھالىتىنىڭ ئۇسلۇبىنى كۆرسەت</string>
+    <string name="ui_status_bar_compact_carrier_title">تېلېگراف تىجارەتچىسىنىڭ بەلگىسىنى قىسقارت</string>
+    <string name="ui_status_bar_compact_carrier_summary">تارتما ئۇقتۇرۇش ئىستون ئۇسلۇبى ئارقىلىق ئالماشتۇرۇپ تېلېگراف تىجارەتچىسىنىڭ ئىسمىنى قىسقارتىپ كۆرسەت</string>
+    <string name="ui_status_bar_carrier_label_title">مۇلازىمەت تەمىنلىگۈچى بەلگە تىپى</string>
+    <string name="ui_status_bar_carrier_label_summary">مۇلازىمەت تەمىنلىگۈچىنىڭ بەلگىسىنى ئۆزگەرتىدۇ</string>
+    <string name="ui_status_bar_carrier_label_use_default">كۆڭۈلدىكى</string>
+    <string name="ui_status_bar_carrier_label_use_spn">SPN نى كۆرسەت</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">PLMN نى كۆرسەت</string>
+    <string name="ui_status_bar_carrier_label_use_custom">ئىختىيارىي مەتىن</string>
+    <string name="ui_status_bar_carrier_label_custom_title">ئىختىيارىي مۇلازىمەت تەمىنلىگۈچىنىڭ بەلگىسى</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">مۇلازىمەت تەمىنلىگۈچىنىڭ بەلگىسىنىڭ ئورنىغا ئالماشتۇرىلىدىغان مەتىن</string>
+    <string name="ui_status_bar_toggle_brightness">ھالەت بالداق يورۇقلۇق تىزگىنى</string>
+    <string name="ui_status_bar_toggle_brightness_summary">ھالەت بالداقنى سۈرۈپ يورۇقلۇقنى تەڭشەشكە يول قويىدۇ</string>
+    <string name="ui_status_bar_toggle_info">يورۇقلۇقنى ئۆزلۈكىدىن تەڭشەش قوزغىتىلدى</string>
+    <string name="ui_status_bar_cm_signal_text_title">زاپاس سىگنالنى كۆرسەت</string>
+    <string name="ui_status_bar_cm_signal_text_summary">سىگنال بالداقتا dBm قىممىتىنى كۆرسەت</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">سىگنال بالداق</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">سىگنال تېكىستى</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">سىگنال تېكىستى w/dBm</string>
+    <string name="ui_status_bar_headset_title">قۇلاقلىق سىنبەلگىسىنى كۆرسەت</string>
+    <string name="ui_status_bar_headset_summary">قۇلاقلىق چېتىلغاندا قۇلاقلىق سىنبەلگىسىنى كۆرسىتىدۇ</string>
+
+    <!-- User interface : LED Notifications -->
+    <string name="trackball_title">LED ئۇقتۇرۇش</string>
+    <string name="trackball_summary">ئىزلاش توپى تىزگىنى/LED ئۇقتۇرۇش رەڭگى ۋە لىپىلدىشى</string>
+
+    <!-- User interface : WebView -->
+    <string name="pref_pinch_reflow_title">چوڭايتىلغاندىن كېيىن مەزمۇن ئۆزلىكىدىن قۇر ئالمىشىدۇ</string>
+    <string name="pref_pinch_reflow_summary">كۆپ نۇقتا ئارقىلىق تور بەتنى چوڭايتقاندىن كېيىن مەزمۇن كۆزنەك چوڭلۇقىدا ئۆزلۈكىدىن قۇر ئالمىشىدۇ</string>
+
+    <!-- User interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">ئېكران كەسمىسى ھەمبەھىر</string>
+    <string name="pref_share_screenshot_summary">ئېكران كەسمىسىدە ھەمبەھىر تىزىملىكنى كۆرسىتىدۇ</string>
+
+    <!-- User interface : Overscroll -->
+    <string name="ui_overscroll_title">چېگرا ھالقىش</string>
+    <string name="pref_overscroll_title">چېگرا ھالقىش ئۈنۈمى</string>
+    <string name="pref_overscroll_summary">چېگرا ھالقىغاندىن كېيىنكى ئۈنۈمنى تاللاڭ</string>
+    <string name="pref_overscroll_weight_title">چېگرا ھالقىش دەرىجىسى</string>
+    <string name="pref_overscroll_weight_summary">چېگرا ھالقىغان نەڭ دەرىجىسىنى تاللاڭ</string>
+
+    <!-- User interface : Lock Screen -->
+    <string name="pref_lockscreen_delay_title">كېچىكتۈر</string>
+    <string name="pref_lockscreen_security_title">بىخەتەرلىك قۇلۇپى</string>
+    <string name="pref_lockscreen_security_delay_note_title">ئىزاھات</string>
+    <string name="pref_lockscreen_security_delay_note_summary">ئېكران قۇلۇپ بىخەتەرلىكى يوق دەپ تەڭشەلسە، بىخەتەرلىك قۇلۇپ كېچىكتۈرۈش تەڭشىكىلا ئىشلىتىلىدۇ</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">ئېكران مۆھلىتىنى كېچىكتۈرۈشى</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">ئېكران تاقاشنى كېچىكتۈرۈشى</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">ئېكران مۆھلىتى توشقاندا ئېكران بىخەتەرلىك قۇلۇپى قانچە ئۇزۇن كېچىكتۈرۈلىدۇ</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">ئېكران تاقالغاندا ئېكران بىخەتەرلىك قۇلۇپى قانچە ئۇزۇن كېچىكتۈرۈلىدۇ</string>
+    <string name="pref_lockscreen_slide_title">سۈرۈپ قۇلۇپلاڭ</string>
+    <string name="pref_lockscreen_slide_delay_note_title">ئىزاھات</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">ئەگەر قوزغىتىلسا، ئەگەر بىخەتەرلىك قۇلۇپىنىڭ كېچىكىشى سۈرۈپ قۇلۇپلاشنىڭ كېچىكتۈرۈشىدىن ئۇزۇن بولسا پەقەت بىخەتەر بولمىغان قۇلۇپلا كۆرۈنىدۇ</string>
+    <string name="pref_lockscreen_slide_delay_title">سۈرۈپ قۇلۇپلاش كېچىكتۈرۈشنى قوزغات</string>
+    <string name="pref_lockscreen_slide_delay_summary">بىخەتەرلىك قۇلۇپىنى كۆرسىتىشتىن ئىلگىرى سۈرۈپ قۇلۇپلاش ئېكرانىنىڭ ئايرىم كېچىكتۈرۈشىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">ئېكران مۆھلىتىنى كېچىكتۈرۈشى</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">ئېكران تاقاشنى كېچىكتۈرۈشى</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">ئېكران مۆھلىتى توشقاندا ئېكران سۈرۈش قۇلۇپى قانچە ئۇزۇن كېچىكتۈرۈلىدۇ</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">ئېكران تاقالغاندا ئېكران سۈرۈش قۇلۇپى قانچە ئۇزۇن كېچىكتۈرۈلىدۇ</string>
+
+    <!-- Color Picker -->
+    <string name="title_color_picker">رەڭ ئال</string>
+    <string name="msg_color_picker">ئوتتۇرىدىكى رەڭ تاللانسا جەزملەيدۇ.\nۋاز كەچكە قايت</string>
+
+    <!-- User interface: LED notifications -->
+    <string name="group_settings">تەڭشەكلەر</string>
+    <string name="dialog_color_trackball">رەڭ تاللاڭ</string>
+    <string name="dialog_blink_trackball">لىپىلداش چاستوتىسىنى تاللاڭ</string>
+    <string name="color_trackball_flash_title">لىپىلداش رەڭگى</string>
+    <string name="color_trackball_flash_summary">ئىزلاش توپىنىڭ رەڭگى</string>
+    <string name="color_trackball_custom_title">ئىختىيارىي رەڭ</string>
+    <string name="color_trackball_custom_summary">ئىزلاش توپىنىڭ ئىختىيارىي رەڭگى</string>
+    <string name="color_trackball_blink_title">لىپىلداش سۈرئىتى</string>
+    <string name="color_trackball_blink_summary">لىپىلداش سۈرئىتى</string>
+    <string name="color_trackball_test_title">قول چىراغ سىنا</string>
+    <string name="color_trackball_test_summary">قول چىراغنى سىنايدۇ</string>
+    <string name="dialog_clear_flash">قول چىراغنى تازىلا</string>
+    <string name="trackball_advanced_title">ئالىي</string>
+    <string name="pref_trackball_screen_title">ھەمىشە چاقنات</string>
+    <string name="pref_trackball_screen_summary">ئېكران ئوچۇق بولسا LED نى چاقنات</string>
+    <string name="pref_trackball_blend_title">ئارىلاش ئۇقتۇرۇش</string>
+    <string name="pref_trackball_blend_summary">ئارىلاش ئۇقتۇرۇش رەڭگى. ۋارىسلىقنى قاپلايدۇ</string>
+    <string name="pref_trackball_sucess_title">تەرتىپلىك ئۇقتۇرۇش</string>
+    <string name="pref_trackball_sucess_summary">تەرتىپلىك چاقناپ ھەر بىر ئۇقتۇرۇشنى كۆرسەت</string>
+    <string name="pref_trackball_random_title">ئىختىيارىي رەڭ</string>
+    <string name="pref_trackball_random_summary">ھەممە ئۇقتۇرۇشقا ئىختىيارىي رەڭ ئىشلىتىپ LED نى چاقنىتىدۇ</string>
+    <string name="pref_trackball_order_title">تەرتىپلىك چاقنات</string>
+    <string name="pref_trackball_order_summary">LED چىراغنى تەرتىپلىك چاقنىتىدۇ</string>
+    <string name="pref_trackball_reset_title">ئەسلىگە قايتۇر</string>
+    <string name="pref_trackball_reset_summary">ھەممە رەڭ ۋە پىروگراممىلارنىڭ تەڭشىكىنى ئەسلىگە قايتۇر</string>
+    <string name="dialog_trackball_loading">يۈكلەۋاتىدۇ\u2026</string>
+    <string name="dialog_trackball_packagelist">بوغچا تىزىمىنى يۈكلەۋاتىدۇ</string>
+    <string name="trackball_category_dialog_text">يېڭى بىر تۈر كىرگۈزۈڭ</string>
+    <string name="trackball_category_list_title">تۈر</string>
+    <string name="trackball_category_list_summary">بىر تۈر تاللاڭ</string>
+    <string name="trackball_category_screen">تۈر باشقۇرۇش</string>
+    <string name="trackball_category_add_title">تۈر قوش</string>
+    <string name="trackball_category_add_summary">تىزىمغا تۈر قوش</string>
+    <string name="trackball_category_add_error_title">خاتالىق</string>
+    <string name="trackball_category_add_error_summary">كاتېگورىيە ئاتى \'=\' نى ئۆز ئىچىگە ئالمايدۇ</string>
+    <string name="trackball_category_remove_title">تۈرنى چىقىرىۋەت</string>
+    <string name="trackball_category_remove_summary">بىر تۈرنى تىزىمدىن چىقىرىۋېتىدۇ</string>
+    <string name="trackball_category_edit_title">كاتېگورىيە تەڭشەك تەھرىر</string>
+    <string name="trackball_category_edit_summary">بۇ كاتېگورىيەنىڭ كۆڭۈلدىكى تەڭشىكىنى تەھرىرلەيدۇ</string>
+    <string name="trackball_reset_all">ھەممە رەڭ ۋە تۈرلەرنى ئەسلىگە قايتۇرىدۇ.</string>
+    <string name="trackball_color_notice_title">ئىزاھ:</string>
+    <string name="trackball_color_notice_summary">ھەممە رەڭ بارلىق ئۈسكۈنىلەردە كۆرۈنۈشى ناتايىن</string>
+    <string name="trackball_category_unconfigured">سەپلەنمىگەن</string>
+    <string name="trackball_category_misc">باشقىلار</string>
+    <string name="trackball_app_save_title">ساقلا</string>
+    <string name="trackball_app_save_summary">بۇ ئەپ ئۈچۈن تەڭشەكنى ساقلايدۇ</string>
+    <string name="trackball_app_reset_title">ئەسلىگە قايتۇر</string>
+    <string name="trackball_app_reset_summary">بۇ ئەپتىن ئۆزلەشتۈرگەن تەڭشەكنى چىقىرىۋېتىدۇ</string>
+
+    <string name="trackball_force_mode_title">LED ھالىتى</string>
+    <string name="trackball_force_mode_dialog">ھالەتتىن بىرنى تاللاڭ</string>
+    <string name="trackball_force_mode_summary">LED نىڭ قانداق كۆرسىتىلىدىغانلىق سەپلىمىسى</string>
+
+    <string name="trackball_app_email">ئېلخەت</string>
+    <string name="trackball_app_mms">ئۇچۇر يوللاۋاتىدۇ</string>
+    <string name="trackball_app_gvoice">گۇگىل ئۈن</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">جاۋابسىز چاقىرىش</string>
+
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">ئەپ تەڭشىكىنى ئىشلەت</string>
+    <string name="trackball_color_entry_green">يېشىل</string>
+    <string name="trackball_color_entry_white">ئاق</string>
+    <string name="trackball_color_entry_red">قىزىل</string>
+    <string name="trackball_color_entry_blue">كۆك</string>
+    <string name="trackball_color_entry_yellow">سېرىق</string>
+    <string name="trackball_color_entry_cyan">توق يېشىل</string>
+    <string name="trackball_color_entry_magenta">ئاچ قىزىل</string>
+    <string name="trackball_color_entry_pink">ھالرەڭ</string>
+    <string name="trackball_color_entry_orange">قىزغۇچ سېرىق</string>
+    <string name="trackball_color_entry_light_blue">سۇس كۆك</string>
+    <string name="trackball_color_entry_random">ئىختىيارىي</string>
+    <string name="trackball_color_entry_amber">كەھرىۋا</string>
+
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">كاتېگورىيە تەڭشىكىنى ئىشلەت</string>
+    <string name="trackball_force_mode_application">ئەپ تەڭشىكىنى ئىشلەت</string>
+    <string name="trackball_force_mode_off">يورۇتقۇچنى مەجبۇرىي تاقا</string>
+    <string name="trackball_force_mode_events">ھادىسە ئۈچۈن يورۇتقۇچنى مەجبۇرىي ئاچ</string>
+    <string name="trackball_force_mode_on">يورۇتقۇچنى مەجبۇرىي ئاچ</string>
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">ئاگاھلاندۇرۇش: توك سەرپىياتىنى ئاشۇرۇشى مۇمكىن</string>
+    <string name="notification_battery_warning">بۇ ئىقتىدارنى سىناشقا سائىتىگە تەخمىنەن 3% توك سەرپ قىلىدۇ.ئەگەر ئىزلاش چىرىغىنىڭ يانغاندا توك سەرپىياتى ئاشسا بۇ تاللانمىنى تاللىغانلىقتىن بولىدۇ. توك سەرپىياتى ئېشىشنى خالىمىسىڭىز بۇنى قوزغاتماڭ.</string>
+
+    <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">بىخەتەرلىكتىن ئاتلا</string>
+    <string name="pref_lockscreen_disable_on_security_summary">ئەگەر بىخەتەرلىك ئېكران قۇلۇپ (ئەندىزە، PIN، ئىم)ى قوزغىتىلغان بولسا ئېكران قۇلۇپىنى چەكلەيدۇ</string>
+    <string name="pref_lockscreen_stylecfg_title">ئۇسلۇب تاللانمىلىرى</string>
+    <string name="pref_lockscreen_stylecfg_summary">ئېكران قۇلۇپلاش ئۇسلۇبى ۋە مۇناسىپ تەڭشەكلەرنىڭ سەپلىمىسى</string>
+    <string name="pref_lockscreen_widgets_title">Widget تاللانما</string>
+    <string name="pref_lockscreen_widgets_summary">ئېكران قۇلۇپتا ھەر خىل widget لارنى قوزغات ياكى چەكلە</string>
+    <string name="pref_lockscreen_unlock_title">قۇلۇپ ئاچ تاللانمىلىرى</string>
+    <string name="pref_lockscreen_unlock_summary">توپچىدا قۇلۇپ ئېچىش ۋە تېز قۇلۇپ ئېچىشنى تىزگىنلەيدۇ</string>
+    <string name="pref_lockscreen_gesture_title">ئېكران قۇلۇپلاش قول ئىشارىتى</string>
+    <string name="pref_lockscreen_gesture_summary">قۇلۇپلاش ئېكرانىدا قول ئىشارىتىنى قوزغىتىپ ۋە سەپلەپ ئۆزلەشتۈرگەن ھەرىكەتنى تىزگىنلەيدۇ</string>
+    <string name="pref_lockscreen_timeout_title">كېچىكتۈرۈش ۋە مۆھلەت</string>
+    <string name="pref_lockscreen_timeout_summary">ئېكران مۆھلىتى ۋە ئېكران تاقاشنى كېچىكتۈرۈشنى سەپلەيدۇ</string>
+
+    <!-- Lockscreen Settings -->
+    <string name="pref_lockscreen_always_battery_title">ھەمىشە توكدان ھالىتىنى كۆرسەت</string>
+    <string name="pref_lockscreen_always_battery_summary">ئېكران قۇلۇپلانغاندا توكدان ھالىتىنى ھەمىشە كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_widgets_layout_title">Widget تاللانما</string>
+    <string name="pref_lockscreen_widgets_layout_summary">سائەت، چېسلا، تېلېگراف تىجارەتچىسى، ئورۇن جايلىشىشىنى ئالماشتۇرىدۇ</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">كۆڭۈلدىكى</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">يوشۇرۇن</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">ئوتتۇرىدا</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">ئوڭ</string>
+    <string name="pref_lockscreen_music_controls_title">ئېكران قۇلۇپلانغاندىكى نەغمە تىزگىنلىرى</string>
+    <string name="pref_lockscreen_music_controls_summary">ئېكران قۇلۇپلانغاندا نەغمە چېلىش تىزگىن توپچىلىرىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_now_playing_title">ناخشا ئاتىنى كۆرسەت</string>
+    <string name="pref_lockscreen_now_playing_summary">چېلىنىۋاتقان نەغمىنىڭ ناخشا ئاتى ۋە سەنئەتكارىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_album_art_title">پلاستىنكا توپلىمى رەسىمىنى كۆرسەت</string>
+    <string name="pref_lockscreen_album_art_summary">نۆۋەتتىكى ناخشىنىڭ پلاستىنكا توپلىمىنىڭ مۇقاۋىسىنى كۆرسىتىدۇ. ئىچىدىكى چالغۇچتىلا كۈچكە ئىگە</string>
+    <string name="pref_lockscreen_music_headset_title">قۇلاقلىق ئىشلەتكەندە نەغمە تىزگىنلىرىنى كۆرسەت</string>
+    <string name="pref_lockscreen_music_headset_summary">سىملىق قۇلاقلىق ياكى كۆكچىش قۇلاقلىقنى چاتقاندا نەغمە تىزگىنلىرىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_always_music_controls_title">نەغمە تىزگىنلىرىنى ھەمىشە كۆرسەت</string>
+    <string name="pref_lockscreen_always_music_controls_summary">نەغمە قويۇلسۇن ياكى قويۇلمىسۇن ھەمىشە نەغمە تىزگىنلىرىنى كۆرسىتىدۇ</string>
+    <string name="pref_trackball_wake_title">ئىزلاش شارچىدە ئويغات</string>
+    <string name="pref_trackball_wake_summary">ئىزلاش شارچە بېسىلسا ئۈسكۈنىنى ئويغىتىدۇ</string>
+    <string name="pref_volume_wake_title">ئاۋاز مىقدارى توپچىسىدا ئويغات</string>
+    <string name="pref_volume_wake_summary">ئاۋاز مىقدارىنى ئۆرلەت/تۆۋەنلەت توپچىسى بېسىلسا ئۈسكۈنىنى ئويغىتىدۇ. توك مەنبە توپچىسىنى بېسىش ئەپسىز ئۈسكۈنىلەردە ئىشلىتىلىدۇ</string>
+    <string name="pref_trackball_unlock_title">ئىزلاش شارچىدە قۇلۇپ ئاچ</string>
+    <string name="pref_trackball_unlock_summary">ئىزلاش شارچە بېسىلسا ئۈسكۈنە قۇلۇپى ئېچىلىدۇ</string>
+    <string name="pref_slider_unlock_title">ھەرپتاختا سۈرۈلسە قۇلۇپنى ئاچىدۇ</string>
+    <string name="pref_slider_unlock_summary">ھەرپتاختا سىرتقا سۈرۈلسە ئۈسكۈنە قۇلۇپى ئېچىلىدۇ</string>
+    <string name="pref_menu_unlock_title">تىزىملىكتە قۇلۇپ ئاچ</string>
+    <string name="pref_menu_unlock_summary">تىزىملىك توپچىسى بېسىلسا ئۈسكۈنە قۇلۇپى ئېچىلىدۇ</string>
+    <string name="pref_lockscreen_quick_unlock_control_title">تېز قۇلۇپ ئاچ</string>
+    <string name="pref_lockscreen_quick_unlock_control_summary">توغرا PIN/ئىم كىرگۈزۈلگەندە قۇلۇپ ئۆزلۈكىدىن ئېچىلىدۇ</string>
+    <string name="lockscreen_style_options_title">ئۇسلۇبنىڭ بەلگىلەنگەن تاللانمىسى</string>
+    <string name="pref_lockscreen_custom_app_toggle_title">ئىختىيارىي ئەپ قوزغاتقۇچ</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">ئىختىيارىي ئەپ قوزغاتقاندا ئىككىنچى سۈرگۈچنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">ئىختىيارىي ئەپ ئويۇقنى كۆرسىتىپ بىر ئىختىيارىي ئەپ قوزغىتىدۇ</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">ئۈچ ھالقا كۆرسىتىپ ئەڭ كۆپ بولغاندا تۆت ئىختىيارىپ ئەپتىن بىرنى قوزغىتىدۇ</string>
+    <string name="pref_lockscreen_custom_app_activity_title">ئىختىيارىي ئەپ</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">تەڭشەيدىغان قىسقا يولنى تاللاڭ</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">تەڭشىمەيدىغان قىسقا يولنى تاللاڭ</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">ۋاز كەچ</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">قوش</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">چىقىرىۋەت</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">تەڭشەلمىگەن</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">ئوتتۇرا ھالقىدا قۇلۇپ ئاچ</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">قۇلۇپ ئېچىشنى ئالماشتۇرۇش ۋە ئەپ قوزغىغۇچ ھالقىسىنىڭ ئورنى</string>
+    <string name="pref_lockscreen_ring_minimal_title">ئەڭ كىچىك ھالقا ئۇسلۇبى</string>
+    <string name="pref_lockscreen_ring_minimal_summary">قۇلۇپ ئېچىشقا ئىشلىتىدىغان ئوتتۇرىدا تۇرىدىغان ھالقىدىن بىرنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_custom_background_title">تەگلىك تاللاڭ</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">تەگلىك تاللاڭ</string>
+    <string name="pref_lockscreen_custom_background_summary">قۇلۇپلانغان ئېكراننىڭ تەگلىك سۈرىتى ياكى رەڭگىنى تاللاڭ</string>
+    <string name="pref_lockscreen_custom_background_summary_color">نۆۋەتتىكى: رەڭ</string>
+    <string name="pref_lockscreen_custom_background_summary_image">نۆۋەتتىكى: سۈرەت</string>
+    <string name="pref_lockscreen_custom_background_summary_default">نۆۋەتتىكى: كۆڭۈلدىكى</string>
+    <string name="pref_lockscreen_background_result_successful">تەگلىك ئۆزگەردى</string>
+    <string name="pref_lockscreen_background_result_not_successful">تەگلىك ئۆزگەرمىدى</string>
+    <string name="pref_lockscreen_custom_icon_style_title">ئىختىيارىي ئەپكە ئەپ سىنبەلگىسى ئىشلەت</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">ئىختىيارىي ئەپ ئۇچۇر سىنبەلگىسى ئىشلەتكەندە CM سىنبەلگىسىنى ئالماشتۇرىدۇ</string>
+    <string name="pref_lockscreen_rotary_unlock_down_title">تۆۋەنگە سۆرەلسە قۇلۇپ ئاچ</string>
+    <string name="pref_lockscreen_rotary_unlock_down_summary">شارچە تۆۋەنگە سۈرۈلسە قۇلۇپ ئاچىدۇ. ئوڭغا سۈرۈلسە ئىختىيارىي ئەپنى قوزغىتىدۇ</string>
+    <string name="pref_lockscreen_rotary_hide_arrows_title">ئايلىنىدىغان يا ئوقنى يوشۇر</string>
+    <string name="pref_lockscreen_rotary_hide_arrows_summary">ئايلاندۇرۇش ئۇسلۇبىدا ئەسكەرتىش يا ئوقنى يوشۇرىدۇ</string>
+    <string name="pref_lockscreen_style_title">ئېكران قۇلۇپلاش ئۇسلۇبى</string>
+    <string name="pref_lockscreen_style_summary">ئېكران قۇلۇپلاش ئۇسلۇبىنى تاللاڭ</string>
+    <string name="lockscreen_style_entry_tabs">سۈر</string>
+    <string name="lockscreen_style_entry_rotary">ئايلاندۇر</string>
+    <string name="lockscreen_style_entry_lense">ئايلاندۇرۇپ ئەكسىچە سىلجىت</string>
+    <string name="lockscreen_style_entry_ring">ھالقا</string>
+    <string name="pref_rotary_style_title">ئايلاندۇرۇش ئۇسلۇبى</string>
+    <string name="pref_rotary_style_summary">ئايلاندۇرۇش ئۇسلۇبىنى تاللاڭ</string>
+    <string name="rotary_style_entry_normal">ئادەتتىكى ئۇسلۇب</string>
+    <string name="rotary_style_entry_revamped">يېپيېڭى ئۇسلۇب</string>
+    <string name="pref_ringlock_style_title">ھالقا قۇلۇپ ئۇسلۇبى</string>
+    <string name="pref_ringlock_style_summary">قۇلۇپ ھالقا ئۇسلۇبىنى تاللاڭ</string>
+    <string name="ringlock_style_entry_bubbles">كۆپۈكچە ئۇسلۇبى</string>
+    <string name="ringlock_style_entry_revamped">يېپيېڭى ئۇسلۇب</string>
+    <string name="ringlock_style_entry_holo">Holo ئۇسلۇبى</string>
+    <string name="ringlock_style_entry_blade">يوپۇرماق ئۇسلۇبى</string>
+    <string name="pref_in_call_style_title">چاقىرىلغاندىكى ئۇسلۇب</string>
+    <string name="pref_in_call_style_summary">چاقىرىلغاندا جاۋاب/رەت قىلغاندىكى widget ئۇسلۇبىنى تاللاڭ</string>
+    <string name="incall_style_entry_tabs">سۈر</string>
+    <string name="incall_style_entry_rotary">ئايلاندۇر</string>
+    <string name="incall_style_entry_ring">ھالقا</string>
+    <string name="lockscreen_music_title">نەغمە تىزگىنلىرى</string>
+    <string name="pref_volbtn_music_controls_title">ئاۋاز مىقدارى توپچىسىدا نەغمە تىزگىنلىرى</string>
+    <string name="pref_volbtn_music_controls_summary">ئېكران تاقالغاندا ئاۋاز مىقدارى توپچىسى ئۇزۇن بېسىلسا نەغمە ئىزدەيدۇ</string>
+    <string name="pref_cambtn_music_controls_title">كامېرا توپچىسىدا نەغمە تىزگىنلىرى</string>
+    <string name="pref_cambtn_music_controls_summary">ئېكران تاقالغاندا كامېرا توپچىسى ئۇزۇن بېسىلسا نەغمە چال/ۋاقىتلىق توختاتنى ئالماشتۇرىدۇ</string>
+    <string name="lockscreen_widgets_note_title">ئىزاھات</string>
+    <string name="lockscreen_widgets_note_summary">ئاددىي لىنزا ئۇسلۇبى تاللانسا نەغمە تىزگىنىنىلا كۆرسىتىدۇ. ئەمما تۆۋەندىكى تاللانما تەڭشەكنى بىكار قىلماي باشقا ئۇسلۇبقا ئاسانلا ئالماشتۇرىدۇ.</string>
+    <string name="lockscreen_calendar_title">ئېكران قۇلۇپ يىلنامە</string>
+    <string name="pref_lockscreen_calendar_alarm_title">كېيىنكى يىلنامە پائالىيىتىنى كۆرسەت</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">كېيىنكى يىلنامە پائالىيىتىنىڭ ۋاقتى ۋە ماۋزۇسىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_calendars_title">پائالىيەت يىلنامەسى</string>
+    <string name="pref_lockscreen_calendars_summary">بۇ يىلنامەدىن پائالىيەت ئىزدە</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">ئەسكەرتىشلا</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">ئەسكەرتىشى بار پائالىيەتنىلا ئىزدە</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">يىلنامە پائالىيەت ئالدى كۆرۈنۈشى</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">كەلگۈسىدە يىلنامە پائالىيەتنى قانداق ئىزدەيدۇ</string>
+    <string name="pref_lockscreen_calendar_show_location_title">پائالىيەت ئورنىنى كۆرسەت</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">ماۋزۇ ئاستىدا پائالىيەت ئورنىنى كۆرسىتىدۇ</string>
+    <string name="pref_lockscreen_calendar_show_description_title">پائالىيەت چۈشەندۈرۈشىنى كۆرسەت</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">ماۋزۇ ئاستىدا پائالىيەت چۈشەندۈرۈشىنى كۆرسىتىدۇ</string>
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">كىرگۈزگۈچ تەڭشەك</string>
+    <string name="haptic_title">تىترەش ئىنكاسى ئەلالاشتۇرۇشلىرى</string>
+    <string name="haptic_summary">تىترەش ئىنكاسىنىڭ يۈز بېرىش شەرتى ۋە ئۇسۇلى تەڭشىلىدۇ</string>
+    <string name="long_press_home_title">باش بەت توپچىسى ئۇزۇن بېسىلسا تەڭشەكلىرى</string>
+    <string name="long_press_home_summary">يېقىندا ئېچىلغان ئەپ سانى قاتارلىق</string>
+    <string name="input_search_key_title">ئىزدە توپچىسىنىڭ ھەرىكىتى</string>
+    <string name="input_search_key_summary">ئىزدە توپچا ۋە ئىزدەش توپچا ئۇزۇن بېسىلغاندىكى ئىختىيارىي مەشغۇلات تەڭشىكى</string>
+    <string name="pref_input_custom_search_app_toggle_title">ئىزدە توپچا پىروگراممىسى</string>
+    <string name="pref_input_custom_search_app_toggle_summary">ئىزدە توپچا بېسىلغاندا ئىختىيارىي ئەپنى ئىجرا قىلىدۇ</string>
+    <string name="pref_input_custom_search_app_activity_title">ئىختىيارىي ئەپ</string>
+    <string name="pref_input_custom_long_search_app_toggle_title">ئىزدە پىروگراممىنى ئۇزۇن بېسىڭ</string>
+    <string name="pref_input_custom_long_search_app_toggle_summary">ئىزدە توپچا ئۇزۇن بېسىلسا ئىختىيارىي ئەپ قوزغىلىدۇ</string>
+    <string name="pref_backtrack_title">ئەكسى ئىزلاش كىچىك تاختا</string>
+    <string name="pref_backtrack_summary">ئەكسى ئىزلاش كىچىك تاختا قوزغات/چەكلە </string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">تىزىملىك توپچا ئۇزۇن بېسىلسا تەڭشەكلىرى</string>
+    <string name="long_press_menu_summary">تىزىملىك توپچا ئۇزۇن بېسىلغاندىكى ئىختىيارىي تەڭشەك</string>
+    <string name="pref_user_defined_long_press_menu_title">ئىختىيارىي ئەپنى تاللاڭ</string>
+    <string name="pref_long_press_menu_title">مەشغۇلاتنى تاللاڭ</string>
+    <string name="pref_long_press_menu_summary">تىزىملىك توپچا ئۇزۇن بېسىشنى ئۆزلەشتۈر</string>
+
+    <!-- Long Press Home -->
+    <string name="recent_apps_show_title">يېقىنقى پىروگراممىلارنىڭ ماۋزۇسىنى كۆرسەت</string>
+    <string name="recent_apps_num_title">يېقىنقى پىروگراممىلارنىڭ سانى</string>
+    <string name="recent_apps_num_summary">باش بەت توپچا ئۇزۇن بېسىلغاندا ئېچىلىدىغان ئەپ تىزىملىكىدە كۆرسىتىدىغان ئەپ سانى</string>
+    <string name="dialog_recent_apps_num_title">يېقىندا ئاچقان ئەپ سانى تەڭشىكى</string>
+    <string name="use_custom_app_title">ئىختىيارىي ئەپ ئىشلەت</string>
+    <string name="use_custom_app_summary">يېقىندا ئىشلەتكەن ئەپ سۆزلەشكۈسىنى ئىشلەتمەي، ئىختىيارىي ئەپنى ئىشلىتىدۇ</string>
+    <string name="select_custom_app_title">ئىختىيارىي ئەپنى تاللاڭ</string>
+    <string name="group_applications">پىروگراممىلار</string>
+
+    <!-- HapticTweaks -->
+    <string name="title_haptic_feedback">تىترەش ئىنكاسى</string>
+    <string name="summary_on_haptic_feedback">يۇمشاق توپچا چېكىلگەن ياكى قىسمەن ئارايۈز مەشغۇلاتىدا تىترەش ئىنكاسىنى ئىشلىتىدۇ</string>
+    <string name="summary_off_haptic_feedback">يۇمشاق توپچا چېكىلگەن ياكى قىسمەن ئارايۈز مەشغۇلاتىدا تىترەش ئىنكاسىنى چەكلەيدۇ</string>
+
+    <string name="title_haptic_feedback_up">تىترەش ئىنكاسى ئۈستىگە</string>
+    <string name="summary_on_haptic_feedback_up">يۇمشاق توپچا چېكىلمىگەن ياكى قىسمەن ئارايۈز مەشغۇلاتىدا تىترەش ئىنكاسىنى ئىشلىتىدۇ</string>
+    <string name="summary_off_haptic_feedback_up">يۇمشاق توپچا چېكىلمىگەن ياكى قىسمەن ئارايۈز مەشغۇلاتىدا تىترەش ئىنكاسىنى چەكلەيدۇ</string>
+
+    <string name="title_haptic_feedback_all">سەزگۈر ئېكران تىترەش تۈرلىرى</string>
+    <string name="summary_on_haptic_feedback_all">سەزگۈر ئېكراندا مەشغۇلات قىلغاندا تىترەش ئىنكاسىنى ئىشلەت</string>
+    <string name="summary_off_haptic_feedback_all">سەزگۈر ئېكراندا مەشغۇلات قىلغاندا تىترەش ئىنكاسىنى چەكلە</string>
+
+    <string name="title_haptic_down_decider">بېسىلغاندا تىترەش ئەندىزىسى</string>
+    <string name="title_haptic_up_decider">بېسىلمىغاندا تىترەش ئەندىزىسى</string>
+    <string name="title_haptic_long_decider">ئۇزۇن بېسىلغاندا تىترەش ئەندىزىسى</string>
+    <string name="title_haptic_tap_decider">ئېكران ھەرپتاختا تىترەش ئەندىزىسى</string>
+
+    <string name="title_haptic_menu">تىترەش تەڭشىكى</string>
+    <string name="title_haptic_notice">قايتا قوزغىتىلغاندىن كېيىن ئاندىن ئومۇمىيەت ئۆزگەرتىشلىرى كۈچكە ئىگە بولىدۇ</string>
+
+    <string name="haptic_delay_desc">توختا ۋاقتى مىللىسېكۇنت</string>
+    <string name="haptic_vibe_desc">تىترەش ۋاقىت مىللىسېكۇنت</string>
+
+    <string name="haptic_down_description">توپچا بېسىلغاندىكى تىترەش قىممىتى تەڭشىكى\n(مەۋھۇم ھەرپتاختا ۋە كۆپ قىسىم ئارايۈز مەشغۇلاتى.)</string>
+    <string name="haptic_up_description">توپچا بېسىپ قويۇۋېتىلگەندىكى تىترەش قىممىتى تەڭشىكى\n(مەۋھۇم ھەرپتاختا ۋە كۆپ قىسىم ئېكران مەشغۇلاتى.)</string>
+    <string name="haptic_long_description">ئېكران ھەرپتاختا ئۇزۇن بېسلغاندىكى تىترەش قىممىتى</string>
+    <string name="haptic_tap_description">ئېكران ھەرپتاختا تىترەش قىممىتى تەڭشىكى</string>
+
+    <string name="haptic_plus_minus_desc">قوشۇش ياكى ئېلىش توپچىسى بېسىلغاندا تىزىمغا قوش ياكى چىقىرىۋەت قەدەم باسقۇچى</string>
+
+    <string name="haptic_button_plus">+</string>
+    <string name="haptic_button_minus">-</string>
+
+    <string name="haptic_button_save">ساقلا</string>
+    <string name="haptic_button_test">سىنا</string>
+    <string name="haptic_button_cancel">ۋاز كەچ</string>
+    <string name="haptic_button_revert">ئۆزگىرىشلەرنى ئەسلىگە ياندۇر</string>
+    <string name="haptic_button_default">كۆڭۈلدىكىنى يۈكلە</string>
+
+    <string name="haptic_save_toast">تىترەش قىممىتىنى ساقلاۋاتىدۇ:</string>
+    <string name="haptic_cancel_toast">تىترەش قىممىتى ئۆزگەرمىدى</string>
+    <string name="haptic_revert_toast">ئاخىرقى ئىشلەتكەن قىممەتنى ئەسلىگە كەلتۈرۈۋاتىدۇ</string>
+    <string name="haptic_default_toast">كۆڭۈلدىكى قىممەتنى يۈكلەۋاتىدۇ</string>
+
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">ئۈنۈم تەڭشەكلىرى</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">پىرىسلانغان ئەسلەك ئىشلەت</string>
+    <string name="pref_compcache_summary">ئەسلەكنى پىرىسلاپ مەۋھۇم بوشلۇقنى كېڭەيتىدۇ(قايتا قوزغىتىش زۆرۈر)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">JIT ئىشلەت</string>
+    <string name="pref_jit_mode_summary">Dalvik JIT ھاسىللاشنى ئىشلەت (قايتا قوزغىتىش زۆرۈر)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">ئەگرى يۈز تىترىتىشنى قوزغات</string>
+    <string name="pref_use_dithering_summary">ئەگرى يۈز تىترىتىش قوزغىتىلسا سۈرەت سۈپىتىنى ئۆستۈرگىلى بولىدۇ ئەمما ئۈنۈمىگە تەسىر كۆرسىتىدۇ (قايتا قوزغىتىش زۆرۈر)</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16 بىتلىق سۈزۈكلۈكنى ئىشلەت</string>
+    <string name="pref_use_16bpp_alpha_summary">16 بىتلىق سۈزۈكلۈك ئىشلەتكەندە دومىلاش ئۈنۈمى ئۆسۈشى مۇمكىن ئەمما كۆرۈنۈش ئۈنۈمىنى كەلتۈرۈپ چىقىرىشى مۇمكىن (قايتا قوزغىتىش زۆرۈر) </string>
+
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">دومىلىتىش غەملىكى</string>
+    <string name="pref_scrollingcache_summary">دومىلىتىش غەملىكى ئىچكى ساقلىغۇچنى ئىشلىتىش بەدىلىگە دومىلىتىش ئۈنۈمىنى ئۆستۈرىدۇ</string>
+    <string name="pref_scrollingcache_force_enable">مەجبۇرىي قوزغات</string>
+    <string name="pref_scrollingcache_default_enable">كۆڭۈلدىكى قوزغات</string>
+    <string name="pref_scrollingcache_default_disable">كۆڭۈلدىكى چەكلە</string>
+    <string name="pref_scrollingcache_force_disable">مەجبۇرىي چەكلە</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">سۈرەت تازىلاشقا يول قوي</string>
+    <string name="pref_purgeable_assets_summary">سىستېمىغا زۆرۈر بولسا ئىشلەتمىگەن سۈرەتنى تازىلاپ تېخىمۇ كۆپ ئەسلەك تەمىنلەيدۇ (قايتا قوزغىتىش زۆرۈر)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">مەۋھۇم ماشىنا ئەسلەك چوڭلۇقى</string>
+    <string name="pref_heapsize_summary">ھەر بىر مەۋھۇم ماشىنا ئىشلىتەلەيدىغان ئەڭ چوڭ ئەسلەك تەڭشىكى (قايتا قوزغىتىش زۆرۈر)</string>
+
+    <!-- Performance : Disable bootanimation -->
+    <string name="pref_disable_bootanimation_title">قوزغىلىشتىكى جانلاندۇرۇمنى چەكلە</string>
+    <string name="pref_disable_bootanimation_summary">تېز قوزغىتىشتا قوزغىلىش جانلاندۇرۇمنى كۆرسەتمە</string>
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">ئۈستەلئۈستىنى ئەسلەكتە قۇلۇپلا</string>
+    <string name="pref_lock_home_summary">ھەر قانداق ئەھۋالدا نۆۋەتتىكى ئۈستەلئۈستى پىروگراممىسىنىڭ سىستېما تەرىپىدىن ئەسلەكتىن تازىلىۋېتىشىنىڭ ئالدىنى ئالىدۇ</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">ئۇچۇر پىروگراممىسىنى ئەسلەكتە قۇلۇپلا</string>
+    <string name="pref_lock_mms_summary">ئەسلەك يېتىشمىگەندە ئۇچۇر يوقاپ كېتىشنىڭ ئالدىنى ئالىدۇ</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">ئاگاھلاندۇرۇش: ئالدىڭىزدا غەلىتە مەخلۇق بار!</string>
+    <string name="performance_settings_warning">بۇ جايدىكى تاللانمىلار سىستېما ئۈنۈمىنى ئۆزگەرتىدۇ، بۇنداق بولغاندا ئۆزگەرتىش سىستېما ئۈنۈمىنى تېخىمۇ ناچارلاشتۇرۇۋېتىشى مۇمكىن. ئۇلار پەقەت تەجرىبە ئۈچۈنلا ئىشلىتىلىدۇ، ئەگەر بۇ جايدىكى تەڭشەكلەرنى ئۆزگەرتكەن بولسىڭىز بىزگە كەمتۈكلۈك دوكلاتى يوللاپ يۈرمەڭ.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">ئەپ تەڭشىكى</string>
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">ئىچىدىكى ساقلىغۇچنى ئىشلەت</string>
+    <string name="pref_switch_storage_summary_on">ئەپ ۋە ۋاستە ئۈچۈن كېڭەيتىلگەن ئىچىدىكى ساقلىغۇچنى ئىشلىتىدۇ (قايتا قوزغىتىش زۆرۈر)</string>
+    <string name="pref_switch_storage_summary_off">ئەپ ۋە ۋاستە ئۈچۈن يۆتكىلىشچان كارتا ئىشلىتىدۇ (قايتا قوزغىتىش زۆرۈر)</string>
+    <string name="pref_storage_switch_unavailable">بۇ ئۈسكۈنىدە كېڭەيتىلگەن ئىچىدىكى ساقلىغۇچ يوق</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">ئەپ يۆتكەشكە يول قوي</string>
+    <string name="pref_move_all_apps_summary">خالىغان ئەپنى سىرتقى ساقلىغۇچقا يۆتكەشكە يول قويىدۇ</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">ئورنىتىش ئورنى</string>
+    <string name="pref_install_location_summary">يېڭى ئەپ ئورنىتىلىدىغان ئورۇننى تاللاڭ</string>
+
+    <string name="general_title">ئادەتتىكى</string>
+    <string name="camera_title">كامېرا</string>
+    <string name="buttons_title">توپچىلار</string>
+
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">توك مەنبە ئەسكەرتىشى</string>
+    <string name="pref_power_prompt_summary">تاقاش ياكى قايتا قوزغىتىش مەشغۇلاتى ئىجرا قىلغاندا ئەسكەرتىش قاڭقىتىش قاڭقىتماسلىقنى تاللاڭ</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">تىترەش ئىنكاسى</string>
+    <string name="expanded_haptic_feedback_summary">تىترەش ئىنكاسىنى قوزغات/چەكلە</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">ھاسىللاش ئۈنۈمى</string>
+    <string name="pref_render_effect_summary">ئېكران سىزغاندا ئىشلىتىدىغان رەڭ (توك سەرپىياتىنى تۆۋەنلىتىشى مۇمكىن)</string>
+
+    <string name="widget_name">RenderFX Widget</string>
+    <string name="renderfx_temp">RenderFX</string>
+    <string name="pref_widget_options_category_title">ئادەتتىكى تاللانما</string>
+    <string name="prefs_render_effect">ھاسىللاش ئۈنۈمى</string>
+    <string name="notify_render_effect">ھاسىللاش ئۈنۈمى ئوچۇق</string>
+    <string name="add_widget">widget قوش</string>
+    <string name="pref_render_effect_none">ھاسىللاش ئۈنۈمى يوق</string>
+    <string name="pref_render_effect_night">كېچە ھالىتى (3700K)</string>
+    <string name="pref_render_effect_green">تېرمىنال (يېشىل)</string>
+    <string name="pref_render_effect_blue">كۆك</string>
+    <string name="pref_render_effect_amber">كەھرىۋا</string>
+    <string name="pref_render_effect_salmon">سارغۇچ قىزىل</string>
+    <string name="pref_render_effect_fuscia">Fuscia</string>
+    <string name="pref_render_effect_calibrated">ئەلالاشتۇرۇلغان (N1)</string>
+    <string name="pref_render_effect_calibrated_red">ئەلالاشتۇرۇلغان (N1) قىزىل ئاز</string>
+    <string name="pref_render_effect_calibrated_cool">ئەلالاشتۇرۇلغان (N1) سوغۇق</string>
+    <string name="pref_render_effect_red">قىزىل</string>
+
+    <!-- Widget Types -->
+    <string name="widget_render_effect_night">كېچە</string>
+    <string name="widget_render_effect_terminal">تېرمىنال</string>
+    <string name="widget_render_effect_blue">كۆك</string>
+    <string name="widget_render_effect_amber">كەھرىۋا</string>
+    <string name="widget_render_effect_salmon">سارغۇچ قىزىل</string>
+    <string name="widget_render_effect_fuscia">Fuscia</string>
+    <string name="widget_render_effect_red">قىزىل</string>
+    <string name="widget_render_effect_calibrated">ئەلالاشتۇرۇلغان</string>
+    <string name="widget_render_effect_calibrated_red">ئەلالاشتۇرۇلغان  قىزىل ئاز</string>
+    <string name="widget_render_effect_calibrated_cool">ئەلالاشتۇرۇلغان سوغۇق</string>
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">كېڭەيتىلگەن كۆرۈنۈش Widget</string>
+    <string name="title_expanded_widget">ئۇقتۇرۇش بالداق توك مەنبە widget</string>
+    <string name="summary_expanded_widget">كېڭەيتىلگەن كۆرۈنۈشنىڭ توك مەنبە widget نى ئىشلىتىدۇ</string>
+    <string name="title_expanded_hide_onchange">ئۆزگەرتكەندە يوشۇر</string>
+    <string name="summary_expanded_hide_onchange">widget توپچىنى ئالماشتۇرغاندىن كېيىن تارتما ئۇقتۇرۇش بالداقنى يوشۇرىدۇ</string>
+    <string name="title_expanded_hide_indicator">كۆرسەتكۈچنى يوشۇر</string>
+    <string name="summary_expanded_hide_indicator">widgets ئاستىدىكى ئەسكەرتىشنى يوشۇرىدۇ</string>
+    <string name="title_expanded_hide_scrollbar">سىيرىغۇچنى يوشۇر</string>
+    <string name="summary_expanded_hide_scrollbar">تاللىغان widget سانى يۇقىرى چەكتىن ئېشىپ كەتسىمۇ سىيرىغۇچنى يوشۇرىدۇ.</string>
+    <string name="expanded_color_mask">كۆرسەتكۈچ رەڭگى</string>
+    <string name="title_widget_picker">Widget توپچا</string>
+    <string name="summary_widget_picker">لازىملىق widget توپچىنى تاللاڭ</string>
+    <string name="title_widget_order">widget توپچا تەرتىپى</string>
+    <string name="summary_widget_order">widget توپچا تەرتىپىڭىز</string>
+    <string name="title_buttons">توپچىلار</string>
+    <string name="title_toggle_wifi">Wifi ئالماشتۇر</string>
+    <string name="title_toggle_bluetooth">كۆكچىش ئالماشتۇر</string>
+    <string name="title_toggle_gps">GPS ئالماشتۇر</string>
+    <string name="title_toggle_sound">ئاۋاز ئالماشتۇر</string>
+    <string name="title_toggle_brightness">يورۇقلۇقنى ئالماشتۇر</string>
+    <string name="title_toggle_sync">قەدەمداشنى ئالماشتۇر</string>
+    <string name="title_toggle_wifiap">Wifi ئاكتىپ نۇقتا ئالماشتۇر</string>
+    <string name="title_toggle_screentimeout">ئېكران مۆھلىتىنى ئالماشتۇر</string>
+    <string name="title_toggle_mobiledata">كۆچمە سانلىق مەلۇمات ئالماشتۇر</string>
+    <string name="title_toggle_lockscreen">ئېكران قۇلۇپ ئالماشتۇر</string>
+    <string name="title_toggle_networkmode">2G/3G ئالماشتۇر</string>
+    <string name="title_toggle_autorotate">يۆنىلىش ئالماشتۇر</string>
+    <string name="title_toggle_airplane">ئايروپىلان ھالىتىنى ئالماشتۇر</string>
+    <string name="title_toggle_flashlight">LED قول چىراغ ئالماشتۇر</string>
+    <string name="title_toggle_sleep">ئۇخلات</string>
+    <string name="title_toggle_media_play_pause">ۋاستە: چال/ۋاقىتلىق توختا</string>
+    <string name="title_toggle_media_previous">ۋاستە: ئالدىنقىغا ئاتلا</string>
+    <string name="title_toggle_media_next">ۋاستە: كېيىنكىگە ئاتلا</string>
+    <string name="title_toggle_wimax">WiMAX ئالماشتۇر</string>
+    <string name="title_button_modes">توپچا ھالىتى</string>
+    <string name="pref_brightness_mode_title">يورۇقلۇق ھالىتى</string>
+    <string name="pref_brightness_mode_summary">يورۇقلۇق توپچىنىڭ ئالمىشىش ھالىتىنى تاللاڭ</string>
+    <string name="cm_brightness_mode_auto">ئاپتوماتىك</string>
+    <string name="cm_brightness_mode_dim">غۇۋالاشتۇر</string>
+    <string name="pref_network_mode_title">تور ھالىتى</string>
+    <string name="pref_network_mode_summary">تور توپچىنىڭ ئالمىشىش ھالىتىنى تاللاڭ</string>
+    <string name="pref_screentimeout_mode_title">ئېكران مۆھلىتى ھالىتى</string>
+    <string name="pref_screentimeout_mode_summary">ئېكران مۆھلىتى توپچىنىڭ ئالمىشىش ھالىتىنى تاللاڭ</string>
+    <string name="pref_ring_mode_title">ئاۋاز ھالىتى</string>
+    <string name="pref_ring_mode_summary">ئاۋاز توپچىنىڭ ئالمىشىش ھالىتىنى تاللاڭ</string>
+    <string name="cm_sound_mode_silent">ئۈنسىز</string>
+    <string name="cm_sound_mode_vibrate">تىترەت</string>
+    <string name="cm_sound_mode_sound">ئاۋاز</string>
+    <string name="cm_sound_mode_soundVibrate">ئاۋاز+تىترەت</string>
+    <string name="pref_flash_mode_title">قول چىراغ ھالىتى</string>
+    <string name="pref_flash_mode_summary">يورۇق/خۇنۈك ھالەتنى تاللاڭ</string>
+    <string name="pref_mobiledatanetwork_mode_title">2G/3G ئالماشتۇر</string>
+    <string name="pref_mobiledatanetwork_mode_summary">كۆچمە سانلىق مەلۇمات 2G/3G ھالىتىنى ئالماشتۇرۇش توپچىسى</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">ئاپتوماتىك تەگ نۇرى</string>
+    <string name="backlight_summary">تەڭشەش دەرىجىسى ۋە سۈزگۈچ</string>
+    <string name="light_filter_title">نۇر سەزگۈچ سۈزگۈچ</string>
+    <string name="light_filter_enabled_title">قوزغىتىلغان</string>
+    <string name="light_filter_enabled_summary">نۇر سەزگۈچ ئېرىشكەن سانلىق مەلۇماتلارنى كۆچمە سۇپا ئۈچۈن ھېسابلاپ يورۇقلۇقنى كۆپ تەڭشەپ ئېكراننىڭ لاپىلدىشىنىڭ ئالدىنى ئالىدۇ</string>
+    <string name="light_filter_window_title">كۆزنەك ئۇزۇنلۇقى</string>
+    <string name="light_filter_window_summary">بۇ ۋاقىت بۆلىكىدىكى نۇر سەزگۈچ ئېرىشكەن سانلىق مەلۇماتنىڭ ئوتتۇرىچە قىممىتىنى ئىشلىتىدۇ</string>
+    <string name="light_filter_reset_title">بوسۇغا قىممەتنى ئەسلىگە قايتۇر</string>
+    <string name="light_filter_reset_summary">ئەگەر نۇر سەزگۈچ سانلىق مەلۇماتلىرى نۆۋەتتىكى ئوتتۇرىچە قىممەتنىڭ ئۆزگىرىشىدىكى بوسۇغا قىممەتتىن ئېشىپ كەتسە ئۇنداقتا كۆچمە ئوتتۇرىچە قىممەت ھېسابلاشنى ئەسلىگە قايتۇرۇپ، نۇر زۆر دەرىجىدە ئۆزگەرگەن ئەھۋالدا تېز ئىنكاس قايتۇرىدۇ.</string>
+    <string name="light_filter_interval_title">ئۈلگە توپلاش ئارىلىقى</string>
+    <string name="light_filter_interval_summary">ئارىلىق قانچە قىسقا بولسا دەللىكى شۇنچە يۇقىرى بولىدۇ ئەمما تېخىمۇ كۆپ CPU سەرپ قىلىدۇ</string>
+    <string name="light_levels_title">يورۇقلۇق دەرىجىسى</string>
+    <string name="light_levels_enabled_title">ئىختىيارىي ئىشلەت</string>
+    <string name="light_levels_dim_title">ئېكران غۇۋالىق دەرىجىسى</string>
+    <string name="light_levels_dim_summary">ئېكران غۇۋالاشقاندا ئىشلىتىدىغان ئېكران يورۇقلۇق دەرىجە قىممىتى</string>
+    <string name="light_levels_editor_title">باشقا دەرىجە تەھرىر…</string>
+    <string name="light_decrease_enabled_title">يورۇقلۇقنى ئاجىزلىتىشقا يول قوي</string>
+    <string name="light_decrease_enabled_summary">بۇ تاللانما تاللانسا يورۇقلۇقنى ئاجىزلىتىشقا يول قويىدۇ، كېچىكتۈرۈش تاللانمىسى يورۇقلۇقنى تەڭشەشتىن كېلىپ چىققان ئېكراننىڭ تولا لاپىلدىشىنىڭ ئالدىنى ئالىدۇ</string>
+    <string name="light_decrease_hysteresis_title">يورۇقلۇق كېچىكتۈرۈشنى ئاجىزلات</string>
+    <string name="light_decrease_hysteresis_summary">نۇر سەزگۈچ سانلىق مەلۇماتى بىر سەۋىيە تۆۋەنلىگەندىن كېيىن اندىن ئېكران يورۇقلۇقىنى ئاجىزلىتىدۇ</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">نۈر سەزگۈچ دەرىجىسى</string>
+    <string name="ll_header_upper">يۇقىرىراق</string>
+    <string name="ll_header_lower">تۆۋەنرەك</string>
+    <string name="ll_header_lcd">ئېكران</string>
+    <string name="ll_header_btn">توپچىلار</string>
+    <string name="ll_header_kb">ھەرپتاختا</string>
+    <string name="ll_lux">سەزگۈچ (سۈزگەن/ئەسلى):</string>
+    <string name="ll_lcd">ئېكران:</string>
+    <string name="ll_btn">توپچىلار:</string>
+    <string name="ll_kb">ھەرپتاختا:</string>
+    <string name="ll_disabled">چەكلەنگەن</string>
+    <string name="ll_default">كۆڭۈلدىكىنى يۈكلە</string>
+    <string name="ll_save">ساقلاپ قوللان</string>
+    <string name="ll_reload">نۆۋەتتىكىنى يۈكلە</string>
+    <string name="ll_bad_levels">دەرىجىسى تەدرىجىي ئاشىدۇ</string>
+    <string name="ll_num_levels">دەرىجە سانى تەڭشىكى</string>
+
+    <!-- Sound -->
+    <string name="sound_notifications_focus_title">ئۇقتۇرۇش فوكۇسى</string>
+    <string name="sound_notifications_focus_summary">بۇ ئەپ بىلەن ماسلىشىدىغان پىروگرامما ئاۋاز يوللاش ئىلتىماسى يوللاپ، ئاۋازنى تۆۋەنلىتىپ يوللايدىغان ئاۋاز ھادىسىسىنى گەۋدىلەندۈرىدۇ.</string>
+    <string name="sound_volume_control_silent_title">ئۈنسىز ھالەت</string>
+    <string name="sound_volume_control_silent_summary">تولۇق ئۈنسىز تىزگىنلەش ھالىتىنى قوشىدۇ</string>
+    <string name="sound_vibrate_in_call_title">سۆزلىشىۋاتقاندا تىترەت</string>
+    <string name="sound_vibrate_in_call_summary_off">سۆزلىشىۋاتقاندا ئۇقتۇرۇش بولسا تىترەتمە</string>
+    <string name="sound_vibrate_in_call_summary_on">سۆزلىشىۋاتقاندا ئۇقتۇرۇش بولسا ئادەتتىكىدەك تىترەت</string>
+    <string name="sound_lock_volume_keys_title">ئاۋاز مىقدارى كۇنۇپكىسىنى قۇلۇپلا</string>
+    <string name="sound_lock_volume_keys_summary">ئاۋاز مىقدارى كۇنۇپكىسى ئارقىلىق ئۈنسىز ھالەتتنى تاسادىپىي بىكار قىلىۋېتىشنىڭ ئالدىنى ئالغىلى بولىدۇ</string>
+    <string name="sound_camera_shutter_disable_title">كامېرا ئاۋازى ئۈنسىز</string>
+    <string name="sound_camera_shutter_disable_summary_on">كامېرا ئىشىكىنىڭ ئاۋازى چېلىنمايدۇ</string>
+    <string name="sound_camera_shutter_disable_summary_off">كامېرا ئىشىكىنىڭ ئاۋازى چېلىنىدۇ</string>
+    <string name="sound_camera_shutter_disable_warning_title">ئاگاھلاندۇرۇش: بۇ قانۇنسىز بولۇشى مۇمكىن!</string>
+    <string name="sound_camera_shutter_disable_warning">كامېرا ئىشىكىنىڭ ئاۋازىنى چالماسلىق بەزى جايلاردا قانۇنسىز بولۇشى مۇمكىن. ئۇنى راستلا چەكلەمسىز؟</string>
+    <string name="sound_to_speaker_title">ھەمىشە ياڭراتقۇدا چال</string>
+    <string name="sound_notifications_title">ئۇقتۇرۇشلار</string>
+    <string name="sound_rings_title">زىل ئاۋازى</string>
+    <string name="sound_alarms_title">قوڭغۇراقلىق سائەت</string>
+    <string name="sound_note_title">ئىزاھات</string>
+    <string name="sound_note_summary">تۆۋەندىكى تەڭشەكلەر قۇلاقلىق ئىشلىتىلگەندىلا كۈچكە ئىگە.</string>
+    <string name="sound_attenuation_title">ئاۋاز تەڭشىكى ئاساسىدا ئاجىزلات</string>
+    <string name="sound_limitvol_title">نەغمە چېلىۋاتقاندىكى ئاۋاز مىقدارى</string>
+    <string name="sound_notifications_attenuation_dialog">ئۇقتۇرۇش ئاجىزلات</string>
+    <string name="sound_rings_attenuation_dialog">زىل ئاۋازىنى ئاجىزلات</string>
+    <string name="sound_alarms_attenuation_dialog">قوڭغۇراقلىق سائەت ئاجىزلات</string>
+    <string name="sound_notifications_limitvol_dialog">ئۇقتۇرۇش ئاۋازى</string>
+    <string name="sound_rings_limitvol_dialog">زىل ئاۋازى</string>
+    <string name="sound_alarms_limitvol_dialog">قوڭغۇراق ئاۋازى</string>
+
+    <!-- Quiet hours -->
+    <string name="sound_category_quiet_hours_title">ئۈنسىز ۋاقىت</string>
+    <string name="quiet_hours_note_title">ئىزاھات</string>
+    <string name="quiet_hours_note_summary">ئۈنسىز ۋاقىتتىكى چاقىرىلىش ئادەتتىكى ۋاقىتتىكىگە ئوخشاش</string>
+    <string name="quiet_hours_enabled">ئۈنسىز ۋاقىتنى قوزغات</string>
+    <string name="quiet_hours_enabled_on">ئۈنسىز ۋاقىت مەجبۇرىي قوزغىتىلىدۇ</string>
+    <string name="quiet_hours_enabled_off">ئۇقتۇرۇش ئاۋازى ئادەتتىكىگە ئوخشاش</string>
+    <string name="quiet_hours_start">ئۈنسىز ۋاقىت باشلىنىشى</string>
+    <string name="quiet_hours_start_summary">مەجبۇرىي ئۈنسىز ۋاقىت قاچان باشلىنىدۇ</string>
+    <string name="quiet_hours_end">ئۈنسىز ۋاقىت ئاخىرلىشىشى</string>
+    <string name="quiet_hours_end_summary">مەجبۇرىي ئۈنسىز ۋاقىت قاچان ئاخىرلىشىدۇ</string>
+    <string name="quiet_hours_mute">ئۈنسىز ئۇقتۇرۇشى</string>
+    <string name="quiet_hours_mute_on">ھېچقانداق ئاۋاز چىقمايدۇ</string>
+    <string name="quiet_hours_mute_off">ئاۋاز ئادەتتىكىدەك چېقىدۇ</string>
+    <string name="quiet_hours_still">تىترەشنى چەكلە</string>
+    <string name="quiet_hours_still_on">ئۈسكۈنە تىترىمەيدۇ</string>
+    <string name="quiet_hours_still_off">ئۈسكۈنە ئادەتتىكىدەك تىترەيدۇ</string>
+    <string name="quiet_hours_dim">LED سۇسلات</string>
+    <string name="quiet_hours_dim_on">مۇمكىن بولغان ئەھۋالدا LED سۇسلايدۇ</string>
+    <string name="quiet_hours_dim_off">LED ئادەتتىكىدەك تولۇق يورۇيدۇ</string>
+    <string name="quiet_hours_haptic">تىترەش ئىنكاسىنى چەكلە</string>
+    <string name="quiet_hours_haptic_on">تىترەش ئىنكاسى چەكلەندى</string>
+    <string name="quiet_hours_haptic_off">تىترەش ئىنكاسى چەكلەندى</string>
+
+    <string name="cmstats_title">ئاتىسىز سىتاتىستىكا</string>
+    <string name="cmstats_summary">ئاتسىز ئىشلىتىش سىتاتىستىكىڭىزنى يوللاپ CM نىڭ تېخىمۇ ياخشىلىنىشىغا ياردەم قىلىڭ</string>
+
+    <string name="user_defined_key1">تېز كۇنۇپكا 1</string>
+    <string name="user_defined_key2">تېز كۇنۇپكا 2</string>
+    <string name="user_defined_key3">تېز كۇنۇپكا 3</string>
+    <string name="user_defined_envelope_key">لىپاپ كۇنۇپكا</string>
+    <string name="user_defined_explorer_key">كۆرگۈ كۇنۇپكا</string>
+    <string name="user_defined_not_set">تەڭشەلمىگەن</string>
+
+    <!-- Lockscreen gesture strings -->
+    <string name="pref_lockscreen_gestures_enable_title">ئېكران قۇلۇپلاش قول ئىشارىتىنى ئىشلەت</string>
+    <string name="pref_lockscreen_gestures_trail_title">قول ئىشارەت يولىنى كۆرسەت</string>
+    <string name="pref_lockscreen_gestures_builder_title">قول ئىشارەت قۇر</string>
+    <string name="pref_lockscreen_gestures_sensitivity_title">سەزگۈرلۈكى</string>
+    <string name="pref_lockscreen_gestures_color_title">قول ئىشارەت رەڭگى</string>
+    <string name="gestures_button_add">قول ئىشارەت قوش</string>
+    <string name="gestures_button_discard">تاشلىۋەت</string>
+    <string name="gestures_button_done">تامام</string>
+    <string name="gestures_error_missing_shortcut">سىز بۇ قول ئىشارىتى ئۈچۈن بىر مەشغۇلات تاللىشىڭىز زۆرۈر!</string>
+    <string name="gestures_loading">قول ئىشارىتىنى يۈكلەۋاتىدۇ\u2026</string>
+    <string name="gestures_empty">قول ئىشارەت يوق</string>
+    <string name="gestures_delete">ئۆچۈر</string>
+    <string name="gestures_delete_success">قول ئىشارەت ئۆچۈرۈلدى</string>
+    <string name="gestures_error_loading">قول ئىشارەت ھۆججەت مەشغۇلاتىدا مەسىلە كۆرۈلدى.</string>
+    <string name="gestures_unlock_only">تېلېفون قۇلۇپىنى ئاچ</string>
+    <string name="gestures_toggle_sound">ئاۋاز ئالماشتۇر</string>
+    <string name="gestures_shortcut_or_activity">قىسقا يول ياكى ھەرىكەت</string>
+    <string name="gestures_flashlight">قول چىراغ</string>
+    <string name="gestures_next">كېيىنكى ناخشا</string>
+    <string name="gestures_previous">ئالدىنقى ناخشا</string>
+    <string name="gestures_playpause">نەغمە چال/ۋاقىتلىق توختا</string>
+    <string name="pref_lockscreen_disable_unlock_tab">قۇلۇپ ئاچىدىغان سۈرگۈچنى چەكلە</string>
+    <string name="pref_lockscreen_disable_unlock_tab_summary">دىققەت: بۇ تاللانمىنى قوزغىتىشتىن ئىلگىرى ئىزلاش شارچىسى، تىزىملىك توپچا ياكى قول ئىشارەتتە قۇلۇپ ئېچىشتىن بىرىنى قوزغىتىڭ</string>
+    <string name="gestures_action_label">ھەرىكەت:</string>
+    <string name="gestures_draw_label">قول ئىشارەت:</string>
+    <string name="gestures_draw_for_label">\&quot;<xliff:g id="action">%s</xliff:g>\&quot; نىڭ قول ئىشارىتى:</string>
+    <string name="gestures_already_present">ئاگاھلاندۇرۇش: ئوخشاپ كېتىدىغان بىر قول ئىشارىتى باشقا بىر مەشغۇلاتقا باغلانغان!</string>
+    <string name="gestures_run_in_background">ئارقا سۇپىدا ئىجرا قىل</string>
+
+    <!-- Change Log strings -->
+    <string name="changelog_title">ئۆزگىرىش خاتىرىسىنى كۆرسەت</string>
+    <string name="changelog_dialog">ئۆزگىرىش خاتىرىسى</string>
+    <string name="changelog_loading">ئۆزگىرىشنى يۈكلەۋاتىدۇ\u2026</string>
+    <string name="changelog_error">ئۆزگىرىشنى يۈكلەۋاتقاندا خاتالىق كۆرۈلدى\u2026</string>
+    <string name="changelog_unknown">يوچۇن</string>
+    <string name="changelog_version">نەشرى</string>
+
+    <!-- Phone goggles -->
+    <string name="category_phone_goggles_period">چېكىت</string>
+    <string name="category_phone_goggles_confirmation">جەزملە</string>
+    <string name="category_phone_goggles_filter">سۈزگۈچ</string>
+    <string name="title_phone_goggles">تېلېفون Goggles</string>
+    <string name="title_phone_goggles_default">كۆڭۈلدىكى تەڭشەك</string>
+    <string name="title_phone_goggles_apps">سۈزۈلگەن پىروگراممىلار</string>
+    <string name="title_phone_goggles_app_enabled">تېلېفون Goggles نى قوزغات</string>
+    <string name="title_phone_goggles_use_custom">ئىختىيارىي تەڭشەكنى ئىشلەت</string>
+    <string name="title_phone_goggles_filter">سۈزۈلگەن نومۇرلار</string>
+    <string name="title_phone_goggles_enabled">تېلېفون Goggles نى قوزغات</string>
+    <string name="title_phone_goggles_start">تېلېفون Goggles ھالەتنى باشلا</string>
+    <string name="title_phone_goggles_end">تېلېفون Goggles ھالەتنى ئاخىرلاشتۇر</string>
+    <string name="title_phone_goggles_confirmation_enabled">جەزملەش ئىلتىماسى</string>
+    <string name="title_phone_goggles_maths_level">سانى دەرىجىسى</string>
+    <string name="title_phone_goggles_work_filtered">ئىش</string>
+    <string name="title_phone_goggles_mobile_filtered">كۆچمە</string>
+    <string name="title_phone_goggles_other_filtered">باشقا</string>
+    <string name="summary_phone_goggles">چىقىدىغان ئالاقە سۈزگۈچى</string>
+    <string name="summary_phone_goggles_default">كۆڭۈلدىكى تەڭشەككە تەڭشە</string>
+    <string name="summary_phone_goggles_filter">سۈزىدىغان تېلېفون نومۇر تىپىنى تاللاڭ</string>
+    <string name="summary_phone_goggles_start">چاقىرىدىغان تېلېفوننى قاچاندىن باشلاپ سۈزىدۇ</string>
+    <string name="summary_phone_goggles_end">چاقىرىدىغان تېلېفون سۈزۈشنى قاچان ئاخىرلاشتۇرىدۇ</string>
+    <string name="summary_phone_goggles_confirmation_enabled">ئالاقە سۈزۈشتىن ئىلگىرى قايسى خىل جەزملەش ئۇسۇلى ئىشلىتىدىغانلىقىنى تاللاڭ</string>
+    <string name="summary_phone_goggles_maths_level">ئالاقە قىلىشنى دەلىللەشتىن ئىلگىرى سورايدىغان ماتېماتېكىلىق مەسىلە دەرىجىسى</string>
+    <string name="summary_on_phone_goggles_enabled">چىقىدىغان ئالاقە سۈزۈلىدۇ</string>
+    <string name="summary_on_phone_goggles_use_custom">ئىختىيارىي تەڭشەكنى ئىشلەت</string>
+    <string name="summary_on_phone_goggles_app_enabled">بۇ پىروگراممىنىڭ تېلېفون Goggles ئىقتىدارى قوزغىتىلدى</string>
+    <string name="summary_on_phone_goggles_work_filtered">كەسپىي ئالاقە سۈزۈلىدۇ</string>
+    <string name="summary_on_phone_goggles_mobile_filtered">كۆچمە تېلېفون ئالاقە سۈزۈلىدۇ</string>
+    <string name="summary_on_phone_goggles_other_filtered">باشقا تېلېفون ئالاقە سۈزۈلىدۇ</string>
+    <string name="summary_off_phone_goggles_enabled">ھېچقانداق ئالاقە سۈزۈلمەيدۇ</string>
+    <string name="summary_off_phone_goggles_use_custom">كۆڭۈلدىكى تەڭشەكنى ئىشلەت</string>
+    <string name="summary_off_phone_goggles_app_enabled">بۇ پىروگراممىنىڭ تېلېفون Goggles ئىقتىدارى چەكلەندى</string>
+    <string name="summary_off_phone_goggles_work_filtered">كەسپىي ئالاقە سۈزۈلمەيدۇ</string>
+    <string name="summary_off_phone_goggles_mobile_filtered">كۆچمە تېلېفون ئالاقە سۈزۈلمەيدۇ</string>
+    <string name="summary_off_phone_goggles_other_filtered">باشقا تېلېفون ئالاقە سۈزۈلمەيدۇ</string>
+    <string name="phone_goggles_maths_level_easy">ئاسان</string>
+    <string name="phone_goggles_maths_level_medium">ئوتتۇرا</string>
+    <string name="phone_goggles_maths_level_hard">قېيىن </string>
+    <string name="phone_goggles_confirmation_none">يوق</string>
+    <string name="phone_goggles_confirmation_prompt">ئەسكەرت</string>
+    <string name="phone_goggles_confirmation_maths">ماتېماتېكا مەسىلىسى</string>
+
+    <!-- CPU Settings strings -->
+    <string name="cpu_settings_title">CPU تەڭشەك</string>
+    <string name="cpu_title">CPU تەڭشەك</string>
+    <string name="cpu_summary">سۈرئەت تەڭشىگۈچ ۋە سائەت تەڭشەك</string>
+    <string name="cpu_governors_title">ئىشلىتىلىشچان سۈرئەت تەڭشىگۈچ</string>
+    <string name="cpu_governors_summary">ئىشلىتىلىشچان سۈرئەت تەڭشىگۈچ تىزىمى\nنۆۋەتتە تاللانغىنى: %S</string>
+    <string name="cpu_min_freq_title">ئەڭ تۆۋەن CPU چاستوتىسى</string>
+    <string name="cpu_min_freq_summary">ئەڭ تۆۋەن CPU چاستوتىسى\nنۆۋەتتىكى: %s</string>
+    <string name="cpu_max_freq_title">ئەڭ يۇقىرى CPU چاستوتىسى</string>
+    <string name="cpu_max_freq_summary">ئەڭ يۇقىرى CPU چاستوتىسى\nنۆۋەتتىكى: %s</string>
+    <string name="cpu_set_on_boot">قوزغالغاندىكى تەڭشەك</string>
+    <string name="cpu_set_on_boot_summary">قوزغالغاندا CPU تەڭشىكىنى ئەسلىگە كەلتۈر</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">ھوقۇق باشقۇرۇش</string>
+    <string name="perm_enable_management_summary">ئەپ ھوقۇق باشقۇرۇشنى قوزغات</string>
+    <string name="perm_enable_warning_message">ئاگاھلاندۇرۇش!\nكۆپ قىسىم ھوقۇقنى بىكار قىلغاندا قوللىنىشچان ئەپ خاتالىقىنى كەلتۈرۈپ چىقىرىشى مۇمكىن. ئەگەر ھوقۇقنى بىكار قىلىپ ئەپنى مەجبۇرىي تاقاشتا مۆلچەرلىگەن ھوقۇقنى بېرىڭ ياكى ئۇ ئەپنى ئىشلەتمەڭ. خاتالىق دوكلاتىنى Cyanogenmod غا ئەۋەتمەڭ، ئەگەر ھوقۇقنى بىكار قىلىدىغان ئەپ بولسا مۆلچەردىكىدەك خىزمەت قىلمايدۇ!</string>
+    <string name="perm_enable_warning_title">راستمۇ؟</string>
+</resources>
