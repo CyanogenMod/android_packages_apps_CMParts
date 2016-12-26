@@ -115,6 +115,7 @@
             <intent-filter android:priority="1">
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
                 <action android:name="org.cyanogenmod.cmparts.BUTTON_SETTINGS" />
+                <action android:name="com.cyanogenmod.settings.device.FP_HOME_SETTING" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data

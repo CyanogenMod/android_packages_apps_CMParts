@@ -16,10 +16,12 @@
 
 package org.cyanogenmod.cmparts.input;
 
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
@@ -54,6 +56,9 @@ import static android.provider.Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_D
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
+
+    private static final String FP_HOME_INTENT = "com.cyanogenmod.settings.device.FP_HOME_SETTING";
+    private static final String FP_HOME_INTENT_EXTRA = "fp_home_pref_value";
 
     private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
     private static final String KEY_HOME_LONG_PRESS = "hardware_keys_home_long_press";
@@ -114,6 +119,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         public static Action fromSettings(ContentResolver cr, String setting, Action def) {
             return fromIntSafe(CMSettings.System.getInt(cr, setting, def.ordinal()));
         }
+
+        public void Action toSettings(ContentResolver cr, String setting, Action def) {
+            CMSettings.System.putInt(cr, setting, def.ordinal());
+        }
     }
 
     // Masks for checking presence of hardware keys.
@@ -125,6 +134,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     public static final int KEY_MASK_APP_SWITCH = 0x10;
     public static final int KEY_MASK_CAMERA = 0x20;
     public static final int KEY_MASK_VOLUME = 0x40;
+
+    private static boolean mFingerprintHomeButtonEnabled;
+    private static Action mHomeLongPressUserSetAction;
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -153,6 +165,27 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mNavigationPreferencesCat;
 
     private Handler mHandler;
+
+    private final BroadcastReceiver mUpdateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(FP_HOME_INTENT)) {
+                ContentResolver resolver = context.getContentResolver();
+
+                mFingerprintHomeButtonEnabled = intent.getBooleanExtra(FP_HOME_INTENT_EXTRA, false);
+                if (mFingerprintHomeButtonEnabled) {
+                    Action.toSettings(resolver, CMSettings.System.KEY_HOME_LONG_PRESS_ACTION,
+                            mHomeLongPressUserSetAction);
+                } else {
+                    mHomeLongPressUserSetAction = Action.fromSettings(resolver,
+                            CMSettings.System.KEY_HOME_LONG_PRESS_ACTION,
+                            mHomeLongPressUserSetAction);
+                    Action.toSettings(resolver, CMSettings.System.KEY_HOME_LONG_PRESS_ACTION,
+                            Action.NOTHING);
+                }
+            }
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -312,6 +345,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, homeDoubleTapAction);
 
             hasAnyBindableKey = true;
+
+            mHomeLongPressUserSetAction = homeLongPressAction;
+            getActivity().registerReceiver(mUpdateReceiver, new IntentFilter(FP_HOME_INTENT));
         } else {
             prefScreen.removePreference(homeCategory);
         }
@@ -491,6 +527,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == CMSettings.Secure.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+
+        // Don't allow the user to set long press actions for home button if
+        // fingerprint reader is being used as home button
+        mHomeLongPressAction.setEnabled(!mFingerprintHomeButtonEnabled);
     }
 
     private ListPreference initActionList(String key, Action value) {
